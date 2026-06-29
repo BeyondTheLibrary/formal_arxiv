@@ -1,0 +1,483 @@
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; height: 100%; background: #3a3a3a; font: 13px/1.4 -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; color: #222; }
+
+#loading {
+  position: fixed; top: 14px; left: 50%; transform: translateX(-50%);
+  background: rgba(0,0,0,0.7); color: #fff; padding: 6px 14px; border-radius: 4px;
+  z-index: 80;
+}
+
+#app {
+  display: flex; height: 100vh; width: 100vw;
+  --lean-w: 46vw;
+}
+#app.lean-closed #lean-col,
+#app.lean-closed #splitter { display: none !important; }
+
+#pdf-col {
+  flex: 1 1 auto;
+  min-width: 0;
+  position: relative;
+  background: #3a3a3a;
+}
+/* pdf.js PDFViewer mounts here; it needs an absolutely-positioned, scrollable
+   container. The .pdfViewer / .page styling comes from pdf_viewer.css. */
+#viewerContainer {
+  position: absolute;
+  inset: 0;
+  overflow: auto;
+  background: #3a3a3a;
+}
+#open-lean {
+  position: absolute;
+  top: 8px; right: 8px;
+  z-index: 40;
+  background: rgba(20,20,20,0.82);
+  color: #cfd3da;
+  font: inherit; font-size: 12px; padding: 5px 12px; border-radius: 6px;
+  border: 1px solid #111; cursor: pointer;
+  backdrop-filter: blur(2px);
+}
+#open-lean:hover { background: #3d5a86; color: #fff; border-color: #4d6fa0; }
+#app:not(.lean-closed) #open-lean { display: none; }  /* hide once Lean is open */
+.pdfViewer .page {
+  box-shadow: 0 1px 4px rgba(0,0,0,0.5);
+}
+
+.lean-hotspot {
+  position: absolute;
+  background: rgba(255, 215, 0, 0.18);
+  border-bottom: 2px solid rgba(220, 130, 0, 0.55);
+  border-radius: 2px;
+  cursor: pointer;
+  transition: background 0.12s;
+  z-index: 5;
+  padding: 0; margin: 0;
+  border-left: 0; border-right: 0; border-top: 0;
+}
+.lean-hotspot:hover {
+  background: rgba(255, 200, 0, 0.42);
+  border-bottom-color: rgba(220, 100, 0, 0.95);
+}
+.lean-hotspot:focus { outline: 2px solid #1976d2; outline-offset: 1px; }
+
+/* Span-based highlights: rows of one matched segment touch vertically to read as
+   a single continuous text-selection block (first row starts mid-line, interior
+   rows fill, last row ends mid-line). No per-row underline stripes. */
+.lean-span-hl {
+  position: absolute;
+  background: rgba(86, 156, 255, 0.20);
+  cursor: pointer;
+  transition: background 0.1s;
+  z-index: 4;
+  padding: 0; margin: 0; border: 0;
+  mix-blend-mode: multiply;        /* overlapping highlights blend instead of stacking opaque */
+}
+/* Round only the outer corners of the block. */
+.lean-span-hl-first { border-top-left-radius: 3px; border-top-right-radius: 3px; }
+.lean-span-hl-last  { border-bottom-left-radius: 3px; border-bottom-right-radius: 3px; }
+.lean-span-hl.hl-hover, .lean-span-hl:hover { background: rgba(86, 156, 255, 0.40); }
+.lean-span-hl:focus { outline: none; }
+/* A passage formalized by several decls gets a warmer tint + a count badge. */
+.lean-span-hl-multi { background: rgba(150, 110, 220, 0.20); }
+.lean-span-hl-multi.hl-hover, .lean-span-hl-multi:hover { background: rgba(150, 110, 220, 0.42); }
+
+.lean-hl-badge {
+  position: absolute; z-index: 6;
+  min-width: 15px; height: 15px; padding: 0 3px;
+  transform: translateY(-2px);
+  font: 600 10px/15px -apple-system, system-ui, sans-serif;
+  color: #fff; background: #7a5cc4; border: 1px solid #fff;
+  border-radius: 8px; text-align: center; cursor: pointer;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.4);
+}
+.lean-hl-badge:hover, .lean-hl-badge.hl-hover { background: #6645b0; }
+
+/* Chooser popover when one passage maps to multiple Lean declarations. */
+#hl-popover {
+  position: fixed; z-index: 50; width: 440px; max-width: calc(100vw - 24px);
+  max-height: 70vh; overflow-y: auto; overscroll-behavior: contain;
+  background: #1e2027; color: #d6d6d6;
+  border: 1px solid #343842; border-radius: 7px;
+  box-shadow: 0 6px 26px rgba(0,0,0,0.5);
+  font: 12px/1.45 -apple-system, system-ui, sans-serif;
+}
+#hl-popover .hlp-head { position: sticky; top: 0; }
+#hl-popover[hidden] { display: none; }
+#hl-popover .hlp-head {
+  padding: 7px 11px; font-size: 11px; color: #cdd2da; font-weight: 600;
+  background: #262932; border-bottom: 1px solid #343842;
+}
+#hl-popover .hlp-item {
+  display: block; width: 100%; text-align: left; cursor: pointer;
+  background: transparent; border: 0; border-bottom: 1px solid #2a2d35;
+  padding: 8px 11px; color: inherit;
+}
+#hl-popover .hlp-item:last-child { border-bottom: 0; }
+#hl-popover .hlp-item:hover { background: #2c3140; }
+#hl-popover .hlp-line { display: flex; align-items: center; gap: 8px; }
+#hl-popover .hlp-rel { font-weight: 600; color: #e6e6e6; }
+#hl-popover .hlp-name {
+  font-family: ui-monospace, SF Mono, Menlo, monospace; font-size: 11px; color: #79c0ff;
+}
+#hl-popover .hlp-why { margin-top: 4px; font-size: 11.5px; line-height: 1.5; color: #aab0ba; overflow-wrap: anywhere; white-space: normal; }
+
+/* Transient highlight when navigating Lean → PDF */
+.pdf-flash {
+  position: absolute;
+  background: rgba(255, 120, 0, 0.30);
+  border: 2px solid rgba(255, 120, 0, 0.9);
+  border-radius: 3px;
+  z-index: 6;
+  pointer-events: none;
+  animation: pdfflash 2.4s ease-out forwards;
+}
+@keyframes pdfflash {
+  0%   { background: rgba(255,120,0,0.45); }
+  70%  { background: rgba(255,120,0,0.30); }
+  100% { background: rgba(255,120,0,0.0); border-color: rgba(255,120,0,0); }
+}
+
+/* ── Splitter ─────────────────────────────────────────────────────────────── */
+#splitter {
+  flex: 0 0 6px;
+  background: #1f1f1f;
+  cursor: col-resize;
+  position: relative;
+  z-index: 20;
+}
+#splitter:hover, #splitter.dragging { background: #d6a000; }
+#splitter::after {
+  content: ""; position: absolute; inset: 0 -3px;  /* widen hit area */
+}
+
+/* ── Lean panel ───────────────────────────────────────────────────────────── */
+#lean-col {
+  flex: 0 0 var(--lean-w);
+  min-width: 320px; max-width: 90vw;
+  background: #1e1f22;
+  color: #d6d6d6;
+  display: flex; flex-direction: column;
+  position: relative;
+}
+#lean-head {
+  display: flex; align-items: flex-start; justify-content: space-between;
+  padding: 10px 12px;
+  background: #15161a;
+  border-bottom: 1px solid #2a2c33;
+  gap: 8px;
+}
+#lean-meta { min-width: 0; flex: 1; }
+#lean-title {
+  font-family: ui-monospace, SF Mono, Menlo, monospace;
+  font-size: 13px; color: #f4f4f4;
+  word-break: break-all;
+}
+#lean-subtitle { font-size: 11px; color: #8e8e8e; margin-top: 3px; }
+#lean-actions { display: flex; align-items: center; gap: 6px; }
+#lean-actions button {
+  font: inherit; font-size: 11px;
+  background: #2a2c33; color: #d4d4d4;
+  border: 1px solid #383b44;
+  padding: 4px 8px;
+  border-radius: 4px; cursor: pointer;
+  font-family: ui-monospace, SF Mono, Menlo, monospace;
+}
+#lean-actions button:hover { background: #353841; color: #fff; }
+#lean-actions button[aria-pressed="true"] { background: #3d5a86; border-color: #4d6fa0; color: #fff; }
+#lean-close { background: transparent !important; color: #aaa !important; font-size: 20px !important; line-height: 1; padding: 0 8px !important; border: 0 !important; }
+#lean-close:hover { color: #fff !important; }
+
+#lean-body { flex: 1; display: flex; min-height: 0; }
+
+/* file nav */
+#lean-nav {
+  flex: 0 0 var(--nav-w, 230px);
+  min-width: 120px; max-width: 60%;
+  background: #181a1f;
+  display: flex; flex-direction: column;
+  overflow: hidden;
+}
+#lean-nav[hidden] { display: none !important; }
+#nav-splitter {
+  flex: 0 0 5px;
+  background: #2a2c33;
+  cursor: col-resize;
+}
+#nav-splitter[hidden] { display: none !important; }
+#nav-splitter:hover, #nav-splitter.dragging { background: #d6a000; }
+#nav-search-wrap { padding: 8px; border-bottom: 1px solid #2a2c33; }
+#nav-search {
+  width: 100%; padding: 5px 7px;
+  background: #0f1014; color: #e7e7e7;
+  border: 1px solid #2a2c33; border-radius: 3px;
+  font: inherit; font-size: 11px;
+  outline: none;
+}
+#nav-search:focus { border-color: #4d6fa0; }
+#nav-tree {
+  flex: 1; overflow: auto;
+  padding: 4px 0;
+  font-family: ui-monospace, SF Mono, Menlo, monospace;
+  font-size: 11px;
+}
+.nav-dir { color: #9aa1ad; padding: 3px 8px 1px 8px; user-select: none; }
+.nav-file {
+  display: block;
+  padding: 2px 8px 2px 18px;
+  color: #c8d0d8; cursor: pointer; text-decoration: none;
+  white-space: nowrap;
+}
+.nav-file:hover { background: #25282f; color: #fff; }
+.nav-file.active { background: #3d5a86; color: #fff; }
+
+/* ── Lean code view ───────────────────────────────────────────────────────── */
+#lean-code-wrap { flex: 1; overflow: auto; min-width: 0; }
+
+/* "Why this links to the paper" banner — makes the (now finer-grained) link
+   relationships explicit: relation + target + confidence + the rationale. */
+#link-why {
+  position: sticky; top: 0; z-index: 5;
+  background: #1b1d23; border-bottom: 1px solid #2c2f37;
+  padding: 8px 12px 9px 14px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.35);
+}
+#link-why .lw-head {
+  font-size: 10.5px; text-transform: uppercase; letter-spacing: 0.06em;
+  color: #8e8e8e; margin-bottom: 5px; padding-right: 18px;
+}
+#link-why .lw-close {
+  position: absolute; top: 5px; right: 6px;
+  width: 18px; height: 18px; line-height: 16px; text-align: center;
+  background: transparent; color: #9aa0aa; border: 0; border-radius: 3px;
+  font-size: 16px; cursor: pointer; padding: 0;
+}
+#link-why .lw-close:hover { background: #2c3140; color: #fff; }
+#link-why .lw-row { padding: 3px 0; }
+#link-why .lw-row + .lw-row { border-top: 1px dashed #2c2f37; }
+#link-why .lw-line { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+#link-why .lw-rel { font-size: 12px; font-weight: 600; color: #e6e6e6; }
+#link-why .lw-label {
+  font-family: ui-monospace, SF Mono, Menlo, monospace; font-size: 11px;
+  color: #79c0ff; text-decoration: none;
+  background: #20242c; border: 1px solid #2f3946; border-radius: 3px; padding: 0 5px;
+}
+#link-why .lw-label:hover { color: #fff; border-color: #4d6fa0; background: #263041; }
+#link-why .lw-conf {
+  font-size: 10px; text-transform: uppercase; letter-spacing: 0.04em;
+  border-radius: 3px; padding: 1px 5px;
+}
+#link-why .lw-strong   { background: rgba(80,180,100,0.18); color: #8fd98f; }
+#link-why .lw-likely   { background: rgba(214,160,0,0.18);  color: #d6b34a; }
+#link-why .lw-tentative{ background: rgba(200,90,60,0.20);  color: #e0916f; }
+#link-why .lw-why {
+  font-size: 11.5px; line-height: 1.45; color: #b9bcc4; margin-top: 3px;
+}
+#link-why .lw-orphan .lw-rel { color: #9aa0aa; font-weight: 500; }
+#link-why .lw-warn {
+  margin-bottom: 6px; padding: 5px 8px; border-radius: 4px;
+  background: rgba(224, 120, 60, 0.16); border: 1px solid rgba(224, 120, 60, 0.5);
+  color: #f0b48f; font-size: 11.5px; line-height: 1.4;
+}
+#link-why .lw-warn code { background: rgba(0,0,0,0.3); padding: 0 3px; border-radius: 2px; }
+
+/* The exact axiom/sorry offenders a result rests on, grouped by file. */
+#link-why .lw-srcs {
+  margin: -2px 0 7px; padding: 6px 8px; border-radius: 4px;
+  background: rgba(0,0,0,0.22); border: 1px solid #2c2f37;
+  font-size: 11px; line-height: 1.5;
+}
+#link-why .lw-srcs-head {
+  color: #9aa0aa; text-transform: uppercase; letter-spacing: 0.05em;
+  font-size: 9.5px; margin-bottom: 3px;
+}
+#link-why .lw-srcfile { padding: 2px 0; }
+#link-why .lw-srcfile + .lw-srcfile { border-top: 1px dashed #2c2f37; }
+#link-why .lw-srcfile-name {
+  font-family: ui-monospace, SF Mono, Menlo, monospace; color: #cdd3db;
+  font-weight: 600; margin-right: 8px;
+}
+#link-why .lw-srcfile-decls { display: inline; }
+#link-why .lw-src {
+  font-family: ui-monospace, SF Mono, Menlo, monospace; color: #79c0ff;
+  text-decoration: none; border-bottom: 1px dotted #4d6fa0; margin-left: 6px;
+}
+#link-why .lw-src:hover { color: #fff; }
+#link-why .lw-src-plain { color: #b9bcc4; border: 0; }
+#link-why .lw-tag {
+  font-size: 9px; text-transform: uppercase; letter-spacing: 0.04em;
+  border-radius: 3px; padding: 0 4px; margin-left: 3px; vertical-align: 1px;
+}
+#link-why .lw-tag-axiom { background: rgba(224,90,90,0.22); color: #f0908f; }
+#link-why .lw-tag-sorry { background: rgba(214,160,0,0.20); color: #d6b34a; }
+
+/* File navigator: colour files that contain an axiom / sorry so they stand out. */
+.nav-file.nav-axiom { color: #ef9a9a; }
+.nav-file.nav-sorry { color: #e8c06a; }
+.nav-file.nav-axiom:hover, .nav-file.nav-sorry:hover { color: #fff; }
+.nav-flag { color: #e0a045; font-size: 10px; margin-right: 1px; }
+.nav-root { font-size: 10px; margin-right: 2px; }
+#nav-flagged-only {
+  display: inline-flex; align-items: center; gap: 3px; margin-top: 7px;
+  color: #9aa1ad; font-size: 10.5px; cursor: pointer; user-select: none;
+}
+#nav-flagged-only input { margin: 0; cursor: pointer; vertical-align: middle; }
+
+#lean-code {
+  margin: 0; padding: 6px 0;
+  font-family: ui-monospace, SF Mono, Menlo, monospace;
+  font-size: 12.5px; line-height: 1.5;
+}
+
+/* Each line: arrow gutter + line number + content. Word-wrapped by default. */
+#lean-code .ln {
+  display: grid;
+  grid-template-columns: 22px 44px 1fr;
+  align-items: start;
+  padding: 0;
+}
+#lean-code .ln .arr {
+  width: 22px;
+  text-align: center;
+  user-select: none;
+  color: transparent;
+  cursor: default;
+}
+#lean-code .ln.has-link {
+  box-shadow: inset 3px 0 0 rgba(121, 192, 255, 0.55);
+}
+#lean-code .ln.has-link .arr {
+  color: rgba(121, 192, 255, 0.35);
+  cursor: pointer;
+}
+#lean-code .ln.has-link:hover .arr { color: #79c0ff; }
+#lean-code .ln.has-link .arr:hover { color: #fff; }
+#lean-code .ln .lno {
+  color: #5a6068; text-align: right;
+  padding: 0 10px 0 0;
+  user-select: none;
+  font-variant-numeric: tabular-nums;
+}
+#lean-code .ln .src {
+  white-space: pre-wrap;
+  word-break: break-word;
+  padding-right: 12px;
+}
+#lean-code.nowrap .ln .src { white-space: pre; word-break: normal; }
+#lean-code.nowrap { overflow-x: auto; }
+
+#lean-code .ln.hl { background: rgba(255, 215, 0, 0.10); }
+#lean-code .ln.hl .lno { color: #c9a227; }
+#lean-code .ln.hl-start { box-shadow: inset 0 1px 0 rgba(255, 215, 0, 0.40); }
+#lean-code .ln.hl-end   { box-shadow: inset 0 -1px 0 rgba(255, 215, 0, 0.40); }
+#lean-code .ln.hl-start.hl-end { box-shadow: inset 0 1px 0 rgba(255, 215, 0, 0.40), inset 0 -1px 0 rgba(255, 215, 0, 0.40); }
+
+/* ── Syntax tokens ────────────────────────────────────────────────────────── */
+.tok-com  { color: #6f7681; font-style: italic; }
+.tok-str  { color: #d2917a; }
+.tok-num  { color: #b8c373; }
+.tok-kw   { color: #c79edb; }
+.tok-decl { color: #b1dbf5; }   /* theorem/lemma/def names and similar */
+.tok-imp  { color: #79c0ff; }   /* import keyword */
+.tok-attr { color: #b9c47a; }
+.tok-op   { color: #c4cbd6; }
+.tok-id   { color: #e0e0e0; }
+.tok-tactic { color: #f8c987; }
+/* Clickable identifiers / import paths keep their natural syntax color and
+   only get a same-color dotted underline to signal they are links. */
+.tok-known, .tok-import-path {
+  cursor: pointer;
+  text-decoration: underline;
+  text-decoration-style: dotted;
+  text-decoration-color: currentColor;
+  text-underline-offset: 2px;
+}
+.tok-known:hover, .tok-import-path:hover {
+  text-decoration-style: solid;
+  filter: brightness(1.35);
+}
+
+/* Hover tooltip */
+#hover-tip {
+  position: fixed; z-index: 90;
+  max-width: 460px;
+  background: #0e0f12;
+  color: #e7e7e7;
+  border: 1px solid #353841;
+  border-radius: 6px;
+  padding: 8px 10px;
+  font-size: 11.5px;
+  line-height: 1.4;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.5);
+  pointer-events: none;
+}
+#hover-tip .h-fqn { font-family: ui-monospace, SF Mono, Menlo, monospace; color: #79c0ff; font-size: 11.5px; word-break: break-all; }
+#hover-tip .h-kind { color: #c79edb; margin-right: 6px; }
+#hover-tip .h-loc { color: #888; font-size: 10.5px; margin-top: 3px; }
+#hover-tip .h-doc { margin-top: 6px; color: #cfd3da; white-space: pre-wrap; }
+#hover-tip .h-goal {
+  font-family: ui-monospace, SF Mono, Menlo, monospace;
+  white-space: pre-wrap; color: #d6d6d6; font-size: 11.5px;
+}
+
+/* Lines with a precomputed goal state get a green line number you can hover. */
+#lean-code .ln.has-goal .lno {
+  color: #6cae6c;
+  cursor: help;
+  text-decoration: underline dotted rgba(108,174,108,0.5);
+}
+#lean-code .ln.has-goal:hover .lno { color: #8fd98f; }
+
+/* ── Comments ─────────────────────────────────────────────────────────────── */
+#comments {
+  flex: 0 0 auto;
+  max-height: 42%;
+  display: flex; flex-direction: column;
+  border-top: 1px solid #2a2c33;
+  background: #16171b;
+}
+#comments[hidden] { display: none !important; }
+#comments-head {
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 6px 10px;
+  background: #101116;
+  font-size: 11px; color: #9aa1ad;
+}
+#comments-title { font-weight: 600; }
+#comments-collapse { background: transparent; border: 0; color: #888; font-size: 16px; cursor: pointer; line-height: 1; }
+#comments-collapse:hover { color: #fff; }
+#comments-list { flex: 1; overflow: auto; padding: 6px 10px; }
+#comments-list .empty { color: #6a6f78; font-style: italic; font-size: 11.5px; padding: 6px 0; }
+.comment {
+  border-bottom: 1px solid #23252b;
+  padding: 6px 0;
+}
+.comment .c-head { font-size: 10.5px; color: #8b93a0; margin-bottom: 2px; display: flex; gap: 8px; align-items: baseline; }
+.comment .c-author { color: #79c0ff; font-weight: 600; }
+.comment .c-time { color: #5f656e; }
+.comment .c-del { margin-left: auto; background: transparent; border: 0; color: #6a6f78; cursor: pointer; font-size: 11px; }
+.comment .c-del:hover { color: #e06666; }
+.comment .c-body { font-size: 12px; color: #d6d6d6; white-space: pre-wrap; word-break: break-word; }
+#comment-form {
+  display: flex; flex-direction: column; gap: 5px;
+  padding: 8px 10px; border-top: 1px solid #23252b;
+}
+#comment-form input, #comment-form textarea {
+  background: #0f1014; color: #e7e7e7;
+  border: 1px solid #2a2c33; border-radius: 3px;
+  font: inherit; font-size: 12px; padding: 5px 7px;
+  outline: none; resize: vertical;
+}
+#comment-form input:focus, #comment-form textarea:focus { border-color: #4d6fa0; }
+#comment-submit {
+  align-self: flex-end;
+  background: #3d5a86; color: #fff; border: 1px solid #4d6fa0;
+  border-radius: 4px; padding: 4px 14px; cursor: pointer; font: inherit; font-size: 12px;
+}
+#comment-submit:hover { background: #496aa0; }
+#comment-form .c-key { font-size: 10.5px; color: #6a6f78; }
+
+@media (max-width: 720px) {
+  #lean-col { min-width: 0; flex-basis: 100vw; }
+  #pdf-col { display: none; }
+}

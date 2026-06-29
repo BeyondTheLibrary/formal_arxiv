@@ -1,0 +1,3843 @@
+{
+  "paper_id": "AGeneralizedTrace",
+  "envs": [
+    {
+      "env_id": "AGeneralizedTrace:env:para:L144",
+      "kind": "paragraph",
+      "label": "para:L144",
+      "title": null,
+      "section": null,
+      "latex_file": "arXiv-2412.00674v1/deletion.tex",
+      "latex_range": {
+        "start_line": 144,
+        "end_line": 145,
+        "start_col": null,
+        "end_col": null
+      },
+      "page_range": {
+        "start_page": 1,
+        "end_page": 1
+      },
+      "head_text": "We introduce the following natural generalization of trace reconstruction parameterized",
+      "pdf_page": 1,
+      "links": [],
+      "not_formalized": false
+    },
+    {
+      "env_id": "AGeneralizedTrace:env:para:L151",
+      "kind": "paragraph",
+      "label": "para:L151",
+      "title": null,
+      "section": "Introduction",
+      "latex_file": "arXiv-2412.00674v1/deletion.tex",
+      "latex_range": {
+        "start_line": 151,
+        "end_line": 151,
+        "start_col": null,
+        "end_col": null
+      },
+      "page_range": {
+        "start_page": 1,
+        "end_page": 1
+      },
+      "head_text": "Trace reconstruction is the problem of recovering a length n",
+      "pdf_page": 1,
+      "links": [],
+      "not_formalized": false
+    },
+    {
+      "env_id": "AGeneralizedTrace:env:para:L153",
+      "kind": "paragraph",
+      "label": "para:L153",
+      "title": null,
+      "section": "Introduction",
+      "latex_file": "arXiv-2412.00674v1/deletion.tex",
+      "latex_range": {
+        "start_line": 153,
+        "end_line": 153,
+        "start_col": null,
+        "end_col": null
+      },
+      "page_range": {
+        "start_page": 1,
+        "end_page": 1
+      },
+      "head_text": "In this paper we introduce a natural generalization of the",
+      "pdf_page": 1,
+      "links": [],
+      "not_formalized": false
+    },
+    {
+      "env_id": "AGeneralizedTrace:env:definition:definition_at_L155",
+      "kind": "definition",
+      "label": "auto:definition:L155",
+      "title": "Generalized Trace Reconstruction",
+      "section": "Introduction",
+      "latex_file": "arXiv-2412.00674v1/deletion.tex",
+      "latex_range": {
+        "start_line": 155,
+        "end_line": 162,
+        "start_col": null,
+        "end_col": null
+      },
+      "page_range": {
+        "start_page": 1,
+        "end_page": 1
+      },
+      "head_text": "The generalized trace reconstruction problem is defined in terms of",
+      "pdf_page": 2,
+      "links": [],
+      "not_formalized": false
+    },
+    {
+      "env_id": "AGeneralizedTrace:env:para:L164",
+      "kind": "paragraph",
+      "label": "para:L164",
+      "title": null,
+      "section": "Introduction",
+      "latex_file": "arXiv-2412.00674v1/deletion.tex",
+      "latex_range": {
+        "start_line": 164,
+        "end_line": 164,
+        "start_col": null,
+        "end_col": null
+      },
+      "page_range": {
+        "start_page": 1,
+        "end_page": 1
+      },
+      "head_text": "Beyond the theoretical appeal of this generalized problem it also",
+      "pdf_page": 2,
+      "links": [],
+      "not_formalized": false
+    },
+    {
+      "env_id": "AGeneralizedTrace:env:para:L167",
+      "kind": "paragraph",
+      "label": "para:L167",
+      "title": null,
+      "section": "Introduction",
+      "latex_file": "arXiv-2412.00674v1/deletion.tex",
+      "latex_range": {
+        "start_line": 167,
+        "end_line": 167,
+        "start_col": null,
+        "end_col": null
+      },
+      "page_range": {
+        "start_page": 1,
+        "end_page": 1
+      },
+      "head_text": "Our first result shows that for worst case inputs every",
+      "pdf_page": 2,
+      "links": [],
+      "not_formalized": false
+    },
+    {
+      "env_id": "AGeneralizedTrace:env:thm:lower_bound",
+      "kind": "theorem",
+      "label": "thm:lower_bound",
+      "title": null,
+      "section": "Introduction",
+      "latex_file": "arXiv-2412.00674v1/deletion.tex",
+      "latex_range": {
+        "start_line": 169,
+        "end_line": 171,
+        "start_col": null,
+        "end_col": null
+      },
+      "page_range": {
+        "start_page": 1,
+        "end_page": 1
+      },
+      "head_text": "There exist a pair of length n sequences S p",
+      "pdf_page": 2,
+      "links": [],
+      "not_formalized": false
+    },
+    {
+      "env_id": "AGeneralizedTrace:env:para:L173",
+      "kind": "paragraph",
+      "label": "para:L173",
+      "title": null,
+      "section": "Introduction",
+      "latex_file": "arXiv-2412.00674v1/deletion.tex",
+      "latex_range": {
+        "start_line": 173,
+        "end_line": 173,
+        "start_col": null,
+        "end_col": null
+      },
+      "page_range": {
+        "start_page": 1,
+        "end_page": 1
+      },
+      "head_text": "Complementing this strong negative result we show that generalized trace",
+      "pdf_page": 2,
+      "links": [],
+      "not_formalized": false
+    },
+    {
+      "env_id": "AGeneralizedTrace:env:thm:upper_bound",
+      "kind": "theorem",
+      "label": "thm:upper_bound",
+      "title": null,
+      "section": "Introduction",
+      "latex_file": "arXiv-2412.00674v1/deletion.tex",
+      "latex_range": {
+        "start_line": 175,
+        "end_line": 178,
+        "start_col": null,
+        "end_col": null
+      },
+      "page_range": {
+        "start_page": 1,
+        "end_page": 1
+      },
+      "head_text": "Let S p 1 p n be chosen by drawing",
+      "pdf_page": 2,
+      "links": [],
+      "not_formalized": false
+    },
+    {
+      "env_id": "AGeneralizedTrace:env:para:L180",
+      "kind": "paragraph",
+      "label": "para:L180",
+      "title": null,
+      "section": "Introduction",
+      "latex_file": "arXiv-2412.00674v1/deletion.tex",
+      "latex_range": {
+        "start_line": 180,
+        "end_line": 180,
+        "start_col": null,
+        "end_col": null
+      },
+      "page_range": {
+        "start_page": 1,
+        "end_page": 1
+      },
+      "head_text": "While we make no effort to optimize the degree of",
+      "pdf_page": 2,
+      "links": [],
+      "not_formalized": false
+    },
+    {
+      "env_id": "AGeneralizedTrace:env:para:L183",
+      "kind": "paragraph",
+      "label": "para:L183",
+      "title": null,
+      "section": "Discussion",
+      "latex_file": "arXiv-2412.00674v1/deletion.tex",
+      "latex_range": {
+        "start_line": 183,
+        "end_line": 183,
+        "start_col": null,
+        "end_col": null
+      },
+      "page_range": {
+        "start_page": 1,
+        "end_page": 1
+      },
+      "head_text": "One of the core challenge in understanding the difficulty of",
+      "pdf_page": 2,
+      "links": [],
+      "not_formalized": false
+    },
+    {
+      "env_id": "AGeneralizedTrace:env:para:L185",
+      "kind": "paragraph",
+      "label": "para:L185",
+      "title": null,
+      "section": "Discussion",
+      "latex_file": "arXiv-2412.00674v1/deletion.tex",
+      "latex_range": {
+        "start_line": 185,
+        "end_line": 186,
+        "start_col": null,
+        "end_col": null
+      },
+      "page_range": {
+        "start_page": 1,
+        "end_page": 1
+      },
+      "head_text": "Previous super polynomial lower bounds for trace reconstruction and related",
+      "pdf_page": 3,
+      "links": [],
+      "not_formalized": false
+    },
+    {
+      "env_id": "AGeneralizedTrace:env:para:L188",
+      "kind": "paragraph",
+      "label": "para:L188",
+      "title": null,
+      "section": "Discussion",
+      "latex_file": "arXiv-2412.00674v1/deletion.tex",
+      "latex_range": {
+        "start_line": 188,
+        "end_line": 188,
+        "start_col": null,
+        "end_col": null
+      },
+      "page_range": {
+        "start_page": 1,
+        "end_page": 1
+      },
+      "head_text": "Our positive results in the randomized setting also may hint",
+      "pdf_page": 3,
+      "links": [],
+      "not_formalized": false
+    },
+    {
+      "env_id": "AGeneralizedTrace:env:para:L196",
+      "kind": "paragraph",
+      "label": "para:L196",
+      "title": null,
+      "section": "Related Works",
+      "latex_file": "arXiv-2412.00674v1/deletion.tex",
+      "latex_range": {
+        "start_line": 196,
+        "end_line": 196,
+        "start_col": null,
+        "end_col": null
+      },
+      "page_range": {
+        "start_page": 1,
+        "end_page": 1
+      },
+      "head_text": "The problem of trace reconstruction was introduced in 2004 Batu2004reconstructing",
+      "pdf_page": 3,
+      "links": [],
+      "not_formalized": false
+    },
+    {
+      "env_id": "AGeneralizedTrace:env:para:L198",
+      "kind": "paragraph",
+      "label": "para:L198",
+      "title": null,
+      "section": "Related Works",
+      "latex_file": "arXiv-2412.00674v1/deletion.tex",
+      "latex_range": {
+        "start_line": 198,
+        "end_line": 199,
+        "start_col": null,
+        "end_col": null
+      },
+      "page_range": {
+        "start_page": 1,
+        "end_page": 1
+      },
+      "head_text": "On the side of upper bounds for constant deletion probability",
+      "pdf_page": 3,
+      "links": [],
+      "not_formalized": false
+    },
+    {
+      "env_id": "AGeneralizedTrace:env:para:L201",
+      "kind": "paragraph",
+      "label": "para:L201",
+      "title": null,
+      "section": "Related Works",
+      "latex_file": "arXiv-2412.00674v1/deletion.tex",
+      "latex_range": {
+        "start_line": 201,
+        "end_line": 202,
+        "start_col": null,
+        "end_col": null
+      },
+      "page_range": {
+        "start_page": 1,
+        "end_page": 1
+      },
+      "head_text": "Motivated by the extreme gap between the upper and lower",
+      "pdf_page": 3,
+      "links": [],
+      "not_formalized": false
+    },
+    {
+      "env_id": "AGeneralizedTrace:env:para:L204",
+      "kind": "paragraph",
+      "label": "para:L204",
+      "title": null,
+      "section": "Related Works",
+      "latex_file": "arXiv-2412.00674v1/deletion.tex",
+      "latex_range": {
+        "start_line": 204,
+        "end_line": 205,
+        "start_col": null,
+        "end_col": null
+      },
+      "page_range": {
+        "start_page": 1,
+        "end_page": 1
+      },
+      "head_text": "Beyond the worst case setting trace reconstruction has also been",
+      "pdf_page": 3,
+      "links": [],
+      "not_formalized": false
+    },
+    {
+      "env_id": "AGeneralizedTrace:env:para:L207",
+      "kind": "paragraph",
+      "label": "para:L207",
+      "title": null,
+      "section": "Related Works",
+      "latex_file": "arXiv-2412.00674v1/deletion.tex",
+      "latex_range": {
+        "start_line": 207,
+        "end_line": 207,
+        "start_col": null,
+        "end_col": null
+      },
+      "page_range": {
+        "start_page": 1,
+        "end_page": 1
+      },
+      "head_text": "There have also been significant recent efforts to explore natural",
+      "pdf_page": 4,
+      "links": [],
+      "not_formalized": false
+    },
+    {
+      "env_id": "AGeneralizedTrace:env:para:L209",
+      "kind": "paragraph",
+      "label": "para:L209",
+      "title": null,
+      "section": "Related Works",
+      "latex_file": "arXiv-2412.00674v1/deletion.tex",
+      "latex_range": {
+        "start_line": 209,
+        "end_line": 209,
+        "start_col": null,
+        "end_col": null
+      },
+      "page_range": {
+        "start_page": 1,
+        "end_page": 1
+      },
+      "head_text": "Most similar to our work is the FOCS 19 paper",
+      "pdf_page": 4,
+      "links": [],
+      "not_formalized": false
+    },
+    {
+      "env_id": "AGeneralizedTrace:env:para:L217",
+      "kind": "paragraph",
+      "label": "para:L217",
+      "title": null,
+      "section": "Lower Bound",
+      "latex_file": "arXiv-2412.00674v1/deletion.tex",
+      "latex_range": {
+        "start_line": 217,
+        "end_line": 232,
+        "start_col": null,
+        "end_col": null
+      },
+      "page_range": {
+        "start_page": 1,
+        "end_page": 1
+      },
+      "head_text": "Our lower bound constructs two length n 1 strings of",
+      "pdf_page": 4,
+      "links": [],
+      "not_formalized": false
+    },
+    {
+      "env_id": "AGeneralizedTrace:env:eq:L218",
+      "kind": "equation",
+      "label": "eq:L218",
+      "title": null,
+      "section": "Lower Bound",
+      "latex_file": "arXiv-2412.00674v1/deletion.tex",
+      "latex_range": {
+        "start_line": 218,
+        "end_line": 224,
+        "start_col": null,
+        "end_col": null
+      },
+      "page_range": {
+        "start_page": 1,
+        "end_page": 1
+      },
+      "head_text": "S e i bin n 1 2 i n i",
+      "pdf_page": 10,
+      "links": [],
+      "not_formalized": false
+    },
+    {
+      "env_id": "AGeneralizedTrace:env:eq:L225",
+      "kind": "equation",
+      "label": "eq:L225",
+      "title": null,
+      "section": "Lower Bound",
+      "latex_file": "arXiv-2412.00674v1/deletion.tex",
+      "latex_range": {
+        "start_line": 225,
+        "end_line": 231,
+        "start_col": null,
+        "end_col": null
+      },
+      "page_range": {
+        "start_page": 1,
+        "end_page": 1
+      },
+      "head_text": "S o i 0 if i is even bin n",
+      "pdf_page": 4,
+      "links": [],
+      "not_formalized": false
+    },
+    {
+      "env_id": "AGeneralizedTrace:env:eq:L234",
+      "kind": "equation",
+      "label": "eq:L234",
+      "title": null,
+      "section": "Lower Bound",
+      "latex_file": "arXiv-2412.00674v1/deletion.tex",
+      "latex_range": {
+        "start_line": 234,
+        "end_line": 234,
+        "start_col": null,
+        "end_col": null
+      },
+      "page_range": {
+        "start_page": 1,
+        "end_page": 1
+      },
+      "head_text": "Each term in the expression for the statistical distance between",
+      "pdf_page": 5,
+      "links": [],
+      "not_formalized": false
+    },
+    {
+      "env_id": "AGeneralizedTrace:env:para:L236",
+      "kind": "paragraph",
+      "label": "para:L236",
+      "title": null,
+      "section": "Lower Bound",
+      "latex_file": "arXiv-2412.00674v1/deletion.tex",
+      "latex_range": {
+        "start_line": 236,
+        "end_line": 236,
+        "start_col": null,
+        "end_col": null
+      },
+      "page_range": {
+        "start_page": 1,
+        "end_page": 1
+      },
+      "head_text": "Alternating sums of products of binomial coefficients can be expressed",
+      "pdf_page": 5,
+      "links": [],
+      "not_formalized": false
+    },
+    {
+      "env_id": "AGeneralizedTrace:env:para:L238",
+      "kind": "paragraph",
+      "label": "para:L238",
+      "title": null,
+      "section": "Lower Bound",
+      "latex_file": "arXiv-2412.00674v1/deletion.tex",
+      "latex_range": {
+        "start_line": 238,
+        "end_line": 238,
+        "start_col": null,
+        "end_col": null
+      },
+      "page_range": {
+        "start_page": 1,
+        "end_page": 1
+      },
+      "head_text": "Instead we view the alternating sum of a function r",
+      "pdf_page": 5,
+      "links": [],
+      "not_formalized": false
+    },
+    {
+      "env_id": "AGeneralizedTrace:env:para:L244",
+      "kind": "paragraph",
+      "label": "para:L244",
+      "title": null,
+      "section": "Algorithms and Analysis",
+      "latex_file": "arXiv-2412.00674v1/deletion.tex",
+      "latex_range": {
+        "start_line": 244,
+        "end_line": 244,
+        "start_col": null,
+        "end_col": null
+      },
+      "page_range": {
+        "start_page": 1,
+        "end_page": 1
+      },
+      "head_text": "Metaphorically the trace reconstruction problem can be seen as analogous",
+      "pdf_page": 5,
+      "links": [],
+      "not_formalized": false
+    },
+    {
+      "env_id": "AGeneralizedTrace:env:para:L246",
+      "kind": "paragraph",
+      "label": "para:L246",
+      "title": null,
+      "section": "Algorithms and Analysis",
+      "latex_file": "arXiv-2412.00674v1/deletion.tex",
+      "latex_range": {
+        "start_line": 246,
+        "end_line": 246,
+        "start_col": null,
+        "end_col": null
+      },
+      "page_range": {
+        "start_page": 1,
+        "end_page": 1
+      },
+      "head_text": "In the average case trace reconstruction setting prior approaches keep",
+      "pdf_page": 6,
+      "links": [],
+      "not_formalized": false
+    },
+    {
+      "env_id": "AGeneralizedTrace:env:para:L249",
+      "kind": "paragraph",
+      "label": "para:L249",
+      "title": null,
+      "section": "Algorithms and Analysis",
+      "latex_file": "arXiv-2412.00674v1/deletion.tex",
+      "latex_range": {
+        "start_line": 249,
+        "end_line": 249,
+        "start_col": null,
+        "end_col": null
+      },
+      "page_range": {
+        "start_page": 1,
+        "end_page": 1
+      },
+      "head_text": "We provide a high level summary of our approach here",
+      "pdf_page": 6,
+      "links": [],
+      "not_formalized": false
+    },
+    {
+      "env_id": "AGeneralizedTrace:env:para:L251",
+      "kind": "paragraph",
+      "label": "para:L251",
+      "title": null,
+      "section": "Algorithms and Analysis",
+      "latex_file": "arXiv-2412.00674v1/deletion.tex",
+      "latex_range": {
+        "start_line": 251,
+        "end_line": 251,
+        "start_col": null,
+        "end_col": null
+      },
+      "page_range": {
+        "start_page": 1,
+        "end_page": 1
+      },
+      "head_text": "We pick a chunk size w 10000 n We collect",
+      "pdf_page": 6,
+      "links": [],
+      "not_formalized": false
+    },
+    {
+      "env_id": "AGeneralizedTrace:env:para:L253",
+      "kind": "paragraph",
+      "label": "para:L253",
+      "title": null,
+      "section": "Algorithms and Analysis",
+      "latex_file": "arXiv-2412.00674v1/deletion.tex",
+      "latex_range": {
+        "start_line": 253,
+        "end_line": 253,
+        "start_col": null,
+        "end_col": null
+      },
+      "page_range": {
+        "start_page": 1,
+        "end_page": 1
+      },
+      "head_text": "Intuitively we wish to output strings M that contain no",
+      "pdf_page": 6,
+      "links": [],
+      "not_formalized": false
+    },
+    {
+      "env_id": "AGeneralizedTrace:env:para:L255",
+      "kind": "paragraph",
+      "label": "para:L255",
+      "title": null,
+      "section": "Algorithms and Analysis",
+      "latex_file": "arXiv-2412.00674v1/deletion.tex",
+      "latex_range": {
+        "start_line": 255,
+        "end_line": 255,
+        "start_col": null,
+        "end_col": null
+      },
+      "page_range": {
+        "start_page": 1,
+        "end_page": 1
+      },
+      "head_text": "As a brief overview of the analysis Even if two",
+      "pdf_page": 6,
+      "links": [],
+      "not_formalized": false
+    },
+    {
+      "env_id": "AGeneralizedTrace:env:para:L265",
+      "kind": "paragraph",
+      "label": "para:L265",
+      "title": null,
+      "section": "Hardness for Worst-Case Strings",
+      "latex_file": "arXiv-2412.00674v1/deletion.tex",
+      "latex_range": {
+        "start_line": 265,
+        "end_line": 265,
+        "start_col": null,
+        "end_col": null
+      },
+      "page_range": {
+        "start_page": 1,
+        "end_page": 1
+      },
+      "head_text": "The lower bound proof centers around an argument bounding an",
+      "pdf_page": 6,
+      "links": [],
+      "not_formalized": false
+    },
+    {
+      "env_id": "AGeneralizedTrace:env:def:construction",
+      "kind": "definition",
+      "label": "def:construction",
+      "title": null,
+      "section": "Hardness for Worst-Case Strings",
+      "latex_file": "arXiv-2412.00674v1/deletion.tex",
+      "latex_range": {
+        "start_line": 267,
+        "end_line": 269,
+        "start_col": null,
+        "end_col": null
+      },
+      "page_range": {
+        "start_page": 1,
+        "end_page": 1
+      },
+      "head_text": "Define two sequences of n 1 probabilities S e and",
+      "pdf_page": 7,
+      "links": [],
+      "not_formalized": false
+    },
+    {
+      "env_id": "AGeneralizedTrace:env:para:L271",
+      "kind": "paragraph",
+      "label": "para:L271",
+      "title": null,
+      "section": "Hardness for Worst-Case Strings",
+      "latex_file": "arXiv-2412.00674v1/deletion.tex",
+      "latex_range": {
+        "start_line": 271,
+        "end_line": 272,
+        "start_col": null,
+        "end_col": null
+      },
+      "page_range": {
+        "start_page": 1,
+        "end_page": 1
+      },
+      "head_text": "For the sake of symmetry we consider n odd so",
+      "pdf_page": 7,
+      "links": [],
+      "not_formalized": false
+    },
+    {
+      "env_id": "AGeneralizedTrace:env:thm:lower-detail",
+      "kind": "theorem",
+      "label": "thm:lower-detail",
+      "title": null,
+      "section": "Hardness for Worst-Case Strings",
+      "latex_file": "arXiv-2412.00674v1/deletion.tex",
+      "latex_range": {
+        "start_line": 274,
+        "end_line": 276,
+        "start_col": null,
+        "end_col": null
+      },
+      "page_range": {
+        "start_page": 1,
+        "end_page": 1
+      },
+      "head_text": "There are constants c c such that for any deletion",
+      "pdf_page": 7,
+      "links": [],
+      "not_formalized": false
+    },
+    {
+      "env_id": "AGeneralizedTrace:env:para:L275",
+      "kind": "paragraph",
+      "label": "para:L275",
+      "title": null,
+      "section": "Hardness for Worst-Case Strings",
+      "latex_file": "arXiv-2412.00674v1/deletion.tex",
+      "latex_range": {
+        "start_line": 275,
+        "end_line": 277,
+        "start_col": null,
+        "end_col": null
+      },
+      "page_range": {
+        "start_page": 1,
+        "end_page": 1
+      },
+      "head_text": "There are constants c c such that for any deletion",
+      "pdf_page": 7,
+      "links": [],
+      "not_formalized": false
+    },
+    {
+      "env_id": "AGeneralizedTrace:env:para:L279",
+      "kind": "paragraph",
+      "label": "para:L279",
+      "title": null,
+      "section": "Hardness for Worst-Case Strings",
+      "latex_file": "arXiv-2412.00674v1/deletion.tex",
+      "latex_range": {
+        "start_line": 279,
+        "end_line": 279,
+        "start_col": null,
+        "end_col": null
+      },
+      "page_range": {
+        "start_page": 1,
+        "end_page": 1
+      },
+      "head_text": "As described in Section sec lower techniques to prove the",
+      "pdf_page": 7,
+      "links": [],
+      "not_formalized": false
+    },
+    {
+      "env_id": "AGeneralizedTrace:env:lem:r-func",
+      "kind": "lemma",
+      "label": "lem:r-func",
+      "title": null,
+      "section": "Hardness for Worst-Case Strings",
+      "latex_file": "arXiv-2412.00674v1/deletion.tex",
+      "latex_range": {
+        "start_line": 281,
+        "end_line": 285,
+        "start_col": null,
+        "end_col": null
+      },
+      "page_range": {
+        "start_page": 1,
+        "end_page": 1
+      },
+      "head_text": "For deletion probability the statistical distance between a trace from",
+      "pdf_page": 7,
+      "links": [],
+      "not_formalized": false
+    },
+    {
+      "env_id": "AGeneralizedTrace:env:para:L282",
+      "kind": "paragraph",
+      "label": "para:L282",
+      "title": null,
+      "section": "Hardness for Worst-Case Strings",
+      "latex_file": "arXiv-2412.00674v1/deletion.tex",
+      "latex_range": {
+        "start_line": 282,
+        "end_line": 287,
+        "start_col": null,
+        "end_col": null
+      },
+      "page_range": {
+        "start_page": 1,
+        "end_page": 1
+      },
+      "head_text": "For deletion probability the statistical distance between a trace from",
+      "pdf_page": 7,
+      "links": [],
+      "not_formalized": false
+    },
+    {
+      "env_id": "AGeneralizedTrace:env:eq:r-func-lemma",
+      "kind": "equation",
+      "label": "eq:r-func-lemma",
+      "title": null,
+      "section": "Hardness for Worst-Case Strings",
+      "latex_file": "arXiv-2412.00674v1/deletion.tex",
+      "latex_range": {
+        "start_line": 283,
+        "end_line": 283,
+        "start_col": null,
+        "end_col": null
+      },
+      "page_range": {
+        "start_page": 1,
+        "end_page": 1
+      },
+      "head_text": "r 1 r bin n 1 2 r 1 2",
+      "pdf_page": 10,
+      "links": [],
+      "not_formalized": false
+    },
+    {
+      "env_id": "AGeneralizedTrace:env:proof:proof_at_L286",
+      "kind": "proof",
+      "label": "auto:proof:L286",
+      "title": null,
+      "section": "Hardness for Worst-Case Strings",
+      "latex_file": "arXiv-2412.00674v1/deletion.tex",
+      "latex_range": {
+        "start_line": 286,
+        "end_line": 305,
+        "start_col": null,
+        "end_col": null
+      },
+      "page_range": {
+        "start_page": 1,
+        "end_page": 1
+      },
+      "head_text": "An upper bound on the statistical distance is given by",
+      "pdf_page": 7,
+      "links": [],
+      "not_formalized": false
+    },
+    {
+      "env_id": "AGeneralizedTrace:env:para:L289",
+      "kind": "paragraph",
+      "label": "para:L289",
+      "title": null,
+      "section": "Hardness for Worst-Case Strings",
+      "latex_file": "arXiv-2412.00674v1/deletion.tex",
+      "latex_range": {
+        "start_line": 289,
+        "end_line": 289,
+        "start_col": null,
+        "end_col": null
+      },
+      "page_range": {
+        "start_page": 1,
+        "end_page": 1
+      },
+      "head_text": "The reason this process gives an upper bound on the",
+      "pdf_page": 7,
+      "links": [],
+      "not_formalized": false
+    },
+    {
+      "env_id": "AGeneralizedTrace:env:para:L291",
+      "kind": "paragraph",
+      "label": "para:L291",
+      "title": null,
+      "section": "Hardness for Worst-Case Strings",
+      "latex_file": "arXiv-2412.00674v1/deletion.tex",
+      "latex_range": {
+        "start_line": 291,
+        "end_line": 291,
+        "start_col": null,
+        "end_col": null
+      },
+      "page_range": {
+        "start_page": 1,
+        "end_page": 1
+      },
+      "head_text": "We thus analyze the statistical distance between S e and",
+      "pdf_page": 8,
+      "links": [],
+      "not_formalized": false
+    },
+    {
+      "env_id": "AGeneralizedTrace:env:para:L293",
+      "kind": "paragraph",
+      "label": "para:L293",
+      "title": null,
+      "section": "Hardness for Worst-Case Strings",
+      "latex_file": "arXiv-2412.00674v1/deletion.tex",
+      "latex_range": {
+        "start_line": 293,
+        "end_line": 293,
+        "start_col": null,
+        "end_col": null
+      },
+      "page_range": {
+        "start_page": 1,
+        "end_page": 1
+      },
+      "head_text": "We immediately observe that r will be within 1 8",
+      "pdf_page": 8,
+      "links": [],
+      "not_formalized": false
+    },
+    {
+      "env_id": "AGeneralizedTrace:env:para:L295",
+      "kind": "paragraph",
+      "label": "para:L295",
+      "title": null,
+      "section": "Hardness for Worst-Case Strings",
+      "latex_file": "arXiv-2412.00674v1/deletion.tex",
+      "latex_range": {
+        "start_line": 295,
+        "end_line": 295,
+        "start_col": null,
+        "end_col": null
+      },
+      "page_range": {
+        "start_page": 1,
+        "end_page": 1
+      },
+      "head_text": "Thus we consider the equivalent to within distance e n",
+      "pdf_page": 8,
+      "links": [],
+      "not_formalized": false
+    },
+    {
+      "env_id": "AGeneralizedTrace:env:para:L297",
+      "kind": "paragraph",
+      "label": "para:L297",
+      "title": null,
+      "section": "Hardness for Worst-Case Strings",
+      "latex_file": "arXiv-2412.00674v1/deletion.tex",
+      "latex_range": {
+        "start_line": 297,
+        "end_line": 297,
+        "start_col": null,
+        "end_col": null
+      },
+      "page_range": {
+        "start_page": 1,
+        "end_page": 1
+      },
+      "head_text": "Let y be the length 1 2 n string returned",
+      "pdf_page": 8,
+      "links": [],
+      "not_formalized": false
+    },
+    {
+      "env_id": "AGeneralizedTrace:env:para:L299",
+      "kind": "paragraph",
+      "label": "para:L299",
+      "title": null,
+      "section": "Hardness for Worst-Case Strings",
+      "latex_file": "arXiv-2412.00674v1/deletion.tex",
+      "latex_range": {
+        "start_line": 299,
+        "end_line": 300,
+        "start_col": null,
+        "end_col": null
+      },
+      "page_range": {
+        "start_page": 1,
+        "end_page": 1
+      },
+      "head_text": "Since bit j in y has location r 1 4",
+      "pdf_page": 8,
+      "links": [],
+      "not_formalized": false
+    },
+    {
+      "env_id": "AGeneralizedTrace:env:eq:L300",
+      "kind": "equation",
+      "label": "eq:L300",
+      "title": null,
+      "section": "Hardness for Worst-Case Strings",
+      "latex_file": "arXiv-2412.00674v1/deletion.tex",
+      "latex_range": {
+        "start_line": 300,
+        "end_line": 300,
+        "start_col": null,
+        "end_col": null
+      },
+      "page_range": {
+        "start_page": 1,
+        "end_page": 1
+      },
+      "head_text": "bin n 1 2 r 1 2 n bin 1",
+      "pdf_page": 10,
+      "links": [],
+      "not_formalized": false
+    },
+    {
+      "env_id": "AGeneralizedTrace:env:para:L302",
+      "kind": "paragraph",
+      "label": "para:L302",
+      "title": null,
+      "section": "Hardness for Worst-Case Strings",
+      "latex_file": "arXiv-2412.00674v1/deletion.tex",
+      "latex_range": {
+        "start_line": 302,
+        "end_line": 302,
+        "start_col": null,
+        "end_col": null
+      },
+      "page_range": {
+        "start_page": 1,
+        "end_page": 1
+      },
+      "head_text": "We observe that for odd n the final term j",
+      "pdf_page": 8,
+      "links": [],
+      "not_formalized": false
+    },
+    {
+      "env_id": "AGeneralizedTrace:env:para:L304",
+      "kind": "paragraph",
+      "label": "para:L304",
+      "title": null,
+      "section": "Hardness for Worst-Case Strings",
+      "latex_file": "arXiv-2412.00674v1/deletion.tex",
+      "latex_range": {
+        "start_line": 304,
+        "end_line": 305,
+        "start_col": null,
+        "end_col": null
+      },
+      "page_range": {
+        "start_page": 1,
+        "end_page": 1
+      },
+      "head_text": "Thus the difference between probabilities of observing z z 1",
+      "pdf_page": 8,
+      "links": [],
+      "not_formalized": false
+    },
+    {
+      "env_id": "AGeneralizedTrace:env:para:L307",
+      "kind": "paragraph",
+      "label": "para:L307",
+      "title": null,
+      "section": "Hardness for Worst-Case Strings",
+      "latex_file": "arXiv-2412.00674v1/deletion.tex",
+      "latex_range": {
+        "start_line": 307,
+        "end_line": 307,
+        "start_col": null,
+        "end_col": null
+      },
+      "page_range": {
+        "start_page": 1,
+        "end_page": 1
+      },
+      "head_text": "Our overall strategy to bound the terms of Equation eq",
+      "pdf_page": 8,
+      "links": [],
+      "not_formalized": false
+    },
+    {
+      "env_id": "AGeneralizedTrace:env:para:L309",
+      "kind": "paragraph",
+      "label": "para:L309",
+      "title": null,
+      "section": "Hardness for Worst-Case Strings",
+      "latex_file": "arXiv-2412.00674v1/deletion.tex",
+      "latex_range": {
+        "start_line": 309,
+        "end_line": 309,
+        "start_col": null,
+        "end_col": null
+      },
+      "page_range": {
+        "start_page": 1,
+        "end_page": 1
+      },
+      "head_text": "We summarize the main steps in the proof of Lemma",
+      "pdf_page": 8,
+      "links": [],
+      "not_formalized": false
+    },
+    {
+      "env_id": "AGeneralizedTrace:env:lem:fourier-bound",
+      "kind": "lemma",
+      "label": "lem:fourier-bound",
+      "title": null,
+      "section": "Hardness for Worst-Case Strings",
+      "latex_file": "arXiv-2412.00674v1/deletion.tex",
+      "latex_range": {
+        "start_line": 312,
+        "end_line": 317,
+        "start_col": null,
+        "end_col": null
+      },
+      "page_range": {
+        "start_page": 1,
+        "end_page": 1
+      },
+      "head_text": "Given k distinct locations 1 k 1 n 2 define",
+      "pdf_page": 9,
+      "links": [],
+      "not_formalized": false
+    },
+    {
+      "env_id": "AGeneralizedTrace:env:eq:r-func-eq",
+      "kind": "equation",
+      "label": "eq:r-func-eq",
+      "title": null,
+      "section": "Hardness for Worst-Case Strings",
+      "latex_file": "arXiv-2412.00674v1/deletion.tex",
+      "latex_range": {
+        "start_line": 314,
+        "end_line": 314,
+        "start_col": null,
+        "end_col": null
+      },
+      "page_range": {
+        "start_page": 1,
+        "end_page": 1
+      },
+      "head_text": "f r e i r j 1 k bin n",
+      "pdf_page": null,
+      "links": [],
+      "not_formalized": false
+    },
+    {
+      "env_id": "AGeneralizedTrace:env:eq:power-series",
+      "kind": "proof",
+      "label": "eq:power-series",
+      "title": null,
+      "section": "Hardness for Worst-Case Strings",
+      "latex_file": "arXiv-2412.00674v1/deletion.tex",
+      "latex_range": {
+        "start_line": 319,
+        "end_line": 360,
+        "start_col": null,
+        "end_col": null
+      },
+      "page_range": {
+        "start_page": 1,
+        "end_page": 1
+      },
+      "head_text": "f r e i r j 1 k b 1",
+      "pdf_page": null,
+      "links": [],
+      "not_formalized": false
+    },
+    {
+      "env_id": "AGeneralizedTrace:env:para:L320",
+      "kind": "paragraph",
+      "label": "para:L320",
+      "title": null,
+      "section": "Hardness for Worst-Case Strings",
+      "latex_file": "arXiv-2412.00674v1/deletion.tex",
+      "latex_range": {
+        "start_line": 320,
+        "end_line": 320,
+        "start_col": null,
+        "end_col": null
+      },
+      "page_range": {
+        "start_page": 1,
+        "end_page": 1
+      },
+      "head_text": "We first point out that we can simplify the fraction",
+      "pdf_page": 9,
+      "links": [],
+      "not_formalized": false
+    },
+    {
+      "env_id": "AGeneralizedTrace:env:eq:power-series",
+      "kind": "equation",
+      "label": "eq:power-series@L322",
+      "title": null,
+      "section": "Hardness for Worst-Case Strings",
+      "latex_file": "arXiv-2412.00674v1/deletion.tex",
+      "latex_range": {
+        "start_line": 322,
+        "end_line": 322,
+        "start_col": null,
+        "end_col": null
+      },
+      "page_range": {
+        "start_page": 1,
+        "end_page": 1
+      },
+      "head_text": "f r e i r j 1 k b 1",
+      "pdf_page": null,
+      "links": [],
+      "not_formalized": false
+    },
+    {
+      "env_id": "AGeneralizedTrace:env:eq:first-convolution",
+      "kind": "equation",
+      "label": "eq:first-convolution",
+      "title": null,
+      "section": "Hardness for Worst-Case Strings",
+      "latex_file": "arXiv-2412.00674v1/deletion.tex",
+      "latex_range": {
+        "start_line": 324,
+        "end_line": 324,
+        "start_col": null,
+        "end_col": null
+      },
+      "page_range": {
+        "start_page": 1,
+        "end_page": 1
+      },
+      "head_text": "We use F to denote the Fourier transform always over",
+      "pdf_page": 9,
+      "links": [],
+      "not_formalized": false
+    },
+    {
+      "env_id": "AGeneralizedTrace:env:eq:h",
+      "kind": "equation",
+      "label": "eq:h",
+      "title": null,
+      "section": "Hardness for Worst-Case Strings",
+      "latex_file": "arXiv-2412.00674v1/deletion.tex",
+      "latex_range": {
+        "start_line": 328,
+        "end_line": 328,
+        "start_col": null,
+        "end_col": null
+      },
+      "page_range": {
+        "start_page": 1,
+        "end_page": 1
+      },
+      "head_text": "We introduce a modified version of f denoted h that",
+      "pdf_page": 9,
+      "links": [],
+      "not_formalized": false
+    },
+    {
+      "env_id": "AGeneralizedTrace:env:eq:L331",
+      "kind": "equation",
+      "label": "eq:L331",
+      "title": null,
+      "section": "Hardness for Worst-Case Strings",
+      "latex_file": "arXiv-2412.00674v1/deletion.tex",
+      "latex_range": {
+        "start_line": 331,
+        "end_line": 331,
+        "start_col": null,
+        "end_col": null
+      },
+      "page_range": {
+        "start_page": 1,
+        "end_page": 1
+      },
+      "head_text": "We first show that h is an unwrapped version of",
+      "pdf_page": 10,
+      "links": [],
+      "not_formalized": false
+    },
+    {
+      "env_id": "AGeneralizedTrace:env:para:L334",
+      "kind": "paragraph",
+      "label": "para:L334",
+      "title": null,
+      "section": "Hardness for Worst-Case Strings",
+      "latex_file": "arXiv-2412.00674v1/deletion.tex",
+      "latex_range": {
+        "start_line": 334,
+        "end_line": 334,
+        "start_col": null,
+        "end_col": null
+      },
+      "page_range": {
+        "start_page": 1,
+        "end_page": 1
+      },
+      "head_text": "Before bounding the moment generating function of h we point",
+      "pdf_page": 10,
+      "links": [],
+      "not_formalized": false
+    },
+    {
+      "env_id": "AGeneralizedTrace:env:eq:mgf-binomial",
+      "kind": "equation",
+      "label": "eq:mgf-binomial",
+      "title": null,
+      "section": "Hardness for Worst-Case Strings",
+      "latex_file": "arXiv-2412.00674v1/deletion.tex",
+      "latex_range": {
+        "start_line": 337,
+        "end_line": 337,
+        "start_col": null,
+        "end_col": null
+      },
+      "page_range": {
+        "start_page": 1,
+        "end_page": 1
+      },
+      "head_text": "The moment generating function of F bin n 1 2",
+      "pdf_page": 10,
+      "links": [],
+      "not_formalized": false
+    },
+    {
+      "env_id": "AGeneralizedTrace:env:eq:g-bound",
+      "kind": "equation",
+      "label": "eq:g-bound",
+      "title": null,
+      "section": "Hardness for Worst-Case Strings",
+      "latex_file": "arXiv-2412.00674v1/deletion.tex",
+      "latex_range": {
+        "start_line": 339,
+        "end_line": 339,
+        "start_col": null,
+        "end_col": null
+      },
+      "page_range": {
+        "start_page": 1,
+        "end_page": 1
+      },
+      "head_text": "We bound this product using the fact that 1 x",
+      "pdf_page": 10,
+      "links": [],
+      "not_formalized": false
+    },
+    {
+      "env_id": "AGeneralizedTrace:env:para:L343",
+      "kind": "paragraph",
+      "label": "para:L343",
+      "title": null,
+      "section": "Hardness for Worst-Case Strings",
+      "latex_file": "arXiv-2412.00674v1/deletion.tex",
+      "latex_range": {
+        "start_line": 343,
+        "end_line": 343,
+        "start_col": null,
+        "end_col": null
+      },
+      "page_range": {
+        "start_page": 1,
+        "end_page": 1
+      },
+      "head_text": "Further F bin n 1 2 r n 2 b",
+      "pdf_page": 10,
+      "links": [],
+      "not_formalized": false
+    },
+    {
+      "env_id": "AGeneralizedTrace:env:para:L345",
+      "kind": "paragraph",
+      "label": "para:L345",
+      "title": null,
+      "section": "Hardness for Worst-Case Strings",
+      "latex_file": "arXiv-2412.00674v1/deletion.tex",
+      "latex_range": {
+        "start_line": 345,
+        "end_line": 345,
+        "start_col": null,
+        "end_col": null
+      },
+      "page_range": {
+        "start_page": 1,
+        "end_page": 1
+      },
+      "head_text": "Thus the moment generating function of b 1 F bin",
+      "pdf_page": 10,
+      "links": [],
+      "not_formalized": false
+    },
+    {
+      "env_id": "AGeneralizedTrace:env:para:L347",
+      "kind": "paragraph",
+      "label": "para:L347",
+      "title": null,
+      "section": "Hardness for Worst-Case Strings",
+      "latex_file": "arXiv-2412.00674v1/deletion.tex",
+      "latex_range": {
+        "start_line": 347,
+        "end_line": 349,
+        "start_col": null,
+        "end_col": null
+      },
+      "page_range": {
+        "start_page": 1,
+        "end_page": 1
+      },
+      "head_text": "Thus using our above bound on g t we have",
+      "pdf_page": 10,
+      "links": [],
+      "not_formalized": false
+    },
+    {
+      "env_id": "AGeneralizedTrace:env:eq:full-mgf",
+      "kind": "equation",
+      "label": "eq:full-mgf",
+      "title": null,
+      "section": "Hardness for Worst-Case Strings",
+      "latex_file": "arXiv-2412.00674v1/deletion.tex",
+      "latex_range": {
+        "start_line": 348,
+        "end_line": 348,
+        "start_col": null,
+        "end_col": null
+      },
+      "page_range": {
+        "start_page": 1,
+        "end_page": 1
+      },
+      "head_text": "mgf t h 1 1 g t 1 k 1",
+      "pdf_page": 10,
+      "links": [],
+      "not_formalized": false
+    },
+    {
+      "env_id": "AGeneralizedTrace:env:para:L351",
+      "kind": "paragraph",
+      "label": "para:L351",
+      "title": null,
+      "section": "Hardness for Worst-Case Strings",
+      "latex_file": "arXiv-2412.00674v1/deletion.tex",
+      "latex_range": {
+        "start_line": 351,
+        "end_line": 351,
+        "start_col": null,
+        "end_col": null
+      },
+      "page_range": {
+        "start_page": 1,
+        "end_page": 1
+      },
+      "head_text": "Given this bound on the moment generating function of the",
+      "pdf_page": 10,
+      "links": [],
+      "not_formalized": false
+    },
+    {
+      "env_id": "AGeneralizedTrace:env:eq:mgf-bound",
+      "kind": "equation",
+      "label": "eq:mgf-bound",
+      "title": null,
+      "section": "Hardness for Worst-Case Strings",
+      "latex_file": "arXiv-2412.00674v1/deletion.tex",
+      "latex_range": {
+        "start_line": 353,
+        "end_line": 353,
+        "start_col": null,
+        "end_col": null
+      },
+      "page_range": {
+        "start_page": 1,
+        "end_page": 1
+      },
+      "head_text": "Explicitly this moment generating function bound states that h e",
+      "pdf_page": 11,
+      "links": [],
+      "not_formalized": false
+    },
+    {
+      "env_id": "AGeneralizedTrace:env:para:L355",
+      "kind": "paragraph",
+      "label": "para:L355",
+      "title": null,
+      "section": "Hardness for Worst-Case Strings",
+      "latex_file": "arXiv-2412.00674v1/deletion.tex",
+      "latex_range": {
+        "start_line": 355,
+        "end_line": 355,
+        "start_col": null,
+        "end_col": null
+      },
+      "page_range": {
+        "start_page": 1,
+        "end_page": 1
+      },
+      "head_text": "For 1 the coefficient e n is at least e",
+      "pdf_page": 11,
+      "links": [],
+      "not_formalized": false
+    },
+    {
+      "env_id": "AGeneralizedTrace:env:para:L357",
+      "kind": "paragraph",
+      "label": "para:L357",
+      "title": null,
+      "section": "Hardness for Worst-Case Strings",
+      "latex_file": "arXiv-2412.00674v1/deletion.tex",
+      "latex_range": {
+        "start_line": 357,
+        "end_line": 357,
+        "start_col": null,
+        "end_col": null
+      },
+      "page_range": {
+        "start_page": 1,
+        "end_page": 1
+      },
+      "head_text": "We observe that h is monotonically decreasing away from 0",
+      "pdf_page": 11,
+      "links": [],
+      "not_formalized": false
+    },
+    {
+      "env_id": "AGeneralizedTrace:env:para:L359",
+      "kind": "paragraph",
+      "label": "para:L359",
+      "title": null,
+      "section": "Hardness for Worst-Case Strings",
+      "latex_file": "arXiv-2412.00674v1/deletion.tex",
+      "latex_range": {
+        "start_line": 359,
+        "end_line": 360,
+        "start_col": null,
+        "end_col": null
+      },
+      "page_range": {
+        "start_page": 1,
+        "end_page": 1
+      },
+      "head_text": "The fact that h is monotonically decreasing away from 0",
+      "pdf_page": 11,
+      "links": [],
+      "not_formalized": false
+    },
+    {
+      "env_id": "AGeneralizedTrace:env:para:L362",
+      "kind": "paragraph",
+      "label": "para:L362",
+      "title": null,
+      "section": "Hardness for Worst-Case Strings",
+      "latex_file": "arXiv-2412.00674v1/deletion.tex",
+      "latex_range": {
+        "start_line": 362,
+        "end_line": 362,
+        "start_col": null,
+        "end_col": null
+      },
+      "page_range": {
+        "start_page": 1,
+        "end_page": 1
+      },
+      "head_text": "Having bounded the Fourier transform of the complicated k way",
+      "pdf_page": 11,
+      "links": [],
+      "not_formalized": false
+    },
+    {
+      "env_id": "AGeneralizedTrace:env:lem:r-func-bound",
+      "kind": "lemma",
+      "label": "lem:r-func-bound",
+      "title": null,
+      "section": "Hardness for Worst-Case Strings",
+      "latex_file": "arXiv-2412.00674v1/deletion.tex",
+      "latex_range": {
+        "start_line": 364,
+        "end_line": 366,
+        "start_col": null,
+        "end_col": null
+      },
+      "page_range": {
+        "start_page": 1,
+        "end_page": 1
+      },
+      "head_text": "If n 4 e 2 2 then Equation eq r",
+      "pdf_page": null,
+      "links": [],
+      "not_formalized": false
+    },
+    {
+      "env_id": "AGeneralizedTrace:env:eq:L365",
+      "kind": "equation",
+      "label": "eq:L365",
+      "title": null,
+      "section": "Hardness for Worst-Case Strings",
+      "latex_file": "arXiv-2412.00674v1/deletion.tex",
+      "latex_range": {
+        "start_line": 365,
+        "end_line": 365,
+        "start_col": null,
+        "end_col": null
+      },
+      "page_range": {
+        "start_page": 1,
+        "end_page": 1
+      },
+      "head_text": "If n 4 e 2 2 then Equation eq r",
+      "pdf_page": null,
+      "links": [],
+      "not_formalized": false
+    },
+    {
+      "env_id": "AGeneralizedTrace:env:proof:proof_at_L368",
+      "kind": "proof",
+      "label": "auto:proof:L368",
+      "title": null,
+      "section": "Hardness for Worst-Case Strings",
+      "latex_file": "arXiv-2412.00674v1/deletion.tex",
+      "latex_range": {
+        "start_line": 368,
+        "end_line": 382,
+        "start_col": null,
+        "end_col": null
+      },
+      "page_range": {
+        "start_page": 1,
+        "end_page": 1
+      },
+      "head_text": "We compute the magnitude of the Fourier transform with respect",
+      "pdf_page": 11,
+      "links": [],
+      "not_formalized": false
+    },
+    {
+      "env_id": "AGeneralizedTrace:env:eq:L369",
+      "kind": "equation",
+      "label": "eq:L369",
+      "title": null,
+      "section": "Hardness for Worst-Case Strings",
+      "latex_file": "arXiv-2412.00674v1/deletion.tex",
+      "latex_range": {
+        "start_line": 369,
+        "end_line": 369,
+        "start_col": null,
+        "end_col": null
+      },
+      "page_range": {
+        "start_page": 1,
+        "end_page": 1
+      },
+      "head_text": "We compute the magnitude of the Fourier transform with respect",
+      "pdf_page": 11,
+      "links": [],
+      "not_formalized": false
+    },
+    {
+      "env_id": "AGeneralizedTrace:env:para:L371",
+      "kind": "paragraph",
+      "label": "para:L371",
+      "title": null,
+      "section": "Hardness for Worst-Case Strings",
+      "latex_file": "arXiv-2412.00674v1/deletion.tex",
+      "latex_range": {
+        "start_line": 371,
+        "end_line": 371,
+        "start_col": null,
+        "end_col": null
+      },
+      "page_range": {
+        "start_page": 1,
+        "end_page": 1
+      },
+      "head_text": "The magnitude of this is clearly maximized when 0 in",
+      "pdf_page": 11,
+      "links": [],
+      "not_formalized": false
+    },
+    {
+      "env_id": "AGeneralizedTrace:env:para:L375",
+      "kind": "paragraph",
+      "label": "para:L375",
+      "title": null,
+      "section": "Hardness for Worst-Case Strings",
+      "latex_file": "arXiv-2412.00674v1/deletion.tex",
+      "latex_range": {
+        "start_line": 375,
+        "end_line": 375,
+        "start_col": null,
+        "end_col": null
+      },
+      "page_range": {
+        "start_page": 1,
+        "end_page": 1
+      },
+      "head_text": "And for the first binomial bin n 2 1 2",
+      "pdf_page": 11,
+      "links": [],
+      "not_formalized": false
+    },
+    {
+      "env_id": "AGeneralizedTrace:env:para:L377",
+      "kind": "paragraph",
+      "label": "para:L377",
+      "title": null,
+      "section": "Hardness for Worst-Case Strings",
+      "latex_file": "arXiv-2412.00674v1/deletion.tex",
+      "latex_range": {
+        "start_line": 377,
+        "end_line": 377,
+        "start_col": null,
+        "end_col": null
+      },
+      "page_range": {
+        "start_page": 1,
+        "end_page": 1
+      },
+      "head_text": "Thus the Fourier transform of the product of the three",
+      "pdf_page": 11,
+      "links": [],
+      "not_formalized": false
+    },
+    {
+      "env_id": "AGeneralizedTrace:env:para:L379",
+      "kind": "paragraph",
+      "label": "para:L379",
+      "title": null,
+      "section": "Hardness for Worst-Case Strings",
+      "latex_file": "arXiv-2412.00674v1/deletion.tex",
+      "latex_range": {
+        "start_line": 379,
+        "end_line": 379,
+        "start_col": null,
+        "end_col": null
+      },
+      "page_range": {
+        "start_page": 1,
+        "end_page": 1
+      },
+      "head_text": "We point out that in the k way product of",
+      "pdf_page": 12,
+      "links": [],
+      "not_formalized": false
+    },
+    {
+      "env_id": "AGeneralizedTrace:env:para:L381",
+      "kind": "paragraph",
+      "label": "para:L381",
+      "title": null,
+      "section": "Hardness for Worst-Case Strings",
+      "latex_file": "arXiv-2412.00674v1/deletion.tex",
+      "latex_range": {
+        "start_line": 381,
+        "end_line": 382,
+        "start_col": null,
+        "end_col": null
+      },
+      "page_range": {
+        "start_page": 1,
+        "end_page": 1
+      },
+      "head_text": "We combine this with the above bounds on the Fourier",
+      "pdf_page": 12,
+      "links": [],
+      "not_formalized": false
+    },
+    {
+      "env_id": "AGeneralizedTrace:env:para:L384",
+      "kind": "paragraph",
+      "label": "para:L384",
+      "title": null,
+      "section": "Hardness for Worst-Case Strings",
+      "latex_file": "arXiv-2412.00674v1/deletion.tex",
+      "latex_range": {
+        "start_line": 384,
+        "end_line": 384,
+        "start_col": null,
+        "end_col": null
+      },
+      "page_range": {
+        "start_page": 1,
+        "end_page": 1
+      },
+      "head_text": "Before we prove the theorem we first show how to",
+      "pdf_page": 12,
+      "links": [],
+      "not_formalized": false
+    },
+    {
+      "env_id": "AGeneralizedTrace:env:fact:sqrt",
+      "kind": "other",
+      "label": "fact:sqrt",
+      "title": null,
+      "section": "Hardness for Worst-Case Strings",
+      "latex_file": "arXiv-2412.00674v1/deletion.tex",
+      "latex_range": {
+        "start_line": 386,
+        "end_line": 388,
+        "start_col": null,
+        "end_col": null
+      },
+      "page_range": {
+        "start_page": 1,
+        "end_page": 1
+      },
+      "head_text": "We may bound the sum of the square roots of",
+      "pdf_page": 12,
+      "links": [],
+      "not_formalized": false
+    },
+    {
+      "env_id": "AGeneralizedTrace:env:eq:L387",
+      "kind": "equation",
+      "label": "eq:L387",
+      "title": null,
+      "section": "Hardness for Worst-Case Strings",
+      "latex_file": "arXiv-2412.00674v1/deletion.tex",
+      "latex_range": {
+        "start_line": 387,
+        "end_line": 387,
+        "start_col": null,
+        "end_col": null
+      },
+      "page_range": {
+        "start_page": 1,
+        "end_page": 1
+      },
+      "head_text": "We may bound the sum of the square roots of",
+      "pdf_page": 12,
+      "links": [],
+      "not_formalized": false
+    },
+    {
+      "env_id": "AGeneralizedTrace:env:lem:sqrt",
+      "kind": "lemma",
+      "label": "lem:sqrt",
+      "title": null,
+      "section": "Hardness for Worst-Case Strings",
+      "latex_file": "arXiv-2412.00674v1/deletion.tex",
+      "latex_range": {
+        "start_line": 390,
+        "end_line": 392,
+        "start_col": null,
+        "end_col": null
+      },
+      "page_range": {
+        "start_page": 1,
+        "end_page": 1
+      },
+      "head_text": "The distribution on n 1 bit strings induced by S",
+      "pdf_page": 12,
+      "links": [],
+      "not_formalized": false
+    },
+    {
+      "env_id": "AGeneralizedTrace:env:para:L391",
+      "kind": "paragraph",
+      "label": "para:L391",
+      "title": null,
+      "section": "Hardness for Worst-Case Strings",
+      "latex_file": "arXiv-2412.00674v1/deletion.tex",
+      "latex_range": {
+        "start_line": 391,
+        "end_line": 396,
+        "start_col": null,
+        "end_col": null
+      },
+      "page_range": {
+        "start_page": 1,
+        "end_page": 1
+      },
+      "head_text": "The distribution on n 1 bit strings induced by S",
+      "pdf_page": 12,
+      "links": [],
+      "not_formalized": false
+    },
+    {
+      "env_id": "AGeneralizedTrace:env:proof:proof_at_L393",
+      "kind": "proof",
+      "label": "auto:proof:L393",
+      "title": null,
+      "section": "Hardness for Worst-Case Strings",
+      "latex_file": "arXiv-2412.00674v1/deletion.tex",
+      "latex_range": {
+        "start_line": 393,
+        "end_line": 396,
+        "start_col": null,
+        "end_col": null
+      },
+      "page_range": {
+        "start_page": 1,
+        "end_page": 1
+      },
+      "head_text": "Recall that for even i the i th entry of",
+      "pdf_page": 12,
+      "links": [],
+      "not_formalized": false
+    },
+    {
+      "env_id": "AGeneralizedTrace:env:eq:L394",
+      "kind": "equation",
+      "label": "eq:L394",
+      "title": null,
+      "section": "Hardness for Worst-Case Strings",
+      "latex_file": "arXiv-2412.00674v1/deletion.tex",
+      "latex_range": {
+        "start_line": 394,
+        "end_line": 394,
+        "start_col": null,
+        "end_col": null
+      },
+      "page_range": {
+        "start_page": 1,
+        "end_page": 1
+      },
+      "head_text": "Recall that for even i the i th entry of",
+      "pdf_page": 12,
+      "links": [],
+      "not_formalized": false
+    },
+    {
+      "env_id": "AGeneralizedTrace:env:eq:L395",
+      "kind": "equation",
+      "label": "eq:L395",
+      "title": null,
+      "section": "Hardness for Worst-Case Strings",
+      "latex_file": "arXiv-2412.00674v1/deletion.tex",
+      "latex_range": {
+        "start_line": 395,
+        "end_line": 395,
+        "start_col": null,
+        "end_col": null
+      },
+      "page_range": {
+        "start_page": 1,
+        "end_page": 1
+      },
+      "head_text": "Thus since each element i of the given distribution is",
+      "pdf_page": 12,
+      "links": [],
+      "not_formalized": false
+    },
+    {
+      "env_id": "AGeneralizedTrace:env:lem:rare",
+      "kind": "lemma",
+      "label": "lem:rare",
+      "title": null,
+      "section": "Hardness for Worst-Case Strings",
+      "latex_file": "arXiv-2412.00674v1/deletion.tex",
+      "latex_range": {
+        "start_line": 398,
+        "end_line": 400,
+        "start_col": null,
+        "end_col": null
+      },
+      "page_range": {
+        "start_page": 1,
+        "end_page": 1
+      },
+      "head_text": "For the distribution on n 1 bit strings induced by",
+      "pdf_page": 12,
+      "links": [],
+      "not_formalized": false
+    },
+    {
+      "env_id": "AGeneralizedTrace:env:para:L399",
+      "kind": "paragraph",
+      "label": "para:L399",
+      "title": null,
+      "section": "Hardness for Worst-Case Strings",
+      "latex_file": "arXiv-2412.00674v1/deletion.tex",
+      "latex_range": {
+        "start_line": 399,
+        "end_line": 405,
+        "start_col": null,
+        "end_col": null
+      },
+      "page_range": {
+        "start_page": 1,
+        "end_page": 1
+      },
+      "head_text": "For the distribution on n 1 bit strings induced by",
+      "pdf_page": 12,
+      "links": [],
+      "not_formalized": false
+    },
+    {
+      "env_id": "AGeneralizedTrace:env:proof:proof_at_L401",
+      "kind": "proof",
+      "label": "auto:proof:L401",
+      "title": null,
+      "section": "Hardness for Worst-Case Strings",
+      "latex_file": "arXiv-2412.00674v1/deletion.tex",
+      "latex_range": {
+        "start_line": 401,
+        "end_line": 405,
+        "start_col": null,
+        "end_col": null
+      },
+      "page_range": {
+        "start_page": 1,
+        "end_page": 1
+      },
+      "head_text": "Letting p denote the probability distribution under discussion and let",
+      "pdf_page": 12,
+      "links": [],
+      "not_formalized": false
+    },
+    {
+      "env_id": "AGeneralizedTrace:env:eq:L403",
+      "kind": "equation",
+      "label": "eq:L403",
+      "title": null,
+      "section": "Hardness for Worst-Case Strings",
+      "latex_file": "arXiv-2412.00674v1/deletion.tex",
+      "latex_range": {
+        "start_line": 403,
+        "end_line": 403,
+        "start_col": null,
+        "end_col": null
+      },
+      "page_range": {
+        "start_page": 1,
+        "end_page": 1
+      },
+      "head_text": "j p j e n 2 p j j p",
+      "pdf_page": 12,
+      "links": [],
+      "not_formalized": false
+    },
+    {
+      "env_id": "AGeneralizedTrace:env:para:L409",
+      "kind": "paragraph",
+      "label": "para:L409",
+      "title": null,
+      "section": "Hardness for Worst-Case Strings",
+      "latex_file": "arXiv-2412.00674v1/deletion.tex",
+      "latex_range": {
+        "start_line": 409,
+        "end_line": 409,
+        "start_col": null,
+        "end_col": null
+      },
+      "page_range": {
+        "start_page": 1,
+        "end_page": 1
+      },
+      "head_text": "We now assemble the pieces to complete the proof of",
+      "pdf_page": 13,
+      "links": [],
+      "not_formalized": false
+    },
+    {
+      "env_id": "AGeneralizedTrace:env:proof:proof_at_L411",
+      "kind": "proof",
+      "label": "auto:proof:L411",
+      "title": "Proof of Theorem~\\ref{thm:lower-detail}",
+      "section": "Hardness for Worst-Case Strings",
+      "latex_file": "arXiv-2412.00674v1/deletion.tex",
+      "latex_range": {
+        "start_line": 411,
+        "end_line": 421,
+        "start_col": null,
+        "end_col": null
+      },
+      "page_range": {
+        "start_page": 1,
+        "end_page": 1
+      },
+      "head_text": "We prove the theorem for deletion probability 1 2 a",
+      "pdf_page": 13,
+      "links": [],
+      "not_formalized": false
+    },
+    {
+      "env_id": "AGeneralizedTrace:env:para:L412",
+      "kind": "paragraph",
+      "label": "para:L412",
+      "title": null,
+      "section": "Hardness for Worst-Case Strings",
+      "latex_file": "arXiv-2412.00674v1/deletion.tex",
+      "latex_range": {
+        "start_line": 412,
+        "end_line": 412,
+        "start_col": null,
+        "end_col": null
+      },
+      "page_range": {
+        "start_page": 1,
+        "end_page": 1
+      },
+      "head_text": "We prove the theorem for deletion probability 1 2 a",
+      "pdf_page": 13,
+      "links": [],
+      "not_formalized": false
+    },
+    {
+      "env_id": "AGeneralizedTrace:env:para:L414",
+      "kind": "paragraph",
+      "label": "para:L414",
+      "title": null,
+      "section": "Hardness for Worst-Case Strings",
+      "latex_file": "arXiv-2412.00674v1/deletion.tex",
+      "latex_range": {
+        "start_line": 414,
+        "end_line": 414,
+        "start_col": null,
+        "end_col": null
+      },
+      "page_range": {
+        "start_page": 1,
+        "end_page": 1
+      },
+      "head_text": "We use Lemma lem r func s characterization of the",
+      "pdf_page": 13,
+      "links": [],
+      "not_formalized": false
+    },
+    {
+      "env_id": "AGeneralizedTrace:env:para:L416",
+      "kind": "paragraph",
+      "label": "para:L416",
+      "title": null,
+      "section": "Hardness for Worst-Case Strings",
+      "latex_file": "arXiv-2412.00674v1/deletion.tex",
+      "latex_range": {
+        "start_line": 416,
+        "end_line": 416,
+        "start_col": null,
+        "end_col": null
+      },
+      "page_range": {
+        "start_page": 1,
+        "end_page": 1
+      },
+      "head_text": "Before summing up the bounds of Lemma lem r func",
+      "pdf_page": 13,
+      "links": [],
+      "not_formalized": false
+    },
+    {
+      "env_id": "AGeneralizedTrace:env:para:L418",
+      "kind": "paragraph",
+      "label": "para:L418",
+      "title": null,
+      "section": "Hardness for Worst-Case Strings",
+      "latex_file": "arXiv-2412.00674v1/deletion.tex",
+      "latex_range": {
+        "start_line": 418,
+        "end_line": 418,
+        "start_col": null,
+        "end_col": null
+      },
+      "page_range": {
+        "start_page": 1,
+        "end_page": 1
+      },
+      "head_text": "The value r Bin n 2 1 2 n 4",
+      "pdf_page": 13,
+      "links": [],
+      "not_formalized": false
+    },
+    {
+      "env_id": "AGeneralizedTrace:env:para:L420",
+      "kind": "paragraph",
+      "label": "para:L420",
+      "title": null,
+      "section": "Hardness for Worst-Case Strings",
+      "latex_file": "arXiv-2412.00674v1/deletion.tex",
+      "latex_range": {
+        "start_line": 420,
+        "end_line": 421,
+        "start_col": null,
+        "end_col": null
+      },
+      "page_range": {
+        "start_page": 1,
+        "end_page": 1
+      },
+      "head_text": "We invoke Lemma lem rare to conclude that since n",
+      "pdf_page": 13,
+      "links": [],
+      "not_formalized": false
+    },
+    {
+      "env_id": "AGeneralizedTrace:env:para:L426",
+      "kind": "paragraph",
+      "label": "para:L426",
+      "title": null,
+      "section": "Efficient Reconstruction of Random Strings",
+      "latex_file": "arXiv-2412.00674v1/deletion.tex",
+      "latex_range": {
+        "start_line": 426,
+        "end_line": 427,
+        "start_col": null,
+        "end_col": null
+      },
+      "page_range": {
+        "start_page": 1,
+        "end_page": 1
+      },
+      "head_text": "1mm In this section we prove Theorem thm upper bound",
+      "pdf_page": 13,
+      "links": [],
+      "not_formalized": false
+    },
+    {
+      "env_id": "AGeneralizedTrace:env:para:L429",
+      "kind": "paragraph",
+      "label": "para:L429",
+      "title": null,
+      "section": "Efficient Reconstruction of Random Strings",
+      "latex_file": "arXiv-2412.00674v1/deletion.tex",
+      "latex_range": {
+        "start_line": 429,
+        "end_line": 429,
+        "start_col": null,
+        "end_col": null
+      },
+      "page_range": {
+        "start_page": 1,
+        "end_page": 1
+      },
+      "head_text": "Our algorithm is based on a scheme for identifying w",
+      "pdf_page": 13,
+      "links": [],
+      "not_formalized": false
+    },
+    {
+      "env_id": "AGeneralizedTrace:env:para:L431",
+      "kind": "paragraph",
+      "label": "para:L431",
+      "title": null,
+      "section": "Efficient Reconstruction of Random Strings",
+      "latex_file": "arXiv-2412.00674v1/deletion.tex",
+      "latex_range": {
+        "start_line": 431,
+        "end_line": 449,
+        "start_col": null,
+        "end_col": null
+      },
+      "page_range": {
+        "start_page": 1,
+        "end_page": 1
+      },
+      "head_text": "3cm Algorithm 1 Find Deletion Free Chunks Input Two sets",
+      "pdf_page": 14,
+      "links": [],
+      "not_formalized": false
+    },
+    {
+      "env_id": "AGeneralizedTrace:env:other:algorithm_at_L432",
+      "kind": "other",
+      "label": "auto:other:L432",
+      "title": "H",
+      "section": "Efficient Reconstruction of Random Strings",
+      "latex_file": "arXiv-2412.00674v1/deletion.tex",
+      "latex_range": {
+        "start_line": 432,
+        "end_line": 449,
+        "start_col": null,
+        "end_col": null
+      },
+      "page_range": {
+        "start_page": 1,
+        "end_page": 1
+      },
+      "head_text": "Find Deletion Free Chunks Input Two sets of traces X",
+      "pdf_page": 14,
+      "links": [],
+      "not_formalized": false
+    },
+    {
+      "env_id": "AGeneralizedTrace:env:other:algorithm_at_L451",
+      "kind": "other",
+      "label": "auto:other:L451",
+      "title": "H",
+      "section": "Efficient Reconstruction of Random Strings",
+      "latex_file": "arXiv-2412.00674v1/deletion.tex",
+      "latex_range": {
+        "start_line": 451,
+        "end_line": 460,
+        "start_col": null,
+        "end_col": null
+      },
+      "page_range": {
+        "start_page": 1,
+        "end_page": 1
+      },
+      "head_text": "Align and Average Deletion Free Chunks Input A list of",
+      "pdf_page": 14,
+      "links": [],
+      "not_formalized": false
+    },
+    {
+      "env_id": "AGeneralizedTrace:env:para:L452",
+      "kind": "paragraph",
+      "label": "para:L452",
+      "title": null,
+      "section": "Efficient Reconstruction of Random Strings",
+      "latex_file": "arXiv-2412.00674v1/deletion.tex",
+      "latex_range": {
+        "start_line": 452,
+        "end_line": 460,
+        "start_col": null,
+        "end_col": null
+      },
+      "page_range": {
+        "start_page": 1,
+        "end_page": 1
+      },
+      "head_text": "Align and Average Deletion Free Chunks Input A list of",
+      "pdf_page": 14,
+      "links": [],
+      "not_formalized": false
+    },
+    {
+      "env_id": "AGeneralizedTrace:env:para:L465",
+      "kind": "paragraph",
+      "label": "para:L465",
+      "title": null,
+      "section": "Efficient Reconstruction of Random Strings",
+      "latex_file": "arXiv-2412.00674v1/deletion.tex",
+      "latex_range": {
+        "start_line": 465,
+        "end_line": 465,
+        "start_col": null,
+        "end_col": null
+      },
+      "page_range": {
+        "start_page": 1,
+        "end_page": 1
+      },
+      "head_text": "We will now analyze these algorithms We will end up",
+      "pdf_page": 14,
+      "links": [],
+      "not_formalized": false
+    },
+    {
+      "env_id": "AGeneralizedTrace:env:para:L470",
+      "kind": "paragraph",
+      "label": "para:L470",
+      "title": null,
+      "section": "Efficient Reconstruction of Random Strings",
+      "latex_file": "arXiv-2412.00674v1/deletion.tex",
+      "latex_range": {
+        "start_line": 470,
+        "end_line": 470,
+        "start_col": null,
+        "end_col": null
+      },
+      "page_range": {
+        "start_page": 1,
+        "end_page": 1
+      },
+      "head_text": "We first argue that with high probability 1 for any",
+      "pdf_page": 15,
+      "links": [],
+      "not_formalized": false
+    },
+    {
+      "env_id": "AGeneralizedTrace:env:lem:hoeffding",
+      "kind": "lemma",
+      "label": "lem:hoeffding",
+      "title": null,
+      "section": "Efficient Reconstruction of Random Strings",
+      "latex_file": "arXiv-2412.00674v1/deletion.tex",
+      "latex_range": {
+        "start_line": 472,
+        "end_line": 474,
+        "start_col": null,
+        "end_col": null
+      },
+      "page_range": {
+        "start_page": 1,
+        "end_page": 1
+      },
+      "head_text": "For a randomly generated S p 1 p n and",
+      "pdf_page": 15,
+      "links": [],
+      "not_formalized": false
+    },
+    {
+      "env_id": "AGeneralizedTrace:env:para:L473",
+      "kind": "paragraph",
+      "label": "para:L473",
+      "title": null,
+      "section": "Efficient Reconstruction of Random Strings",
+      "latex_file": "arXiv-2412.00674v1/deletion.tex",
+      "latex_range": {
+        "start_line": 473,
+        "end_line": 477,
+        "start_col": null,
+        "end_col": null
+      },
+      "page_range": {
+        "start_page": 1,
+        "end_page": 1
+      },
+      "head_text": "For a randomly generated S p 1 p n and",
+      "pdf_page": 15,
+      "links": [],
+      "not_formalized": false
+    },
+    {
+      "env_id": "AGeneralizedTrace:env:proof:proof_at_L475",
+      "kind": "proof",
+      "label": "auto:proof:L475",
+      "title": null,
+      "section": "Efficient Reconstruction of Random Strings",
+      "latex_file": "arXiv-2412.00674v1/deletion.tex",
+      "latex_range": {
+        "start_line": 475,
+        "end_line": 482,
+        "start_col": null,
+        "end_col": null
+      },
+      "page_range": {
+        "start_page": 1,
+        "end_page": 1
+      },
+      "head_text": "We step through the terms x i t y j",
+      "pdf_page": 15,
+      "links": [],
+      "not_formalized": false
+    },
+    {
+      "env_id": "AGeneralizedTrace:env:para:L479",
+      "kind": "paragraph",
+      "label": "para:L479",
+      "title": null,
+      "section": "Efficient Reconstruction of Random Strings",
+      "latex_file": "arXiv-2412.00674v1/deletion.tex",
+      "latex_range": {
+        "start_line": 479,
+        "end_line": 479,
+        "start_col": null,
+        "end_col": null
+      },
+      "page_range": {
+        "start_page": 1,
+        "end_page": 1
+      },
+      "head_text": "In the case that the two bits x i t",
+      "pdf_page": 15,
+      "links": [],
+      "not_formalized": false
+    },
+    {
+      "env_id": "AGeneralizedTrace:env:para:L481",
+      "kind": "paragraph",
+      "label": "para:L481",
+      "title": null,
+      "section": "Efficient Reconstruction of Random Strings",
+      "latex_file": "arXiv-2412.00674v1/deletion.tex",
+      "latex_range": {
+        "start_line": 481,
+        "end_line": 482,
+        "start_col": null,
+        "end_col": null
+      },
+      "page_range": {
+        "start_page": 1,
+        "end_page": 1
+      },
+      "head_text": "Hence the quantity in question x i i w 1",
+      "pdf_page": 15,
+      "links": [],
+      "not_formalized": false
+    },
+    {
+      "env_id": "AGeneralizedTrace:env:para:L484",
+      "kind": "paragraph",
+      "label": "para:L484",
+      "title": null,
+      "section": "Efficient Reconstruction of Random Strings",
+      "latex_file": "arXiv-2412.00674v1/deletion.tex",
+      "latex_range": {
+        "start_line": 484,
+        "end_line": 490,
+        "start_col": null,
+        "end_col": null
+      },
+      "page_range": {
+        "start_page": 1,
+        "end_page": 1
+      },
+      "head_text": "We now take a union bound over the above lemma",
+      "pdf_page": 15,
+      "links": [],
+      "not_formalized": false
+    },
+    {
+      "env_id": "AGeneralizedTrace:env:lemma:match",
+      "kind": "lemma",
+      "label": "lemma:match",
+      "title": null,
+      "section": "Efficient Reconstruction of Random Strings",
+      "latex_file": "arXiv-2412.00674v1/deletion.tex",
+      "latex_range": {
+        "start_line": 485,
+        "end_line": 487,
+        "start_col": null,
+        "end_col": null
+      },
+      "page_range": {
+        "start_page": 1,
+        "end_page": 1
+      },
+      "head_text": "The following holds with probability at least 1 2 X",
+      "pdf_page": 15,
+      "links": [],
+      "not_formalized": false
+    },
+    {
+      "env_id": "AGeneralizedTrace:env:proof:proof_at_L488",
+      "kind": "proof",
+      "label": "auto:proof:L488",
+      "title": null,
+      "section": "Efficient Reconstruction of Random Strings",
+      "latex_file": "arXiv-2412.00674v1/deletion.tex",
+      "latex_range": {
+        "start_line": 488,
+        "end_line": 490,
+        "start_col": null,
+        "end_col": null
+      },
+      "page_range": {
+        "start_page": 1,
+        "end_page": 1
+      },
+      "head_text": "This is a union bound over the previous lemma with",
+      "pdf_page": 15,
+      "links": [],
+      "not_formalized": false
+    },
+    {
+      "env_id": "AGeneralizedTrace:env:para:L493",
+      "kind": "paragraph",
+      "label": "para:L493",
+      "title": null,
+      "section": "Efficient Reconstruction of Random Strings",
+      "latex_file": "arXiv-2412.00674v1/deletion.tex",
+      "latex_range": {
+        "start_line": 493,
+        "end_line": 493,
+        "start_col": null,
+        "end_col": null
+      },
+      "page_range": {
+        "start_page": 1,
+        "end_page": 1
+      },
+      "head_text": "Throughout the rest of the proof we will assume that",
+      "pdf_page": 16,
+      "links": [],
+      "not_formalized": false
+    },
+    {
+      "env_id": "AGeneralizedTrace:env:para:L495",
+      "kind": "paragraph",
+      "label": "para:L495",
+      "title": null,
+      "section": "Efficient Reconstruction of Random Strings",
+      "latex_file": "arXiv-2412.00674v1/deletion.tex",
+      "latex_range": {
+        "start_line": 495,
+        "end_line": 495,
+        "start_col": null,
+        "end_col": null
+      },
+      "page_range": {
+        "start_page": 1,
+        "end_page": 1
+      },
+      "head_text": "We now argue that with high probability the first algorithm",
+      "pdf_page": 16,
+      "links": [],
+      "not_formalized": false
+    },
+    {
+      "env_id": "AGeneralizedTrace:env:lemma:lem6",
+      "kind": "lemma",
+      "label": "lemma:lem6",
+      "title": null,
+      "section": "Efficient Reconstruction of Random Strings",
+      "latex_file": "arXiv-2412.00674v1/deletion.tex",
+      "latex_range": {
+        "start_line": 497,
+        "end_line": 499,
+        "start_col": null,
+        "end_col": null
+      },
+      "page_range": {
+        "start_page": 1,
+        "end_page": 1
+      },
+      "head_text": "With probability 1 m 0 9 for each index i",
+      "pdf_page": 16,
+      "links": [],
+      "not_formalized": false
+    },
+    {
+      "env_id": "AGeneralizedTrace:env:para:L498",
+      "kind": "paragraph",
+      "label": "para:L498",
+      "title": null,
+      "section": "Efficient Reconstruction of Random Strings",
+      "latex_file": "arXiv-2412.00674v1/deletion.tex",
+      "latex_range": {
+        "start_line": 498,
+        "end_line": 502,
+        "start_col": null,
+        "end_col": null
+      },
+      "page_range": {
+        "start_page": 1,
+        "end_page": 1
+      },
+      "head_text": "With probability 1 m 0 9 for each index i",
+      "pdf_page": 16,
+      "links": [],
+      "not_formalized": false
+    },
+    {
+      "env_id": "AGeneralizedTrace:env:proof:proof_at_L500",
+      "kind": "proof",
+      "label": "auto:proof:L500",
+      "title": null,
+      "section": "Efficient Reconstruction of Random Strings",
+      "latex_file": "arXiv-2412.00674v1/deletion.tex",
+      "latex_range": {
+        "start_line": 500,
+        "end_line": 502,
+        "start_col": null,
+        "end_col": null
+      },
+      "page_range": {
+        "start_page": 1,
+        "end_page": 1
+      },
+      "head_text": "The expected number of traces in X for which L",
+      "pdf_page": 16,
+      "links": [],
+      "not_formalized": false
+    },
+    {
+      "env_id": "AGeneralizedTrace:env:lemma:lem7",
+      "kind": "lemma",
+      "label": "lemma:lem7",
+      "title": null,
+      "section": "Efficient Reconstruction of Random Strings",
+      "latex_file": "arXiv-2412.00674v1/deletion.tex",
+      "latex_range": {
+        "start_line": 505,
+        "end_line": 507,
+        "start_col": null,
+        "end_col": null
+      },
+      "page_range": {
+        "start_page": 1,
+        "end_page": 1
+      },
+      "head_text": "Given an x X for which L x M x",
+      "pdf_page": 16,
+      "links": [],
+      "not_formalized": false
+    },
+    {
+      "env_id": "AGeneralizedTrace:env:para:L506",
+      "kind": "paragraph",
+      "label": "para:L506",
+      "title": null,
+      "section": "Efficient Reconstruction of Random Strings",
+      "latex_file": "arXiv-2412.00674v1/deletion.tex",
+      "latex_range": {
+        "start_line": 506,
+        "end_line": 510,
+        "start_col": null,
+        "end_col": null
+      },
+      "page_range": {
+        "start_page": 1,
+        "end_page": 1
+      },
+      "head_text": "Given an x X for which L x M x",
+      "pdf_page": 16,
+      "links": [],
+      "not_formalized": false
+    },
+    {
+      "env_id": "AGeneralizedTrace:env:proof:proof_at_L508",
+      "kind": "proof",
+      "label": "auto:proof:L508",
+      "title": null,
+      "section": "Efficient Reconstruction of Random Strings",
+      "latex_file": "arXiv-2412.00674v1/deletion.tex",
+      "latex_range": {
+        "start_line": 508,
+        "end_line": 513,
+        "start_col": null,
+        "end_col": null
+      },
+      "page_range": {
+        "start_page": 1,
+        "end_page": 1
+      },
+      "head_text": "First we will show that with high probability there will",
+      "pdf_page": 16,
+      "links": [],
+      "not_formalized": false
+    },
+    {
+      "env_id": "AGeneralizedTrace:env:para:L512",
+      "kind": "paragraph",
+      "label": "para:L512",
+      "title": null,
+      "section": "Efficient Reconstruction of Random Strings",
+      "latex_file": "arXiv-2412.00674v1/deletion.tex",
+      "latex_range": {
+        "start_line": 512,
+        "end_line": 513,
+        "start_col": null,
+        "end_col": null
+      },
+      "page_range": {
+        "start_page": 1,
+        "end_page": 1
+      },
+      "head_text": "Next we show that the second condition of the algorithm",
+      "pdf_page": 16,
+      "links": [],
+      "not_formalized": false
+    },
+    {
+      "env_id": "AGeneralizedTrace:env:para:L517",
+      "kind": "paragraph",
+      "label": "para:L517",
+      "title": null,
+      "section": "Efficient Reconstruction of Random Strings",
+      "latex_file": "arXiv-2412.00674v1/deletion.tex",
+      "latex_range": {
+        "start_line": 517,
+        "end_line": 517,
+        "start_col": null,
+        "end_col": null
+      },
+      "page_range": {
+        "start_page": 1,
+        "end_page": 1
+      },
+      "head_text": "Thus far we have proved that the first algorithm will",
+      "pdf_page": 16,
+      "links": [],
+      "not_formalized": false
+    },
+    {
+      "env_id": "AGeneralizedTrace:env:lem:8",
+      "kind": "lemma",
+      "label": "lem:8",
+      "title": null,
+      "section": "Efficient Reconstruction of Random Strings",
+      "latex_file": "arXiv-2412.00674v1/deletion.tex",
+      "latex_range": {
+        "start_line": 519,
+        "end_line": 522,
+        "start_col": null,
+        "end_col": null
+      },
+      "page_range": {
+        "start_page": 1,
+        "end_page": 1
+      },
+      "head_text": "With probability at least 1 O m 0 2 no",
+      "pdf_page": 16,
+      "links": [],
+      "not_formalized": false
+    },
+    {
+      "env_id": "AGeneralizedTrace:env:proof:proof_at_L523",
+      "kind": "proof",
+      "label": "auto:proof:L523",
+      "title": null,
+      "section": "Efficient Reconstruction of Random Strings",
+      "latex_file": "arXiv-2412.00674v1/deletion.tex",
+      "latex_range": {
+        "start_line": 523,
+        "end_line": 530,
+        "start_col": null,
+        "end_col": null
+      },
+      "page_range": {
+        "start_page": 1,
+        "end_page": 1
+      },
+      "head_text": "Given a number of deletions j d the probability that",
+      "pdf_page": 17,
+      "links": [],
+      "not_formalized": false
+    },
+    {
+      "env_id": "AGeneralizedTrace:env:eq:L524",
+      "kind": "equation",
+      "label": "eq:L524",
+      "title": null,
+      "section": "Efficient Reconstruction of Random Strings",
+      "latex_file": "arXiv-2412.00674v1/deletion.tex",
+      "latex_range": {
+        "start_line": 524,
+        "end_line": 524,
+        "start_col": null,
+        "end_col": null
+      },
+      "page_range": {
+        "start_page": 1,
+        "end_page": 1
+      },
+      "head_text": "Given a number of deletions j d the probability that",
+      "pdf_page": 17,
+      "links": [],
+      "not_formalized": false
+    },
+    {
+      "env_id": "AGeneralizedTrace:env:eq:L525",
+      "kind": "equation",
+      "label": "eq:L525",
+      "title": null,
+      "section": "Efficient Reconstruction of Random Strings",
+      "latex_file": "arXiv-2412.00674v1/deletion.tex",
+      "latex_range": {
+        "start_line": 525,
+        "end_line": 525,
+        "start_col": null,
+        "end_col": null
+      },
+      "page_range": {
+        "start_page": 1,
+        "end_page": 1
+      },
+      "head_text": "The ratio of consecutive terms of the sum is w",
+      "pdf_page": 17,
+      "links": [],
+      "not_formalized": false
+    },
+    {
+      "env_id": "AGeneralizedTrace:env:para:L527",
+      "kind": "paragraph",
+      "label": "para:L527",
+      "title": null,
+      "section": "Efficient Reconstruction of Random Strings",
+      "latex_file": "arXiv-2412.00674v1/deletion.tex",
+      "latex_range": {
+        "start_line": 527,
+        "end_line": 530,
+        "start_col": null,
+        "end_col": null
+      },
+      "page_range": {
+        "start_page": 1,
+        "end_page": 1
+      },
+      "head_text": "We simplify the w d d term via Stirling s",
+      "pdf_page": 17,
+      "links": [],
+      "not_formalized": false
+    },
+    {
+      "env_id": "AGeneralizedTrace:env:lemma:onlyDF",
+      "kind": "lemma",
+      "label": "lemma:onlyDF",
+      "title": null,
+      "section": "Efficient Reconstruction of Random Strings",
+      "latex_file": "arXiv-2412.00674v1/deletion.tex",
+      "latex_range": {
+        "start_line": 534,
+        "end_line": 536,
+        "start_col": null,
+        "end_col": null
+      },
+      "page_range": {
+        "start_page": 1,
+        "end_page": 1
+      },
+      "head_text": "With probability at least 1 O m 0 2 all",
+      "pdf_page": 17,
+      "links": [],
+      "not_formalized": false
+    },
+    {
+      "env_id": "AGeneralizedTrace:env:para:L535",
+      "kind": "paragraph",
+      "label": "para:L535",
+      "title": null,
+      "section": "Efficient Reconstruction of Random Strings",
+      "latex_file": "arXiv-2412.00674v1/deletion.tex",
+      "latex_range": {
+        "start_line": 535,
+        "end_line": 538,
+        "start_col": null,
+        "end_col": null
+      },
+      "page_range": {
+        "start_page": 1,
+        "end_page": 1
+      },
+      "head_text": "With probability at least 1 O m 0 2 all",
+      "pdf_page": 17,
+      "links": [],
+      "not_formalized": false
+    },
+    {
+      "env_id": "AGeneralizedTrace:env:proof:proof_at_L537",
+      "kind": "proof",
+      "label": "auto:proof:L537",
+      "title": null,
+      "section": "Efficient Reconstruction of Random Strings",
+      "latex_file": "arXiv-2412.00674v1/deletion.tex",
+      "latex_range": {
+        "start_line": 537,
+        "end_line": 544,
+        "start_col": null,
+        "end_col": null
+      },
+      "page_range": {
+        "start_page": 1,
+        "end_page": 1
+      },
+      "head_text": "By the previous lemma with at least the claimed probability",
+      "pdf_page": 17,
+      "links": [],
+      "not_formalized": false
+    },
+    {
+      "env_id": "AGeneralizedTrace:env:para:L540",
+      "kind": "paragraph",
+      "label": "para:L540",
+      "title": null,
+      "section": "Efficient Reconstruction of Random Strings",
+      "latex_file": "arXiv-2412.00674v1/deletion.tex",
+      "latex_range": {
+        "start_line": 540,
+        "end_line": 540,
+        "start_col": null,
+        "end_col": null
+      },
+      "page_range": {
+        "start_page": 1,
+        "end_page": 1
+      },
+      "head_text": "Consider a trace x where M x has at least",
+      "pdf_page": 17,
+      "links": [],
+      "not_formalized": false
+    },
+    {
+      "env_id": "AGeneralizedTrace:env:para:L542",
+      "kind": "paragraph",
+      "label": "para:L542",
+      "title": null,
+      "section": "Efficient Reconstruction of Random Strings",
+      "latex_file": "arXiv-2412.00674v1/deletion.tex",
+      "latex_range": {
+        "start_line": 542,
+        "end_line": 544,
+        "start_col": null,
+        "end_col": null
+      },
+      "page_range": {
+        "start_page": 1,
+        "end_page": 1
+      },
+      "head_text": "The probability that no such y Y occurs is 1",
+      "pdf_page": 17,
+      "links": [],
+      "not_formalized": false
+    },
+    {
+      "env_id": "AGeneralizedTrace:env:para:L547",
+      "kind": "paragraph",
+      "label": "para:L547",
+      "title": null,
+      "section": "Efficient Reconstruction of Random Strings",
+      "latex_file": "arXiv-2412.00674v1/deletion.tex",
+      "latex_range": {
+        "start_line": 547,
+        "end_line": 547,
+        "start_col": null,
+        "end_col": null
+      },
+      "page_range": {
+        "start_page": 1,
+        "end_page": 1
+      },
+      "head_text": "To complete our proof of Theorem thm upper bound we",
+      "pdf_page": 17,
+      "links": [],
+      "not_formalized": false
+    },
+    {
+      "env_id": "AGeneralizedTrace:env:para:L549",
+      "kind": "paragraph",
+      "label": "para:L549",
+      "title": null,
+      "section": "Efficient Reconstruction of Random Strings",
+      "latex_file": "arXiv-2412.00674v1/deletion.tex",
+      "latex_range": {
+        "start_line": 549,
+        "end_line": 549,
+        "start_col": null,
+        "end_col": null
+      },
+      "page_range": {
+        "start_page": 1,
+        "end_page": 1
+      },
+      "head_text": "The claim that Algorithm 2 successfully aligns these chunks with",
+      "pdf_page": 18,
+      "links": [],
+      "not_formalized": false
+    },
+    {
+      "env_id": "AGeneralizedTrace:env:para:L552",
+      "kind": "paragraph",
+      "label": "para:L552",
+      "title": null,
+      "section": "Acknowledgments",
+      "latex_file": "arXiv-2412.00674v1/deletion.tex",
+      "latex_range": {
+        "start_line": 552,
+        "end_line": 556,
+        "start_col": null,
+        "end_col": null
+      },
+      "page_range": {
+        "start_page": 1,
+        "end_page": 1
+      },
+      "head_text": "GV is supported by NSF Award AF 2341890 and a",
+      "pdf_page": 18,
+      "links": [],
+      "not_formalized": false
+    }
+  ],
+  "highlights": [
+    {
+      "link_id": "lnk_d4ea01cec3e4a17c",
+      "lean_fqn": "Workspace.MainTheorem.lower_bound_trace_reconstruction",
+      "lean_file": "lean_workspace/Workspace/MainTheorem.lean",
+      "lean_range": {
+        "start_line": 46,
+        "end_line": 145,
+        "start_col": null,
+        "end_col": null
+      },
+      "kind": "theorem",
+      "confidence": 0.97,
+      "source": "manual",
+      "verifier_vote": "none",
+      "rationale": "Paper Theorem 1 (thm:lower_bound), the main lower bound. The Lean statement bundles the absolute constants (c_inf, c_1, C_1, c_delta, c_tv, n_0) as LowerBoundConstants and, for every n >= n_0 (specialized to n % 8 = 1, the paper's odd-n construction with exact integer divisions), produces a LowerBoundWitness: a pair S, S' with constant L-infinity separation, [c_1 sqrt n, C_1 sqrt n] L1 separation, and TV(TraceDist S delta, TraceDist S' delta) <= exp(-c_tv sqrt n) for all delta >= c_delta/sqrt n. Exactly the four simultaneous conclusions of thm:lower_bound.",
+      "reachable": true,
+      "assumption_tainted": true,
+      "latex_file": "arXiv-2412.00674v1/deletion.tex",
+      "latex_range": {
+        "start_line": 170,
+        "end_line": 170,
+        "start_col": null,
+        "end_col": null
+      },
+      "pdf_page": 2,
+      "prose": "There exist a pair of length n sequences S=p_1, ,p_n and S'=p'_1, ,p'_n with constant _ distance and _1 distance ( n ) , and an absolute constant c such that for any deletion probability c n ---and in particular, for all constant deletion probabilities---the distribution of traces drawn from S versus S' have total variation distance e^ - ( n ) ."
+    },
+    {
+      "link_id": "lnk_a4e2b4af1f6bbca2",
+      "lean_fqn": "Workspace.PriorWork.AltRSumKwayFourierBridge.kwayFactor_fourier_tail_bound",
+      "lean_file": "lean_workspace/Workspace/PriorWork/AltRSumKwayFourierBridge.lean",
+      "lean_range": {
+        "start_line": 128,
+        "end_line": 172,
+        "start_col": null,
+        "end_col": null
+      },
+      "kind": "lemma",
+      "confidence": 0.85,
+      "source": "manual",
+      "verifier_vote": "none",
+      "rationale": "Paper Lemma lem:fourier-bound (eq:r-func-eq): the discrete Fourier transform f(\u03be) of the k-way product factor satisfies |f(\u03be)| \u2264 2\u00b7e^{-\u221an} for |\u03be|\u22652 and \u03b1 \u2264 \u221an/(4e\u00b2\u221a(2\u03c0)). The Lean statement bounds the modulus of the Fourier sum of \u220f\u1d62 ellFactor n \u03b1 r (\u2113 i) by 2\u00b7e^{-\u221an} on 2 \u2264 |\u03be| \u2264 \u03c0 under exactly those hypotheses (strictly increasing same-parity tuple of indices in {1,\u2026,(n-1)/2}). Confidence < 1 because the proof obtains it by invoking an internal k-way Fourier sublemma (the realization of the same lemma), and the index range uses (n-1)/2 (the n\u22611 mod 8 normalization of n/2).",
+      "reachable": true,
+      "assumption_tainted": true,
+      "latex_file": "arXiv-2412.00674v1/deletion.tex",
+      "latex_range": {
+        "start_line": 313,
+        "end_line": 316,
+        "start_col": null,
+        "end_col": null
+      },
+      "pdf_page": 9,
+      "prose": "Given k distinct locations _1, , _k \\ 1, , n 2 \\ , define the Fourier transform with respect to r , defined on angles [- , ] , of the product function from Equation~ , where we interpret the binomial pdf to be 0 if its third argument is out of range: f( ):= _r e^ i r _ j=1 ^k \\,bin(n, 1 2 ,r+ 1 4 n+ _j) 1- \\,bin(n, 1 2 ,r+ 1 4 n+ _j) We claim that, if | | 2 and n 4 e^2 2 , then |f( )| 2 e^ - n ."
+    },
+    {
+      "link_id": "lnk_602db5bcb859c681",
+      "lean_fqn": "Workspace.ProofLemmas.AltRSumFourierBoundProved.kwayFT_tail_le",
+      "lean_file": "lean_workspace/Workspace/ProofLemmas/AltRSumFourierBoundProved.lean",
+      "lean_range": {
+        "start_line": 324,
+        "end_line": 413,
+        "start_col": null,
+        "end_col": null
+      },
+      "kind": "lemma",
+      "confidence": 0.6,
+      "source": "manual",
+      "verifier_vote": "none",
+      "rationale": "The k-way-product Fourier transform tail bound for |\u03b6| \u2265 2: this realizes the conclusion of Lemma lem:fourier-bound (|f(\u03be)| \u2264 2\u00b7e^{-\u221an} for |\u03be| \u2265 2). Lower confidence as it is one (the tail) of two regime bounds for kwayFT.",
+      "reachable": true,
+      "assumption_tainted": true,
+      "latex_file": "arXiv-2412.00674v1/deletion.tex",
+      "latex_range": {
+        "start_line": 316,
+        "end_line": 316,
+        "start_col": null,
+        "end_col": null
+      },
+      "pdf_page": 9,
+      "prose": "We claim that, if | | 2 and n 4 e^2 2 , then |f( )| 2 e^ - n ."
+    },
+    {
+      "link_id": "lnk_79bcbeae453ace0c",
+      "lean_fqn": "Workspace.ProofLemmas.AltRSumFourierBoundProved.AltRSumFourierBoundProved",
+      "lean_file": "lean_workspace/Workspace/ProofLemmas/AltRSumFourierBoundProved.lean",
+      "lean_range": {
+        "start_line": 624,
+        "end_line": 655,
+        "start_col": null,
+        "end_col": null
+      },
+      "kind": "lemma",
+      "confidence": 0.7,
+      "source": "manual",
+      "verifier_vote": "none",
+      "rationale": "Proves the prior-work axiom AltRSumFourierBound, which is the overall Fourier-domain bound on Equation eq:r-func-lemma \u2014 i.e. Lemma lem:r-func-bound (bounding Eq r-func-lemma by the (n+1)(2\u03c0-2)(2\u03c0)\u00b2/(1-\u03b4)\u00b2\u00b7max{...}+e^{-\u221an} expression), built from the lem:fourier-bound k-way tail and the three-binomial bounds. Confidence moderate: the Lean constants/shape match lem:r-func-bound, but it is presented as an axiom de-axiomatization rather than a verbatim restatement.",
+      "reachable": true,
+      "assumption_tainted": true,
+      "latex_file": "arXiv-2412.00674v1/deletion.tex",
+      "latex_range": {
+        "start_line": 365,
+        "end_line": 365,
+        "start_col": null,
+        "end_col": null
+      },
+      "pdf_page": 11,
+      "prose": "If n 4 e^2 2 then Equation~ from Lemma~ is always at most \\[(n+1)(2 -2) (2 )^2 (1- )^2 \\ e^ - 20 z_- 1- , e^ - 20 z_+ 1- ,e^ - n 150 \\ +4 (2 )^2 (1- )^2 e^ - n .\\]"
+    },
+    {
+      "link_id": "lnk_f9d50349f6659cec",
+      "lean_fqn": "FactorFTSeries.factor_FT_series",
+      "lean_file": "lean_workspace/Workspace/ProofLemmas/FactorFTSeries.lean",
+      "lean_range": {
+        "start_line": 215,
+        "end_line": 250,
+        "start_col": null,
+        "end_col": null
+      },
+      "kind": "equation",
+      "confidence": 0.6,
+      "source": "manual",
+      "verifier_vote": "none",
+      "rationale": "Realizes Equation eq:power-series: the per-factor Fourier transform is rewritten via the geometric power series z/(1-z)=sum_b z^b. Fine-grained proof-step link (the FT-of-a-factor-as-series step in the proof of Lemma lem:fourier-bound), hence lower confidence.",
+      "reachable": true,
+      "assumption_tainted": false,
+      "latex_file": "arXiv-2412.00674v1/deletion.tex",
+      "latex_range": {
+        "start_line": 320,
+        "end_line": 320,
+        "start_col": null,
+        "end_col": null
+      },
+      "pdf_page": 9,
+      "prose": "We first point out that we can simplify the fraction \\,bin(n, 1 2 ,r+ 1 4 n+ _j) 1- \\,bin(n, 1 2 ,r+ 1 4 n+ _j) . If, for the moment, we let z= \\,bin(n, 1 2 ,r+ 1 4 n+ _j) , where z [0,1) , then z 1-z = 1 1-z -1= _ b=1 ^ z^b , which will let us remove fractions from the expression being Fourier transformed. As a minor technical issue, we will also replace 1 4 n with 0 as it is added to r in the binomial expression; this has the effect of shifting r by a constant in the function being Fourier transformed, which will not affect the magnitude of the resulting Fourier transform, only its phase. Thus"
+    },
+    {
+      "link_id": "lnk_04cd62ed0d4542d0",
+      "lean_fqn": "FactorFTSeries.factor_FT_circPow_series",
+      "lean_file": "lean_workspace/Workspace/ProofLemmas/FactorFTSeries.lean",
+      "lean_range": {
+        "start_line": 270,
+        "end_line": 282,
+        "start_col": null,
+        "end_col": null
+      },
+      "kind": "equation",
+      "confidence": 0.55,
+      "source": "manual",
+      "verifier_vote": "none",
+      "rationale": "Realizes Equation eq:first-convolution: rewrites the per-factor FT-of-a-power as a circular-convolution power (FT of product -> convolution of FTs). Fine-grained proof step in Lemma lem:fourier-bound; lower confidence.",
+      "reachable": true,
+      "assumption_tainted": false,
+      "latex_file": "arXiv-2412.00674v1/deletion.tex",
+      "latex_range": {
+        "start_line": 324,
+        "end_line": 324,
+        "start_col": null,
+        "end_col": null
+      },
+      "pdf_page": 9,
+      "prose": "We use F to denote the Fourier transform, always over the variable r , and where we use F _ to emphasize that the output of the Fourier transform will be expressed in terms of a (new) variable . Letting denote convolution modulo 2 (since the Fourier transform of a function supported on the integers is defined modulo 2 ), we have, since the Fourier transform of a product is the convolution of the Fourier transforms of each term: |f( )|= | 1.5 _ j=1 ^k F _ ( _ b=1 ^ ( \\,bin(n, 1 2 ,r+ _j))^b ) |"
+    },
+    {
+      "link_id": "lnk_bb776e9d7c9c2d64",
+      "lean_fqn": "KModEnvBound.kConv_modulus_le_kModEnv",
+      "lean_file": "lean_workspace/Workspace/ProofLemmas/KModEnvBound.lean",
+      "lean_range": {
+        "start_line": 100,
+        "end_line": 129,
+        "start_col": null,
+        "end_col": null
+      },
+      "kind": "equation",
+      "confidence": 0.5,
+      "source": "manual",
+      "verifier_vote": "none",
+      "rationale": "Realizes the 'unwrapping' step of the proof of Lemma lem:fourier-bound (Equation eq:h): the modulus of the k-fold circular convolution is bounded by the real-line envelope h. Fine-grained proof-step link, low confidence.",
+      "reachable": true,
+      "assumption_tainted": false,
+      "latex_file": "arXiv-2412.00674v1/deletion.tex",
+      "latex_range": {
+        "start_line": 331,
+        "end_line": 331,
+        "start_col": null,
+        "end_col": null
+      },
+      "pdf_page": 10,
+      "prose": "We first show that h is an ``unwrapped\" version of f , in that \\[|f( )| _ s=- ^ h( +2 s)\\] To show this, we observe that \\[|f( )| 1.5 _ j=1 ^k | F _ ( _ b=1 ^ ( \\,bin(n, 1 2 ,r+ _j))^b ) |= 1.5 _ j=1 ^k | F _ ( _ b=1 ^ ( \\,bin(n, 1 2 ,r))^b ) | 1.5 _ j=1 ^k _ b=1 ^ | F _ ( \\,bin(n, 1 2 ,r)^b) |\\]"
+    },
+    {
+      "link_id": "lnk_dafd44a48823a8d1",
+      "lean_fqn": "KwayLHSToKModEnv.T4_modulus_le_kModEnv",
+      "lean_file": "lean_workspace/Workspace/ProofLemmas/KwayLHSToKModEnv.lean",
+      "lean_range": {
+        "start_line": 53,
+        "end_line": 63,
+        "start_col": null,
+        "end_col": null
+      },
+      "kind": "equation",
+      "confidence": 0.5,
+      "source": "manual",
+      "verifier_vote": "none",
+      "rationale": "Realizes the step of the proof of Lemma lem:fourier-bound bounding the modulus of the k-way Fourier sum (T4) by the iterated modulus envelope kModEnv (the circular-convolution -> envelope passage, Equation eq:h). Fine-grained proof-step link, low confidence.",
+      "reachable": true,
+      "assumption_tainted": false,
+      "latex_file": "arXiv-2412.00674v1/deletion.tex",
+      "latex_range": {
+        "start_line": 332,
+        "end_line": 332,
+        "start_col": null,
+        "end_col": null
+      },
+      "pdf_page": 10,
+      "prose": "where this last expression is bounded by ( _ b=1 ^ | F _ ( \\,bin(n, 1 2 ,r)) |^ b )^ k . Replacing the circular convolution operator by (regular) convolution * yields exactly the expression for h of Equation~ , meaning that if we sum Equation~ over all ' that are equal to a given mod 2 , the resulting sum will bound |f( )| , as claimed."
+    },
+    {
+      "link_id": "lnk_1044e422e804118e",
+      "lean_fqn": "Workspace.ProofLemmas.LengthsDiffTsumSignedRSum.LengthsDiffTsumSignedRSum",
+      "lean_file": "lean_workspace/Workspace/ProofLemmas/LengthsDiffTsumSignedRSum.lean",
+      "lean_range": {
+        "start_line": 40,
+        "end_line": 104,
+        "start_col": null,
+        "end_col": null
+      },
+      "kind": "equation",
+      "confidence": 0.55,
+      "source": "manual",
+      "verifier_vote": "none",
+      "rationale": "Realizes the proof step of Lemma lem:r-func that identifies the S_e-vs-S_o length/outcome probability difference with the signed alternating sum over r of (-1)^r times the per-outcome probability (Equation eq:r-func-lemma). Fine-grained proof-step link, low confidence.",
+      "reachable": true,
+      "assumption_tainted": false,
+      "latex_file": "arXiv-2412.00674v1/deletion.tex",
+      "latex_range": {
+        "start_line": 304,
+        "end_line": 304,
+        "start_col": null,
+        "end_col": null
+      },
+      "pdf_page": 8,
+      "prose": "Thus, the difference between probabilities of observing z_-,z_+,\\ _1, , _k\\ under the S_e versus S_o cases is (up to sign, and up to the additive e^ - (n) term from earlier) exactly the alternating sum over r of (-1)^r times the above equation, as claimed in the lemma."
+    },
+    {
+      "link_id": "lnk_fccb4954311ceba6",
+      "lean_fqn": "LengthsDifferenceIsAlternatingSum",
+      "lean_file": "lean_workspace/Workspace/ProofLemmas/LengthsDifferenceIsAlternatingSum.lean",
+      "lean_range": {
+        "start_line": 51,
+        "end_line": 79,
+        "start_col": null,
+        "end_col": null
+      },
+      "kind": "lemma",
+      "confidence": 0.85,
+      "source": "manual",
+      "verifier_vote": "none",
+      "rationale": "Lemma~\\ref{lem:r-func} (paper Lemma 1): the difference of the length/middle process distributions equals the alternating r-sum over the eq:r-func-lemma expression, up to the O(1) factor and e^{-Omega(n)} additive slack. The Lean statement bounds TV_lengths by 4*altSum + exp(-n/512), the formalized form of this reduction (HANDOFF.md: LengthsDifferenceIsAlternatingSum).",
+      "reachable": true,
+      "assumption_tainted": false,
+      "latex_file": "arXiv-2412.00674v1/deletion.tex",
+      "latex_range": {
+        "start_line": 282,
+        "end_line": 284,
+        "start_col": null,
+        "end_col": null
+      },
+      "pdf_page": 7,
+      "prose": "For deletion probability , the statistical distance between a trace from S_e versus a trace from S_o is at most the sum over all k \\ 0, , n 2 \\ of the sum over all k -tuples of locations _1< _2< < _k in \\ 1, , n 2 \\ that have identical parity, of the sum over all z_-,z_+ \\ 0, , n 2 \\ of the following expression | _ r (-1)^r bin( n, 1 2 ,r+ 1 2 n) bin( 1 4 n+r,1- ,z_-) bin( 1 4 n-r,1- ,z_+) _ j=1 ^k \\,bin(n, 1 2 ,r+ 1 4 n+ _j) 1- \\,bin(n, 1 2 ,r+ 1 4 n+ _j) |, up to a O(1) multiplicative term and a e^ - (n) additive term."
+    },
+    {
+      "link_id": "lnk_69e7c2cf5093a067",
+      "lean_fqn": "MGFCalibrationAtSqrtN",
+      "lean_file": "lean_workspace/Workspace/ProofLemmas/MGFCalibrationAtSqrtN.lean",
+      "lean_range": {
+        "start_line": 8,
+        "end_line": 49,
+        "start_col": null,
+        "end_col": null
+      },
+      "kind": "equation",
+      "confidence": 0.5,
+      "source": "manual",
+      "verifier_vote": "none",
+      "rationale": "The numeric calibration alpha*sqrt(8pi/n)*e^2 = 1/2 with alpha = (1/(4 e^2 sqrt(2pi)))*sqrt n: this is exactly the t=+/-sqrt(n) substitution in the MGF bound (Eq g-bound / full-mgf) that makes mgf <= 1 in the proof of Lemma lem:fourier-bound. Fine-grained arithmetic-step link, low confidence; the paper does not state this as a numbered result.",
+      "reachable": true,
+      "assumption_tainted": false,
+      "latex_file": "arXiv-2412.00674v1/deletion.tex",
+      "latex_range": {
+        "start_line": 351,
+        "end_line": 351,
+        "start_col": null,
+        "end_col": null
+      },
+      "pdf_page": 10,
+      "prose": "Given this bound on the moment generating function of the Fourier transform h , we then plug in t= n which yields a moment generating function 1 in both cases, provided n 4 e^2 2 ."
+    },
+    {
+      "link_id": "lnk_384a7fe723ab0fe4",
+      "lean_fqn": "MGFOfHbBoundGaussian",
+      "lean_file": "lean_workspace/Workspace/ProofLemmas/MGFOfHbBoundGaussian.lean",
+      "lean_range": {
+        "start_line": 18,
+        "end_line": 185,
+        "start_col": null,
+        "end_col": null
+      },
+      "kind": "equation",
+      "confidence": 0.85,
+      "source": "manual",
+      "verifier_vote": "none",
+      "rationale": "Realizes Equation eq:g-bound in the proof of Lemma lem:fourier-bound: the MGF g(t)=integral over [-pi,pi] of cos(xi/2)^n e^{t xi} dxi is bounded by sqrt(8 pi / n) * e^{2 t^2 / n}. The Lean statement is exactly this bound for H_b(xi)=cos(xi/2)^n on [-pi,pi].",
+      "reachable": true,
+      "assumption_tainted": false,
+      "latex_file": "arXiv-2412.00674v1/deletion.tex",
+      "latex_range": {
+        "start_line": 339,
+        "end_line": 339,
+        "start_col": null,
+        "end_col": null
+      },
+      "pdf_page": 10,
+      "prose": "We bound this product, using the fact that 1+x e^x , and using the fact that we can bound the sums of inverse squares starting at n 2 +1 by the corresponding integral starting at n 2 , as _ j= n+1 2 ^ (1+ t^2 (j+ 1 2 )^2 ) e^ 2t^2 n . Since the remaining part of the expression is bounded as 2^ n+1 n n-1 2 n+1 2 8 n , we have g(t) e^ 2t^2 n 8 n"
+    },
+    {
+      "link_id": "lnk_a3c5c8be5e515da5",
+      "lean_fqn": "RareSupportShifted",
+      "lean_file": "lean_workspace/Workspace/ProofLemmas/RareSupportShifted.lean",
+      "lean_range": {
+        "start_line": 331,
+        "end_line": 511,
+        "start_col": null,
+        "end_col": null
+      },
+      "kind": "lemma",
+      "confidence": 0.8,
+      "source": "manual",
+      "verifier_vote": "none",
+      "rationale": "Lemma lem:rare specialized to the shifted middle-segment distribution widetildeMu_er: the total mass of low-probability realizations (those with product weight < e^{-sqrt n/2}) is exponentially small (<= e^{-sqrt n /16}). Matches the rare-support mass bound of lem:rare; confidence < 1 due to the shifted/specialized form and the exact exponent.",
+      "reachable": true,
+      "assumption_tainted": true,
+      "latex_file": "arXiv-2412.00674v1/deletion.tex",
+      "latex_range": {
+        "start_line": 398,
+        "end_line": 399,
+        "start_col": null,
+        "end_col": null
+      },
+      "pdf_page": 12,
+      "prose": "For the distribution on n+1 bit strings induced by S_e before any deletions have occurred, the number of realizations that have probabilities e^ - n /2 is at most e^ n /2 , and encompasses all but at most e^ (2 n)^ 1/4 - n /4 of the total probability mass. By symmetry, the same bound applies to S_o ."
+    },
+    {
+      "link_id": "lnk_54ea6293c38cc373",
+      "lean_fqn": "SublemmaFourierKway",
+      "lean_file": "lean_workspace/Workspace/ProofLemmas/SublemmaFourierKway.lean",
+      "lean_range": {
+        "start_line": 46,
+        "end_line": 315,
+        "start_col": null,
+        "end_col": null
+      },
+      "kind": "lemma",
+      "confidence": 0.95,
+      "source": "manual",
+      "verifier_vote": "none",
+      "rationale": "Lemma lem:fourier-bound (main technical Fourier-tail bound): for the k-way product f(xi)=sum_r e^{i xi r} prod_j (alpha bin/(1-alpha bin)), with alpha = sqrt(n)/(4 e^2 sqrt(2 pi)) and 2 <= |xi| <= pi, |f(xi)| <= 2 e^{-sqrt n}. The Lean statement reproduces exactly this product, the alpha value, the range constraint, and the bound.",
+      "reachable": true,
+      "assumption_tainted": true,
+      "latex_file": "arXiv-2412.00674v1/deletion.tex",
+      "latex_range": {
+        "start_line": 312,
+        "end_line": 316,
+        "start_col": null,
+        "end_col": null
+      },
+      "pdf_page": 9,
+      "prose": "Given k distinct locations _1, , _k \\ 1, , n 2 \\ , define the Fourier transform with respect to r , defined on angles [- , ] , of the product function from Equation~ , where we interpret the binomial pdf to be 0 if its third argument is out of range: f( ):= _r e^ i r _ j=1 ^k \\,bin(n, 1 2 ,r+ 1 4 n+ _j) 1- \\,bin(n, 1 2 ,r+ 1 4 n+ _j) We claim that, if | | 2 and n 4 e^2 2 , then |f( )| 2 e^ - n ."
+    },
+    {
+      "link_id": "lnk_9114b89dd1657f0b",
+      "lean_fqn": "SublemmaPerSummandBound",
+      "lean_file": "lean_workspace/Workspace/ProofLemmas/SublemmaPerSummandBound.lean",
+      "lean_range": {
+        "start_line": 10,
+        "end_line": 43,
+        "start_col": null,
+        "end_col": null
+      },
+      "kind": "lemma",
+      "confidence": 0.95,
+      "source": "manual",
+      "verifier_vote": "none",
+      "rationale": "Lemma lem:r-func-bound: the per-summand bound on Equation eq:r-func-lemma, |altRSum| <= (n+1)(2pi-2)(2pi)^2/(1-delta)^2 max{e^{-delta z_-/20}/(1-delta), e^{-delta z_+/20}/(1-delta), e^{-n/150}} + 4(2pi)^2/(1-delta)^2 e^{-sqrt n}. The Lean B_exp + B_Fou bound reproduces this expression term for term, with alpha = sqrt(n)/(4 e^2 sqrt(2 pi)).",
+      "reachable": true,
+      "assumption_tainted": true,
+      "latex_file": "arXiv-2412.00674v1/deletion.tex",
+      "latex_range": {
+        "start_line": 364,
+        "end_line": 365,
+        "start_col": null,
+        "end_col": null
+      },
+      "pdf_page": 11,
+      "prose": "If n 4 e^2 2 then Equation~ from Lemma~ is always at most \\[(n+1)(2 -2) (2 )^2 (1- )^2 \\ e^ - 20 z_- 1- , e^ - 20 z_+ 1- ,e^ - n 150 \\ +4 (2 )^2 (1- )^2 e^ - n .\\]"
+    },
+    {
+      "link_id": "lnk_fcc5fd89532ab74c",
+      "lean_fqn": "SublemmaTVAssembly",
+      "lean_file": "lean_workspace/Workspace/ProofLemmas/SublemmaTVAssembly.lean",
+      "lean_range": {
+        "start_line": 32,
+        "end_line": 55,
+        "start_col": null,
+        "end_col": null
+      },
+      "kind": "theorem",
+      "confidence": 0.88,
+      "source": "manual",
+      "verifier_vote": "none",
+      "rationale": "Final TV assembly: for the explicit witnesses S_e, S_o and deletion rate \u03b4 with 320/\u221an \u2264 \u03b4 \u2264 1/2, TVDistance(TraceDist S_e \u03b4, TraceDist S_o \u03b4) \u2264 exp(-\u221an/64). This is exactly the e^{-\u03a9(\u221an)} statistical-distance conclusion of Theorem thm:lower-detail (= the trace-distinguishability core of Theorem thm:lower_bound, item 4).",
+      "reachable": true,
+      "assumption_tainted": true,
+      "latex_file": "arXiv-2412.00674v1/deletion.tex",
+      "latex_range": {
+        "start_line": 275,
+        "end_line": 275,
+        "start_col": null,
+        "end_col": null
+      },
+      "pdf_page": 7,
+      "prose": "There are constants c,c' such that for any deletion probability c n ---and in particular, for all constant deletion probabilities---and for any scaling factor c' n (in the construction of S_e,S_o in Definition~ ), the statistical distance between a trace from S_e versus S_o is e^ - ( n ) ."
+    },
+    {
+      "link_id": "lnk_b8b49f4885e41cde",
+      "lean_fqn": "TraceDeletionListCompose.master",
+      "lean_file": "lean_workspace/Workspace/ProofLemmas/TraceDeletionListCompose.lean",
+      "lean_range": {
+        "start_line": 399,
+        "end_line": 497,
+        "start_col": null,
+        "end_col": null
+      },
+      "kind": "equation",
+      "confidence": 0.45,
+      "source": "manual",
+      "verifier_vote": "none",
+      "rationale": "The list-level identity realizing the deletion-composition / data-processing step of the proof of Lemma lem:r-func (composing two deletion stages preserves the bit-weight distribution). Fine-grained proof-step link, low confidence.",
+      "reachable": true,
+      "assumption_tainted": false,
+      "latex_file": "arXiv-2412.00674v1/deletion.tex",
+      "latex_range": {
+        "start_line": 289,
+        "end_line": 289,
+        "start_col": null,
+        "end_col": null
+      },
+      "pdf_page": 7,
+      "prose": "The reason this process gives an upper bound on the statistical distance is that, given the output of this process, we can simulate the authentic deletion channel by deleting each bit from the middle segment with probability , and appending the initial and final strings of bits; by the information processing inequality, the statistical distance between two processes cannot increase if we run the data through the same transformation."
+    },
+    {
+      "link_id": "lnk_30979305c3b8ebf0",
+      "lean_fqn": "Workspace.Types.AlternatingSumExpression.altRSum",
+      "lean_file": "lean_workspace/Workspace/Types/AlternatingSumExpression.lean",
+      "lean_range": {
+        "start_line": 71,
+        "end_line": 76,
+        "start_col": null,
+        "end_col": null
+      },
+      "kind": "equation",
+      "confidence": 0.7,
+      "source": "manual",
+      "verifier_vote": "none",
+      "rationale": "The alternating r-sum sum_r (-1)^r F(r,z_-,z_+,ell), i.e. the inner expression of Equation (eq:r-func-lemma) of Lemma lem:r-func (the quantity inside the absolute value).",
+      "reachable": true,
+      "assumption_tainted": false,
+      "latex_file": "arXiv-2412.00674v1/deletion.tex",
+      "latex_range": {
+        "start_line": 283,
+        "end_line": 283,
+        "start_col": null,
+        "end_col": null
+      },
+      "pdf_page": 7,
+      "prose": "| _ r (-1)^r bin( n, 1 2 ,r+ 1 2 n) bin( 1 4 n+r,1- ,z_-) bin( 1 4 n-r,1- ,z_+) _ j=1 ^k \\,bin(n, 1 2 ,r+ 1 4 n+ _j) 1- \\,bin(n, 1 2 ,r+ 1 4 n+ _j) |,"
+    },
+    {
+      "link_id": "lnk_042df093453d850d",
+      "lean_fqn": "Workspace.Types.AlternatingSumExpression.altSum",
+      "lean_file": "lean_workspace/Workspace/Types/AlternatingSumExpression.lean",
+      "lean_range": {
+        "start_line": 95,
+        "end_line": 98,
+        "start_col": null,
+        "end_col": null
+      },
+      "kind": "lemma",
+      "confidence": 0.68,
+      "source": "manual",
+      "verifier_vote": "none",
+      "rationale": "altSum n delta alpha is the full right-hand side of Lemma lem:r-func: the triple sum (over k, over same-parity k-tuples ell, over z_-,z_+) of the absolute alternating r-sum (eq:r-func-lemma). This is the upper bound on the statistical distance the lemma asserts. Lower confidence: it is the bounding expression (the def), not the inequality lemma itself.",
+      "reachable": true,
+      "assumption_tainted": false,
+      "latex_file": "arXiv-2412.00674v1/deletion.tex",
+      "latex_range": {
+        "start_line": 282,
+        "end_line": 282,
+        "start_col": null,
+        "end_col": null
+      },
+      "pdf_page": 7,
+      "prose": "For deletion probability , the statistical distance between a trace from S_e versus a trace from S_o is at most the sum over all k \\ 0, , n 2 \\ of the sum over all k -tuples of locations _1< _2< < _k in \\ 1, , n 2 \\ that have identical parity, of the sum over all z_-,z_+ \\ 0, , n 2 \\ of the following expression"
+    },
+    {
+      "link_id": "lnk_6f0553687bc4bd0b",
+      "lean_fqn": "Workspace.Types.BinVec.BinVec",
+      "lean_file": "lean_workspace/Workspace/Types/BinVec.lean",
+      "lean_range": {
+        "start_line": 8,
+        "end_line": 12,
+        "start_col": null,
+        "end_col": null
+      },
+      "kind": "definition",
+      "confidence": 0.85,
+      "source": "manual",
+      "verifier_vote": "none",
+      "rationale": "The underlying length-n binary sample T = (t_1,...,t_n) in {0,1}^n produced by the coin-flip stage. BinVec n = (Fin n -> Bool) is exactly this object.",
+      "reachable": true,
+      "assumption_tainted": false,
+      "latex_file": "arXiv-2412.00674v1/deletion.tex",
+      "latex_range": {
+        "start_line": 158,
+        "end_line": 158,
+        "start_col": null,
+        "end_col": null
+      },
+      "pdf_page": 2,
+      "prose": "Generate a length n binary string, T=t_1, ,t_n , by independently setting each t_i=1 with probability p_i and 0 otherwise."
+    },
+    {
+      "link_id": "lnk_996be58c15217e9b",
+      "lean_fqn": "Workspace.Types.CoinFlipDist.CoinFlipDist",
+      "lean_file": "lean_workspace/Workspace/Types/CoinFlipDist.lean",
+      "lean_range": {
+        "start_line": 23,
+        "end_line": 34,
+        "start_col": null,
+        "end_col": null
+      },
+      "kind": "definition",
+      "confidence": 0.82,
+      "source": "manual",
+      "verifier_vote": "none",
+      "rationale": "Formalizes step 1 (the coin-flip stage) of the trace-generation process: the product distribution on {0,1}^n where bit i is 1 with probability p_i. CoinFlipDist carries a PMF on BinVec n with the product-factorisation axiom prod_factorisation matching this per-coordinate Bernoulli product.",
+      "reachable": true,
+      "assumption_tainted": false,
+      "latex_file": "arXiv-2412.00674v1/deletion.tex",
+      "latex_range": {
+        "start_line": 158,
+        "end_line": 158,
+        "start_col": null,
+        "end_col": null
+      },
+      "pdf_page": 2,
+      "prose": "Generate a length n binary string, T=t_1, ,t_n , by independently setting each t_i=1 with probability p_i and 0 otherwise."
+    },
+    {
+      "link_id": "lnk_3d9a96974d084040",
+      "lean_fqn": "Workspace.Types.DelProb.DelProb",
+      "lean_file": "lean_workspace/Workspace/Types/DelProb.lean",
+      "lean_range": {
+        "start_line": 8,
+        "end_line": 16,
+        "start_col": null,
+        "end_col": null
+      },
+      "kind": "definition",
+      "confidence": 0.8,
+      "source": "manual",
+      "verifier_vote": "none",
+      "rationale": "The deletion probability delta in (0,1). DelProb bundles val : R with 0 < val < 1 \u2014 exactly the paper's deletion-probability parameter delta in (0,1).",
+      "reachable": true,
+      "assumption_tainted": false,
+      "latex_file": "arXiv-2412.00674v1/deletion.tex",
+      "latex_range": {
+        "start_line": 156,
+        "end_line": 156,
+        "start_col": null,
+        "end_col": null
+      },
+      "pdf_page": 2,
+      "prose": "The generalized trace reconstruction problem is defined in terms of a deletion probability (0,1) . Given a length n string of probabilities, S=p_1, ,p_n with p_i [0,1] , each trace is generated as follows:"
+    },
+    {
+      "link_id": "lnk_cbac0cf20cd48236",
+      "lean_fqn": "Workspace.Types.DeletionChannel.DeletionChannel",
+      "lean_file": "lean_workspace/Workspace/Types/DeletionChannel.lean",
+      "lean_range": {
+        "start_line": 48,
+        "end_line": 60,
+        "start_col": null,
+        "end_col": null
+      },
+      "kind": "definition",
+      "confidence": 0.82,
+      "source": "manual",
+      "verifier_vote": "none",
+      "rationale": "Formalizes step 2 (the deletion stage) of the trace-generation process as a Markov kernel: given binary vector b, independently keep each bit with probability 1 - delta and concatenate the kept bits. DeletionChannel carries a PMF on Trace n with the keep-set-sum axiom pmf_eq_keep_set_sum encoding exactly this.",
+      "reachable": true,
+      "assumption_tainted": false,
+      "latex_file": "arXiv-2412.00674v1/deletion.tex",
+      "latex_range": {
+        "start_line": 159,
+        "end_line": 159,
+        "start_col": null,
+        "end_col": null
+      },
+      "pdf_page": 2,
+      "prose": "Delete each bit of T independently with probability , and return the concatenation of the bits that were not deleted, which will be a binary string of length n ."
+    },
+    {
+      "link_id": "lnk_fbd9d5ea2e662112",
+      "lean_fqn": "Workspace.Types.LengthsOnlyProcess.LengthsOnlyProcess",
+      "lean_file": "lean_workspace/Workspace/Types/LengthsOnlyProcess.lean",
+      "lean_range": {
+        "start_line": 117,
+        "end_line": 145,
+        "start_col": null,
+        "end_col": null
+      },
+      "kind": "definition",
+      "confidence": 0.7,
+      "source": "manual",
+      "verifier_vote": "none",
+      "rationale": "The 'lengths-only' simplification of the partial-deletion process from the proof of lem:r-func: return the middle n/2 bits plus the two trace LENGTHS z_- ~ Bin(n/4+r,1-delta), z_+ ~ Bin(n/4-r,1-delta), with r marginalised. LengthsOnlyProcess carries a PMF on BinVec(n/2) x N x N with composition_law over offsetWeight, prefixLengthWeight, suffixLengthWeight, middleIndicator \u2014 exactly this process.",
+      "reachable": true,
+      "assumption_tainted": false,
+      "latex_file": "arXiv-2412.00674v1/deletion.tex",
+      "latex_range": {
+        "start_line": 295,
+        "end_line": 295,
+        "start_col": null,
+        "end_col": null
+      },
+      "pdf_page": 8,
+      "prose": "Thus we consider the (equivalent to within distance e^ - (n) ) statistical process where we sample r Bin( n 2 , 1 2 )- n 4 , and then return the n 2 bits r+\\ 1 4 n+1, , 3 4 n\\ of a sample from either S_e or S_o , and also receive two integers z_- Bin( 1 4 n+r,1- ) and z_+ Bin( 1 4 n-r,1- ) . Keep in mind r is crucially not returned in this process; instead, z_- and z_+ are returned as fuzzy proxies for r , hiding the true offset if the deletion probability is high enough."
+    },
+    {
+      "link_id": "lnk_ac74d11a73cc55d7",
+      "lean_fqn": "Workspace.Types.PartialDeletionProcess.PartialDeletionProcess",
+      "lean_file": "lean_workspace/Workspace/Types/PartialDeletionProcess.lean",
+      "lean_range": {
+        "start_line": 167,
+        "end_line": 196,
+        "start_col": null,
+        "end_col": null
+      },
+      "kind": "definition",
+      "confidence": 0.7,
+      "source": "manual",
+      "verifier_vote": "none",
+      "rationale": "The 'partial deletion' process introduced in the proof of lem:r-func: sample offset r ~ Bin(n/2,1/2)-n/4, return the middle n/2 bits (offset by r) plus deletion-channel traces of the initial (n/4+r) and final (n/4-r) bits. PartialDeletionProcess carries a PMF on BinVec(n/2) x Trace n x Trace n with composition_law marginalising r over offsetWeight, prefixWeight, suffixWeight, middleIndicator \u2014 exactly this process.",
+      "reachable": true,
+      "assumption_tainted": false,
+      "latex_file": "arXiv-2412.00674v1/deletion.tex",
+      "latex_range": {
+        "start_line": 287,
+        "end_line": 287,
+        "start_col": null,
+        "end_col": null
+      },
+      "pdf_page": 7,
+      "prose": "An upper bound on the statistical distance is given by the statistical distance of the following ``partial deletion\" process: choose a (binomially distributed) random number r Bin( n 2 , 1 2 )- n 4 between 1 4 n and, given a sample x from either S_e or S_o , return bits r+\\ 1 4 n+1, , 3 4 n\\ of x , plus, separately, the initial ( 1 4 n+r) bits of x after they have gone through a deletion channel, and the final ( 1 4 n-r) bits of x after they have gone through a deletion channel."
+    },
+    {
+      "link_id": "lnk_4915f6db0c0db511",
+      "lean_fqn": "Workspace.Types.ProbVec.ProbVec",
+      "lean_file": "lean_workspace/Workspace/Types/ProbVec.lean",
+      "lean_range": {
+        "start_line": 17,
+        "end_line": 29,
+        "start_col": null,
+        "end_col": null
+      },
+      "kind": "definition",
+      "confidence": 0.9,
+      "source": "manual",
+      "verifier_vote": "none",
+      "rationale": "The length-n probability string S = (p_1,...,p_n), p_i in [0,1], introduced in Definition (Generalized Trace Reconstruction). ProbVec carries p : Fin n -> R with per-coordinate bounds 0 <= p i <= 1 \u2014 exactly the paper's probability string.",
+      "reachable": true,
+      "assumption_tainted": false,
+      "latex_file": "arXiv-2412.00674v1/deletion.tex",
+      "latex_range": {
+        "start_line": 156,
+        "end_line": 156,
+        "start_col": null,
+        "end_col": null
+      },
+      "pdf_page": 2,
+      "prose": "The generalized trace reconstruction problem is defined in terms of a deletion probability (0,1) . Given a length n string of probabilities, S=p_1, ,p_n with p_i [0,1] , each trace is generated as follows:"
+    },
+    {
+      "link_id": "lnk_4a39c52f18dfe675",
+      "lean_fqn": "Workspace.Types.Trace.Trace",
+      "lean_file": "lean_workspace/Workspace/Types/Trace.lean",
+      "lean_range": {
+        "start_line": 9,
+        "end_line": 15,
+        "start_col": null,
+        "end_col": null
+      },
+      "kind": "definition",
+      "confidence": 0.85,
+      "source": "manual",
+      "verifier_vote": "none",
+      "rationale": "A trace: the observable output of the trace-generation process, a binary string of length at most n. Trace n is a List Bool with length_le : bits.length <= n \u2014 exactly the paper's 'binary string of length <= n'.",
+      "reachable": true,
+      "assumption_tainted": false,
+      "latex_file": "arXiv-2412.00674v1/deletion.tex",
+      "latex_range": {
+        "start_line": 159,
+        "end_line": 159,
+        "start_col": null,
+        "end_col": null
+      },
+      "pdf_page": 2,
+      "prose": "Delete each bit of T independently with probability , and return the concatenation of the bits that were not deleted, which will be a binary string of length n ."
+    },
+    {
+      "link_id": "lnk_7536a15feec614a9",
+      "lean_fqn": "Workspace.Types.TraceDist.TraceDist",
+      "lean_file": "lean_workspace/Workspace/Types/TraceDist.lean",
+      "lean_range": {
+        "start_line": 43,
+        "end_line": 57,
+        "start_col": null,
+        "end_col": null
+      },
+      "kind": "definition",
+      "confidence": 0.85,
+      "source": "manual",
+      "verifier_vote": "none",
+      "rationale": "The trace distribution TraceDist(S, delta): the full distribution on traces obtained by composing the coin-flip stage and the deletion stage. TraceDist carries a PMF on Trace n with composition_law toPMF tau = sum_b cfd(b) * dc(b)(tau), exactly the composition of CoinFlipDist and DeletionChannel that the paper's two-step trace process defines.",
+      "reachable": true,
+      "assumption_tainted": false,
+      "latex_file": "arXiv-2412.00674v1/deletion.tex",
+      "latex_range": {
+        "start_line": 156,
+        "end_line": 159,
+        "start_col": null,
+        "end_col": null
+      },
+      "pdf_page": 2,
+      "prose": "The generalized trace reconstruction problem is defined in terms of a deletion probability (0,1) . Given a length n string of probabilities, S=p_1, ,p_n with p_i [0,1] , each trace is generated as follows: Generate a length n binary string, T=t_1, ,t_n , by independently setting each t_i=1 with probability p_i and 0 otherwise. Delete each bit of T independently with probability , and return the concatenation of the bits that were not deleted, which will be a binary string of length n ."
+    }
+  ]
+}

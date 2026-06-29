@@ -1,0 +1,20 @@
+# FormaliaXiv — LLM-readable index
+
+Formalized math papers with bidirectional PDF/LaTeX <-> Lean cross-references.
+
+## Papers
+
+- AGeneralizedTrace: A Generalized Trace Reconstruction Problem: Recovering a String of Probabilities
+    api/AGeneralizedTrace/paper.json  api/AGeneralizedTrace/lean.json  api/AGeneralizedTrace/links.json
+- ASharp: A Sharp Version of Talagrand's Selector Process Conjecture and an Application to Rounding Fractional Covers
+    api/ASharp/paper.json  api/ASharp/lean.json  api/ASharp/links.json
+- ApproximantionMedian: Approximation Guarantees of the Median Mechanism in ℝᵈ
+    api/ApproximantionMedian/paper.json  api/ApproximantionMedian/lean.json  api/ApproximantionMedian/links.json
+- EfficientlyLeanringMixtures: Efficiently Learning Mixtures of Two Gaussians
+    api/EfficientlyLeanringMixtures/paper.json  api/EfficientlyLeanringMixtures/lean.json  api/EfficientlyLeanringMixtures/links.json
+- Refuting: Refuting the Direct Sum Conjecture for Total Functions in Deterministic Communication Complexity
+    api/Refuting/paper.json  api/Refuting/lean.json  api/Refuting/links.json
+
+## Global
+- api/papers.json — JSON list of all papers
+- files/<id>/<path> — original .tex/.pdf and Lean sources

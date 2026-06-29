@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Dependency graph · FormaliaXiv</title>
+  <link rel="stylesheet" href="../../../graph.css" />
+</head>
+<body>
+  <div id="g-app">
+    <header id="g-head">
+      <div id="g-meta">
+        <a id="g-back" href="#" title="Back to the paper viewer">←</a>
+        <div>
+          <div id="g-title">Dependency graph</div>
+          <div id="g-subtitle">Lean declarations and what they depend on</div>
+        </div>
+      </div>
+      <div id="g-tools">
+        <input id="g-search" placeholder="find a declaration…" autocomplete="off" spellcheck="false" />
+        <label class="g-chk" title="Show only theorems &amp; axioms — the mathematical skeleton"><input type="checkbox" id="g-thms-only" /> theorems only</label>
+        <label class="g-chk"><input type="checkbox" id="g-labels" checked /> labels</label>
+        <button id="g-fit" type="button" title="Fit graph to view">fit</button>
+      </div>
+    </header>
+
+    <div id="g-stage">
+      <svg id="g-svg" xmlns="http://www.w3.org/2000/svg"></svg>
+
+      <div id="g-legend">
+        <div class="lg-row"><span class="lg-dot lg-root"></span> main theorem (root)</div>
+        <div class="lg-row"><span class="lg-dot lg-axiom"></span> axiom (assumed)</div>
+        <div class="lg-row"><span class="lg-dot lg-sorry"></span> contains <code>sorry</code></div>
+        <div class="lg-row"><span class="lg-dot lg-tainted"></span> rests on an assumption</div>
+        <div class="lg-row"><span class="lg-dot lg-proven"></span> theorem (proven)</div>
+        <div class="lg-row"><span class="lg-dot lg-def"></span> definition / construction</div>
+        <div class="lg-hint">bigger node = more used · scroll to zoom · drag to pan · hover a node · click to pin</div>
+      </div>
+
+      <div id="g-tip" hidden></div>
+      <div id="g-status">Loading graph…</div>
+    </div>
+  </div>
+
+  <script type="module" src="../../../graph.js"></script>
+</body>
+</html>

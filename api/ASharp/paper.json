@@ -1,0 +1,4348 @@
+{
+  "paper_id": "ASharp",
+  "envs": [
+    {
+      "env_id": "ASharp:env:eq:int-linprog",
+      "kind": "proof",
+      "label": "eq:int-linprog",
+      "title": "#1",
+      "section": null,
+      "latex_file": "arXiv-2412.03540v1.tex",
+      "latex_range": {
+        "start_line": 96,
+        "end_line": 664,
+        "start_col": null,
+        "end_col": null
+      },
+      "page_range": {
+        "start_page": 1,
+        "end_page": 1
+      },
+      "head_text": "c p W 2 X x W p W subject",
+      "pdf_page": null,
+      "links": [],
+      "not_formalized": false
+    },
+    {
+      "env_id": "ASharp:env:theorem:theo_at_L105",
+      "kind": "theorem",
+      "label": "auto:theorem:L105",
+      "title": null,
+      "section": null,
+      "latex_file": "arXiv-2412.03540v1.tex",
+      "latex_range": {
+        "start_line": 105,
+        "end_line": 106,
+        "start_col": null,
+        "end_col": null
+      },
+      "page_range": {
+        "start_page": 1,
+        "end_page": 1
+      },
+      "head_text": "",
+      "pdf_page": null,
+      "links": [],
+      "not_formalized": false
+    },
+    {
+      "env_id": "ASharp:env:eq:int-linprog",
+      "kind": "proof",
+      "label": "eq:int-linprog@L145",
+      "title": "\\textsc{\\upshape{Proof}}#1",
+      "section": null,
+      "latex_file": "arXiv-2412.03540v1.tex",
+      "latex_range": {
+        "start_line": 145,
+        "end_line": 664,
+        "start_col": null,
+        "end_col": null
+      },
+      "page_range": {
+        "start_page": 1,
+        "end_page": 1
+      },
+      "head_text": "c p W 2 X x W p W subject",
+      "pdf_page": null,
+      "links": [],
+      "not_formalized": false
+    },
+    {
+      "env_id": "ASharp:env:para:L232",
+      "kind": "paragraph",
+      "label": "para:L232",
+      "title": null,
+      "section": null,
+      "latex_file": "arXiv-2412.03540v1.tex",
+      "latex_range": {
+        "start_line": 232,
+        "end_line": 232,
+        "start_col": null,
+        "end_col": null
+      },
+      "page_range": {
+        "start_page": 1,
+        "end_page": 1
+      },
+      "head_text": "Expectation thresholds arise from a class of integer linear programs",
+      "pdf_page": 1,
+      "links": [],
+      "not_formalized": false
+    },
+    {
+      "env_id": "ASharp:env:para:L236",
+      "kind": "paragraph",
+      "label": "para:L236",
+      "title": null,
+      "section": null,
+      "latex_file": "arXiv-2412.03540v1.tex",
+      "latex_range": {
+        "start_line": 236,
+        "end_line": 237,
+        "start_col": null,
+        "end_col": null
+      },
+      "page_range": {
+        "start_page": 1,
+        "end_page": 1
+      },
+      "head_text": "In this paper we prove a strong upper bound on",
+      "pdf_page": 1,
+      "links": [],
+      "not_formalized": false
+    },
+    {
+      "env_id": "ASharp:env:para:L242",
+      "kind": "paragraph",
+      "label": "para:L242",
+      "title": null,
+      "section": "Introduction",
+      "latex_file": "arXiv-2412.03540v1.tex",
+      "latex_range": {
+        "start_line": 242,
+        "end_line": 243,
+        "start_col": null,
+        "end_col": null
+      },
+      "page_range": {
+        "start_page": 1,
+        "end_page": 1
+      },
+      "head_text": "A fundamental quest in the study of large random systems",
+      "pdf_page": 1,
+      "links": [],
+      "not_formalized": false
+    },
+    {
+      "env_id": "ASharp:env:para:L248",
+      "kind": "paragraph",
+      "label": "para:L248",
+      "title": null,
+      "section": "Introduction",
+      "latex_file": "arXiv-2412.03540v1.tex",
+      "latex_range": {
+        "start_line": 248,
+        "end_line": 256,
+        "start_col": null,
+        "end_col": null
+      },
+      "page_range": {
+        "start_page": 1,
+        "end_page": 1
+      },
+      "head_text": "Even in specific cases determining p c or p is",
+      "pdf_page": 1,
+      "links": [],
+      "not_formalized": false
+    },
+    {
+      "env_id": "ASharp:env:eq:int-linprog",
+      "kind": "equation",
+      "label": "eq:int-linprog@L249",
+      "title": null,
+      "section": "Introduction",
+      "latex_file": "arXiv-2412.03540v1.tex",
+      "latex_range": {
+        "start_line": 249,
+        "end_line": 253,
+        "start_col": null,
+        "end_col": null
+      },
+      "page_range": {
+        "start_page": 1,
+        "end_page": 1
+      },
+      "head_text": "c p W 2 X x W p W subject",
+      "pdf_page": null,
+      "links": [],
+      "not_formalized": false
+    },
+    {
+      "env_id": "ASharp:env:para:L258",
+      "kind": "paragraph",
+      "label": "para:L258",
+      "title": null,
+      "section": "Introduction",
+      "latex_file": "arXiv-2412.03540v1.tex",
+      "latex_range": {
+        "start_line": 258,
+        "end_line": 268,
+        "start_col": null,
+        "end_col": null
+      },
+      "page_range": {
+        "start_page": 1,
+        "end_page": 1
+      },
+      "head_text": "The Kahn Kalai conjecture resolved by Park and Pham PPK",
+      "pdf_page": 2,
+      "links": [],
+      "not_formalized": false
+    },
+    {
+      "env_id": "ASharp:env:eq:frac-linprog",
+      "kind": "equation",
+      "label": "eq:frac-linprog",
+      "title": null,
+      "section": "Introduction",
+      "latex_file": "arXiv-2412.03540v1.tex",
+      "latex_range": {
+        "start_line": 262,
+        "end_line": 266,
+        "start_col": null,
+        "end_col": null
+      },
+      "page_range": {
+        "start_page": 1,
+        "end_page": 1
+      },
+      "head_text": "c p W 2 X x W p W subject",
+      "pdf_page": null,
+      "links": [],
+      "not_formalized": false
+    },
+    {
+      "env_id": "ASharp:env:para:L270",
+      "kind": "paragraph",
+      "label": "para:L270",
+      "title": null,
+      "section": "Introduction",
+      "latex_file": "arXiv-2412.03540v1.tex",
+      "latex_range": {
+        "start_line": 270,
+        "end_line": 277,
+        "start_col": null,
+        "end_col": null
+      },
+      "page_range": {
+        "start_page": 1,
+        "end_page": 1
+      },
+      "head_text": "How good is the fractional relaxation eq frac linprog of",
+      "pdf_page": 2,
+      "links": [],
+      "not_formalized": false
+    },
+    {
+      "env_id": "ASharp:env:conj:Tal-equiv",
+      "kind": "other",
+      "label": "conj:Tal-equiv",
+      "title": "Talagrand \\cite{Talagrand}",
+      "section": "Introduction",
+      "latex_file": "arXiv-2412.03540v1.tex",
+      "latex_range": {
+        "start_line": 271,
+        "end_line": 277,
+        "start_col": null,
+        "end_col": null
+      },
+      "page_range": {
+        "start_page": 1,
+        "end_page": 1
+      },
+      "head_text": "There exists a constant C 0 such that p E",
+      "pdf_page": 2,
+      "links": [],
+      "not_formalized": false
+    },
+    {
+      "env_id": "ASharp:env:eq:L273",
+      "kind": "equation",
+      "label": "eq:L273",
+      "title": null,
+      "section": "Introduction",
+      "latex_file": "arXiv-2412.03540v1.tex",
+      "latex_range": {
+        "start_line": 273,
+        "end_line": 275,
+        "start_col": null,
+        "end_col": null
+      },
+      "page_range": {
+        "start_page": 1,
+        "end_page": 1
+      },
+      "head_text": "p E p f Cp E",
+      "pdf_page": null,
+      "links": [],
+      "not_formalized": false
+    },
+    {
+      "env_id": "ASharp:env:para:L279",
+      "kind": "paragraph",
+      "label": "para:L279",
+      "title": null,
+      "section": "Introduction",
+      "latex_file": "arXiv-2412.03540v1.tex",
+      "latex_range": {
+        "start_line": 279,
+        "end_line": 283,
+        "start_col": null,
+        "end_col": null
+      },
+      "page_range": {
+        "start_page": 1,
+        "end_page": 1
+      },
+      "head_text": "Observe that in the above formulation of Talagrand s conjecture",
+      "pdf_page": 2,
+      "links": [],
+      "not_formalized": false
+    },
+    {
+      "env_id": "ASharp:env:eq:L280",
+      "kind": "equation",
+      "label": "eq:L280",
+      "title": null,
+      "section": "Introduction",
+      "latex_file": "arXiv-2412.03540v1.tex",
+      "latex_range": {
+        "start_line": 280,
+        "end_line": 282,
+        "start_col": null,
+        "end_col": null
+      },
+      "page_range": {
+        "start_page": 1,
+        "end_page": 1
+      },
+      "head_text": "w H X W H w W 1",
+      "pdf_page": 2,
+      "links": [],
+      "not_formalized": false
+    },
+    {
+      "env_id": "ASharp:env:para:L285",
+      "kind": "paragraph",
+      "label": "para:L285",
+      "title": null,
+      "section": "Introduction",
+      "latex_file": "arXiv-2412.03540v1.tex",
+      "latex_range": {
+        "start_line": 285,
+        "end_line": 289,
+        "start_col": null,
+        "end_col": null
+      },
+      "page_range": {
+        "start_page": 1,
+        "end_page": 1
+      },
+      "head_text": "Even though one of the early motivations for Conjecture conj",
+      "pdf_page": 2,
+      "links": [],
+      "not_formalized": false
+    },
+    {
+      "env_id": "ASharp:env:eq:L286",
+      "kind": "equation",
+      "label": "eq:L286",
+      "title": null,
+      "section": "Introduction",
+      "latex_file": "arXiv-2412.03540v1.tex",
+      "latex_range": {
+        "start_line": 286,
+        "end_line": 288,
+        "start_col": null,
+        "end_col": null
+      },
+      "page_range": {
+        "start_page": 1,
+        "end_page": 1
+      },
+      "head_text": "p E p f Cp E X",
+      "pdf_page": null,
+      "links": [],
+      "not_formalized": false
+    },
+    {
+      "env_id": "ASharp:env:para:L292",
+      "kind": "paragraph",
+      "label": "para:L292",
+      "title": null,
+      "section": "Main results",
+      "latex_file": "arXiv-2412.03540v1.tex",
+      "latex_range": {
+        "start_line": 292,
+        "end_line": 292,
+        "start_col": null,
+        "end_col": null
+      },
+      "page_range": {
+        "start_page": 1,
+        "end_page": 1
+      },
+      "head_text": "In this paper we prove a strong upper bound on",
+      "pdf_page": 1,
+      "links": [],
+      "not_formalized": false
+    },
+    {
+      "env_id": "ASharp:env:thm:main",
+      "kind": "theorem",
+      "label": "thm:main",
+      "title": null,
+      "section": "Main results",
+      "latex_file": "arXiv-2412.03540v1.tex",
+      "latex_range": {
+        "start_line": 294,
+        "end_line": 296,
+        "start_col": null,
+        "end_col": null
+      },
+      "page_range": {
+        "start_page": 1,
+        "end_page": 1
+      },
+      "head_text": "There exists a constant c 0 such that the following",
+      "pdf_page": 3,
+      "links": [],
+      "not_formalized": false
+    },
+    {
+      "env_id": "ASharp:env:para:L298",
+      "kind": "paragraph",
+      "label": "para:L298",
+      "title": null,
+      "section": "Main results",
+      "latex_file": "arXiv-2412.03540v1.tex",
+      "latex_range": {
+        "start_line": 298,
+        "end_line": 298,
+        "start_col": null,
+        "end_col": null
+      },
+      "page_range": {
+        "start_page": 1,
+        "end_page": 1
+      },
+      "head_text": "Observe that the factor t in Theorem thm main is",
+      "pdf_page": 3,
+      "links": [],
+      "not_formalized": false
+    },
+    {
+      "env_id": "ASharp:env:para:L300",
+      "kind": "paragraph",
+      "label": "para:L300",
+      "title": null,
+      "section": "Main results",
+      "latex_file": "arXiv-2412.03540v1.tex",
+      "latex_range": {
+        "start_line": 300,
+        "end_line": 300,
+        "start_col": null,
+        "end_col": null
+      },
+      "page_range": {
+        "start_page": 1,
+        "end_page": 1
+      },
+      "head_text": "Surprisingly instead of explicit construction of the small integral cover",
+      "pdf_page": 3,
+      "links": [],
+      "not_formalized": false
+    },
+    {
+      "env_id": "ASharp:env:thm:sharp-selector",
+      "kind": "theorem",
+      "label": "thm:sharp-selector",
+      "title": null,
+      "section": "Main results",
+      "latex_file": "arXiv-2412.03540v1.tex",
+      "latex_range": {
+        "start_line": 302,
+        "end_line": 307,
+        "start_col": null,
+        "end_col": null
+      },
+      "page_range": {
+        "start_page": 1,
+        "end_page": 1
+      },
+      "head_text": "There exists a constant c 0 such that the following",
+      "pdf_page": 3,
+      "links": [],
+      "not_formalized": false
+    },
+    {
+      "env_id": "ASharp:env:eq:L304",
+      "kind": "equation",
+      "label": "eq:L304",
+      "title": null,
+      "section": "Main results",
+      "latex_file": "arXiv-2412.03540v1.tex",
+      "latex_range": {
+        "start_line": 304,
+        "end_line": 306,
+        "start_col": null,
+        "end_col": null
+      },
+      "page_range": {
+        "start_page": 1,
+        "end_page": 1
+      },
+      "head_text": "H x X 16sp H H x 1 2 s",
+      "pdf_page": null,
+      "links": [],
+      "not_formalized": false
+    },
+    {
+      "env_id": "ASharp:env:para:L309",
+      "kind": "paragraph",
+      "label": "para:L309",
+      "title": null,
+      "section": "Main results",
+      "latex_file": "arXiv-2412.03540v1.tex",
+      "latex_range": {
+        "start_line": 309,
+        "end_line": 313,
+        "start_col": null,
+        "end_col": null
+      },
+      "page_range": {
+        "start_page": 1,
+        "end_page": 1
+      },
+      "head_text": "Park and Pham PPT earlier proved a weaker version of",
+      "pdf_page": 3,
+      "links": [],
+      "not_formalized": false
+    },
+    {
+      "env_id": "ASharp:env:eq:L310",
+      "kind": "equation",
+      "label": "eq:L310",
+      "title": null,
+      "section": "Main results",
+      "latex_file": "arXiv-2412.03540v1.tex",
+      "latex_range": {
+        "start_line": 310,
+        "end_line": 312,
+        "start_col": null,
+        "end_col": null
+      },
+      "page_range": {
+        "start_page": 1,
+        "end_page": 1
+      },
+      "head_text": "H x X p H H x c",
+      "pdf_page": null,
+      "links": [],
+      "not_formalized": false
+    },
+    {
+      "env_id": "ASharp:env:para:L316",
+      "kind": "paragraph",
+      "label": "para:L316",
+      "title": null,
+      "section": "Main results",
+      "latex_file": "arXiv-2412.03540v1.tex",
+      "latex_range": {
+        "start_line": 316,
+        "end_line": 316,
+        "start_col": null,
+        "end_col": null
+      },
+      "page_range": {
+        "start_page": 1,
+        "end_page": 1
+      },
+      "head_text": "thm main gives a new application of the selector process",
+      "pdf_page": 3,
+      "links": [],
+      "not_formalized": false
+    },
+    {
+      "env_id": "ASharp:env:para:L318",
+      "kind": "paragraph",
+      "label": "para:L318",
+      "title": null,
+      "section": "Main results",
+      "latex_file": "arXiv-2412.03540v1.tex",
+      "latex_range": {
+        "start_line": 318,
+        "end_line": 318,
+        "start_col": null,
+        "end_col": null
+      },
+      "page_range": {
+        "start_page": 1,
+        "end_page": 1
+      },
+      "head_text": "The amplified version Theorem thm sharp selector is significantly more",
+      "pdf_page": 4,
+      "links": [],
+      "not_formalized": false
+    },
+    {
+      "env_id": "ASharp:env:para:L321",
+      "kind": "paragraph",
+      "label": "para:L321",
+      "title": null,
+      "section": "Further works and context",
+      "latex_file": "arXiv-2412.03540v1.tex",
+      "latex_range": {
+        "start_line": 321,
+        "end_line": 325,
+        "start_col": null,
+        "end_col": null
+      },
+      "page_range": {
+        "start_page": 1,
+        "end_page": 1
+      },
+      "head_text": "The fundamental relation between thresholds and expectation thresholds is the",
+      "pdf_page": 4,
+      "links": [],
+      "not_formalized": false
+    },
+    {
+      "env_id": "ASharp:env:eq:L322",
+      "kind": "equation",
+      "label": "eq:L322",
+      "title": null,
+      "section": "Further works and context",
+      "latex_file": "arXiv-2412.03540v1.tex",
+      "latex_range": {
+        "start_line": 322,
+        "end_line": 324,
+        "start_col": null,
+        "end_col": null
+      },
+      "page_range": {
+        "start_page": 1,
+        "end_page": 1
+      },
+      "head_text": "p E p c Cp E X",
+      "pdf_page": null,
+      "links": [],
+      "not_formalized": false
+    },
+    {
+      "env_id": "ASharp:env:para:L329",
+      "kind": "paragraph",
+      "label": "para:L329",
+      "title": null,
+      "section": "Further works and context",
+      "latex_file": "arXiv-2412.03540v1.tex",
+      "latex_range": {
+        "start_line": 329,
+        "end_line": 329,
+        "start_col": null,
+        "end_col": null
+      },
+      "page_range": {
+        "start_page": 1,
+        "end_page": 1
+      },
+      "head_text": "The proof of the Kahn Kalai conjecture PPK builds upon",
+      "pdf_page": 4,
+      "links": [],
+      "not_formalized": false
+    },
+    {
+      "env_id": "ASharp:env:para:L331",
+      "kind": "paragraph",
+      "label": "para:L331",
+      "title": null,
+      "section": "Further works and context",
+      "latex_file": "arXiv-2412.03540v1.tex",
+      "latex_range": {
+        "start_line": 331,
+        "end_line": 331,
+        "start_col": null,
+        "end_col": null
+      },
+      "page_range": {
+        "start_page": 1,
+        "end_page": 1
+      },
+      "head_text": "Regarding Conjecture conj Tal equiv previous progresses were restricted to",
+      "pdf_page": 4,
+      "links": [],
+      "not_formalized": false
+    },
+    {
+      "env_id": "ASharp:env:para:L333",
+      "kind": "paragraph",
+      "label": "para:L333",
+      "title": null,
+      "section": "Further works and context",
+      "latex_file": "arXiv-2412.03540v1.tex",
+      "latex_range": {
+        "start_line": 333,
+        "end_line": 333,
+        "start_col": null,
+        "end_col": null
+      },
+      "page_range": {
+        "start_page": 1,
+        "end_page": 1
+      },
+      "head_text": "On the probabilistic side the selector process conjecture Talagrand06 Talagrand",
+      "pdf_page": 4,
+      "links": [],
+      "not_formalized": false
+    },
+    {
+      "env_id": "ASharp:env:para:L339",
+      "kind": "paragraph",
+      "label": "para:L339",
+      "title": null,
+      "section": "A sharp version of Talagrand's selector process conjecture",
+      "latex_file": "arXiv-2412.03540v1.tex",
+      "latex_range": {
+        "start_line": 339,
+        "end_line": 339,
+        "start_col": null,
+        "end_col": null
+      },
+      "page_range": {
+        "start_page": 1,
+        "end_page": 1
+      },
+      "head_text": "In this section we will prove the sharp version of",
+      "pdf_page": 5,
+      "links": [],
+      "not_formalized": false
+    },
+    {
+      "env_id": "ASharp:env:para:L341",
+      "kind": "paragraph",
+      "label": "para:L341",
+      "title": null,
+      "section": "A sharp version of Talagrand's selector process conjecture",
+      "latex_file": "arXiv-2412.03540v1.tex",
+      "latex_range": {
+        "start_line": 341,
+        "end_line": 341,
+        "start_col": null,
+        "end_col": null
+      },
+      "page_range": {
+        "start_page": 1,
+        "end_page": 1
+      },
+      "head_text": "Before moving on to the proof we first remark that",
+      "pdf_page": 5,
+      "links": [],
+      "not_formalized": false
+    },
+    {
+      "env_id": "ASharp:env:para:L344",
+      "kind": "paragraph",
+      "label": "para:L344",
+      "title": null,
+      "section": "Proof strategy and difficulty",
+      "latex_file": "arXiv-2412.03540v1.tex",
+      "latex_range": {
+        "start_line": 344,
+        "end_line": 344,
+        "start_col": null,
+        "end_col": null
+      },
+      "page_range": {
+        "start_page": 1,
+        "end_page": 1
+      },
+      "head_text": "To motivate the overall strategy of the proof we will",
+      "pdf_page": 5,
+      "links": [],
+      "not_formalized": false
+    },
+    {
+      "env_id": "ASharp:env:para:L346",
+      "kind": "paragraph",
+      "label": "para:L346",
+      "title": null,
+      "section": "Proof strategy and difficulty",
+      "latex_file": "arXiv-2412.03540v1.tex",
+      "latex_range": {
+        "start_line": 346,
+        "end_line": 350,
+        "start_col": null,
+        "end_col": null
+      },
+      "page_range": {
+        "start_page": 1,
+        "end_page": 1
+      },
+      "head_text": "For S X and H X 0 1 supported on",
+      "pdf_page": 5,
+      "links": [],
+      "not_formalized": false
+    },
+    {
+      "env_id": "ASharp:env:eq:bad-lowcost-old",
+      "kind": "equation",
+      "label": "eq:bad-lowcost-old",
+      "title": null,
+      "section": "Proof strategy and difficulty",
+      "latex_file": "arXiv-2412.03540v1.tex",
+      "latex_range": {
+        "start_line": 347,
+        "end_line": 349,
+        "start_col": null,
+        "end_col": null
+      },
+      "page_range": {
+        "start_page": 1,
+        "end_page": 1
+      },
+      "head_text": "W X q I W is bad U W p",
+      "pdf_page": null,
+      "links": [],
+      "not_formalized": false
+    },
+    {
+      "env_id": "ASharp:env:para:L352",
+      "kind": "paragraph",
+      "label": "para:L352",
+      "title": null,
+      "section": "Proof strategy and difficulty",
+      "latex_file": "arXiv-2412.03540v1.tex",
+      "latex_range": {
+        "start_line": 352,
+        "end_line": 352,
+        "start_col": null,
+        "end_col": null
+      },
+      "page_range": {
+        "start_page": 1,
+        "end_page": 1
+      },
+      "head_text": "Our proof of Theorem thm sharp selector follows from a",
+      "pdf_page": 3,
+      "links": [],
+      "not_formalized": false
+    },
+    {
+      "env_id": "ASharp:env:para:L354",
+      "kind": "paragraph",
+      "label": "para:L354",
+      "title": null,
+      "section": "Proof strategy and difficulty",
+      "latex_file": "arXiv-2412.03540v1.tex",
+      "latex_range": {
+        "start_line": 354,
+        "end_line": 354,
+        "start_col": null,
+        "end_col": null
+      },
+      "page_range": {
+        "start_page": 1,
+        "end_page": 1
+      },
+      "head_text": "The selector process conjecture yields for typical samples W 1",
+      "pdf_page": 5,
+      "links": [],
+      "not_formalized": false
+    },
+    {
+      "env_id": "ASharp:env:para:L356",
+      "kind": "paragraph",
+      "label": "para:L356",
+      "title": null,
+      "section": "Proof strategy and difficulty",
+      "latex_file": "arXiv-2412.03540v1.tex",
+      "latex_range": {
+        "start_line": 356,
+        "end_line": 356,
+        "start_col": null,
+        "end_col": null
+      },
+      "page_range": {
+        "start_page": 1,
+        "end_page": 1
+      },
+      "head_text": "Instead our proof of Theorem thm sharp selector defines the",
+      "pdf_page": 5,
+      "links": [],
+      "not_formalized": false
+    },
+    {
+      "env_id": "ASharp:env:para:L358",
+      "kind": "paragraph",
+      "label": "para:L358",
+      "title": null,
+      "section": "Proof strategy and difficulty",
+      "latex_file": "arXiv-2412.03540v1.tex",
+      "latex_range": {
+        "start_line": 358,
+        "end_line": 358,
+        "start_col": null,
+        "end_col": null
+      },
+      "page_range": {
+        "start_page": 1,
+        "end_page": 1
+      },
+      "head_text": "In the proof our presentation will incorporate simplifications observed in",
+      "pdf_page": 6,
+      "links": [],
+      "not_formalized": false
+    },
+    {
+      "env_id": "ASharp:env:para:L360",
+      "kind": "paragraph",
+      "label": "para:L360",
+      "title": null,
+      "section": "Proof strategy and difficulty",
+      "latex_file": "arXiv-2412.03540v1.tex",
+      "latex_range": {
+        "start_line": 360,
+        "end_line": 360,
+        "start_col": null,
+        "end_col": null
+      },
+      "page_range": {
+        "start_page": 1,
+        "end_page": 1
+      },
+      "head_text": "In the next subsection we will introduce formally the notion",
+      "pdf_page": 6,
+      "links": [],
+      "not_formalized": false
+    },
+    {
+      "env_id": "ASharp:env:para:L364",
+      "kind": "paragraph",
+      "label": "para:L364",
+      "title": null,
+      "section": "Towers of minimum fragments",
+      "latex_file": "arXiv-2412.03540v1.tex",
+      "latex_range": {
+        "start_line": 364,
+        "end_line": 364,
+        "start_col": null,
+        "end_col": null
+      },
+      "page_range": {
+        "start_page": 1,
+        "end_page": 1
+      },
+      "head_text": "As in the case of minimum fragments in defining the",
+      "pdf_page": 6,
+      "links": [],
+      "not_formalized": false
+    },
+    {
+      "env_id": "ASharp:env:definition:defn_at_L366",
+      "kind": "definition",
+      "label": "auto:definition:L366",
+      "title": null,
+      "section": "Towers of minimum fragments",
+      "latex_file": "arXiv-2412.03540v1.tex",
+      "latex_range": {
+        "start_line": 366,
+        "end_line": 372,
+        "start_col": null,
+        "end_col": null
+      },
+      "page_range": {
+        "start_page": 1,
+        "end_page": 1
+      },
+      "head_text": "Given W 2 X and H 2 X together with",
+      "pdf_page": null,
+      "links": [],
+      "not_formalized": false
+    },
+    {
+      "env_id": "ASharp:env:para:L367",
+      "kind": "paragraph",
+      "label": "para:L367",
+      "title": null,
+      "section": "Towers of minimum fragments",
+      "latex_file": "arXiv-2412.03540v1.tex",
+      "latex_range": {
+        "start_line": 367,
+        "end_line": 373,
+        "start_col": null,
+        "end_col": null
+      },
+      "page_range": {
+        "start_page": 1,
+        "end_page": 1
+      },
+      "head_text": "Given W 2 X and H 2 X together with",
+      "pdf_page": null,
+      "links": [],
+      "not_formalized": false
+    },
+    {
+      "env_id": "ASharp:env:eq:L368",
+      "kind": "equation",
+      "label": "eq:L368",
+      "title": null,
+      "section": "Towers of minimum fragments",
+      "latex_file": "arXiv-2412.03540v1.tex",
+      "latex_range": {
+        "start_line": 368,
+        "end_line": 370,
+        "start_col": null,
+        "end_col": null
+      },
+      "page_range": {
+        "start_page": 1,
+        "end_page": 1
+      },
+      "head_text": "W H 1 2 H",
+      "pdf_page": null,
+      "links": [],
+      "not_formalized": false
+    },
+    {
+      "env_id": "ASharp:env:para:L375",
+      "kind": "paragraph",
+      "label": "para:L375",
+      "title": null,
+      "section": "Towers of minimum fragments",
+      "latex_file": "arXiv-2412.03540v1.tex",
+      "latex_range": {
+        "start_line": 375,
+        "end_line": 391,
+        "start_col": null,
+        "end_col": null
+      },
+      "page_range": {
+        "start_page": 1,
+        "end_page": 1
+      },
+      "head_text": "We next show that the large weight elements beyond the",
+      "pdf_page": 6,
+      "links": [],
+      "not_formalized": false
+    },
+    {
+      "env_id": "ASharp:env:lem:large-wt-W",
+      "kind": "lemma",
+      "label": "lem:large-wt-W",
+      "title": null,
+      "section": "Towers of minimum fragments",
+      "latex_file": "arXiv-2412.03540v1.tex",
+      "latex_range": {
+        "start_line": 376,
+        "end_line": 381,
+        "start_col": null,
+        "end_col": null
+      },
+      "page_range": {
+        "start_page": 1,
+        "end_page": 1
+      },
+      "head_text": "We have for b b W H H b W",
+      "pdf_page": 6,
+      "links": [],
+      "not_formalized": false
+    },
+    {
+      "env_id": "ASharp:env:eq:L378",
+      "kind": "equation",
+      "label": "eq:L378",
+      "title": null,
+      "section": "Towers of minimum fragments",
+      "latex_file": "arXiv-2412.03540v1.tex",
+      "latex_range": {
+        "start_line": 378,
+        "end_line": 380,
+        "start_col": null,
+        "end_col": null
+      },
+      "page_range": {
+        "start_page": 1,
+        "end_page": 1
+      },
+      "head_text": "H b W 1 2 H b",
+      "pdf_page": null,
+      "links": [],
+      "not_formalized": false
+    },
+    {
+      "env_id": "ASharp:env:proof:proof_at_L382",
+      "kind": "proof",
+      "label": "auto:proof:L382",
+      "title": null,
+      "section": "Towers of minimum fragments",
+      "latex_file": "arXiv-2412.03540v1.tex",
+      "latex_range": {
+        "start_line": 382,
+        "end_line": 391,
+        "start_col": null,
+        "end_col": null
+      },
+      "page_range": {
+        "start_page": 1,
+        "end_page": 1
+      },
+      "head_text": "Assume that H b W 1 2 H b For",
+      "pdf_page": 6,
+      "links": [],
+      "not_formalized": false
+    },
+    {
+      "env_id": "ASharp:env:eq:L385",
+      "kind": "equation",
+      "label": "eq:L385",
+      "title": null,
+      "section": "Towers of minimum fragments",
+      "latex_file": "arXiv-2412.03540v1.tex",
+      "latex_range": {
+        "start_line": 385,
+        "end_line": 389,
+        "start_col": null,
+        "end_col": null
+      },
+      "page_range": {
+        "start_page": 1,
+        "end_page": 1
+      },
+      "head_text": "H b W 1 2 H b 1 b b",
+      "pdf_page": null,
+      "links": [],
+      "not_formalized": false
+    },
+    {
+      "env_id": "ASharp:env:para:L393",
+      "kind": "paragraph",
+      "label": "para:L393",
+      "title": null,
+      "section": "Towers of minimum fragments",
+      "latex_file": "arXiv-2412.03540v1.tex",
+      "latex_range": {
+        "start_line": 393,
+        "end_line": 393,
+        "start_col": null,
+        "end_col": null
+      },
+      "page_range": {
+        "start_page": 1,
+        "end_page": 1
+      },
+      "head_text": "Given W W 1 W s a tuple of subsets",
+      "pdf_page": 6,
+      "links": [],
+      "not_formalized": false
+    },
+    {
+      "env_id": "ASharp:env:def:feas",
+      "kind": "definition",
+      "label": "def:feas",
+      "title": null,
+      "section": "Towers of minimum fragments",
+      "latex_file": "arXiv-2412.03540v1.tex",
+      "latex_range": {
+        "start_line": 395,
+        "end_line": 399,
+        "start_col": null,
+        "end_col": null
+      },
+      "page_range": {
+        "start_page": 1,
+        "end_page": 1
+      },
+      "head_text": "Given tuples of integers b b 1 b s sets",
+      "pdf_page": 7,
+      "links": [],
+      "not_formalized": false
+    },
+    {
+      "env_id": "ASharp:env:para:L401",
+      "kind": "paragraph",
+      "label": "para:L401",
+      "title": null,
+      "section": "Towers of minimum fragments",
+      "latex_file": "arXiv-2412.03540v1.tex",
+      "latex_range": {
+        "start_line": 401,
+        "end_line": 407,
+        "start_col": null,
+        "end_col": null
+      },
+      "page_range": {
+        "start_page": 1,
+        "end_page": 1
+      },
+      "head_text": "Define the lexicographic ordering on Z s by x 1",
+      "pdf_page": 7,
+      "links": [],
+      "not_formalized": false
+    },
+    {
+      "env_id": "ASharp:env:definition:defn_at_L402",
+      "kind": "definition",
+      "label": "auto:definition:L402",
+      "title": "Towers of minimum fragments",
+      "section": "Towers of minimum fragments",
+      "latex_file": "arXiv-2412.03540v1.tex",
+      "latex_range": {
+        "start_line": 402,
+        "end_line": 410,
+        "start_col": null,
+        "end_col": null
+      },
+      "page_range": {
+        "start_page": 1,
+        "end_page": 1
+      },
+      "head_text": "Given W W 1 W s a tuple of subsets",
+      "pdf_page": 6,
+      "links": [],
+      "not_formalized": false
+    },
+    {
+      "env_id": "ASharp:env:para:L409",
+      "kind": "paragraph",
+      "label": "para:L409",
+      "title": null,
+      "section": "Towers of minimum fragments",
+      "latex_file": "arXiv-2412.03540v1.tex",
+      "latex_range": {
+        "start_line": 409,
+        "end_line": 411,
+        "start_col": null,
+        "end_col": null
+      },
+      "page_range": {
+        "start_page": 1,
+        "end_page": 1
+      },
+      "head_text": "We say that T T W H is the minimum",
+      "pdf_page": 7,
+      "links": [],
+      "not_formalized": false
+    },
+    {
+      "env_id": "ASharp:env:lemma:lemma_at_L413",
+      "kind": "lemma",
+      "label": "auto:lemma:L413",
+      "title": null,
+      "section": "Towers of minimum fragments",
+      "latex_file": "arXiv-2412.03540v1.tex",
+      "latex_range": {
+        "start_line": 413,
+        "end_line": 415,
+        "start_col": null,
+        "end_col": null
+      },
+      "page_range": {
+        "start_page": 1,
+        "end_page": 1
+      },
+      "head_text": "For any H and W there exists a tower of",
+      "pdf_page": 7,
+      "links": [],
+      "not_formalized": false
+    },
+    {
+      "env_id": "ASharp:env:para:L414",
+      "kind": "paragraph",
+      "label": "para:L414",
+      "title": null,
+      "section": "Towers of minimum fragments",
+      "latex_file": "arXiv-2412.03540v1.tex",
+      "latex_range": {
+        "start_line": 414,
+        "end_line": 418,
+        "start_col": null,
+        "end_col": null
+      },
+      "page_range": {
+        "start_page": 1,
+        "end_page": 1
+      },
+      "head_text": "For any H and W there exists a tower of",
+      "pdf_page": 7,
+      "links": [],
+      "not_formalized": false
+    },
+    {
+      "env_id": "ASharp:env:proof:proof_at_L416",
+      "kind": "proof",
+      "label": "auto:proof:L416",
+      "title": null,
+      "section": "Towers of minimum fragments",
+      "latex_file": "arXiv-2412.03540v1.tex",
+      "latex_range": {
+        "start_line": 416,
+        "end_line": 418,
+        "start_col": null,
+        "end_col": null
+      },
+      "page_range": {
+        "start_page": 1,
+        "end_page": 1
+      },
+      "head_text": "This follows from the simple observation that T with T",
+      "pdf_page": 7,
+      "links": [],
+      "not_formalized": false
+    },
+    {
+      "env_id": "ASharp:env:para:L420",
+      "kind": "paragraph",
+      "label": "para:L420",
+      "title": null,
+      "section": "Towers of minimum fragments",
+      "latex_file": "arXiv-2412.03540v1.tex",
+      "latex_range": {
+        "start_line": 420,
+        "end_line": 420,
+        "start_col": null,
+        "end_col": null
+      },
+      "page_range": {
+        "start_page": 1,
+        "end_page": 1
+      },
+      "head_text": "We next record the key property of minimum towers of",
+      "pdf_page": 7,
+      "links": [],
+      "not_formalized": false
+    },
+    {
+      "env_id": "ASharp:env:para:L422",
+      "kind": "paragraph",
+      "label": "para:L422",
+      "title": null,
+      "section": "Towers of minimum fragments",
+      "latex_file": "arXiv-2412.03540v1.tex",
+      "latex_range": {
+        "start_line": 422,
+        "end_line": 423,
+        "start_col": null,
+        "end_col": null
+      },
+      "page_range": {
+        "start_page": 1,
+        "end_page": 1
+      },
+      "head_text": "The key property of towers of minimum fragments roughly shows",
+      "pdf_page": 7,
+      "links": [],
+      "not_formalized": false
+    },
+    {
+      "env_id": "ASharp:env:lem:fragment-contain",
+      "kind": "lemma",
+      "label": "lem:fragment-contain",
+      "title": "Key property of towers of minimum fragments",
+      "section": "Towers of minimum fragments",
+      "latex_file": "arXiv-2412.03540v1.tex",
+      "latex_range": {
+        "start_line": 425,
+        "end_line": 427,
+        "start_col": null,
+        "end_col": null
+      },
+      "page_range": {
+        "start_page": 1,
+        "end_page": 1
+      },
+      "head_text": "We have T i H i b i Furthermore T",
+      "pdf_page": 7,
+      "links": [],
+      "not_formalized": false
+    },
+    {
+      "env_id": "ASharp:env:para:L426",
+      "kind": "paragraph",
+      "label": "para:L426",
+      "title": null,
+      "section": "Towers of minimum fragments",
+      "latex_file": "arXiv-2412.03540v1.tex",
+      "latex_range": {
+        "start_line": 426,
+        "end_line": 429,
+        "start_col": null,
+        "end_col": null
+      },
+      "page_range": {
+        "start_page": 1,
+        "end_page": 1
+      },
+      "head_text": "We have T i H i b i Furthermore T",
+      "pdf_page": 7,
+      "links": [],
+      "not_formalized": false
+    },
+    {
+      "env_id": "ASharp:env:proof:proof_at_L428",
+      "kind": "proof",
+      "label": "auto:proof:L428",
+      "title": null,
+      "section": "Towers of minimum fragments",
+      "latex_file": "arXiv-2412.03540v1.tex",
+      "latex_range": {
+        "start_line": 428,
+        "end_line": 432,
+        "start_col": null,
+        "end_col": null
+      },
+      "page_range": {
+        "start_page": 1,
+        "end_page": 1
+      },
+      "head_text": "Assume that there is a smallest i such that T",
+      "pdf_page": 7,
+      "links": [],
+      "not_formalized": false
+    },
+    {
+      "env_id": "ASharp:env:para:L436",
+      "kind": "paragraph",
+      "label": "para:L436",
+      "title": null,
+      "section": "Proof of Theorem \\ref{thm:sharp-selector",
+      "latex_file": "arXiv-2412.03540v1.tex",
+      "latex_range": {
+        "start_line": 436,
+        "end_line": 442,
+        "start_col": null,
+        "end_col": null
+      },
+      "page_range": {
+        "start_page": 1,
+        "end_page": 1
+      },
+      "head_text": "Given a tower of minimum fragments T we define U",
+      "pdf_page": 8,
+      "links": [],
+      "not_formalized": false
+    },
+    {
+      "env_id": "ASharp:env:other:claim_at_L437",
+      "kind": "other",
+      "label": "auto:other:L437",
+      "title": null,
+      "section": "Proof of Theorem \\ref{thm:sharp-selector",
+      "latex_file": "arXiv-2412.03540v1.tex",
+      "latex_range": {
+        "start_line": 437,
+        "end_line": 439,
+        "start_col": null,
+        "end_col": null
+      },
+      "page_range": {
+        "start_page": 1,
+        "end_page": 1
+      },
+      "head_text": "The collection W forms a cover of for any W",
+      "pdf_page": 8,
+      "links": [],
+      "not_formalized": false
+    },
+    {
+      "env_id": "ASharp:env:proof:proof_at_L440",
+      "kind": "proof",
+      "label": "auto:proof:L440",
+      "title": null,
+      "section": "Proof of Theorem \\ref{thm:sharp-selector",
+      "latex_file": "arXiv-2412.03540v1.tex",
+      "latex_range": {
+        "start_line": 440,
+        "end_line": 442,
+        "start_col": null,
+        "end_col": null
+      },
+      "page_range": {
+        "start_page": 1,
+        "end_page": 1
+      },
+      "head_text": "For each H the tower of minimum fragments T W",
+      "pdf_page": 8,
+      "links": [],
+      "not_formalized": false
+    },
+    {
+      "env_id": "ASharp:env:para:L444",
+      "kind": "paragraph",
+      "label": "para:L444",
+      "title": null,
+      "section": "Proof of Theorem \\ref{thm:sharp-selector",
+      "latex_file": "arXiv-2412.03540v1.tex",
+      "latex_range": {
+        "start_line": 444,
+        "end_line": 450,
+        "start_col": null,
+        "end_col": null
+      },
+      "page_range": {
+        "start_page": 1,
+        "end_page": 1
+      },
+      "head_text": "From Lemma lem fragment contain given Z which determines uniquely",
+      "pdf_page": 8,
+      "links": [],
+      "not_formalized": false
+    },
+    {
+      "env_id": "ASharp:env:eq:surj",
+      "kind": "equation",
+      "label": "eq:surj",
+      "title": null,
+      "section": "Proof of Theorem \\ref{thm:sharp-selector",
+      "latex_file": "arXiv-2412.03540v1.tex",
+      "latex_range": {
+        "start_line": 446,
+        "end_line": 449,
+        "start_col": null,
+        "end_col": null
+      },
+      "page_range": {
+        "start_page": 1,
+        "end_page": 1
+      },
+      "head_text": "u Z U U i 1 s H Z i",
+      "pdf_page": null,
+      "links": [],
+      "not_formalized": false
+    },
+    {
+      "env_id": "ASharp:env:eq:L455",
+      "kind": "equation",
+      "label": "eq:L455",
+      "title": null,
+      "section": "Proof of Theorem \\ref{thm:sharp-selector",
+      "latex_file": "arXiv-2412.03540v1.tex",
+      "latex_range": {
+        "start_line": 455,
+        "end_line": 457,
+        "start_col": null,
+        "end_col": null
+      },
+      "page_range": {
+        "start_page": 1,
+        "end_page": 1
+      },
+      "head_text": "x i 1 s W i H H x 1",
+      "pdf_page": null,
+      "links": [],
+      "not_formalized": false
+    },
+    {
+      "env_id": "ASharp:env:lemma:lemma_at_L459",
+      "kind": "lemma",
+      "label": "auto:lemma:L459",
+      "title": null,
+      "section": "Proof of Theorem \\ref{thm:sharp-selector",
+      "latex_file": "arXiv-2412.03540v1.tex",
+      "latex_range": {
+        "start_line": 459,
+        "end_line": 461,
+        "start_col": null,
+        "end_col": null
+      },
+      "page_range": {
+        "start_page": 1,
+        "end_page": 1
+      },
+      "head_text": "If W is bad then any tower of fragments T",
+      "pdf_page": 8,
+      "links": [],
+      "not_formalized": false
+    },
+    {
+      "env_id": "ASharp:env:para:L460",
+      "kind": "paragraph",
+      "label": "para:L460",
+      "title": null,
+      "section": "Proof of Theorem \\ref{thm:sharp-selector",
+      "latex_file": "arXiv-2412.03540v1.tex",
+      "latex_range": {
+        "start_line": 460,
+        "end_line": 475,
+        "start_col": null,
+        "end_col": null
+      },
+      "page_range": {
+        "start_page": 1,
+        "end_page": 1
+      },
+      "head_text": "If W is bad then any tower of fragments T",
+      "pdf_page": 8,
+      "links": [],
+      "not_formalized": false
+    },
+    {
+      "env_id": "ASharp:env:proof:proof_at_L462",
+      "kind": "proof",
+      "label": "auto:proof:L462",
+      "title": null,
+      "section": "Proof of Theorem \\ref{thm:sharp-selector",
+      "latex_file": "arXiv-2412.03540v1.tex",
+      "latex_range": {
+        "start_line": 462,
+        "end_line": 488,
+        "start_col": null,
+        "end_col": null
+      },
+      "page_range": {
+        "start_page": 1,
+        "end_page": 1
+      },
+      "head_text": "Assume that u 0 then T i for all i",
+      "pdf_page": 8,
+      "links": [],
+      "not_formalized": false
+    },
+    {
+      "env_id": "ASharp:env:eq:L464",
+      "kind": "equation",
+      "label": "eq:L464",
+      "title": null,
+      "section": "Proof of Theorem \\ref{thm:sharp-selector",
+      "latex_file": "arXiv-2412.03540v1.tex",
+      "latex_range": {
+        "start_line": 464,
+        "end_line": 466,
+        "start_col": null,
+        "end_col": null
+      },
+      "page_range": {
+        "start_page": 1,
+        "end_page": 1
+      },
+      "head_text": "H H i 1 j W i 2 j H",
+      "pdf_page": null,
+      "links": [],
+      "not_formalized": false
+    },
+    {
+      "env_id": "ASharp:env:eq:L467",
+      "kind": "equation",
+      "label": "eq:L467",
+      "title": null,
+      "section": "Proof of Theorem \\ref{thm:sharp-selector",
+      "latex_file": "arXiv-2412.03540v1.tex",
+      "latex_range": {
+        "start_line": 467,
+        "end_line": 467,
+        "start_col": null,
+        "end_col": null
+      },
+      "page_range": {
+        "start_page": 1,
+        "end_page": 1
+      },
+      "head_text": "Indeed for j 1 we have that H W 1",
+      "pdf_page": 8,
+      "links": [],
+      "not_formalized": false
+    },
+    {
+      "env_id": "ASharp:env:eq:L469",
+      "kind": "equation",
+      "label": "eq:L469",
+      "title": null,
+      "section": "Proof of Theorem \\ref{thm:sharp-selector",
+      "latex_file": "arXiv-2412.03540v1.tex",
+      "latex_range": {
+        "start_line": 469,
+        "end_line": 474,
+        "start_col": null,
+        "end_col": null
+      },
+      "page_range": {
+        "start_page": 1,
+        "end_page": 1
+      },
+      "head_text": "H H i 1 j 1 W i H i",
+      "pdf_page": null,
+      "links": [],
+      "not_formalized": false
+    },
+    {
+      "env_id": "ASharp:env:eq:L478",
+      "kind": "equation",
+      "label": "eq:L478",
+      "title": null,
+      "section": "Proof of Theorem \\ref{thm:sharp-selector",
+      "latex_file": "arXiv-2412.03540v1.tex",
+      "latex_range": {
+        "start_line": 478,
+        "end_line": 480,
+        "start_col": null,
+        "end_col": null
+      },
+      "page_range": {
+        "start_page": 1,
+        "end_page": 1
+      },
+      "head_text": "H H i 1 j 1 W i H H",
+      "pdf_page": null,
+      "links": [],
+      "not_formalized": false
+    },
+    {
+      "env_id": "ASharp:env:eq:L484",
+      "kind": "equation",
+      "label": "eq:L484",
+      "title": null,
+      "section": "Proof of Theorem \\ref{thm:sharp-selector",
+      "latex_file": "arXiv-2412.03540v1.tex",
+      "latex_range": {
+        "start_line": 484,
+        "end_line": 486,
+        "start_col": null,
+        "end_col": null
+      },
+      "page_range": {
+        "start_page": 1,
+        "end_page": 1
+      },
+      "head_text": "H i 1 s W i H H H H",
+      "pdf_page": 9,
+      "links": [],
+      "not_formalized": false
+    },
+    {
+      "env_id": "ASharp:env:para:L490",
+      "kind": "paragraph",
+      "label": "para:L490",
+      "title": null,
+      "section": "Proof of Theorem \\ref{thm:sharp-selector",
+      "latex_file": "arXiv-2412.03540v1.tex",
+      "latex_range": {
+        "start_line": 490,
+        "end_line": 508,
+        "start_col": null,
+        "end_col": null
+      },
+      "page_range": {
+        "start_page": 1,
+        "end_page": 1
+      },
+      "head_text": "We are now ready to state and prove the key",
+      "pdf_page": 9,
+      "links": [],
+      "not_formalized": false
+    },
+    {
+      "env_id": "ASharp:env:lem:key",
+      "kind": "lemma",
+      "label": "lem:key",
+      "title": null,
+      "section": "Proof of Theorem \\ref{thm:sharp-selector",
+      "latex_file": "arXiv-2412.03540v1.tex",
+      "latex_range": {
+        "start_line": 491,
+        "end_line": 496,
+        "start_col": null,
+        "end_col": null
+      },
+      "page_range": {
+        "start_page": 1,
+        "end_page": 1
+      },
+      "head_text": "For q 16p we have W 1 W s X",
+      "pdf_page": 9,
+      "links": [],
+      "not_formalized": false
+    },
+    {
+      "env_id": "ASharp:env:eq:L493",
+      "kind": "equation",
+      "label": "eq:L493",
+      "title": null,
+      "section": "Proof of Theorem \\ref{thm:sharp-selector",
+      "latex_file": "arXiv-2412.03540v1.tex",
+      "latex_range": {
+        "start_line": 493,
+        "end_line": 495,
+        "start_col": null,
+        "end_col": null
+      },
+      "page_range": {
+        "start_page": 1,
+        "end_page": 1
+      },
+      "head_text": "W 1 W s X q I W bad U",
+      "pdf_page": null,
+      "links": [],
+      "not_formalized": false
+    },
+    {
+      "env_id": "ASharp:env:proof:proof_at_L497",
+      "kind": "proof",
+      "label": "auto:proof:L497",
+      "title": null,
+      "section": "Proof of Theorem \\ref{thm:sharp-selector",
+      "latex_file": "arXiv-2412.03540v1.tex",
+      "latex_range": {
+        "start_line": 497,
+        "end_line": 515,
+        "start_col": null,
+        "end_col": null
+      },
+      "page_range": {
+        "start_page": 1,
+        "end_page": 1
+      },
+      "head_text": "We denote q W X q W q W 1",
+      "pdf_page": null,
+      "links": [],
+      "not_formalized": false
+    },
+    {
+      "env_id": "ASharp:env:eq:L500",
+      "kind": "equation",
+      "label": "eq:L500",
+      "title": null,
+      "section": "Proof of Theorem \\ref{thm:sharp-selector",
+      "latex_file": "arXiv-2412.03540v1.tex",
+      "latex_range": {
+        "start_line": 500,
+        "end_line": 507,
+        "start_col": null,
+        "end_col": null
+      },
+      "page_range": {
+        "start_page": 1,
+        "end_page": 1
+      },
+      "head_text": "W 1 W s X q I W bad U",
+      "pdf_page": null,
+      "links": [],
+      "not_formalized": false
+    },
+    {
+      "env_id": "ASharp:env:eq:L511",
+      "kind": "equation",
+      "label": "eq:L511",
+      "title": null,
+      "section": "Proof of Theorem \\ref{thm:sharp-selector",
+      "latex_file": "arXiv-2412.03540v1.tex",
+      "latex_range": {
+        "start_line": 511,
+        "end_line": 514,
+        "start_col": null,
+        "end_col": null
+      },
+      "page_range": {
+        "start_page": 1,
+        "end_page": 1
+      },
+      "head_text": "W 1 W s X q I W bad U",
+      "pdf_page": null,
+      "links": [],
+      "not_formalized": false
+    },
+    {
+      "env_id": "ASharp:env:para:L517",
+      "kind": "paragraph",
+      "label": "para:L517",
+      "title": null,
+      "section": "Proof of Theorem \\ref{thm:sharp-selector",
+      "latex_file": "arXiv-2412.03540v1.tex",
+      "latex_range": {
+        "start_line": 517,
+        "end_line": 527,
+        "start_col": null,
+        "end_col": null
+      },
+      "page_range": {
+        "start_page": 1,
+        "end_page": 1
+      },
+      "head_text": "We can now complete the proof of Theorem thm sharp",
+      "pdf_page": 10,
+      "links": [],
+      "not_formalized": false
+    },
+    {
+      "env_id": "ASharp:env:proof:proof_at_L518",
+      "kind": "proof",
+      "label": "auto:proof:L518",
+      "title": "Proof of Theorem \\ref{thm:sharp-selector}",
+      "section": "Proof of Theorem \\ref{thm:sharp-selector",
+      "latex_file": "arXiv-2412.03540v1.tex",
+      "latex_range": {
+        "start_line": 518,
+        "end_line": 533,
+        "start_col": null,
+        "end_col": null
+      },
+      "page_range": {
+        "start_page": 1,
+        "end_page": 1
+      },
+      "head_text": "Since is not p small we have W 1 W",
+      "pdf_page": 10,
+      "links": [],
+      "not_formalized": false
+    },
+    {
+      "env_id": "ASharp:env:eq:L520",
+      "kind": "equation",
+      "label": "eq:L520",
+      "title": null,
+      "section": "Proof of Theorem \\ref{thm:sharp-selector",
+      "latex_file": "arXiv-2412.03540v1.tex",
+      "latex_range": {
+        "start_line": 520,
+        "end_line": 523,
+        "start_col": null,
+        "end_col": null
+      },
+      "page_range": {
+        "start_page": 1,
+        "end_page": 1
+      },
+      "head_text": "W 1 W s X q I W bad U",
+      "pdf_page": null,
+      "links": [],
+      "not_formalized": false
+    },
+    {
+      "env_id": "ASharp:env:eq:L525",
+      "kind": "equation",
+      "label": "eq:L525",
+      "title": null,
+      "section": "Proof of Theorem \\ref{thm:sharp-selector",
+      "latex_file": "arXiv-2412.03540v1.tex",
+      "latex_range": {
+        "start_line": 525,
+        "end_line": 527,
+        "start_col": null,
+        "end_col": null
+      },
+      "page_range": {
+        "start_page": 1,
+        "end_page": 1
+      },
+      "head_text": "W 1 W s X q W is bad 2",
+      "pdf_page": null,
+      "links": [],
+      "not_formalized": false
+    },
+    {
+      "env_id": "ASharp:env:para:L529",
+      "kind": "paragraph",
+      "label": "para:L529",
+      "title": null,
+      "section": "Proof of Theorem \\ref{thm:sharp-selector",
+      "latex_file": "arXiv-2412.03540v1.tex",
+      "latex_range": {
+        "start_line": 529,
+        "end_line": 533,
+        "start_col": null,
+        "end_col": null
+      },
+      "page_range": {
+        "start_page": 1,
+        "end_page": 1
+      },
+      "head_text": "Note that the set i 1 s W i has",
+      "pdf_page": 10,
+      "links": [],
+      "not_formalized": false
+    },
+    {
+      "env_id": "ASharp:env:eq:L530",
+      "kind": "equation",
+      "label": "eq:L530",
+      "title": null,
+      "section": "Proof of Theorem \\ref{thm:sharp-selector",
+      "latex_file": "arXiv-2412.03540v1.tex",
+      "latex_range": {
+        "start_line": 530,
+        "end_line": 532,
+        "start_col": null,
+        "end_col": null
+      },
+      "page_range": {
+        "start_page": 1,
+        "end_page": 1
+      },
+      "head_text": "W X sq H x W H H x 1",
+      "pdf_page": null,
+      "links": [],
+      "not_formalized": false
+    },
+    {
+      "env_id": "ASharp:env:para:L539",
+      "kind": "paragraph",
+      "label": "para:L539",
+      "title": null,
+      "section": "Finding small integral covers from fractional covers",
+      "latex_file": "arXiv-2412.03540v1.tex",
+      "latex_range": {
+        "start_line": 539,
+        "end_line": 539,
+        "start_col": null,
+        "end_col": null
+      },
+      "page_range": {
+        "start_page": 1,
+        "end_page": 1
+      },
+      "head_text": "In this section we give the proof of Theorem thm",
+      "pdf_page": 11,
+      "links": [],
+      "not_formalized": false
+    },
+    {
+      "env_id": "ASharp:env:proof:proof_at_L542",
+      "kind": "proof",
+      "label": "auto:proof:L542",
+      "title": null,
+      "section": "Finding small integral covers from fractional covers",
+      "latex_file": "arXiv-2412.03540v1.tex",
+      "latex_range": {
+        "start_line": 542,
+        "end_line": 598,
+        "start_col": null,
+        "end_col": null
+      },
+      "page_range": {
+        "start_page": 1,
+        "end_page": 1
+      },
+      "head_text": "of Theorem thm main Given the fractional cover w we",
+      "pdf_page": 11,
+      "links": [],
+      "not_formalized": false
+    },
+    {
+      "env_id": "ASharp:env:para:L543",
+      "kind": "paragraph",
+      "label": "para:L543",
+      "title": null,
+      "section": "Finding small integral covers from fractional covers",
+      "latex_file": "arXiv-2412.03540v1.tex",
+      "latex_range": {
+        "start_line": 543,
+        "end_line": 550,
+        "start_col": null,
+        "end_col": null
+      },
+      "page_range": {
+        "start_page": 1,
+        "end_page": 1
+      },
+      "head_text": "Given the fractional cover w we now construct weight vectors",
+      "pdf_page": 11,
+      "links": [],
+      "not_formalized": false
+    },
+    {
+      "env_id": "ASharp:env:eq:L544",
+      "kind": "equation",
+      "label": "eq:L544",
+      "title": null,
+      "section": "Finding small integral covers from fractional covers",
+      "latex_file": "arXiv-2412.03540v1.tex",
+      "latex_range": {
+        "start_line": 544,
+        "end_line": 546,
+        "start_col": null,
+        "end_col": null
+      },
+      "page_range": {
+        "start_page": 1,
+        "end_page": 1
+      },
+      "head_text": "H x W x W W H w W W",
+      "pdf_page": 11,
+      "links": [],
+      "not_formalized": false
+    },
+    {
+      "env_id": "ASharp:env:eq:L548",
+      "kind": "equation",
+      "label": "eq:L548",
+      "title": null,
+      "section": "Finding small integral covers from fractional covers",
+      "latex_file": "arXiv-2412.03540v1.tex",
+      "latex_range": {
+        "start_line": 548,
+        "end_line": 550,
+        "start_col": null,
+        "end_col": null
+      },
+      "page_range": {
+        "start_page": 1,
+        "end_page": 1
+      },
+      "head_text": "y H W y W W H w W W",
+      "pdf_page": 11,
+      "links": [],
+      "not_formalized": false
+    },
+    {
+      "env_id": "ASharp:env:para:L552",
+      "kind": "paragraph",
+      "label": "para:L552",
+      "title": null,
+      "section": "Finding small integral covers from fractional covers",
+      "latex_file": "arXiv-2412.03540v1.tex",
+      "latex_range": {
+        "start_line": 552,
+        "end_line": 563,
+        "start_col": null,
+        "end_col": null
+      },
+      "page_range": {
+        "start_page": 1,
+        "end_page": 1
+      },
+      "head_text": "Assume for the sake of contradiction that is not q",
+      "pdf_page": 11,
+      "links": [],
+      "not_formalized": false
+    },
+    {
+      "env_id": "ASharp:env:eq:L553",
+      "kind": "equation",
+      "label": "eq:L553",
+      "title": null,
+      "section": "Finding small integral covers from fractional covers",
+      "latex_file": "arXiv-2412.03540v1.tex",
+      "latex_range": {
+        "start_line": 553,
+        "end_line": 555,
+        "start_col": null,
+        "end_col": null
+      },
+      "page_range": {
+        "start_page": 1,
+        "end_page": 1
+      },
+      "head_text": "H x X q H H x 1 1 2t",
+      "pdf_page": null,
+      "links": [],
+      "not_formalized": false
+    },
+    {
+      "env_id": "ASharp:env:eq:L557",
+      "kind": "equation",
+      "label": "eq:L557",
+      "title": null,
+      "section": "Finding small integral covers from fractional covers",
+      "latex_file": "arXiv-2412.03540v1.tex",
+      "latex_range": {
+        "start_line": 557,
+        "end_line": 562,
+        "start_col": null,
+        "end_col": null
+      },
+      "page_range": {
+        "start_page": 1,
+        "end_page": 1
+      },
+      "head_text": "x X q H H x W W H w",
+      "pdf_page": 11,
+      "links": [],
+      "not_formalized": false
+    },
+    {
+      "env_id": "ASharp:env:para:L565",
+      "kind": "paragraph",
+      "label": "para:L565",
+      "title": null,
+      "section": "Finding small integral covers from fractional covers",
+      "latex_file": "arXiv-2412.03540v1.tex",
+      "latex_range": {
+        "start_line": 565,
+        "end_line": 578,
+        "start_col": null,
+        "end_col": null
+      },
+      "page_range": {
+        "start_page": 1,
+        "end_page": 1
+      },
+      "head_text": "We hence obtain with probability at least 1 3 1",
+      "pdf_page": 12,
+      "links": [],
+      "not_formalized": false
+    },
+    {
+      "env_id": "ASharp:env:eq:L566",
+      "kind": "equation",
+      "label": "eq:L566",
+      "title": null,
+      "section": "Finding small integral covers from fractional covers",
+      "latex_file": "arXiv-2412.03540v1.tex",
+      "latex_range": {
+        "start_line": 566,
+        "end_line": 570,
+        "start_col": null,
+        "end_col": null
+      },
+      "page_range": {
+        "start_page": 1,
+        "end_page": 1
+      },
+      "head_text": "1 2t 1 1 t H x X q H",
+      "pdf_page": null,
+      "links": [],
+      "not_formalized": false
+    },
+    {
+      "env_id": "ASharp:env:eq:L572",
+      "kind": "equation",
+      "label": "eq:L572",
+      "title": null,
+      "section": "Finding small integral covers from fractional covers",
+      "latex_file": "arXiv-2412.03540v1.tex",
+      "latex_range": {
+        "start_line": 572,
+        "end_line": 574,
+        "start_col": null,
+        "end_col": null
+      },
+      "page_range": {
+        "start_page": 1,
+        "end_page": 1
+      },
+      "head_text": "H W W H X q w W 1 2",
+      "pdf_page": null,
+      "links": [],
+      "not_formalized": false
+    },
+    {
+      "env_id": "ASharp:env:eq:L576",
+      "kind": "equation",
+      "label": "eq:L576",
+      "title": null,
+      "section": "Finding small integral covers from fractional covers",
+      "latex_file": "arXiv-2412.03540v1.tex",
+      "latex_range": {
+        "start_line": 576,
+        "end_line": 578,
+        "start_col": null,
+        "end_col": null
+      },
+      "page_range": {
+        "start_page": 1,
+        "end_page": 1
+      },
+      "head_text": "H W W H X q w W 1 6",
+      "pdf_page": null,
+      "links": [],
+      "not_formalized": false
+    },
+    {
+      "env_id": "ASharp:env:eq:L581",
+      "kind": "equation",
+      "label": "eq:L581",
+      "title": null,
+      "section": "Finding small integral covers from fractional covers",
+      "latex_file": "arXiv-2412.03540v1.tex",
+      "latex_range": {
+        "start_line": 581,
+        "end_line": 583,
+        "start_col": null,
+        "end_col": null
+      },
+      "page_range": {
+        "start_page": 1,
+        "end_page": 1
+      },
+      "head_text": "W W X q w W H W W H",
+      "pdf_page": 11,
+      "links": [],
+      "not_formalized": false
+    },
+    {
+      "env_id": "ASharp:env:eq:L585",
+      "kind": "equation",
+      "label": "eq:L585",
+      "title": null,
+      "section": "Finding small integral covers from fractional covers",
+      "latex_file": "arXiv-2412.03540v1.tex",
+      "latex_range": {
+        "start_line": 585,
+        "end_line": 587,
+        "start_col": null,
+        "end_col": null
+      },
+      "page_range": {
+        "start_page": 1,
+        "end_page": 1
+      },
+      "head_text": "W W X q w W 1 6",
+      "pdf_page": null,
+      "links": [],
+      "not_formalized": false
+    },
+    {
+      "env_id": "ASharp:env:para:L589",
+      "kind": "paragraph",
+      "label": "para:L589",
+      "title": null,
+      "section": "Finding small integral covers from fractional covers",
+      "latex_file": "arXiv-2412.03540v1.tex",
+      "latex_range": {
+        "start_line": 589,
+        "end_line": 598,
+        "start_col": null,
+        "end_col": null
+      },
+      "page_range": {
+        "start_page": 1,
+        "end_page": 1
+      },
+      "head_text": "On the other hand by linearity of expectation W W",
+      "pdf_page": 12,
+      "links": [],
+      "not_formalized": false
+    },
+    {
+      "env_id": "ASharp:env:eq:L590",
+      "kind": "equation",
+      "label": "eq:L590",
+      "title": null,
+      "section": "Finding small integral covers from fractional covers",
+      "latex_file": "arXiv-2412.03540v1.tex",
+      "latex_range": {
+        "start_line": 590,
+        "end_line": 592,
+        "start_col": null,
+        "end_col": null
+      },
+      "page_range": {
+        "start_page": 1,
+        "end_page": 1
+      },
+      "head_text": "W W X q w W W q W w",
+      "pdf_page": 11,
+      "links": [],
+      "not_formalized": false
+    },
+    {
+      "env_id": "ASharp:env:eq:L594",
+      "kind": "equation",
+      "label": "eq:L594",
+      "title": null,
+      "section": "Finding small integral covers from fractional covers",
+      "latex_file": "arXiv-2412.03540v1.tex",
+      "latex_range": {
+        "start_line": 594,
+        "end_line": 596,
+        "start_col": null,
+        "end_col": null
+      },
+      "page_range": {
+        "start_page": 1,
+        "end_page": 1
+      },
+      "head_text": "W W X q w W W p 6 W",
+      "pdf_page": null,
+      "links": [],
+      "not_formalized": false
+    },
+    {
+      "env_id": "ASharp:env:para:L601",
+      "kind": "paragraph",
+      "label": "para:L601",
+      "title": null,
+      "section": "Acknowledgement",
+      "latex_file": "arXiv-2412.03540v1.tex",
+      "latex_range": {
+        "start_line": 601,
+        "end_line": 601,
+        "start_col": null,
+        "end_col": null
+      },
+      "page_range": {
+        "start_page": 1,
+        "end_page": 1
+      },
+      "head_text": "The author would like to thank Jan Vondr ak for",
+      "pdf_page": 12,
+      "links": [],
+      "not_formalized": false
+    },
+    {
+      "env_id": "ASharp:env:para:L605",
+      "kind": "paragraph",
+      "label": "para:L605",
+      "title": null,
+      "section": "Acknowledgement",
+      "latex_file": "arXiv-2412.03540v1.tex",
+      "latex_range": {
+        "start_line": 605,
+        "end_line": 608,
+        "start_col": null,
+        "end_col": null
+      },
+      "page_range": {
+        "start_page": 1,
+        "end_page": 1
+      },
+      "head_text": "ALWZ R Alweiss S Lovett K Wu and J Zhang",
+      "pdf_page": 13,
+      "links": [],
+      "not_formalized": false
+    },
+    {
+      "env_id": "ASharp:env:para:L610",
+      "kind": "paragraph",
+      "label": "para:L610",
+      "title": null,
+      "section": "Acknowledgement",
+      "latex_file": "arXiv-2412.03540v1.tex",
+      "latex_range": {
+        "start_line": 610,
+        "end_line": 612,
+        "start_col": null,
+        "end_col": null
+      },
+      "page_range": {
+        "start_page": 1,
+        "end_page": 1
+      },
+      "head_text": "BMM W Bednorz R Martynek and R Meller The suprema",
+      "pdf_page": 13,
+      "links": [],
+      "not_formalized": false
+    },
+    {
+      "env_id": "ASharp:env:para:L614",
+      "kind": "paragraph",
+      "label": "para:L614",
+      "title": null,
+      "section": "Acknowledgement",
+      "latex_file": "arXiv-2412.03540v1.tex",
+      "latex_range": {
+        "start_line": 614,
+        "end_line": 616,
+        "start_col": null,
+        "end_col": null
+      },
+      "page_range": {
+        "start_page": 1,
+        "end_page": 1
+      },
+      "head_text": "BMM2 W Bednorz R Martynek and R Meller Small cover",
+      "pdf_page": 13,
+      "links": [],
+      "not_formalized": false
+    },
+    {
+      "env_id": "ASharp:env:para:L618",
+      "kind": "paragraph",
+      "label": "para:L618",
+      "title": null,
+      "section": "Acknowledgement",
+      "latex_file": "arXiv-2412.03540v1.tex",
+      "latex_range": {
+        "start_line": 618,
+        "end_line": 619,
+        "start_col": null,
+        "end_col": null
+      },
+      "page_range": {
+        "start_page": 1,
+        "end_page": 1
+      },
+      "head_text": "DK B DeMarco and J Kahn Note on a problem",
+      "pdf_page": 13,
+      "links": [],
+      "not_formalized": false
+    },
+    {
+      "env_id": "ASharp:env:para:L621",
+      "kind": "paragraph",
+      "label": "para:L621",
+      "title": null,
+      "section": "Acknowledgement",
+      "latex_file": "arXiv-2412.03540v1.tex",
+      "latex_range": {
+        "start_line": 621,
+        "end_line": 622,
+        "start_col": null,
+        "end_col": null
+      },
+      "page_range": {
+        "start_page": 1,
+        "end_page": 1
+      },
+      "head_text": "FP T Fischer and Y Person Some results on fractional",
+      "pdf_page": 13,
+      "links": [],
+      "not_formalized": false
+    },
+    {
+      "env_id": "ASharp:env:para:L624",
+      "kind": "paragraph",
+      "label": "para:L624",
+      "title": null,
+      "section": "Acknowledgement",
+      "latex_file": "arXiv-2412.03540v1.tex",
+      "latex_range": {
+        "start_line": 624,
+        "end_line": 627,
+        "start_col": null,
+        "end_col": null
+      },
+      "page_range": {
+        "start_page": 1,
+        "end_page": 1
+      },
+      "head_text": "FKNP K Frankston J Kahn B Narayanan and J Park",
+      "pdf_page": 13,
+      "links": [],
+      "not_formalized": false
+    },
+    {
+      "env_id": "ASharp:env:para:L629",
+      "kind": "paragraph",
+      "label": "para:L629",
+      "title": null,
+      "section": "Acknowledgement",
+      "latex_file": "arXiv-2412.03540v1.tex",
+      "latex_range": {
+        "start_line": 629,
+        "end_line": 632,
+        "start_col": null,
+        "end_col": null
+      },
+      "page_range": {
+        "start_page": 1,
+        "end_page": 1
+      },
+      "head_text": "FKP K Frankston J Kahn and J Park On a",
+      "pdf_page": 13,
+      "links": [],
+      "not_formalized": false
+    },
+    {
+      "env_id": "ASharp:env:para:L637",
+      "kind": "paragraph",
+      "label": "para:L637",
+      "title": null,
+      "section": "Acknowledgement",
+      "latex_file": "arXiv-2412.03540v1.tex",
+      "latex_range": {
+        "start_line": 637,
+        "end_line": 640,
+        "start_col": null,
+        "end_col": null
+      },
+      "page_range": {
+        "start_page": 1,
+        "end_page": 1
+      },
+      "head_text": "PPT J Park and H T Pham On a conjecture",
+      "pdf_page": 13,
+      "links": [],
+      "not_formalized": false
+    },
+    {
+      "env_id": "ASharp:env:para:L642",
+      "kind": "paragraph",
+      "label": "para:L642",
+      "title": null,
+      "section": "Acknowledgement",
+      "latex_file": "arXiv-2412.03540v1.tex",
+      "latex_range": {
+        "start_line": 642,
+        "end_line": 645,
+        "start_col": null,
+        "end_col": null
+      },
+      "page_range": {
+        "start_page": 1,
+        "end_page": 1
+      },
+      "head_text": "PPK J Park and H T Pham A proof of",
+      "pdf_page": 13,
+      "links": [],
+      "not_formalized": false
+    },
+    {
+      "env_id": "ASharp:env:para:L647",
+      "kind": "paragraph",
+      "label": "para:L647",
+      "title": null,
+      "section": "Acknowledgement",
+      "latex_file": "arXiv-2412.03540v1.tex",
+      "latex_range": {
+        "start_line": 647,
+        "end_line": 650,
+        "start_col": null,
+        "end_col": null
+      },
+      "page_range": {
+        "start_page": 1,
+        "end_page": 1
+      },
+      "head_text": "Talagrand06 M Talagrand Selector processes on classes of sets Probab",
+      "pdf_page": 13,
+      "links": [],
+      "not_formalized": false
+    },
+    {
+      "env_id": "ASharp:env:para:L652",
+      "kind": "paragraph",
+      "label": "para:L652",
+      "title": null,
+      "section": "Acknowledgement",
+      "latex_file": "arXiv-2412.03540v1.tex",
+      "latex_range": {
+        "start_line": 652,
+        "end_line": 656,
+        "start_col": null,
+        "end_col": null
+      },
+      "page_range": {
+        "start_page": 1,
+        "end_page": 1
+      },
+      "head_text": "Talagrand M Talagrand Are many small sets explicitly small Proceedings",
+      "pdf_page": 13,
+      "links": [],
+      "not_formalized": false
+    },
+    {
+      "env_id": "ASharp:env:para:L658",
+      "kind": "paragraph",
+      "label": "para:L658",
+      "title": null,
+      "section": "Acknowledgement",
+      "latex_file": "arXiv-2412.03540v1.tex",
+      "latex_range": {
+        "start_line": 658,
+        "end_line": 661,
+        "start_col": null,
+        "end_col": null
+      },
+      "page_range": {
+        "start_page": 1,
+        "end_page": 1
+      },
+      "head_text": "Talagrand2 M Talagrand Upper and Lower Bounds for Stochastic Processes",
+      "pdf_page": 13,
+      "links": [],
+      "not_formalized": false
+    }
+  ],
+  "highlights": [
+    {
+      "link_id": "lnk_09a63157e1aff6e1",
+      "lean_fqn": "Workspace.Definitions.CoverCollection.genuineU",
+      "lean_file": "lean_workspace/Workspace/Definitions/CoverCollection.lean",
+      "lean_range": {
+        "start_line": 51,
+        "end_line": 58,
+        "start_col": null,
+        "end_col": null
+      },
+      "kind": "definition",
+      "confidence": 0.8,
+      "source": "manual",
+      "verifier_vote": "none",
+      "rationale": "genuineU(W,H) is the biUnion of the fragments of the minimum tower of (W,H), i.e. U = \u22c3_{i=1}^s T_i in the Proof of Theorem 1.3.",
+      "reachable": true,
+      "assumption_tainted": false,
+      "latex_file": "arXiv-2412.03540v1.tex",
+      "latex_range": {
+        "start_line": 436,
+        "end_line": 436,
+        "start_col": null,
+        "end_col": null
+      },
+      "pdf_page": 8,
+      "prose": "Given a tower of minimum fragments T , we define U = _ i=1 ^ s T_i and u=|U| = _ i=1 ^ s t_i . For any W , the collection ( W ) of sets of the form _ i=1 ^ s T_i where T =(T_1, ,T_s) is a tower of minimum fragments of ( W ,H) for some H ."
+    },
+    {
+      "link_id": "lnk_d7a91a7ff2527080",
+      "lean_fqn": "Workspace.Definitions.CoverCollection.coverCollection",
+      "lean_file": "lean_workspace/Workspace/Definitions/CoverCollection.lean",
+      "lean_range": {
+        "start_line": 59,
+        "end_line": 65,
+        "start_col": null,
+        "end_col": null
+      },
+      "kind": "definition",
+      "confidence": 0.85,
+      "source": "manual",
+      "verifier_vote": "none",
+      "rationale": "The cover collection \ud835\udcb0(W) defined at the start of the Proof of Theorem 1.3 (\u00a73.2/\u00a7proof).",
+      "reachable": true,
+      "assumption_tainted": false,
+      "latex_file": "arXiv-2412.03540v1.tex",
+      "latex_range": {
+        "start_line": 436,
+        "end_line": 436,
+        "start_col": null,
+        "end_col": null
+      },
+      "pdf_page": 8,
+      "prose": "Given a tower of minimum fragments T , we define U = _ i=1 ^ s T_i and u=|U| = _ i=1 ^ s t_i . For any W , the collection ( W ) of sets of the form _ i=1 ^ s T_i where T =(T_1, ,T_s) is a tower of minimum fragments of ( W ,H) for some H ."
+    },
+    {
+      "link_id": "lnk_aed4e999278da9de",
+      "lean_fqn": "Workspace.Definitions.LambdaH.lambdaH",
+      "lean_file": "lean_workspace/Workspace/Definitions/LambdaH.lean",
+      "lean_range": {
+        "start_line": 18,
+        "end_line": 24,
+        "start_col": null,
+        "end_col": null
+      },
+      "kind": "definition",
+      "confidence": 0.95,
+      "source": "manual",
+      "verifier_vote": "none",
+      "rationale": "Exactly the weight vector \u03bb_H constructed from the fractional cover w in the Proof of Theorem 1.1.",
+      "reachable": true,
+      "assumption_tainted": false,
+      "latex_file": "arXiv-2412.03540v1.tex",
+      "latex_range": {
+        "start_line": 545,
+        "end_line": 545,
+        "start_col": null,
+        "end_col": null
+      },
+      "pdf_page": 11,
+      "prose": "_H(x) = _ W : x W, W H w(W) |W| _ y H _ W : y W, W H w(W) |W| ."
+    },
+    {
+      "link_id": "lnk_e676eb3593b4f778",
+      "lean_fqn": "Workspace.Definitions.ProbDistributions.ProbXp",
+      "lean_file": "lean_workspace/Workspace/Definitions/ProbDistributions.lean",
+      "lean_range": {
+        "start_line": 18,
+        "end_line": 22,
+        "start_col": null,
+        "end_col": null
+      },
+      "kind": "definition",
+      "confidence": 0.7,
+      "source": "manual",
+      "verifier_vote": "none",
+      "rationale": "ProbXp p A = \u2211_{S\u2208A} p^{|S|}(1-p)^{|X|-|S|} is the probability of an event A under the product measure X_p; its single-point form is exactly the paper's P_q(W) = q^{|W|}(1-q)^{|X|-|W|}. Confidence lowered because the paper introduces this measure inline (mostly as P_p(\u27e8\u210b\u27e9)) rather than defining the event-probability functional explicitly.",
+      "reachable": true,
+      "assumption_tainted": false,
+      "latex_file": "arXiv-2412.03540v1.tex",
+      "latex_range": {
+        "start_line": 498,
+        "end_line": 498,
+        "start_col": null,
+        "end_col": null
+      },
+      "pdf_page": 9,
+      "prose": "Via the surjection (2.2), we have"
+    },
+    {
+      "link_id": "lnk_9ff3c485615544f1",
+      "lean_fqn": "Workspace.Definitions.ProbDistributions.ProbXpJoint",
+      "lean_file": "lean_workspace/Workspace/Definitions/ProbDistributions.lean",
+      "lean_range": {
+        "start_line": 23,
+        "end_line": 28,
+        "start_col": null,
+        "end_col": null
+      },
+      "kind": "definition",
+      "confidence": 0.6,
+      "source": "manual",
+      "verifier_vote": "none",
+      "rationale": "ProbXpJoint q s \u03c6 is the expectation E_{W\u2081,\u2026,W_s \u223c X_q indep.}[\u03c6(W)] of the s-fold product distribution, the object appearing throughout Section 3 (Lemma key, proof of sharp-selector). Linked to the expectation notation; confidence lowered as the paper never gives this functional an explicit definition.",
+      "reachable": true,
+      "assumption_tainted": false,
+      "latex_file": "arXiv-2412.03540v1.tex",
+      "latex_range": {
+        "start_line": 494,
+        "end_line": 494,
+        "start_col": null,
+        "end_col": null
+      },
+      "pdf_page": 9,
+      "prose": "which asserts that, over bad W"
+    },
+    {
+      "link_id": "lnk_7fb614afaca2985f",
+      "lean_fqn": "Workspace.Encoding.Lemma32.SuffixHalfCond",
+      "lean_file": "lean_workspace/Workspace/Encoding/Lemma32_LargeWeight.lean",
+      "lean_range": {
+        "start_line": 48,
+        "end_line": 49,
+        "start_col": null,
+        "end_col": null
+      },
+      "kind": "definition",
+      "confidence": 0.8,
+      "source": "manual",
+      "verifier_vote": "none",
+      "rationale": "SuffixHalfCond encodes the half-weight condition \u03bb(W\u2229H') \u2265 \u00bd\u03bb(H') for the suffix H_{\u2265b}, which is the defining inequality of the cutoff b in Definition 3.1.",
+      "reachable": true,
+      "assumption_tainted": false,
+      "latex_file": "arXiv-2412.03540v1.tex",
+      "latex_range": {
+        "start_line": 367,
+        "end_line": 370,
+        "start_col": null,
+        "end_col": null
+      },
+      "pdf_page": 6,
+      "prose": "Given W 2^X and H 2^X together with a weight vector :X [0,1] , order the elements of H as h_1,h_2, ,h_ |H| such that (h_1) (h_2) (h_ |H| ) . Let b=b(W,H, ) be the smallest integer so that, for H' = \\ h_ b ,h_ b+1 , ,h_ |H| \\ , \\[ (W H') 1 2 (H'). \\]"
+    },
+    {
+      "link_id": "lnk_b4ea439142f96f4e",
+      "lean_fqn": "Workspace.Encoding.Lemma32.cutoff",
+      "lean_file": "lean_workspace/Workspace/Encoding/Lemma32_LargeWeight.lean",
+      "lean_range": {
+        "start_line": 67,
+        "end_line": 70,
+        "start_col": null,
+        "end_col": null
+      },
+      "kind": "definition",
+      "confidence": 0.85,
+      "source": "manual",
+      "verifier_vote": "none",
+      "rationale": "cutoff is b(W,H,\u03bb): the smallest index (via Nat.find) satisfying the suffix half-condition \u2014 exactly the integer b of Definition 3.1.",
+      "reachable": true,
+      "assumption_tainted": false,
+      "latex_file": "arXiv-2412.03540v1.tex",
+      "latex_range": {
+        "start_line": 367,
+        "end_line": 370,
+        "start_col": null,
+        "end_col": null
+      },
+      "pdf_page": 6,
+      "prose": "Given W 2^X and H 2^X together with a weight vector :X [0,1] , order the elements of H as h_1,h_2, ,h_ |H| such that (h_1) (h_2) (h_ |H| ) . Let b=b(W,H, ) be the smallest integer so that, for H' = \\ h_ b ,h_ b+1 , ,h_ |H| \\ , \\[ (W H') 1 2 (H'). \\]"
+    },
+    {
+      "link_id": "lnk_0d5dbc227d6dcffd",
+      "lean_fqn": "Workspace.Encoding.Lemma32.cutoff_min",
+      "lean_file": "lean_workspace/Workspace/Encoding/Lemma32_LargeWeight.lean",
+      "lean_range": {
+        "start_line": 76,
+        "end_line": 80,
+        "start_col": null,
+        "end_col": null
+      },
+      "kind": "proof_case",
+      "confidence": 0.6,
+      "source": "manual",
+      "verifier_vote": "none",
+      "rationale": "Minimality of cutoff: every smaller index fails the half-condition. This realizes the proof's use of 'by the definition of b' that each smaller suffix fails, the key minimality fact in the proof of Lemma 3.2.",
+      "reachable": false,
+      "assumption_tainted": false,
+      "latex_file": "arXiv-2412.03540v1.tex",
+      "latex_range": {
+        "start_line": 384,
+        "end_line": 384,
+        "start_col": null,
+        "end_col": null
+      },
+      "pdf_page": 6,
+      "prose": "For b'<b , let H_ [b',b) = \\ h_ b' , ,h_ b-1 \\ . By the definition of b , we have (W H_ [b',b) ) < 1 2 (H_ [b',b) ) for all b'<b . Observe that, by summation by parts,"
+    },
+    {
+      "link_id": "lnk_26d2c09ed041e59d",
+      "lean_fqn": "Workspace.Encoding.Lemma32.Suf_sub_succ",
+      "lean_file": "lean_workspace/Workspace/Encoding/Lemma32_LargeWeight.lean",
+      "lean_range": {
+        "start_line": 147,
+        "end_line": 176,
+        "start_col": null,
+        "end_col": null
+      },
+      "kind": "have_step",
+      "confidence": 0.55,
+      "source": "manual",
+      "verifier_vote": "none",
+      "rationale": "Telescoping identity Suf m \u2212 Suf(m+1) = (\ud835\udfd9[L[m]\u2208W] \u2212 \u00bd)\u00b7\u03bb(L[m]); this is the per-term increment (\ud835\udfd9(h\u2208W)\u2212\u00bd)\u00b7\u03bb that appears in the summation-by-parts in the proof of Lemma 3.2. Low confidence: it is a have-step inside the displayed Abel computation.",
+      "reachable": false,
+      "assumption_tainted": false,
+      "latex_file": "arXiv-2412.03540v1.tex",
+      "latex_range": {
+        "start_line": 386,
+        "end_line": 386,
+        "start_col": null,
+        "end_col": null
+      },
+      "pdf_page": 6,
+      "prose": "Observe that, by summation by parts"
+    },
+    {
+      "link_id": "lnk_12adf34eebc2d15d",
+      "lean_fqn": "Workspace.Encoding.Lemma32.segment_sum_eq",
+      "lean_file": "lean_workspace/Workspace/Encoding/Lemma32_LargeWeight.lean",
+      "lean_range": {
+        "start_line": 209,
+        "end_line": 227,
+        "start_col": null,
+        "end_col": null
+      },
+      "kind": "have_step",
+      "confidence": 0.55,
+      "source": "manual",
+      "verifier_vote": "none",
+      "rationale": "Telescoping of the segment partial sums: \u2211_{i\u2208[j,b)}(Suf i \u2212 Suf(i+1)) = Suf j \u2212 Suf b, which gives the segment factor \u03bb(W\u2229H_{[b',b)}) \u2212 \u00bd\u03bb(H_{[b',b)}) in the displayed summation-by-parts. Low confidence: a proof have-step inside that display.",
+      "reachable": false,
+      "assumption_tainted": false,
+      "latex_file": "arXiv-2412.03540v1.tex",
+      "latex_range": {
+        "start_line": 387,
+        "end_line": 387,
+        "start_col": null,
+        "end_col": null
+      },
+      "pdf_page": 6,
+      "prose": "the inequality follows from the ordering"
+    },
+    {
+      "link_id": "lnk_da0c4c6da0a297ea",
+      "lean_fqn": "Workspace.Encoding.Lemma32.abel_segment",
+      "lean_file": "lean_workspace/Workspace/Encoding/Lemma32_LargeWeight.lean",
+      "lean_range": {
+        "start_line": 228,
+        "end_line": 264,
+        "start_col": null,
+        "end_col": null
+      },
+      "kind": "have_step",
+      "confidence": 0.55,
+      "source": "manual",
+      "verifier_vote": "none",
+      "rationale": "Abstract summation-by-parts (Abel) identity in segment form, with the G 0 = 0 convention encoding the paper's 1/\u03bb(h\u2080)=0. This is the 'by summation by parts' step in the proof of Lemma 3.2. Low confidence: a generic Abel lemma realizing one displayed proof step.",
+      "reachable": false,
+      "assumption_tainted": false,
+      "latex_file": "arXiv-2412.03540v1.tex",
+      "latex_range": {
+        "start_line": 384,
+        "end_line": 386,
+        "start_col": null,
+        "end_col": null
+      },
+      "pdf_page": 6,
+      "prose": "For b'<b , let H_ [b',b) = \\ h_ b' , ,h_ b-1 \\ . By the definition of b , we have (W H_ [b',b) ) < 1 2 (H_ [b',b) ) for all b'<b . Observe that, by summation by parts, |H_ <b W| - 1 2 |H_ <b | &= _ 1 b'<b (b') ( I (h_ b' W) - 1 2 ) 1 (h_ b' ) \\\\"
+    },
+    {
+      "link_id": "lnk_fe970e8948f33b73",
+      "lean_fqn": "Workspace.Encoding.Lemma32.lam_antitone",
+      "lean_file": "lean_workspace/Workspace/Encoding/Lemma32_LargeWeight.lean",
+      "lean_range": {
+        "start_line": 265,
+        "end_line": 285,
+        "start_col": null,
+        "end_col": null
+      },
+      "kind": "have_step",
+      "confidence": 0.5,
+      "source": "manual",
+      "verifier_vote": "none",
+      "rationale": "lam is antitone in the index under the descending ordering \u2014 the fact 'the ordering \u03bb(h_{b'}) \u2264 \u03bb(h_{b'-1})' invoked at the end of the proof of Lemma 3.2 to sign the weight-reciprocal differences. Low confidence: a single sign ingredient of the proof.",
+      "reachable": false,
+      "assumption_tainted": false,
+      "latex_file": "arXiv-2412.03540v1.tex",
+      "latex_range": {
+        "start_line": 390,
+        "end_line": 390,
+        "start_col": null,
+        "end_col": null
+      },
+      "pdf_page": 6,
+      "prose": "Here, we set by convention that 1/ (h_ 0 )=0 , and the inequality follows from the ordering (h_ b' ) (h_ b'-1 ) ."
+    },
+    {
+      "link_id": "lnk_1bef9ed18c344e78",
+      "lean_fqn": "Workspace.Encoding.Lemma32.large_wt_W",
+      "lean_file": "lean_workspace/Workspace/Encoding/Lemma32_LargeWeight.lean",
+      "lean_range": {
+        "start_line": 286,
+        "end_line": 401,
+        "start_col": null,
+        "end_col": null
+      },
+      "kind": "lemma",
+      "confidence": 0.95,
+      "source": "manual",
+      "verifier_vote": "none",
+      "rationale": "This is Lemma 3.2 (lem:large-wt-W) verbatim: large-weight elements beyond the cutoff have small intersection with W, |H_{<b}\u2229W| \u2264 \u00bd|H_{<b}| (stated over \u2115 as 2\u00b7card \u2264 card).",
+      "reachable": false,
+      "assumption_tainted": false,
+      "latex_file": "arXiv-2412.03540v1.tex",
+      "latex_range": {
+        "start_line": 377,
+        "end_line": 380,
+        "start_col": null,
+        "end_col": null
+      },
+      "pdf_page": 6,
+      "prose": "We have, for b=b(W,H, ) , \\[ |H_ <b W| 1 2 |H_ <b |. \\]"
+    },
+    {
+      "link_id": "lnk_43a83f97c3ae696f",
+      "lean_fqn": "Workspace.Encoding.MinTower.minTower",
+      "lean_file": "lean_workspace/Workspace/Encoding/MinTower.lean",
+      "lean_range": {
+        "start_line": 217,
+        "end_line": 222,
+        "start_col": null,
+        "end_col": null
+      },
+      "kind": "definition",
+      "confidence": 0.85,
+      "source": "manual",
+      "verifier_vote": "none",
+      "rationale": "Defines the minimum tower of fragments T(W,H) as the lex-minimal tower-tuple, exactly the paper's Definition of the minimum tower of fragments.",
+      "reachable": true,
+      "assumption_tainted": false,
+      "latex_file": "arXiv-2412.03540v1.tex",
+      "latex_range": {
+        "start_line": 409,
+        "end_line": 409,
+        "start_col": null,
+        "end_col": null
+      },
+      "pdf_page": 7,
+      "prose": "We say that T = T ( W ,H) is the minimum tower of fragments of ( W ,H) if (|T_1|, ,|T_s|) is minimal among all towers of fragments of W in the lexicographic ordering on Z ^s where _ i=1 ^ s T_i H ."
+    },
+    {
+      "link_id": "lnk_0489ad506bb7bcfc",
+      "lean_fqn": "Workspace.Encoding.MinTower.minTower_isTower",
+      "lean_file": "lean_workspace/Workspace/Encoding/MinTower.lean",
+      "lean_range": {
+        "start_line": 223,
+        "end_line": 231,
+        "start_col": null,
+        "end_col": null
+      },
+      "kind": "lemma",
+      "confidence": 0.75,
+      "source": "manual",
+      "verifier_vote": "none",
+      "rationale": "minTower is itself a tower of fragments of (W,H); this is the existence half of the well-definedness lemma stated just after the definition of minimum tower of fragments.",
+      "reachable": true,
+      "assumption_tainted": false,
+      "latex_file": "arXiv-2412.03540v1.tex",
+      "latex_range": {
+        "start_line": 414,
+        "end_line": 414,
+        "start_col": null,
+        "end_col": null
+      },
+      "pdf_page": 7,
+      "prose": "For any H and W , there exists a tower of fragments of ( W ,H) . Hence, the minimum tower of fragments T ( W ,H) is well-defined."
+    },
+    {
+      "link_id": "lnk_c1a3077dd3c067b3",
+      "lean_fqn": "Workspace.Encoding.MinTower.minTower_lex_le",
+      "lean_file": "lean_workspace/Workspace/Encoding/MinTower.lean",
+      "lean_range": {
+        "start_line": 232,
+        "end_line": 268,
+        "start_col": null,
+        "end_col": null
+      },
+      "kind": "lemma",
+      "confidence": 0.78,
+      "source": "manual",
+      "verifier_vote": "none",
+      "rationale": "The lex-minimality property: for every tower of fragments T' of (W,H), |minTower| \u2264 |T'| in the lex order on \u2124^s. This is precisely the defining minimality property in the Definition of the minimum tower of fragments.",
+      "reachable": false,
+      "assumption_tainted": false,
+      "latex_file": "arXiv-2412.03540v1.tex",
+      "latex_range": {
+        "start_line": 409,
+        "end_line": 409,
+        "start_col": null,
+        "end_col": null
+      },
+      "pdf_page": 7,
+      "prose": "We say that T = T ( W ,H) is the minimum tower of fragments of ( W ,H) if (|T_1|, ,|T_s|) is minimal among all towers of fragments of W in the lexicographic ordering on Z ^s where _ i=1 ^ s T_i H ."
+    },
+    {
+      "link_id": "lnk_31f4bc4b89c444bc",
+      "lean_fqn": "Workspace.Encoding.MinTower.towerTuples_nonempty",
+      "lean_file": "lean_workspace/Workspace/Encoding/MinTower.lean",
+      "lean_range": {
+        "start_line": 158,
+        "end_line": 191,
+        "start_col": null,
+        "end_col": null
+      },
+      "kind": "lemma",
+      "confidence": 0.7,
+      "source": "manual",
+      "verifier_vote": "none",
+      "rationale": "Nonemptiness of the set of tower-tuples: the explicit witness T_i = R_i(W,H) \\ W_i is a tower of fragments, which is exactly the one-line proof the paper gives for existence of a tower of fragments.",
+      "reachable": true,
+      "assumption_tainted": false,
+      "latex_file": "arXiv-2412.03540v1.tex",
+      "latex_range": {
+        "start_line": 417,
+        "end_line": 417,
+        "start_col": null,
+        "end_col": null
+      },
+      "pdf_page": 7,
+      "prose": "This follows from the simple observation that T with T_i = R_i( W , H) W_i is a tower of fragments of ( W ,H) ."
+    },
+    {
+      "link_id": "lnk_33b31932398e9340",
+      "lean_fqn": "Workspace.Encoding.MinTower.exists_min_towerTuple",
+      "lean_file": "lean_workspace/Workspace/Encoding/MinTower.lean",
+      "lean_range": {
+        "start_line": 198,
+        "end_line": 205,
+        "start_col": null,
+        "end_col": null
+      },
+      "kind": "lemma",
+      "confidence": 0.65,
+      "source": "manual",
+      "verifier_vote": "none",
+      "rationale": "Existence of a lex-minimal tower-tuple (finite argmin), the well-definedness statement the paper concludes after exhibiting a tower of fragments.",
+      "reachable": true,
+      "assumption_tainted": false,
+      "latex_file": "arXiv-2412.03540v1.tex",
+      "latex_range": {
+        "start_line": 414,
+        "end_line": 414,
+        "start_col": null,
+        "end_col": null
+      },
+      "pdf_page": 7,
+      "prose": "For any H and W , there exists a tower of fragments of ( W ,H) . Hence, the minimum tower of fragments T ( W ,H) is well-defined."
+    },
+    {
+      "link_id": "lnk_460f0471e2bd7cb5",
+      "lean_fqn": "Workspace.Encoding.NonemptyTower.bad_implies_nonempty_tower",
+      "lean_file": "lean_workspace/Workspace/Encoding/NonemptyTower.lean",
+      "lean_range": {
+        "start_line": 230,
+        "end_line": 360,
+        "start_col": null,
+        "end_col": null
+      },
+      "kind": "lemma",
+      "confidence": 0.9,
+      "source": "manual",
+      "verifier_vote": "none",
+      "rationale": "Direct formalization of the (unnumbered) lemma in \u00a73.3: a bad W forces every tower of fragments of (W,H) to be nonempty, \u2211_{i<s}|T_i| > 0.",
+      "reachable": true,
+      "assumption_tainted": false,
+      "latex_file": "arXiv-2412.03540v1.tex",
+      "latex_range": {
+        "start_line": 460,
+        "end_line": 460,
+        "start_col": null,
+        "end_col": null
+      },
+      "pdf_page": 8,
+      "prose": "If W is bad, then any tower of fragments T of ( W ,H) for H is nonempty, in that u= _ i=1 ^ s |T_i| > 0 ."
+    },
+    {
+      "link_id": "lnk_95791733b99e04aa",
+      "lean_fqn": "Workspace.Encoding.NonemptyTower.wt_Hstep_le",
+      "lean_file": "lean_workspace/Workspace/Encoding/NonemptyTower.lean",
+      "lean_range": {
+        "start_line": 203,
+        "end_line": 229,
+        "start_col": null,
+        "end_col": null
+      },
+      "kind": "equation",
+      "confidence": 0.75,
+      "source": "manual",
+      "verifier_vote": "none",
+      "rationale": "The halving induction \u03bb(Hstep j) \u2264 2^{-j} \u03bb(H), which is exactly the inductive claim \u03bb_{\u0124}(\u0124 \\ \u22c3_{i\u2264j} W_i) \u2264 2^{-j} \u03bb_{\u0124}(\u0124) proved inside the nonempty-tower lemma.",
+      "reachable": true,
+      "assumption_tainted": false,
+      "latex_file": "arXiv-2412.03540v1.tex",
+      "latex_range": {
+        "start_line": 465,
+        "end_line": 465,
+        "start_col": null,
+        "end_col": null
+      },
+      "pdf_page": 8,
+      "prose": "we prove by induction on j"
+    },
+    {
+      "link_id": "lnk_5efd0ac1a476bd83",
+      "lean_fqn": "Workspace.Encoding.NonemptyTower.wt_Hstep_succ_le_half",
+      "lean_file": "lean_workspace/Workspace/Encoding/NonemptyTower.lean",
+      "lean_range": {
+        "start_line": 176,
+        "end_line": 202,
+        "start_col": null,
+        "end_col": null
+      },
+      "kind": "equation",
+      "confidence": 0.6,
+      "source": "manual",
+      "verifier_vote": "none",
+      "rationale": "Single halving step \u03bb(Hstep (j+1)) \u2264 \u00bd \u03bb(Hstep j), the inductive step inequality in the proof of the nonempty-tower lemma. Low confidence: an internal step.",
+      "reachable": true,
+      "assumption_tainted": false,
+      "latex_file": "arXiv-2412.03540v1.tex",
+      "latex_range": {
+        "start_line": 479,
+        "end_line": 479,
+        "start_col": null,
+        "end_col": null
+      },
+      "pdf_page": 9,
+      "prose": "This establishes the inductive claim"
+    },
+    {
+      "link_id": "lnk_82ec56e41d6f576f",
+      "lean_fqn": "Workspace.Encoding.NonemptyTower.geSet_half_weight",
+      "lean_file": "lean_workspace/Workspace/Encoding/NonemptyTower.lean",
+      "lean_range": {
+        "start_line": 163,
+        "end_line": 175,
+        "start_col": null,
+        "end_col": null
+      },
+      "kind": "equation",
+      "confidence": 0.55,
+      "source": "manual",
+      "verifier_vote": "none",
+      "rationale": "Half-weight of the cutoff suffix: \u03bb((H)_{\u2265b}) \u2264 2\u00b7\u03bb(W \u2229 (H)_{\u2265b}), i.e. \u03bb(W \u2229 H') \u2265 \u00bd \u03bb(H') from the cutoff Definition of b. Low confidence: re-expression of the cutoff defining inequality.",
+      "reachable": true,
+      "assumption_tainted": false,
+      "latex_file": "arXiv-2412.03540v1.tex",
+      "latex_range": {
+        "start_line": 369,
+        "end_line": 369,
+        "start_col": null,
+        "end_col": null
+      },
+      "pdf_page": 6,
+      "prose": "be the smallest integer so that"
+    },
+    {
+      "link_id": "lnk_cfcdc90080d60aa4",
+      "lean_fqn": "Workspace.Encoding.Procedure.Rset",
+      "lean_file": "lean_workspace/Workspace/Encoding/Procedure.lean",
+      "lean_range": {
+        "start_line": 96,
+        "end_line": 99,
+        "start_col": null,
+        "end_col": null
+      },
+      "kind": "definition",
+      "confidence": 0.75,
+      "source": "manual",
+      "verifier_vote": "none",
+      "rationale": "Rset is the cutoff prefix H_{<b} = (H_i)_{<b_i}, which is the paper's R_i(W,H). Defined as the take-prefix of the canonical enumeration up to b.",
+      "reachable": true,
+      "assumption_tainted": false,
+      "latex_file": "arXiv-2412.03540v1.tex",
+      "latex_range": {
+        "start_line": 371,
+        "end_line": 371,
+        "start_col": null,
+        "end_col": null
+      },
+      "pdf_page": 6,
+      "prose": "We also denote H_ b := \\ h_ b , ,h_ |H| \\ and H_ <b = H H_ b ."
+    },
+    {
+      "link_id": "lnk_12ed0b9e0d3a5874",
+      "lean_fqn": "Workspace.Encoding.Procedure.geSet",
+      "lean_file": "lean_workspace/Workspace/Encoding/Procedure.lean",
+      "lean_range": {
+        "start_line": 100,
+        "end_line": 104,
+        "start_col": null,
+        "end_col": null
+      },
+      "kind": "definition",
+      "confidence": 0.75,
+      "source": "manual",
+      "verifier_vote": "none",
+      "rationale": "geSet is the cutoff suffix H_{>=b} = {h_b,...,h_{|H|}}, the drop-suffix of the canonical enumeration from b.",
+      "reachable": true,
+      "assumption_tainted": false,
+      "latex_file": "arXiv-2412.03540v1.tex",
+      "latex_range": {
+        "start_line": 371,
+        "end_line": 371,
+        "start_col": null,
+        "end_col": null
+      },
+      "pdf_page": 6,
+      "prose": "We also denote H_ b := \\ h_ b , ,h_ |H| \\ and H_ <b = H H_ b ."
+    },
+    {
+      "link_id": "lnk_bda758e45c16577b",
+      "lean_fqn": "Workspace.Encoding.Procedure.Hstep",
+      "lean_file": "lean_workspace/Workspace/Encoding/Procedure.lean",
+      "lean_range": {
+        "start_line": 161,
+        "end_line": 167,
+        "start_col": null,
+        "end_col": null
+      },
+      "kind": "definition",
+      "confidence": 0.85,
+      "source": "manual",
+      "verifier_vote": "none",
+      "rationale": "Hstep is the iterated finset H_i from the procedure: Hstep 0 = H and Hstep (i+1) = (H_i)_{>=b_i} \\ W_i, exactly the paper's recursion H_1 = H, H_{i+1} = (H_i)_{>=b_i} \\ W_i (under the stated 0-based index shift).",
+      "reachable": true,
+      "assumption_tainted": false,
+      "latex_file": "arXiv-2412.03540v1.tex",
+      "latex_range": {
+        "start_line": 393,
+        "end_line": 393,
+        "start_col": null,
+        "end_col": null
+      },
+      "pdf_page": 6,
+      "prose": "Given W = (W_1, ,W_ s ) a tuple of subsets of X and H , we consider the following procedure. Let H_1=H . For i [1, s] , let b_i = b(W_ i ,H_ i , _H) and define H_ i+1 = (H_ i )_ b_i W_i . For W = (W_1, ,W_s) , we define R_i( W ,H) = (H_i)_ <b_i and R( W ,H) = _ i=1 ^ s (H_ i )_ <b_i . Denote b ( W ,H) = (b_1, ,b_s) ."
+    },
+    {
+      "link_id": "lnk_c2b63ce743a90957",
+      "lean_fqn": "Workspace.Encoding.Procedure.Rstep",
+      "lean_file": "lean_workspace/Workspace/Encoding/Procedure.lean",
+      "lean_range": {
+        "start_line": 168,
+        "end_line": 170,
+        "start_col": null,
+        "end_col": null
+      },
+      "kind": "definition",
+      "confidence": 0.85,
+      "source": "manual",
+      "verifier_vote": "none",
+      "rationale": "Rstep is the per-step cutoff prefix R_i(W,H) = (H_i)_{<b_i} from the procedure.",
+      "reachable": true,
+      "assumption_tainted": false,
+      "latex_file": "arXiv-2412.03540v1.tex",
+      "latex_range": {
+        "start_line": 393,
+        "end_line": 393,
+        "start_col": null,
+        "end_col": null
+      },
+      "pdf_page": 6,
+      "prose": "Given W = (W_1, ,W_ s ) a tuple of subsets of X and H , we consider the following procedure. Let H_1=H . For i [1, s] , let b_i = b(W_ i ,H_ i , _H) and define H_ i+1 = (H_ i )_ b_i W_i . For W = (W_1, ,W_s) , we define R_i( W ,H) = (H_i)_ <b_i and R( W ,H) = _ i=1 ^ s (H_ i )_ <b_i . Denote b ( W ,H) = (b_1, ,b_s) ."
+    },
+    {
+      "link_id": "lnk_3e2b031b89065fd6",
+      "lean_fqn": "Workspace.Encoding.TowerFrag.TFeasible",
+      "lean_file": "lean_workspace/Workspace/Encoding/TowerFrag.lean",
+      "lean_range": {
+        "start_line": 55,
+        "end_line": 74,
+        "start_col": null,
+        "end_col": null
+      },
+      "kind": "definition",
+      "confidence": 0.8,
+      "source": "manual",
+      "verifier_vote": "none",
+      "rationale": "Formalizes Definition 3.3 (def:feas) t-feasibility: there exist a witness W' and H in H with |W'_i| = |Z_i| - t_i, W'_i subseteq Z_i, and R_i(W',H) subseteq Z_i for all i < s. The existential over b is absorbed into Rstep (b is a deterministic function of (W',H)), as the file header documents.",
+      "reachable": true,
+      "assumption_tainted": false,
+      "latex_file": "arXiv-2412.03540v1.tex",
+      "latex_range": {
+        "start_line": 398,
+        "end_line": 398,
+        "start_col": null,
+        "end_col": null
+      },
+      "pdf_page": 7,
+      "prose": "Given a tuple of sets Z and a tuple of integers t , we say that Z is t -feasible if it is ( b , t ) -feasible for some b , witnessed by some H . In this case, we refer to ( b , W , H) as a witness of the t -feasibility of Z ."
+    },
+    {
+      "link_id": "lnk_86ae09a34ac3ae21",
+      "lean_fqn": "Workspace.Encoding.TowerFrag.IsTowerOfFragments",
+      "lean_file": "lean_workspace/Workspace/Encoding/TowerFrag.lean",
+      "lean_range": {
+        "start_line": 75,
+        "end_line": 93,
+        "start_col": null,
+        "end_col": null
+      },
+      "kind": "definition",
+      "confidence": 0.8,
+      "source": "manual",
+      "verifier_vote": "none",
+      "rationale": "Formalizes Definition 3.4 (tower of fragments): Z_i = T_i cup W_i is t-feasible for t_i = |T_i|, and union T_i subseteq H (the per-index T_i subseteq H is the Lean form of union T_i subseteq H). The extra Disjoint (T_i) (W_i) clause is the recovery condition W_i = Z_i \\ T_i made explicit.",
+      "reachable": true,
+      "assumption_tainted": false,
+      "latex_file": "arXiv-2412.03540v1.tex",
+      "latex_range": {
+        "start_line": 403,
+        "end_line": 407,
+        "start_col": null,
+        "end_col": null
+      },
+      "pdf_page": 7,
+      "prose": "Given W = (W_1, ,W_s) a tuple of subsets of X and H , we say that a tuple of sets T = (T_1, ,T_s) is a tower of fragments of ( W ,H) if the following holds. The tuple Z = Z ( W ,H) = (Z_1, ,Z_s) where Z_i = T_i W_i is t -feasible for t =(|T_1|, ,|T_s|) . We have _ i=1 ^ s T_i H ."
+    },
+    {
+      "link_id": "lnk_16361fa565c4628c",
+      "lean_fqn": "Workspace.Encoding.TowerFrag.exists_tower_of_fragments",
+      "lean_file": "lean_workspace/Workspace/Encoding/TowerFrag.lean",
+      "lean_range": {
+        "start_line": 94,
+        "end_line": 147,
+        "start_col": null,
+        "end_col": null
+      },
+      "kind": "lemma",
+      "confidence": 0.85,
+      "source": "manual",
+      "verifier_vote": "none",
+      "rationale": "Formalizes Lemma 3.5 ('For any H and W, there exists a tower of fragments of (W,H)'), proved exactly by the paper's witness T_i = R_i(W,H) \\ W_i. The Lean statement constructs that explicit tower; the span quotes the proof's defining observation (the lemma statement itself has no \\label, so the witness sentence is the most specific verbatim anchor).",
+      "reachable": true,
+      "assumption_tainted": false,
+      "latex_file": "arXiv-2412.03540v1.tex",
+      "latex_range": {
+        "start_line": 417,
+        "end_line": 417,
+        "start_col": null,
+        "end_col": null
+      },
+      "pdf_page": 7,
+      "prose": "This follows from the simple observation that T with T_i = R_i( W , H) W_i is a tower of fragments of ( W ,H) ."
+    },
+    {
+      "link_id": "lnk_5ddd2dfae1291853",
+      "lean_fqn": "Workspace.Lemmas.BernoulliIneq.bernoulli_ineq",
+      "lean_file": "lean_workspace/Workspace/Lemmas/Lemma_BernoulliIneq.lean",
+      "lean_range": {
+        "start_line": 17,
+        "end_line": 40,
+        "start_col": null,
+        "end_col": null
+      },
+      "kind": "equation",
+      "confidence": 0.8,
+      "source": "manual",
+      "verifier_vote": "none",
+      "rationale": "Formalizes the inequality 1 - (1-q)^s <= s*q (Bernoulli), which is exactly the bound tilde{q} = 1 - (1-q)^s <= sq used in the proof of Theorem 1.2 to relate the union of s samples to a single sample of density sq. Confidence < 1 because in Lean it is a standalone arithmetic lemma; in the paper it is an inline assertion.",
+      "reachable": true,
+      "assumption_tainted": false,
+      "latex_file": "arXiv-2412.03540v1.tex",
+      "latex_range": {
+        "start_line": 529,
+        "end_line": 529,
+        "start_col": null,
+        "end_col": null
+      },
+      "pdf_page": 10,
+      "prose": "Note that the set _ i=1 ^ s W_i has the same distribution as X_ q where q = 1 - (1-q)^ s sq . Furthermore, if W is not bad, then we have _ H _ x ( _ i=1 ^ s W_i) H _H(x) 1-2^ -s . Thus, we have"
+    },
+    {
+      "link_id": "lnk_b5f56b18ef7f1002",
+      "lean_fqn": "Workspace.Lemmas.CoverBoundFromNotPSmall.cover_bound_of_not_psmall",
+      "lean_file": "lean_workspace/Workspace/Lemmas/Lemma_CoverBoundFromNotPSmall.lean",
+      "lean_range": {
+        "start_line": 29,
+        "end_line": 42,
+        "start_col": null,
+        "end_col": null
+      },
+      "kind": "equation",
+      "confidence": 0.7,
+      "source": "manual",
+      "verifier_vote": "none",
+      "rationale": "Formalizes the fact that any (integral) cover U of \u210b that is not p-small has \u2211_{U\u2208\ud835\udcb0} p^|U| > 1/2 \u2014 the contrapositive of IsPSmall \u2014 which the paper invokes as 'any cover \ud835\udcb0 for \u210b must have \u2211 p^|U| \u2265 1/2'. Used to convert the bad-cover bound into a probability bound.",
+      "reachable": true,
+      "assumption_tainted": false,
+      "latex_file": "arXiv-2412.03540v1.tex",
+      "latex_range": {
+        "start_line": 350,
+        "end_line": 350,
+        "start_col": null,
+        "end_col": null
+      },
+      "pdf_page": 5,
+      "prose": "which leads to an upper bound on the probability that X_q is bad, since any cover for must have _ U p^ |U| 1/2 ."
+    },
+    {
+      "link_id": "lnk_b4b904b1bf4cba51",
+      "lean_fqn": "Workspace.Lemmas.ExpBound.exp_bound",
+      "lean_file": "lean_workspace/Workspace/Lemmas/Lemma_ExpBound.lean",
+      "lean_range": {
+        "start_line": 27,
+        "end_line": 83,
+        "start_col": null,
+        "end_col": null
+      },
+      "kind": "have_step",
+      "confidence": 0.85,
+      "source": "manual",
+      "verifier_vote": "none",
+      "rationale": "exp_bound concludes 1/6 \u2264 \u2211_W w(W) (q')^{|W|} = E[\u2211_{W\u2286X_{q'}} w(W)] from the probability-\u22651/3 good event; this is the expectation lower-bound step in the Proof of Theorem 1.1 (the chain E[...] \u2265 1/6 combined with the linearity-of-expectation identity quoted).",
+      "reachable": true,
+      "assumption_tainted": false,
+      "latex_file": "arXiv-2412.03540v1.tex",
+      "latex_range": {
+        "start_line": 591,
+        "end_line": 591,
+        "start_col": null,
+        "end_col": null
+      },
+      "pdf_page": 11,
+      "prose": "[ _ W :W X_ q' w(W) ] = _ W (q')^ |W| w(W)."
+    },
+    {
+      "link_id": "lnk_d76ddb74d042bc2b",
+      "lean_fqn": "Workspace.Lemmas.ExpectationEqSum.expectation_eq_sum",
+      "lean_file": "lean_workspace/Workspace/Lemmas/Lemma_ExpectationEqSum.lean",
+      "lean_range": {
+        "start_line": 26,
+        "end_line": 164,
+        "start_col": null,
+        "end_col": null
+      },
+      "kind": "equation",
+      "confidence": 0.85,
+      "source": "manual",
+      "verifier_vote": "none",
+      "rationale": "Formalizes the linearity-of-expectation identity E[ sum_{W subseteq X_{q'}} w(W) ] = sum_W w(W) (q')^|W| in the proof of Theorem 1.1. The Lean statement expands the expectation over the Bernoulli product measure q'^|W| (1-q')^(|X|-|W|), giving exactly this equation.",
+      "reachable": true,
+      "assumption_tainted": false,
+      "latex_file": "arXiv-2412.03540v1.tex",
+      "latex_range": {
+        "start_line": 589,
+        "end_line": 592,
+        "start_col": null,
+        "end_col": null
+      },
+      "pdf_page": 12,
+      "prose": "On the other hand, by linearity of expectation, [ _ W :W X_ q' w(W) ] = _ W (q')^ |W| w(W)."
+    },
+    {
+      "link_id": "lnk_4217411414f18588",
+      "lean_fqn": "Workspace.Lemmas.ExpectationLowerBound.expectation_lower_bound",
+      "lean_file": "lean_workspace/Workspace/Lemmas/Lemma_ExpectationLowerBound.lean",
+      "lean_range": {
+        "start_line": 21,
+        "end_line": 92,
+        "start_col": null,
+        "end_col": null
+      },
+      "kind": "have_step",
+      "confidence": 0.5,
+      "source": "manual",
+      "verifier_vote": "none",
+      "rationale": "Generic Markov-type bound E[Z] \u2265 p\u00b7v when P(A) \u2265 p, Z \u2265 v on A, Z \u2265 0. In the proof of Theorem 1.2 this is the step that turns 'with probability at least 1/3 the quantity is \u2265 1/2' into 'its expectation \u2265 1/6'. Low confidence: it is a generic probability fact realizing one displayed proof step, not a named paper result.",
+      "reachable": true,
+      "assumption_tainted": false,
+      "latex_file": "arXiv-2412.03540v1.tex",
+      "latex_range": {
+        "start_line": 577,
+        "end_line": 577,
+        "start_col": null,
+        "end_col": null
+      },
+      "pdf_page": 12,
+      "prose": "which implies"
+    },
+    {
+      "link_id": "lnk_76a5e09f5266fba1",
+      "lean_fqn": "Workspace.Lemmas.FinalBound.final_bound",
+      "lean_file": "lean_workspace/Workspace/Lemmas/Lemma_FinalBound.lean",
+      "lean_range": {
+        "start_line": 21,
+        "end_line": 58,
+        "start_col": null,
+        "end_col": null
+      },
+      "kind": "equation",
+      "confidence": 0.78,
+      "source": "manual",
+      "verifier_vote": "none",
+      "rationale": "Formalizes the final upper bound in the proof of Theorem 1.1: from the cost assumption \u2211 w(W)p^|W| \u2264 1/2 and q' \u2264 p/6 one gets \u2211 w(W)(q')^|W| \u2264 1/12, the < 1/12 side of the contradiction (the expectation \u2211_{W\u2286X_q'} w(W) equals \u2211 (q')^|W| w(W) by linearity).",
+      "reachable": true,
+      "assumption_tainted": false,
+      "latex_file": "arXiv-2412.03540v1.tex",
+      "latex_range": {
+        "start_line": 595,
+        "end_line": 595,
+        "start_col": null,
+        "end_col": null
+      },
+      "pdf_page": 12,
+      "prose": "By our assumption, w is fractionally p-small"
+    },
+    {
+      "link_id": "lnk_c5b5dd45c0864b00",
+      "lean_fqn": "Workspace.Lemmas.HeavyLe.heavy_le",
+      "lean_file": "lean_workspace/Workspace/Lemmas/Lemma_HeavyLe.lean",
+      "lean_range": {
+        "start_line": 33,
+        "end_line": 57,
+        "start_col": null,
+        "end_col": null
+      },
+      "kind": "have_step",
+      "confidence": 0.65,
+      "source": "manual",
+      "verifier_vote": "none",
+      "rationale": "Arithmetic step in the Proof of Theorem 1.1: for s = \u2308log\u2082(2t)\u2309 the Theorem-1.3 guarantee 1\u22122^{\u2212s} upgrades to the bound 1 \u2212 1/(2t) used in the displayed inequality.",
+      "reachable": true,
+      "assumption_tainted": false,
+      "latex_file": "arXiv-2412.03540v1.tex",
+      "latex_range": {
+        "start_line": 554,
+        "end_line": 554,
+        "start_col": null,
+        "end_col": null
+      },
+      "pdf_page": 11,
+      "prose": "with probability at least 1/3, for"
+    },
+    {
+      "link_id": "lnk_da1e218bc1acaef0",
+      "lean_fqn": "Workspace.Lemmas.KeyLemma.IsBad",
+      "lean_file": "lean_workspace/Workspace/Lemmas/Lemma_KeyLemma.lean",
+      "lean_range": {
+        "start_line": 28,
+        "end_line": 34,
+        "start_col": null,
+        "end_col": null
+      },
+      "kind": "definition",
+      "confidence": 0.9,
+      "source": "manual",
+      "verifier_vote": "none",
+      "rationale": "Definition of a bad tuple W from \u00a73.3 (Proof of Theorem 1.3).",
+      "reachable": true,
+      "assumption_tainted": false,
+      "latex_file": "arXiv-2412.03540v1.tex",
+      "latex_range": {
+        "start_line": 454,
+        "end_line": 457,
+        "start_col": null,
+        "end_col": null
+      },
+      "pdf_page": 8,
+      "prose": "We say that W is bad if for all H \\[ _ x ( _ i=1 ^ s W_i) H _H(x) < 1 - 2^ -s . \\]"
+    },
+    {
+      "link_id": "lnk_9bbc4b85d8b24f23",
+      "lean_fqn": "Workspace.Lemmas.KeyLemma.central_binomial_bound",
+      "lean_file": "lean_workspace/Workspace/Lemmas/Lemma_KeyLemma.lean",
+      "lean_range": {
+        "start_line": 44,
+        "end_line": 50,
+        "start_col": null,
+        "end_col": null
+      },
+      "kind": "have_step",
+      "confidence": 0.7,
+      "source": "manual",
+      "verifier_vote": "none",
+      "rationale": "C(2u,u) \u2264 4^u is the binomial bound passing from the \u2211 binom(2u,u)(p/q)^u line to \u2211(4p/q)^u in the proof of Lemma key.",
+      "reachable": false,
+      "assumption_tainted": false,
+      "latex_file": "arXiv-2412.03540v1.tex",
+      "latex_range": {
+        "start_line": 504,
+        "end_line": 505,
+        "start_col": null,
+        "end_col": null
+      },
+      "pdf_page": 10,
+      "prose": "in the second inequality, we used Lemma"
+    },
+    {
+      "link_id": "lnk_e3c9f3f36ffaa4ec",
+      "lean_fqn": "Workspace.Lemmas.KeyLemma.geometric_series_quarter",
+      "lean_file": "lean_workspace/Workspace/Lemmas/Lemma_KeyLemma.lean",
+      "lean_range": {
+        "start_line": 51,
+        "end_line": 60,
+        "start_col": null,
+        "end_col": null
+      },
+      "kind": "have_step",
+      "confidence": 0.6,
+      "source": "manual",
+      "verifier_vote": "none",
+      "rationale": "Geometric series \u2211 (1/4)^{u+1} = 1/3 realizes the closed form 1/(1-4p/q)-1 evaluated at q=16p (ratio 1/4) giving the 1/3 bound in Lemma key.",
+      "reachable": false,
+      "assumption_tainted": false,
+      "latex_file": "arXiv-2412.03540v1.tex",
+      "latex_range": {
+        "start_line": 506,
+        "end_line": 508,
+        "start_col": null,
+        "end_col": null
+      },
+      "pdf_page": 10,
+      "prose": "& 1 1-4p/q - 1. Here, in the second inequality, we used Lemma so that _ i=1 ^ s |( H ( Z _i)_ < b ( Z )_i | 2 _ i=1 ^ s t_i=2u ."
+    },
+    {
+      "link_id": "lnk_b65178d2b59aff0d",
+      "lean_fqn": "Workspace.Lemmas.KeyLemma.prob_ratio_eq",
+      "lean_file": "lean_workspace/Workspace/Lemmas/Lemma_KeyLemma.lean",
+      "lean_range": {
+        "start_line": 61,
+        "end_line": 92,
+        "start_col": null,
+        "end_col": null
+      },
+      "kind": "have_step",
+      "confidence": 0.7,
+      "source": "manual",
+      "verifier_vote": "none",
+      "rationale": "The probability-ratio identity P_q(W)/P_q(Z) = ((1-q)/q)^u that turns the ratio of product-measure probabilities into (1-q)^u/q^u inside the proof of Lemma key.",
+      "reachable": false,
+      "assumption_tainted": false,
+      "latex_file": "arXiv-2412.03540v1.tex",
+      "latex_range": {
+        "start_line": 503,
+        "end_line": 503,
+        "start_col": null,
+        "end_col": null
+      },
+      "pdf_page": 8,
+      "prose": "&= _ u>0 _ Z_1, ,Z_s X_ q [ _ U _ i=1 ^ s ( H ( Z _i)_ < b ( Z )_i \\\\ |U|=u (1-q)^ u q^ u p^ u ]\\\\"
+    },
+    {
+      "link_id": "lnk_9821a4c91ace7f1d",
+      "lean_fqn": "Workspace.Lemmas.KeyLemma.coverCost",
+      "lean_file": "lean_workspace/Workspace/Lemmas/Lemma_KeyLemma.lean",
+      "lean_range": {
+        "start_line": 93,
+        "end_line": 108,
+        "start_col": null,
+        "end_col": null
+      },
+      "kind": "definition",
+      "confidence": 0.75,
+      "source": "manual",
+      "verifier_vote": "none",
+      "rationale": "coverCost is the cover cost \u2211_{U\u2208\ud835\udcb0(W)} p^{|U|} appearing throughout the Proof of Theorem 1.3 and Lemma key.",
+      "reachable": true,
+      "assumption_tainted": false,
+      "latex_file": "arXiv-2412.03540v1.tex",
+      "latex_range": {
+        "start_line": 494,
+        "end_line": 494,
+        "start_col": null,
+        "end_col": null
+      },
+      "pdf_page": 9,
+      "prose": "which asserts that, over bad W"
+    },
+    {
+      "link_id": "lnk_1bd21bc733b8f4b7",
+      "lean_fqn": "Workspace.Lemmas.KeyLemma.coverCollection_witness",
+      "lean_file": "lean_workspace/Workspace/Lemmas/Lemma_KeyLemma.lean",
+      "lean_range": {
+        "start_line": 109,
+        "end_line": 206,
+        "start_col": null,
+        "end_col": null
+      },
+      "kind": "proof_case",
+      "confidence": 0.7,
+      "source": "manual",
+      "verifier_vote": "none",
+      "rationale": "For each non-empty H and bad W there is U \u2208 \ud835\udcb0(W) with U \u2286 H \u2014 the Lean form of the Claim that \ud835\udcb0(W) covers \u210b (combined with non-emptiness for bad W).",
+      "reachable": true,
+      "assumption_tainted": false,
+      "latex_file": "arXiv-2412.03540v1.tex",
+      "latex_range": {
+        "start_line": 441,
+        "end_line": 441,
+        "start_col": null,
+        "end_col": null
+      },
+      "pdf_page": 8,
+      "prose": "For each H , the tower of minimum fragments T ( W ,H) is defined so that _ i=1 ^ s T_i H . As such, ( W ) must form a cover for ."
+    },
+    {
+      "link_id": "lnk_7a978ef6d550f95c",
+      "lean_fqn": "Workspace.Lemmas.KeyLemma.coverCost_gt_half_of_not_psmall",
+      "lean_file": "lean_workspace/Workspace/Lemmas/Lemma_KeyLemma.lean",
+      "lean_range": {
+        "start_line": 228,
+        "end_line": 291,
+        "start_col": null,
+        "end_col": null
+      },
+      "kind": "have_step",
+      "confidence": 0.8,
+      "source": "manual",
+      "verifier_vote": "none",
+      "rationale": "For not-p-small \u210b and bad W, coverCost > 1/2 \u2014 exactly the fact that any cover of \u210b costs at least 1/2 (the lower bound used to bound P[bad]).",
+      "reachable": true,
+      "assumption_tainted": false,
+      "latex_file": "arXiv-2412.03540v1.tex",
+      "latex_range": {
+        "start_line": 350,
+        "end_line": 350,
+        "start_col": null,
+        "end_col": null
+      },
+      "pdf_page": 5,
+      "prose": "which leads to an upper bound on the probability that X_q is bad, since any cover for must have _ U p^ |U| 1/2 ."
+    },
+    {
+      "link_id": "lnk_59763de2b645ecc2",
+      "lean_fqn": "Workspace.Axioms.LemKey.lem_key_bound",
+      "lean_file": "lean_workspace/Workspace/Lemmas/Lemma_KeyLemma.lean",
+      "lean_range": {
+        "start_line": 293,
+        "end_line": 333,
+        "start_col": null,
+        "end_col": null
+      },
+      "kind": "lemma",
+      "confidence": 0.85,
+      "source": "manual",
+      "verifier_vote": "none",
+      "rationale": "Axiomatized Lemma 3.7 (key lemma): E_W[I(W bad) \u2211_{U\u2208\ud835\udcb0(W)} p^|U|] \u2264 1/3 for q=16p. Flagged: this is an `axiom` (is_axiom), so the statement matches but it is assumed, not proven.",
+      "reachable": true,
+      "assumption_tainted": true,
+      "latex_file": "arXiv-2412.03540v1.tex",
+      "latex_range": {
+        "start_line": 491,
+        "end_line": 496,
+        "start_col": null,
+        "end_col": null
+      },
+      "pdf_page": 9,
+      "prose": "For q=16p , we have _ W_1, ,W_s X_ q [ I ( W bad ) _ U ( W ) p^ |U| ] 1 3 ."
+    },
+    {
+      "link_id": "lnk_23907d5459ed3814",
+      "lean_fqn": "Workspace.Lemmas.KeyLemma.key_lemma_bound",
+      "lean_file": "lean_workspace/Workspace/Lemmas/Lemma_KeyLemma.lean",
+      "lean_range": {
+        "start_line": 334,
+        "end_line": 396,
+        "start_col": null,
+        "end_col": null
+      },
+      "kind": "have_step",
+      "confidence": 0.8,
+      "source": "manual",
+      "verifier_vote": "none",
+      "rationale": "P[W bad] \u2264 2/3, the consequence of Lemma key combined with the not-p-small lower bound, in the Proof of Theorem 1.3.",
+      "reachable": true,
+      "assumption_tainted": true,
+      "latex_file": "arXiv-2412.03540v1.tex",
+      "latex_range": {
+        "start_line": 526,
+        "end_line": 526,
+        "start_col": null,
+        "end_col": null
+      },
+      "pdf_page": 10,
+      "prose": "Lemma 2.9 then implies that"
+    },
+    {
+      "link_id": "lnk_fa47c30458aeded8",
+      "lean_fqn": "Workspace.Lemmas.LambdaHSumEqWRelation.lambdaH_sum_eq_w_relation",
+      "lean_file": "lean_workspace/Workspace/Lemmas/Lemma_LambdaHSumEqWRelation.lean",
+      "lean_range": {
+        "start_line": 26,
+        "end_line": 89,
+        "start_col": null,
+        "end_col": null
+      },
+      "kind": "equation",
+      "confidence": 0.7,
+      "source": "manual",
+      "verifier_vote": "none",
+      "rationale": "Formalizes the first equality in the displayed computation of sum_{x in X_{q'} cap H} lambda_H(x) in the proof of Theorem 1.1, expressing the partial sum of lambda_H over W cap H as (sum w(W) - correction) / (sum w(W)). The Lean term-for-term mirrors that ratio (W playing the role of X_{q'}).",
+      "reachable": true,
+      "assumption_tainted": false,
+      "latex_file": "arXiv-2412.03540v1.tex",
+      "latex_range": {
+        "start_line": 558,
+        "end_line": 558,
+        "start_col": null,
+        "end_col": null
+      },
+      "pdf_page": 11,
+      "prose": "_ x X_ q' H _H(x) &= _ W :W H w(W) - _ W :W H, W X_ q' w(W) |W X_ q' | |W| _ W :W H w(W) \\\\"
+    },
+    {
+      "link_id": "lnk_3636ae73a252d244",
+      "lean_fqn": "Workspace.Lemmas.LambdaHToWInequality.lambdaH_to_w_inequality",
+      "lean_file": "lean_workspace/Workspace/Lemmas/Lemma_LambdaHToWInequality.lean",
+      "lean_range": {
+        "start_line": 30,
+        "end_line": 138,
+        "start_col": null,
+        "end_col": null
+      },
+      "kind": "have_step",
+      "confidence": 0.7,
+      "source": "manual",
+      "verifier_vote": "none",
+      "rationale": "Given \u03bb_H heavy on W\u2229H (\u2211 \u03bb_H \u2265 1 \u2212 1/(2t)), this derives \u2211_{W'\u2286H\u2229W} w(W') \u2265 1/2. It realizes exactly the displayed step in the proof of Theorem 1.2 that turns max_H \u2211 \u03bb_H \u2265 1 \u2212 1/(2t) into max_H \u2211_{W\u2286H\u2229X_{q'}} w(W) \u2265 1/2, via the chain bounding \u2211_{x\u2208X_{q'}\u2229H} \u03bb_H(x).",
+      "reachable": true,
+      "assumption_tainted": false,
+      "latex_file": "arXiv-2412.03540v1.tex",
+      "latex_range": {
+        "start_line": 573,
+        "end_line": 573,
+        "start_col": null,
+        "end_col": null
+      },
+      "pdf_page": 12,
+      "prose": "Therefore, with probability at least 1/3"
+    },
+    {
+      "link_id": "lnk_a1d3816d44523910",
+      "lean_fqn": "Workspace.Lemmas.LambdaHToWInequality_TermBound.term_bound",
+      "lean_file": "lean_workspace/Workspace/Lemmas/Lemma_LambdaHToWInequality_TermBound.lean",
+      "lean_range": {
+        "start_line": 36,
+        "end_line": 96,
+        "start_col": null,
+        "end_col": null
+      },
+      "kind": "equation",
+      "confidence": 0.55,
+      "source": "manual",
+      "verifier_vote": "none",
+      "rationale": "Per-term inequality (for W' \u2284 W: w(W')/t \u2264 w(W')\u00b7(|W'|-|W'\u2229W|)/|W'|) underlying the first inequality in the displayed bound for \u2211_{x\u2208X_q'\u2229H} \u03bb_H(x), which the paper justifies by '|W| \u2264 t for all W \u2208 \ud835\udcb2'. Low confidence: an internal proof step, not a stated result.",
+      "reachable": true,
+      "assumption_tainted": false,
+      "latex_file": "arXiv-2412.03540v1.tex",
+      "latex_range": {
+        "start_line": 563,
+        "end_line": 563,
+        "start_col": null,
+        "end_col": null
+      },
+      "pdf_page": 11,
+      "prose": "Here, in the first inequality, we use that |W| t for all W ."
+    },
+    {
+      "link_id": "lnk_f389f1074c140af8",
+      "lean_fqn": "Workspace.Lemmas.LambdaH_DenomEq.lambdaH_denom_eq",
+      "lean_file": "lean_workspace/Workspace/Lemmas/Lemma_LambdaH_DenomEq.lean",
+      "lean_range": {
+        "start_line": 35,
+        "end_line": 60,
+        "start_col": null,
+        "end_col": null
+      },
+      "kind": "equation",
+      "confidence": 0.85,
+      "source": "manual",
+      "verifier_vote": "none",
+      "rationale": "Exactly the denominator identity displayed in the Proof of Theorem 1.1 (\u2211_y \u2211_{W\u220by,W\u2286H} w(W)/|W| = \u2211_{W\u2286H} w(W)).",
+      "reachable": true,
+      "assumption_tainted": false,
+      "latex_file": "arXiv-2412.03540v1.tex",
+      "latex_range": {
+        "start_line": 549,
+        "end_line": 549,
+        "start_col": null,
+        "end_col": null
+      },
+      "pdf_page": 11,
+      "prose": "_ y H \\,\\,\\,\\,\\, _ W : y W, W H w(W) |W| = _ W : W H w(W)."
+    },
+    {
+      "link_id": "lnk_f638b257fd473440",
+      "lean_fqn": "Workspace.Lemmas.LambdaH_SumOne.lambdaH_sum_one",
+      "lean_file": "lean_workspace/Workspace/Lemmas/Lemma_LambdaH_SumOne.lean",
+      "lean_range": {
+        "start_line": 32,
+        "end_line": 50,
+        "start_col": null,
+        "end_col": null
+      },
+      "kind": "equation",
+      "confidence": 0.9,
+      "source": "manual",
+      "verifier_vote": "none",
+      "rationale": "Establishes \u2211_{x\u2208X} \u03bb_H(x) = 1 (\u03bb_H supported on H), which is the displayed property the paper asserts right after defining \u03bb_H in the proof of Theorem 1.1.",
+      "reachable": true,
+      "assumption_tainted": false,
+      "latex_file": "arXiv-2412.03540v1.tex",
+      "latex_range": {
+        "start_line": 547,
+        "end_line": 547,
+        "start_col": null,
+        "end_col": null
+      },
+      "pdf_page": 11,
+      "prose": "In particular, _ x H _H(x) = 1 . Also note that"
+    },
+    {
+      "link_id": "lnk_6e89ae65da9a564f",
+      "lean_fqn": "Workspace.Lemmas.LambdaH_Support.lambdaH_support",
+      "lean_file": "lean_workspace/Workspace/Lemmas/Lemma_LambdaH_Support.lean",
+      "lean_range": {
+        "start_line": 23,
+        "end_line": 30,
+        "start_col": null,
+        "end_col": null
+      },
+      "kind": "have_step",
+      "confidence": 0.55,
+      "source": "manual",
+      "verifier_vote": "none",
+      "rationale": "\u03bb_H(x)=0 for x\u2209H realizes the 'supported on H' requirement that the constructed \u03bb_H must satisfy to invoke Theorem 1.3. Low confidence: this is the support hypothesis being verified, not a standalone paper result.",
+      "reachable": true,
+      "assumption_tainted": false,
+      "latex_file": "arXiv-2412.03540v1.tex",
+      "latex_range": {
+        "start_line": 303,
+        "end_line": 303,
+        "start_col": null,
+        "end_col": null
+      },
+      "pdf_page": 3,
+      "prose": "There exists a constant c>0 such that the following holds. Let 2^X be not p -small. For each H , consider a weight vector _ H :X [0,1] such that _ H is supported on H and _ x H _H(x) 1 . Assume that is not p -small and let s be a positive integer. Then, with probability at least 1/3 ,"
+    },
+    {
+      "link_id": "lnk_ebda56cf00302d27",
+      "lean_fqn": "Workspace.Lemmas.MaxWProb.max_w_prob",
+      "lean_file": "lean_workspace/Workspace/Lemmas/Lemma_MaxWProb.lean",
+      "lean_range": {
+        "start_line": 30,
+        "end_line": 87,
+        "start_col": null,
+        "end_col": null
+      },
+      "kind": "equation",
+      "confidence": 0.7,
+      "source": "manual",
+      "verifier_vote": "none",
+      "rationale": "Transfers the with-probability-1/3 heavy-lambda event (max_H sum lambda_H >= 1 - 2^{-s}) to the with-probability-1/3 heavy-w event (max_H sum_{W subseteq H cap X_{q'}} w(W) >= 1/2) in the proof of Theorem 1.1, via the deterministic inclusion lambdaH_to_w_inequality plus monotonicity of ProbXp. Confidence < 1: it is the probabilistic step deriving this displayed line, not a numbered theorem.",
+      "reachable": true,
+      "assumption_tainted": false,
+      "latex_file": "arXiv-2412.03540v1.tex",
+      "latex_range": {
+        "start_line": 571,
+        "end_line": 574,
+        "start_col": null,
+        "end_col": null
+      },
+      "pdf_page": 12,
+      "prose": "Here we use the assumption that w is a fractional cover of and hence _ W :W H w(W) 1 . Therefore, with probability at least 1/3 _ H _ W :W H X_ q' w(W) 1 2 ,"
+    },
+    {
+      "link_id": "lnk_dbc4fbff312fbd43",
+      "lean_fqn": "Workspace.Lemmas.PowBoundFromRatio.pow_bound_from_ratio",
+      "lean_file": "lean_workspace/Workspace/Lemmas/Lemma_PowBoundFromRatio.lean",
+      "lean_range": {
+        "start_line": 13,
+        "end_line": 24,
+        "start_col": null,
+        "end_col": null
+      },
+      "kind": "equation",
+      "confidence": 0.6,
+      "source": "manual",
+      "verifier_vote": "none",
+      "rationale": "Per-term algebraic step q'^k \u2264 (1/6)\u00b7p^k for q' \u2264 p/6, k \u2265 1, which is exactly the inequality (q')^|W| \u2264 (p/6)^|W| underlying the displayed bound E[\u2211 w(W)] \u2264 \u2211 (p/6)^|W| w(W) in the proof of Theorem 1.1. Low confidence: a supporting arithmetic step, not a stated result.",
+      "reachable": true,
+      "assumption_tainted": false,
+      "latex_file": "arXiv-2412.03540v1.tex",
+      "latex_range": {
+        "start_line": 593,
+        "end_line": 596,
+        "start_col": null,
+        "end_col": null
+      },
+      "pdf_page": 12,
+      "prose": "By our assumption, w is fractionally p -small for p 6q' = 6Cq t , assuming that c (6C)^ -1 . As such, [ _ W :W X_ q' w(W) ] _ W (p/6)^ |W| w(W) < 1/12."
+    },
+    {
+      "link_id": "lnk_7b4d9b1a7141789c",
+      "lean_fqn": "Workspace.Lemmas.ProbGoodEvent.prob_good_event",
+      "lean_file": "lean_workspace/Workspace/Lemmas/Lemma_ProbGoodEvent.lean",
+      "lean_range": {
+        "start_line": 68,
+        "end_line": 160,
+        "start_col": null,
+        "end_col": null
+      },
+      "kind": "have_step",
+      "confidence": 0.85,
+      "source": "manual",
+      "verifier_vote": "none",
+      "rationale": "Conclusion `1/3 \u2264 ProbXp(1-(1-q)^s){W | \u2203H, 1-2^{-s} \u2264 \u2211_{x\u2208W} \u03bb_H(x)}` is exactly the final displayed probability bound completing the Proof of Theorem 1.3 (using 1-(1-q)^s = q\u0303 \u2264 sq).",
+      "reachable": true,
+      "assumption_tainted": true,
+      "latex_file": "arXiv-2412.03540v1.tex",
+      "latex_range": {
+        "start_line": 531,
+        "end_line": 531,
+        "start_col": null,
+        "end_col": null
+      },
+      "pdf_page": 10,
+      "prose": "if W is not bad, then we have"
+    },
+    {
+      "link_id": "lnk_2613f440441af9b1",
+      "lean_fqn": "Workspace.Lemmas.QPrimeLeOne.q_prime_le_one",
+      "lean_file": "lean_workspace/Workspace/Lemmas/Lemma_QPrimeLeOne.lean",
+      "lean_range": {
+        "start_line": 19,
+        "end_line": 34,
+        "start_col": null,
+        "end_col": null
+      },
+      "kind": "have_step",
+      "confidence": 0.55,
+      "source": "manual",
+      "verifier_vote": "none",
+      "rationale": "Arithmetic plumbing in the Proof of Theorem 1.1 establishing q' \u2264 1 so that Theorem 1.3 (which requires a valid probability) applies; q' = 16 s q with q = (c/100000) p/log t. Low confidence: a bookkeeping bound, not a stated result.",
+      "reachable": true,
+      "assumption_tainted": false,
+      "latex_file": "arXiv-2412.03540v1.tex",
+      "latex_range": {
+        "start_line": 552,
+        "end_line": 552,
+        "start_col": null,
+        "end_col": null
+      },
+      "pdf_page": 11,
+      "prose": "Assume for the sake of contradiction that is not q -small for q = cp/ t . By Theorem , we then have that, with probability at least 1/3 , for q' = Cq t = (Cc)p for an absolute constant C>0 ,"
+    },
+    {
+      "link_id": "lnk_f374c8be6e7b4940",
+      "lean_fqn": "Workspace.Lemmas.QPrimeLePDivSix.q_prime_le_p_div_6",
+      "lean_file": "lean_workspace/Workspace/Lemmas/Lemma_QPrimeLePDivSix.lean",
+      "lean_range": {
+        "start_line": 38,
+        "end_line": 87,
+        "start_col": null,
+        "end_col": null
+      },
+      "kind": "equation",
+      "confidence": 0.6,
+      "source": "manual",
+      "verifier_vote": "none",
+      "rationale": "Formalizes the parameter inequality q' <= p/6 (equivalently p >= 6q' = 6Cq log t) used near the end of the proof of Theorem 1.1, derived from q = (c_sel/100000) p / log t, q' = 16 s q and the ceiling bound on s = ceil(log_2(2t)). Confidence < 1: this is the concrete constant bookkeeping behind the paper's p >= 6q' assertion with explicit absolute constants chosen in the Lean formalization.",
+      "reachable": true,
+      "assumption_tainted": false,
+      "latex_file": "arXiv-2412.03540v1.tex",
+      "latex_range": {
+        "start_line": 593,
+        "end_line": 593,
+        "start_col": null,
+        "end_col": null
+      },
+      "pdf_page": 12,
+      "prose": "By our assumption, w is fractionally p -small for p 6q' = 6Cq t , assuming that c (6C)^ -1 . As such,"
+    },
+    {
+      "link_id": "lnk_785f6e1ce41d1866",
+      "lean_fqn": "Workspace.Lemmas.SumOverSubsetLe.sum_over_subset_le",
+      "lean_file": "lean_workspace/Workspace/Lemmas/Lemma_SumOverSubsetLe.lean",
+      "lean_range": {
+        "start_line": 20,
+        "end_line": 33,
+        "start_col": null,
+        "end_col": null
+      },
+      "kind": "have_step",
+      "confidence": 0.7,
+      "source": "manual",
+      "verifier_vote": "none",
+      "rationale": "\u2211_{W'\u2286H\u2229W} w(W') \u2264 \u2211_{W'\u2286W} w(W') since (H\u2229W).powerset \u2286 W.powerset and w \u2265 0. This realizes the displayed inequality in the proof of Theorem 1.2 dropping the H-restriction (with W = X_{q'}). Low-moderate confidence: a monotonicity step matching one displayed inequality.",
+      "reachable": true,
+      "assumption_tainted": false,
+      "latex_file": "arXiv-2412.03540v1.tex",
+      "latex_range": {
+        "start_line": 582,
+        "end_line": 582,
+        "start_col": null,
+        "end_col": null
+      },
+      "pdf_page": 11,
+      "prose": "_ W :W X_ q' w(W) _ H _ W :W H X_ q' w(W)."
+    },
+    {
+      "link_id": "lnk_150b13224b665bdc",
+      "lean_fqn": "Workspace.Lemmas.UnionDistribution.union_distribution_eq",
+      "lean_file": "lean_workspace/Workspace/Lemmas/Lemma_UnionDistribution.lean",
+      "lean_range": {
+        "start_line": 410,
+        "end_line": 429,
+        "start_col": null,
+        "end_col": null
+      },
+      "kind": "equation",
+      "confidence": 0.85,
+      "source": "manual",
+      "verifier_vote": "none",
+      "rationale": "Formalizes the distributional identity that the union \u22c3_{i=1}^s W_i of s i.i.d. X_q samples is distributed as X_{q\u0303} with q\u0303 = 1-(1-q)^s \u2014 exactly the 'Note that \u2026' line in the proof of Theorem 1.2.",
+      "reachable": true,
+      "assumption_tainted": false,
+      "latex_file": "arXiv-2412.03540v1.tex",
+      "latex_range": {
+        "start_line": 529,
+        "end_line": 529,
+        "start_col": null,
+        "end_col": null
+      },
+      "pdf_page": 10,
+      "prose": "Note that the set _ i=1 ^ s W_i has the same distribution as X_ q where q = 1 - (1-q)^ s sq . Furthermore, if W is not bad, then we have _ H _ x ( _ i=1 ^ s W_i) H _H(x) 1-2^ -s . Thus, we have"
+    },
+    {
+      "link_id": "lnk_ece10a87c85fae15",
+      "lean_fqn": "Workspace.MainTheorem.main_theorem",
+      "lean_file": "lean_workspace/Workspace/MainTheorem.lean",
+      "lean_range": {
+        "start_line": 58,
+        "end_line": 140,
+        "start_col": null,
+        "end_col": null
+      },
+      "kind": "theorem",
+      "confidence": 0.95,
+      "source": "manual",
+      "verifier_vote": "none",
+      "rationale": "Direct formalization of Theorem 1.1 (thm:main): existence of c>0 such that a fractional cover w with cost \u2264 1/2 supported on sets of size \u2264 t yields IsPSmall \u210b (c\u00b7p/log t), i.e. c_int(\u210b;q) \u2264 1/2 for q = cp/log t.",
+      "reachable": true,
+      "assumption_tainted": true,
+      "latex_file": "arXiv-2412.03540v1.tex",
+      "latex_range": {
+        "start_line": 295,
+        "end_line": 295,
+        "start_col": null,
+        "end_col": null
+      },
+      "pdf_page": 3,
+      "prose": "There exists a constant c>0 such that the following holds. Let t > 0 be an integer. Assume that admits a fractional cover w : 2^X [0,1] such that _ W 2^X w(W)p^ |W| 1/2 and w is supported on sets of size at most t . Then c_ ( ; q) 1/2 for q = c p / t , i.e. there exists g: 2^X \\ 0,1\\ such that _ W H g(W) 1 for all H and _ W H g(W)q^ |W| 1/2 ."
+    },
+    {
+      "link_id": "lnk_4456c07773ae37f1",
+      "lean_fqn": "Workspace.Theorems.SharpSelector.sharp_selector_theorem",
+      "lean_file": "lean_workspace/Workspace/Theorems/SharpSelector.lean",
+      "lean_range": {
+        "start_line": 39,
+        "end_line": 118,
+        "start_col": null,
+        "end_col": null
+      },
+      "kind": "theorem",
+      "confidence": 0.95,
+      "source": "manual",
+      "verifier_vote": "none",
+      "rationale": "Theorem 1.3 (sharp version of Talagrand's selector process conjecture). The Lean statement matches: \u2203 c>0, for not-p-small \u210b and weight vectors \u03bb_H in [0,1] supported on H with \u2211\u03bb_H \u2265 1, with prob \u2265 1/3 over X_{16sp}, max_H \u2211_{x\u2208X_{16sp}\u2229H} \u03bb_H(x) \u2265 1-2^{-s}.",
+      "reachable": true,
+      "assumption_tainted": true,
+      "latex_file": "arXiv-2412.03540v1.tex",
+      "latex_range": {
+        "start_line": 302,
+        "end_line": 306,
+        "start_col": null,
+        "end_col": null
+      },
+      "pdf_page": 3,
+      "prose": "There exists a constant c>0 such that the following holds. Let 2^X be not p -small. For each H , consider a weight vector _ H :X [0,1] such that _ H is supported on H and _ x H _H(x) 1 . Assume that is not p -small and let s be a positive integer. Then, with probability at least 1/3 , \\[ _ H _ x X_ 16sp H _H(x) 1-2^ -s . \\]"
+    },
+    {
+      "link_id": "lnk_215e1ade1b1529d0",
+      "lean_fqn": "Workspace.Types.FractionalCover.FractionalCover",
+      "lean_file": "lean_workspace/Workspace/Types/FractionalCover.lean",
+      "lean_range": {
+        "start_line": 20,
+        "end_line": 34,
+        "start_col": null,
+        "end_col": null
+      },
+      "kind": "definition",
+      "confidence": 0.95,
+      "source": "manual",
+      "verifier_vote": "none",
+      "rationale": "The structure FractionalCover bundles w : Finset X -> R with nonneg, le_one (the [0,1] range), and is_cover (sum_{W subseteq H} w(W) >= 1 for all H in H) -- exactly the paper's definition of a fractional cover. (w_empty is a harmless normalization the paper leaves implicit.)",
+      "reachable": true,
+      "assumption_tainted": false,
+      "latex_file": "arXiv-2412.03540v1.tex",
+      "latex_range": {
+        "start_line": 267,
+        "end_line": 267,
+        "start_col": null,
+        "end_col": null
+      },
+      "pdf_page": 2,
+      "prose": "We refer to a function w:2^X [0,1] such that _ W H w(W) 1 for all H as a fractional cover of ."
+    },
+    {
+      "link_id": "lnk_63b3be1882902629",
+      "lean_fqn": "Workspace.Types.IntegralCover.IntegralCover",
+      "lean_file": "lean_workspace/Workspace/Types/IntegralCover.lean",
+      "lean_range": {
+        "start_line": 17,
+        "end_line": 24,
+        "start_col": null,
+        "end_col": null
+      },
+      "kind": "definition",
+      "confidence": 0.85,
+      "source": "manual",
+      "verifier_vote": "none",
+      "rationale": "The structure records exactly an integral cover: a {0,1}-valued indicator g with the covering condition that every H in \u210b contains a selected subset W. This is the paper's definition of an (integral) cover for \u210b. The LP cost bound is deliberately separated out, as the docstring notes.",
+      "reachable": true,
+      "assumption_tainted": false,
+      "latex_file": "arXiv-2412.03540v1.tex",
+      "latex_range": {
+        "start_line": 255,
+        "end_line": 255,
+        "start_col": null,
+        "end_col": null
+      },
+      "pdf_page": 2,
+      "prose": "We refer to 2^X satisfying the constraint of the program ( ) as an (integral) cover for , i.e. every H contains at least one set G . %"
+    },
+    {
+      "link_id": "lnk_655b75d98ce48a14",
+      "lean_fqn": "Workspace.Types.IsPSmall.IsPSmall",
+      "lean_file": "lean_workspace/Workspace/Types/IsPSmall.lean",
+      "lean_range": {
+        "start_line": 21,
+        "end_line": 26,
+        "start_col": null,
+        "end_col": null
+      },
+      "kind": "definition",
+      "confidence": 0.92,
+      "source": "manual",
+      "verifier_vote": "none",
+      "rationale": "IsPSmall \u210b p is defined as the existence of an integral cover g with LP cost \u2211_W g(W)\u00b7p^|W| \u2264 1/2, i.e. c_int(\u210b;p) \u2264 1/2, which is exactly the paper's definition of 'p-small'. The integral LP objective c_int is defined in eq:int-linprog just above.",
+      "reachable": true,
+      "assumption_tainted": false,
+      "latex_file": "arXiv-2412.03540v1.tex",
+      "latex_range": {
+        "start_line": 254,
+        "end_line": 254,
+        "start_col": null,
+        "end_col": null
+      },
+      "pdf_page": 2,
+      "prose": "The expectation threshold p_E( ) is defined as the largest p for which c_ ( ; p) 1/2 . When c_ ( ; p) 1/2 , we commonly say that is p -small."
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>FormaliaXiv</title>
+<style>
+  * { box-sizing: border-box; }
+  body { margin:0; background:#15161a; color:#e6e6e6; font:15px/1.5 -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif; }
+  header { padding:34px 28px 18px; border-bottom:1px solid #2a2c33; }
+  header h1 { margin:0; font-size:26px; letter-spacing:0.3px; }
+  header p { margin:8px 0 0; color:#9aa1ad; font-size:14px; }
+  main { max-width:920px; margin:0 auto; padding:26px 20px 60px; display:grid; gap:14px; }
+  .card { display:block; text-decoration:none; color:inherit; background:#1e1f22; border:1px solid #2a2c33;
+           border-radius:10px; padding:18px 20px; transition:border-color .12s, background .12s; }
+  .card:hover { border-color:#4d6fa0; background:#23252b; }
+  .card-title { font-size:17.5px; font-weight:600; color:#f4f4f4; line-height:1.35; }
+  .card-meta { font-size:13px; margin-top:7px; }
+  .card-venue { color:#79c0ff; font-weight:600; }
+  .card-authors { color:#b9bfca; }
+  .card-blurb { font-size:13.5px; color:#9aa1ad; margin-top:9px; line-height:1.5; }
+  .empty { color:#7a808a; font-style:italic; }
+  footer { max-width:920px; margin:0 auto; padding:0 20px 40px; color:#6a6f78; font-size:12px; }
+  a.api { color:#79c0ff; }
+</style></head>
+<body>
+  <header>
+    <h1>FormaliaXiv</h1>
+    <p>Formalized papers with bidirectional PDF ↔ Lean cross-references.</p>
+  </header>
+  <main>
+    <a class="card" href="p/AGeneralizedTrace/"><div class="card-title">A Generalized Trace Reconstruction Problem: Recovering a String of Probabilities</div><div class="card-meta"><span class="card-venue">STOC 2025</span> · <span class="card-authors">Joey Rivkin, Gregory Valiant, Paul Valiant</span></div><div class="card-blurb">Formalizes the lower bound for the generalized trace reconstruction problem of recovering a string of probabilities from random traces.</div></a>
+<a class="card" href="p/ASharp/"><div class="card-title">A Sharp Version of Talagrand&#x27;s Selector Process Conjecture and an Application to Rounding Fractional Covers</div><div class="card-meta"><span class="card-venue">STOC 2025</span> · <span class="card-authors">Huy Tuan Pham</span></div><div class="card-blurb">Formalizes a sharp version of Talagrand&#x27;s selector process conjecture and its consequence for rounding fractional covers to integral ones.</div></a>
+<a class="card" href="p/ApproximantionMedian/"><div class="card-title">Approximation Guarantees of the Median Mechanism in ℝᵈ</div><div class="card-meta"><span class="card-venue">STOC 2025</span> · <span class="card-authors">Nick Gravin, Jianhao Jia</span></div><div class="card-blurb">Formalizes the dimension-independent approximation ratio of the coordinate-wise median mechanism in ℝᵈ.</div></a>
+<a class="card" href="p/EfficientlyLeanringMixtures/"><div class="card-title">Efficiently Learning Mixtures of Two Gaussians</div><div class="card-meta"><span class="card-venue">STOC 2010</span> · <span class="card-authors">Adam Tauman Kalai, Ankur Moitra, Gregory Valiant</span></div><div class="card-blurb">Formalizes that the first six moments of a one-dimensional mixture of two Gaussians suffice to robustly recover its parameters.</div></a>
+<a class="card" href="p/Refuting/"><div class="card-title">Refuting the Direct Sum Conjecture for Total Functions in Deterministic Communication Complexity</div><div class="card-meta"><span class="card-venue">STOC 2025</span> · <span class="card-authors">Simon Mackenzie, Abdallah Saffidine</span></div><div class="card-blurb">Formalizes a counterexample refuting the direct sum conjecture for total functions in deterministic communication complexity.</div></a>
+  </main>
+  <footer>Machine-readable index: <a class="api" href="api/papers.json">/api/papers</a> · <a class="api" href="llms.txt">/llms.txt</a></footer>
+</body></html>
