@@ -1,0 +1,902 @@
+{
+  "paper_id": "EfficientlyLeanringMixtures",
+  "title": "Efficiently Learning Mixtures of Two Gaussians",
+  "graph_type": "group_level_proof_dependency_dag",
+  "description": "Group-level proof-dependency DAG of the Lean formalization. Each node is a \"proof stage\": a cluster of Lean modules grouped by their role in the paper's argument. An edge A→B means stage A uses (depends on) stage B. Edges are transitively reduced (a direct edge is omitted when a longer path already implies it); a pair marked bidirectional are mutually recursive. Each node lists the exact Lean modules it contains, with per-module source-line and declaration counts.",
+  "image": {
+    "pdf": "images/MixturesGraph_cycsafe_dag.pdf",
+    "png": "images/MixturesGraph_cycsafe.png"
+  },
+  "node_count": 10,
+  "edge_count": 13,
+  "axioms_beyond_kernel": [
+    {
+      "stage": "Prior",
+      "name": "Hummel–Gidas"
+    },
+    {
+      "stage": "Prior",
+      "name": "analytic IFT"
+    },
+    {
+      "stage": "Prior",
+      "name": "zero-set genericity"
+    }
+  ],
+  "roots": [
+    "ROOT"
+  ],
+  "nodes": [
+    {
+      "id": "ROOT",
+      "label": "Main theorems",
+      "role": "theorem",
+      "color": "#F5C81E",
+      "files": 1,
+      "lines": 407,
+      "decls": 2,
+      "is_root": true,
+      "modules": [
+        {
+          "module": "Workspace.MainTheorem",
+          "file": "Workspace/MainTheorem.lean",
+          "lines": 407,
+          "decls": 2
+        }
+      ]
+    },
+    {
+      "id": "tv_tools",
+      "label": "Pinsker / Scheffé TV tools",
+      "role": "lemma_stage",
+      "color": "#5CB874",
+      "files": 10,
+      "lines": 1715,
+      "decls": 10,
+      "is_root": false,
+      "modules": [
+        {
+          "module": "Workspace.ProofLemmas.Fact18GaussianL1FromKL",
+          "file": "Workspace/ProofLemmas/Fact18GaussianL1FromKL.lean",
+          "lines": 232,
+          "decls": 1
+        },
+        {
+          "module": "Workspace.ProofLemmas.Fact18GaussianMeanShiftL1Bound",
+          "file": "Workspace/ProofLemmas/Fact18GaussianMeanShiftL1Bound.lean",
+          "lines": 86,
+          "decls": 1
+        },
+        {
+          "module": "Workspace.ProofLemmas.Fact18GaussianVarianceShiftL1Bound",
+          "file": "Workspace/ProofLemmas/Fact18GaussianVarianceShiftL1Bound.lean",
+          "lines": 164,
+          "decls": 1
+        },
+        {
+          "module": "Workspace.ProofLemmas.Fact18KLBoundMeanPerturbation",
+          "file": "Workspace/ProofLemmas/Fact18KLBoundMeanPerturbation.lean",
+          "lines": 184,
+          "decls": 1
+        },
+        {
+          "module": "Workspace.ProofLemmas.Fact18KLBoundVariancePerturbation",
+          "file": "Workspace/ProofLemmas/Fact18KLBoundVariancePerturbation.lean",
+          "lines": 223,
+          "decls": 1
+        },
+        {
+          "module": "Workspace.ProofLemmas.Fact18VariancePerturbationBound",
+          "file": "Workspace/ProofLemmas/Fact18VariancePerturbationBound.lean",
+          "lines": 37,
+          "decls": 1
+        },
+        {
+          "module": "Workspace.ProofLemmas.PinskerDataProcessingInequality",
+          "file": "Workspace/ProofLemmas/PinskerDataProcessingInequality.lean",
+          "lines": 302,
+          "decls": 1
+        },
+        {
+          "module": "Workspace.ProofLemmas.PinskerL1FromTwoPoint",
+          "file": "Workspace/ProofLemmas/PinskerL1FromTwoPoint.lean",
+          "lines": 195,
+          "decls": 1
+        },
+        {
+          "module": "Workspace.ProofLemmas.PinskerScheffeIdentity",
+          "file": "Workspace/ProofLemmas/PinskerScheffeIdentity.lean",
+          "lines": 72,
+          "decls": 1
+        },
+        {
+          "module": "Workspace.ProofLemmas.PinskerTwoPointBound",
+          "file": "Workspace/ProofLemmas/PinskerTwoPointBound.lean",
+          "lines": 220,
+          "decls": 1
+        }
+      ]
+    },
+    {
+      "id": "lemma5",
+      "label": "Lemma 5: deconvolution TV gap",
+      "role": "lemma_stage",
+      "color": "#5CB874",
+      "files": 11,
+      "lines": 3686,
+      "decls": 11,
+      "is_root": false,
+      "modules": [
+        {
+          "module": "Workspace.ProofLemmas.GaussianL1LowerBoundCombinedGap",
+          "file": "Workspace/ProofLemmas/GaussianL1LowerBoundCombinedGap.lean",
+          "lines": 546,
+          "decls": 1
+        },
+        {
+          "module": "Workspace.ProofLemmas.Lemma5Case1Assembly",
+          "file": "Workspace/ProofLemmas/Lemma5Case1Assembly.lean",
+          "lines": 358,
+          "decls": 1
+        },
+        {
+          "module": "Workspace.ProofLemmas.Lemma5Case1DerivBoundOnDiff",
+          "file": "Workspace/ProofLemmas/Lemma5Case1DerivBoundOnDiff.lean",
+          "lines": 114,
+          "decls": 1
+        },
+        {
+          "module": "Workspace.ProofLemmas.Lemma5Case1OffPeakBoundAtMu1",
+          "file": "Workspace/ProofLemmas/Lemma5Case1OffPeakBoundAtMu1.lean",
+          "lines": 209,
+          "decls": 1
+        },
+        {
+          "module": "Workspace.ProofLemmas.Lemma5Case1PeakBoundAtMu1",
+          "file": "Workspace/ProofLemmas/Lemma5Case1PeakBoundAtMu1.lean",
+          "lines": 105,
+          "decls": 1
+        },
+        {
+          "module": "Workspace.ProofLemmas.Lemma5Case2aAssembly",
+          "file": "Workspace/ProofLemmas/Lemma5Case2aAssembly.lean",
+          "lines": 109,
+          "decls": 1
+        },
+        {
+          "module": "Workspace.ProofLemmas.Lemma5Case2bAssembly",
+          "file": "Workspace/ProofLemmas/Lemma5Case2bAssembly.lean",
+          "lines": 461,
+          "decls": 1
+        },
+        {
+          "module": "Workspace.ProofLemmas.Lemma5DeconvolutionTVGap",
+          "file": "Workspace/ProofLemmas/Lemma5DeconvolutionTVGap.lean",
+          "lines": 555,
+          "decls": 1
+        },
+        {
+          "module": "Workspace.ProofLemmas.Lemma5LocalizedWeightGapTV",
+          "file": "Workspace/ProofLemmas/Lemma5LocalizedWeightGapTV.lean",
+          "lines": 584,
+          "decls": 1
+        },
+        {
+          "module": "Workspace.ProofLemmas.Lemma5LocalizedWeightGapTVNarrow",
+          "file": "Workspace/ProofLemmas/Lemma5LocalizedWeightGapTVNarrow.lean",
+          "lines": 528,
+          "decls": 1
+        },
+        {
+          "module": "Workspace.ProofLemmas.WeightedMixtureL1TriangleSplit",
+          "file": "Workspace/ProofLemmas/WeightedMixtureL1TriangleSplit.lean",
+          "lines": 117,
+          "decls": 1
+        }
+      ]
+    },
+    {
+      "id": "lemma6",
+      "label": "Lemma 6: moment preservation",
+      "role": "lemma_stage",
+      "color": "#5CB874",
+      "files": 7,
+      "lines": 2068,
+      "decls": 8,
+      "is_root": false,
+      "modules": [
+        {
+          "module": "Workspace.ProofLemmas.Lemma6DeconvolutionPreservesMoments",
+          "file": "Workspace/ProofLemmas/Lemma6DeconvolutionPreservesMoments.lean",
+          "lines": 333,
+          "decls": 1
+        },
+        {
+          "module": "Workspace.ProofLemmas.SublemmaBinomialCoefficientBound",
+          "file": "Workspace/ProofLemmas/SublemmaBinomialCoefficientBound.lean",
+          "lines": 7,
+          "decls": 1
+        },
+        {
+          "module": "Workspace.ProofLemmas.SublemmaCentralMomentN0Tau",
+          "file": "Workspace/ProofLemmas/SublemmaCentralMomentN0Tau.lean",
+          "lines": 254,
+          "decls": 1
+        },
+        {
+          "module": "Workspace.ProofLemmas.SublemmaDeconvolutionMomentIdentity",
+          "file": "Workspace/ProofLemmas/SublemmaDeconvolutionMomentIdentity.lean",
+          "lines": 710,
+          "decls": 1
+        },
+        {
+          "module": "Workspace.ProofLemmas.SublemmaLemma6ConvolutionCase",
+          "file": "Workspace/ProofLemmas/SublemmaLemma6ConvolutionCase.lean",
+          "lines": 469,
+          "decls": 2
+        },
+        {
+          "module": "Workspace.ProofLemmas.SublemmaMixtureMomentLinearity",
+          "file": "Workspace/ProofLemmas/SublemmaMixtureMomentLinearity.lean",
+          "lines": 51,
+          "decls": 1
+        },
+        {
+          "module": "Workspace.ProofLemmas.SublemmaMomentOfSumOfIndependents",
+          "file": "Workspace/ProofLemmas/SublemmaMomentOfSumOfIndependents.lean",
+          "lines": 244,
+          "decls": 1
+        }
+      ]
+    },
+    {
+      "id": "lemma9",
+      "label": "Lemma 9: L¹→moments",
+      "role": "lemma_stage",
+      "color": "#5CB874",
+      "files": 10,
+      "lines": 3483,
+      "decls": 21,
+      "is_root": false,
+      "modules": [
+        {
+          "module": "Workspace.ProofLemmas.Lemma9MomentGap",
+          "file": "Workspace/ProofLemmas/Lemma9MomentGap.lean",
+          "lines": 649,
+          "decls": 11
+        },
+        {
+          "module": "Workspace.ProofLemmas.Lemma9TailBound",
+          "file": "Workspace/ProofLemmas/Lemma9TailBound.lean",
+          "lines": 312,
+          "decls": 1
+        },
+        {
+          "module": "Workspace.ProofLemmas.MixtureDifferenceAsSignedCombination",
+          "file": "Workspace/ProofLemmas/MixtureDifferenceAsSignedCombination.lean",
+          "lines": 24,
+          "decls": 1
+        },
+        {
+          "module": "Workspace.ProofLemmas.PiecewiseSignWitness",
+          "file": "Workspace/ProofLemmas/PiecewiseSignWitness.lean",
+          "lines": 469,
+          "decls": 1
+        },
+        {
+          "module": "Workspace.ProofLemmas.PigeonholeOverSubIntervals",
+          "file": "Workspace/ProofLemmas/PigeonholeOverSubIntervals.lean",
+          "lines": 115,
+          "decls": 1
+        },
+        {
+          "module": "Workspace.ProofLemmas.SignChangeBoundedPolynomialPairingPiecewise",
+          "file": "Workspace/ProofLemmas/SignChangeBoundedPolynomialPairingPiecewise.lean",
+          "lines": 737,
+          "decls": 1
+        },
+        {
+          "module": "Workspace.ProofLemmas.SignChangePairingBulk",
+          "file": "Workspace/ProofLemmas/SignChangePairingBulk.lean",
+          "lines": 712,
+          "decls": 2
+        },
+        {
+          "module": "Workspace.ProofLemmas.SublemmaExtractSortedZeroList",
+          "file": "Workspace/ProofLemmas/SublemmaExtractSortedZeroList.lean",
+          "lines": 43,
+          "decls": 1
+        },
+        {
+          "module": "Workspace.ProofLemmas.SublemmaSGCDensityIntegrable",
+          "file": "Workspace/ProofLemmas/SublemmaSGCDensityIntegrable.lean",
+          "lines": 52,
+          "decls": 1
+        },
+        {
+          "module": "Workspace.ProofLemmas.SublemmaSignedDensityL1TailBound",
+          "file": "Workspace/ProofLemmas/SublemmaSignedDensityL1TailBound.lean",
+          "lines": 370,
+          "decls": 1
+        }
+      ]
+    },
+    {
+      "id": "prop7",
+      "label": "Prop 7: Gaussian zero-counting",
+      "role": "lemma_stage",
+      "color": "#5CB874",
+      "files": 45,
+      "lines": 13993,
+      "decls": 115,
+      "is_root": false,
+      "modules": [
+        {
+          "module": "Workspace.ProofLemmas.BareMainCaseDualGenericity",
+          "file": "Workspace/ProofLemmas/BareMainCaseDualGenericity.lean",
+          "lines": 664,
+          "decls": 3
+        },
+        {
+          "module": "Workspace.ProofLemmas.ConvFamilyDiagonalThresholdConcrete",
+          "file": "Workspace/ProofLemmas/ConvFamilyDiagonalThresholdConcrete.lean",
+          "lines": 256,
+          "decls": 2
+        },
+        {
+          "module": "Workspace.ProofLemmas.ConvFamilyRegionBFloors",
+          "file": "Workspace/ProofLemmas/ConvFamilyRegionBFloors.lean",
+          "lines": 618,
+          "decls": 1
+        },
+        {
+          "module": "Workspace.ProofLemmas.ConvFamilyUniformEnvelope",
+          "file": "Workspace/ProofLemmas/ConvFamilyUniformEnvelope.lean",
+          "lines": 1271,
+          "decls": 1
+        },
+        {
+          "module": "Workspace.ProofLemmas.ConvFamilyUniformRegionB",
+          "file": "Workspace/ProofLemmas/ConvFamilyUniformRegionB.lean",
+          "lines": 192,
+          "decls": 1
+        },
+        {
+          "module": "Workspace.ProofLemmas.ConvFamilyUniformRegionC",
+          "file": "Workspace/ProofLemmas/ConvFamilyUniformRegionC.lean",
+          "lines": 662,
+          "decls": 14
+        },
+        {
+          "module": "Workspace.ProofLemmas.ConvSmallPreservesSimpleAndEnvelope",
+          "file": "Workspace/ProofLemmas/ConvSmallPreservesSimpleAndEnvelope.lean",
+          "lines": 1126,
+          "decls": 18
+        },
+        {
+          "module": "Workspace.ProofLemmas.DistinctVariancePerturbationExists",
+          "file": "Workspace/ProofLemmas/DistinctVariancePerturbationExists.lean",
+          "lines": 99,
+          "decls": 2
+        },
+        {
+          "module": "Workspace.ProofLemmas.FinitenessOfSignedGaussianZeros",
+          "file": "Workspace/ProofLemmas/FinitenessOfSignedGaussianZeros.lean",
+          "lines": 66,
+          "decls": 1
+        },
+        {
+          "module": "Workspace.ProofLemmas.FirstReductionCountNonDecrease",
+          "file": "Workspace/ProofLemmas/FirstReductionCountNonDecrease.lean",
+          "lines": 818,
+          "decls": 2
+        },
+        {
+          "module": "Workspace.ProofLemmas.FirstReductionSimpleZeros",
+          "file": "Workspace/ProofLemmas/FirstReductionSimpleZeros.lean",
+          "lines": 294,
+          "decls": 1
+        },
+        {
+          "module": "Workspace.ProofLemmas.FormalGaussianAnalyticZeroCountInduction",
+          "file": "Workspace/ProofLemmas/FormalGaussianAnalyticZeroCountInduction.lean",
+          "lines": 89,
+          "decls": 1
+        },
+        {
+          "module": "Workspace.ProofLemmas.FormalGaussianConvolution",
+          "file": "Workspace/ProofLemmas/FormalGaussianConvolution.lean",
+          "lines": 354,
+          "decls": 3
+        },
+        {
+          "module": "Workspace.ProofLemmas.FormalGaussianNontriviality",
+          "file": "Workspace/ProofLemmas/FormalGaussianNontriviality.lean",
+          "lines": 172,
+          "decls": 1
+        },
+        {
+          "module": "Workspace.ProofLemmas.FormalGaussianTailEnvelope",
+          "file": "Workspace/ProofLemmas/FormalGaussianTailEnvelope.lean",
+          "lines": 85,
+          "decls": 1
+        },
+        {
+          "module": "Workspace.ProofLemmas.GaussianZeroCountInductiveStepProof",
+          "file": "Workspace/ProofLemmas/GaussianZeroCountInductiveStepProof.lean",
+          "lines": 57,
+          "decls": 1
+        },
+        {
+          "module": "Workspace.ProofLemmas.HurwitzGaussianPerturbationCenterTwoZeros",
+          "file": "Workspace/ProofLemmas/HurwitzGaussianPerturbationCenterTwoZeros.lean",
+          "lines": 1427,
+          "decls": 10
+        },
+        {
+          "module": "Workspace.ProofLemmas.HurwitzGaussianPerturbationSimpleZeroPreservation",
+          "file": "Workspace/ProofLemmas/HurwitzGaussianPerturbationSimpleZeroPreservation.lean",
+          "lines": 711,
+          "decls": 1
+        },
+        {
+          "module": "Workspace.ProofLemmas.HurwitzGaussianPerturbationTailDominance",
+          "file": "Workspace/ProofLemmas/HurwitzGaussianPerturbationTailDominance.lean",
+          "lines": 428,
+          "decls": 2
+        },
+        {
+          "module": "Workspace.ProofLemmas.MainCaseSimpleTransport",
+          "file": "Workspace/ProofLemmas/MainCaseSimpleTransport.lean",
+          "lines": 161,
+          "decls": 1
+        },
+        {
+          "module": "Workspace.ProofLemmas.PositiveSmallestVarianceInductiveStep",
+          "file": "Workspace/ProofLemmas/PositiveSmallestVarianceInductiveStep.lean",
+          "lines": 681,
+          "decls": 2
+        },
+        {
+          "module": "Workspace.ProofLemmas.Prop7AnalyticityOfMixture",
+          "file": "Workspace/ProofLemmas/Prop7AnalyticityOfMixture.lean",
+          "lines": 43,
+          "decls": 1
+        },
+        {
+          "module": "Workspace.ProofLemmas.Prop7ConvolutionRecoversOriginalDensity",
+          "file": "Workspace/ProofLemmas/Prop7ConvolutionRecoversOriginalDensity.lean",
+          "lines": 382,
+          "decls": 1
+        },
+        {
+          "module": "Workspace.ProofLemmas.Prop7GeneralFromDistinct",
+          "file": "Workspace/ProofLemmas/Prop7GeneralFromDistinct.lean",
+          "lines": 154,
+          "decls": 1
+        },
+        {
+          "module": "Workspace.ProofLemmas.Prop7Induction",
+          "file": "Workspace/ProofLemmas/Prop7Induction.lean",
+          "lines": 109,
+          "decls": 1
+        },
+        {
+          "module": "Workspace.ProofLemmas.Proposition7ZeroCount",
+          "file": "Workspace/ProofLemmas/Proposition7ZeroCount.lean",
+          "lines": 24,
+          "decls": 1
+        },
+        {
+          "module": "Workspace.ProofLemmas.SignedGaussianFirstReduction",
+          "file": "Workspace/ProofLemmas/SignedGaussianFirstReduction.lean",
+          "lines": 105,
+          "decls": 1
+        },
+        {
+          "module": "Workspace.ProofLemmas.SimpleZeroPersistsUnderVariancePerturbation",
+          "file": "Workspace/ProofLemmas/SimpleZeroPersistsUnderVariancePerturbation.lean",
+          "lines": 576,
+          "decls": 11
+        },
+        {
+          "module": "Workspace.ProofLemmas.SublemmaAbstractFormalGaussianAnalytic",
+          "file": "Workspace/ProofLemmas/SublemmaAbstractFormalGaussianAnalytic.lean",
+          "lines": 35,
+          "decls": 1
+        },
+        {
+          "module": "Workspace.ProofLemmas.SublemmaAddGaussianTailRegionNoZeros",
+          "file": "Workspace/ProofLemmas/SublemmaAddGaussianTailRegionNoZeros.lean",
+          "lines": 72,
+          "decls": 1
+        },
+        {
+          "module": "Workspace.ProofLemmas.SublemmaEnvIsLittleODom",
+          "file": "Workspace/ProofLemmas/SublemmaEnvIsLittleODom.lean",
+          "lines": 93,
+          "decls": 1
+        },
+        {
+          "module": "Workspace.ProofLemmas.SublemmaFormalGaussianIHExtension",
+          "file": "Workspace/ProofLemmas/SublemmaFormalGaussianIHExtension.lean",
+          "lines": 27,
+          "decls": 1
+        },
+        {
+          "module": "Workspace.ProofLemmas.SublemmaFormalGaussianIHExtensionPaper",
+          "file": "Workspace/ProofLemmas/SublemmaFormalGaussianIHExtensionPaper.lean",
+          "lines": 34,
+          "decls": 1
+        },
+        {
+          "module": "Workspace.ProofLemmas.SublemmaGenericSimpleZeros",
+          "file": "Workspace/ProofLemmas/SublemmaGenericSimpleZeros.lean",
+          "lines": 25,
+          "decls": 1
+        },
+        {
+          "module": "Workspace.ProofLemmas.SublemmaGenericSimpleZerosPaper",
+          "file": "Workspace/ProofLemmas/SublemmaGenericSimpleZerosPaper.lean",
+          "lines": 34,
+          "decls": 1
+        },
+        {
+          "module": "Workspace.ProofLemmas.SublemmaSGCDensityIsAnalytic",
+          "file": "Workspace/ProofLemmas/SublemmaSGCDensityIsAnalytic.lean",
+          "lines": 30,
+          "decls": 1
+        },
+        {
+          "module": "Workspace.ProofLemmas.SublemmaSignedGaussianDensityZerosFinite",
+          "file": "Workspace/ProofLemmas/SublemmaSignedGaussianDensityZerosFinite.lean",
+          "lines": 51,
+          "decls": 1
+        },
+        {
+          "module": "Workspace.ProofLemmas.SublemmaSmallPerturbationDerivOnZeroNbhds",
+          "file": "Workspace/ProofLemmas/SublemmaSmallPerturbationDerivOnZeroNbhds.lean",
+          "lines": 181,
+          "decls": 1
+        },
+        {
+          "module": "Workspace.ProofLemmas.SublemmaSmallPerturbationOnZeroNbhds",
+          "file": "Workspace/ProofLemmas/SublemmaSmallPerturbationOnZeroNbhds.lean",
+          "lines": 159,
+          "decls": 1
+        },
+        {
+          "module": "Workspace.ProofLemmas.SublemmaStandardize",
+          "file": "Workspace/ProofLemmas/SublemmaStandardize.lean",
+          "lines": 339,
+          "decls": 1
+        },
+        {
+          "module": "Workspace.ProofLemmas.SublemmaTailDominanceSoundPieces",
+          "file": "Workspace/ProofLemmas/SublemmaTailDominanceSoundPieces.lean",
+          "lines": 217,
+          "decls": 4
+        },
+        {
+          "module": "Workspace.ProofLemmas.SublemmaTailDomination",
+          "file": "Workspace/ProofLemmas/SublemmaTailDomination.lean",
+          "lines": 48,
+          "decls": 1
+        },
+        {
+          "module": "Workspace.ProofLemmas.SublemmaTailDominationSoundCore",
+          "file": "Workspace/ProofLemmas/SublemmaTailDominationSoundCore.lean",
+          "lines": 894,
+          "decls": 7
+        },
+        {
+          "module": "Workspace.ProofLemmas.VariancePerturbFamily",
+          "file": "Workspace/ProofLemmas/VariancePerturbFamily.lean",
+          "lines": 71,
+          "decls": 4
+        },
+        {
+          "module": "Workspace.ProofLemmas.ZeroCountAfterPerturbation",
+          "file": "Workspace/ProofLemmas/ZeroCountAfterPerturbation.lean",
+          "lines": 59,
+          "decls": 1
+        }
+      ]
+    },
+    {
+      "id": "lemma29",
+      "label": "Lemma 29: tail moments",
+      "role": "lemma_stage",
+      "color": "#5CB874",
+      "files": 6,
+      "lines": 1805,
+      "decls": 20,
+      "is_root": false,
+      "modules": [
+        {
+          "module": "Workspace.ProofLemmas.HalfGaussianMomentBound",
+          "file": "Workspace/ProofLemmas/HalfGaussianMomentBound.lean",
+          "lines": 521,
+          "decls": 14
+        },
+        {
+          "module": "Workspace.ProofLemmas.Lemma29Assembly",
+          "file": "Workspace/ProofLemmas/Lemma29Assembly.lean",
+          "lines": 644,
+          "decls": 2
+        },
+        {
+          "module": "Workspace.ProofLemmas.Lemma29BinomialAbsExpansionBound",
+          "file": "Workspace/ProofLemmas/Lemma29BinomialAbsExpansionBound.lean",
+          "lines": 39,
+          "decls": 1
+        },
+        {
+          "module": "Workspace.ProofLemmas.Lemma29ChangeOfVariablesTranslation",
+          "file": "Workspace/ProofLemmas/Lemma29ChangeOfVariablesTranslation.lean",
+          "lines": 44,
+          "decls": 1
+        },
+        {
+          "module": "Workspace.ProofLemmas.Lemma29SigmaAwareTailMomentStandardNormal",
+          "file": "Workspace/ProofLemmas/Lemma29SigmaAwareTailMomentStandardNormal.lean",
+          "lines": 47,
+          "decls": 1
+        },
+        {
+          "module": "Workspace.ProofLemmas.Lemma29TailMomentVarLeTwo",
+          "file": "Workspace/ProofLemmas/Lemma29TailMomentVarLeTwo.lean",
+          "lines": 510,
+          "decls": 1
+        }
+      ]
+    },
+    {
+      "id": "infra",
+      "label": "Shared Gaussian infrastructure",
+      "role": "infrastructure",
+      "color": "#CBE9D4",
+      "files": 11,
+      "lines": 1015,
+      "decls": 11,
+      "is_root": false,
+      "modules": [
+        {
+          "module": "Workspace.ProofLemmas.ConvolveWithGaussianBounded",
+          "file": "Workspace/ProofLemmas/ConvolveWithGaussianBounded.lean",
+          "lines": 83,
+          "decls": 1
+        },
+        {
+          "module": "Workspace.ProofLemmas.Corollary24",
+          "file": "Workspace/ProofLemmas/Corollary24.lean",
+          "lines": 99,
+          "decls": 1
+        },
+        {
+          "module": "Workspace.ProofLemmas.DerivativeBoundOfSignedCombination",
+          "file": "Workspace/ProofLemmas/DerivativeBoundOfSignedCombination.lean",
+          "lines": 141,
+          "decls": 1
+        },
+        {
+          "module": "Workspace.ProofLemmas.FormalToNormalizedBridge",
+          "file": "Workspace/ProofLemmas/FormalToNormalizedBridge.lean",
+          "lines": 107,
+          "decls": 1
+        },
+        {
+          "module": "Workspace.ProofLemmas.GaussianDensityDerivBound",
+          "file": "Workspace/ProofLemmas/GaussianDensityDerivBound.lean",
+          "lines": 126,
+          "decls": 1
+        },
+        {
+          "module": "Workspace.ProofLemmas.Lemma35L1NormGeSetIntegral",
+          "file": "Workspace/ProofLemmas/Lemma35L1NormGeSetIntegral.lean",
+          "lines": 12,
+          "decls": 1
+        },
+        {
+          "module": "Workspace.ProofLemmas.M0OfMixtureDifferenceIsZero",
+          "file": "Workspace/ProofLemmas/M0OfMixtureDifferenceIsZero.lean",
+          "lines": 80,
+          "decls": 1
+        },
+        {
+          "module": "Workspace.ProofLemmas.MomentIntegralLinearity",
+          "file": "Workspace/ProofLemmas/MomentIntegralLinearity.lean",
+          "lines": 92,
+          "decls": 1
+        },
+        {
+          "module": "Workspace.ProofLemmas.SignedGaussianCombinationDensityBounded",
+          "file": "Workspace/ProofLemmas/SignedGaussianCombinationDensityBounded.lean",
+          "lines": 80,
+          "decls": 1
+        },
+        {
+          "module": "Workspace.ProofLemmas.SublemmaIntegrabilityXPowGaussian",
+          "file": "Workspace/ProofLemmas/SublemmaIntegrabilityXPowGaussian.lean",
+          "lines": 80,
+          "decls": 1
+        },
+        {
+          "module": "Workspace.ProofLemmas.TailBoundExpDecay",
+          "file": "Workspace/ProofLemmas/TailBoundExpDecay.lean",
+          "lines": 115,
+          "decls": 1
+        }
+      ]
+    },
+    {
+      "id": "Prior",
+      "label": "External axioms",
+      "role": "external_axiom",
+      "color": "#EB8C1E",
+      "files": 3,
+      "lines": 125,
+      "decls": 3,
+      "is_root": false,
+      "modules": [
+        {
+          "module": "Workspace.PriorWork.AnalyticIFTSimpleZeroBranch",
+          "file": "Workspace/PriorWork/AnalyticIFTSimpleZeroBranch.lean",
+          "lines": 56,
+          "decls": 1
+        },
+        {
+          "module": "Workspace.PriorWork.AnalyticParameterFamilySimpleZeroGenericity",
+          "file": "Workspace/PriorWork/AnalyticParameterFamilySimpleZeroGenericity.lean",
+          "lines": 39,
+          "decls": 1
+        },
+        {
+          "module": "Workspace.PriorWork.HummelGidasZeroCount",
+          "file": "Workspace/PriorWork/HummelGidasZeroCount.lean",
+          "lines": 30,
+          "decls": 1
+        }
+      ]
+    },
+    {
+      "id": "Types",
+      "label": "Definitions & types",
+      "role": "definitions_and_types",
+      "color": "#ECECEC",
+      "files": 10,
+      "lines": 890,
+      "decls": 76,
+      "is_root": false,
+      "modules": [
+        {
+          "module": "Workspace.Types.EpsilonStandardPair",
+          "file": "Workspace/Types/EpsilonStandardPair.lean",
+          "lines": 189,
+          "decls": 15
+        },
+        {
+          "module": "Workspace.Types.GaussianConvolution",
+          "file": "Workspace/Types/GaussianConvolution.lean",
+          "lines": 52,
+          "decls": 2
+        },
+        {
+          "module": "Workspace.Types.GaussianMixture2",
+          "file": "Workspace/Types/GaussianMixture2.lean",
+          "lines": 62,
+          "decls": 12
+        },
+        {
+          "module": "Workspace.Types.GaussianPDF",
+          "file": "Workspace/Types/GaussianPDF.lean",
+          "lines": 71,
+          "decls": 16
+        },
+        {
+          "module": "Workspace.Types.L1AndTVDistance",
+          "file": "Workspace/Types/L1AndTVDistance.lean",
+          "lines": 88,
+          "decls": 6
+        },
+        {
+          "module": "Workspace.Types.MixtureDeconvolution",
+          "file": "Workspace/Types/MixtureDeconvolution.lean",
+          "lines": 160,
+          "decls": 6
+        },
+        {
+          "module": "Workspace.Types.MixtureRawMoments",
+          "file": "Workspace/Types/MixtureRawMoments.lean",
+          "lines": 78,
+          "decls": 6
+        },
+        {
+          "module": "Workspace.Types.MixtureRelabelEquiv",
+          "file": "Workspace/Types/MixtureRelabelEquiv.lean",
+          "lines": 79,
+          "decls": 1
+        },
+        {
+          "module": "Workspace.Types.SignedGaussianCombination",
+          "file": "Workspace/Types/SignedGaussianCombination.lean",
+          "lines": 69,
+          "decls": 6
+        },
+        {
+          "module": "Workspace.Types.ZeroCount",
+          "file": "Workspace/Types/ZeroCount.lean",
+          "lines": 42,
+          "decls": 6
+        }
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "from": "Prior",
+      "to": "Types",
+      "bidirectional": false
+    },
+    {
+      "from": "ROOT",
+      "to": "lemma5",
+      "bidirectional": false
+    },
+    {
+      "from": "ROOT",
+      "to": "lemma6",
+      "bidirectional": false
+    },
+    {
+      "from": "infra",
+      "to": "Types",
+      "bidirectional": false
+    },
+    {
+      "from": "lemma29",
+      "to": "infra",
+      "bidirectional": false
+    },
+    {
+      "from": "lemma5",
+      "to": "lemma9",
+      "bidirectional": false
+    },
+    {
+      "from": "lemma5",
+      "to": "tv_tools",
+      "bidirectional": false
+    },
+    {
+      "from": "lemma6",
+      "to": "infra",
+      "bidirectional": false
+    },
+    {
+      "from": "lemma9",
+      "to": "lemma29",
+      "bidirectional": false
+    },
+    {
+      "from": "lemma9",
+      "to": "prop7",
+      "bidirectional": false
+    },
+    {
+      "from": "prop7",
+      "to": "Prior",
+      "bidirectional": false
+    },
+    {
+      "from": "prop7",
+      "to": "infra",
+      "bidirectional": false
+    },
+    {
+      "from": "tv_tools",
+      "to": "Types",
+      "bidirectional": false
+    }
+  ]
+}

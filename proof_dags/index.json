@@ -1,0 +1,62 @@
+[
+  {
+    "paper_id": "AGeneralizedTrace",
+    "title": "A Generalized Trace Reconstruction Problem: Recovering a String of Probabilities",
+    "json": "AGeneralizedTrace.json",
+    "image": {
+      "pdf": "images/GeneralizedTraceGraph_cycsafe_dag.pdf",
+      "png": "images/GeneralizedTraceGraph_cycsafe.png"
+    },
+    "node_count": 12,
+    "edge_count": 25,
+    "axioms_beyond_kernel": 2
+  },
+  {
+    "paper_id": "ASharp",
+    "title": "A Sharp Version of Talagrand's Selector Process Conjecture and an Application to Rounding Fractional Covers",
+    "json": "ASharp.json",
+    "image": {
+      "pdf": "images/graph_A_Sharp_cycsafe_dag.pdf",
+      "png": "images/graph_A_Sharp_cycsafe.png"
+    },
+    "node_count": 6,
+    "edge_count": 6,
+    "axioms_beyond_kernel": 1
+  },
+  {
+    "paper_id": "ApproximantionMedian",
+    "title": "Approximation Guarantees of the Median Mechanism in ℝᵈ",
+    "json": "ApproximantionMedian.json",
+    "image": {
+      "pdf": "images/graph_approximation_median_cycsafe_dag.pdf",
+      "png": "images/graph_approximation_median_cycsafe.png"
+    },
+    "node_count": 16,
+    "edge_count": 27,
+    "axioms_beyond_kernel": 0
+  },
+  {
+    "paper_id": "EfficientlyLeanringMixtures",
+    "title": "Efficiently Learning Mixtures of Two Gaussians",
+    "json": "EfficientlyLeanringMixtures.json",
+    "image": {
+      "pdf": "images/MixturesGraph_cycsafe_dag.pdf",
+      "png": "images/MixturesGraph_cycsafe.png"
+    },
+    "node_count": 10,
+    "edge_count": 13,
+    "axioms_beyond_kernel": 3
+  },
+  {
+    "paper_id": "Refuting",
+    "title": "Refuting the Direct Sum Conjecture for Total Functions in Deterministic Communication Complexity",
+    "json": "Refuting.json",
+    "image": {
+      "pdf": "images/RefutingGraph_cycsafe_dag.pdf",
+      "png": "images/RefutingGraph_cycsafe.png"
+    },
+    "node_count": 12,
+    "edge_count": 14,
+    "axioms_beyond_kernel": 0
+  }
+]

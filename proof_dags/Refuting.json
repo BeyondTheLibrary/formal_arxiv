@@ -1,0 +1,426 @@
+{
+  "paper_id": "Refuting",
+  "title": "Refuting the Direct Sum Conjecture for Total Functions in Deterministic Communication Complexity",
+  "graph_type": "group_level_proof_dependency_dag",
+  "description": "Group-level proof-dependency DAG of the Lean formalization. Each node is a \"proof stage\": a cluster of Lean modules grouped by their role in the paper's argument. An edge A→B means stage A uses (depends on) stage B. Edges are transitively reduced (a direct edge is omitted when a longer path already implies it); a pair marked bidirectional are mutually recursive. Each node lists the exact Lean modules it contains, with per-module source-line and declaration counts.",
+  "image": {
+    "pdf": "images/RefutingGraph_cycsafe_dag.pdf",
+    "png": "images/RefutingGraph_cycsafe.png"
+  },
+  "node_count": 12,
+  "edge_count": 14,
+  "axioms_beyond_kernel": [],
+  "roots": [
+    "ROOT"
+  ],
+  "nodes": [
+    {
+      "id": "ROOT",
+      "label": "Main theorems (refutation + consequence)",
+      "role": "theorem",
+      "color": "#F5C81E",
+      "files": 1,
+      "lines": 298,
+      "decls": 4,
+      "is_root": true,
+      "modules": [
+        {
+          "module": "Workspace.MainTheorem",
+          "file": "Workspace/MainTheorem.lean",
+          "lines": 298,
+          "decls": 4
+        }
+      ]
+    },
+    {
+      "id": "proj",
+      "label": "Projection lemmas (Thms 3&#8211;4)",
+      "role": "lemma_stage",
+      "color": "#5CB874",
+      "files": 1,
+      "lines": 2390,
+      "decls": 43,
+      "is_root": false,
+      "modules": [
+        {
+          "module": "Workspace.Projections",
+          "file": "Workspace/Projections.lean",
+          "lines": 2390,
+          "decls": 43
+        }
+      ]
+    },
+    {
+      "id": "bracket",
+      "label": "Bracket lemmas",
+      "role": "lemma_stage",
+      "color": "#5CB874",
+      "files": 1,
+      "lines": 2086,
+      "decls": 6,
+      "is_root": false,
+      "modules": [
+        {
+          "module": "Workspace.BracketLemmas",
+          "file": "Workspace/BracketLemmas.lean",
+          "lines": 2086,
+          "decls": 6
+        }
+      ]
+    },
+    {
+      "id": "induction",
+      "label": "&Phi;-induction (core)",
+      "role": "lemma_stage",
+      "color": "#5CB874",
+      "files": 1,
+      "lines": 1304,
+      "decls": 3,
+      "is_root": false,
+      "modules": [
+        {
+          "module": "Workspace.Induction",
+          "file": "Workspace/Induction.lean",
+          "lines": 1304,
+          "decls": 3
+        }
+      ]
+    },
+    {
+      "id": "phiinduction",
+      "label": "&Phi;-induction (step)",
+      "role": "lemma_stage",
+      "color": "#5CB874",
+      "files": 1,
+      "lines": 898,
+      "decls": 13,
+      "is_root": false,
+      "modules": [
+        {
+          "module": "Workspace.PhiInduction",
+          "file": "Workspace/PhiInduction.lean",
+          "lines": 898,
+          "decls": 13
+        }
+      ]
+    },
+    {
+      "id": "phibase",
+      "label": "&Phi; base case",
+      "role": "lemma_stage",
+      "color": "#5CB874",
+      "files": 1,
+      "lines": 1173,
+      "decls": 7,
+      "is_root": false,
+      "modules": [
+        {
+          "module": "Workspace.PhiBase",
+          "file": "Workspace/PhiBase.lean",
+          "lines": 1173,
+          "decls": 7
+        }
+      ]
+    },
+    {
+      "id": "appendix",
+      "label": "Appendix lemmas",
+      "role": "lemma_stage",
+      "color": "#5CB874",
+      "files": 1,
+      "lines": 1155,
+      "decls": 3,
+      "is_root": false,
+      "modules": [
+        {
+          "module": "Workspace.Appendix",
+          "file": "Workspace/Appendix.lean",
+          "lines": 1155,
+          "decls": 3
+        }
+      ]
+    },
+    {
+      "id": "sublemmas",
+      "label": "Auxiliary sublemmas",
+      "role": "lemma_stage",
+      "color": "#5CB874",
+      "files": 9,
+      "lines": 337,
+      "decls": 10,
+      "is_root": false,
+      "modules": [
+        {
+          "module": "Workspace.ProofLemmas.DimRecurrence",
+          "file": "Workspace/ProofLemmas/DimRecurrence.lean",
+          "lines": 16,
+          "decls": 1
+        },
+        {
+          "module": "Workspace.ProofLemmas.SublemmaDimPositive",
+          "file": "Workspace/ProofLemmas/SublemmaDimPositive.lean",
+          "lines": 43,
+          "decls": 1
+        },
+        {
+          "module": "Workspace.ProofLemmas.SublemmaDimUnbounded",
+          "file": "Workspace/ProofLemmas/SublemmaDimUnbounded.lean",
+          "lines": 111,
+          "decls": 2
+        },
+        {
+          "module": "Workspace.ProofLemmas.SublemmaDirectSumPrecomp",
+          "file": "Workspace/ProofLemmas/SublemmaDirectSumPrecomp.lean",
+          "lines": 38,
+          "decls": 1
+        },
+        {
+          "module": "Workspace.ProofLemmas.SublemmaInSn",
+          "file": "Workspace/ProofLemmas/SublemmaInSn.lean",
+          "lines": 24,
+          "decls": 1
+        },
+        {
+          "module": "Workspace.ProofLemmas.SublemmaPrecompEq",
+          "file": "Workspace/ProofLemmas/SublemmaPrecompEq.lean",
+          "lines": 18,
+          "decls": 1
+        },
+        {
+          "module": "Workspace.ProofLemmas.SublemmaPrecompNoIncrease",
+          "file": "Workspace/ProofLemmas/SublemmaPrecompNoIncrease.lean",
+          "lines": 39,
+          "decls": 1
+        },
+        {
+          "module": "Workspace.ProofLemmas.SublemmaSurjOntoFin",
+          "file": "Workspace/ProofLemmas/SublemmaSurjOntoFin.lean",
+          "lines": 15,
+          "decls": 1
+        },
+        {
+          "module": "Workspace.ProofLemmas.SublemmaSurjRestrictGE",
+          "file": "Workspace/ProofLemmas/SublemmaSurjRestrictGE.lean",
+          "lines": 33,
+          "decls": 1
+        }
+      ]
+    },
+    {
+      "id": "upper",
+      "label": "Upper-bound protocol (Thm 5)",
+      "role": "lemma_stage",
+      "color": "#5CB874",
+      "files": 1,
+      "lines": 594,
+      "decls": 37,
+      "is_root": false,
+      "modules": [
+        {
+          "module": "Workspace.UpperBound",
+          "file": "Workspace/UpperBound.lean",
+          "lines": 594,
+          "decls": 37
+        }
+      ]
+    },
+    {
+      "id": "chung",
+      "label": "Chung product theorem (reproven)",
+      "role": "prior_work_reproven",
+      "color": "#2E8B57",
+      "files": 1,
+      "lines": 877,
+      "decls": 17,
+      "is_root": false,
+      "modules": [
+        {
+          "module": "Workspace.ChungProductTheorem",
+          "file": "Workspace/ChungProductTheorem.lean",
+          "lines": 877,
+          "decls": 17
+        }
+      ]
+    },
+    {
+      "id": "logrank",
+      "label": "Log-rank bound (reproven)",
+      "role": "prior_work_reproven",
+      "color": "#2E8B57",
+      "files": 1,
+      "lines": 307,
+      "decls": 10,
+      "is_root": false,
+      "modules": [
+        {
+          "module": "Workspace.LogRankBound",
+          "file": "Workspace/LogRankBound.lean",
+          "lines": 307,
+          "decls": 10
+        }
+      ]
+    },
+    {
+      "id": "types",
+      "label": "Comm-complexity types & protocols",
+      "role": "definitions_and_types",
+      "color": "#ECECEC",
+      "files": 13,
+      "lines": 435,
+      "decls": 42,
+      "is_root": false,
+      "modules": [
+        {
+          "module": "Workspace.Types.AlternatingGame",
+          "file": "Workspace/Types/AlternatingGame.lean",
+          "lines": 37,
+          "decls": 4
+        },
+        {
+          "module": "Workspace.Types.BoolMat",
+          "file": "Workspace/Types/BoolMat.lean",
+          "lines": 45,
+          "decls": 6
+        },
+        {
+          "module": "Workspace.Types.Bracket",
+          "file": "Workspace/Types/Bracket.lean",
+          "lines": 39,
+          "decls": 1
+        },
+        {
+          "module": "Workspace.Types.CommComplexity",
+          "file": "Workspace/Types/CommComplexity.lean",
+          "lines": 24,
+          "decls": 2
+        },
+        {
+          "module": "Workspace.Types.DirectSum",
+          "file": "Workspace/Types/DirectSum.lean",
+          "lines": 14,
+          "decls": 1
+        },
+        {
+          "module": "Workspace.Types.Equipartition",
+          "file": "Workspace/Types/Equipartition.lean",
+          "lines": 18,
+          "decls": 1
+        },
+        {
+          "module": "Workspace.Types.Extract",
+          "file": "Workspace/Types/Extract.lean",
+          "lines": 40,
+          "decls": 3
+        },
+        {
+          "module": "Workspace.Types.Interlace",
+          "file": "Workspace/Types/Interlace.lean",
+          "lines": 58,
+          "decls": 2
+        },
+        {
+          "module": "Workspace.Types.Lambda",
+          "file": "Workspace/Types/Lambda.lean",
+          "lines": 31,
+          "decls": 1
+        },
+        {
+          "module": "Workspace.Types.MatComplexity",
+          "file": "Workspace/Types/MatComplexity.lean",
+          "lines": 22,
+          "decls": 2
+        },
+        {
+          "module": "Workspace.Types.Protocol",
+          "file": "Workspace/Types/Protocol.lean",
+          "lines": 47,
+          "decls": 14
+        },
+        {
+          "module": "Workspace.Types.QProjection",
+          "file": "Workspace/Types/QProjection.lean",
+          "lines": 35,
+          "decls": 3
+        },
+        {
+          "module": "Workspace.Types.Subgame",
+          "file": "Workspace/Types/Subgame.lean",
+          "lines": 25,
+          "decls": 2
+        }
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "from": "ROOT",
+      "to": "phiinduction",
+      "bidirectional": false
+    },
+    {
+      "from": "appendix",
+      "to": "bracket",
+      "bidirectional": false
+    },
+    {
+      "from": "bracket",
+      "to": "proj",
+      "bidirectional": false
+    },
+    {
+      "from": "bracket",
+      "to": "sublemmas",
+      "bidirectional": false
+    },
+    {
+      "from": "induction",
+      "to": "appendix",
+      "bidirectional": false
+    },
+    {
+      "from": "logrank",
+      "to": "upper",
+      "bidirectional": false
+    },
+    {
+      "from": "phibase",
+      "to": "bracket",
+      "bidirectional": false
+    },
+    {
+      "from": "phibase",
+      "to": "logrank",
+      "bidirectional": false
+    },
+    {
+      "from": "phiinduction",
+      "to": "induction",
+      "bidirectional": false
+    },
+    {
+      "from": "phiinduction",
+      "to": "phibase",
+      "bidirectional": false
+    },
+    {
+      "from": "proj",
+      "to": "chung",
+      "bidirectional": false
+    },
+    {
+      "from": "proj",
+      "to": "types",
+      "bidirectional": false
+    },
+    {
+      "from": "sublemmas",
+      "to": "upper",
+      "bidirectional": false
+    },
+    {
+      "from": "upper",
+      "to": "types",
+      "bidirectional": false
+    }
+  ]
+}

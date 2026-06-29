@@ -1,0 +1,992 @@
+{
+  "paper_id": "ApproximantionMedian",
+  "title": "Approximation Guarantees of the Median Mechanism in ℝᵈ",
+  "graph_type": "group_level_proof_dependency_dag",
+  "description": "Group-level proof-dependency DAG of the Lean formalization. Each node is a \"proof stage\": a cluster of Lean modules grouped by their role in the paper's argument. An edge A→B means stage A uses (depends on) stage B. Edges are transitively reduced (a direct edge is omitted when a longer path already implies it); a pair marked bidirectional are mutually recursive. Each node lists the exact Lean modules it contains, with per-module source-line and declaration counts.",
+  "image": {
+    "pdf": "images/graph_approximation_median_cycsafe_dag.pdf",
+    "png": "images/graph_approximation_median_cycsafe.png"
+  },
+  "node_count": 16,
+  "edge_count": 27,
+  "axioms_beyond_kernel": [],
+  "roots": [
+    "main_thm",
+    "lb_thm",
+    "cons_thm",
+    "rob_thm"
+  ],
+  "nodes": [
+    {
+      "id": "main_thm",
+      "label": "Thm 1: approx. guarantee",
+      "role": "theorem",
+      "color": "#F5C81E",
+      "files": 1,
+      "lines": 39,
+      "decls": 1,
+      "is_root": true,
+      "modules": [
+        {
+          "module": "Workspace.MainTheorem",
+          "file": "Workspace/MainTheorem.lean",
+          "lines": 39,
+          "decls": 1
+        }
+      ]
+    },
+    {
+      "id": "lb_thm",
+      "label": "Thm 2: lower bound",
+      "role": "theorem",
+      "color": "#F5C81E",
+      "files": 1,
+      "lines": 130,
+      "decls": 1,
+      "is_root": true,
+      "modules": [
+        {
+          "module": "Workspace.LowerBoundTheorem",
+          "file": "Workspace/LowerBoundTheorem.lean",
+          "lines": 130,
+          "decls": 1
+        }
+      ]
+    },
+    {
+      "id": "cons_thm",
+      "label": "Thm 3: consistency",
+      "role": "theorem",
+      "color": "#F5C81E",
+      "files": 1,
+      "lines": 54,
+      "decls": 1,
+      "is_root": true,
+      "modules": [
+        {
+          "module": "Workspace.ConsistencyTheorem",
+          "file": "Workspace/ConsistencyTheorem.lean",
+          "lines": 54,
+          "decls": 1
+        }
+      ]
+    },
+    {
+      "id": "rob_thm",
+      "label": "Thm 4: robustness",
+      "role": "theorem",
+      "color": "#F5C81E",
+      "files": 1,
+      "lines": 65,
+      "decls": 1,
+      "is_root": true,
+      "modules": [
+        {
+          "module": "Workspace.RobustnessTheorem",
+          "file": "Workspace/RobustnessTheorem.lean",
+          "lines": 65,
+          "decls": 1
+        }
+      ]
+    },
+    {
+      "id": "core_relaxed",
+      "label": "Relaxed-core inequality & final assembly",
+      "role": "lemma_stage",
+      "color": "#5CB874",
+      "files": 11,
+      "lines": 1812,
+      "decls": 18,
+      "is_root": false,
+      "modules": [
+        {
+          "module": "Workspace.ProofLemmas.GLambdaLowerBound_h",
+          "file": "Workspace/ProofLemmas/GLambdaLowerBound_h.lean",
+          "lines": 349,
+          "decls": 1
+        },
+        {
+          "module": "Workspace.ProofLemmas.MainTheoremApproxBoundQEqOne",
+          "file": "Workspace/ProofLemmas/MainTheoremApproxBoundQEqOne.lean",
+          "lines": 45,
+          "decls": 1
+        },
+        {
+          "module": "Workspace.ProofLemmas.MainTheoremApproxBoundQGtOne",
+          "file": "Workspace/ProofLemmas/MainTheoremApproxBoundQGtOne.lean",
+          "lines": 40,
+          "decls": 1
+        },
+        {
+          "module": "Workspace.ProofLemmas.MainTheoremFinalAssembly",
+          "file": "Workspace/ProofLemmas/MainTheoremFinalAssembly.lean",
+          "lines": 32,
+          "decls": 1
+        },
+        {
+          "module": "Workspace.ProofLemmas.MainTheoremTrivialCases",
+          "file": "Workspace/ProofLemmas/MainTheoremTrivialCases.lean",
+          "lines": 77,
+          "decls": 1
+        },
+        {
+          "module": "Workspace.ProofLemmas.NormalizedCoreInequality",
+          "file": "Workspace/ProofLemmas/NormalizedCoreInequality.lean",
+          "lines": 415,
+          "decls": 2
+        },
+        {
+          "module": "Workspace.ProofLemmas.ReductionToEvenN",
+          "file": "Workspace/ProofLemmas/ReductionToEvenN.lean",
+          "lines": 173,
+          "decls": 1
+        },
+        {
+          "module": "Workspace.ProofLemmas.RelaxedCoreDual",
+          "file": "Workspace/ProofLemmas/RelaxedCoreDual.lean",
+          "lines": 368,
+          "decls": 6
+        },
+        {
+          "module": "Workspace.ProofLemmas.SocialCostTranslationInvariance",
+          "file": "Workspace/ProofLemmas/SocialCostTranslationInvariance.lean",
+          "lines": 16,
+          "decls": 1
+        },
+        {
+          "module": "Workspace.ProofLemmas.TranslationScaleNormalize",
+          "file": "Workspace/ProofLemmas/TranslationScaleNormalize.lean",
+          "lines": 253,
+          "decls": 1
+        },
+        {
+          "module": "Workspace.ProofLemmas.ZeqInHalfRange",
+          "file": "Workspace/ProofLemmas/ZeqInHalfRange.lean",
+          "lines": 44,
+          "decls": 2
+        }
+      ]
+    },
+    {
+      "id": "core_bound",
+      "label": "Boundary, perturbation & minimizer existence",
+      "role": "lemma_stage",
+      "color": "#5CB874",
+      "files": 7,
+      "lines": 1932,
+      "decls": 10,
+      "is_root": false,
+      "modules": [
+        {
+          "module": "Workspace.ProofLemmas.ConstrainedMinExists",
+          "file": "Workspace/ProofLemmas/ConstrainedMinExists.lean",
+          "lines": 280,
+          "decls": 2
+        },
+        {
+          "module": "Workspace.ProofLemmas.LeftBoundary_ForcesFjZero",
+          "file": "Workspace/ProofLemmas/LeftBoundary_ForcesFjZero.lean",
+          "lines": 222,
+          "decls": 1
+        },
+        {
+          "module": "Workspace.ProofLemmas.LocalMinEmptyS",
+          "file": "Workspace/ProofLemmas/LocalMinEmptyS.lean",
+          "lines": 291,
+          "decls": 3
+        },
+        {
+          "module": "Workspace.ProofLemmas.PerturbAtZero_StrictDescent",
+          "file": "Workspace/ProofLemmas/PerturbAtZero_StrictDescent.lean",
+          "lines": 235,
+          "decls": 1
+        },
+        {
+          "module": "Workspace.ProofLemmas.RightBoundary_ForcesC0",
+          "file": "Workspace/ProofLemmas/RightBoundary_ForcesC0.lean",
+          "lines": 255,
+          "decls": 1
+        },
+        {
+          "module": "Workspace.ProofLemmas.SocialCostMinExists",
+          "file": "Workspace/ProofLemmas/SocialCostMinExists.lean",
+          "lines": 163,
+          "decls": 1
+        },
+        {
+          "module": "Workspace.ProofLemmas.UStarMinAttained",
+          "file": "Workspace/ProofLemmas/UStarMinAttained.lean",
+          "lines": 486,
+          "decls": 1
+        }
+      ]
+    },
+    {
+      "id": "core_lochar",
+      "label": "Local-optimum characterization & FOC",
+      "role": "lemma_stage",
+      "color": "#5CB874",
+      "files": 8,
+      "lines": 1323,
+      "decls": 12,
+      "is_root": false,
+      "modules": [
+        {
+          "module": "Workspace.ProofLemmas.Claim1_RuleOutInterior",
+          "file": "Workspace/ProofLemmas/Claim1_RuleOutInterior.lean",
+          "lines": 129,
+          "decls": 1
+        },
+        {
+          "module": "Workspace.ProofLemmas.InteriorFOC_Neg",
+          "file": "Workspace/ProofLemmas/InteriorFOC_Neg.lean",
+          "lines": 165,
+          "decls": 1
+        },
+        {
+          "module": "Workspace.ProofLemmas.InteriorFOC_Pos",
+          "file": "Workspace/ProofLemmas/InteriorFOC_Pos.lean",
+          "lines": 142,
+          "decls": 2
+        },
+        {
+          "module": "Workspace.ProofLemmas.LocalOptimumCharacterization",
+          "file": "Workspace/ProofLemmas/LocalOptimumCharacterization.lean",
+          "lines": 109,
+          "decls": 3
+        },
+        {
+          "module": "Workspace.ProofLemmas.LocalOptimumCharacterization_CaseSEmpty",
+          "file": "Workspace/ProofLemmas/LocalOptimumCharacterization_CaseSEmpty.lean",
+          "lines": 235,
+          "decls": 1
+        },
+        {
+          "module": "Workspace.ProofLemmas.LocalOptimumCharacterization_CaseSNonempty",
+          "file": "Workspace/ProofLemmas/LocalOptimumCharacterization_CaseSNonempty.lean",
+          "lines": 353,
+          "decls": 1
+        },
+        {
+          "module": "Workspace.ProofLemmas.PEqZeroNotLocalMin",
+          "file": "Workspace/ProofLemmas/PEqZeroNotLocalMin.lean",
+          "lines": 64,
+          "decls": 1
+        },
+        {
+          "module": "Workspace.ProofLemmas.SignIncompatibility",
+          "file": "Workspace/ProofLemmas/SignIncompatibility.lean",
+          "lines": 126,
+          "decls": 2
+        }
+      ]
+    },
+    {
+      "id": "core_ub",
+      "label": "UB(q) values, asymptotics & f_q analysis",
+      "role": "lemma_stage",
+      "color": "#5CB874",
+      "files": 20,
+      "lines": 1752,
+      "decls": 27,
+      "is_root": false,
+      "modules": [
+        {
+          "module": "Workspace.ProofLemmas.AStarAsymptotic",
+          "file": "Workspace/ProofLemmas/AStarAsymptotic.lean",
+          "lines": 109,
+          "decls": 1
+        },
+        {
+          "module": "Workspace.ProofLemmas.AStarAtTwo",
+          "file": "Workspace/ProofLemmas/AStarAtTwo.lean",
+          "lines": 78,
+          "decls": 1
+        },
+        {
+          "module": "Workspace.ProofLemmas.AStarLessThanOneHalf",
+          "file": "Workspace/ProofLemmas/AStarLessThanOneHalf.lean",
+          "lines": 119,
+          "decls": 1
+        },
+        {
+          "module": "Workspace.ProofLemmas.DeltaStarAsymptotic",
+          "file": "Workspace/ProofLemmas/DeltaStarAsymptotic.lean",
+          "lines": 222,
+          "decls": 1
+        },
+        {
+          "module": "Workspace.ProofLemmas.DeltaStarDef",
+          "file": "Workspace/ProofLemmas/DeltaStarDef.lean",
+          "lines": 238,
+          "decls": 2
+        },
+        {
+          "module": "Workspace.ProofLemmas.DeltaStarSqAtTwo",
+          "file": "Workspace/ProofLemmas/DeltaStarSqAtTwo.lean",
+          "lines": 45,
+          "decls": 1
+        },
+        {
+          "module": "Workspace.ProofLemmas.FqAtCOverQ_eventually_neg",
+          "file": "Workspace/ProofLemmas/FqAtCOverQ_eventually_neg.lean",
+          "lines": 18,
+          "decls": 1
+        },
+        {
+          "module": "Workspace.ProofLemmas.FqAtCOverQ_eventually_pos",
+          "file": "Workspace/ProofLemmas/FqAtCOverQ_eventually_pos.lean",
+          "lines": 17,
+          "decls": 1
+        },
+        {
+          "module": "Workspace.ProofLemmas.FqAtCOverQ_tendsto",
+          "file": "Workspace/ProofLemmas/FqAtCOverQ_tendsto.lean",
+          "lines": 101,
+          "decls": 1
+        },
+        {
+          "module": "Workspace.ProofLemmas.FqHasUniqueInteriorZero",
+          "file": "Workspace/ProofLemmas/FqHasUniqueInteriorZero.lean",
+          "lines": 235,
+          "decls": 2
+        },
+        {
+          "module": "Workspace.ProofLemmas.FqSignAt0Pos",
+          "file": "Workspace/ProofLemmas/FqSignAt0Pos.lean",
+          "lines": 55,
+          "decls": 2
+        },
+        {
+          "module": "Workspace.ProofLemmas.FqStrictConvex",
+          "file": "Workspace/ProofLemmas/FqStrictConvex.lean",
+          "lines": 94,
+          "decls": 1
+        },
+        {
+          "module": "Workspace.ProofLemmas.HSecondDerivative",
+          "file": "Workspace/ProofLemmas/HSecondDerivative.lean",
+          "lines": 133,
+          "decls": 1
+        },
+        {
+          "module": "Workspace.ProofLemmas.LambdaDeltaIdentity",
+          "file": "Workspace/ProofLemmas/LambdaDeltaIdentity.lean",
+          "lines": 61,
+          "decls": 2
+        },
+        {
+          "module": "Workspace.ProofLemmas.LambdaStarAsymptotic",
+          "file": "Workspace/ProofLemmas/LambdaStarAsymptotic.lean",
+          "lines": 86,
+          "decls": 1
+        },
+        {
+          "module": "Workspace.ProofLemmas.LambdaStarDef",
+          "file": "Workspace/ProofLemmas/LambdaStarDef.lean",
+          "lines": 54,
+          "decls": 2
+        },
+        {
+          "module": "Workspace.ProofLemmas.SixSqrtThreeMinusEightPos",
+          "file": "Workspace/ProofLemmas/SixSqrtThreeMinusEightPos.lean",
+          "lines": 4,
+          "decls": 1
+        },
+        {
+          "module": "Workspace.ProofLemmas.UBDef",
+          "file": "Workspace/ProofLemmas/UBDef.lean",
+          "lines": 24,
+          "decls": 3
+        },
+        {
+          "module": "Workspace.ProofLemmas.UBLimitThree",
+          "file": "Workspace/ProofLemmas/UBLimitThree.lean",
+          "lines": 23,
+          "decls": 1
+        },
+        {
+          "module": "Workspace.ProofLemmas.UBTwo",
+          "file": "Workspace/ProofLemmas/UBTwo.lean",
+          "lines": 36,
+          "decls": 1
+        }
+      ]
+    },
+    {
+      "id": "core_norm",
+      "label": "L_q-norm lemmas",
+      "role": "lemma_stage",
+      "color": "#5CB874",
+      "files": 10,
+      "lines": 732,
+      "decls": 10,
+      "is_root": false,
+      "modules": [
+        {
+          "module": "Workspace.ProofLemmas.LqNormBoundaryFirstOrderRise",
+          "file": "Workspace/ProofLemmas/LqNormBoundaryFirstOrderRise.lean",
+          "lines": 84,
+          "decls": 1
+        },
+        {
+          "module": "Workspace.ProofLemmas.LqNormBoundaryRightDeriv",
+          "file": "Workspace/ProofLemmas/LqNormBoundaryRightDeriv.lean",
+          "lines": 82,
+          "decls": 1
+        },
+        {
+          "module": "Workspace.ProofLemmas.LqNormBoundaryUpwardExpansion",
+          "file": "Workspace/ProofLemmas/LqNormBoundaryUpwardExpansion.lean",
+          "lines": 50,
+          "decls": 1
+        },
+        {
+          "module": "Workspace.ProofLemmas.LqNormPartialDerivative_NegBranch",
+          "file": "Workspace/ProofLemmas/LqNormPartialDerivative_NegBranch.lean",
+          "lines": 105,
+          "decls": 1
+        },
+        {
+          "module": "Workspace.ProofLemmas.LqNormPartialDerivative_PosBranch",
+          "file": "Workspace/ProofLemmas/LqNormPartialDerivative_PosBranch.lean",
+          "lines": 93,
+          "decls": 1
+        },
+        {
+          "module": "Workspace.ProofLemmas.LqNormPartialDerivative_PosBranch_LimitAtZero",
+          "file": "Workspace/ProofLemmas/LqNormPartialDerivative_PosBranch_LimitAtZero.lean",
+          "lines": 171,
+          "decls": 1
+        },
+        {
+          "module": "Workspace.ProofLemmas.LqNormStrictDecrease_OfSingleCoordinateCloser",
+          "file": "Workspace/ProofLemmas/LqNormStrictDecrease_OfSingleCoordinateCloser.lean",
+          "lines": 47,
+          "decls": 1
+        },
+        {
+          "module": "Workspace.ProofLemmas.LqNormStrictIncrease_OfSingleCoordinateLarger",
+          "file": "Workspace/ProofLemmas/LqNormStrictIncrease_OfSingleCoordinateLarger.lean",
+          "lines": 43,
+          "decls": 1
+        },
+        {
+          "module": "Workspace.ProofLemmas.LqNormSubReverseTriangle",
+          "file": "Workspace/ProofLemmas/LqNormSubReverseTriangle.lean",
+          "lines": 23,
+          "decls": 1
+        },
+        {
+          "module": "Workspace.ProofLemmas.LqNormZeroIffEqZero",
+          "file": "Workspace/ProofLemmas/LqNormZeroIffEqZero.lean",
+          "lines": 34,
+          "decls": 1
+        }
+      ]
+    },
+    {
+      "id": "core_median",
+      "label": "Coordinate-median lemmas",
+      "role": "lemma_stage",
+      "color": "#5CB874",
+      "files": 6,
+      "lines": 577,
+      "decls": 6,
+      "is_root": false,
+      "modules": [
+        {
+          "module": "Workspace.ProofLemmas.MedianConstraintFromCWMedian",
+          "file": "Workspace/ProofLemmas/MedianConstraintFromCWMedian.lean",
+          "lines": 189,
+          "decls": 1
+        },
+        {
+          "module": "Workspace.ProofLemmas.MedianConstraintToSumX",
+          "file": "Workspace/ProofLemmas/MedianConstraintToSumX.lean",
+          "lines": 94,
+          "decls": 1
+        },
+        {
+          "module": "Workspace.ProofLemmas.MedianCoordinateReflection",
+          "file": "Workspace/ProofLemmas/MedianCoordinateReflection.lean",
+          "lines": 39,
+          "decls": 1
+        },
+        {
+          "module": "Workspace.ProofLemmas.MedianOfConstant",
+          "file": "Workspace/ProofLemmas/MedianOfConstant.lean",
+          "lines": 34,
+          "decls": 1
+        },
+        {
+          "module": "Workspace.ProofLemmas.MedianTranslationInvariance",
+          "file": "Workspace/ProofLemmas/MedianTranslationInvariance.lean",
+          "lines": 21,
+          "decls": 1
+        },
+        {
+          "module": "Workspace.ProofLemmas.OneDMedianMinimizesSumAbsDeviation",
+          "file": "Workspace/ProofLemmas/OneDMedianMinimizesSumAbsDeviation.lean",
+          "lines": 200,
+          "decls": 1
+        }
+      ]
+    },
+    {
+      "id": "lb",
+      "label": "Lower-bound lemmas",
+      "role": "lemma_stage",
+      "color": "#5CB874",
+      "files": 9,
+      "lines": 1148,
+      "decls": 27,
+      "is_root": false,
+      "modules": [
+        {
+          "module": "Workspace.ProofLemmas.LBConstruction",
+          "file": "Workspace/ProofLemmas/LBConstruction.lean",
+          "lines": 57,
+          "decls": 12
+        },
+        {
+          "module": "Workspace.ProofLemmas.LBIntegrality",
+          "file": "Workspace/ProofLemmas/LBIntegrality.lean",
+          "lines": 154,
+          "decls": 4
+        },
+        {
+          "module": "Workspace.ProofLemmas.LBLambdaStarLtOne",
+          "file": "Workspace/ProofLemmas/LBLambdaStarLtOne.lean",
+          "lines": 55,
+          "decls": 1
+        },
+        {
+          "module": "Workspace.ProofLemmas.LBMedianAtZero",
+          "file": "Workspace/ProofLemmas/LBMedianAtZero.lean",
+          "lines": 108,
+          "decls": 1
+        },
+        {
+          "module": "Workspace.ProofLemmas.LBOptPositive",
+          "file": "Workspace/ProofLemmas/LBOptPositive.lean",
+          "lines": 184,
+          "decls": 1
+        },
+        {
+          "module": "Workspace.ProofLemmas.LBQOne",
+          "file": "Workspace/ProofLemmas/LBQOne.lean",
+          "lines": 26,
+          "decls": 1
+        },
+        {
+          "module": "Workspace.ProofLemmas.LBRatioEqualsUB",
+          "file": "Workspace/ProofLemmas/LBRatioEqualsUB.lean",
+          "lines": 187,
+          "decls": 2
+        },
+        {
+          "module": "Workspace.ProofLemmas.LBRatioLimit",
+          "file": "Workspace/ProofLemmas/LBRatioLimit.lean",
+          "lines": 95,
+          "decls": 1
+        },
+        {
+          "module": "Workspace.ProofLemmas.LBSocialCosts",
+          "file": "Workspace/ProofLemmas/LBSocialCosts.lean",
+          "lines": 282,
+          "decls": 4
+        }
+      ]
+    },
+    {
+      "id": "cg1",
+      "label": "Consistency: relaxed core",
+      "role": "lemma_stage",
+      "color": "#5CB874",
+      "files": 4,
+      "lines": 1628,
+      "decls": 18,
+      "is_root": false,
+      "modules": [
+        {
+          "module": "Workspace.ProofLemmas.CGConstrainedMinExists",
+          "file": "Workspace/ProofLemmas/CGConstrainedMinExists.lean",
+          "lines": 296,
+          "decls": 1
+        },
+        {
+          "module": "Workspace.ProofLemmas.CGNormalizedCoreInequality",
+          "file": "Workspace/ProofLemmas/CGNormalizedCoreInequality.lean",
+          "lines": 311,
+          "decls": 1
+        },
+        {
+          "module": "Workspace.ProofLemmas.CGRelaxedConstraint",
+          "file": "Workspace/ProofLemmas/CGRelaxedConstraint.lean",
+          "lines": 62,
+          "decls": 1
+        },
+        {
+          "module": "Workspace.ProofLemmas.CGRelaxedCoreNonneg",
+          "file": "Workspace/ProofLemmas/CGRelaxedCoreNonneg.lean",
+          "lines": 959,
+          "decls": 15
+        }
+      ]
+    },
+    {
+      "id": "cg2",
+      "label": "Consistency: reduction & assembly",
+      "role": "lemma_stage",
+      "color": "#5CB874",
+      "files": 11,
+      "lines": 1895,
+      "decls": 26,
+      "is_root": false,
+      "modules": [
+        {
+          "module": "Workspace.ProofLemmas.CGABranchComparison",
+          "file": "Workspace/ProofLemmas/CGABranchComparison.lean",
+          "lines": 38,
+          "decls": 1
+        },
+        {
+          "module": "Workspace.ProofLemmas.CGDefs",
+          "file": "Workspace/ProofLemmas/CGDefs.lean",
+          "lines": 110,
+          "decls": 7
+        },
+        {
+          "module": "Workspace.ProofLemmas.CGDeltaLambdaHighBranch",
+          "file": "Workspace/ProofLemmas/CGDeltaLambdaHighBranch.lean",
+          "lines": 57,
+          "decls": 1
+        },
+        {
+          "module": "Workspace.ProofLemmas.CGDeltaLambdaLowBranch",
+          "file": "Workspace/ProofLemmas/CGDeltaLambdaLowBranch.lean",
+          "lines": 88,
+          "decls": 3
+        },
+        {
+          "module": "Workspace.ProofLemmas.CGEvenAugmentReduction",
+          "file": "Workspace/ProofLemmas/CGEvenAugmentReduction.lean",
+          "lines": 289,
+          "decls": 1
+        },
+        {
+          "module": "Workspace.ProofLemmas.CGFinalAssembly",
+          "file": "Workspace/ProofLemmas/CGFinalAssembly.lean",
+          "lines": 136,
+          "decls": 1
+        },
+        {
+          "module": "Workspace.ProofLemmas.CGInteriorRoot",
+          "file": "Workspace/ProofLemmas/CGInteriorRoot.lean",
+          "lines": 39,
+          "decls": 1
+        },
+        {
+          "module": "Workspace.ProofLemmas.CGLambda1InUnitInterval",
+          "file": "Workspace/ProofLemmas/CGLambda1InUnitInterval.lean",
+          "lines": 54,
+          "decls": 1
+        },
+        {
+          "module": "Workspace.ProofLemmas.CGMedianConstraintFromAugment",
+          "file": "Workspace/ProofLemmas/CGMedianConstraintFromAugment.lean",
+          "lines": 327,
+          "decls": 1
+        },
+        {
+          "module": "Workspace.ProofLemmas.CGOptimalSolutionForA1",
+          "file": "Workspace/ProofLemmas/CGOptimalSolutionForA1.lean",
+          "lines": 421,
+          "decls": 8
+        },
+        {
+          "module": "Workspace.ProofLemmas.CGTranslationScaleNormalize",
+          "file": "Workspace/ProofLemmas/CGTranslationScaleNormalize.lean",
+          "lines": 336,
+          "decls": 1
+        }
+      ]
+    },
+    {
+      "id": "rg1",
+      "label": "Robustness: relaxed core",
+      "role": "lemma_stage",
+      "color": "#5CB874",
+      "files": 3,
+      "lines": 1420,
+      "decls": 5,
+      "is_root": false,
+      "modules": [
+        {
+          "module": "Workspace.ProofLemmas.RGNormalizedCoreInequality",
+          "file": "Workspace/ProofLemmas/RGNormalizedCoreInequality.lean",
+          "lines": 581,
+          "decls": 1
+        },
+        {
+          "module": "Workspace.ProofLemmas.RGRelaxedCoreNonneg",
+          "file": "Workspace/ProofLemmas/RGRelaxedCoreNonneg.lean",
+          "lines": 549,
+          "decls": 3
+        },
+        {
+          "module": "Workspace.ProofLemmas.RGWorstCasePredictionSignature",
+          "file": "Workspace/ProofLemmas/RGWorstCasePredictionSignature.lean",
+          "lines": 290,
+          "decls": 1
+        }
+      ]
+    },
+    {
+      "id": "rg2",
+      "label": "Robustness: reduction & assembly",
+      "role": "lemma_stage",
+      "color": "#5CB874",
+      "files": 9,
+      "lines": 1565,
+      "decls": 17,
+      "is_root": false,
+      "modules": [
+        {
+          "module": "Workspace.ProofLemmas.RGDefs",
+          "file": "Workspace/ProofLemmas/RGDefs.lean",
+          "lines": 82,
+          "decls": 7
+        },
+        {
+          "module": "Workspace.ProofLemmas.RGDeltaLambda",
+          "file": "Workspace/ProofLemmas/RGDeltaLambda.lean",
+          "lines": 85,
+          "decls": 3
+        },
+        {
+          "module": "Workspace.ProofLemmas.RGEvenAugmentReduction",
+          "file": "Workspace/ProofLemmas/RGEvenAugmentReduction.lean",
+          "lines": 269,
+          "decls": 1
+        },
+        {
+          "module": "Workspace.ProofLemmas.RGFinalAssembly",
+          "file": "Workspace/ProofLemmas/RGFinalAssembly.lean",
+          "lines": 224,
+          "decls": 1
+        },
+        {
+          "module": "Workspace.ProofLemmas.RGInteriorRoot",
+          "file": "Workspace/ProofLemmas/RGInteriorRoot.lean",
+          "lines": 39,
+          "decls": 1
+        },
+        {
+          "module": "Workspace.ProofLemmas.RGLambda2InUnitInterval",
+          "file": "Workspace/ProofLemmas/RGLambda2InUnitInterval.lean",
+          "lines": 32,
+          "decls": 1
+        },
+        {
+          "module": "Workspace.ProofLemmas.RGMedianConstraintFromAugment",
+          "file": "Workspace/ProofLemmas/RGMedianConstraintFromAugment.lean",
+          "lines": 460,
+          "decls": 1
+        },
+        {
+          "module": "Workspace.ProofLemmas.RGRelaxedConstraint",
+          "file": "Workspace/ProofLemmas/RGRelaxedConstraint.lean",
+          "lines": 42,
+          "decls": 1
+        },
+        {
+          "module": "Workspace.ProofLemmas.RGTranslationScaleNormalize",
+          "file": "Workspace/ProofLemmas/RGTranslationScaleNormalize.lean",
+          "lines": 332,
+          "decls": 1
+        }
+      ]
+    },
+    {
+      "id": "types",
+      "label": "Definitions & types",
+      "role": "definitions_and_types",
+      "color": "#ECECEC",
+      "files": 5,
+      "lines": 480,
+      "decls": 19,
+      "is_root": false,
+      "modules": [
+        {
+          "module": "Workspace.ConsistencyDefs",
+          "file": "Workspace/ConsistencyDefs.lean",
+          "lines": 40,
+          "decls": 2
+        },
+        {
+          "module": "Workspace.RobustnessDefs",
+          "file": "Workspace/RobustnessDefs.lean",
+          "lines": 30,
+          "decls": 1
+        },
+        {
+          "module": "Workspace.Types.CoordinateMedian",
+          "file": "Workspace/Types/CoordinateMedian.lean",
+          "lines": 248,
+          "decls": 1
+        },
+        {
+          "module": "Workspace.Types.LqNorm",
+          "file": "Workspace/Types/LqNorm.lean",
+          "lines": 99,
+          "decls": 8
+        },
+        {
+          "module": "Workspace.Types.SocialCost",
+          "file": "Workspace/Types/SocialCost.lean",
+          "lines": 63,
+          "decls": 7
+        }
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "from": "cg1",
+      "to": "cg2",
+      "bidirectional": true
+    },
+    {
+      "from": "cg1",
+      "to": "core_bound",
+      "bidirectional": false
+    },
+    {
+      "from": "cg1",
+      "to": "core_lochar",
+      "bidirectional": false
+    },
+    {
+      "from": "cg1",
+      "to": "core_relaxed",
+      "bidirectional": false
+    },
+    {
+      "from": "cg2",
+      "to": "cg1",
+      "bidirectional": true
+    },
+    {
+      "from": "cg2",
+      "to": "core_relaxed",
+      "bidirectional": false
+    },
+    {
+      "from": "cons_thm",
+      "to": "cg2",
+      "bidirectional": false
+    },
+    {
+      "from": "core_bound",
+      "to": "core_norm",
+      "bidirectional": false
+    },
+    {
+      "from": "core_bound",
+      "to": "core_relaxed",
+      "bidirectional": true
+    },
+    {
+      "from": "core_bound",
+      "to": "core_ub",
+      "bidirectional": false
+    },
+    {
+      "from": "core_lochar",
+      "to": "core_bound",
+      "bidirectional": true
+    },
+    {
+      "from": "core_lochar",
+      "to": "core_norm",
+      "bidirectional": false
+    },
+    {
+      "from": "core_median",
+      "to": "types",
+      "bidirectional": false
+    },
+    {
+      "from": "core_norm",
+      "to": "types",
+      "bidirectional": false
+    },
+    {
+      "from": "core_relaxed",
+      "to": "core_bound",
+      "bidirectional": true
+    },
+    {
+      "from": "core_relaxed",
+      "to": "core_lochar",
+      "bidirectional": true
+    },
+    {
+      "from": "core_relaxed",
+      "to": "core_median",
+      "bidirectional": false
+    },
+    {
+      "from": "core_relaxed",
+      "to": "core_norm",
+      "bidirectional": false
+    },
+    {
+      "from": "core_relaxed",
+      "to": "core_ub",
+      "bidirectional": false
+    },
+    {
+      "from": "lb",
+      "to": "core_relaxed",
+      "bidirectional": false
+    },
+    {
+      "from": "lb_thm",
+      "to": "lb",
+      "bidirectional": false
+    },
+    {
+      "from": "main_thm",
+      "to": "core_relaxed",
+      "bidirectional": false
+    },
+    {
+      "from": "rg1",
+      "to": "cg1",
+      "bidirectional": false
+    },
+    {
+      "from": "rg1",
+      "to": "cg2",
+      "bidirectional": false
+    },
+    {
+      "from": "rg1",
+      "to": "rg2",
+      "bidirectional": true
+    },
+    {
+      "from": "rg2",
+      "to": "rg1",
+      "bidirectional": true
+    },
+    {
+      "from": "rob_thm",
+      "to": "rg2",
+      "bidirectional": false
+    }
+  ]
+}

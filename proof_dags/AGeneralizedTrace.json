@@ -1,0 +1,1444 @@
+{
+  "paper_id": "AGeneralizedTrace",
+  "title": "A Generalized Trace Reconstruction Problem: Recovering a String of Probabilities",
+  "graph_type": "group_level_proof_dependency_dag",
+  "description": "Group-level proof-dependency DAG of the Lean formalization. Each node is a \"proof stage\": a cluster of Lean modules grouped by their role in the paper's argument. An edge A→B means stage A uses (depends on) stage B. Edges are transitively reduced (a direct edge is omitted when a longer path already implies it); a pair marked bidirectional are mutually recursive. Each node lists the exact Lean modules it contains, with per-module source-line and declaration counts.",
+  "image": {
+    "pdf": "images/GeneralizedTraceGraph_cycsafe_dag.pdf",
+    "png": "images/GeneralizedTraceGraph_cycsafe.png"
+  },
+  "node_count": 12,
+  "edge_count": 25,
+  "axioms_beyond_kernel": [
+    {
+      "stage": "axioms",
+      "name": "Prékopa log-concavity"
+    },
+    {
+      "stage": "axioms",
+      "name": "Stirling estimates"
+    }
+  ],
+  "roots": [
+    "ROOT"
+  ],
+  "nodes": [
+    {
+      "id": "ROOT",
+      "label": "Main theorem (lower bound)",
+      "role": "theorem",
+      "color": "#F5C81E",
+      "files": 1,
+      "lines": 145,
+      "decls": 1,
+      "is_root": true,
+      "modules": [
+        {
+          "module": "Workspace.MainTheorem",
+          "file": "Workspace/MainTheorem.lean",
+          "lines": 145,
+          "decls": 1
+        }
+      ]
+    },
+    {
+      "id": "final_assembly",
+      "label": "Theorem 1 / TV assembly",
+      "role": "lemma_stage",
+      "color": "#5CB874",
+      "files": 6,
+      "lines": 788,
+      "decls": 18,
+      "is_root": false,
+      "modules": [
+        {
+          "module": "Workspace.ProofLemmas.AltSumThreeWayDecomposition",
+          "file": "Workspace/ProofLemmas/AltSumThreeWayDecomposition.lean",
+          "lines": 201,
+          "decls": 1
+        },
+        {
+          "module": "Workspace.ProofLemmas.AlternatingSumWitnessBound",
+          "file": "Workspace/ProofLemmas/AlternatingSumWitnessBound.lean",
+          "lines": 186,
+          "decls": 1
+        },
+        {
+          "module": "Workspace.ProofLemmas.SublemmaPartialDeletionBound",
+          "file": "Workspace/ProofLemmas/SublemmaPartialDeletionBound.lean",
+          "lines": 43,
+          "decls": 1
+        },
+        {
+          "module": "Workspace.ProofLemmas.SublemmaTVAssembly",
+          "file": "Workspace/ProofLemmas/SublemmaTVAssembly.lean",
+          "lines": 55,
+          "decls": 1
+        },
+        {
+          "module": "Workspace.ProofLemmas.SublemmaTVReduceToHalf",
+          "file": "Workspace/ProofLemmas/SublemmaTVReduceToHalf.lean",
+          "lines": 91,
+          "decls": 1
+        },
+        {
+          "module": "Workspace.ProofLemmas.TVMonotoneInDelta",
+          "file": "Workspace/ProofLemmas/TVMonotoneInDelta.lean",
+          "lines": 212,
+          "decls": 13
+        }
+      ]
+    },
+    {
+      "id": "witness",
+      "label": "Two-sequence witness & input separations",
+      "role": "lemma_stage",
+      "color": "#5CB874",
+      "files": 12,
+      "lines": 4554,
+      "decls": 20,
+      "is_root": false,
+      "modules": [
+        {
+          "module": "Workspace.ProofLemmas.LInfSeparationOdd",
+          "file": "Workspace/ProofLemmas/LInfSeparationOdd.lean",
+          "lines": 181,
+          "decls": 1
+        },
+        {
+          "module": "Workspace.ProofLemmas.MiddleWeightExplicit",
+          "file": "Workspace/ProofLemmas/MiddleWeightExplicit.lean",
+          "lines": 756,
+          "decls": 3
+        },
+        {
+          "module": "Workspace.ProofLemmas.OddNConstructionArith",
+          "file": "Workspace/ProofLemmas/OddNConstructionArith.lean",
+          "lines": 232,
+          "decls": 2
+        },
+        {
+          "module": "Workspace.ProofLemmas.ParitySwapOddThree",
+          "file": "Workspace/ProofLemmas/ParitySwapOddThree.lean",
+          "lines": 1916,
+          "decls": 3
+        },
+        {
+          "module": "Workspace.ProofLemmas.ParitySwapSignedIdentity",
+          "file": "Workspace/ProofLemmas/ParitySwapSignedIdentity.lean",
+          "lines": 514,
+          "decls": 1
+        },
+        {
+          "module": "Workspace.ProofLemmas.QFactorBounds",
+          "file": "Workspace/ProofLemmas/QFactorBounds.lean",
+          "lines": 86,
+          "decls": 3
+        },
+        {
+          "module": "Workspace.ProofLemmas.SublemmaImplicitWeightIdentification",
+          "file": "Workspace/ProofLemmas/SublemmaImplicitWeightIdentification.lean",
+          "lines": 105,
+          "decls": 1
+        },
+        {
+          "module": "Workspace.ProofLemmas.SublemmaL1Bounds",
+          "file": "Workspace/ProofLemmas/SublemmaL1Bounds.lean",
+          "lines": 153,
+          "decls": 1
+        },
+        {
+          "module": "Workspace.ProofLemmas.SublemmaLInfSeparation",
+          "file": "Workspace/ProofLemmas/SublemmaLInfSeparation.lean",
+          "lines": 199,
+          "decls": 1
+        },
+        {
+          "module": "Workspace.ProofLemmas.SublemmaWitnessConstruction",
+          "file": "Workspace/ProofLemmas/SublemmaWitnessConstruction.lean",
+          "lines": 133,
+          "decls": 1
+        },
+        {
+          "module": "Workspace.ProofLemmas.WitnessBitMass",
+          "file": "Workspace/ProofLemmas/WitnessBitMass.lean",
+          "lines": 94,
+          "decls": 2
+        },
+        {
+          "module": "Workspace.ProofLemmas.WitnessCoinFlipFormula",
+          "file": "Workspace/ProofLemmas/WitnessCoinFlipFormula.lean",
+          "lines": 185,
+          "decls": 1
+        }
+      ]
+    },
+    {
+      "id": "trace_channel",
+      "label": "Trace-distribution & deletion-channel machinery",
+      "role": "lemma_stage",
+      "color": "#5CB874",
+      "files": 22,
+      "lines": 5198,
+      "decls": 140,
+      "is_root": false,
+      "modules": [
+        {
+          "module": "Workspace.ProofLemmas.CoinFlipBitMarginal",
+          "file": "Workspace/ProofLemmas/CoinFlipBitMarginal.lean",
+          "lines": 116,
+          "decls": 2
+        },
+        {
+          "module": "Workspace.ProofLemmas.CoinFlipDistExists",
+          "file": "Workspace/ProofLemmas/CoinFlipDistExists.lean",
+          "lines": 83,
+          "decls": 1
+        },
+        {
+          "module": "Workspace.ProofLemmas.CoinFlipDistUnique",
+          "file": "Workspace/ProofLemmas/CoinFlipDistUnique.lean",
+          "lines": 13,
+          "decls": 1
+        },
+        {
+          "module": "Workspace.ProofLemmas.DeletionChannelExists",
+          "file": "Workspace/ProofLemmas/DeletionChannelExists.lean",
+          "lines": 117,
+          "decls": 1
+        },
+        {
+          "module": "Workspace.ProofLemmas.DeletionChannelTotalMass",
+          "file": "Workspace/ProofLemmas/DeletionChannelTotalMass.lean",
+          "lines": 217,
+          "decls": 9
+        },
+        {
+          "module": "Workspace.ProofLemmas.DeletionChannelUnique",
+          "file": "Workspace/ProofLemmas/DeletionChannelUnique.lean",
+          "lines": 13,
+          "decls": 1
+        },
+        {
+          "module": "Workspace.ProofLemmas.DeletionLengthMarginal",
+          "file": "Workspace/ProofLemmas/DeletionLengthMarginal.lean",
+          "lines": 838,
+          "decls": 48
+        },
+        {
+          "module": "Workspace.ProofLemmas.DeletionSegmentFactorization",
+          "file": "Workspace/ProofLemmas/DeletionSegmentFactorization.lean",
+          "lines": 171,
+          "decls": 1
+        },
+        {
+          "module": "Workspace.ProofLemmas.PartialDeletionExists",
+          "file": "Workspace/ProofLemmas/PartialDeletionExists.lean",
+          "lines": 125,
+          "decls": 5
+        },
+        {
+          "module": "Workspace.ProofLemmas.PartialDominatesAssembly",
+          "file": "Workspace/ProofLemmas/PartialDominatesAssembly.lean",
+          "lines": 253,
+          "decls": 6
+        },
+        {
+          "module": "Workspace.ProofLemmas.PartialDominatesBindForm",
+          "file": "Workspace/ProofLemmas/PartialDominatesBindForm.lean",
+          "lines": 369,
+          "decls": 7
+        },
+        {
+          "module": "Workspace.ProofLemmas.PartialDominatesConvolution",
+          "file": "Workspace/ProofLemmas/PartialDominatesConvolution.lean",
+          "lines": 179,
+          "decls": 2
+        },
+        {
+          "module": "Workspace.ProofLemmas.PartialDominatesCutIndependence",
+          "file": "Workspace/ProofLemmas/PartialDominatesCutIndependence.lean",
+          "lines": 271,
+          "decls": 4
+        },
+        {
+          "module": "Workspace.ProofLemmas.PartialDominatesHCore",
+          "file": "Workspace/ProofLemmas/PartialDominatesHCore.lean",
+          "lines": 559,
+          "decls": 12
+        },
+        {
+          "module": "Workspace.ProofLemmas.PartialDominatesOffsetCast",
+          "file": "Workspace/ProofLemmas/PartialDominatesOffsetCast.lean",
+          "lines": 278,
+          "decls": 3
+        },
+        {
+          "module": "Workspace.ProofLemmas.PartialDominatesSegmentAlign",
+          "file": "Workspace/ProofLemmas/PartialDominatesSegmentAlign.lean",
+          "lines": 285,
+          "decls": 6
+        },
+        {
+          "module": "Workspace.ProofLemmas.PartialDominatesSegmentCast",
+          "file": "Workspace/ProofLemmas/PartialDominatesSegmentCast.lean",
+          "lines": 118,
+          "decls": 3
+        },
+        {
+          "module": "Workspace.ProofLemmas.RestrictSegmentFactorization",
+          "file": "Workspace/ProofLemmas/RestrictSegmentFactorization.lean",
+          "lines": 181,
+          "decls": 4
+        },
+        {
+          "module": "Workspace.ProofLemmas.TraceDeletionKernel",
+          "file": "Workspace/ProofLemmas/TraceDeletionKernel.lean",
+          "lines": 253,
+          "decls": 8
+        },
+        {
+          "module": "Workspace.ProofLemmas.TraceDeletionListCompose",
+          "file": "Workspace/ProofLemmas/TraceDeletionListCompose.lean",
+          "lines": 497,
+          "decls": 14
+        },
+        {
+          "module": "Workspace.ProofLemmas.TraceDistExists",
+          "file": "Workspace/ProofLemmas/TraceDistExists.lean",
+          "lines": 36,
+          "decls": 1
+        },
+        {
+          "module": "Workspace.ProofLemmas.TraceFromZeroIsLengthBinomial",
+          "file": "Workspace/ProofLemmas/TraceFromZeroIsLengthBinomial.lean",
+          "lines": 226,
+          "decls": 1
+        }
+      ]
+    },
+    {
+      "id": "altsum_reduction",
+      "label": "TV → alternating r-sum",
+      "role": "lemma_stage",
+      "color": "#5CB874",
+      "files": 39,
+      "lines": 8170,
+      "decls": 190,
+      "is_root": false,
+      "modules": [
+        {
+          "module": "Workspace.ProofLemmas.AltSumExpansionMatches",
+          "file": "Workspace/ProofLemmas/AltSumExpansionMatches.lean",
+          "lines": 183,
+          "decls": 1
+        },
+        {
+          "module": "Workspace.ProofLemmas.LengthsDiffBoundedByAltSum",
+          "file": "Workspace/ProofLemmas/LengthsDiffBoundedByAltSum.lean",
+          "lines": 315,
+          "decls": 2
+        },
+        {
+          "module": "Workspace.ProofLemmas.LengthsDiffPerSummandSigned",
+          "file": "Workspace/ProofLemmas/LengthsDiffPerSummandSigned.lean",
+          "lines": 104,
+          "decls": 1
+        },
+        {
+          "module": "Workspace.ProofLemmas.LengthsDiffSignedClosedForm",
+          "file": "Workspace/ProofLemmas/LengthsDiffSignedClosedForm.lean",
+          "lines": 116,
+          "decls": 1
+        },
+        {
+          "module": "Workspace.ProofLemmas.LengthsDiffSignedReorg",
+          "file": "Workspace/ProofLemmas/LengthsDiffSignedReorg.lean",
+          "lines": 53,
+          "decls": 1
+        },
+        {
+          "module": "Workspace.ProofLemmas.LengthsDiffTsumSameParity",
+          "file": "Workspace/ProofLemmas/LengthsDiffTsumSameParity.lean",
+          "lines": 110,
+          "decls": 1
+        },
+        {
+          "module": "Workspace.ProofLemmas.LengthsDiffTsumSignedRSum",
+          "file": "Workspace/ProofLemmas/LengthsDiffTsumSignedRSum.lean",
+          "lines": 104,
+          "decls": 1
+        },
+        {
+          "module": "Workspace.ProofLemmas.LengthsDifferenceIsAlternatingSum",
+          "file": "Workspace/ProofLemmas/LengthsDifferenceIsAlternatingSum.lean",
+          "lines": 79,
+          "decls": 1
+        },
+        {
+          "module": "Workspace.ProofLemmas.LengthsOnlyDifferenceClosedForm",
+          "file": "Workspace/ProofLemmas/LengthsOnlyDifferenceClosedForm.lean",
+          "lines": 241,
+          "decls": 1
+        },
+        {
+          "module": "Workspace.ProofLemmas.LengthsOnlyExists",
+          "file": "Workspace/ProofLemmas/LengthsOnlyExists.lean",
+          "lines": 224,
+          "decls": 10
+        },
+        {
+          "module": "Workspace.ProofLemmas.MiddleIndicatorSumsToOne",
+          "file": "Workspace/ProofLemmas/MiddleIndicatorSumsToOne.lean",
+          "lines": 68,
+          "decls": 1
+        },
+        {
+          "module": "Workspace.ProofLemmas.MixedParityVanishes",
+          "file": "Workspace/ProofLemmas/MixedParityVanishes.lean",
+          "lines": 236,
+          "decls": 3
+        },
+        {
+          "module": "Workspace.ProofLemmas.OffsetWeightSumOne",
+          "file": "Workspace/ProofLemmas/OffsetWeightSumOne.lean",
+          "lines": 126,
+          "decls": 4
+        },
+        {
+          "module": "Workspace.ProofLemmas.PartialDeletionReducesToLengths",
+          "file": "Workspace/ProofLemmas/PartialDeletionReducesToLengths.lean",
+          "lines": 60,
+          "decls": 1
+        },
+        {
+          "module": "Workspace.ProofLemmas.Path4Assembly",
+          "file": "Workspace/ProofLemmas/Path4Assembly.lean",
+          "lines": 1382,
+          "decls": 23
+        },
+        {
+          "module": "Workspace.ProofLemmas.Path4CentralCDF",
+          "file": "Workspace/ProofLemmas/Path4CentralCDF.lean",
+          "lines": 178,
+          "decls": 2
+        },
+        {
+          "module": "Workspace.ProofLemmas.Path4Envelope",
+          "file": "Workspace/ProofLemmas/Path4Envelope.lean",
+          "lines": 274,
+          "decls": 3
+        },
+        {
+          "module": "Workspace.ProofLemmas.Path4FullQ",
+          "file": "Workspace/ProofLemmas/Path4FullQ.lean",
+          "lines": 133,
+          "decls": 7
+        },
+        {
+          "module": "Workspace.ProofLemmas.Path4MaskProd",
+          "file": "Workspace/ProofLemmas/Path4MaskProd.lean",
+          "lines": 205,
+          "decls": 1
+        },
+        {
+          "module": "Workspace.ProofLemmas.Path4SuffixRecurrence",
+          "file": "Workspace/ProofLemmas/Path4SuffixRecurrence.lean",
+          "lines": 153,
+          "decls": 2
+        },
+        {
+          "module": "Workspace.ProofLemmas.Path4WindowQ",
+          "file": "Workspace/ProofLemmas/Path4WindowQ.lean",
+          "lines": 607,
+          "decls": 24
+        },
+        {
+          "module": "Workspace.ProofLemmas.PrefixSuffixZSupport",
+          "file": "Workspace/ProofLemmas/PrefixSuffixZSupport.lean",
+          "lines": 76,
+          "decls": 3
+        },
+        {
+          "module": "Workspace.ProofLemmas.RareSupportShifted",
+          "file": "Workspace/ProofLemmas/RareSupportShifted.lean",
+          "lines": 511,
+          "decls": 1
+        },
+        {
+          "module": "Workspace.ProofLemmas.SignedInnerDefs",
+          "file": "Workspace/ProofLemmas/SignedInnerDefs.lean",
+          "lines": 63,
+          "decls": 2
+        },
+        {
+          "module": "Workspace.ProofLemmas.SublemmaLemma6",
+          "file": "Workspace/ProofLemmas/SublemmaLemma6.lean",
+          "lines": 52,
+          "decls": 1
+        },
+        {
+          "module": "Workspace.ProofLemmas.TVPartialBoundedAssembly",
+          "file": "Workspace/ProofLemmas/TVPartialBoundedAssembly.lean",
+          "lines": 156,
+          "decls": 16
+        },
+        {
+          "module": "Workspace.ProofLemmas.TVPartialBoundedByLengthsPlusBad",
+          "file": "Workspace/ProofLemmas/TVPartialBoundedByLengthsPlusBad.lean",
+          "lines": 66,
+          "decls": 1
+        },
+        {
+          "module": "Workspace.ProofLemmas.TVPartialBoundedFinal",
+          "file": "Workspace/ProofLemmas/TVPartialBoundedFinal.lean",
+          "lines": 332,
+          "decls": 10
+        },
+        {
+          "module": "Workspace.ProofLemmas.TVPartialBoundedHelpers",
+          "file": "Workspace/ProofLemmas/TVPartialBoundedHelpers.lean",
+          "lines": 340,
+          "decls": 24
+        },
+        {
+          "module": "Workspace.ProofLemmas.TVPartialGoodCollapse",
+          "file": "Workspace/ProofLemmas/TVPartialGoodCollapse.lean",
+          "lines": 248,
+          "decls": 10
+        },
+        {
+          "module": "Workspace.ProofLemmas.WitnessBitProb",
+          "file": "Workspace/ProofLemmas/WitnessBitProb.lean",
+          "lines": 222,
+          "decls": 3
+        },
+        {
+          "module": "Workspace.ProofLemmas.WitnessBitTail",
+          "file": "Workspace/ProofLemmas/WitnessBitTail.lean",
+          "lines": 70,
+          "decls": 1
+        },
+        {
+          "module": "Workspace.ProofLemmas.WitnessOffsetTail",
+          "file": "Workspace/ProofLemmas/WitnessOffsetTail.lean",
+          "lines": 116,
+          "decls": 3
+        },
+        {
+          "module": "Workspace.ProofLemmas.WitnessOffsetTailFull",
+          "file": "Workspace/ProofLemmas/WitnessOffsetTailFull.lean",
+          "lines": 53,
+          "decls": 2
+        },
+        {
+          "module": "Workspace.ProofLemmas.WitnessPrefixSuffixTail",
+          "file": "Workspace/ProofLemmas/WitnessPrefixSuffixTail.lean",
+          "lines": 187,
+          "decls": 3
+        },
+        {
+          "module": "Workspace.ProofLemmas.WitnessPrefixSuffixTailSupport",
+          "file": "Workspace/ProofLemmas/WitnessPrefixSuffixTailSupport.lean",
+          "lines": 124,
+          "decls": 4
+        },
+        {
+          "module": "Workspace.ProofLemmas.WitnessPrefixSuffixTailTonelli",
+          "file": "Workspace/ProofLemmas/WitnessPrefixSuffixTailTonelli.lean",
+          "lines": 105,
+          "decls": 5
+        },
+        {
+          "module": "Workspace.ProofLemmas.WitnessSuffixMass",
+          "file": "Workspace/ProofLemmas/WitnessSuffixMass.lean",
+          "lines": 126,
+          "decls": 2
+        },
+        {
+          "module": "Workspace.ProofLemmas.WitnessTailAssembly",
+          "file": "Workspace/ProofLemmas/WitnessTailAssembly.lean",
+          "lines": 372,
+          "decls": 8
+        }
+      ]
+    },
+    {
+      "id": "per_summand",
+      "label": "Per-summand envelope bound",
+      "role": "lemma_stage",
+      "color": "#5CB874",
+      "files": 16,
+      "lines": 6444,
+      "decls": 73,
+      "is_root": false,
+      "modules": [
+        {
+          "module": "Workspace.ProofLemmas.AltRSumEnvelopeRouteTypicalZ",
+          "file": "Workspace/ProofLemmas/AltRSumEnvelopeRouteTypicalZ.lean",
+          "lines": 265,
+          "decls": 1
+        },
+        {
+          "module": "Workspace.ProofLemmas.AltRSumFourierBoundProved",
+          "file": "Workspace/ProofLemmas/AltRSumFourierBoundProved.lean",
+          "lines": 655,
+          "decls": 10
+        },
+        {
+          "module": "Workspace.ProofLemmas.AltRSumLightAtypicalBoundFinal",
+          "file": "Workspace/ProofLemmas/AltRSumLightAtypicalBoundFinal.lean",
+          "lines": 552,
+          "decls": 6
+        },
+        {
+          "module": "Workspace.ProofLemmas.AtypicalZTailBound",
+          "file": "Workspace/ProofLemmas/AtypicalZTailBound.lean",
+          "lines": 414,
+          "decls": 18
+        },
+        {
+          "module": "Workspace.ProofLemmas.HeavyAtypicalBound",
+          "file": "Workspace/ProofLemmas/HeavyAtypicalBound.lean",
+          "lines": 1159,
+          "decls": 7
+        },
+        {
+          "module": "Workspace.ProofLemmas.HeavyEllCount",
+          "file": "Workspace/ProofLemmas/HeavyEllCount.lean",
+          "lines": 300,
+          "decls": 1
+        },
+        {
+          "module": "Workspace.ProofLemmas.HeavyTypicalBound",
+          "file": "Workspace/ProofLemmas/HeavyTypicalBound.lean",
+          "lines": 582,
+          "decls": 1
+        },
+        {
+          "module": "Workspace.ProofLemmas.LightAtypicalZTail",
+          "file": "Workspace/ProofLemmas/LightAtypicalZTail.lean",
+          "lines": 561,
+          "decls": 9
+        },
+        {
+          "module": "Workspace.ProofLemmas.LightAtypicalZTailTailR",
+          "file": "Workspace/ProofLemmas/LightAtypicalZTailTailR.lean",
+          "lines": 272,
+          "decls": 3
+        },
+        {
+          "module": "Workspace.ProofLemmas.LightContributionBound",
+          "file": "Workspace/ProofLemmas/LightContributionBound.lean",
+          "lines": 282,
+          "decls": 1
+        },
+        {
+          "module": "Workspace.ProofLemmas.LightEnvelopeBound",
+          "file": "Workspace/ProofLemmas/LightEnvelopeBound.lean",
+          "lines": 586,
+          "decls": 1
+        },
+        {
+          "module": "Workspace.ProofLemmas.NormaliserBound",
+          "file": "Workspace/ProofLemmas/NormaliserBound.lean",
+          "lines": 392,
+          "decls": 1
+        },
+        {
+          "module": "Workspace.ProofLemmas.PerSummandBoundEmptyEll",
+          "file": "Workspace/ProofLemmas/PerSummandBoundEmptyEll.lean",
+          "lines": 31,
+          "decls": 1
+        },
+        {
+          "module": "Workspace.ProofLemmas.SublemmaPerSummandBound",
+          "file": "Workspace/ProofLemmas/SublemmaPerSummandBound.lean",
+          "lines": 43,
+          "decls": 1
+        },
+        {
+          "module": "Workspace.ProofLemmas.SublemmaPerSummandBoundEnvelope",
+          "file": "Workspace/ProofLemmas/SublemmaPerSummandBoundEnvelope.lean",
+          "lines": 45,
+          "decls": 1
+        },
+        {
+          "module": "Workspace.ProofLemmas.T4L1NormBound",
+          "file": "Workspace/ProofLemmas/T4L1NormBound.lean",
+          "lines": 305,
+          "decls": 11
+        }
+      ]
+    },
+    {
+      "id": "fourier_mgf",
+      "label": "Fourier / MGF / log-concavity",
+      "role": "lemma_stage",
+      "color": "#5CB874",
+      "files": 36,
+      "lines": 8271,
+      "decls": 307,
+      "is_root": false,
+      "modules": [
+        {
+          "module": "Workspace.ProofLemmas.CircConvBilinear",
+          "file": "Workspace/ProofLemmas/CircConvBilinear.lean",
+          "lines": 74,
+          "decls": 4
+        },
+        {
+          "module": "Workspace.ProofLemmas.CircConvInfra",
+          "file": "Workspace/ProofLemmas/CircConvInfra.lean",
+          "lines": 92,
+          "decls": 6
+        },
+        {
+          "module": "Workspace.ProofLemmas.CircConvMono",
+          "file": "Workspace/ProofLemmas/CircConvMono.lean",
+          "lines": 108,
+          "decls": 4
+        },
+        {
+          "module": "Workspace.ProofLemmas.CircMultiplicityExpansion",
+          "file": "Workspace/ProofLemmas/CircMultiplicityExpansion.lean",
+          "lines": 532,
+          "decls": 19
+        },
+        {
+          "module": "Workspace.ProofLemmas.CircPowMultiplicity",
+          "file": "Workspace/ProofLemmas/CircPowMultiplicity.lean",
+          "lines": 369,
+          "decls": 26
+        },
+        {
+          "module": "Workspace.ProofLemmas.FTConvPow",
+          "file": "Workspace/ProofLemmas/FTConvPow.lean",
+          "lines": 81,
+          "decls": 9
+        },
+        {
+          "module": "Workspace.ProofLemmas.FactorFTSeries",
+          "file": "Workspace/ProofLemmas/FactorFTSeries.lean",
+          "lines": 282,
+          "decls": 17
+        },
+        {
+          "module": "Workspace.ProofLemmas.GenvConvergence",
+          "file": "Workspace/ProofLemmas/GenvConvergence.lean",
+          "lines": 554,
+          "decls": 28
+        },
+        {
+          "module": "Workspace.ProofLemmas.GlinWeightedMGF",
+          "file": "Workspace/ProofLemmas/GlinWeightedMGF.lean",
+          "lines": 344,
+          "decls": 14
+        },
+        {
+          "module": "Workspace.ProofLemmas.HFourierKwayBoundFromMGFAndLogConcavity",
+          "file": "Workspace/ProofLemmas/HFourierKwayBoundFromMGFAndLogConcavity.lean",
+          "lines": 439,
+          "decls": 1
+        },
+        {
+          "module": "Workspace.ProofLemmas.KFoldConvolutionTheorem",
+          "file": "Workspace/ProofLemmas/KFoldConvolutionTheorem.lean",
+          "lines": 128,
+          "decls": 12
+        },
+        {
+          "module": "Workspace.ProofLemmas.KModEnvBound",
+          "file": "Workspace/ProofLemmas/KModEnvBound.lean",
+          "lines": 129,
+          "decls": 10
+        },
+        {
+          "module": "Workspace.ProofLemmas.KModEnvSingleDominated",
+          "file": "Workspace/ProofLemmas/KModEnvSingleDominated.lean",
+          "lines": 119,
+          "decls": 7
+        },
+        {
+          "module": "Workspace.ProofLemmas.KwayCircModulusStep",
+          "file": "Workspace/ProofLemmas/KwayCircModulusStep.lean",
+          "lines": 147,
+          "decls": 2
+        },
+        {
+          "module": "Workspace.ProofLemmas.KwayEnvelopeProperties",
+          "file": "Workspace/ProofLemmas/KwayEnvelopeProperties.lean",
+          "lines": 451,
+          "decls": 15
+        },
+        {
+          "module": "Workspace.ProofLemmas.KwayFTAsKConv",
+          "file": "Workspace/ProofLemmas/KwayFTAsKConv.lean",
+          "lines": 97,
+          "decls": 3
+        },
+        {
+          "module": "Workspace.ProofLemmas.KwayFactorSummable",
+          "file": "Workspace/ProofLemmas/KwayFactorSummable.lean",
+          "lines": 180,
+          "decls": 11
+        },
+        {
+          "module": "Workspace.ProofLemmas.KwayLHSToKModEnv",
+          "file": "Workspace/ProofLemmas/KwayLHSToKModEnv.lean",
+          "lines": 63,
+          "decls": 3
+        },
+        {
+          "module": "Workspace.ProofLemmas.KwayReconciliation",
+          "file": "Workspace/ProofLemmas/KwayReconciliation.lean",
+          "lines": 213,
+          "decls": 1
+        },
+        {
+          "module": "Workspace.ProofLemmas.LinMultiplicityExpansion",
+          "file": "Workspace/ProofLemmas/LinMultiplicityExpansion.lean",
+          "lines": 509,
+          "decls": 22
+        },
+        {
+          "module": "Workspace.ProofLemmas.MGFCalibrationAtSqrtN",
+          "file": "Workspace/ProofLemmas/MGFCalibrationAtSqrtN.lean",
+          "lines": 49,
+          "decls": 1
+        },
+        {
+          "module": "Workspace.ProofLemmas.MGFOfHbBoundGaussian",
+          "file": "Workspace/ProofLemmas/MGFOfHbBoundGaussian.lean",
+          "lines": 185,
+          "decls": 1
+        },
+        {
+          "module": "Workspace.ProofLemmas.MGFOfIteratedConvolution",
+          "file": "Workspace/ProofLemmas/MGFOfIteratedConvolution.lean",
+          "lines": 95,
+          "decls": 1
+        },
+        {
+          "module": "Workspace.ProofLemmas.MGFTailPointwise",
+          "file": "Workspace/ProofLemmas/MGFTailPointwise.lean",
+          "lines": 122,
+          "decls": 1
+        },
+        {
+          "module": "Workspace.ProofLemmas.MarkovTailFromMGF",
+          "file": "Workspace/ProofLemmas/MarkovTailFromMGF.lean",
+          "lines": 66,
+          "decls": 1
+        },
+        {
+          "module": "Workspace.ProofLemmas.MultiplicityExpansion",
+          "file": "Workspace/ProofLemmas/MultiplicityExpansion.lean",
+          "lines": 163,
+          "decls": 5
+        },
+        {
+          "module": "Workspace.ProofLemmas.NonincreasingTailSummation",
+          "file": "Workspace/ProofLemmas/NonincreasingTailSummation.lean",
+          "lines": 215,
+          "decls": 1
+        },
+        {
+          "module": "Workspace.ProofLemmas.PerBPeriodisation",
+          "file": "Workspace/ProofLemmas/PerBPeriodisation.lean",
+          "lines": 639,
+          "decls": 24
+        },
+        {
+          "module": "Workspace.ProofLemmas.PerFactorFTEnvelope",
+          "file": "Workspace/ProofLemmas/PerFactorFTEnvelope.lean",
+          "lines": 216,
+          "decls": 6
+        },
+        {
+          "module": "Workspace.ProofLemmas.PerFactorFTModulus",
+          "file": "Workspace/ProofLemmas/PerFactorFTModulus.lean",
+          "lines": 155,
+          "decls": 4
+        },
+        {
+          "module": "Workspace.ProofLemmas.PerFactorFourierModulus",
+          "file": "Workspace/ProofLemmas/PerFactorFourierModulus.lean",
+          "lines": 206,
+          "decls": 9
+        },
+        {
+          "module": "Workspace.ProofLemmas.PeriodicBaseKfoldPeriodisation",
+          "file": "Workspace/ProofLemmas/PeriodicBaseKfoldPeriodisation.lean",
+          "lines": 354,
+          "decls": 14
+        },
+        {
+          "module": "Workspace.ProofLemmas.PeriodicCircConvPeriodisation",
+          "file": "Workspace/ProofLemmas/PeriodicCircConvPeriodisation.lean",
+          "lines": 69,
+          "decls": 2
+        },
+        {
+          "module": "Workspace.ProofLemmas.SharpeningInequalityCheck",
+          "file": "Workspace/ProofLemmas/SharpeningInequalityCheck.lean",
+          "lines": 77,
+          "decls": 1
+        },
+        {
+          "module": "Workspace.ProofLemmas.SublemmaFourierKway",
+          "file": "Workspace/ProofLemmas/SublemmaFourierKway.lean",
+          "lines": 315,
+          "decls": 1
+        },
+        {
+          "module": "Workspace.ProofLemmas.T4ToCircPowRPeriodic",
+          "file": "Workspace/ProofLemmas/T4ToCircPowRPeriodic.lean",
+          "lines": 434,
+          "decls": 21
+        }
+      ]
+    },
+    {
+      "id": "estimates",
+      "label": "Binomial / Stirling / Gaussian estimates",
+      "role": "lemma_stage",
+      "color": "#5CB874",
+      "files": 8,
+      "lines": 2067,
+      "decls": 16,
+      "is_root": false,
+      "modules": [
+        {
+          "module": "Workspace.ProofLemmas.BinomialPmfMaxBound",
+          "file": "Workspace/ProofLemmas/BinomialPmfMaxBound.lean",
+          "lines": 14,
+          "decls": 1
+        },
+        {
+          "module": "Workspace.ProofLemmas.CentralBinomialLowerTailWide",
+          "file": "Workspace/ProofLemmas/CentralBinomialLowerTailWide.lean",
+          "lines": 678,
+          "decls": 4
+        },
+        {
+          "module": "Workspace.ProofLemmas.CentralBinomialUpperTailWide",
+          "file": "Workspace/ProofLemmas/CentralBinomialUpperTailWide.lean",
+          "lines": 534,
+          "decls": 3
+        },
+        {
+          "module": "Workspace.ProofLemmas.GaussianCosBound",
+          "file": "Workspace/ProofLemmas/GaussianCosBound.lean",
+          "lines": 78,
+          "decls": 1
+        },
+        {
+          "module": "Workspace.ProofLemmas.GaussianIntegralValue",
+          "file": "Workspace/ProofLemmas/GaussianIntegralValue.lean",
+          "lines": 15,
+          "decls": 1
+        },
+        {
+          "module": "Workspace.ProofLemmas.LengthWeightBinPMFIdentity",
+          "file": "Workspace/ProofLemmas/LengthWeightBinPMFIdentity.lean",
+          "lines": 120,
+          "decls": 4
+        },
+        {
+          "module": "Workspace.ProofLemmas.LightAtypicalPerEll",
+          "file": "Workspace/ProofLemmas/LightAtypicalPerEll.lean",
+          "lines": 596,
+          "decls": 1
+        },
+        {
+          "module": "Workspace.ProofLemmas.SublemmaCentralBinomialBounds",
+          "file": "Workspace/ProofLemmas/SublemmaCentralBinomialBounds.lean",
+          "lines": 32,
+          "decls": 1
+        }
+      ]
+    },
+    {
+      "id": "priorwork",
+      "label": "Prior results (reproven)",
+      "role": "prior_work_reproven",
+      "color": "#2E8B57",
+      "files": 25,
+      "lines": 4555,
+      "decls": 159,
+      "is_root": false,
+      "modules": [
+        {
+          "module": "Workspace.PriorWork.AltRSumEmptyAtomBounds",
+          "file": "Workspace/PriorWork/AltRSumEmptyAtomBounds.lean",
+          "lines": 137,
+          "decls": 6
+        },
+        {
+          "module": "Workspace.PriorWork.AltRSumEmptyEllReduction",
+          "file": "Workspace/PriorWork/AltRSumEmptyEllReduction.lean",
+          "lines": 213,
+          "decls": 6
+        },
+        {
+          "module": "Workspace.PriorWork.AltRSumEmptyFourierAssembly",
+          "file": "Workspace/PriorWork/AltRSumEmptyFourierAssembly.lean",
+          "lines": 462,
+          "decls": 24
+        },
+        {
+          "module": "Workspace.PriorWork.AltRSumEmptyFourierBridge",
+          "file": "Workspace/PriorWork/AltRSumEmptyFourierBridge.lean",
+          "lines": 98,
+          "decls": 5
+        },
+        {
+          "module": "Workspace.PriorWork.AltRSumEmptyInnerModulusBound",
+          "file": "Workspace/PriorWork/AltRSumEmptyInnerModulusBound.lean",
+          "lines": 95,
+          "decls": 7
+        },
+        {
+          "module": "Workspace.PriorWork.AltRSumEmptyInnerPointwise",
+          "file": "Workspace/PriorWork/AltRSumEmptyInnerPointwise.lean",
+          "lines": 188,
+          "decls": 8
+        },
+        {
+          "module": "Workspace.PriorWork.AltRSumEmptyOuterBound",
+          "file": "Workspace/PriorWork/AltRSumEmptyOuterBound.lean",
+          "lines": 305,
+          "decls": 11
+        },
+        {
+          "module": "Workspace.PriorWork.AltRSumEmptyRegionDecay",
+          "file": "Workspace/PriorWork/AltRSumEmptyRegionDecay.lean",
+          "lines": 87,
+          "decls": 5
+        },
+        {
+          "module": "Workspace.PriorWork.AltRSumEmptyRegionSplit",
+          "file": "Workspace/PriorWork/AltRSumEmptyRegionSplit.lean",
+          "lines": 351,
+          "decls": 11
+        },
+        {
+          "module": "Workspace.PriorWork.AltRSumFourierBoundEmpty",
+          "file": "Workspace/PriorWork/AltRSumFourierBoundEmpty.lean",
+          "lines": 82,
+          "decls": 1
+        },
+        {
+          "module": "Workspace.PriorWork.AltRSumFourierBoundKway",
+          "file": "Workspace/PriorWork/AltRSumFourierBoundKway.lean",
+          "lines": 258,
+          "decls": 11
+        },
+        {
+          "module": "Workspace.PriorWork.AltRSumKwayFourierBridge",
+          "file": "Workspace/PriorWork/AltRSumKwayFourierBridge.lean",
+          "lines": 172,
+          "decls": 5
+        },
+        {
+          "module": "Workspace.PriorWork.AltRSumKwayRegionSplit",
+          "file": "Workspace/PriorWork/AltRSumKwayRegionSplit.lean",
+          "lines": 377,
+          "decls": 19
+        },
+        {
+          "module": "Workspace.PriorWork.AltRSumLightAtypicalBound",
+          "file": "Workspace/PriorWork/AltRSumLightAtypicalBound.lean",
+          "lines": 67,
+          "decls": 1
+        },
+        {
+          "module": "Workspace.PriorWork.BinomialFourierClosedForm",
+          "file": "Workspace/PriorWork/BinomialFourierClosedForm.lean",
+          "lines": 75,
+          "decls": 1
+        },
+        {
+          "module": "Workspace.PriorWork.CleanFTGeneralEta",
+          "file": "Workspace/PriorWork/CleanFTGeneralEta.lean",
+          "lines": 328,
+          "decls": 6
+        },
+        {
+          "module": "Workspace.PriorWork.CleanFTOuterModulusBound",
+          "file": "Workspace/PriorWork/CleanFTOuterModulusBound.lean",
+          "lines": 78,
+          "decls": 1
+        },
+        {
+          "module": "Workspace.PriorWork.ConvolutionTheoremDiscrete",
+          "file": "Workspace/PriorWork/ConvolutionTheoremDiscrete.lean",
+          "lines": 213,
+          "decls": 1
+        },
+        {
+          "module": "Workspace.PriorWork.DataProcessingTV",
+          "file": "Workspace/PriorWork/DataProcessingTV.lean",
+          "lines": 168,
+          "decls": 2
+        },
+        {
+          "module": "Workspace.PriorWork.DelAtomPairFTContinuity",
+          "file": "Workspace/PriorWork/DelAtomPairFTContinuity.lean",
+          "lines": 115,
+          "decls": 7
+        },
+        {
+          "module": "Workspace.PriorWork.DeletionBinomialFourier",
+          "file": "Workspace/PriorWork/DeletionBinomialFourier.lean",
+          "lines": 209,
+          "decls": 8
+        },
+        {
+          "module": "Workspace.PriorWork.DeletionFactorFourierInR",
+          "file": "Workspace/PriorWork/DeletionFactorFourierInR.lean",
+          "lines": 230,
+          "decls": 7
+        },
+        {
+          "module": "Workspace.PriorWork.FirstBinomialFourierDecay",
+          "file": "Workspace/PriorWork/FirstBinomialFourierDecay.lean",
+          "lines": 71,
+          "decls": 4
+        },
+        {
+          "module": "Workspace.PriorWork.MGFOfConvolution",
+          "file": "Workspace/PriorWork/MGFOfConvolution.lean",
+          "lines": 129,
+          "decls": 1
+        },
+        {
+          "module": "Workspace.PriorWork.ModulusOfCircularConvolutionTriangle",
+          "file": "Workspace/PriorWork/ModulusOfCircularConvolutionTriangle.lean",
+          "lines": 47,
+          "decls": 1
+        }
+      ]
+    },
+    {
+      "id": "estimates",
+      "label": "Binomial / Stirling / Gaussian estimates",
+      "role": "lemma_stage",
+      "color": "#5CB874",
+      "files": 8,
+      "lines": 2067,
+      "decls": 16,
+      "is_root": false,
+      "modules": [
+        {
+          "module": "Workspace.ProofLemmas.BinomialPmfMaxBound",
+          "file": "Workspace/ProofLemmas/BinomialPmfMaxBound.lean",
+          "lines": 14,
+          "decls": 1
+        },
+        {
+          "module": "Workspace.ProofLemmas.CentralBinomialLowerTailWide",
+          "file": "Workspace/ProofLemmas/CentralBinomialLowerTailWide.lean",
+          "lines": 678,
+          "decls": 4
+        },
+        {
+          "module": "Workspace.ProofLemmas.CentralBinomialUpperTailWide",
+          "file": "Workspace/ProofLemmas/CentralBinomialUpperTailWide.lean",
+          "lines": 534,
+          "decls": 3
+        },
+        {
+          "module": "Workspace.ProofLemmas.GaussianCosBound",
+          "file": "Workspace/ProofLemmas/GaussianCosBound.lean",
+          "lines": 78,
+          "decls": 1
+        },
+        {
+          "module": "Workspace.ProofLemmas.GaussianIntegralValue",
+          "file": "Workspace/ProofLemmas/GaussianIntegralValue.lean",
+          "lines": 15,
+          "decls": 1
+        },
+        {
+          "module": "Workspace.ProofLemmas.LengthWeightBinPMFIdentity",
+          "file": "Workspace/ProofLemmas/LengthWeightBinPMFIdentity.lean",
+          "lines": 120,
+          "decls": 4
+        },
+        {
+          "module": "Workspace.ProofLemmas.LightAtypicalPerEll",
+          "file": "Workspace/ProofLemmas/LightAtypicalPerEll.lean",
+          "lines": 596,
+          "decls": 1
+        },
+        {
+          "module": "Workspace.ProofLemmas.SublemmaCentralBinomialBounds",
+          "file": "Workspace/ProofLemmas/SublemmaCentralBinomialBounds.lean",
+          "lines": 32,
+          "decls": 1
+        }
+      ]
+    },
+    {
+      "id": "types",
+      "label": "Definitions & types",
+      "role": "definitions_and_types",
+      "color": "#ECECEC",
+      "files": 16,
+      "lines": 924,
+      "decls": 92,
+      "is_root": false,
+      "modules": [
+        {
+          "module": "Workspace.Types.AlternatingSumExpression",
+          "file": "Workspace/Types/AlternatingSumExpression.lean",
+          "lines": 102,
+          "decls": 9
+        },
+        {
+          "module": "Workspace.Types.BinVec",
+          "file": "Workspace/Types/BinVec.lean",
+          "lines": 28,
+          "decls": 14
+        },
+        {
+          "module": "Workspace.Types.CoinFlipDist",
+          "file": "Workspace/Types/CoinFlipDist.lean",
+          "lines": 34,
+          "decls": 4
+        },
+        {
+          "module": "Workspace.Types.DelProb",
+          "file": "Workspace/Types/DelProb.lean",
+          "lines": 16,
+          "decls": 7
+        },
+        {
+          "module": "Workspace.Types.DeletionChannel",
+          "file": "Workspace/Types/DeletionChannel.lean",
+          "lines": 60,
+          "decls": 5
+        },
+        {
+          "module": "Workspace.Types.L1Distance",
+          "file": "Workspace/Types/L1Distance.lean",
+          "lines": 17,
+          "decls": 1
+        },
+        {
+          "module": "Workspace.Types.LInfDistance",
+          "file": "Workspace/Types/LInfDistance.lean",
+          "lines": 24,
+          "decls": 2
+        },
+        {
+          "module": "Workspace.Types.LengthsOnlyProcess",
+          "file": "Workspace/Types/LengthsOnlyProcess.lean",
+          "lines": 145,
+          "decls": 7
+        },
+        {
+          "module": "Workspace.Types.LowerBoundConstants",
+          "file": "Workspace/Types/LowerBoundConstants.lean",
+          "lines": 54,
+          "decls": 8
+        },
+        {
+          "module": "Workspace.Types.LowerBoundWitness",
+          "file": "Workspace/Types/LowerBoundWitness.lean",
+          "lines": 70,
+          "decls": 2
+        },
+        {
+          "module": "Workspace.Types.PartialDeletionProcess",
+          "file": "Workspace/Types/PartialDeletionProcess.lean",
+          "lines": 196,
+          "decls": 10
+        },
+        {
+          "module": "Workspace.Types.ProbVec",
+          "file": "Workspace/Types/ProbVec.lean",
+          "lines": 50,
+          "decls": 5
+        },
+        {
+          "module": "Workspace.Types.TVDistance",
+          "file": "Workspace/Types/TVDistance.lean",
+          "lines": 20,
+          "decls": 1
+        },
+        {
+          "module": "Workspace.Types.Trace",
+          "file": "Workspace/Types/Trace.lean",
+          "lines": 15,
+          "decls": 11
+        },
+        {
+          "module": "Workspace.Types.TraceDist",
+          "file": "Workspace/Types/TraceDist.lean",
+          "lines": 57,
+          "decls": 4
+        },
+        {
+          "module": "Workspace.Types.TraceDistAxioms",
+          "file": "Workspace/Types/TraceDistAxioms.lean",
+          "lines": 36,
+          "decls": 2
+        }
+      ]
+    },
+    {
+      "id": "axioms",
+      "label": "External axioms",
+      "role": "external_axiom",
+      "color": "#EB8C1E",
+      "files": 2,
+      "lines": 744,
+      "decls": 4,
+      "is_root": false,
+      "modules": [
+        {
+          "module": "Workspace.PriorWork.PrekopaLogConcave",
+          "file": "Workspace/PriorWork/PrekopaLogConcave.lean",
+          "lines": 36,
+          "decls": 1
+        },
+        {
+          "module": "Workspace.Types.StirlingAxioms",
+          "file": "Workspace/Types/StirlingAxioms.lean",
+          "lines": 708,
+          "decls": 3
+        }
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "from": "ROOT",
+      "to": "final_assembly",
+      "bidirectional": false
+    },
+    {
+      "from": "ROOT",
+      "to": "witness",
+      "bidirectional": false
+    },
+    {
+      "from": "altsum_reduction",
+      "to": "estimates",
+      "bidirectional": false
+    },
+    {
+      "from": "altsum_reduction",
+      "to": "per_summand",
+      "bidirectional": true
+    },
+    {
+      "from": "altsum_reduction",
+      "to": "trace_channel",
+      "bidirectional": true
+    },
+    {
+      "from": "altsum_reduction",
+      "to": "witness",
+      "bidirectional": true
+    },
+    {
+      "from": "estimates",
+      "to": "axioms",
+      "bidirectional": false
+    },
+    {
+      "from": "estimates",
+      "to": "types",
+      "bidirectional": false
+    },
+    {
+      "from": "final_assembly",
+      "to": "altsum_reduction",
+      "bidirectional": true
+    },
+    {
+      "from": "final_assembly",
+      "to": "per_summand",
+      "bidirectional": true
+    },
+    {
+      "from": "final_assembly",
+      "to": "priorwork",
+      "bidirectional": true
+    },
+    {
+      "from": "final_assembly",
+      "to": "trace_channel",
+      "bidirectional": true
+    },
+    {
+      "from": "fourier_mgf",
+      "to": "estimates",
+      "bidirectional": false
+    },
+    {
+      "from": "fourier_mgf",
+      "to": "priorwork",
+      "bidirectional": true
+    },
+    {
+      "from": "per_summand",
+      "to": "altsum_reduction",
+      "bidirectional": true
+    },
+    {
+      "from": "per_summand",
+      "to": "estimates",
+      "bidirectional": false
+    },
+    {
+      "from": "per_summand",
+      "to": "priorwork",
+      "bidirectional": true
+    },
+    {
+      "from": "per_summand",
+      "to": "witness",
+      "bidirectional": true
+    },
+    {
+      "from": "priorwork",
+      "to": "fourier_mgf",
+      "bidirectional": true
+    },
+    {
+      "from": "priorwork",
+      "to": "per_summand",
+      "bidirectional": true
+    },
+    {
+      "from": "trace_channel",
+      "to": "altsum_reduction",
+      "bidirectional": true
+    },
+    {
+      "from": "trace_channel",
+      "to": "final_assembly",
+      "bidirectional": true
+    },
+    {
+      "from": "trace_channel",
+      "to": "priorwork",
+      "bidirectional": true
+    },
+    {
+      "from": "witness",
+      "to": "estimates",
+      "bidirectional": false
+    },
+    {
+      "from": "witness",
+      "to": "priorwork",
+      "bidirectional": true
+    }
+  ]
+}

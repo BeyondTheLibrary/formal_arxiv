@@ -1,0 +1,409 @@
+{
+  "paper_id": "ASharp",
+  "title": "A Sharp Version of Talagrand's Selector Process Conjecture and an Application to Rounding Fractional Covers",
+  "graph_type": "group_level_proof_dependency_dag",
+  "description": "Group-level proof-dependency DAG of the Lean formalization. Each node is a \"proof stage\": a cluster of Lean modules grouped by their role in the paper's argument. An edge A→B means stage A uses (depends on) stage B. Edges are transitively reduced (a direct edge is omitted when a longer path already implies it); a pair marked bidirectional are mutually recursive. Each node lists the exact Lean modules it contains, with per-module source-line and declaration counts.",
+  "image": {
+    "pdf": "images/graph_A_Sharp_cycsafe_dag.pdf",
+    "png": "images/graph_A_Sharp_cycsafe.png"
+  },
+  "node_count": 6,
+  "edge_count": 6,
+  "axioms_beyond_kernel": [
+    {
+      "stage": "axiom",
+      "name": "Lemma 3.9 bound"
+    }
+  ],
+  "roots": [
+    "ROOT"
+  ],
+  "nodes": [
+    {
+      "id": "ROOT",
+      "label": "Main & sharp-selector theorems",
+      "role": "theorem",
+      "color": "#F5C81E",
+      "files": 2,
+      "lines": 258,
+      "decls": 2,
+      "is_root": true,
+      "modules": [
+        {
+          "module": "Workspace.MainTheorem",
+          "file": "Workspace/MainTheorem.lean",
+          "lines": 140,
+          "decls": 1
+        },
+        {
+          "module": "Workspace.Theorems.SharpSelector",
+          "file": "Workspace/Theorems/SharpSelector.lean",
+          "lines": 118,
+          "decls": 1
+        }
+      ]
+    },
+    {
+      "id": "lemmas_prob",
+      "label": "Probability & bound lemmas (§3)",
+      "role": "lemma_stage",
+      "color": "#5CB874",
+      "files": 20,
+      "lines": 1915,
+      "decls": 33,
+      "is_root": false,
+      "modules": [
+        {
+          "module": "Workspace.Lemmas.Lemma_BernoulliIneq",
+          "file": "Workspace/Lemmas/Lemma_BernoulliIneq.lean",
+          "lines": 40,
+          "decls": 1
+        },
+        {
+          "module": "Workspace.Lemmas.Lemma_CSelFact",
+          "file": "Workspace/Lemmas/Lemma_CSelFact.lean",
+          "lines": 12,
+          "decls": 1
+        },
+        {
+          "module": "Workspace.Lemmas.Lemma_ExpBound",
+          "file": "Workspace/Lemmas/Lemma_ExpBound.lean",
+          "lines": 83,
+          "decls": 1
+        },
+        {
+          "module": "Workspace.Lemmas.Lemma_ExpectationEqSum",
+          "file": "Workspace/Lemmas/Lemma_ExpectationEqSum.lean",
+          "lines": 164,
+          "decls": 1
+        },
+        {
+          "module": "Workspace.Lemmas.Lemma_ExpectationLowerBound",
+          "file": "Workspace/Lemmas/Lemma_ExpectationLowerBound.lean",
+          "lines": 92,
+          "decls": 1
+        },
+        {
+          "module": "Workspace.Lemmas.Lemma_FinalBound",
+          "file": "Workspace/Lemmas/Lemma_FinalBound.lean",
+          "lines": 58,
+          "decls": 1
+        },
+        {
+          "module": "Workspace.Lemmas.Lemma_HeavyLe",
+          "file": "Workspace/Lemmas/Lemma_HeavyLe.lean",
+          "lines": 57,
+          "decls": 1
+        },
+        {
+          "module": "Workspace.Lemmas.Lemma_JointProbBasics",
+          "file": "Workspace/Lemmas/Lemma_JointProbBasics.lean",
+          "lines": 101,
+          "decls": 5
+        },
+        {
+          "module": "Workspace.Lemmas.Lemma_MaxWProb",
+          "file": "Workspace/Lemmas/Lemma_MaxWProb.lean",
+          "lines": 87,
+          "decls": 1
+        },
+        {
+          "module": "Workspace.Lemmas.Lemma_PositiveS",
+          "file": "Workspace/Lemmas/Lemma_PositiveS.lean",
+          "lines": 44,
+          "decls": 1
+        },
+        {
+          "module": "Workspace.Lemmas.Lemma_PowBoundFromRatio",
+          "file": "Workspace/Lemmas/Lemma_PowBoundFromRatio.lean",
+          "lines": 24,
+          "decls": 1
+        },
+        {
+          "module": "Workspace.Lemmas.Lemma_ProbGoodEvent",
+          "file": "Workspace/Lemmas/Lemma_ProbGoodEvent.lean",
+          "lines": 160,
+          "decls": 1
+        },
+        {
+          "module": "Workspace.Lemmas.Lemma_ProbXpMonotone",
+          "file": "Workspace/Lemmas/Lemma_ProbXpMonotone.lean",
+          "lines": 274,
+          "decls": 7
+        },
+        {
+          "module": "Workspace.Lemmas.Lemma_ProbXpSetMonotone",
+          "file": "Workspace/Lemmas/Lemma_ProbXpSetMonotone.lean",
+          "lines": 39,
+          "decls": 1
+        },
+        {
+          "module": "Workspace.Lemmas.Lemma_QLeOne",
+          "file": "Workspace/Lemmas/Lemma_QLeOne.lean",
+          "lines": 64,
+          "decls": 1
+        },
+        {
+          "module": "Workspace.Lemmas.Lemma_QPos",
+          "file": "Workspace/Lemmas/Lemma_QPos.lean",
+          "lines": 33,
+          "decls": 1
+        },
+        {
+          "module": "Workspace.Lemmas.Lemma_QPrimeLeOne",
+          "file": "Workspace/Lemmas/Lemma_QPrimeLeOne.lean",
+          "lines": 34,
+          "decls": 1
+        },
+        {
+          "module": "Workspace.Lemmas.Lemma_QPrimeLePDivSix",
+          "file": "Workspace/Lemmas/Lemma_QPrimeLePDivSix.lean",
+          "lines": 87,
+          "decls": 1
+        },
+        {
+          "module": "Workspace.Lemmas.Lemma_SumOverSubsetLe",
+          "file": "Workspace/Lemmas/Lemma_SumOverSubsetLe.lean",
+          "lines": 33,
+          "decls": 1
+        },
+        {
+          "module": "Workspace.Lemmas.Lemma_UnionDistribution",
+          "file": "Workspace/Lemmas/Lemma_UnionDistribution.lean",
+          "lines": 429,
+          "decls": 4
+        }
+      ]
+    },
+    {
+      "id": "lemmas_weight",
+      "label": "Weight (&lambda;H) construction lemmas",
+      "role": "lemma_stage",
+      "color": "#5CB874",
+      "files": 12,
+      "lines": 684,
+      "decls": 13,
+      "is_root": false,
+      "modules": [
+        {
+          "module": "Workspace.Lemmas.Lemma_LambdaHSumEqWRelation",
+          "file": "Workspace/Lemmas/Lemma_LambdaHSumEqWRelation.lean",
+          "lines": 89,
+          "decls": 1
+        },
+        {
+          "module": "Workspace.Lemmas.Lemma_LambdaHToWInequality",
+          "file": "Workspace/Lemmas/Lemma_LambdaHToWInequality.lean",
+          "lines": 138,
+          "decls": 1
+        },
+        {
+          "module": "Workspace.Lemmas.Lemma_LambdaHToWInequality_TermBound",
+          "file": "Workspace/Lemmas/Lemma_LambdaHToWInequality_TermBound.lean",
+          "lines": 96,
+          "decls": 1
+        },
+        {
+          "module": "Workspace.Lemmas.Lemma_LambdaH_DenomEq",
+          "file": "Workspace/Lemmas/Lemma_LambdaH_DenomEq.lean",
+          "lines": 60,
+          "decls": 2
+        },
+        {
+          "module": "Workspace.Lemmas.Lemma_LambdaH_DenomPos",
+          "file": "Workspace/Lemmas/Lemma_LambdaH_DenomPos.lean",
+          "lines": 33,
+          "decls": 1
+        },
+        {
+          "module": "Workspace.Lemmas.Lemma_LambdaH_LeOne",
+          "file": "Workspace/Lemmas/Lemma_LambdaH_LeOne.lean",
+          "lines": 49,
+          "decls": 1
+        },
+        {
+          "module": "Workspace.Lemmas.Lemma_LambdaH_Nonneg",
+          "file": "Workspace/Lemmas/Lemma_LambdaH_Nonneg.lean",
+          "lines": 30,
+          "decls": 1
+        },
+        {
+          "module": "Workspace.Lemmas.Lemma_LambdaH_NumNonneg",
+          "file": "Workspace/Lemmas/Lemma_LambdaH_NumNonneg.lean",
+          "lines": 34,
+          "decls": 1
+        },
+        {
+          "module": "Workspace.Lemmas.Lemma_LambdaH_NumSumEqDenom",
+          "file": "Workspace/Lemmas/Lemma_LambdaH_NumSumEqDenom.lean",
+          "lines": 41,
+          "decls": 1
+        },
+        {
+          "module": "Workspace.Lemmas.Lemma_LambdaH_NumZeroOfNotMem",
+          "file": "Workspace/Lemmas/Lemma_LambdaH_NumZeroOfNotMem.lean",
+          "lines": 34,
+          "decls": 1
+        },
+        {
+          "module": "Workspace.Lemmas.Lemma_LambdaH_SumOne",
+          "file": "Workspace/Lemmas/Lemma_LambdaH_SumOne.lean",
+          "lines": 50,
+          "decls": 1
+        },
+        {
+          "module": "Workspace.Lemmas.Lemma_LambdaH_Support",
+          "file": "Workspace/Lemmas/Lemma_LambdaH_Support.lean",
+          "lines": 30,
+          "decls": 1
+        }
+      ]
+    },
+    {
+      "id": "axiom",
+      "label": "Admitted axiom",
+      "role": "external_axiom",
+      "color": "#EB8C1E",
+      "files": 1,
+      "lines": 396,
+      "decls": 8,
+      "is_root": false,
+      "modules": [
+        {
+          "module": "Workspace.Lemmas.Lemma_KeyLemma",
+          "file": "Workspace/Lemmas/Lemma_KeyLemma.lean",
+          "lines": 396,
+          "decls": 8
+        }
+      ]
+    },
+    {
+      "id": "encoding",
+      "label": "Min-tower & cover machinery (§3.2&#8211;3.3)",
+      "role": "lemma_stage",
+      "color": "#5CB874",
+      "files": 7,
+      "lines": 1571,
+      "decls": 61,
+      "is_root": false,
+      "modules": [
+        {
+          "module": "Workspace.Definitions.CoverCollection",
+          "file": "Workspace/Definitions/CoverCollection.lean",
+          "lines": 87,
+          "decls": 5
+        },
+        {
+          "module": "Workspace.Encoding.Lemma32_LargeWeight",
+          "file": "Workspace/Encoding/Lemma32_LargeWeight.lean",
+          "lines": 401,
+          "decls": 6
+        },
+        {
+          "module": "Workspace.Encoding.MinTower",
+          "file": "Workspace/Encoding/MinTower.lean",
+          "lines": 268,
+          "decls": 15
+        },
+        {
+          "module": "Workspace.Encoding.NonemptyTower",
+          "file": "Workspace/Encoding/NonemptyTower.lean",
+          "lines": 360,
+          "decls": 9
+        },
+        {
+          "module": "Workspace.Encoding.Procedure",
+          "file": "Workspace/Encoding/Procedure.lean",
+          "lines": 266,
+          "decls": 22
+        },
+        {
+          "module": "Workspace.Encoding.TowerFrag",
+          "file": "Workspace/Encoding/TowerFrag.lean",
+          "lines": 147,
+          "decls": 3
+        },
+        {
+          "module": "Workspace.Lemmas.Lemma_CoverBoundFromNotPSmall",
+          "file": "Workspace/Lemmas/Lemma_CoverBoundFromNotPSmall.lean",
+          "lines": 42,
+          "decls": 1
+        }
+      ]
+    },
+    {
+      "id": "defs",
+      "label": "Definitions & types",
+      "role": "definitions_and_types",
+      "color": "#ECECEC",
+      "files": 5,
+      "lines": 136,
+      "decls": 14,
+      "is_root": false,
+      "modules": [
+        {
+          "module": "Workspace.Definitions.LambdaH",
+          "file": "Workspace/Definitions/LambdaH.lean",
+          "lines": 24,
+          "decls": 1
+        },
+        {
+          "module": "Workspace.Definitions.ProbDistributions",
+          "file": "Workspace/Definitions/ProbDistributions.lean",
+          "lines": 28,
+          "decls": 2
+        },
+        {
+          "module": "Workspace.Types.FractionalCover",
+          "file": "Workspace/Types/FractionalCover.lean",
+          "lines": 34,
+          "decls": 7
+        },
+        {
+          "module": "Workspace.Types.IntegralCover",
+          "file": "Workspace/Types/IntegralCover.lean",
+          "lines": 24,
+          "decls": 3
+        },
+        {
+          "module": "Workspace.Types.IsPSmall",
+          "file": "Workspace/Types/IsPSmall.lean",
+          "lines": 26,
+          "decls": 1
+        }
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "from": "ROOT",
+      "to": "lemmas_prob",
+      "bidirectional": false
+    },
+    {
+      "from": "axiom",
+      "to": "encoding",
+      "bidirectional": false
+    },
+    {
+      "from": "encoding",
+      "to": "defs",
+      "bidirectional": false
+    },
+    {
+      "from": "lemmas_prob",
+      "to": "axiom",
+      "bidirectional": false
+    },
+    {
+      "from": "lemmas_prob",
+      "to": "lemmas_weight",
+      "bidirectional": false
+    },
+    {
+      "from": "lemmas_weight",
+      "to": "defs",
+      "bidirectional": false
+    }
+  ]
+}
