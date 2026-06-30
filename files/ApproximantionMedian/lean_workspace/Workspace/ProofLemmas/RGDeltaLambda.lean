@@ -1,11 +1,9 @@
 import Mathlib
 import Workspace.RobustnessDefs
 import Workspace.ProofLemmas.RGDefs
-import Workspace.ProofLemmas.RGABranchComparison
 import Workspace.ProofLemmas.RGInteriorRoot
 
 open Workspace.ProofLemmas.RGDefs
-open Workspace.ProofLemmas.RGABranchComparison
 open Workspace.ProofLemmas.RGInteriorRoot
 
 namespace Workspace.ProofLemmas.RGDeltaLambda

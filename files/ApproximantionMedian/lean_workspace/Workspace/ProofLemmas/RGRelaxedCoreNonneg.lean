@@ -5,7 +5,6 @@ import Workspace.ProofLemmas.LambdaDeltaIdentity
 import Workspace.ProofLemmas.CGDefs
 import Workspace.ProofLemmas.CGOptimalSolutionForA1
 import Workspace.ProofLemmas.CGRelaxedCoreNonneg
-import Workspace.ProofLemmas.RGABranchComparison
 import Workspace.ProofLemmas.RGInteriorRoot
 import Workspace.ProofLemmas.RGDeltaLambda
 import Workspace.ProofLemmas.RGLambda2InUnitInterval
@@ -16,7 +15,6 @@ open Workspace.ProofLemmas.LambdaDeltaIdentity
 open Workspace.ProofLemmas.CGDefs
 open Workspace.ProofLemmas.CGOptimalSolutionForA1
 open Workspace.ProofLemmas.CGRelaxedCoreNonneg
-open Workspace.ProofLemmas.RGABranchComparison
 open Workspace.ProofLemmas.RGInteriorRoot
 open Workspace.ProofLemmas.RGDeltaLambda
 open Workspace.ProofLemmas.RGLambda2InUnitInterval

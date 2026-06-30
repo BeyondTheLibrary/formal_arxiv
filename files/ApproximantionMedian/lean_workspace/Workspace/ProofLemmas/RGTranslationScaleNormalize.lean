@@ -6,7 +6,6 @@ import Workspace.ConsistencyDefs
 import Workspace.RobustnessDefs
 import Workspace.ProofLemmas.RGDefs
 import Workspace.ProofLemmas.SocialCostTranslationInvariance
-import Workspace.ProofLemmas.OptSocialCostTranslationInvariance
 import Workspace.ProofLemmas.MedianTranslationInvariance
 import Workspace.ProofLemmas.MedianCoordinateReflection
 import Workspace.ProofLemmas.LqNormZeroIffEqZero

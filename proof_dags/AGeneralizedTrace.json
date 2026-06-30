@@ -47,7 +47,7 @@
       "role": "lemma_stage",
       "color": "#5CB874",
       "files": 6,
-      "lines": 788,
+      "lines": 787,
       "decls": 18,
       "is_root": false,
       "modules": [
@@ -66,7 +66,7 @@
         {
           "module": "Workspace.ProofLemmas.SublemmaPartialDeletionBound",
           "file": "Workspace/ProofLemmas/SublemmaPartialDeletionBound.lean",
-          "lines": 43,
+          "lines": 42,
           "decls": 1
         },
         {
@@ -95,7 +95,7 @@
       "role": "lemma_stage",
       "color": "#5CB874",
       "files": 12,
-      "lines": 4554,
+      "lines": 4553,
       "decls": 20,
       "is_root": false,
       "modules": [
@@ -120,7 +120,7 @@
         {
           "module": "Workspace.ProofLemmas.ParitySwapOddThree",
           "file": "Workspace/ProofLemmas/ParitySwapOddThree.lean",
-          "lines": 1916,
+          "lines": 1915,
           "decls": 3
         },
         {
@@ -323,7 +323,7 @@
       "role": "lemma_stage",
       "color": "#5CB874",
       "files": 39,
-      "lines": 8170,
+      "lines": 8167,
       "decls": 190,
       "is_root": false,
       "modules": [
@@ -414,7 +414,7 @@
         {
           "module": "Workspace.ProofLemmas.Path4Assembly",
           "file": "Workspace/ProofLemmas/Path4Assembly.lean",
-          "lines": 1382,
+          "lines": 1381,
           "decls": 23
         },
         {
@@ -462,7 +462,7 @@
         {
           "module": "Workspace.ProofLemmas.RareSupportShifted",
           "file": "Workspace/ProofLemmas/RareSupportShifted.lean",
-          "lines": 511,
+          "lines": 510,
           "decls": 1
         },
         {
@@ -474,7 +474,7 @@
         {
           "module": "Workspace.ProofLemmas.SublemmaLemma6",
           "file": "Workspace/ProofLemmas/SublemmaLemma6.lean",
-          "lines": 52,
+          "lines": 51,
           "decls": 1
         },
         {
@@ -569,7 +569,7 @@
       "role": "lemma_stage",
       "color": "#5CB874",
       "files": 16,
-      "lines": 6444,
+      "lines": 6443,
       "decls": 73,
       "is_root": false,
       "modules": [
@@ -612,7 +612,7 @@
         {
           "module": "Workspace.ProofLemmas.HeavyTypicalBound",
           "file": "Workspace/ProofLemmas/HeavyTypicalBound.lean",
-          "lines": 582,
+          "lines": 581,
           "decls": 1
         },
         {

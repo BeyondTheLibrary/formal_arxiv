@@ -95,7 +95,7 @@
       "role": "lemma_stage",
       "color": "#5CB874",
       "files": 11,
-      "lines": 1812,
+      "lines": 1811,
       "decls": 18,
       "is_root": false,
       "modules": [
@@ -156,7 +156,7 @@
         {
           "module": "Workspace.ProofLemmas.TranslationScaleNormalize",
           "file": "Workspace/ProofLemmas/TranslationScaleNormalize.lean",
-          "lines": 253,
+          "lines": 252,
           "decls": 1
         },
         {
@@ -287,7 +287,7 @@
       "role": "lemma_stage",
       "color": "#5CB874",
       "files": 20,
-      "lines": 1752,
+      "lines": 1751,
       "decls": 27,
       "is_root": false,
       "modules": [
@@ -348,7 +348,7 @@
         {
           "module": "Workspace.ProofLemmas.FqHasUniqueInteriorZero",
           "file": "Workspace/ProofLemmas/FqHasUniqueInteriorZero.lean",
-          "lines": 235,
+          "lines": 234,
           "decls": 2
         },
         {
@@ -641,7 +641,7 @@
       "role": "lemma_stage",
       "color": "#5CB874",
       "files": 11,
-      "lines": 1895,
+      "lines": 1894,
       "decls": 26,
       "is_root": false,
       "modules": [
@@ -708,7 +708,7 @@
         {
           "module": "Workspace.ProofLemmas.CGTranslationScaleNormalize",
           "file": "Workspace/ProofLemmas/CGTranslationScaleNormalize.lean",
-          "lines": 336,
+          "lines": 335,
           "decls": 1
         }
       ]
@@ -719,7 +719,7 @@
       "role": "lemma_stage",
       "color": "#5CB874",
       "files": 3,
-      "lines": 1420,
+      "lines": 1418,
       "decls": 5,
       "is_root": false,
       "modules": [
@@ -732,7 +732,7 @@
         {
           "module": "Workspace.ProofLemmas.RGRelaxedCoreNonneg",
           "file": "Workspace/ProofLemmas/RGRelaxedCoreNonneg.lean",
-          "lines": 549,
+          "lines": 547,
           "decls": 3
         },
         {
@@ -749,7 +749,7 @@
       "role": "lemma_stage",
       "color": "#5CB874",
       "files": 9,
-      "lines": 1565,
+      "lines": 1562,
       "decls": 17,
       "is_root": false,
       "modules": [
@@ -762,7 +762,7 @@
         {
           "module": "Workspace.ProofLemmas.RGDeltaLambda",
           "file": "Workspace/ProofLemmas/RGDeltaLambda.lean",
-          "lines": 85,
+          "lines": 83,
           "decls": 3
         },
         {
@@ -804,7 +804,7 @@
         {
           "module": "Workspace.ProofLemmas.RGTranslationScaleNormalize",
           "file": "Workspace/ProofLemmas/RGTranslationScaleNormalize.lean",
-          "lines": 332,
+          "lines": 331,
           "decls": 1
         }
       ]

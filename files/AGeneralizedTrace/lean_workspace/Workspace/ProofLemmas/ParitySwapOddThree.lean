@@ -7,7 +7,6 @@ import Workspace.Types.CoinFlipDist
 import Workspace.Types.PartialDeletionProcess
 import Workspace.Types.AlternatingSumExpression
 import Workspace.ProofLemmas.WitnessCoinFlipFormula
-import Workspace.ProofLemmas.PrefixSuffixMarginalsToOne
 import Workspace.ProofLemmas.BinomialPmfMaxBound
 import Workspace.ProofLemmas.CoinFlipDistExists
 import Workspace.ProofLemmas.OddNConstructionArith

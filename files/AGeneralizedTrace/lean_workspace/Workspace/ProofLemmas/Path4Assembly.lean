@@ -10,7 +10,6 @@ import Workspace.ProofLemmas.Path4FullQ
 import Workspace.ProofLemmas.Path4SuffixRecurrence
 import Workspace.ProofLemmas.Path4Envelope
 import Workspace.ProofLemmas.Path4MaskProd
-import Workspace.ProofLemmas.EllShiftReindex
 import Workspace.ProofLemmas.PrefixSuffixZSupport
 import Workspace.ProofLemmas.QFactorBounds
 import Workspace.ProofLemmas.WitnessOffsetTail

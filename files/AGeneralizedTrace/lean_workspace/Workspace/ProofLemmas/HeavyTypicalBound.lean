@@ -2,7 +2,6 @@ import Mathlib
 import Workspace.Types.AlternatingSumExpression
 import Workspace.ProofLemmas.HeavyEllCount
 import Workspace.ProofLemmas.SublemmaPerSummandBound
-import Workspace.ProofLemmas.TypicalSummandConstant
 
 set_option maxHeartbeats 8000000
 

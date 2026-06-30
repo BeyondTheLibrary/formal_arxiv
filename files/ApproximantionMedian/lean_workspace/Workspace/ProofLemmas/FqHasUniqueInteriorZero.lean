@@ -1,6 +1,5 @@
 import Mathlib
 import Workspace.ProofLemmas.FqSignAt0Pos
-import Workspace.ProofLemmas.FqDerivMonotone
 import Workspace.ProofLemmas.FqStrictConvex
 
 open Workspace.ProofLemmas.FqSignAt0Pos

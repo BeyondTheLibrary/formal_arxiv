@@ -1,7 +1,6 @@
 import Mathlib
 import Workspace.Types.AlternatingSumExpression
 import Workspace.Types.StirlingAxioms
-import Workspace.ProofLemmas.SublemmaSqrtSum
 import Workspace.ProofLemmas.BinomialPmfMaxBound
 import Workspace.ProofLemmas.NormaliserBound
 

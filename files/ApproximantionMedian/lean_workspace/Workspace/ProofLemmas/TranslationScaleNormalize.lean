@@ -5,7 +5,6 @@ import Workspace.Types.SocialCost
 import Workspace.ProofLemmas.UBDef
 import Workspace.ProofLemmas.SocialCostMinExists
 import Workspace.ProofLemmas.SocialCostTranslationInvariance
-import Workspace.ProofLemmas.OptSocialCostTranslationInvariance
 import Workspace.ProofLemmas.MedianTranslationInvariance
 import Workspace.ProofLemmas.MedianCoordinateReflection
 import Workspace.ProofLemmas.MainTheoremTrivialCases

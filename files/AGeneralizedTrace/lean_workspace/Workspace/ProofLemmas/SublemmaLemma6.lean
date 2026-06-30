@@ -8,7 +8,6 @@ import Workspace.Types.PartialDeletionProcess
 import Workspace.Types.LengthsOnlyProcess
 import Workspace.Types.AlternatingSumExpression
 import Workspace.Types.TVDistance
-import Workspace.Types.PartialDeletionAxioms
 import Workspace.ProofLemmas.PartialDeletionReducesToLengths
 import Workspace.ProofLemmas.LengthsDifferenceIsAlternatingSum
 import Workspace.ProofLemmas.PartialDominatesHCore

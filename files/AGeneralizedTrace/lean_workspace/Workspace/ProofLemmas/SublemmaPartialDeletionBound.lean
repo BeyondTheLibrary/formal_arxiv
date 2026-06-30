@@ -3,7 +3,6 @@ import Workspace.Types.ProbVec
 import Workspace.Types.DelProb
 import Workspace.Types.TraceDist
 import Workspace.Types.TVDistance
-import Workspace.Types.PartialDeletionAxioms
 import Workspace.ProofLemmas.LengthsOnlyExists
 import Workspace.ProofLemmas.PartialDeletionExists
 import Workspace.ProofLemmas.SublemmaLemma6
