@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Dependency graph · FormaliaXiv</title>
+  <title>Proof graph · FormaliaXiv</title>
   <link rel="stylesheet" href="../../../graph.css" />
 </head>
 <body>
@@ -12,29 +12,32 @@
       <div id="g-meta">
         <a id="g-back" href="#" title="Back to the paper viewer">←</a>
         <div>
-          <div id="g-title">Dependency graph</div>
-          <div id="g-subtitle">Lean declarations and what they depend on</div>
+          <div id="g-title">Proof graph</div>
+          <div id="g-subtitle">Proof stages and what they depend on</div>
         </div>
       </div>
       <div id="g-tools">
-        <input id="g-search" placeholder="find a declaration…" autocomplete="off" spellcheck="false" />
-        <label class="g-chk" title="Show only theorems &amp; axioms — the mathematical skeleton"><input type="checkbox" id="g-thms-only" /> theorems only</label>
-        <label class="g-chk"><input type="checkbox" id="g-labels" checked /> labels</label>
+        <input id="g-search" placeholder="find a stage or file…" autocomplete="off" spellcheck="false" />
+        <button id="g-collapse" type="button" title="Collapse every broken-apart block">collapse all</button>
         <button id="g-fit" type="button" title="Fit graph to view">fit</button>
       </div>
     </header>
 
+    <div id="g-open" hidden></div>
+
     <div id="g-stage">
-      <svg id="g-svg" xmlns="http://www.w3.org/2000/svg"></svg>
+      <div id="g-cy"></div>
 
       <div id="g-legend">
-        <div class="lg-row"><span class="lg-dot lg-root"></span> main theorem (root)</div>
-        <div class="lg-row"><span class="lg-dot lg-axiom"></span> axiom (assumed)</div>
-        <div class="lg-row"><span class="lg-dot lg-sorry"></span> contains <code>sorry</code></div>
-        <div class="lg-row"><span class="lg-dot lg-tainted"></span> rests on an assumption</div>
-        <div class="lg-row"><span class="lg-dot lg-proven"></span> theorem (proven)</div>
-        <div class="lg-row"><span class="lg-dot lg-def"></span> definition / construction</div>
-        <div class="lg-hint">bigger node = more used · scroll to zoom · drag to pan · hover a node · click to pin</div>
+        <div class="lg-row"><span class="lg-dot lg-theorem"></span> main theorem (root)</div>
+        <div class="lg-row"><span class="lg-dot lg-lemma"></span> proved lemma stage</div>
+        <div class="lg-row"><span class="lg-dot lg-prior"></span> prior work, reproven</div>
+        <div class="lg-row"><span class="lg-dot lg-axiom"></span> admitted axiom</div>
+        <div class="lg-row"><span class="lg-dot lg-defs"></span> definitions &amp; types</div>
+        <div class="lg-row"><span class="lg-dot lg-infra"></span> infrastructure</div>
+        <div class="lg-row" style="margin-top:6px"><span class="lg-line lg-stage"></span> stage dependency</div>
+        <div class="lg-row"><span class="lg-line lg-cross"></span> file-level dependency</div>
+        <div class="lg-hint">click blocks to break them into Lean files — open several at once · click a file to open its source · shift-click a file (or empty space) to collapse</div>
       </div>
 
       <div id="g-tip" hidden></div>
@@ -42,6 +45,10 @@
     </div>
   </div>
 
+  <script src="../../../lib/graph/cytoscape.min.js"></script>
+  <script src="../../../lib/graph/dagre.min.js"></script>
+  <script src="../../../lib/graph/cytoscape-dagre.js"></script>
+  <script src="../../../lib/graph/cytoscape-node-html-label.js"></script>
   <script type="module" src="../../../graph.js"></script>
 </body>
 </html>

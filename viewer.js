@@ -1485,10 +1485,34 @@ async function main() {
     if (h.lean_fqn) state.highlightByFqn.set(h.lean_fqn, h);
   }
 
+  // Deep link: ?file=<lean path> opens the Lean panel straight on that source
+  // (used by the proof-graph viewer's "open file" action). Run it alongside the
+  // PDF so a slow PDF render never delays showing the requested file.
+  const deepLink = openDeepLinkedFile();
+
   try {
     await buildPdfView(pdfUrl);
   } catch (e) {
     document.getElementById('loading').textContent = 'Failed to load PDF: ' + e;
+  }
+  await deepLink;
+}
+
+// Open the file named in the ?file= query param, if any, in the Lean panel.
+async function openDeepLinkedFile() {
+  const want = new URLSearchParams(location.search).get('file');
+  if (!want) return;
+  try {
+    openLeanPanel();
+    if (document.getElementById('lean-nav').hidden) await toggleNav();
+    await ensureFileList();
+    // Accept the path with or without the lean_workspace/ prefix.
+    const path = state.fileList.includes(want)
+      ? want
+      : state.fileList.find(f => f === LEAN_WORKSPACE_PREFIX + want || f.endsWith('/' + want) || f === want);
+    if (path) await loadFile(path);
+  } catch (e) {
+    /* deep link is best-effort; ignore failures */
   }
 }
 
