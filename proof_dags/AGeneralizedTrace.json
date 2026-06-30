@@ -677,7 +677,7 @@
       "role": "lemma_stage",
       "color": "#5CB874",
       "files": 36,
-      "lines": 8271,
+      "lines": 8270,
       "decls": 307,
       "is_root": false,
       "modules": [
@@ -888,7 +888,7 @@
         {
           "module": "Workspace.ProofLemmas.SublemmaFourierKway",
           "file": "Workspace/ProofLemmas/SublemmaFourierKway.lean",
-          "lines": 315,
+          "lines": 314,
           "decls": 1
         },
         {

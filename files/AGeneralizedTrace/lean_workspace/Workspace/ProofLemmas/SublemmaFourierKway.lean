@@ -11,7 +11,6 @@ import Workspace.ProofLemmas.BinomialPmfMaxBound
 import Workspace.ProofLemmas.MGFOfIteratedConvolution
 import Workspace.PriorWork.BinomialFourierClosedForm
 import Workspace.PriorWork.ModulusOfCircularConvolutionTriangle
-import Workspace.PriorWork.CircularConvolutionAsPeriodisation
 import Workspace.PriorWork.MGFOfConvolution
 import Workspace.PriorWork.ConvolutionTheoremDiscrete
 import Workspace.PriorWork.PrekopaLogConcave

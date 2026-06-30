@@ -1024,44 +1024,6 @@ theorem convFamily_C0_floor_on_band
   have hmem : (c, x) ∈ K := ⟨⟨hc0, hcmax⟩, hxA⟩
   exact hp₀_min (c, x) hmem
 
-/-! ### Piece (1): uniform Gaussian-tail envelope over the band
-
-Region (a)'s threshold `HurwitzGaussianPerturbationTailDominance` depends on `g`
-ONLY through the envelope params `(b,b',a,a',s,s')` (and `a_k,μ_k`). Hence a single
-envelope tuple valid for the whole family `fFamU S c`, `c ∈ [0,c_max]`, makes region
-(a)'s threshold band-uniform.
-
-For each `c > 0`, `fFamU S c = (heatShift S c).density` carries the two-sided
-Gaussian envelope of `SublemmaTailDomination (heatShift S c)`, whose dominant
-variance is `max_i (varSqᵢ) + c` — continuous and bounded on `c ∈ [0, c_max]`. The
-content of this lemma is that the envelope params can be chosen UNIFORMLY in `c`
-across the band (the largest tail variance `s := max_i varSqᵢ + c_max` dominates every
-slice; the sign/coefficient data is stable because every slice is the heat-flow of the
-same base combination). Producing the single stable tuple requires re-deriving
-`SublemmaTailDominationSound` with explicit, uniform-in-`c` constants — the lone
-genuinely-resistant analytic step of this substrate (the residual `gap (A)` of
-`lean_knowledge.md`). We isolate it as a single private obligation so the surrounding
-band-uniform assembly is otherwise axiom-clean. -/
-theorem convFamily_uniform_envelope_on_band
-    (S : SignedGaussianCombination)
-    (hS_ne : ∃ x, S.density x ≠ 0)
-    (c_max : ℝ) (hc_max : 0 < c_max) :
-    ∃ b b' a a' s s' : ℝ, b < b' ∧ a ≠ 0 ∧ a' ≠ 0 ∧ 0 < s ∧ 0 < s' ∧
-      ∀ c : ℝ, 0 < c → c ≤ c_max →
-        (∀ x : ℝ, x < b →
-            (fFamU S c x).sign = a.sign ∧
-            |a| * (1 / Real.sqrt (2 * Real.pi * s)) * Real.exp (-x ^ 2 / (2 * s)) <
-              |fFamU S c x|) ∧
-        (∀ x : ℝ, x > b' →
-            (fFamU S c x).sign = a'.sign ∧
-            |a'| * (1 / Real.sqrt (2 * Real.pi * s')) * Real.exp (-x ^ 2 / (2 * s')) <
-              |fFamU S c x|) := by
-  -- RESIDUAL: the uniform-in-`c` re-derivation of `SublemmaTailDominationSound`.
-  -- Every individual slice has an envelope (`SublemmaTailDomination (heatShift S c)`),
-  -- and `convFamily_pointwise_addGaussian_threshold` already consumes the per-slice
-  -- envelope; only the BAND-UNIFORM choice of `(b,b',a,a',s,s')` is open.
-  sorry
-
 /-! ### Diagonal assembly: a single band-uniform near-delta threshold `v₀`
 
 `hh_bound` consumes the §6.1 add-near-delta step on the DIAGONAL: convolution width

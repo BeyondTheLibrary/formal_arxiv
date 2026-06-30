@@ -327,7 +327,7 @@
       "role": "lemma_stage",
       "color": "#5CB874",
       "files": 45,
-      "lines": 13993,
+      "lines": 13955,
       "decls": 115,
       "is_root": false,
       "modules": [
@@ -370,7 +370,7 @@
         {
           "module": "Workspace.ProofLemmas.ConvSmallPreservesSimpleAndEnvelope",
           "file": "Workspace/ProofLemmas/ConvSmallPreservesSimpleAndEnvelope.lean",
-          "lines": 1126,
+          "lines": 1088,
           "decls": 18
         },
         {
