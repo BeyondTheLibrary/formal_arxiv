@@ -1,0 +1,1962 @@
+{
+  "paper_id": "cdc",
+  "envs": [
+    {
+      "env_id": "cdc:env:para:L1",
+      "kind": "paragraph",
+      "label": "para:L1",
+      "title": null,
+      "section": null,
+      "latex_file": "paper_text.tex",
+      "latex_range": {
+        "start_line": 1,
+        "end_line": 5,
+        "start_col": null,
+        "end_col": null
+      },
+      "page_range": {
+        "start_page": 1,
+        "end_page": 1
+      },
+      "head_text": "A PROOF OF THE CYCLE DOUBLE COVER CONJECTURE OPENAI Abstract",
+      "pdf_page": 1,
+      "links": [],
+      "not_formalized": false
+    },
+    {
+      "env_id": "cdc:env:para:L7",
+      "kind": "paragraph",
+      "label": "para:L7",
+      "title": null,
+      "section": null,
+      "latex_file": "paper_text.tex",
+      "latex_range": {
+        "start_line": 7,
+        "end_line": 36,
+        "start_col": null,
+        "end_col": null
+      },
+      "page_range": {
+        "start_page": 1,
+        "end_page": 1
+      },
+      "head_text": "1 Introduction A cycle double cover of a graph is",
+      "pdf_page": 1,
+      "links": [],
+      "not_formalized": false
+    },
+    {
+      "env_id": "cdc:env:para:L40",
+      "kind": "paragraph",
+      "label": "para:L40",
+      "title": null,
+      "section": null,
+      "latex_file": "paper_text.tex",
+      "latex_range": {
+        "start_line": 40,
+        "end_line": 44,
+        "start_col": null,
+        "end_col": null
+      },
+      "page_range": {
+        "start_page": 1,
+        "end_page": 1
+      },
+      "head_text": "Then G has a cycle double cover A proper 3",
+      "pdf_page": 1,
+      "links": [],
+      "not_formalized": false
+    },
+    {
+      "env_id": "cdc:env:para:L51",
+      "kind": "paragraph",
+      "label": "para:L51",
+      "title": null,
+      "section": null,
+      "latex_file": "paper_text.tex",
+      "latex_range": {
+        "start_line": 51,
+        "end_line": 58,
+        "start_col": null,
+        "end_col": null
+      },
+      "page_range": {
+        "start_page": 1,
+        "end_page": 1
+      },
+      "head_text": "For s let Ms e s Pe By 1 every",
+      "pdf_page": 2,
+      "links": [],
+      "not_formalized": false
+    },
+    {
+      "env_id": "cdc:env:para:L73",
+      "kind": "paragraph",
+      "label": "para:L73",
+      "title": null,
+      "section": null,
+      "latex_file": "paper_text.tex",
+      "latex_range": {
+        "start_line": 73,
+        "end_line": 79,
+        "start_col": null,
+        "end_col": null
+      },
+      "page_range": {
+        "start_page": 1,
+        "end_page": 1
+      },
+      "head_text": "are t t x t x t z and t",
+      "pdf_page": 2,
+      "links": [],
+      "not_formalized": false
+    },
+    {
+      "env_id": "cdc:env:para:L85",
+      "kind": "paragraph",
+      "label": "para:L85",
+      "title": null,
+      "section": null,
+      "latex_file": "paper_text.tex",
+      "latex_range": {
+        "start_line": 85,
+        "end_line": 90,
+        "start_col": null,
+        "end_col": null
+      },
+      "page_range": {
+        "start_page": 1,
+        "end_page": 1
+      },
+      "head_text": "The system 4 has a solution Assuming the lemma define",
+      "pdf_page": 2,
+      "links": [],
+      "not_formalized": false
+    },
+    {
+      "env_id": "cdc:env:para:L98",
+      "kind": "paragraph",
+      "label": "para:L98",
+      "title": null,
+      "section": null,
+      "latex_file": "paper_text.tex",
+      "latex_range": {
+        "start_line": 98,
+        "end_line": 111,
+        "start_col": null,
+        "end_col": null
+      },
+      "page_range": {
+        "start_page": 1,
+        "end_page": 1
+      },
+      "head_text": "Thus 4 asks whether d de e belongs to im",
+      "pdf_page": 2,
+      "links": [],
+      "not_formalized": false
+    },
+    {
+      "env_id": "cdc:env:para:L119",
+      "kind": "paragraph",
+      "label": "para:L119",
+      "title": null,
+      "section": null,
+      "latex_file": "paper_text.tex",
+      "latex_range": {
+        "start_line": 119,
+        "end_line": 122,
+        "start_col": null,
+        "end_col": null
+      },
+      "page_range": {
+        "start_page": 1,
+        "end_page": 1
+      },
+      "head_text": "Since the tv and e may be chosen independently this",
+      "pdf_page": 2,
+      "links": [],
+      "not_formalized": false
+    },
+    {
+      "env_id": "cdc:env:para:L128",
+      "kind": "paragraph",
+      "label": "para:L128",
+      "title": null,
+      "section": null,
+      "latex_file": "paper_text.tex",
+      "latex_range": {
+        "start_line": 128,
+        "end_line": 130,
+        "start_col": null,
+        "end_col": null
+      },
+      "page_range": {
+        "start_page": 1,
+        "end_page": 1
+      },
+      "head_text": "Consequently it suffices to prove that every family satisfying 5",
+      "pdf_page": 2,
+      "links": [],
+      "not_formalized": false
+    },
+    {
+      "env_id": "cdc:env:para:L147",
+      "kind": "paragraph",
+      "label": "para:L147",
+      "title": null,
+      "section": null,
+      "latex_file": "paper_text.tex",
+      "latex_range": {
+        "start_line": 147,
+        "end_line": 153,
+        "start_col": null,
+        "end_col": null
+      },
+      "page_range": {
+        "start_page": 1,
+        "end_page": 1
+      },
+      "head_text": "Set b x Since c a b and z x",
+      "pdf_page": 2,
+      "links": [],
+      "not_formalized": false
+    },
+    {
+      "env_id": "cdc:env:para:L160",
+      "kind": "paragraph",
+      "label": "para:L160",
+      "title": null,
+      "section": null,
+      "latex_file": "paper_text.tex",
+      "latex_range": {
+        "start_line": 160,
+        "end_line": 170,
+        "start_col": null,
+        "end_col": null
+      },
+      "page_range": {
+        "start_page": 1,
+        "end_page": 1
+      },
+      "head_text": "We next interpret If 0 all three dual vectors vanish",
+      "pdf_page": 3,
+      "links": [],
+      "not_formalized": false
+    },
+    {
+      "env_id": "cdc:env:para:L174",
+      "kind": "paragraph",
+      "label": "para:L174",
+      "title": null,
+      "section": null,
+      "latex_file": "paper_text.tex",
+      "latex_range": {
+        "start_line": 174,
+        "end_line": 182,
+        "start_col": null,
+        "end_col": null
+      },
+      "page_range": {
+        "start_page": 1,
+        "end_page": 1
+      },
+      "head_text": "Finally for e uv the definition de gu e gv",
+      "pdf_page": 3,
+      "links": [],
+      "not_formalized": false
+    },
+    {
+      "env_id": "cdc:env:para:L192",
+      "kind": "paragraph",
+      "label": "para:L192",
+      "title": null,
+      "section": null,
+      "latex_file": "paper_text.tex",
+      "latex_range": {
+        "start_line": 192,
+        "end_line": 193,
+        "start_col": null,
+        "end_col": null
+      },
+      "page_range": {
+        "start_page": 1,
+        "end_page": 1
+      },
+      "head_text": "Each edge with e 0 occurs twice in the last",
+      "pdf_page": 3,
+      "links": [],
+      "not_formalized": false
+    },
+    {
+      "env_id": "cdc:env:para:L201",
+      "kind": "paragraph",
+      "label": "para:L201",
+      "title": null,
+      "section": null,
+      "latex_file": "paper_text.tex",
+      "latex_range": {
+        "start_line": 201,
+        "end_line": 215,
+        "start_col": null,
+        "end_col": null
+      },
+      "page_range": {
+        "start_page": 1,
+        "end_page": 1
+      },
+      "head_text": "References 1 B Alspach L A Goddyn and C Q",
+      "pdf_page": 3,
+      "links": [],
+      "not_formalized": false
+    }
+  ],
+  "highlights": [
+    {
+      "link_id": "lnk_276f3ce3e5b01a7f",
+      "lean_fqn": "Workspace.Facts.Construction.cubic_flow_eq",
+      "lean_file": "lean_workspace/Workspace/Facts/Construction.lean",
+      "lean_range": {
+        "start_line": 124,
+        "end_line": 157,
+        "start_col": null,
+        "end_col": null
+      },
+      "kind": "equation",
+      "confidence": 0.85,
+      "source": "manual",
+      "verifier_vote": "none",
+      "rationale": "The loopless-cubic characteristic-two flow equation f(a)+f(b)+f(c)=0 at a vertex \u2014 exactly the paper's 'the flow equation is x + y + z = 0' with x=f(a), y=f(b), z=f(c).",
+      "reachable": true,
+      "assumption_tainted": false,
+      "latex_file": "paper_text.tex",
+      "latex_range": {
+        "start_line": 56,
+        "end_line": 56,
+        "start_col": null,
+        "end_col": null
+      },
+      "pdf_page": 2,
+      "prose": "incident edges as a, b, c and write x = f (a), y = f (b), and z = f (c). Since \u0393 has characteristic two, the"
+    },
+    {
+      "link_id": "lnk_d290d368a1af8f10",
+      "lean_fqn": "Workspace.Facts.Construction.cubic_flow_distinct",
+      "lean_file": "lean_workspace/Workspace/Facts/Construction.lean",
+      "lean_range": {
+        "start_line": 158,
+        "end_line": 188,
+        "start_col": null,
+        "end_col": null
+      },
+      "kind": "equation",
+      "confidence": 0.75,
+      "source": "manual",
+      "verifier_vote": "none",
+      "rationale": "Records z = x + y and x \u2260 y (the \u00a75 local notation). The 'x,y,z all nonzero' part is an extraction addition (#5); the core z=x+y and x\u2260y are the paper's own words.",
+      "reachable": true,
+      "assumption_tainted": false,
+      "latex_file": "paper_text.tex",
+      "latex_range": {
+        "start_line": 56,
+        "end_line": 56,
+        "start_col": null,
+        "end_col": null
+      },
+      "pdf_page": 2,
+      "prose": "incident edges as a, b, c and write x = f (a), y = f (b), and z = f (c). Since \u0393 has characteristic two, the"
+    },
+    {
+      "link_id": "lnk_e5decf0b6305139a",
+      "lean_fqn": "Workspace.Facts.Construction.fact_5a",
+      "lean_file": "lean_workspace/Workspace/Facts/Construction.lean",
+      "lean_range": {
+        "start_line": 189,
+        "end_line": 211,
+        "start_col": null,
+        "end_col": null
+      },
+      "kind": "equation",
+      "confidence": 0.7,
+      "source": "manual",
+      "verifier_vote": "none",
+      "rationale": "Fact 5a part (i): the three local sets in (3) equal {t,t+x}, {t+x,t+z}, {t,t+z}.",
+      "reachable": true,
+      "assumption_tainted": false,
+      "latex_file": "paper_text.tex",
+      "latex_range": {
+        "start_line": 72,
+        "end_line": 72,
+        "start_col": null,
+        "end_col": null
+      },
+      "pdf_page": 2,
+      "prose": "For any t \u2208 \u0393, the three local sets"
+    },
+    {
+      "link_id": "lnk_f4f555a5795b033f",
+      "lean_fqn": "Workspace.Facts.Construction.fact_5a_zero_or_two",
+      "lean_file": "lean_workspace/Workspace/Facts/Construction.lean",
+      "lean_range": {
+        "start_line": 212,
+        "end_line": 319,
+        "start_col": null,
+        "end_col": null
+      },
+      "kind": "equation",
+      "confidence": 0.7,
+      "source": "manual",
+      "verifier_vote": "none",
+      "rationale": "Fact 5a part (ii): every vector of \u0393 occurs in zero or two of the three local sets.",
+      "reachable": true,
+      "assumption_tainted": false,
+      "latex_file": "paper_text.tex",
+      "latex_range": {
+        "start_line": 72,
+        "end_line": 72,
+        "start_col": null,
+        "end_col": null
+      },
+      "pdf_page": 2,
+      "prose": "Hence every vector occurs in zero or two of them."
+    },
+    {
+      "link_id": "lnk_a931f7bcfd460c16",
+      "lean_fqn": "Workspace.Facts.Construction.fact_5b",
+      "lean_file": "lean_workspace/Workspace/Facts/Construction.lean",
+      "lean_range": {
+        "start_line": 320,
+        "end_line": 343,
+        "start_col": null,
+        "end_col": null
+      },
+      "kind": "lemma",
+      "confidence": 0.85,
+      "source": "manual",
+      "verifier_vote": "none",
+      "rationale": "Fact 5b, the agreement criterion \u2014 verbatim the paper's {A,A+p}={B,B+p} \u27fa A+B \u2208 {0,p}.",
+      "reachable": true,
+      "assumption_tainted": false,
+      "latex_file": "paper_text.tex",
+      "latex_range": {
+        "start_line": 74,
+        "end_line": 74,
+        "start_col": null,
+        "end_col": null
+      },
+      "pdf_page": 2,
+      "prose": "assignment works locally, but the two ends of an edge need not assign it the same set."
+    },
+    {
+      "link_id": "lnk_f0d2cd20c47043d4",
+      "lean_fqn": "Workspace.Facts.Construction.fact_5c",
+      "lean_file": "lean_workspace/Workspace/Facts/Construction.lean",
+      "lean_range": {
+        "start_line": 344,
+        "end_line": 410,
+        "start_col": null,
+        "end_col": null
+      },
+      "kind": "equation",
+      "confidence": 0.7,
+      "source": "manual",
+      "verifier_vote": "none",
+      "rationale": "Fact 5c: the local sets agree across every edge precisely when the system (4) t_u+t_v+\u03b5_e f(e)=d_e has a solution.",
+      "reachable": false,
+      "assumption_tainted": false,
+      "latex_file": "paper_text.tex",
+      "latex_range": {
+        "start_line": 77,
+        "end_line": 77,
+        "start_col": null,
+        "end_col": null
+      },
+      "pdf_page": 2,
+      "prose": "of \u03f5e \u2208 F2 records whether this vector is 0 or f (e). Thus the local sets in (3) agree across every edge"
+    },
+    {
+      "link_id": "lnk_04a2b1c71f4f0565",
+      "lean_fqn": "Workspace.Facts.Construction.fact_5d",
+      "lean_file": "lean_workspace/Workspace/Facts/Construction.lean",
+      "lean_range": {
+        "start_line": 411,
+        "end_line": 480,
+        "start_col": null,
+        "end_col": null
+      },
+      "kind": "proof_case",
+      "confidence": 0.7,
+      "source": "manual",
+      "verifier_vote": "none",
+      "rationale": "Fact 5d (assembly): given a solution of (4), P_e is well-defined independent of endpoint and has two elements, yielding condition (1).",
+      "reachable": true,
+      "assumption_tainted": false,
+      "latex_file": "paper_text.tex",
+      "latex_range": {
+        "start_line": 85,
+        "end_line": 85,
+        "start_col": null,
+        "end_col": null
+      },
+      "pdf_page": 2,
+      "prose": "Lemma 2.2. The system (4) has a solution."
+    },
+    {
+      "link_id": "lnk_830d49324971d9eb",
+      "lean_fqn": "Workspace.Facts.Duality.fact_6a",
+      "lean_file": "lean_workspace/Workspace/Facts/Duality.lean",
+      "lean_range": {
+        "start_line": 155,
+        "end_line": 187,
+        "start_col": null,
+        "end_col": null
+      },
+      "kind": "lemma",
+      "confidence": 0.85,
+      "source": "manual",
+      "verifier_vote": "none",
+      "rationale": "Fact 6a, the duality criterion: d\u2208im L iff every dual family vanishing on im L also has \u03a3_e \u03b7_e(d_e)=0.",
+      "reachable": true,
+      "assumption_tainted": false,
+      "latex_file": "paper_text.tex",
+      "latex_range": {
+        "start_line": 100,
+        "end_line": 100,
+        "start_col": null,
+        "end_col": null
+      },
+      "pdf_page": 2,
+      "prose": "with \u03b7e \u2208 \u0393\u2217 . By taking"
+    },
+    {
+      "link_id": "lnk_a7ad1200cf180cb1",
+      "lean_fqn": "Workspace.Facts.Duality.fact_6b",
+      "lean_file": "lean_workspace/Workspace/Facts/Duality.lean",
+      "lean_range": {
+        "start_line": 188,
+        "end_line": 227,
+        "start_col": null,
+        "end_col": null
+      },
+      "kind": "equation",
+      "confidence": 0.5,
+      "source": "manual",
+      "verifier_vote": "none",
+      "rationale": "Fact 6b, the expansion of \u03a3_e \u03b7_e(L(t,\u03b5)_e). The paper states it only as a displayed equation (pure math, may not highlight in the PDF text layer); quote is the trailing term of that display.",
+      "reachable": true,
+      "assumption_tainted": false,
+      "latex_file": "paper_text.tex",
+      "latex_range": {
+        "start_line": 109,
+        "end_line": 109,
+        "start_col": null,
+        "end_col": null
+      },
+      "pdf_page": 2,
+      "prose": "Since the tv and \u03f5e may be chosen independently"
+    },
+    {
+      "link_id": "lnk_50b1e8d6d43e2661",
+      "lean_fqn": "Workspace.Facts.Duality.fact_6c",
+      "lean_file": "lean_workspace/Workspace/Facts/Duality.lean",
+      "lean_range": {
+        "start_line": 228,
+        "end_line": 280,
+        "start_col": null,
+        "end_col": null
+      },
+      "kind": "lemma",
+      "confidence": 0.85,
+      "source": "manual",
+      "verifier_vote": "none",
+      "rationale": "Fact 6c: the annihilator of im L is exactly condition (5).",
+      "reachable": true,
+      "assumption_tainted": false,
+      "latex_file": "paper_text.tex",
+      "latex_range": {
+        "start_line": 118,
+        "end_line": 118,
+        "start_col": null,
+        "end_col": null
+      },
+      "pdf_page": 2,
+      "prose": "this vanishes for every (t, \u03f5) precisely when"
+    },
+    {
+      "link_id": "lnk_0abaa8072c49848b",
+      "lean_fqn": "Workspace.Facts.Duality.fact_6d",
+      "lean_file": "lean_workspace/Workspace/Facts/Duality.lean",
+      "lean_range": {
+        "start_line": 281,
+        "end_line": 304,
+        "start_col": null,
+        "end_col": null
+      },
+      "kind": "lemma",
+      "confidence": 0.85,
+      "source": "manual",
+      "verifier_vote": "none",
+      "rationale": "Fact 6d, the reduction: it suffices that every family satisfying (5) satisfies (6).",
+      "reachable": true,
+      "assumption_tainted": false,
+      "latex_file": "paper_text.tex",
+      "latex_range": {
+        "start_line": 127,
+        "end_line": 127,
+        "start_col": null,
+        "end_col": null
+      },
+      "pdf_page": 2,
+      "prose": "Consequently, it suffices to prove that every family satisfying"
+    },
+    {
+      "link_id": "lnk_65d31df1f0466861",
+      "lean_fqn": "Workspace.Facts.Duality.fact_6e",
+      "lean_file": "lean_workspace/Workspace/Facts/Duality.lean",
+      "lean_range": {
+        "start_line": 305,
+        "end_line": 332,
+        "start_col": null,
+        "end_col": null
+      },
+      "kind": "lemma",
+      "confidence": 0.8,
+      "source": "manual",
+      "verifier_vote": "none",
+      "rationale": "Fact 6e: local form of condition (5) at a vertex, i.e. equations (7).",
+      "reachable": true,
+      "assumption_tainted": false,
+      "latex_file": "paper_text.tex",
+      "latex_range": {
+        "start_line": 135,
+        "end_line": 135,
+        "start_col": null,
+        "end_col": null
+      },
+      "pdf_page": 2,
+      "prose": "Fix v and retain the notation a, b, c, x, y, z"
+    },
+    {
+      "link_id": "lnk_944dbc2c2d86a7f4",
+      "lean_fqn": "Workspace.Facts.Duality.fact_6f",
+      "lean_file": "lean_workspace/Workspace/Facts/Duality.lean",
+      "lean_range": {
+        "start_line": 368,
+        "end_line": 402,
+        "start_col": null,
+        "end_col": null
+      },
+      "kind": "lemma",
+      "confidence": 0.75,
+      "source": "manual",
+      "verifier_vote": "none",
+      "rationale": "Fact 6f: from \u03b7_c=\u03b7_a+\u03b7_b and z=x+y one gets \u03b7_a(y)=\u03bb.",
+      "reachable": true,
+      "assumption_tainted": false,
+      "latex_file": "paper_text.tex",
+      "latex_range": {
+        "start_line": 148,
+        "end_line": 148,
+        "start_col": null,
+        "end_col": null
+      },
+      "pdf_page": 2,
+      "prose": "0 = \u03b7c (z) = \u03b7a (y) + \u03b7b (x),"
+    },
+    {
+      "link_id": "lnk_5095f96b274e838d",
+      "lean_fqn": "Workspace.Facts.Duality.fact_6g",
+      "lean_file": "lean_workspace/Workspace/Facts/Duality.lean",
+      "lean_range": {
+        "start_line": 403,
+        "end_line": 423,
+        "start_col": null,
+        "end_col": null
+      },
+      "kind": "equation",
+      "confidence": 0.75,
+      "source": "manual",
+      "verifier_vote": "none",
+      "rationale": "Fact 6g, equation (8): only edge b contributes at v, so \u03a3_{e\u220bv} \u03b7_e(g_{v,e}) = \u03b7_b(x) = \u03bb.",
+      "reachable": true,
+      "assumption_tainted": false,
+      "latex_file": "paper_text.tex",
+      "latex_range": {
+        "start_line": 148,
+        "end_line": 148,
+        "start_col": null,
+        "end_col": null
+      },
+      "pdf_page": 2,
+      "prose": "0 = \u03b7c (z) = \u03b7a (y) + \u03b7b (x),"
+    },
+    {
+      "link_id": "lnk_3ab24ef75540c1ec",
+      "lean_fqn": "Workspace.Facts.Duality.fact_6i",
+      "lean_file": "lean_workspace/Workspace/Facts/Duality.lean",
+      "lean_range": {
+        "start_line": 424,
+        "end_line": 449,
+        "start_col": null,
+        "end_col": null
+      },
+      "kind": "lemma",
+      "confidence": 0.7,
+      "source": "manual",
+      "verifier_vote": "none",
+      "rationale": "Fact 6i: for a 2-dim subspace W\u2264\u0393 there is a unique nonzero \u03b7\u2208\u0393* with \u03b7|_W=0.",
+      "reachable": true,
+      "assumption_tainted": false,
+      "latex_file": "paper_text.tex",
+      "latex_range": {
+        "start_line": 159,
+        "end_line": 159,
+        "start_col": null,
+        "end_col": null
+      },
+      "pdf_page": 3,
+      "prose": "There is a unique nonzero dual vector which vanishes on this two-dimensional space"
+    },
+    {
+      "link_id": "lnk_61ac680952abac68",
+      "lean_fqn": "Workspace.Facts.Duality.fact_6h",
+      "lean_file": "lean_workspace/Workspace/Facts/Duality.lean",
+      "lean_range": {
+        "start_line": 479,
+        "end_line": 571,
+        "start_col": null,
+        "end_col": null
+      },
+      "kind": "lemma",
+      "confidence": 0.8,
+      "source": "manual",
+      "verifier_vote": "none",
+      "rationale": "Fact 6h: \u03bb equals the parity of #{e\u220bv : \u03b7_e\u22600}.",
+      "reachable": true,
+      "assumption_tainted": false,
+      "latex_file": "paper_text.tex",
+      "latex_range": {
+        "start_line": 161,
+        "end_line": 161,
+        "start_col": null,
+        "end_col": null
+      },
+      "pdf_page": 3,
+      "prose": "dual vector which vanishes on this two-dimensional space, so each of \u03b7a , \u03b7b , \u03b7c is either zero or this vector."
+    },
+    {
+      "link_id": "lnk_af216899877e1b3b",
+      "lean_fqn": "Workspace.Facts.Duality.fact_6h_eq9",
+      "lean_file": "lean_workspace/Workspace/Facts/Duality.lean",
+      "lean_range": {
+        "start_line": 572,
+        "end_line": 587,
+        "start_col": null,
+        "end_col": null
+      },
+      "kind": "equation",
+      "confidence": 0.65,
+      "source": "manual",
+      "verifier_vote": "none",
+      "rationale": "Fact 6h equation (9): \u03a3_{e\u220bv} \u03b7_e(g_{v,e}) = \u03a3_{e\u220bv} 1_{\u03b7_e\u22600}, combining (8) with the \u03bb-parity claim.",
+      "reachable": true,
+      "assumption_tainted": false,
+      "latex_file": "paper_text.tex",
+      "latex_range": {
+        "start_line": 162,
+        "end_line": 162,
+        "start_col": null,
+        "end_col": null
+      },
+      "pdf_page": 3,
+      "prose": "Since their sum is zero, the nonzero vector occurs zero or two times. If \u03bb = 1, their values on the ordered"
+    },
+    {
+      "link_id": "lnk_3b180d88da0052d5",
+      "lean_fqn": "Workspace.Facts.Duality.fact_6j_edge",
+      "lean_file": "lean_workspace/Workspace/Facts/Duality.lean",
+      "lean_range": {
+        "start_line": 588,
+        "end_line": 600,
+        "start_col": null,
+        "end_col": null
+      },
+      "kind": "have_step",
+      "confidence": 0.7,
+      "source": "manual",
+      "verifier_vote": "none",
+      "rationale": "Fact 6j step 1: per-edge split \u03b7_e(d_e)=\u03b7_e(g_{u,e})+\u03b7_e(g_{v,e}).",
+      "reachable": false,
+      "assumption_tainted": false,
+      "latex_file": "paper_text.tex",
+      "latex_range": {
+        "start_line": 172,
+        "end_line": 172,
+        "start_col": null,
+        "end_col": null
+      },
+      "pdf_page": 3,
+      "prose": "Finally, for e = uv, the definition"
+    },
+    {
+      "link_id": "lnk_12934b2d0736aa8c",
+      "lean_fqn": "Workspace.Facts.Duality.fact_6j_double_count",
+      "lean_file": "lean_workspace/Workspace/Facts/Duality.lean",
+      "lean_range": {
+        "start_line": 601,
+        "end_line": 617,
+        "start_col": null,
+        "end_col": null
+      },
+      "kind": "have_step",
+      "confidence": 0.65,
+      "source": "manual",
+      "verifier_vote": "none",
+      "rationale": "Fact 6j step 2: regroup the edge sum by vertex endpoints (double count).",
+      "reachable": true,
+      "assumption_tainted": false,
+      "latex_file": "paper_text.tex",
+      "latex_range": {
+        "start_line": 173,
+        "end_line": 173,
+        "start_col": null,
+        "end_col": null
+      },
+      "pdf_page": 3,
+      "prose": "Summing over all edges and then grouping the two endpoint terms"
+    },
+    {
+      "link_id": "lnk_fef221ca5ef1ff14",
+      "lean_fqn": "Workspace.Facts.Duality.fact_6j_eq9_sum",
+      "lean_file": "lean_workspace/Workspace/Facts/Duality.lean",
+      "lean_range": {
+        "start_line": 618,
+        "end_line": 631,
+        "start_col": null,
+        "end_col": null
+      },
+      "kind": "have_step",
+      "confidence": 0.55,
+      "source": "manual",
+      "verifier_vote": "none",
+      "rationale": "Fact 6j step 3: apply (9) to rewrite the grouped sum as \u03a3_v \u03a3_{e\u220bv} 1_{\u03b7_e\u22600}. Same paper sentence/display as step 2 (no separate prose); low confidence.",
+      "reachable": true,
+      "assumption_tainted": false,
+      "latex_file": "paper_text.tex",
+      "latex_range": {
+        "start_line": 173,
+        "end_line": 173,
+        "start_col": null,
+        "end_col": null
+      },
+      "pdf_page": 3,
+      "prose": "grouping the two endpoint terms at each vertex, (9) gives"
+    },
+    {
+      "link_id": "lnk_49f582ed2cf3afb8",
+      "lean_fqn": "Workspace.Facts.Duality.fact_6j_two_mul",
+      "lean_file": "lean_workspace/Workspace/Facts/Duality.lean",
+      "lean_range": {
+        "start_line": 632,
+        "end_line": 655,
+        "start_col": null,
+        "end_col": null
+      },
+      "kind": "have_step",
+      "confidence": 0.7,
+      "source": "manual",
+      "verifier_vote": "none",
+      "rationale": "Fact 6j step 4: each nonzero-\u03b7 edge counted twice, so the sum is 2\u00b7\u03a3 1_{\u03b7_e\u22600}=0 in \ud835\udd3d\u2082.",
+      "reachable": true,
+      "assumption_tainted": false,
+      "latex_file": "paper_text.tex",
+      "latex_range": {
+        "start_line": 190,
+        "end_line": 190,
+        "start_col": null,
+        "end_col": null
+      },
+      "pdf_page": 3,
+      "prose": "occurs twice in the last sum, once at each endpoint"
+    },
+    {
+      "link_id": "lnk_b2aa01a0f09ce118",
+      "lean_fqn": "Workspace.Facts.Duality.fact_6j",
+      "lean_file": "lean_workspace/Workspace/Facts/Duality.lean",
+      "lean_range": {
+        "start_line": 656,
+        "end_line": 674,
+        "start_col": null,
+        "end_col": null
+      },
+      "kind": "lemma",
+      "confidence": 0.8,
+      "source": "manual",
+      "verifier_vote": "none",
+      "rationale": "Fact 6j (concluding (6)): \u03a3_e \u03b7_e(d_e)=0, establishing (6).",
+      "reachable": true,
+      "assumption_tainted": false,
+      "latex_file": "paper_text.tex",
+      "latex_range": {
+        "start_line": 191,
+        "end_line": 191,
+        "start_col": null,
+        "end_col": null
+      },
+      "pdf_page": 3,
+      "prose": "This proves (6); by the duality criterion above"
+    },
+    {
+      "link_id": "lnk_12a8e771a2adecb1",
+      "lean_fqn": "Workspace.Facts.Duality.lemma_2_2",
+      "lean_file": "lean_workspace/Workspace/Facts/Duality.lean",
+      "lean_range": {
+        "start_line": 675,
+        "end_line": 686,
+        "start_col": null,
+        "end_col": null
+      },
+      "kind": "lemma",
+      "confidence": 0.95,
+      "source": "manual",
+      "verifier_vote": "none",
+      "rationale": "Lemma 2.2 itself: the system (4) has a solution.",
+      "reachable": true,
+      "assumption_tainted": false,
+      "latex_file": "paper_text.tex",
+      "latex_range": {
+        "start_line": 84,
+        "end_line": 84,
+        "start_col": null,
+        "end_col": null
+      },
+      "pdf_page": 2,
+      "prose": "The system (4) has a solution"
+    },
+    {
+      "link_id": "lnk_b7848d03100db36f",
+      "lean_fqn": "Workspace.Facts.Lemma21.fact_2_1a",
+      "lean_file": "lean_workspace/Workspace/Facts/Lemma21.lean",
+      "lean_range": {
+        "start_line": 93,
+        "end_line": 110,
+        "start_col": null,
+        "end_col": null
+      },
+      "kind": "proof_case",
+      "confidence": 0.8,
+      "source": "manual",
+      "verifier_vote": "none",
+      "rationale": "Fact 2.1a: condition (1) says exactly that every vertex has degree 0 or 2 in M_s (stated here as an iff).",
+      "reachable": true,
+      "assumption_tainted": false,
+      "latex_file": "paper_text.tex",
+      "latex_range": {
+        "start_line": 50,
+        "end_line": 50,
+        "start_col": null,
+        "end_col": null
+      },
+      "pdf_page": 2,
+      "prose": "every vertex has degree zero or two in Ms"
+    },
+    {
+      "link_id": "lnk_29ec73b530f2abab",
+      "lean_fqn": "Workspace.Facts.Lemma21.fact_2_1b_decomposition",
+      "lean_file": "lean_workspace/Workspace/Facts/Lemma21.lean",
+      "lean_range": {
+        "start_line": 266,
+        "end_line": 270,
+        "start_col": null,
+        "end_col": null
+      },
+      "kind": "proof_case",
+      "confidence": 0.85,
+      "source": "manual",
+      "verifier_vote": "none",
+      "rationale": "Fact 2.1b: a finite loopless graph with all degrees 0 or 2 decomposes into cycles ('Ms is a disjoint union of cycles').",
+      "reachable": true,
+      "assumption_tainted": false,
+      "latex_file": "paper_text.tex",
+      "latex_range": {
+        "start_line": 51,
+        "end_line": 51,
+        "start_col": null,
+        "end_col": null
+      },
+      "pdf_page": 2,
+      "prose": "Proof. For s \u2208 \u0393, let Ms = e : s \u2208 Pe . By (1), every vertex has degree zero or two in Ms , so Ms is a"
+    },
+    {
+      "link_id": "lnk_504f47e943237955",
+      "lean_fqn": "Workspace.Facts.Lemma21.fact_2_1c",
+      "lean_file": "lean_workspace/Workspace/Facts/Lemma21.lean",
+      "lean_range": {
+        "start_line": 272,
+        "end_line": 280,
+        "start_col": null,
+        "end_col": null
+      },
+      "kind": "proof_case",
+      "confidence": 0.9,
+      "source": "manual",
+      "verifier_vote": "none",
+      "rationale": "Fact 2.1c: every edge lies in exactly two of the M_s since P_e has two elements.",
+      "reachable": true,
+      "assumption_tainted": false,
+      "latex_file": "paper_text.tex",
+      "latex_range": {
+        "start_line": 51,
+        "end_line": 51,
+        "start_col": null,
+        "end_col": null
+      },
+      "pdf_page": 2,
+      "prose": "Proof. For s \u2208 \u0393, let Ms = e : s \u2208 Pe . By (1), every vertex has degree zero or two in Ms , so Ms is a"
+    },
+    {
+      "link_id": "lnk_c39512bbd4e5d8ff",
+      "lean_fqn": "Workspace.Facts.Lemma21.fact_2_1d",
+      "lean_file": "lean_workspace/Workspace/Facts/Lemma21.lean",
+      "lean_range": {
+        "start_line": 282,
+        "end_line": 319,
+        "start_col": null,
+        "end_col": null
+      },
+      "kind": "proof_case",
+      "confidence": 0.9,
+      "source": "manual",
+      "verifier_vote": "none",
+      "rationale": "Fact 2.1d: the cycle components of all the M_s, with multiplicity, form a cycle double cover.",
+      "reachable": true,
+      "assumption_tainted": false,
+      "latex_file": "paper_text.tex",
+      "latex_range": {
+        "start_line": 52,
+        "end_line": 52,
+        "start_col": null,
+        "end_col": null
+      },
+      "pdf_page": 2,
+      "prose": "disjoint union of cycles. Every edge belongs to exactly two of the Ms , since Pe has two elements. The"
+    },
+    {
+      "link_id": "lnk_bc51673698282c25",
+      "lean_fqn": "Workspace.Facts.Lemma21.remark_2_1e",
+      "lean_file": "lean_workspace/Workspace/Facts/Lemma21.lean",
+      "lean_range": {
+        "start_line": 321,
+        "end_line": 461,
+        "start_col": null,
+        "end_col": null
+      },
+      "kind": "remark",
+      "confidence": 0.8,
+      "source": "manual",
+      "verifier_vote": "none",
+      "rationale": "Remark 2.1e: a proper 3-edge-colouring gives palettes {0,e1},{0,e2},{e1,e2} satisfying (1) (Lean adds e1,e2 nonzero, the extraction's documented repair).",
+      "reachable": false,
+      "assumption_tainted": false,
+      "latex_file": "paper_text.tex",
+      "latex_range": {
+        "start_line": 41,
+        "end_line": 41,
+        "start_col": null,
+        "end_col": null
+      },
+      "pdf_page": 1,
+      "prose": "A proper 3-edge-colouring is an assignment of this form. For distinct e1 , e2 \u2208 \u0393, assign 0, e1 , 0, e2 ,"
+    },
+    {
+      "link_id": "lnk_80d2dd7b738b8b8c",
+      "lean_fqn": "Workspace.Facts.Lemma21.lemma_2_1",
+      "lean_file": "lean_workspace/Workspace/Facts/Lemma21.lean",
+      "lean_range": {
+        "start_line": 463,
+        "end_line": 485,
+        "start_col": null,
+        "end_col": null
+      },
+      "kind": "lemma",
+      "confidence": 0.95,
+      "source": "manual",
+      "verifier_vote": "none",
+      "rationale": "Lemma 2.1 exactly: loopless cubic + two-element assignment P satisfying (1) implies a cycle double cover.",
+      "reachable": true,
+      "assumption_tainted": false,
+      "latex_file": "paper_text.tex",
+      "latex_range": {
+        "start_line": 34,
+        "end_line": 34,
+        "start_col": null,
+        "end_col": null
+      },
+      "pdf_page": 1,
+      "prose": "Lemma 2.1. Let G be a loopless cubic multigraph. Suppose that every edge e is assigned a two-element"
+    },
+    {
+      "link_id": "lnk_3e2a95734c212f2c",
+      "lean_fqn": "Workspace.MainTheorem.theorem_1_1",
+      "lean_file": "lean_workspace/Workspace/MainTheorem.lean",
+      "lean_range": {
+        "start_line": 114,
+        "end_line": 132,
+        "start_col": null,
+        "end_col": null
+      },
+      "kind": "theorem",
+      "confidence": 0.97,
+      "source": "manual",
+      "verifier_vote": "none",
+      "rationale": "The paper's main theorem, verbatim: finite bridgeless multigraph has a cycle double cover.",
+      "reachable": true,
+      "assumption_tainted": true,
+      "latex_file": "paper_text.tex",
+      "latex_range": {
+        "start_line": 11,
+        "end_line": 11,
+        "start_col": null,
+        "end_col": null
+      },
+      "pdf_page": 1,
+      "prose": "Theorem 1.1. Every finite bridgeless undirected graph has a cycle double cover."
+    },
+    {
+      "link_id": "lnk_3fb311624d609fe2",
+      "lean_fqn": "Workspace.MainTheorem.theorem_1_1_of_cubic_case",
+      "lean_file": "lean_workspace/Workspace/MainTheorem.lean",
+      "lean_range": {
+        "start_line": 145,
+        "end_line": 153,
+        "start_col": null,
+        "end_col": null
+      },
+      "kind": "theorem",
+      "confidence": 0.88,
+      "source": "manual",
+      "verifier_vote": "none",
+      "rationale": "Prior work A (Jaeger): the reduction that the general case follows from the loopless-cubic case.",
+      "reachable": false,
+      "assumption_tainted": true,
+      "latex_file": "paper_text.tex",
+      "latex_range": {
+        "start_line": 23,
+        "end_line": 24,
+        "start_col": null,
+        "end_col": null
+      },
+      "pdf_page": 1,
+      "prose": "We allow parallel edges and regard two parallel edges as a cycle. By Jaeger [3, Proposition 4], it suffices to treat loopless cubic graphs. In fact, Jaeger observed that a minimum counterexample must fail to be"
+    },
+    {
+      "link_id": "lnk_93fae010d1412d59",
+      "lean_fqn": "Workspace.MainTheorem.theorem_1_1_cubic_case",
+      "lean_file": "lean_workspace/Workspace/MainTheorem.lean",
+      "lean_range": {
+        "start_line": 133,
+        "end_line": 144,
+        "start_col": null,
+        "end_col": null
+      },
+      "kind": "theorem",
+      "confidence": 0.6,
+      "source": "manual",
+      "verifier_vote": "none",
+      "rationale": "The loopless-cubic case the paper actually proves (Fact 5d assembly): the local computation gives (1) and Lemma 2.1 concludes. Lower confidence: the paper does not state this as a separate numbered theorem.",
+      "reachable": false,
+      "assumption_tainted": true,
+      "latex_file": "paper_text.tex",
+      "latex_range": {
+        "start_line": 87,
+        "end_line": 87,
+        "start_col": null,
+        "end_col": null
+      },
+      "pdf_page": 2,
+      "prose": "makes this independent of the endpoint, and f (e) \u0338= 0 makes the two elements distinct. The local"
+    },
+    {
+      "link_id": "lnk_68d545ec9cd4e420",
+      "lean_fqn": "Workspace.PriorWork.jaeger_cubic_reduction",
+      "lean_file": "lean_workspace/Workspace/PriorWork.lean",
+      "lean_range": {
+        "start_line": 51,
+        "end_line": 69,
+        "start_col": null,
+        "end_col": null
+      },
+      "kind": "theorem",
+      "confidence": 0.9,
+      "source": "manual",
+      "verifier_vote": "none",
+      "rationale": "Prior work A (Jaeger [3, Proposition 4]): it suffices to treat loopless cubic graphs \u2014 the reduction the paper invokes here.",
+      "reachable": true,
+      "assumption_tainted": true,
+      "latex_file": "paper_text.tex",
+      "latex_range": {
+        "start_line": 23,
+        "end_line": 23,
+        "start_col": null,
+        "end_col": null
+      },
+      "pdf_page": 1,
+      "prose": "We allow parallel edges and regard two parallel edges as a cycle. By Jaeger [3, Proposition 4], it suffices"
+    },
+    {
+      "link_id": "lnk_f3bb2c27d2f2cbb3",
+      "lean_fqn": "Workspace.PriorWork.kilpatrick_jaeger_nowhere_zero_gamma_flow",
+      "lean_file": "lean_workspace/Workspace/PriorWork.lean",
+      "lean_range": {
+        "start_line": 70,
+        "end_line": 83,
+        "start_col": null,
+        "end_col": null
+      },
+      "kind": "theorem",
+      "confidence": 0.9,
+      "source": "manual",
+      "verifier_vote": "none",
+      "rationale": "Prior work B (the 8-flow theorem): every bridgeless graph has a nowhere-zero \u0393-flow \u2014 the Kilpatrick/Jaeger result the paper cites.",
+      "reachable": true,
+      "assumption_tainted": true,
+      "latex_file": "paper_text.tex",
+      "latex_range": {
+        "start_line": 30,
+        "end_line": 30,
+        "start_col": null,
+        "end_col": null
+      },
+      "pdf_page": 1,
+      "prose": "Let \u0393 = F32 , written additively. Kilpatrick and Jaeger independently proved that every bridgeless graph"
+    },
+    {
+      "link_id": "lnk_6b0f1763dabd1fed",
+      "lean_fqn": "Workspace.PriorWork.tutte_group_flow",
+      "lean_file": "lean_workspace/Workspace/PriorWork.lean",
+      "lean_range": {
+        "start_line": 84,
+        "end_line": 95,
+        "start_col": null,
+        "end_col": null
+      },
+      "kind": "theorem",
+      "confidence": 0.85,
+      "source": "manual",
+      "verifier_vote": "none",
+      "rationale": "Prior work C (Tutte's group-flow theorem): nowhere-zero A-flow \u27fa nowhere-zero integer |A|-flow \u2014 the theorem the paper names.",
+      "reachable": false,
+      "assumption_tainted": false,
+      "latex_file": "paper_text.tex",
+      "latex_range": {
+        "start_line": 31,
+        "end_line": 31,
+        "start_col": null,
+        "end_col": null
+      },
+      "pdf_page": 1,
+      "prose": "has a nowhere-zero \u0393-flow [5, 4], or, equivalently by Tutte\u2019s group-flow theorem, a nowhere-zero 8-flow [9]."
+    },
+    {
+      "link_id": "lnk_a092fe63dcc51a97",
+      "lean_fqn": "Workspace.PriorWork.tutte_gamma_flow_iff_integer_eight_flow",
+      "lean_file": "lean_workspace/Workspace/PriorWork.lean",
+      "lean_range": {
+        "start_line": 96,
+        "end_line": 102,
+        "start_col": null,
+        "end_col": null
+      },
+      "kind": "corollary",
+      "confidence": 0.85,
+      "source": "manual",
+      "verifier_vote": "none",
+      "rationale": "The A=\u0393, k=8 corollary of Tutte's group-flow theorem the paper actually uses: nowhere-zero \u0393-flow \u27fa nowhere-zero integer 8-flow.",
+      "reachable": false,
+      "assumption_tainted": false,
+      "latex_file": "paper_text.tex",
+      "latex_range": {
+        "start_line": 31,
+        "end_line": 31,
+        "start_col": null,
+        "end_col": null
+      },
+      "pdf_page": 1,
+      "prose": "has a nowhere-zero \u0393-flow [5, 4], or, equivalently by Tutte\u2019s group-flow theorem, a nowhere-zero 8-flow [9]."
+    },
+    {
+      "link_id": "lnk_248c95caca572b07",
+      "lean_fqn": "Workspace.PriorWorkProofs.EightFlow.bridgeless_gamma_flow",
+      "lean_file": "lean_workspace/Workspace/PriorWorkProofs/EightFlow/Reduction.lean",
+      "lean_range": {
+        "start_line": 106,
+        "end_line": 244,
+        "start_col": null,
+        "end_col": null
+      },
+      "kind": "theorem",
+      "confidence": 0.85,
+      "source": "manual",
+      "verifier_vote": "none",
+      "rationale": "This is the paper's Prior work B (the 8-flow theorem): every finite bridgeless multigraph has a nowhere-zero \u0393-flow (\u0393 = \ud835\udd3d\u2082\u00b3). The paper invokes it as a citation; here it is reproved outright. Same statement as the cited Kilpatrick-Jaeger result.",
+      "reachable": true,
+      "assumption_tainted": true,
+      "latex_file": "paper_text.tex",
+      "latex_range": {
+        "start_line": 30,
+        "end_line": 30,
+        "start_col": null,
+        "end_col": null
+      },
+      "pdf_page": 1,
+      "prose": "Let \u0393 = F32 , written additively. Kilpatrick and Jaeger independently proved that every bridgeless graph"
+    },
+    {
+      "link_id": "lnk_cbbd4a9b8f805a1f",
+      "lean_fqn": "Workspace.PriorWorkProofs.Jaeger.jaeger_cubic_reduction_proof",
+      "lean_file": "lean_workspace/Workspace/PriorWorkProofs/Jaeger/Reduction.lean",
+      "lean_range": {
+        "start_line": 124,
+        "end_line": 237,
+        "start_col": null,
+        "end_col": null
+      },
+      "kind": "theorem",
+      "confidence": 0.9,
+      "source": "manual",
+      "verifier_vote": "none",
+      "rationale": "This IS Prior work A: it suffices to treat loopless cubic graphs (Jaeger [3, Prop. 4]) \u2014 if every finite bridgeless loopless cubic multigraph has a CDC then so does every finite bridgeless multigraph. (fqn carries a trailing '.' from the index parsing the .{u,w} universe annotation.)",
+      "reachable": true,
+      "assumption_tainted": true,
+      "latex_file": "paper_text.tex",
+      "latex_range": {
+        "start_line": 23,
+        "end_line": 23,
+        "start_col": null,
+        "end_col": null
+      },
+      "pdf_page": 1,
+      "prose": "We allow parallel edges and regard two parallel edges as a cycle. By Jaeger [3, Proposition 4], it suffices"
+    },
+    {
+      "link_id": "lnk_cf53c2009cfe1910",
+      "lean_fqn": "Workspace.PriorWorkProofs.Tutte.tutte_group_flow_proved",
+      "lean_file": "lean_workspace/Workspace/PriorWorkProofs/Tutte/Main.lean",
+      "lean_range": {
+        "start_line": 27,
+        "end_line": 41,
+        "start_col": null,
+        "end_col": null
+      },
+      "kind": "theorem",
+      "confidence": 0.85,
+      "source": "manual",
+      "verifier_vote": "none",
+      "rationale": "Formalizes Prior work C (Tutte's group-flow theorem [9]): for a finite abelian group A of order k, a graph has a nowhere-zero A-flow iff it has a nowhere-zero integer k-flow. The paper only names this theorem in the cited sentence; this is the general form the paper invokes.",
+      "reachable": false,
+      "assumption_tainted": false,
+      "latex_file": "paper_text.tex",
+      "latex_range": {
+        "start_line": 31,
+        "end_line": 31,
+        "start_col": null,
+        "end_col": null
+      },
+      "pdf_page": 1,
+      "prose": "has a nowhere-zero \u0393-flow [5, 4], or, equivalently by Tutte\u2019s group-flow theorem, a nowhere-zero 8-flow [9]."
+    },
+    {
+      "link_id": "lnk_ad4ed46d2b07cfb3",
+      "lean_fqn": "Workspace.PriorWorkProofs.Tutte.tutte_gamma_flow_iff_integer_eight_flow_proved",
+      "lean_file": "lean_workspace/Workspace/PriorWorkProofs/Tutte/Main.lean",
+      "lean_range": {
+        "start_line": 42,
+        "end_line": 51,
+        "start_col": null,
+        "end_col": null
+      },
+      "kind": "corollary",
+      "confidence": 0.85,
+      "source": "manual",
+      "verifier_vote": "none",
+      "rationale": "The \u0393 = \ud835\udd3d\u2082\u00b3 / 8-flow corollary of Tutte's group-flow theorem \u2014 exactly the equivalence the paper states: a nowhere-zero \u0393-flow iff a nowhere-zero integer 8-flow.",
+      "reachable": false,
+      "assumption_tainted": false,
+      "latex_file": "paper_text.tex",
+      "latex_range": {
+        "start_line": 31,
+        "end_line": 31,
+        "start_col": null,
+        "end_col": null
+      },
+      "pdf_page": 1,
+      "prose": "has a nowhere-zero \u0393-flow [5, 4], or, equivalently by Tutte\u2019s group-flow theorem, a nowhere-zero 8-flow [9]."
+    },
+    {
+      "link_id": "lnk_d7cb52e9d7e97f9b",
+      "lean_fqn": "Workspace.PriorWorkProofs.Tutte.exists_flow_iff_zmod",
+      "lean_file": "lean_workspace/Workspace/PriorWorkProofs/Tutte/PartI.lean",
+      "lean_range": {
+        "start_line": 280,
+        "end_line": 289,
+        "start_col": null,
+        "end_col": null
+      },
+      "kind": "theorem",
+      "confidence": 0.6,
+      "source": "manual",
+      "verifier_vote": "none",
+      "rationale": "Group-independence half of Tutte's group-flow theorem (Prior work C): a nowhere-zero A-flow exists iff a nowhere-zero (ZMod |A|)-flow exists. This is the bridge the paper invokes as 'Tutte's group-flow theorem'; lower confidence since the paper's full statement is A-flow \u27fa integer |A|-flow and the integer-flow direction is completed elsewhere (Part II).",
+      "reachable": false,
+      "assumption_tainted": false,
+      "latex_file": "paper_text.tex",
+      "latex_range": {
+        "start_line": 31,
+        "end_line": 31,
+        "start_col": null,
+        "end_col": null
+      },
+      "pdf_page": 1,
+      "prose": "has a nowhere-zero \u0393-flow [5, 4], or, equivalently by Tutte\u2019s group-flow theorem, a nowhere-zero 8-flow [9]."
+    },
+    {
+      "link_id": "lnk_6bdc3780fe218f7f",
+      "lean_fqn": "Workspace.PriorWorkProofs.Tutte.zk_iff_int_k_flow",
+      "lean_file": "lean_workspace/Workspace/PriorWorkProofs/Tutte/Rerouting.lean",
+      "lean_range": {
+        "start_line": 595,
+        "end_line": 605,
+        "start_col": null,
+        "end_col": null
+      },
+      "kind": "theorem",
+      "confidence": 0.72,
+      "source": "manual",
+      "verifier_vote": "none",
+      "rationale": "Prior work C: Tutte's group-flow theorem, here in the form nowhere-zero (Z/k)-flow iff nowhere-zero integer k-flow. The paper invokes it exactly to pass between a nowhere-zero Gamma-flow and a nowhere-zero 8-flow. Lower confidence: the Lean states the general iff, the paper only names the theorem in passing.",
+      "reachable": false,
+      "assumption_tainted": false,
+      "latex_file": "paper_text.tex",
+      "latex_range": {
+        "start_line": 31,
+        "end_line": 31,
+        "start_col": null,
+        "end_col": null
+      },
+      "pdf_page": 1,
+      "prose": "has a nowhere-zero \u0393-flow [5, 4], or, equivalently by Tutte\u2019s group-flow theorem, a nowhere-zero 8-flow [9]."
+    },
+    {
+      "link_id": "lnk_94507cfc008e45ff",
+      "lean_fqn": "Graph.IsCycleDoubleCover",
+      "lean_file": "lean_workspace/Workspace/Types/CycleDoubleCover.lean",
+      "lean_range": {
+        "start_line": 84,
+        "end_line": 85,
+        "start_col": null,
+        "end_col": null
+      },
+      "kind": "definition",
+      "confidence": 0.85,
+      "source": "manual",
+      "verifier_vote": "none",
+      "rationale": "Formalizes the paper's only stated definition (Section 1): a cycle double cover is a multiset of cycles in which every edge occurs exactly twice.",
+      "reachable": true,
+      "assumption_tainted": false,
+      "latex_file": "paper_text.tex",
+      "latex_range": {
+        "start_line": 8,
+        "end_line": 8,
+        "start_col": null,
+        "end_col": null
+      },
+      "pdf_page": 1,
+      "prose": "A cycle double cover of a graph is a multiset of cycles in which every edge occurs exactly twice. The"
+    },
+    {
+      "link_id": "lnk_a8cd6bfb9259fbc0",
+      "lean_fqn": "Graph.IsProper3EdgeColouring",
+      "lean_file": "lean_workspace/Workspace/Types/EdgeColouring.lean",
+      "lean_range": {
+        "start_line": 30,
+        "end_line": 36,
+        "start_col": null,
+        "end_col": null
+      },
+      "kind": "definition",
+      "confidence": 0.55,
+      "source": "manual",
+      "verifier_vote": "none",
+      "rationale": "Formalizes the notion of a proper 3-edge-colouring that the paper introduces in the Remark following Lemma 2.1 (motivating aside, Remark 2.1e). The paper does not spell out the definition, so this is a concept-introduction/paragraph link; lowered confidence accordingly.",
+      "reachable": false,
+      "assumption_tainted": false,
+      "latex_file": "paper_text.tex",
+      "latex_range": {
+        "start_line": 41,
+        "end_line": 41,
+        "start_col": null,
+        "end_col": null
+      },
+      "pdf_page": 1,
+      "prose": "A proper 3-edge-colouring is an assignment of this form. For distinct e1 , e2 \u2208 \u0393, assign 0, e1 , 0, e2 ,"
+    },
+    {
+      "link_id": "lnk_76848ff4196a3548",
+      "lean_fqn": "Graph.IsFlow",
+      "lean_file": "lean_workspace/Workspace/Types/Flow.lean",
+      "lean_range": {
+        "start_line": 88,
+        "end_line": 92,
+        "start_col": null,
+        "end_col": null
+      },
+      "kind": "definition",
+      "confidence": 0.75,
+      "source": "manual",
+      "verifier_vote": "none",
+      "rationale": "Formalizes the paper's definition of an A-flow: at every vertex the out-sum equals the in-sum.",
+      "reachable": true,
+      "assumption_tainted": false,
+      "latex_file": "paper_text.tex",
+      "latex_range": {
+        "start_line": 27,
+        "end_line": 27,
+        "start_col": null,
+        "end_col": null
+      },
+      "pdf_page": 1,
+      "prose": "at every vertex, the sum on edges directed out equals the sum on edges directed in. It is nowhere-zero"
+    },
+    {
+      "link_id": "lnk_4b5bccef92ee054a",
+      "lean_fqn": "Graph.IsNowhereZero",
+      "lean_file": "lean_workspace/Workspace/Types/Flow.lean",
+      "lean_range": {
+        "start_line": 93,
+        "end_line": 98,
+        "start_col": null,
+        "end_col": null
+      },
+      "kind": "definition",
+      "confidence": 0.72,
+      "source": "manual",
+      "verifier_vote": "none",
+      "rationale": "Formalizes the paper's nowhere-zero predicate: f(e) \u2260 0 for every edge.",
+      "reachable": true,
+      "assumption_tainted": false,
+      "latex_file": "paper_text.tex",
+      "latex_range": {
+        "start_line": 28,
+        "end_line": 28,
+        "start_col": null,
+        "end_col": null
+      },
+      "pdf_page": 1,
+      "prose": "if f (e) \u0338= 0 for every edge. For an integer k \u2265 2, an integer k-flow is an integer-valued flow \u03d5 satisfying"
+    },
+    {
+      "link_id": "lnk_cf7698d05efa23c8",
+      "lean_fqn": "Graph.IsIntegerKFlow",
+      "lean_file": "lean_workspace/Workspace/Types/Flow.lean",
+      "lean_range": {
+        "start_line": 99,
+        "end_line": 104,
+        "start_col": null,
+        "end_col": null
+      },
+      "kind": "definition",
+      "confidence": 0.7,
+      "source": "manual",
+      "verifier_vote": "none",
+      "rationale": "Formalizes the paper's integer k-flow: an integer flow with 0 < |\u03c6(e)| < k on every edge.",
+      "reachable": false,
+      "assumption_tainted": false,
+      "latex_file": "paper_text.tex",
+      "latex_range": {
+        "start_line": 28,
+        "end_line": 28,
+        "start_col": null,
+        "end_col": null
+      },
+      "pdf_page": 1,
+      "prose": "if f (e) \u0338= 0 for every edge. For an integer k \u2265 2, an integer k-flow is an integer-valued flow \u03d5 satisfying"
+    },
+    {
+      "link_id": "lnk_9110aaa8e37193c3",
+      "lean_fqn": "Workspace.Types.Gamma.Gamma",
+      "lean_file": "lean_workspace/Workspace/Types/Gamma.lean",
+      "lean_range": {
+        "start_line": 21,
+        "end_line": 24,
+        "start_col": null,
+        "end_col": null
+      },
+      "kind": "definition",
+      "confidence": 0.8,
+      "source": "manual",
+      "verifier_vote": "none",
+      "rationale": "Formalizes the paper's group \u0393 = \ud835\udd3d\u2082\u00b3 (3-dimensional vector space over \ud835\udd3d\u2082), written additively.",
+      "reachable": true,
+      "assumption_tainted": false,
+      "latex_file": "paper_text.tex",
+      "latex_range": {
+        "start_line": 30,
+        "end_line": 30,
+        "start_col": null,
+        "end_col": null
+      },
+      "pdf_page": 1,
+      "prose": "Let \u0393 = F32 , written additively. Kilpatrick and Jaeger independently proved that every bridgeless graph"
+    },
+    {
+      "link_id": "lnk_201d8df536f77a69",
+      "lean_fqn": "Workspace.Types.Gamma.GammaDual",
+      "lean_file": "lean_workspace/Workspace/Types/Gamma.lean",
+      "lean_range": {
+        "start_line": 25,
+        "end_line": 28,
+        "start_col": null,
+        "end_col": null
+      },
+      "kind": "definition",
+      "confidence": 0.75,
+      "source": "manual",
+      "verifier_vote": "none",
+      "rationale": "Formalizes \u0393*, the dual vector space of \u0393 (\ud835\udd3d\u2082-linear maps \u0393 \u2192 \ud835\udd3d\u2082), as introduced in the proof of Lemma 2.2.",
+      "reachable": true,
+      "assumption_tainted": false,
+      "latex_file": "paper_text.tex",
+      "latex_range": {
+        "start_line": 97,
+        "end_line": 97,
+        "start_col": null,
+        "end_col": null
+      },
+      "pdf_page": 2,
+      "prose": "be the dual vector space of \u0393; thus an element"
+    },
+    {
+      "link_id": "lnk_7f219ac4b89886f8",
+      "lean_fqn": "Workspace.Types.LocalOrdering.LocalOrdering",
+      "lean_file": "lean_workspace/Workspace/Types/LocalOrdering.lean",
+      "lean_range": {
+        "start_line": 34,
+        "end_line": 50,
+        "start_col": null,
+        "end_col": null
+      },
+      "kind": "definition",
+      "confidence": 0.6,
+      "source": "manual",
+      "verifier_vote": "none",
+      "rationale": "This structure formalizes the paper's \u00a75 instruction 'At each vertex v, locally order the incident edges as a, b, c' \u2014 it names the three edges at each vertex as data (the paper's a, b, c).",
+      "reachable": true,
+      "assumption_tainted": false,
+      "latex_file": "paper_text.tex",
+      "latex_range": {
+        "start_line": 55,
+        "end_line": 55,
+        "start_col": null,
+        "end_col": null
+      },
+      "pdf_page": 2,
+      "prose": "It remains to construct the sets Pe . Fix a nowhere-zero \u0393-flow f . At each vertex v, locally order the"
+    },
+    {
+      "link_id": "lnk_ec05b1019592ea2a",
+      "lean_fqn": "Workspace.Types.LocalOrdering.exists_localOrdering",
+      "lean_file": "lean_workspace/Workspace/Types/LocalOrdering.lean",
+      "lean_range": {
+        "start_line": 104,
+        "end_line": 139,
+        "start_col": null,
+        "end_col": null
+      },
+      "kind": "definition",
+      "confidence": 0.5,
+      "source": "manual",
+      "verifier_vote": "none",
+      "rationale": "Existence of a local ordering \u2014 justifies that the paper's 'locally order the incident edges as a, b, c' is always possible on a loopless cubic graph. Lower confidence: this is the existence-plumbing behind the sentence rather than the definition itself.",
+      "reachable": true,
+      "assumption_tainted": false,
+      "latex_file": "paper_text.tex",
+      "latex_range": {
+        "start_line": 55,
+        "end_line": 55,
+        "start_col": null,
+        "end_col": null
+      },
+      "pdf_page": 2,
+      "prose": "It remains to construct the sets Pe . Fix a nowhere-zero \u0393-flow f . At each vertex v, locally order the"
+    },
+    {
+      "link_id": "lnk_385954705e59fef4",
+      "lean_fqn": "Workspace.Types.LocalShift.LocalShift",
+      "lean_file": "lean_workspace/Workspace/Types/LocalShift.lean",
+      "lean_range": {
+        "start_line": 41,
+        "end_line": 55,
+        "start_col": null,
+        "end_col": null
+      },
+      "kind": "definition",
+      "confidence": 0.55,
+      "source": "manual",
+      "verifier_vote": "none",
+      "rationale": "Bundles the paper's nowhere-zero Gamma-flow f with the per-vertex local ordering a, b, c of \u00a75. Lower confidence: a definitional container, not a stated result.",
+      "reachable": true,
+      "assumption_tainted": false,
+      "latex_file": "paper_text.tex",
+      "latex_range": {
+        "start_line": 55,
+        "end_line": 55,
+        "start_col": null,
+        "end_col": null
+      },
+      "pdf_page": 2,
+      "prose": "It remains to construct the sets Pe . Fix a nowhere-zero \u0393-flow f . At each vertex v, locally order the"
+    },
+    {
+      "link_id": "lnk_5b91044b913cdf24",
+      "lean_fqn": "Workspace.Types.LocalShift.LocalShift.g",
+      "lean_file": "lean_workspace/Workspace/Types/LocalShift.lean",
+      "lean_range": {
+        "start_line": 56,
+        "end_line": 60,
+        "start_col": null,
+        "end_col": null
+      },
+      "kind": "equation",
+      "confidence": 0.65,
+      "source": "manual",
+      "verifier_vote": "none",
+      "rationale": "The paper's shift g_{v,e} of equation (2): 0 on a, x on b, 0 on c.",
+      "reachable": true,
+      "assumption_tainted": false,
+      "latex_file": "paper_text.tex",
+      "latex_range": {
+        "start_line": 57,
+        "end_line": 61,
+        "start_col": null,
+        "end_col": null
+      },
+      "pdf_page": 2,
+      "prose": "flow equation is x + y + z = 0, so z = x + y; moreover x and y are distinct. Define gv,a = 0, gv,b = x,"
+    },
+    {
+      "link_id": "lnk_a50e967921600904",
+      "lean_fqn": "Workspace.Types.LocalShift.LocalShift.finsum_g_incidenceSet",
+      "lean_file": "lean_workspace/Workspace/Types/LocalShift.lean",
+      "lean_range": {
+        "start_line": 111,
+        "end_line": 131,
+        "start_col": null,
+        "end_col": null
+      },
+      "kind": "equation",
+      "confidence": 0.55,
+      "source": "manual",
+      "verifier_vote": "none",
+      "rationale": "The g-side of equation (8): sum of the shift over the edges at v equals x = f(a), because by (2) only edge b contributes. Lower confidence: the paper's (8) is stated with the dual eta applied.",
+      "reachable": false,
+      "assumption_tainted": false,
+      "latex_file": "paper_text.tex",
+      "latex_range": {
+        "start_line": 148,
+        "end_line": 148,
+        "start_col": null,
+        "end_col": null
+      },
+      "pdf_page": 2,
+      "prose": "0 = \u03b7c (z) = \u03b7a (y) + \u03b7b (x),"
+    },
+    {
+      "link_id": "lnk_e6e8dc7932e64356",
+      "lean_fqn": "Workspace.Types.LocalShift.LocalShift.d",
+      "lean_file": "lean_workspace/Workspace/Types/LocalShift.lean",
+      "lean_range": {
+        "start_line": 132,
+        "end_line": 133,
+        "start_col": null,
+        "end_col": null
+      },
+      "kind": "equation",
+      "confidence": 0.6,
+      "source": "manual",
+      "verifier_vote": "none",
+      "rationale": "Definition of the paper's d_e = g_{u,e} + g_{v,e} for e = uv.",
+      "reachable": true,
+      "assumption_tainted": false,
+      "latex_file": "paper_text.tex",
+      "latex_range": {
+        "start_line": 74,
+        "end_line": 74,
+        "start_col": null,
+        "end_col": null
+      },
+      "pdf_page": 2,
+      "prose": "assignment works locally, but the two ends of an edge need not assign it the same set."
+    },
+    {
+      "link_id": "lnk_c96e87e466d88f0a",
+      "lean_fqn": "Workspace.Types.LocalShift.LocalShift.d_eq_add",
+      "lean_file": "lean_workspace/Workspace/Types/LocalShift.lean",
+      "lean_range": {
+        "start_line": 147,
+        "end_line": 150,
+        "start_col": null,
+        "end_col": null
+      },
+      "kind": "equation",
+      "confidence": 0.55,
+      "source": "manual",
+      "verifier_vote": "none",
+      "rationale": "Proves the Lean d equals the paper's g_{u,e} + g_{v,e} for a non-loop edge; realizes the same equation as the d definition.",
+      "reachable": true,
+      "assumption_tainted": false,
+      "latex_file": "paper_text.tex",
+      "latex_range": {
+        "start_line": 74,
+        "end_line": 74,
+        "start_col": null,
+        "end_col": null
+      },
+      "pdf_page": 2,
+      "prose": "assignment works locally, but the two ends of an edge need not assign it the same set."
+    },
+    {
+      "link_id": "lnk_9b8e50afe5cc635c",
+      "lean_fqn": "Workspace.Types.Orientation.Orientation",
+      "lean_file": "lean_workspace/Workspace/Types/Orientation.lean",
+      "lean_range": {
+        "start_line": 25,
+        "end_line": 39,
+        "start_col": null,
+        "end_col": null
+      },
+      "kind": "definition",
+      "confidence": 0.6,
+      "source": "manual",
+      "verifier_vote": "none",
+      "rationale": "The structure bundling tail/head for each edge formalizes the paper's notion of an orientation, which \u00a72 introduces with 'Fix an orientation of a graph.' (the paper gives no explicit definition; this structure supplies it).",
+      "reachable": true,
+      "assumption_tainted": false,
+      "latex_file": "paper_text.tex",
+      "latex_range": {
+        "start_line": 26,
+        "end_line": 26,
+        "start_col": null,
+        "end_col": null
+      },
+      "pdf_page": 1,
+      "prose": "Fix an orientation of a graph. If A is an abelian group, an A-flow is a map f : E(G) \u2192 A for which,"
+    },
+    {
+      "link_id": "lnk_09c3961a4a287846",
+      "lean_fqn": "Workspace.Types.SystemL.SystemL.L",
+      "lean_file": "lean_workspace/Workspace/Types/SystemL.lean",
+      "lean_range": {
+        "start_line": 82,
+        "end_line": 97,
+        "start_col": null,
+        "end_col": null
+      },
+      "kind": "equation",
+      "confidence": 0.75,
+      "source": "manual",
+      "verifier_vote": "none",
+      "rationale": "Formalizes the paper's \ud835\udd3d\u2082-linear map L(t,\u03b5)_e = t_u + t_v + \u03b5_e f(e) used in the proof of Lemma 2.2.",
+      "reachable": true,
+      "assumption_tainted": false,
+      "latex_file": "paper_text.tex",
+      "latex_range": {
+        "start_line": 95,
+        "end_line": 95,
+        "start_col": null,
+        "end_col": null
+      },
+      "pdf_page": 2,
+      "prose": "Proof of Lemma 2.2. Let"
+    },
+    {
+      "link_id": "lnk_733d004df1d2b362",
+      "lean_fqn": "Workspace.Types.SystemL.SystemL.HasSolution",
+      "lean_file": "lean_workspace/Workspace/Types/SystemL.lean",
+      "lean_range": {
+        "start_line": 129,
+        "end_line": 131,
+        "start_col": null,
+        "end_col": null
+      },
+      "kind": "definition",
+      "confidence": 0.55,
+      "source": "manual",
+      "verifier_vote": "none",
+      "rationale": "Defines solvability of the paper's system (4), t_u + t_v + \u03b5_e f(e) = d_e; this is the predicate whose truth is Lemma 2.2 (the proof of solvability lives elsewhere).",
+      "reachable": true,
+      "assumption_tainted": false,
+      "latex_file": "paper_text.tex",
+      "latex_range": {
+        "start_line": 78,
+        "end_line": 78,
+        "start_col": null,
+        "end_col": null
+      },
+      "pdf_page": 2,
+      "prose": "precisely when there are tv \u2208 \u0393 and \u03f5e \u2208 F2 satisfying"
+    },
+    {
+      "link_id": "lnk_36d0a02f4eb38eff",
+      "lean_fqn": "Workspace.Types.SystemL.SystemL.hasSolution_iff_mem_range",
+      "lean_file": "lean_workspace/Workspace/Types/SystemL.lean",
+      "lean_range": {
+        "start_line": 147,
+        "end_line": 157,
+        "start_col": null,
+        "end_col": null
+      },
+      "kind": "proof_case",
+      "confidence": 0.7,
+      "source": "manual",
+      "verifier_vote": "none",
+      "rationale": "Formalizes the paper's reduction 'Thus (4) asks whether d belongs to im L': system (4) is solvable iff d \u2208 range L.",
+      "reachable": true,
+      "assumption_tainted": false,
+      "latex_file": "paper_text.tex",
+      "latex_range": {
+        "start_line": 97,
+        "end_line": 97,
+        "start_col": null,
+        "end_col": null
+      },
+      "pdf_page": 2,
+      "prose": "Thus (4) asks whether d = (de )e belongs to im L"
+    },
+    {
+      "link_id": "lnk_851a618e48bfc0db",
+      "lean_fqn": "Graph.IsTwoElementAssignment",
+      "lean_file": "lean_workspace/Workspace/Types/TwoElementAssignment.lean",
+      "lean_range": {
+        "start_line": 52,
+        "end_line": 59,
+        "start_col": null,
+        "end_col": null
+      },
+      "kind": "definition",
+      "confidence": 0.75,
+      "source": "manual",
+      "verifier_vote": "none",
+      "rationale": "Formalizes exactly the hypothesis of Lemma 2.1: every edge gets a two-element set P_e \u2286 \u0393 satisfying condition (1) (each colour appears 0 or 2 times at each vertex).",
+      "reachable": true,
+      "assumption_tainted": false,
+      "latex_file": "paper_text.tex",
+      "latex_range": {
+        "start_line": 34,
+        "end_line": 34,
+        "start_col": null,
+        "end_col": null
+      },
+      "pdf_page": 1,
+      "prose": "Lemma 2.1. Let G be a loopless cubic multigraph. Suppose that every edge e is assigned a two-element"
+    }
+  ]
+}
