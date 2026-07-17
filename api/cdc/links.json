@@ -2,48 +2,6 @@
   "paper_id": "cdc",
   "links": [
     {
-      "link_id": "lnk_a26e6a907edf6f89",
-      "paper_id": "cdc",
-      "kind": "other",
-      "parent_link_id": null,
-      "lean": {
-        "primary": "fqn",
-        "fqn": "example_at_L3",
-        "file": "lean_workspace/Workspace/Basic.lean",
-        "decl_range": {
-          "start_line": 3,
-          "end_line": 3,
-          "start_col": null,
-          "end_col": null
-        },
-        "tactic_path": [],
-        "content_anchor": {
-          "norm_sha256": "a95bdfe40132905f610a9b322a831ea687e6f9ecedd1c55eff155cff1cb6be06",
-          "norm_length": 34,
-          "head_prefix": "example : 1 + 1 = 2 := by norm_num",
-          "tail_suffix": "example : 1 + 1 = 2 := by norm_num"
-        }
-      },
-      "paper": null,
-      "lean_status": "linked",
-      "paper_status": "scaffolding",
-      "external_refs": [],
-      "fragment_relation": "exact",
-      "provenance": {
-        "source": "manual",
-        "proposer_model": null,
-        "verifier_model": null,
-        "verifier_vote": "none",
-        "confidence": 0.9,
-        "rationale": "Anonymous example / smoke-test; not paper content.",
-        "verifier_rationale": null,
-        "reachable": true,
-        "assumption_tainted": false,
-        "created_at": "2026-07-17T20:13:52.484340",
-        "schema_version": 1
-      }
-    },
-    {
       "link_id": "lnk_7c5c480e4298378c",
       "paper_id": "cdc",
       "kind": "other",

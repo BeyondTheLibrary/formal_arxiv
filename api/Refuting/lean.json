@@ -435,44 +435,6 @@
       ]
     },
     {
-      "decl_id": "Refuting:lean:example_at_L3",
-      "fqn": "example_at_L3",
-      "name": "example_at_L3",
-      "kind": "example",
-      "file": "lean_workspace/Workspace/Basic.lean",
-      "decl_range": {
-        "start_line": 3,
-        "end_line": 3,
-        "start_col": null,
-        "end_col": null
-      },
-      "header_range": {
-        "start_line": 3,
-        "end_line": 3,
-        "start_col": null,
-        "end_col": null
-      },
-      "docstring": null,
-      "has_sorry": false,
-      "is_axiom": false,
-      "assumption_sources": [],
-      "links": [
-        {
-          "link_id": "lnk_94b3524faf3ea9cb",
-          "paper_label": null,
-          "paper_page_range": null,
-          "paper_latex_range": null,
-          "kind": "other",
-          "confidence": 0.9,
-          "source": "manual",
-          "verifier_vote": "none",
-          "rationale": "Trivial `1 + 1 = 2` smoke-test example; build sanity check, no paper counterpart.",
-          "reachable": true,
-          "assumption_tainted": false
-        }
-      ]
-    },
-    {
       "decl_id": "Refuting:lean:Workspace.BracketLemmas.interlace_one_e",
       "fqn": "Workspace.BracketLemmas.interlace_one_e",
       "name": "interlace_one_e",

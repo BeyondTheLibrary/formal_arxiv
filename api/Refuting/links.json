@@ -527,48 +527,6 @@
       }
     },
     {
-      "link_id": "lnk_94b3524faf3ea9cb",
-      "paper_id": "Refuting",
-      "kind": "other",
-      "parent_link_id": null,
-      "lean": {
-        "primary": "fqn",
-        "fqn": "example_at_L3",
-        "file": "lean_workspace/Workspace/Basic.lean",
-        "decl_range": {
-          "start_line": 3,
-          "end_line": 3,
-          "start_col": null,
-          "end_col": null
-        },
-        "tactic_path": [],
-        "content_anchor": {
-          "norm_sha256": "a95bdfe40132905f610a9b322a831ea687e6f9ecedd1c55eff155cff1cb6be06",
-          "norm_length": 34,
-          "head_prefix": "example : 1 + 1 = 2 := by norm_num",
-          "tail_suffix": "example : 1 + 1 = 2 := by norm_num"
-        }
-      },
-      "paper": null,
-      "lean_status": "linked",
-      "paper_status": "scaffolding",
-      "external_refs": [],
-      "fragment_relation": "exact",
-      "provenance": {
-        "source": "manual",
-        "proposer_model": null,
-        "verifier_model": null,
-        "verifier_vote": "none",
-        "confidence": 0.9,
-        "rationale": "Trivial `1 + 1 = 2` smoke-test example; build sanity check, no paper counterpart.",
-        "verifier_rationale": null,
-        "reachable": true,
-        "assumption_tainted": false,
-        "created_at": "2026-06-29T19:00:26.842916",
-        "schema_version": 1
-      }
-    },
-    {
       "link_id": "lnk_7a66dda98f898327",
       "paper_id": "Refuting",
       "kind": "lemma",
