@@ -1,0 +1,316 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Beyond the Library — teaser (landscape)</title>
+<style>
+*{box-sizing:border-box}
+html,body{margin:0;height:100%;background:#000}
+body{display:flex;justify-content:center;align-items:center;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}
+#btl .vframe{position:relative;width:min(100vw,1120px);aspect-ratio:16/9;overflow:hidden;display:flex;flex-direction:column;background:var(--bg);color:var(--ink);--bg:#0d0e13;--ink:#F4F4EF;--mut:#9698A4;--blue:#5B8DEF;--grn:#46C68A;--red:#E5524F;--amb:#E2A23C;--line:#262833;--card:#171922;--font-mono:ui-monospace,SFMono-Regular,Menlo,monospace}
+#btl .top{display:flex;align-items:center;justify-content:space-between;padding:16px 26px;border-bottom:1px solid var(--line)}
+#btl .pill{display:inline-flex;align-items:center;gap:11px}
+#btl .pnum{width:30px;height:30px;border-radius:50%;background:var(--blue);color:#fff;display:flex;align-items:center;justify-content:center;font-size:15px}
+#btl .pname{font-size:19px;color:var(--ink);font-weight:500}
+#btl .brandmini{font-size:15px;color:var(--mut)}
+#btl .ltx{height:17px;width:auto;display:inline-block;vertical-align:middle;color:currentColor}
+#btl .lnmk{height:19px;width:19px;display:inline-block;vertical-align:middle}
+#btl .stage{flex:1;position:relative}
+#btl .titlecard{position:absolute;inset:0;z-index:6;pointer-events:none;display:flex;align-items:center;justify-content:center;--ty:-238px}
+#btl .tcbg{position:absolute;inset:0;background:var(--bg);opacity:0}
+#btl .tcwrap{position:relative;opacity:0;text-align:center;padding:0 40px}
+#btl .tcname{font-size:42px;font-weight:500;color:var(--ink)}
+#btl .titlecard.play .tcbg{animation:tcbg 1.8s ease forwards}
+#btl .titlecard.play .tcwrap{animation:tcname 1.8s ease forwards}
+#btl .scene{position:absolute;inset:0;display:flex;flex-direction:column;justify-content:center;align-items:center;padding:14px 34px 16px;opacity:0;transform:translateY(18px);transition:opacity .5s ease,transform .5s ease}
+#btl .scene.active{opacity:1;transform:none}
+#btl .scene.past{opacity:0;transform:translateY(-18px)}
+#btl .viz{flex:1;width:100%;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:16px;position:relative}
+#btl .cap{font-size:20px;line-height:1.4;color:var(--ink);text-align:center;font-weight:500;min-height:48px;padding:0 16px 6px}
+#btl .pop{opacity:0;transform:translateY(12px);transition:opacity .45s ease,transform .45s ease}
+#btl .scene.active .pop{opacity:1;transform:none}
+#btl .slowpop{opacity:0;transform:translateY(12px);transition:opacity 1s ease,transform 1s ease}
+#btl .scene.active .slowpop{opacity:1;transform:none}
+#btl .titleblock{text-align:center;padding:0 40px}
+#btl .ptitle{font-size:40px;font-weight:500;color:var(--ink)}
+#btl .psub{font-size:19px;color:var(--mut);margin-top:12px;line-height:1.4}
+#btl .pauth{font-size:16px;color:var(--ink);margin-top:26px;line-height:1.6}
+#btl .pinst{font-size:14px;color:var(--mut);margin-top:9px}
+#btl .emj{font-size:46px;line-height:1}
+#btl .bubble{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:13px 17px;color:var(--ink);font-family:var(--font-mono);font-size:15px;max-width:230px;line-height:1.55}
+#btl .badge{display:inline-flex;align-items:center;gap:8px;background:var(--card);border:1px solid var(--line);border-radius:10px;padding:9px 15px;font-size:16px;color:var(--ink)}
+#btl .lean{border-color:rgba(91,141,239,.55)}
+#btl .grn{border-color:rgba(70,198,138,.5);color:var(--grn)}
+#btl .amb{border-color:rgba(226,162,60,.5);color:var(--amb)}
+#btl .pline{height:11px;border-radius:6px;background:#2b2e3d}
+#btl .proofsheet{position:relative;background:#0f1622;border:1px solid var(--line);border-radius:11px;padding:16px 46px 16px 18px;display:flex;flex-direction:column;gap:10px}
+#btl .loupe{position:absolute;right:12px;top:10px;font-size:28px}
+#btl .scene.active .loupe{animation:scan 2.4s ease-in-out infinite}
+#btl .codecard{background:#0f1622;border:1px solid var(--line);border-radius:12px;padding:14px 18px;font-family:var(--font-mono);font-size:14px;line-height:1.6;text-align:left;color:var(--ink)}
+#btl .kw{color:var(--blue)}
+#btl .ok{color:var(--grn)}
+#btl .lem{color:var(--blue)}
+#btl .cl{font-family:var(--font-mono);font-size:14px;color:var(--ink);line-height:1.6;text-align:left}
+#btl .arrow{color:var(--mut);font-size:24px}
+#btl .conn{position:relative;height:2px;width:64px;background:var(--line)}
+#btl .token{position:absolute;top:-5px;left:0;width:11px;height:11px;border-radius:50%;background:var(--blue)}
+#btl .scene.active .token{animation:travel 2.1s ease-in-out infinite}
+#btl .scene.active .beat{animation:pulse 1.8s ease-in-out infinite}
+#btl .node{padding:8px 13px;border-radius:9px;background:var(--card);border:1px solid var(--line);color:var(--ink);font-size:15px;display:flex;align-items:center;gap:6px}
+#btl .node.pw{color:var(--mut);border-style:dashed}
+#btl .node.root{border-color:rgba(91,141,239,.5)}
+#btl .edge{width:2px;height:15px;background:var(--line)}
+#btl .cand{background:var(--card);border:1px solid var(--line);border-radius:11px;padding:12px 14px;width:200px;display:flex;flex-direction:column;gap:9px;align-items:flex-start}
+#btl .cand.win{border-color:rgba(70,198,138,.6)}
+#btl .cand.lose{opacity:.5}
+#btl .lset{display:flex;gap:11px;font-size:19px}
+#btl .yes{color:var(--grn)}
+#btl .no{color:var(--red)}
+#btl .pick{font-size:12px;padding:2px 9px;border-radius:9px;border:1px solid rgba(70,198,138,.55);color:var(--grn)}
+#btl .pick.x{border-color:rgba(229,82,79,.5);color:var(--red)}
+#btl .typestack{display:flex;flex-direction:column;gap:8px}
+#btl .tchip{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:6px 12px;font-size:15px;color:var(--ink);font-family:var(--font-mono);display:flex;align-items:center;gap:7px}
+#btl .tchip .c{color:var(--grn)}
+#btl .tchip.new{border-color:rgba(70,198,138,.6);color:var(--grn)}
+#btl .scene.active .tchip.new{animation:arrive .7s ease .55s both}
+#btl .sublist{display:flex;flex-direction:column;gap:8px}
+#btl .agent{display:flex;flex-direction:column;align-items:center;gap:5px}
+#btl .emowrap{position:relative;font-size:54px;line-height:1}
+#btl .mood{position:absolute;right:-11px;bottom:-7px;font-size:27px}
+#btl .scene.active .calm{animation:moodcalm 2.6s ease-in-out infinite}
+#btl .scene.active .mad{animation:moodmad 2.6s ease-in-out infinite;opacity:0}
+#btl .role{font-size:14px;color:var(--mut)}
+#btl .exrow{display:flex;align-items:center;justify-content:space-between;width:100%;max-width:460px}
+#btl .mtrack{position:relative;height:56px;flex:1;margin:0 8px}
+#btl .msg{position:absolute;top:12px;padding:6px 12px;border-radius:12px;background:var(--card);border:1px solid var(--line);font-size:18px;white-space:nowrap;opacity:0;color:var(--ink)}
+#btl .scene.active .msgR{animation:flyR 2.6s ease-in-out infinite}
+#btl .scene.active .msgL{animation:flyL 2.6s ease-in-out 1.3s infinite}
+#btl .paper{display:flex;align-items:center;justify-content:space-between;gap:14px;width:100%;max-width:830px;background:var(--card);border:1px solid var(--line);border-radius:10px;padding:8px 15px}
+#btl .paper.bug{border-color:var(--red)}
+#btl .pt{font-size:13px;color:var(--ink);line-height:1.3}
+#btl .pa{font-size:12px;margin-top:2px}
+#btl .venue{color:var(--blue);font-weight:500}
+#btl .stamps{display:flex;flex-direction:row;gap:6px;align-items:center;flex:0 0 auto}
+#btl .stamp{font-size:11px;color:var(--grn);border:1px solid rgba(70,198,138,.45);border-radius:10px;padding:2px 9px;white-space:nowrap}
+#btl .stamp.r{color:var(--red);border-color:rgba(229,82,79,.55);display:inline-flex;align-items:center;gap:4px;font-size:12px}
+#btl .bug{font-size:17px}
+@keyframes pulse{0%,100%{transform:scale(1)}50%{transform:scale(1.08)}}
+@keyframes travel{0%{left:0}100%{left:53px}}
+@keyframes scan{0%{top:10px}45%{top:58%}55%{top:58%}100%{top:10px}}
+@keyframes arrive{0%{opacity:0;transform:translateX(-40px)}100%{opacity:1;transform:none}}
+@keyframes moodcalm{0%,45%{opacity:1}55%,88%{opacity:0}100%{opacity:1}}
+@keyframes moodmad{0%,45%{opacity:0}55%,88%{opacity:1}100%{opacity:0}}
+@keyframes flyR{0%{left:0;opacity:0}14%{opacity:1}80%{opacity:1}100%{left:calc(100% - 74px);opacity:0}}
+@keyframes flyL{0%{right:0;opacity:0}14%{opacity:1}80%{opacity:1}100%{right:calc(100% - 68px);opacity:0}}
+@keyframes tcbg{0%{opacity:1}68%{opacity:1}100%{opacity:0}}
+@keyframes tcname{0%{opacity:0;transform:translateY(0) scale(1)}10%{opacity:1}68%{opacity:1;transform:translateY(0) scale(1)}100%{opacity:0;transform:translateY(var(--ty)) scale(.42)}}
+</style>
+</head>
+<body>
+<div id="btl">
+<div class="vframe">
+<div class="top">
+<div class="pill"><span class="pnum" id="pnum">1</span><span class="pname" id="pname">Motivation</span></div>
+<div class="brandmini">Beyond the Library</div>
+</div>
+<div class="stage">
+<div class="titlecard" id="tcard"><div class="tcbg"></div><div class="tcwrap"><div class="tcname" id="tcname"></div></div></div>
+
+<section class="scene active" data-part="0" data-dur="6200">
+<div class="viz" style="justify-content:center">
+<div class="titleblock">
+<div class="ptitle slowpop">Beyond the Library</div>
+<div class="psub slowpop" style="transition-delay:.3s">An Agentic Framework for Autoformalizing Research Mathematics</div>
+<div class="pauth slowpop" style="transition-delay:.7s">Arshia Soltani Moakhar · Iman Gholami · Max Springer · Mahdi JafariRaviz · MohammadTaghi Hajiaghayi</div>
+<div class="pinst slowpop" style="transition-delay:1s">University of Maryland · Princeton University</div>
+</div>
+</div>
+</section>
+
+<section class="scene" data-part="1" data-dur="5750">
+<div class="viz">
+<div style="display:flex;align-items:center;gap:16px">
+<div class="emj pop">👤</div>
+<div class="emj pop" style="font-size:38px;transition-delay:.15s">🤖</div>
+<span class="arrow pop" style="transition-delay:.3s">→</span>
+<div class="bubble pop" style="transition-delay:.45s">Theorem. ∀ n ≥ 2 ...<br>Proof. ... ∎</div>
+</div>
+<div class="cap pop" style="transition-delay:.65s">A mathematician, or an AI, writes a proof of a hard theorem.</div>
+</div>
+</section>
+
+<section class="scene" data-part="1" data-dur="6200">
+<div class="viz">
+<div style="display:flex;align-items:center;gap:26px">
+<div class="emj pop">🧑‍🔬</div>
+<div class="proofsheet pop" style="transition-delay:.2s">
+<div class="pline" style="width:200px"></div><div class="pline" style="width:150px"></div><div class="pline" style="width:184px"></div><div class="pline" style="width:120px"></div>
+<span class="loupe">🔍</span>
+</div>
+</div>
+<div class="badge pop beat" style="transition-delay:.5s">⏳ line-by-line · ≈ days</div>
+</div>
+<div class="cap pop" style="transition-delay:.7s">Verifying that a proof is correct is hard and slow.</div>
+</section>
+
+<section class="scene" data-part="1" data-dur="6000">
+<div class="viz">
+<div class="codecard pop"><span class="kw">theorem</span> main : P → Q :=<br>&nbsp;&nbsp;<span class="kw">by</span> intro h; exact ...<br>&nbsp;&nbsp;<span class="ok">✓ no goals</span></div>
+<div style="display:flex;gap:12px">
+<div class="badge grn pop beat" style="transition-delay:.35s">✓ verified · 0.3s</div>
+<div class="badge lean pop" style="transition-delay:.5s"><svg class="lnmk" viewBox="0 0 24 24"><g fill="#5B8DEF"><rect x="2.5" y="2.5" width="8.5" height="8.5" rx="2"/><rect x="13" y="2.5" width="8.5" height="8.5" rx="2" opacity=".72"/><rect x="2.5" y="13" width="8.5" height="8.5" rx="2" opacity=".72"/><rect x="13" y="13" width="8.5" height="8.5" rx="2" opacity=".46"/></g></svg> Lean 4</div>
+</div>
+</div>
+<div class="cap pop" style="transition-delay:.65s">Lean can verify a proof mechanically, in seconds.</div>
+</section>
+
+<section class="scene" data-part="1" data-dur="6000">
+<div class="viz">
+<div style="display:flex;align-items:center;gap:11px">
+<div class="badge pop">📄 <svg class="ltx" viewBox="0 0 74 30"><g font-family="Georgia,serif" fill="currentColor"><text x="0" y="23" font-size="26">L</text><text x="12" y="13" font-size="17">A</text><text x="25" y="23" font-size="26">T</text><text x="40" y="26" font-size="26">E</text><text x="55" y="23" font-size="26">X</text></g></svg></div>
+<div class="conn pop" style="transition-delay:.15s"><span class="token"></span></div>
+<div class="emj pop" style="font-size:38px;transition-delay:.3s">🤖</div>
+<div class="conn pop" style="transition-delay:.45s"><span class="token" style="animation-delay:.4s"></span></div>
+<div class="badge lean pop" style="transition-delay:.6s"><svg class="lnmk" viewBox="0 0 24 24"><g fill="#5B8DEF"><rect x="2.5" y="2.5" width="8.5" height="8.5" rx="2"/><rect x="13" y="2.5" width="8.5" height="8.5" rx="2" opacity=".72"/><rect x="2.5" y="13" width="8.5" height="8.5" rx="2" opacity=".72"/><rect x="13" y="13" width="8.5" height="8.5" rx="2" opacity=".46"/></g></svg> Lean</div>
+</div>
+</div>
+<div class="cap pop" style="transition-delay:.8s">So we need to translate the mathematics into Lean.</div>
+</section>
+
+<section class="scene" data-part="2" data-dur="8050">
+<div class="viz">
+<div class="codecard pop" style="max-width:420px;font-size:14px"><span class="kw">Theorem.</span> For every … there exists c &gt; 0 such that …</div>
+<div class="pop" style="display:flex;gap:11px;align-items:center;transition-delay:.4s">
+<span style="font-size:15px;color:var(--mut)">needs</span>
+<div class="node">concept 1</div><div class="node">concept 2</div><div class="node">concept 3</div>
+</div>
+</div>
+<div class="cap pop" style="transition-delay:.65s">A research theorem rests on concepts Lean doesn't have, so we pin down each one.</div>
+</section>
+
+<section class="scene" data-part="2" data-dur="7150">
+<div class="viz">
+<div style="display:flex;gap:20px;align-items:stretch">
+<div class="cand win pop">
+<div style="font-family:var(--font-mono);font-size:14px">concept 1 · <span style="color:var(--mut)">v1</span></div>
+<div class="lset"><span class="yes">✓</span><span class="yes">✓</span><span class="yes">✓</span></div>
+<span class="pick">chosen ✓</span>
+</div>
+<div class="cand lose pop" style="transition-delay:.25s">
+<div style="font-family:var(--font-mono);font-size:14px">concept 1 · <span style="color:var(--mut)">v2</span></div>
+<div class="lset"><span class="yes">✓</span><span class="yes">✓</span><span class="no">✗</span></div>
+<span class="pick x">a lemma can't be proved</span>
+</div>
+</div>
+</div>
+<div class="cap pop" style="transition-delay:.6s">We formalize each concept, keeping the version whose auxiliary lemmas can all be proved.</div>
+</section>
+
+<section class="scene" data-part="2" data-dur="7600">
+<div class="viz">
+<div style="display:flex;align-items:center;gap:20px">
+<div class="typestack">
+<div class="tchip pop"><span class="c">✓</span> concept 1</div>
+<div class="tchip pop" style="transition-delay:.15s"><span class="c">✓</span> concept 2</div>
+<div class="tchip new"><span class="c">✓</span> concept 3</div>
+</div>
+<span class="arrow pop" style="transition-delay:1.2s">→</span>
+<div class="codecard pop" style="transition-delay:1.4s"><span class="kw">theorem</span> main_theorem :<br>&nbsp;&nbsp;∃ c, 0 &lt; c ∧ …<br>&nbsp;&nbsp;:= <span class="kw">by</span> ...</div>
+</div>
+</div>
+<div class="cap pop" style="transition-delay:1.7s">With the concepts in place, we assemble the main theorem.</div>
+</section>
+
+<section class="scene" data-part="3" data-dur="6900">
+<div class="viz">
+<div class="exrow pop">
+<div class="agent"><div class="emowrap">✍️<span class="mood calm">🙂</span><span class="mood mad">😅</span></div><div class="role">prover</div></div>
+<div class="mtrack">
+<span class="msg msgR">📄 proof?</span>
+<span class="msg msgL">❓ gap! 😠</span>
+</div>
+<div class="agent"><div class="emowrap">🔍<span class="mood calm">🤔</span><span class="mood mad">😠</span></div><div class="role">critic</div></div>
+</div>
+<div class="badge pop beat" style="transition-delay:1s">🤝 ✅ airtight</div>
+</div>
+<div class="cap pop" style="transition-delay:.5s">A prover drafts a proof; a critic attacks it until it holds.</div>
+</section>
+
+<section class="scene" data-part="3" data-dur="7600">
+<div class="viz">
+<div class="node root pop">🌳 main theorem</div>
+<div class="edge pop" style="transition-delay:.15s"></div>
+<div class="pop" style="display:flex;gap:12px;transition-delay:.3s">
+<div class="node">lemma A</div><div class="node">lemma B</div><div class="node pw">📚 prior work</div>
+</div>
+</div>
+<div class="cap pop" style="transition-delay:.6s">We break the proof into named lemmas (prior work is cited, not reproved).</div>
+</section>
+
+<section class="scene" data-part="3" data-dur="8300">
+<div class="viz">
+<div style="display:flex;gap:18px;align-items:flex-start">
+<div class="codecard pop">
+<div class="cl pop" style="transition-delay:.4s">intro h</div>
+<div class="cl pop" style="transition-delay:.65s">have h₁ := <span class="lem">lemma A</span></div>
+<div class="cl pop" style="transition-delay:.9s">have h₂ := <span class="lem">lemma B</span></div>
+<div class="cl pop" style="transition-delay:1.15s;color:var(--grn)">✓ proved</div>
+</div>
+<div class="sublist">
+<div class="tchip pop" style="transition-delay:.65s;color:var(--blue)">＋ lemma A</div>
+<div class="tchip pop" style="transition-delay:.9s;color:var(--blue)">＋ lemma B</div>
+</div>
+</div>
+<div style="display:flex;gap:12px">
+<div class="badge lean pop" style="transition-delay:1.4s"><svg class="lnmk" viewBox="0 0 24 24"><g fill="#5B8DEF"><rect x="2.5" y="2.5" width="8.5" height="8.5" rx="2"/><rect x="13" y="2.5" width="8.5" height="8.5" rx="2" opacity=".72"/><rect x="2.5" y="13" width="8.5" height="8.5" rx="2" opacity=".72"/><rect x="13" y="13" width="8.5" height="8.5" rx="2" opacity=".46"/></g></svg> Lean ✓ compiles</div>
+<div class="badge amb pop beat" style="transition-delay:1.7s">🔁 then recurse on lemma A &amp; B</div>
+</div>
+</div>
+<div class="cap pop" style="transition-delay:.5s">The agent proves each node from its sub-lemmas, then recurses on those lemmas, all checked by Lean.</div>
+</section>
+
+<section class="scene" data-part="4" data-dur="10000">
+<div class="viz" style="gap:7px">
+<div class="paper bug pop"><div><div class="pt">A sharp version of Talagrand's selector process conjecture and an application to rounding fractional covers</div><div class="pa"><span class="venue">STOC 2025</span></div></div><div class="stamps"><span class="stamp">formalized</span><span class="stamp r beat"><span class="bug">🐛</span> gap found</span></div></div>
+<div class="paper pop" style="transition-delay:.15s"><div><div class="pt">Refuting the Direct Sum Conjecture for Total Functions in Deterministic Communication Complexity</div><div class="pa"><span class="venue">STOC 2025</span></div></div><div class="stamps"><span class="stamp">formalized</span></div></div>
+<div class="paper pop" style="transition-delay:.3s"><div><div class="pt">Approximation Guarantees of Median Mechanism in ℝᵈ</div><div class="pa"><span class="venue">STOC 2025</span></div></div><div class="stamps"><span class="stamp">formalized</span></div></div>
+<div class="paper pop" style="transition-delay:.45s"><div><div class="pt">A generalized trace reconstruction problem: Recovering a string of probabilities</div><div class="pa"><span class="venue">STOC 2025</span></div></div><div class="stamps"><span class="stamp">formalized</span></div></div>
+<div class="paper pop" style="transition-delay:.6s"><div><div class="pt">Efficiently learning mixtures of two Gaussians</div><div class="pa"><span class="venue">STOC 2010</span></div></div><div class="stamps"><span class="stamp">formalized</span></div></div>
+</div>
+</section>
+
+<section class="scene" data-part="0" data-dur="7400">
+<div class="viz" style="justify-content:center">
+<div class="titleblock">
+<div class="ptitle slowpop">Beyond the Library</div>
+<div class="psub slowpop" style="transition-delay:.3s">An Agentic Framework for Autoformalizing Research Mathematics</div>
+<div class="pauth slowpop" style="transition-delay:.7s">Arshia Soltani Moakhar · Iman Gholami · Max Springer · Mahdi JafariRaviz · MohammadTaghi Hajiaghayi</div>
+<div class="pinst slowpop" style="transition-delay:1s">University of Maryland · Princeton University</div>
+</div>
+</div>
+</section>
+
+</div>
+</div>
+</div>
+<script>
+(function(){
+var root=document.getElementById('btl');
+var scs=[].slice.call(root.querySelectorAll('.scene'));
+var names={1:'Motivation',2:'How we translate statements',3:'How we translate proofs',4:'Results'};
+var pill=root.querySelector('.pill'),pnum=root.querySelector('#pnum'),pname=root.querySelector('#pname');
+var tcard=root.querySelector('#tcard'),tcname=root.querySelector('#tcname');
+var i=0,t,lastPart=null;
+function playCard(p){tcname.textContent=names[p];tcard.classList.remove('play');void tcard.offsetWidth;tcard.classList.add('play');}
+function show(n){var p=+scs[n].getAttribute('data-part');scs.forEach(function(s,k){s.classList.toggle('active',k===n);s.classList.toggle('past',k<n);});
+if(p===0){pill.style.visibility='hidden';}else{pill.style.visibility='visible';pnum.textContent=p;pname.textContent=names[p];}
+if(p>=2&&p<=4&&p!==lastPart){playCard(p);}lastPart=p;}
+function run(){show(i);var d=parseInt(scs[i].getAttribute('data-dur'),10)||5200;t=setTimeout(function(){i++;if(i>=scs.length){i=0;lastPart=null;}run();},d);}
+root.addEventListener('click',function(){clearTimeout(t);i=0;lastPart=null;run();});
+run();
+})();
+</script>
+</div>
+</body>
+</html>

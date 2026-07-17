@@ -9,6 +9,22 @@
   header h1 { margin:0; font-size:26px; letter-spacing:0.3px; }
   header p { margin:8px 0 0; color:#9aa1ad; font-size:14px; }
   main { max-width:920px; margin:0 auto; padding:26px 20px 60px; display:grid; gap:14px; }
+  .section-label { max-width:920px; margin:8px auto 2px; padding:0 20px; color:#6a6f78; font-size:12px; text-transform:uppercase; letter-spacing:1.2px; }
+  .hero { max-width:1100px; margin:30px auto 8px; padding:0 20px; }
+  .hero-inner { display:grid; grid-template-columns:1.35fr 1fr; gap:26px; align-items:center;
+                background:#191b22; border:1px solid #262833; border-radius:14px; padding:20px; }
+  .hero-frame { position:relative; aspect-ratio:16/9; border-radius:10px; overflow:hidden; background:#0d0e13;
+                border:1px solid #262833; box-shadow:0 0 0 1px rgba(91,141,239,.08), 0 18px 40px -20px rgba(91,141,239,.35); }
+  .hero-frame iframe { position:absolute; inset:0; width:100%; height:100%; border:0; }
+  .hero-eyebrow { margin:0; color:#5B8DEF; font-size:12px; font-weight:600; text-transform:uppercase; letter-spacing:1.1px; }
+  .hero-title { margin:8px 0 0; font-size:26px; font-weight:600; color:#f4f4f4; letter-spacing:0.2px; }
+  .hero-sub { margin:7px 0 0; color:#b9bfca; font-size:14.5px; line-height:1.5; }
+  .hero-authors { margin:14px 0 0; color:#9aa1ad; font-size:13px; line-height:1.6; }
+  .hero-inst { margin:2px 0 0; color:#6a6f78; font-size:12.5px; }
+  .hero-link { display:inline-flex; align-items:center; gap:6px; margin-top:18px; background:#5B8DEF; color:#0d0e13;
+               font-weight:600; font-size:13.5px; text-decoration:none; padding:9px 16px; border-radius:8px; transition:background .12s; }
+  .hero-link:hover { background:#7ea3f5; }
+  @media (max-width:760px) { .hero-inner { grid-template-columns:1fr; } }
   .card { display:block; text-decoration:none; color:inherit; background:#1e1f22; border:1px solid #2a2c33;
            border-radius:10px; padding:18px 20px; transition:border-color .12s, background .12s; }
   .card:hover { border-color:#4d6fa0; background:#23252b; }
@@ -26,6 +42,22 @@
     <h1>FormaliaXiv</h1>
     <p>Formalized papers with bidirectional PDF ↔ Lean cross-references.</p>
   </header>
+  <section class="hero">
+    <div class="hero-inner">
+      <div class="hero-frame">
+        <iframe src="teaser_beyond_the_library_landscape.html" title="Beyond the Library — teaser" loading="lazy"></iframe>
+      </div>
+      <div class="hero-copy">
+        <p class="hero-eyebrow">The framework behind this site</p>
+        <h2 class="hero-title">Beyond the Library</h2>
+        <p class="hero-sub">An Agentic Framework for Autoformalizing Research Mathematics</p>
+        <p class="hero-authors">Arshia Soltani Moakhar · Iman Gholami · Max Springer · Mahdi JafariRaviz · MohammadTaghi Hajiaghayi</p>
+        <p class="hero-inst">University of Maryland · Princeton University</p>
+        <a class="hero-link" href="https://arxiv.org/abs/2606.31134" target="_blank" rel="noopener">Read the paper on arXiv ↗</a>
+      </div>
+    </div>
+  </section>
+  <p class="section-label">Formalized papers</p>
   <main>
     <a class="card" href="p/AGeneralizedTrace/"><div class="card-title">A Generalized Trace Reconstruction Problem: Recovering a String of Probabilities</div><div class="card-meta"><span class="card-venue">STOC 2025</span> · <span class="card-authors">Joey Rivkin, Gregory Valiant, Paul Valiant</span></div><div class="card-blurb">Formalizes the lower bound for the generalized trace reconstruction problem of recovering a string of probabilities from random traces.</div></a>
 <a class="card" href="p/ASharp/"><div class="card-title">A Sharp Version of Talagrand&#x27;s Selector Process Conjecture and an Application to Rounding Fractional Covers</div><div class="card-meta"><span class="card-venue">STOC 2025</span> · <span class="card-authors">Huy Tuan Pham</span></div><div class="card-blurb">Formalizes a sharp version of Talagrand&#x27;s selector process conjecture and its consequence for rounding fractional covers to integral ones.</div></a>
