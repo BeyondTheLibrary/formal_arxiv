@@ -40,6 +40,18 @@ html, body { margin: 0; padding: 0; height: 100%; background: #3a3a3a; font: 13p
 }
 #open-lean:hover { background: #3d5a86; color: #fff; border-color: #4d6fa0; }
 #app:not(.lean-closed) #open-lean { display: none; }  /* hide once Lean is open */
+#home-link {
+  position: absolute;
+  top: 8px; left: 8px;
+  z-index: 41;
+  background: rgba(20,20,20,0.82);
+  color: #cfd3da;
+  font: inherit; font-size: 12px; padding: 5px 12px; border-radius: 6px;
+  border: 1px solid #111; cursor: pointer;
+  text-decoration: none;
+  backdrop-filter: blur(2px);
+}
+#home-link:hover { background: #3d5a86; color: #fff; border-color: #4d6fa0; }
 .pdfViewer .page {
   box-shadow: 0 1px 4px rgba(0,0,0,0.5);
 }
