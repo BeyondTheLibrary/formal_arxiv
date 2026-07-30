@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "lean_file": "lean_workspace/Workspace/ProofLemmas/SublemmaFrobRepExists.lean",
+  "sig_sha256": "ff7e05b1ecb1db7b4ccc69a7f07e2f8f2fcab2fb574befddf17022c995795063",
+  "linked_at": "2026-07-28T01:11:19Z",
+  "decls": [
+    {
+      "fqn": "SublemmaFrobRepExists",
+      "name": "SublemmaFrobRepExists",
+      "status": "linked",
+      "kind": "proof_case",
+      "confidence": 0.85,
+      "paper_span": {
+        "tex_file": "unit-distance-proof.tex",
+        "quote": "representative \\(\\sigma_v\\in G\\) for each of these primes, and let"
+      },
+      "rationale": "Provides the paper's choice of one Frobenius representative \\(\\sigma_v \\in G\\) for each prime `v` of `F` above the selected \\(q_b\\)."
+    }
+  ],
+  "file_sha256": "48331d5a58b2b3675a092ae266564a534d19acdec84068780f8cab775677404a"
+}

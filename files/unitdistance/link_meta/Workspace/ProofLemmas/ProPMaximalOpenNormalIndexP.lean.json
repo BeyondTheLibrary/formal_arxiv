@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "lean_file": "lean_workspace/Workspace/ProofLemmas/ProPMaximalOpenNormalIndexP.lean",
+  "sig_sha256": "20037f4cdb0e4ca0353d67787b810f51ba0b44186556a1d24174fc571a125c2d",
+  "linked_at": "2026-07-28T01:11:19Z",
+  "decls": [
+    {
+      "fqn": "ProPMaximalOpenNormalIndexP",
+      "name": "ProPMaximalOpenNormalIndexP",
+      "status": "helper",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Pro-p group-theory plumbing behind the Frattini/Golod\u2013Shafarevich statements of Section 3. Not a standalone paper statement."
+    }
+  ],
+  "file_sha256": "28433aaa764030e6212f156bc8286f0e354970225092ffebbf0d331b6c25aa6f"
+}

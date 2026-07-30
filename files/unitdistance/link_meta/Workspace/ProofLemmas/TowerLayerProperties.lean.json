@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "lean_file": "lean_workspace/Workspace/ProofLemmas/TowerLayerProperties.lean",
+  "sig_sha256": "4753a59368f8867fa64c921064fdca261cffb4b160926fddd2100a1e4a3c7805",
+  "linked_at": "2026-07-28T01:11:19Z",
+  "decls": [
+    {
+      "fqn": "TowerLayerProperties",
+      "name": "TowerLayerProperties",
+      "status": "linked",
+      "kind": "proof_case",
+      "confidence": 0.9,
+      "paper_span": {
+        "tex_file": "unit-distance-proof.tex",
+        "quote": "of open normal subgroups with indices tending to infinity, and let \\(F_j\\) be the corresponding fixed"
+      },
+      "rationale": "Step 3 of Proposition 3.8, property (P2): a descending chain of open normal subgroups of \\(\\overline{G}\\) with indices \\(\\to \\infty\\) yields fields \\(F_j\\) with \\(F_j/F\\) finite Galois, everywhere unramified, 3-group Galois group, and \\(f_j \\to \\infty\\)."
+    }
+  ],
+  "file_sha256": "965870429ef98bff14d2a1bf1950d020f9bb865f37a282989a78f24592fd4bf8"
+}

@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "lean_file": "lean_workspace/Workspace/ProofLemmas/PrimesOneModThreePolyBound.lean",
+  "sig_sha256": "c90c87a2c467c3ba27504370d076cb5eadf2895d676a88eb45b5c2d565297f0d",
+  "linked_at": "2026-07-28T01:11:19Z",
+  "decls": [
+    {
+      "fqn": "PrimesOneModThreePolyBound",
+      "name": "PrimesOneModThreePolyBound",
+      "status": "helper",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Elementary bookkeeping about primes \\(\\equiv 1 \\bmod 3\\) supporting Fact 3.10."
+    }
+  ],
+  "file_sha256": "d2027eb68f9ee0e76899368a1960c04fa85b1cd70dba3d5b6c36fd446744e93e"
+}

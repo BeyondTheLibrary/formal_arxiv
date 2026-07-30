@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "lean_file": "lean_workspace/Workspace/ProofLemmas/GalUrOpenNormalThreePowerIndex.lean",
+  "sig_sha256": "8acd34b782ff61f07c012b748660b51983c2d8f6dc13d2e005a603f65d40cab4",
+  "linked_at": "2026-07-28T01:11:19Z",
+  "decls": [
+    {
+      "fqn": "pgroup_sup",
+      "name": "pgroup_sup",
+      "status": "helper",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Structural facts about \\(G = \\mathrm{Gal}(F^{\\mathrm{ur},3}/F)\\) (pro-p, topologically finitely generated, open normal subgroups of 3-power index) that the paper uses implicitly."
+    },
+    {
+      "fqn": "pgroup_finset_sup",
+      "name": "pgroup_finset_sup",
+      "status": "helper",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Structural facts about \\(G = \\mathrm{Gal}(F^{\\mathrm{ur},3}/F)\\) (pro-p, topologically finitely generated, open normal subgroups of 3-power index) that the paper uses implicitly."
+    },
+    {
+      "fqn": "GalUrOpenNormalThreePowerIndex",
+      "name": "GalUrOpenNormalThreePowerIndex",
+      "status": "helper",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Structural facts about \\(G = \\mathrm{Gal}(F^{\\mathrm{ur},3}/F)\\) (pro-p, topologically finitely generated, open normal subgroups of 3-power index) that the paper uses implicitly."
+    }
+  ],
+  "file_sha256": "623b408e07c5b3d54ab27ed2931bee3dea4496264e723de23dca4aaa759bfdb3"
+}

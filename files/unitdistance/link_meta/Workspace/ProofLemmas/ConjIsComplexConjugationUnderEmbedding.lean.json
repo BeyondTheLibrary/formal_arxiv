@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "lean_file": "lean_workspace/Workspace/ProofLemmas/ConjIsComplexConjugationUnderEmbedding.lean",
+  "sig_sha256": "32d1008abb63879c96bba116c2e3f632f5e191dc1cce674da5fe2775563a93ba",
+  "linked_at": "2026-07-28T01:11:19Z",
+  "decls": [
+    {
+      "fqn": "ConjIsComplexConjugationUnderEmbedding",
+      "name": "ConjIsComplexConjugationUnderEmbedding",
+      "status": "linked",
+      "kind": "proof_case",
+      "confidence": 0.9,
+      "paper_span": {
+        "tex_file": "unit-distance-proof.tex",
+        "quote": "Since $L$ is totally real, $c$ becomes ordinary"
+      },
+      "rationale": "Proves the paper's key CM fact: because `L` is totally real, the automorphism `c` becomes ordinary complex conjugation under every complex embedding of `K` \u2014 what turns \\(u\\,c(u)=1\\) into \\(|\\sigma(u)| = 1\\)."
+    }
+  ],
+  "file_sha256": "90ea156da302d31fb523a473cc05f7c7b216b78dc6cb4fcca96d77cfa5a16d51"
+}

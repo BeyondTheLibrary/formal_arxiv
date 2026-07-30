@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "lean_file": "lean_workspace/Workspace/ProofLemmas/SublemmaCubicCharacterOfConductorR.lean",
+  "sig_sha256": "52da6823b6831bce5ecf9d8249ee76a5c6fd5d0cd61bd397b850e681bad72536",
+  "linked_at": "2026-07-28T01:11:19Z",
+  "decls": [
+    {
+      "fqn": "SublemmaCubicCharacterOfConductorR",
+      "name": "SublemmaCubicCharacterOfConductorR",
+      "status": "linked",
+      "kind": "proof_case",
+      "confidence": 0.82,
+      "paper_span": {
+        "tex_file": "unit-distance-proof.tex",
+        "quote": "Let \\(\\chi_i\\) be a cubic Dirichlet"
+      },
+      "rationale": "Supplies the paper's \\(\\chi_i\\): a cubic (order-3) Dirichlet character of conductor \\(r_i\\)."
+    }
+  ],
+  "file_sha256": "4af6e40f36b9d55081d7c9f58694e4ecf6cc62028f4b4bf91ab2795d9c5f35d5"
+}

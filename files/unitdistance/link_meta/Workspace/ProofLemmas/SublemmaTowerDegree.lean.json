@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "lean_file": "lean_workspace/Workspace/ProofLemmas/SublemmaTowerDegree.lean",
+  "sig_sha256": "bd83985731de83e4daa19a45337198b4fcea89e26d2b5c5e36ab190c31ca3174",
+  "linked_at": "2026-07-28T01:11:19Z",
+  "decls": [
+    {
+      "fqn": "SublemmaTowerDegree",
+      "name": "SublemmaTowerDegree",
+      "status": "helper",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Tower bookkeeping (degrees, layers) for the field construction of Proposition 3.8."
+    }
+  ],
+  "file_sha256": "88a81257d237909693f0386c817547364e3d6fd47715c688d6dbae33176f1b75"
+}

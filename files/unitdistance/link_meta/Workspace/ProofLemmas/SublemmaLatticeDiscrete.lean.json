@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "lean_file": "lean_workspace/Workspace/ProofLemmas/SublemmaLatticeDiscrete.lean",
+  "sig_sha256": "bf0b2bf51875b7ea0ea42b960cc645551b4dfca649a406aabc3d93fafaff007a",
+  "linked_at": "2026-07-28T01:11:19Z",
+  "decls": [
+    {
+      "fqn": "SublemmaLatticeDiscrete",
+      "name": "SublemmaLatticeDiscrete",
+      "status": "helper",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Lattice infrastructure for the Minkowski embedding of Section 2.1 (discreteness, full rank, fundamental domain). Not a standalone paper statement."
+    }
+  ],
+  "file_sha256": "487426570a924aeb1ec8d49654cc8b5259274bd7547bf097fa75e1847e586877"
+}

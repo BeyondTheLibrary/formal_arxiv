@@ -1,0 +1,34 @@
+# Agent / harness scaffolding — kept out of pushed repo
+.claude/
+.mcp.json
+.mode
+CLAUDE.md
+scripts/
+proof_tree/
+
+# Lean build artifacts + vendored / symlinked packages
+lean_workspace/.lake/
+**/.lake/
+
+# Agent intermediate artifacts inside the lean workspace
+lean_workspace/ProofArchive/
+lean_workspace/ProofAttempts/
+lean_workspace/nlp_check/
+lean_workspace/CandidateLemmaFormalizations/
+lean_workspace/CandidateLemmaProofs/
+lean_workspace/Candidates/
+lean_workspace/test_lemmas/
+
+# FormaliaXiv derived artifacts — regenerable from link_meta/ via index -> linkmeta
+# build -> emit. Only link_meta/ is committed.
+index/
+viewer/
+out/
+manifest.jsonl
+manifest.index.json
+
+# Python / logs / NFS cruft
+__pycache__/
+*.pyc
+*.log
+.nfs*

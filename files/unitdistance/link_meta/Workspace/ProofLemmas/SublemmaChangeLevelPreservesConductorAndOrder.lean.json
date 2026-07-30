@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "lean_file": "lean_workspace/Workspace/ProofLemmas/SublemmaChangeLevelPreservesConductorAndOrder.lean",
+  "sig_sha256": "77d86ce270de308ff516c682719fa2c1bc26205fe1c8f020d3335f0ebb3dea97",
+  "linked_at": "2026-07-28T01:11:19Z",
+  "decls": [
+    {
+      "fqn": "SublemmaChangeLevelPreservesConductorAndOrder",
+      "name": "SublemmaChangeLevelPreservesConductorAndOrder",
+      "status": "helper",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Conductor bookkeeping behind the conductor\u2013discriminant formula used in Proposition 3.2. Not a standalone paper statement."
+    }
+  ],
+  "file_sha256": "adbbfeab1858c9b48dfa8b41afe7d26068341b03fbffbd2bf1617d07ecbeceef"
+}

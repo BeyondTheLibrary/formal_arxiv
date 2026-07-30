@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "lean_file": "lean_workspace/Workspace/ProofLemmas/FrobeniusKillingInfiniteQuotient.lean",
+  "sig_sha256": "cd851dfedffc3a3a10c9818e8a79beddd134d008a37bd70670d277ee86b5fac1",
+  "linked_at": "2026-07-28T01:11:19Z",
+  "decls": [
+    {
+      "fqn": "FrobeniusKillingInfiniteQuotient",
+      "name": "FrobeniusKillingInfiniteQuotient",
+      "status": "linked",
+      "kind": "proof_case",
+      "confidence": 0.9,
+      "paper_span": {
+        "tex_file": "unit-distance-proof.tex",
+        "quote": "For \\(\\ell\\), hence \\(d\\), sufficiently large, the right side is \\(<d^2/4\\). By Golod-Shafarevich, again as stated"
+      },
+      "rationale": "Step 2 in full: quotienting \\(G\\) by the closed normal closure of the selected Frobenius representatives keeps the generator rank and adds \\(3t\\) relations, and Golod\u2013Shafarevich then makes the quotient \\(\\overline{G} = G/N\\) infinite."
+    }
+  ],
+  "file_sha256": "cd0f07a72a0c823681fda58a54a2765d92b15140a16f92740563bb210e537c58"
+}

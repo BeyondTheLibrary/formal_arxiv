@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "lean_file": "lean_workspace/Workspace/ProofLemmas/SublemmaSplitInQiModFour.lean",
+  "sig_sha256": "299188a9a8381fa7e86a3fa71a51514bda254621021225afe5d40b1717e8383b",
+  "linked_at": "2026-07-28T01:11:19Z",
+  "decls": [
+    {
+      "fqn": "SublemmaSplitInQiModFour",
+      "name": "SublemmaSplitInQiModFour",
+      "status": "linked",
+      "kind": "proof_case",
+      "confidence": 0.88,
+      "paper_span": {
+        "tex_file": "unit-distance-proof.tex",
+        "quote": "below: the congruence \\(q_b\\equiv 1\\pmod 4\\), complete splitting in \\(F\\), and trivial Frobenius in the"
+      },
+      "rationale": "Proves the first of the three properties Chebotarev buys in Proposition 3.6: a rational prime that splits completely in \\(\\mathbb{Q}(i)\\) \u2014 a subfield of the normal closure of \\(E(i)\\) \u2014 satisfies \\(q \\equiv 1 \\pmod 4\\)."
+    }
+  ],
+  "file_sha256": "7db0da238279937a27055ec02b6dc47024943b83981450b4f68b5c4ecf96906b"
+}

@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "lean_file": "lean_workspace/Workspace/ProofLemmas/UnramifiedProPTowerFields.lean",
+  "sig_sha256": "cad0f15ac587ba06ad709bf3bfe8bf21a17491f6fbd1893f4608e95212c4d8ff",
+  "linked_at": "2026-07-28T01:11:19Z",
+  "decls": [
+    {
+      "fqn": "UnramifiedProPTowerFields",
+      "name": "UnramifiedProPTowerFields",
+      "status": "linked",
+      "kind": "proof_case",
+      "confidence": 0.85,
+      "paper_span": {
+        "tex_file": "unit-distance-proof.tex",
+        "quote": "Then \\(F_j/F\\) is finite Galois, everywhere unramified, and has \\(3\\)-group Galois group; since"
+      },
+      "rationale": "Supplies the tower layers themselves: the fixed field of an open normal subgroup of \\(\\mathrm{Gal}(F^{\\mathrm{ur},3}/F)\\) is a finite Galois everywhere-unramified 3-extension of `F`."
+    }
+  ],
+  "file_sha256": "09491467c484f0047222ba06812ebd98fc2125ee831786f7bae194fa90c635a2"
+}

@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "lean_file": "lean_workspace/Workspace/ProofLemmas/ConjQuotientUnitModulus.lean",
+  "sig_sha256": "fa03dcd7725f6e441288bf78d73a10a4d09dbf368749c11a46514964fc98acf2",
+  "linked_at": "2026-07-28T01:11:19Z",
+  "decls": [
+    {
+      "fqn": "ConjQuotientUnitModulus",
+      "name": "ConjQuotientUnitModulus",
+      "status": "linked",
+      "kind": "equation",
+      "confidence": 0.9,
+      "paper_span": {
+        "tex_file": "unit-distance-proof.tex",
+        "quote": "|\\sigma(u_\\varepsilon)| =",
+        "pdf_page": 7,
+        "pdf_match": "|\u03c3(u\u03b5 )| ="
+      },
+      "rationale": "Establishes display (3): every complex embedding of \\(u_\\varepsilon = \\alpha_\\varepsilon/c(\\alpha_\\varepsilon)\\) has modulus \\(|\\sigma(\\alpha)/\\overline{\\sigma(\\alpha)}| = 1\\)."
+    }
+  ],
+  "file_sha256": "840a13ceb59e38ec0d589534fa6f5b59fa03a93fff38863f9a995c41111d1290"
+}

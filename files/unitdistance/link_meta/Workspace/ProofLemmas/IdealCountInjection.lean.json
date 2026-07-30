@@ -1,0 +1,185 @@
+{
+  "schema_version": 1,
+  "lean_file": "lean_workspace/Workspace/ProofLemmas/IdealCountInjection.lean",
+  "sig_sha256": "e9add5b7b161629093fb3210f9c5a0de0dea1707c699a62453796f33052298a2",
+  "linked_at": "2026-07-28T01:11:19Z",
+  "decls": [
+    {
+      "fqn": "Workspace.ProofLemmas.IdealCountInjection.qOf",
+      "name": "qOf",
+      "status": "helper",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Counting infrastructure for the class-number bound (Proposition 3.7): the divisor-function estimate for the number of ideals of bounded norm. Not a standalone paper statement."
+    },
+    {
+      "fqn": "Workspace.ProofLemmas.IdealCountInjection.Sq",
+      "name": "Sq",
+      "status": "helper",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Counting infrastructure for the class-number bound (Proposition 3.7): the divisor-function estimate for the number of ideals of bounded norm. Not a standalone paper statement."
+    },
+    {
+      "fqn": "Workspace.ProofLemmas.IdealCountInjection.card_Sq_le",
+      "name": "card_Sq_le",
+      "status": "helper",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Counting infrastructure for the class-number bound (Proposition 3.7): the divisor-function estimate for the number of ideals of bounded norm. Not a standalone paper statement."
+    },
+    {
+      "fqn": "Workspace.ProofLemmas.IdealCountInjection.fOf",
+      "name": "fOf",
+      "status": "helper",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Counting infrastructure for the class-number bound (Proposition 3.7): the divisor-function estimate for the number of ideals of bounded norm. Not a standalone paper statement."
+    },
+    {
+      "fqn": "Workspace.ProofLemmas.IdealCountInjection.qOf_prime",
+      "name": "qOf_prime",
+      "status": "helper",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Counting infrastructure for the class-number bound (Proposition 3.7): the divisor-function estimate for the number of ideals of bounded norm. Not a standalone paper statement."
+    },
+    {
+      "fqn": "Workspace.ProofLemmas.IdealCountInjection.under_eq_span",
+      "name": "under_eq_span",
+      "status": "helper",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Counting infrastructure for the class-number bound (Proposition 3.7): the divisor-function estimate for the number of ideals of bounded norm. Not a standalone paper statement."
+    },
+    {
+      "fqn": "Workspace.ProofLemmas.IdealCountInjection.liesOver_qOf",
+      "name": "liesOver_qOf",
+      "status": "helper",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Counting infrastructure for the class-number bound (Proposition 3.7): the divisor-function estimate for the number of ideals of bounded norm. Not a standalone paper statement."
+    },
+    {
+      "fqn": "Workspace.ProofLemmas.IdealCountInjection.mem_Sq_qOf",
+      "name": "mem_Sq_qOf",
+      "status": "helper",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Counting infrastructure for the class-number bound (Proposition 3.7): the divisor-function estimate for the number of ideals of bounded norm. Not a standalone paper statement."
+    },
+    {
+      "fqn": "Workspace.ProofLemmas.IdealCountInjection.absNorm_eq_qOf_pow",
+      "name": "absNorm_eq_qOf_pow",
+      "status": "helper",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Counting infrastructure for the class-number bound (Proposition 3.7): the divisor-function estimate for the number of ideals of bounded norm. Not a standalone paper statement."
+    },
+    {
+      "fqn": "Workspace.ProofLemmas.IdealCountInjection.fOf_pos",
+      "name": "fOf_pos",
+      "status": "helper",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Counting infrastructure for the class-number bound (Proposition 3.7): the divisor-function estimate for the number of ideals of bounded norm. Not a standalone paper statement."
+    },
+    {
+      "fqn": "Workspace.ProofLemmas.IdealCountInjection.idxAt",
+      "name": "idxAt",
+      "status": "helper",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Counting infrastructure for the class-number bound (Proposition 3.7): the divisor-function estimate for the number of ideals of bounded norm. Not a standalone paper statement."
+    },
+    {
+      "fqn": "Workspace.ProofLemmas.IdealCountInjection.idx",
+      "name": "idx",
+      "status": "helper",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Counting infrastructure for the class-number bound (Proposition 3.7): the divisor-function estimate for the number of ideals of bounded norm. Not a standalone paper statement."
+    },
+    {
+      "fqn": "Workspace.ProofLemmas.IdealCountInjection.idxAt_inj",
+      "name": "idxAt_inj",
+      "status": "helper",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Counting infrastructure for the class-number bound (Proposition 3.7): the divisor-function estimate for the number of ideals of bounded norm. Not a standalone paper statement."
+    },
+    {
+      "fqn": "Workspace.ProofLemmas.IdealCountInjection.idx_inj",
+      "name": "idx_inj",
+      "status": "helper",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Counting infrastructure for the class-number bound (Proposition 3.7): the divisor-function estimate for the number of ideals of bounded norm. Not a standalone paper statement."
+    },
+    {
+      "fqn": "Workspace.ProofLemmas.IdealCountInjection.prod_fiber_prod",
+      "name": "prod_fiber_prod",
+      "status": "helper",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Counting infrastructure for the class-number bound (Proposition 3.7): the divisor-function estimate for the number of ideals of bounded norm. Not a standalone paper statement."
+    },
+    {
+      "fqn": "Workspace.ProofLemmas.IdealCountInjection.prod_",
+      "name": "prod_",
+      "status": "no_counterpart",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Not part of the compiled formalization: this module is never imported by the main theorem's build, so the declaration does not appear in the dependency graph."
+    },
+    {
+      "fqn": "Workspace.ProofLemmas.IdealCountInjection.mem_normalizedFactors_prime",
+      "name": "mem_normalizedFactors_prime",
+      "status": "helper",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Counting infrastructure for the class-number bound (Proposition 3.7): the divisor-function estimate for the number of ideals of bounded norm. Not a standalone paper statement."
+    },
+    {
+      "fqn": "Workspace.ProofLemmas.IdealCountInjection.w",
+      "name": "w",
+      "status": "helper",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Counting infrastructure for the class-number bound (Proposition 3.7): the divisor-function estimate for the number of ideals of bounded norm. Not a standalone paper statement."
+    },
+    {
+      "fqn": "Workspace.ProofLemmas.IdealCountInjection.factorization_prod_map",
+      "name": "factorization_prod_map",
+      "status": "helper",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Counting infrastructure for the class-number bound (Proposition 3.7): the divisor-function estimate for the number of ideals of bounded norm. Not a standalone paper statement."
+    },
+    {
+      "fqn": "Workspace.ProofLemmas.IdealCountInjection.sum_w_eq",
+      "name": "sum_w_eq",
+      "status": "helper",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Counting infrastructure for the class-number bound (Proposition 3.7): the divisor-function estimate for the number of ideals of bounded norm. Not a standalone paper statement."
+    },
+    {
+      "fqn": "Workspace.ProofLemmas.IdealCountInjection.factorization_",
+      "name": "factorization_",
+      "status": "no_counterpart",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Not part of the compiled formalization: this module is never imported by the main theorem's build, so the declaration does not appear in the dependency graph."
+    },
+    {
+      "fqn": "Workspace.ProofLemmas.IdealCountInjection.idealCount_le_D",
+      "name": "idealCount_le_D",
+      "status": "helper",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Counting infrastructure for the class-number bound (Proposition 3.7): the divisor-function estimate for the number of ideals of bounded norm. Not a standalone paper statement."
+    }
+  ],
+  "file_sha256": "cdf55c7cefd4b716d9edbc5ac9665fa58e2efe11f5e29673459051fa26ba59bd"
+}

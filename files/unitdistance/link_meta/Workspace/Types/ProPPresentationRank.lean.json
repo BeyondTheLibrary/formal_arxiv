@@ -1,0 +1,85 @@
+{
+  "schema_version": 1,
+  "lean_file": "lean_workspace/Workspace/Types/ProPPresentationRank.lean",
+  "sig_sha256": "81ce39c8722503e90beb9bf166daf77074d3a7dd94e3b2b98d84341d895d5921",
+  "linked_at": "2026-07-30T05:11:41Z",
+  "decls": [
+    {
+      "fqn": "Workspace.Types.ProPPresentationRank.PPowIndexSubgroup",
+      "name": "PPowIndexSubgroup",
+      "status": "helper",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Pro-p group-theory plumbing behind the Frattini/Golod\u2013Shafarevich statements of Section 3. Not a standalone paper statement."
+    },
+    {
+      "fqn": "Workspace.Types.ProPPresentationRank.instTopQuot",
+      "name": "instTopQuot",
+      "status": "helper",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Pro-p group-theory plumbing behind the Frattini/Golod\u2013Shafarevich statements of Section 3. Not a standalone paper statement."
+    },
+    {
+      "fqn": "Workspace.Types.ProPPresentationRank.instDiscQuot",
+      "name": "instDiscQuot",
+      "status": "helper",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Pro-p group-theory plumbing behind the Frattini/Golod\u2013Shafarevich statements of Section 3. Not a standalone paper statement."
+    },
+    {
+      "fqn": "Workspace.Types.ProPPresentationRank.ProdQuot",
+      "name": "ProdQuot",
+      "status": "helper",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Pro-p group-theory plumbing behind the Frattini/Golod\u2013Shafarevich statements of Section 3. Not a standalone paper statement."
+    },
+    {
+      "fqn": "Workspace.Types.ProPPresentationRank.diagHom",
+      "name": "diagHom",
+      "status": "helper",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Pro-p group-theory plumbing behind the Frattini/Golod\u2013Shafarevich statements of Section 3. Not a standalone paper statement."
+    },
+    {
+      "fqn": "Workspace.Types.ProPPresentationRank.freeProPSubgroup",
+      "name": "freeProPSubgroup",
+      "status": "helper",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Pro-p group-theory plumbing behind the Frattini/Golod\u2013Shafarevich statements of Section 3. Not a standalone paper statement."
+    },
+    {
+      "fqn": "Workspace.Types.ProPPresentationRank.freeProP",
+      "name": "freeProP",
+      "status": "helper",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Pro-p group-theory plumbing behind the Frattini/Golod\u2013Shafarevich statements of Section 3. Not a standalone paper statement."
+    },
+    {
+      "fqn": "Workspace.Types.ProPPresentationRank.IsProPPresentation",
+      "name": "IsProPPresentation",
+      "status": "helper",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Pro-p group-theory plumbing behind the Frattini/Golod\u2013Shafarevich statements of Section 3. Not a standalone paper statement."
+    },
+    {
+      "fqn": "Workspace.Types.ProPPresentationRank.relRank",
+      "name": "relRank",
+      "status": "linked",
+      "kind": "definition",
+      "confidence": 0.92,
+      "paper_span": {
+        "tex_file": "unit-distance-proof.tex",
+        "quote": "and \\(r(G)\\) for the minimal number of relations in a pro-\\(p\\) presentation."
+      },
+      "rationale": "`relRank p G` is the paper's \\(r(G)\\): the least number of relations over all pro-p presentations of `G` on exactly `d(G)` generators."
+    }
+  ],
+  "file_sha256": "b954403f166417e213cb85cdf50202a79941fb88872afd084286d7a33726ad21"
+}

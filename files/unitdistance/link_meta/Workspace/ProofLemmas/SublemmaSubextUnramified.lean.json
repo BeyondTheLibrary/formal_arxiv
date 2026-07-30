@@ -1,0 +1,49 @@
+{
+  "schema_version": 1,
+  "lean_file": "lean_workspace/Workspace/ProofLemmas/SublemmaSubextUnramified.lean",
+  "sig_sha256": "0ae48106787511d62e53df31578b7e653f0d43df9f80018d0d5b915d5d1249d5",
+  "linked_at": "2026-07-28T01:11:19Z",
+  "decls": [
+    {
+      "fqn": "isGalois_biSup_of_finset",
+      "name": "isGalois_biSup_of_finset",
+      "status": "helper",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Ramification bookkeeping for the unramified tower (properties P2/P3 of Proposition 3.8). Not a standalone paper statement."
+    },
+    {
+      "fqn": "CompositumFamilyEverywhereUnramified",
+      "name": "CompositumFamilyEverywhereUnramified",
+      "status": "helper",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Facts about the compositum \\(M = L_1\\cdots L_\\ell\\) (degree, Galois group, ramification) used inside the proof of Proposition 3.2."
+    },
+    {
+      "fqn": "SublemmaSubextUnramifiedAux.descent_finite",
+      "name": "descent_finite",
+      "status": "helper",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Ramification bookkeeping for the unramified tower (properties P2/P3 of Proposition 3.8). Not a standalone paper statement."
+    },
+    {
+      "fqn": "SublemmaSubextUnramifiedAux.descent_inf",
+      "name": "descent_inf",
+      "status": "helper",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Ramification bookkeeping for the unramified tower (properties P2/P3 of Proposition 3.8). Not a standalone paper statement."
+    },
+    {
+      "fqn": "SublemmaSubextUnramified",
+      "name": "SublemmaSubextUnramified",
+      "status": "helper",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Ramification bookkeeping for the unramified tower (properties P2/P3 of Proposition 3.8). Not a standalone paper statement."
+    }
+  ],
+  "file_sha256": "d92f140c06de5e07ae19a36e76c9e2eedaf4ddfcad96f17a9ff6678453009675"
+}

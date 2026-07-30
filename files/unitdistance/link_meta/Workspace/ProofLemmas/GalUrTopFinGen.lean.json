@@ -1,0 +1,81 @@
+{
+  "schema_version": 1,
+  "lean_file": "lean_workspace/Workspace/ProofLemmas/GalUrTopFinGen.lean",
+  "sig_sha256": "9f83aa829e1bb6a53171678ca10d528882aad25241f7ea96fa1e606f493cd78f",
+  "linked_at": "2026-07-28T01:11:19Z",
+  "decls": [
+    {
+      "fqn": "GalUrTopFinGenAux.maxOpen_normal_index_p",
+      "name": "maxOpen_normal_index_p",
+      "status": "helper",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Structural facts about \\(G = \\mathrm{Gal}(F^{\\mathrm{ur},3}/F)\\) (pro-p, topologically finitely generated, open normal subgroups of 3-power index) that the paper uses implicitly."
+    },
+    {
+      "fqn": "GalUrTopFinGenAux.frattini_normal",
+      "name": "frattini_normal",
+      "status": "helper",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Structural facts about \\(G = \\mathrm{Gal}(F^{\\mathrm{ur},3}/F)\\) (pro-p, topologically finitely generated, open normal subgroups of 3-power index) that the paper uses implicitly."
+    },
+    {
+      "fqn": "GalUrTopFinGenAux.commutator_in_frattini",
+      "name": "commutator_in_frattini",
+      "status": "helper",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Structural facts about \\(G = \\mathrm{Gal}(F^{\\mathrm{ur},3}/F)\\) (pro-p, topologically finitely generated, open normal subgroups of 3-power index) that the paper uses implicitly."
+    },
+    {
+      "fqn": "GalUrTopFinGenAux.pow_in_frattini",
+      "name": "pow_in_frattini",
+      "status": "helper",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Structural facts about \\(G = \\mathrm{Gal}(F^{\\mathrm{ur},3}/F)\\) (pro-p, topologically finitely generated, open normal subgroups of 3-power index) that the paper uses implicitly."
+    },
+    {
+      "fqn": "GalUrTopFinGenAux.frattini_quot_comm",
+      "name": "frattini_quot_comm",
+      "status": "helper",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Structural facts about \\(G = \\mathrm{Gal}(F^{\\mathrm{ur},3}/F)\\) (pro-p, topologically finitely generated, open normal subgroups of 3-power index) that the paper uses implicitly."
+    },
+    {
+      "fqn": "GalUrTopFinGenAux.frattini_quot_expp",
+      "name": "frattini_quot_expp",
+      "status": "helper",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Structural facts about \\(G = \\mathrm{Gal}(F^{\\mathrm{ur},3}/F)\\) (pro-p, topologically finitely generated, open normal subgroups of 3-power index) that the paper uses implicitly."
+    },
+    {
+      "fqn": "GalUrTopFinGenAux.frattini_quot_card",
+      "name": "frattini_quot_card",
+      "status": "helper",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Structural facts about \\(G = \\mathrm{Gal}(F^{\\mathrm{ur},3}/F)\\) (pro-p, topologically finitely generated, open normal subgroups of 3-power index) that the paper uses implicitly."
+    },
+    {
+      "fqn": "GalUrTopFinGenAux.nakayama_topfingen",
+      "name": "nakayama_topfingen",
+      "status": "helper",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Structural facts about \\(G = \\mathrm{Gal}(F^{\\mathrm{ur},3}/F)\\) (pro-p, topologically finitely generated, open normal subgroups of 3-power index) that the paper uses implicitly."
+    },
+    {
+      "fqn": "GalUrTopFinGen",
+      "name": "GalUrTopFinGen",
+      "status": "helper",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Structural facts about \\(G = \\mathrm{Gal}(F^{\\mathrm{ur},3}/F)\\) (pro-p, topologically finitely generated, open normal subgroups of 3-power index) that the paper uses implicitly."
+    }
+  ],
+  "file_sha256": "499d4e7e96f9c600fbdd6e03c3191dadec8c2a190304575354e783d5539708d4"
+}

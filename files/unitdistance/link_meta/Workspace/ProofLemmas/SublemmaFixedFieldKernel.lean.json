@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "lean_file": "lean_workspace/Workspace/ProofLemmas/SublemmaFixedFieldKernel.lean",
+  "sig_sha256": "4500a9cdd414de2f4f1cf975e84072e3a19866bf2d32a25501e7240f97635e82",
+  "linked_at": "2026-07-28T01:11:19Z",
+  "decls": [
+    {
+      "fqn": "SublemmaFixedFieldKernel",
+      "name": "SublemmaFixedFieldKernel",
+      "status": "helper",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Field-theoretic plumbing (normal closures, subfields, fixed fields) used across Section 3."
+    }
+  ],
+  "file_sha256": "971501aca5917b19ff04b4a23e1e23c8f67de618a81f52bb2cafee829351e8b5"
+}

@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "lean_file": "lean_workspace/Workspace/ProofLemmas/SublemmaAveragingPigeonhole.lean",
+  "sig_sha256": "da23e2a2ba1a5c7fd9ae3d0331a05ae37cb0982dabc189542c9631bf6cf2f2a7",
+  "linked_at": "2026-07-28T01:11:19Z",
+  "decls": [
+    {
+      "fqn": "SublemmaAveragingPigeonhole",
+      "name": "SublemmaAveragingPigeonhole",
+      "status": "linked",
+      "kind": "proof_case",
+      "confidence": 0.85,
+      "paper_span": {
+        "tex_file": "unit-distance-proof.tex",
+        "quote": "If every nonempty coset had \\(E_a < |U|\\rho_R^fN_a\\), then integrating over all cosets would contradict"
+      },
+      "rationale": "The pigeonhole closing Lemma 2.4: if every nonempty coset had \\(E_a < |U|\\rho_R^f N_a\\), integrating would contradict the averaged identity, so some coset attains \\(E_a \\ge |U|\\rho_R^f N_a\\)."
+    }
+  ],
+  "file_sha256": "b299889e4b1938c87cf029e282ce143f30edd67fac5db52ae6b764ca89b04259"
+}

@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "lean_file": "lean_workspace/Workspace/ProofLemmas/MultiplicityTransportConjAut.lean",
+  "sig_sha256": "13600cc03a2451f3e50330bf98e5e3653651f6044da1d34afc56130bc0a551be",
+  "linked_at": "2026-07-28T01:11:19Z",
+  "decls": [
+    {
+      "fqn": "MultiplicityTransportConjAut",
+      "name": "MultiplicityTransportConjAut",
+      "status": "helper",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Bookkeeping for the CM automorphism \\(c\\) and conjugate prime pairs used in Proposition 2.2."
+    }
+  ],
+  "file_sha256": "f304b5ce1df174764f273eb3eb836b105fbf5d3f2020d35825710fc1a126e72e"
+}

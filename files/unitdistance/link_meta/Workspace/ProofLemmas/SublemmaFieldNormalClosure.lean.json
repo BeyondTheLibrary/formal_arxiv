@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "lean_file": "lean_workspace/Workspace/ProofLemmas/SublemmaFieldNormalClosure.lean",
+  "sig_sha256": "ca75402db7eac50a288768aababe514d59fac77126792ce961b7a17e7887f8f9",
+  "linked_at": "2026-07-28T01:11:19Z",
+  "decls": [
+    {
+      "fqn": "SublemmaFieldNormalClosure",
+      "name": "SublemmaFieldNormalClosure",
+      "status": "helper",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Field-theoretic plumbing (normal closures, subfields, fixed fields) used across Section 3."
+    }
+  ],
+  "file_sha256": "70753557271f2d32451779dc9fb8aeb7965587d993711a6b72c39519ecb3ed92"
+}

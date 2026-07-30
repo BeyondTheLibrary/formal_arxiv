@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "lean_file": "lean_workspace/Workspace/ProofLemmas/SublemmaEcountEqSumTsum.lean",
+  "sig_sha256": "e1026d0a481640bd99c8be06d7d95bf19756a74824581ef2d7beeba148834138",
+  "linked_at": "2026-07-28T01:11:19Z",
+  "decls": [
+    {
+      "fqn": "SublemmaEcountEqSumTsum",
+      "name": "SublemmaEcountEqSumTsum",
+      "status": "helper",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Measure-theoretic bookkeeping for the pair count \\(E_a\\) in the averaging argument of Lemma 2.4. Not a standalone paper statement."
+    }
+  ],
+  "file_sha256": "e01dc9ab4549746281bf8415dcca58d6bdc5c5d25d8cb41fd44e0d177e511876"
+}

@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "lean_file": "lean_workspace/Workspace/ProofLemmas/GolodShafarevichInfinite.lean",
+  "sig_sha256": "a4d5eeec0ed499f13c3277479f202c891d54dcedeeecccedc8d60ac7c817b643",
+  "linked_at": "2026-07-28T01:11:19Z",
+  "decls": [
+    {
+      "fqn": "GolodShafarevichInfinite",
+      "name": "GolodShafarevichInfinite",
+      "status": "linked",
+      "kind": "proposition",
+      "confidence": 0.95,
+      "paper_span": {
+        "tex_file": "unit-distance-proof.tex",
+        "quote": "Equivalently, a nontrivial finitely generated pro-\\(p\\) group with \\(r\\le d^2/4\\) is infinite."
+      },
+      "rationale": "The contrapositive form of Proposition 3.4 actually used in the construction: a nontrivial finitely generated pro-p group with \\(r(G) \\le d(G)^2/4\\) is infinite."
+    }
+  ],
+  "file_sha256": "5d2b07534d85f0853c4b433cae9a2ce0d63e45aa72d8d7d6eb90f204e73cd9f2"
+}

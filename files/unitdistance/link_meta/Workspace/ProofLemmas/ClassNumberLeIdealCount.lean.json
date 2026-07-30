@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "lean_file": "lean_workspace/Workspace/ProofLemmas/ClassNumberLeIdealCount.lean",
+  "sig_sha256": "bcd0c5f91e59370513bbc67e98bdd40d3d4ec2742e7633e5e29c087167d42a1e",
+  "linked_at": "2026-07-28T01:11:19Z",
+  "decls": [
+    {
+      "fqn": "ClassNumberLeIdealCount",
+      "name": "ClassNumberLeIdealCount",
+      "status": "linked",
+      "kind": "proof_case",
+      "confidence": 0.85,
+      "paper_span": {
+        "tex_file": "unit-distance-proof.tex",
+        "quote": "Minkowski's ideal-class bound,"
+      },
+      "rationale": "The Minkowski ideal-class reduction behind Proposition 3.7: every ideal class contains an integral ideal of norm at most the Minkowski bound, so \\(h(K)\\) is at most the number of ideals of norm below that bound."
+    }
+  ],
+  "file_sha256": "1f4cd0a9e837fa43bc9f8cab562cf9b9d5f2a619b68dfc8474a2341ba260b6d9"
+}

@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "lean_file": "lean_workspace/Workspace/ProofLemmas/GalUrFrattiniQuotientFinite.lean",
+  "sig_sha256": "408c0b5e8917e524644df4b21149ab6e486786752118942c04d009ae5960a77e",
+  "linked_at": "2026-07-28T01:11:19Z",
+  "decls": [
+    {
+      "fqn": "GalUrFrattiniQuotientFinite",
+      "name": "GalUrFrattiniQuotientFinite",
+      "status": "helper",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Structural facts about \\(G = \\mathrm{Gal}(F^{\\mathrm{ur},3}/F)\\) (pro-p, topologically finitely generated, open normal subgroups of 3-power index) that the paper uses implicitly."
+    }
+  ],
+  "file_sha256": "b5ee0b4d9c4f3211f838f0832bbebb029343bac18bef4ceafd8baaf6b1e4845d"
+}

@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "lean_file": "lean_workspace/Workspace/ProofLemmas/SublemmaCompleteSplittingDescends.lean",
+  "sig_sha256": "b8563104673641a08edf946ed8e22697fadbcb39413942fcf454af29f9642b0b",
+  "linked_at": "2026-07-28T01:11:19Z",
+  "decls": [
+    {
+      "fqn": "SublemmaCompleteSplittingDescends",
+      "name": "SublemmaCompleteSplittingDescends",
+      "status": "helper",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Splitting bookkeeping (complete splitting descends along the tower, e = f = 1) supporting property P4 of Proposition 3.8. Not a standalone paper statement."
+    }
+  ],
+  "file_sha256": "d6aacf0ac275f44713e6192f4d82e922576f34ee83f0ad7290ece8bf06f062f7"
+}

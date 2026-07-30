@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "lean_file": "lean_workspace/Workspace/ProofLemmas/PrincipalGeneratorOfClassEquality.lean",
+  "sig_sha256": "ee7a7ee55f3420a69c5e9d9dd7b8e3c61013bfdfc34207487fad0c5a1ff0b3ee",
+  "linked_at": "2026-07-28T01:11:19Z",
+  "decls": [
+    {
+      "fqn": "PrincipalGeneratorOfClassEquality",
+      "name": "PrincipalGeneratorOfClassEquality",
+      "status": "linked",
+      "kind": "proof_case",
+      "confidence": 0.85,
+      "paper_span": {
+        "tex_file": "unit-distance-proof.tex",
+        "quote": "every $\\varepsilon$ in the same fiber, $A_\\varepsilon A_\\eta^{-1}$ is principal, so choose $\\alpha_\\varepsilon\\in K^\\times$ with $(\\alpha_\\varepsilon)=A_\\varepsilon A_\\eta^{-1}$,"
+      },
+      "rationale": "Realizes the paper's choice of \\(\\alpha_\\varepsilon\\): two ideals in the same class differ by a principal ideal, so \\(A_\\varepsilon A_\\eta^{-1} = (\\alpha_\\varepsilon)\\) for some \\(\\alpha_\\varepsilon \\in K^\\times\\)."
+    }
+  ],
+  "file_sha256": "4a8a6609ca4c997c417515503f7fddb5032901db8871320e27bda2b14f0308e4"
+}

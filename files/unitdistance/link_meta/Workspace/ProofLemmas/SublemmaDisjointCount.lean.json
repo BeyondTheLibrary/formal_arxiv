@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "lean_file": "lean_workspace/Workspace/ProofLemmas/SublemmaDisjointCount.lean",
+  "sig_sha256": "4d07aaa031cc891947161dfcceb8404f7524bf8cf5c0a8bc45f245025ab0a478",
+  "linked_at": "2026-07-28T01:11:19Z",
+  "decls": [
+    {
+      "fqn": "SublemmaDisjointCount",
+      "name": "SublemmaDisjointCount",
+      "status": "helper",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Internal Lean helper: a supporting step of the formalization with no standalone counterpart in the paper, which states only the numbered results it is used to prove."
+    }
+  ],
+  "file_sha256": "f09569d2ea2477f0aa9edde5c634d26a45d7baa0ce2ae98fc03001132db06d11"
+}

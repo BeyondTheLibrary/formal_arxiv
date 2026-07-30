@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "lean_file": "lean_workspace/Workspace/ProofLemmas/MultiplicityPrimeOverRationalPrime.lean",
+  "sig_sha256": "acd911091c896ea19ea53246f5c7140df4696f13165270fe388e221a6a0a8f72",
+  "linked_at": "2026-07-28T01:11:19Z",
+  "decls": [
+    {
+      "fqn": "MultiplicityPrimeOverRationalPrime",
+      "name": "MultiplicityPrimeOverRationalPrime",
+      "status": "helper",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Prime-ideal bookkeeping supporting the splitting arguments of Sections 2\u20133."
+    }
+  ],
+  "file_sha256": "44734c2f28067cf5a84b8b85e9e5d26b58f6cac93e62705a0372841ac4c3a414"
+}

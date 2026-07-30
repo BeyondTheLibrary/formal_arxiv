@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "lean_file": "lean_workspace/Workspace/ProofLemmas/ConjAutSwapPrimeOverQ.lean",
+  "sig_sha256": "6e7d43c39b086d8d5f011260d3e415a33d35ec13160ef945f726e5f11e1bfdfb",
+  "linked_at": "2026-07-28T01:11:19Z",
+  "decls": [
+    {
+      "fqn": "ConjAutSwapPrimeOverQ",
+      "name": "ConjAutSwapPrimeOverQ",
+      "status": "helper",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Bookkeeping for the CM automorphism \\(c\\) and conjugate prime pairs used in Proposition 2.2."
+    }
+  ],
+  "file_sha256": "fdf253680c316116d41c738c83bd68e619a8666b8c5449326c4841d16a645dfe"
+}

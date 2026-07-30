@@ -1,0 +1,49 @@
+{
+  "schema_version": 1,
+  "lean_file": "lean_workspace/Workspace/ProofLemmas/SublemmaUnramifiedTransport.lean",
+  "sig_sha256": "0c1b5ec41842cf469c43611ee5df5f0bd4d5bb7c3ff68116d32d978186dc6719",
+  "linked_at": "2026-07-28T01:11:19Z",
+  "decls": [
+    {
+      "fqn": "SublemmaUnramifiedTransportAux.map_symm_map",
+      "name": "map_symm_map",
+      "status": "helper",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Ramification bookkeeping for the unramified tower (properties P2/P3 of Proposition 3.8). Not a standalone paper statement."
+    },
+    {
+      "fqn": "SublemmaUnramifiedTransportAux.primesOver_image",
+      "name": "primesOver_image",
+      "status": "helper",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Ramification bookkeeping for the unramified tower (properties P2/P3 of Proposition 3.8). Not a standalone paper statement."
+    },
+    {
+      "fqn": "SublemmaUnramifiedTransportAux.ram_transfer",
+      "name": "ram_transfer",
+      "status": "helper",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Ramification bookkeeping for the unramified tower (properties P2/P3 of Proposition 3.8). Not a standalone paper statement."
+    },
+    {
+      "fqn": "SublemmaUnramifiedTransportAux.inf_transfer",
+      "name": "inf_transfer",
+      "status": "helper",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Ramification bookkeeping for the unramified tower (properties P2/P3 of Proposition 3.8). Not a standalone paper statement."
+    },
+    {
+      "fqn": "SublemmaUnramifiedTransport",
+      "name": "SublemmaUnramifiedTransport",
+      "status": "helper",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Ramification bookkeeping for the unramified tower (properties P2/P3 of Proposition 3.8). Not a standalone paper statement."
+    }
+  ],
+  "file_sha256": "95dbbea869db9f9efe67799809950f70555097431cc11d5128551464933384ac"
+}

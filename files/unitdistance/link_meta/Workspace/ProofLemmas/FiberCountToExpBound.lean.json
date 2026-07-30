@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "lean_file": "lean_workspace/Workspace/ProofLemmas/FiberCountToExpBound.lean",
+  "sig_sha256": "b3aa24954a933e8743d39cc11218bf1679b658e5571620f5ee1856c461ae0523",
+  "linked_at": "2026-07-28T01:11:19Z",
+  "decls": [
+    {
+      "fqn": "FiberCountToExpBound",
+      "name": "FiberCountToExpBound",
+      "status": "linked",
+      "kind": "equation",
+      "confidence": 0.85,
+      "paper_span": {
+        "tex_file": "unit-distance-proof.tex",
+        "quote": "|U|\\ge \\frac{2^{tf}}{h(K)}",
+        "pdf_page": 7,
+        "pdf_match": "\u2265 exp{(t log 2 \u2212 log H)f }."
+      },
+      "rationale": "Turns the fibre count into the exponential lower bound of Proposition 2.2: \\(|U| \\ge 2^{tf}/h(K) \\ge \\exp\\{(t\\log 2 - \\log H)f\\}\\) using \\(h(K) \\le H^f\\)."
+    }
+  ],
+  "file_sha256": "2cbae36cfe6ea1534d0c75f7479fd37effad7c3086222228eb6fc0e14972383e"
+}

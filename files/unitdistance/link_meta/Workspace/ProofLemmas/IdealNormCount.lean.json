@@ -1,0 +1,89 @@
+{
+  "schema_version": 1,
+  "lean_file": "lean_workspace/Workspace/ProofLemmas/IdealNormCount.lean",
+  "sig_sha256": "b246bea2458299058a2407ec1def5b54c8e74358cd9c3761bbe94caa45a77990",
+  "linked_at": "2026-07-28T01:11:19Z",
+  "decls": [
+    {
+      "fqn": "Workspace.ProofLemmas.IdealNormCount.DivisorCount.D",
+      "name": "D",
+      "status": "helper",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Counting infrastructure for the class-number bound (Proposition 3.7): bookkeeping for ideals of bounded absolute norm. Not a standalone paper statement."
+    },
+    {
+      "fqn": "Workspace.ProofLemmas.IdealNormCount.DivisorCount.mem_D",
+      "name": "mem_D",
+      "status": "helper",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Counting infrastructure for the class-number bound (Proposition 3.7): bookkeeping for ideals of bounded absolute norm. Not a standalone paper statement."
+    },
+    {
+      "fqn": "Workspace.ProofLemmas.IdealNormCount.DivisorCount.mem_D_iff",
+      "name": "mem_D_iff",
+      "status": "helper",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Counting infrastructure for the class-number bound (Proposition 3.7): bookkeeping for ideals of bounded absolute norm. Not a standalone paper statement."
+    },
+    {
+      "fqn": "Workspace.ProofLemmas.IdealNormCount.DivisorCount.sum_inv_sq_le'",
+      "name": "sum_inv_sq_le'",
+      "status": "helper",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Counting infrastructure for the class-number bound (Proposition 3.7): bookkeeping for ideals of bounded absolute norm. Not a standalone paper statement."
+    },
+    {
+      "fqn": "Workspace.ProofLemmas.IdealNormCount.DivisorCount.sum_inv_sq_le",
+      "name": "sum_inv_sq_le",
+      "status": "helper",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Counting infrastructure for the class-number bound (Proposition 3.7): bookkeeping for ideals of bounded absolute norm. Not a standalone paper statement."
+    },
+    {
+      "fqn": "Workspace.ProofLemmas.IdealNormCount.DivisorCount.card_D_succ",
+      "name": "card_D_succ",
+      "status": "helper",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Counting infrastructure for the class-number bound (Proposition 3.7): bookkeeping for ideals of bounded absolute norm. Not a standalone paper statement."
+    },
+    {
+      "fqn": "Workspace.ProofLemmas.IdealNormCount.DivisorCount.card_D_le",
+      "name": "card_D_le",
+      "status": "helper",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Counting infrastructure for the class-number bound (Proposition 3.7): bookkeeping for ideals of bounded absolute norm. Not a standalone paper statement."
+    },
+    {
+      "fqn": "Workspace.ProofLemmas.IdealNormCount.MB",
+      "name": "MB",
+      "status": "helper",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Counting infrastructure for the class-number bound (Proposition 3.7): bookkeeping for ideals of bounded absolute norm. Not a standalone paper statement."
+    },
+    {
+      "fqn": "Workspace.ProofLemmas.IdealNormCount.MB_le",
+      "name": "MB_le",
+      "status": "helper",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Counting infrastructure for the class-number bound (Proposition 3.7): bookkeeping for ideals of bounded absolute norm. Not a standalone paper statement."
+    },
+    {
+      "fqn": "Workspace.ProofLemmas.IdealNormCount.idealCount_bound_of_inj",
+      "name": "idealCount_bound_of_inj",
+      "status": "helper",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Counting infrastructure for the class-number bound (Proposition 3.7): bookkeeping for ideals of bounded absolute norm. Not a standalone paper statement."
+    }
+  ],
+  "file_sha256": "b138b904d63a9df1163119942c87a28b0144972bf6daefba0ee404aafc424819"
+}

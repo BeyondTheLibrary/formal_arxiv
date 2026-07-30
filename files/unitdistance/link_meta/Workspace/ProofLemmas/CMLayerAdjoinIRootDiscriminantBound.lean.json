@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "lean_file": "lean_workspace/Workspace/ProofLemmas/CMLayerAdjoinIRootDiscriminantBound.lean",
+  "sig_sha256": "8d33d54ed681c768c1f1f7215298ab0f0b3d47740b316d8f48e091742d43c959",
+  "linked_at": "2026-07-28T01:11:19Z",
+  "decls": [
+    {
+      "fqn": "CMLayerAdjoinIRootDiscriminantBound",
+      "name": "CMLayerAdjoinIRootDiscriminantBound",
+      "status": "linked",
+      "kind": "proof_case",
+      "confidence": 0.9,
+      "paper_span": {
+        "tex_file": "unit-distance-proof.tex",
+        "quote": "Taking \\(2f_j\\)-th roots, since \\([K_j:\\mathbb Q]=2f_j\\), gives \\(\\operatorname{rd}(K_j)\\le 2\\operatorname{rd}(F)\\)."
+      },
+      "rationale": "Property (P5), first clause: since \\(\\mathfrak{d}_{K_j/F_j} \\mid 4\\mathcal{O}_{F_j}\\), \\(|D_{K_j}| \\le |D_{F_j}|^2 4^{f_j}\\), and taking \\(2f_j\\)-th roots gives \\(\\mathrm{rd}(K_j) \\le 2\\,\\mathrm{rd}(F)\\)."
+    }
+  ],
+  "file_sha256": "73247993e085d3e78c274a0764342d2eb9cdd3ef8c5849254036894d6e5a831a"
+}

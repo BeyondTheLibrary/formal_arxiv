@@ -1,0 +1,49 @@
+{
+  "schema_version": 1,
+  "lean_file": "lean_workspace/Workspace/ProofLemmas/UnramifiedDiscriminant.lean",
+  "sig_sha256": "9868b00bc8d179ee40636ee51aed6fd13745fa37e55ec3ff70882a03d44e1081",
+  "linked_at": "2026-07-28T01:11:19Z",
+  "decls": [
+    {
+      "fqn": "Workspace.ProofLemmas.UnramifiedDiscriminant.differentIdeal_eq_top_of_unramified",
+      "name": "differentIdeal_eq_top_of_unramified",
+      "status": "helper",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Ramification bookkeeping for the unramified tower (properties P2/P3 of Proposition 3.8). Not a standalone paper statement."
+    },
+    {
+      "fqn": "Workspace.ProofLemmas.UnramifiedDiscriminant.ramIdx_one_of_differentIdeal_eq_top",
+      "name": "ramIdx_one_of_differentIdeal_eq_top",
+      "status": "helper",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Ramification bookkeeping for the unramified tower (properties P2/P3 of Proposition 3.8). Not a standalone paper statement."
+    },
+    {
+      "fqn": "Workspace.ProofLemmas.UnramifiedDiscriminant.natAbs_discr_of_unramified",
+      "name": "natAbs_discr_of_unramified",
+      "status": "helper",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Ramification bookkeeping for the unramified tower (properties P2/P3 of Proposition 3.8). Not a standalone paper statement."
+    },
+    {
+      "fqn": "Workspace.ProofLemmas.UnramifiedDiscriminant.unramified_iff_natAbs_discr",
+      "name": "unramified_iff_natAbs_discr",
+      "status": "helper",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Ramification bookkeeping for the unramified tower (properties P2/P3 of Proposition 3.8). Not a standalone paper statement."
+    },
+    {
+      "fqn": "Workspace.ProofLemmas.UnramifiedDiscriminant.residue_isSeparable",
+      "name": "residue_isSeparable",
+      "status": "helper",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Ramification bookkeeping for the unramified tower (properties P2/P3 of Proposition 3.8). Not a standalone paper statement."
+    }
+  ],
+  "file_sha256": "6710e4923664263f3eac3ef533684c33eb3aff9e90cec8fee6bee292af578592"
+}

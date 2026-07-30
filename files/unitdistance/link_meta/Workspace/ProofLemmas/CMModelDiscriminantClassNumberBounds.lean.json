@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "lean_file": "lean_workspace/Workspace/ProofLemmas/CMModelDiscriminantClassNumberBounds.lean",
+  "sig_sha256": "0c960cc080102daf922a0f81fe4c569fd963e11951fc3833ae10445ae68555cf",
+  "linked_at": "2026-07-28T01:11:19Z",
+  "decls": [
+    {
+      "fqn": "CMModelDiscriminantClassNumberBounds",
+      "name": "CMModelDiscriminantClassNumberBounds",
+      "status": "linked",
+      "kind": "proof_case",
+      "confidence": 0.9,
+      "paper_span": {
+        "tex_file": "unit-distance-proof.tex",
+        "quote": "The class-number estimate in Proposition 3.7 therefore gives"
+      },
+      "rationale": "Property (P5), class-number clause: applying Proposition 3.7 to \\(K_j\\) with \\(\\mathrm{rd}(K_j) \\le 2\\,\\mathrm{rd}(F)\\) gives \\(h(K_j) \\le H_\\ell^{f_j}\\) with \\(H_\\ell = (2\\,\\mathrm{rd}(F))^{2C_{\\mathrm{class}}}\\), so \\(\\log H_\\ell = O(\\ell\\log\\ell)\\)."
+    }
+  ],
+  "file_sha256": "7b9bd79d78f3e3e1f3837db2e0f2ee815539d513b59ccda80741e4ecf86cf463"
+}

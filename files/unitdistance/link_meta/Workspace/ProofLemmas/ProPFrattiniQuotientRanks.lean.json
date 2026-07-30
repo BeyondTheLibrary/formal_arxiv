@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "lean_file": "lean_workspace/Workspace/ProofLemmas/ProPFrattiniQuotientRanks.lean",
+  "sig_sha256": "44f43fa0327aa0a6d4e5b992e41f4ff7303e5e70449de3955c7cc7bd08bf5bff",
+  "linked_at": "2026-07-28T01:11:19Z",
+  "decls": [
+    {
+      "fqn": "ProPFrattiniQuotientRanksAux.comap_maximalOpen",
+      "name": "comap_maximalOpen",
+      "status": "helper",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Pro-p group-theory plumbing behind the Frattini/Golod\u2013Shafarevich statements of Section 3. Not a standalone paper statement."
+    },
+    {
+      "fqn": "ProPFrattiniQuotientRanksAux.map_maximalOpen",
+      "name": "map_maximalOpen",
+      "status": "helper",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Pro-p group-theory plumbing behind the Frattini/Golod\u2013Shafarevich statements of Section 3. Not a standalone paper statement."
+    },
+    {
+      "fqn": "ProPFrattiniQuotientRanksAux.frattini_comap_eq",
+      "name": "frattini_comap_eq",
+      "status": "helper",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Pro-p group-theory plumbing behind the Frattini/Golod\u2013Shafarevich statements of Section 3. Not a standalone paper statement."
+    },
+    {
+      "fqn": "ProPFrattiniQuotientRanksAux.main",
+      "name": "main",
+      "status": "helper",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Pro-p group-theory plumbing behind the Frattini/Golod\u2013Shafarevich statements of Section 3. Not a standalone paper statement."
+    },
+    {
+      "fqn": "ProPFrattiniQuotientRanks",
+      "name": "ProPFrattiniQuotientRanks",
+      "status": "linked",
+      "kind": "proposition",
+      "confidence": 0.95,
+      "paper_span": {
+        "tex_file": "unit-distance-proof.tex",
+        "quote": "If \\(g_1,\\ldots,g_k\\in\\Phi(G)\\) and \\(N\\) is their closed normal closure, then \\(d(G/N)=d(G)\\) and \\(r(G/N)\\le"
+      },
+      "rationale": "Proposition 3.3, Frattini-quotient half: killing \\(k\\) elements of \\(\\Phi(G)\\) leaves the generator rank unchanged and adds at most \\(k\\) relations \u2014 \\(d(G/N) = d(G)\\) and \\(r(G/N) \\le r(G) + k\\). This is what lets the Frobenius-killing step preserve the Golod\u2013Shafarevich deficiency."
+    }
+  ],
+  "file_sha256": "145bc98d5a900c60ec1a65bd0ca59e2d89cfaede2ffe37d5311a25bc3a9b8653"
+}

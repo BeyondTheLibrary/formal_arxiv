@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "lean_file": "lean_workspace/Workspace/ProofLemmas/Prop36ChebotarevApplication.lean",
+  "sig_sha256": "c85333bf404f77ca753e2e79c59911395319facb0a2ca5c2d1ca9916680454a3",
+  "linked_at": "2026-07-28T01:11:19Z",
+  "decls": [
+    {
+      "fqn": "Prop36ChebotarevApplication",
+      "name": "Prop36ChebotarevApplication",
+      "status": "linked",
+      "kind": "proposition",
+      "confidence": 0.95,
+      "paper_span": {
+        "tex_file": "unit-distance-proof.tex",
+        "quote": "\\(q_1,\\ldots,q_t\\) which split completely in the normal closure over \\(\\mathbb Q\\) of \\(E(i)\\). For each such prime"
+      },
+      "rationale": "Proposition 3.6 (Chebotarev application): after excluding a finite set, there are `t` distinct rational primes splitting completely in the normal closure of \\(E(i)\\); each satisfies \\(q_b \\equiv 1 \\pmod 4\\), splits completely in `F`, and has a Frobenius representative in \\(\\Phi(G)\\) at every prime above it."
+    }
+  ],
+  "file_sha256": "174d0baa29d4c8bdbae1f55f7904bd6060525e2c1844f75b9577133239c79db8"
+}

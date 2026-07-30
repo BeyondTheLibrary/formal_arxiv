@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "lean_file": "lean_workspace/Workspace/ProofLemmas/LocalSplitKummerCount.lean",
+  "sig_sha256": "87e43d6b355dfd2c96442e49f6163b21f256582ea279c5d5ff1c258a9a5b9187",
+  "linked_at": "2026-07-28T01:11:19Z",
+  "decls": [
+    {
+      "fqn": "LocalSplitKummerCount",
+      "name": "LocalSplitKummerCount",
+      "status": "helper",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Splitting bookkeeping (complete splitting descends along the tower, e = f = 1) supporting property P4 of Proposition 3.8. Not a standalone paper statement."
+    }
+  ],
+  "file_sha256": "4688c577f0be3d598833dc5457d0477217115507b226c7097f9a9fb0011aa88f"
+}

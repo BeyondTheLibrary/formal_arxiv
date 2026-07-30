@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "lean_file": "lean_workspace/Workspace/MainTheorem.lean",
+  "sig_sha256": "5288da3e6e9d09d4769c1fc81e6016222e8fffd512c22c707e81a615e4b6fb45",
+  "linked_at": "2026-07-28T01:11:19Z",
+  "decls": [
+    {
+      "fqn": "Workspace.MainTheorem.theorem_1_1_unit_distance",
+      "name": "theorem_1_1_unit_distance",
+      "status": "linked",
+      "kind": "theorem",
+      "confidence": 0.98,
+      "paper_span": {
+        "tex_file": "unit-distance-proof.tex",
+        "quote": "There exists an absolute constant \\(\\delta>0\\) and infinitely many positive integers \\(n\\) for which \\(\\nu(n)\\geq n^{1+\\delta}\\)."
+      },
+      "rationale": "The paper's main theorem. `nuMax n` is the paper's \\(\\nu(n)\\) (maximum unit-distance count over n-point planar sets); the Lean statement `\u2203 \u03b4 > 0, \u2200 N, \u2203 n \u2265 N, nuMax n \u2265 n^(1+\u03b4)` is exactly \"an absolute \u03b4 > 0 and infinitely many n with \u03bd(n) \u2265 n^{1+\u03b4}\"."
+    }
+  ],
+  "file_sha256": "20f978f25b114903dc4f682f522f2dfac3df64baa0cc3f9a8119e227d42ee223"
+}

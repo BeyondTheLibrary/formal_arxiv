@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "lean_file": "lean_workspace/Workspace/ProofLemmas/SublemmaMPrimeRealization.lean",
+  "sig_sha256": "34b6192dd1a505c416e04fa71adb05b0ce317495df011618a68cbeabcbe07778",
+  "linked_at": "2026-07-28T01:11:19Z",
+  "decls": [
+    {
+      "fqn": "SublemmaMPrimeRealization",
+      "name": "SublemmaMPrimeRealization",
+      "status": "linked",
+      "kind": "proof_case",
+      "confidence": 0.85,
+      "paper_span": {
+        "tex_file": "unit-distance-proof.tex",
+        "quote": "Because \\(M/F\\) is an everywhere-unramified \\(3\\)-extension, the Galois group of the maximal"
+      },
+      "rationale": "Realizes the compositum `M` as a finite everywhere-unramified 3-extension inside an algebraic closure of `F`, exhibiting \\((\\mathbb{Z}/3\\mathbb{Z})^{\\ell-1}\\) as a quotient of \\(G = \\mathrm{Gal}(F^{\\mathrm{ur},3}/F)\\) \u2014 the bridge from Proposition 3.2 to the bound \\(d(G) \\ge \\ell-1\\)."
+    }
+  ],
+  "file_sha256": "abc50c89a9ca192a145b4d656b4e1e89b6fdd3e732bceba0a0c7caea9c9c58af"
+}

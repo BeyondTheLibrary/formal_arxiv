@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "lean_file": "lean_workspace/Workspace/ProofLemmas/UnramifiedProPDescendingChain.lean",
+  "sig_sha256": "a34d4d27f0097b15d8f8001732c7bf316c832ba8d07354cab40f31b1e1bcfbfa",
+  "linked_at": "2026-07-28T01:11:19Z",
+  "decls": [
+    {
+      "fqn": "DescChainLayer",
+      "name": "DescChainLayer",
+      "status": "no_counterpart",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Not part of the compiled formalization: this module is never imported by the main theorem's build, so the declaration does not appear in the dependency graph."
+    },
+    {
+      "fqn": "descChain_exists_smaller",
+      "name": "descChain_exists_smaller",
+      "status": "no_counterpart",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Not part of the compiled formalization: this module is never imported by the main theorem's build, so the declaration does not appear in the dependency graph."
+    },
+    {
+      "fqn": "descChain_main",
+      "name": "descChain_main",
+      "status": "no_counterpart",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Not part of the compiled formalization: this module is never imported by the main theorem's build, so the declaration does not appear in the dependency graph."
+    },
+    {
+      "fqn": "UnramifiedProPDescendingChain",
+      "name": "UnramifiedProPDescendingChain",
+      "status": "helper",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Pro-p group-theory plumbing behind the Frattini/Golod\u2013Shafarevich statements of Section 3. Not a standalone paper statement."
+    }
+  ],
+  "file_sha256": "8564082622eb6f33d7e9a72dc238616dc409e91daecbe3b875802ce19dadbc64"
+}

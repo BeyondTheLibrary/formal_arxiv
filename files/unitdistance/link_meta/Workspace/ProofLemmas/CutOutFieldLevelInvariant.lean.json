@@ -1,0 +1,81 @@
+{
+  "schema_version": 1,
+  "lean_file": "lean_workspace/Workspace/ProofLemmas/CutOutFieldLevelInvariant.lean",
+  "sig_sha256": "65584df6f9a6c0cd000814e84cb6fe136a83ad6599080296d61ea467d82074e7",
+  "linked_at": "2026-07-28T01:11:19Z",
+  "decls": [
+    {
+      "fqn": "Workspace.ProofLemmas.CutOutFieldLevelInvariantProof.zetaC_pow_of_dvd",
+      "name": "zetaC_pow_of_dvd",
+      "status": "helper",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Infrastructure for the field cut out by a Dirichlet character (Definition A.5) \u2014 level invariance, degree and Galois properties. Not a standalone paper statement."
+    },
+    {
+      "fqn": "Workspace.ProofLemmas.CutOutFieldLevelInvariantProof.cyclotomicField'_mono",
+      "name": "cyclotomicField'_mono",
+      "status": "helper",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Cyclotomic-field infrastructure behind Proposition 3.2 and Proposition A.11. Not a standalone paper statement."
+    },
+    {
+      "fqn": "Workspace.ProofLemmas.CutOutFieldLevelInvariantProof.comap_val_roundtrip_gen",
+      "name": "comap_val_roundtrip_gen",
+      "status": "helper",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Infrastructure for the field cut out by a Dirichlet character (Definition A.5) \u2014 level invariance, degree and Galois properties. Not a standalone paper statement."
+    },
+    {
+      "fqn": "Workspace.ProofLemmas.CutOutFieldLevelInvariantProof.comapValEquiv",
+      "name": "comapValEquiv",
+      "status": "helper",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Infrastructure for the field cut out by a Dirichlet character (Definition A.5) \u2014 level invariance, degree and Galois properties. Not a standalone paper statement."
+    },
+    {
+      "fqn": "Workspace.ProofLemmas.CutOutFieldLevelInvariantProof.comapValEquiv_coe",
+      "name": "comapValEquiv_coe",
+      "status": "helper",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Infrastructure for the field cut out by a Dirichlet character (Definition A.5) \u2014 level invariance, degree and Galois properties. Not a standalone paper statement."
+    },
+    {
+      "fqn": "Workspace.ProofLemmas.CutOutFieldLevelInvariantProof.fixedField_map_autCongr",
+      "name": "fixedField_map_autCongr",
+      "status": "helper",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Infrastructure for the field cut out by a Dirichlet character (Definition A.5) \u2014 level invariance, degree and Galois properties. Not a standalone paper statement."
+    },
+    {
+      "fqn": "Workspace.ProofLemmas.CutOutFieldLevelInvariantProof.galEquivZMod_comapValEquiv",
+      "name": "galEquivZMod_comapValEquiv",
+      "status": "helper",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Infrastructure for the field cut out by a Dirichlet character (Definition A.5) \u2014 level invariance, degree and Galois properties. Not a standalone paper statement."
+    },
+    {
+      "fqn": "fixedFieldDescent",
+      "name": "fixedFieldDescent",
+      "status": "helper",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Infrastructure for the field cut out by a Dirichlet character (Definition A.5) \u2014 level invariance, degree and Galois properties. Not a standalone paper statement."
+    },
+    {
+      "fqn": "CutOutFieldLevelInvariant",
+      "name": "CutOutFieldLevelInvariant",
+      "status": "helper",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Infrastructure for the field cut out by a Dirichlet character (Definition A.5) \u2014 level invariance, degree and Galois properties. Not a standalone paper statement."
+    }
+  ],
+  "file_sha256": "197d69c7278df21b804cae2894b31b06162dbf068ba83ea05d154da714693dd7"
+}

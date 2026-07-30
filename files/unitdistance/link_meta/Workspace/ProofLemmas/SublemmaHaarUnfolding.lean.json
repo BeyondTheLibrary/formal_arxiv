@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "lean_file": "lean_workspace/Workspace/ProofLemmas/SublemmaHaarUnfolding.lean",
+  "sig_sha256": "2767566943b5cae95f12d7d24015527ab30dba2434b323a029e62a42173d0b15",
+  "linked_at": "2026-07-28T01:11:19Z",
+  "decls": [
+    {
+      "fqn": "SublemmaHaarUnfolding",
+      "name": "SublemmaHaarUnfolding",
+      "status": "linked",
+      "kind": "proof_case",
+      "confidence": 0.85,
+      "paper_span": {
+        "tex_file": "unit-distance-proof.tex",
+        "quote": "Averaging over \\(a \\in V/\\Lambda\\) with respect to Haar probability measure, the standard unfolding"
+      },
+      "rationale": "The unfolding identity behind Lemma 2.4: averaging over the torus \\(V/\\Lambda\\) with Haar probability measure computes \\(\\mathbb{E}_a[N_a]\\) and \\(\\mathbb{E}_a[E_a]\\)."
+    }
+  ],
+  "file_sha256": "bf36bd195a314c481f0a92fa8cced86ea5534e6f2c914ef055e688588ef2e876"
+}

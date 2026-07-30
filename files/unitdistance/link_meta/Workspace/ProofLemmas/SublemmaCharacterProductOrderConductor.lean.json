@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "lean_file": "lean_workspace/Workspace/ProofLemmas/SublemmaCharacterProductOrderConductor.lean",
+  "sig_sha256": "a3d3647ce10f0fa85ba91a8fe0e737bcb22c57499c5b209925fd959cf57dda7d",
+  "linked_at": "2026-07-28T01:11:19Z",
+  "decls": [
+    {
+      "fqn": "SublemmaCharacterProductOrderConductor",
+      "name": "SublemmaCharacterProductOrderConductor",
+      "status": "linked",
+      "kind": "proof_case",
+      "confidence": 0.85,
+      "paper_span": {
+        "tex_file": "unit-distance-proof.tex",
+        "quote": "characters with pairwise coprime conductors, $f(\\chi_1\\cdots \\chi_m)=\\prod_i f(\\chi_i)$, ignoring conductor-1 trivial factors."
+      },
+      "rationale": "Formalizes the conductor multiplicativity of Proposition A.11: for Dirichlet characters with pairwise coprime conductors, \\(f(\\chi_1\\cdots\\chi_m) = \\prod_i f(\\chi_i)\\)."
+    }
+  ],
+  "file_sha256": "166389e6fa794e184877843506dd51c81fff2b518909f478f9ecdbcfc9a4d0ea"
+}

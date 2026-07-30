@@ -1,0 +1,65 @@
+{
+  "schema_version": 1,
+  "lean_file": "lean_workspace/Workspace/ProofLemmas/FrobRepExistsMaxUnramified.lean",
+  "sig_sha256": "7c83708ecfa605a52d9bfce53685cd348fdd5737071e23769ded6fccfa480e4c",
+  "linked_at": "2026-07-28T01:11:19Z",
+  "decls": [
+    {
+      "fqn": "FrobRepProof.galoisOmega",
+      "name": "galoisOmega",
+      "status": "helper",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Ramification bookkeeping for the unramified tower (properties P2/P3 of Proposition 3.8). Not a standalone paper statement."
+    },
+    {
+      "fqn": "FrobRepProof.frobSet",
+      "name": "frobSet",
+      "status": "helper",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Ramification bookkeeping for the unramified tower (properties P2/P3 of Proposition 3.8). Not a standalone paper statement."
+    },
+    {
+      "fqn": "FrobRepProof.isArithFrobAt_comap_of_comm",
+      "name": "isArithFrobAt_comap_of_comm",
+      "status": "helper",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Ramification bookkeeping for the unramified tower (properties P2/P3 of Proposition 3.8). Not a standalone paper statement."
+    },
+    {
+      "fqn": "FrobRepProof.frobSet_nonempty",
+      "name": "frobSet_nonempty",
+      "status": "helper",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Ramification bookkeeping for the unramified tower (properties P2/P3 of Proposition 3.8). Not a standalone paper statement."
+    },
+    {
+      "fqn": "FrobRepProof.frobSet_antitone",
+      "name": "frobSet_antitone",
+      "status": "helper",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Ramification bookkeeping for the unramified tower (properties P2/P3 of Proposition 3.8). Not a standalone paper statement."
+    },
+    {
+      "fqn": "FrobRepProof.frobSet_isClosed",
+      "name": "frobSet_isClosed",
+      "status": "helper",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Ramification bookkeeping for the unramified tower (properties P2/P3 of Proposition 3.8). Not a standalone paper statement."
+    },
+    {
+      "fqn": "FrobRepExistsMaxUnramified",
+      "name": "FrobRepExistsMaxUnramified",
+      "status": "helper",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Ramification bookkeeping for the unramified tower (properties P2/P3 of Proposition 3.8). Not a standalone paper statement."
+    }
+  ],
+  "file_sha256": "65c88bb5bbcafd6e4d4f9ca63de45e77f711440fbc43741139e204c71cc77345"
+}

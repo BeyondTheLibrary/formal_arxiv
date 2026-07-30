@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "lean_file": "lean_workspace/Workspace/ProofLemmas/GolodShafarevichInequality.lean",
+  "sig_sha256": "b856da16a3ad60962338fb97dab4aa35a8e4ae31f9d40a9a2dc2cceda1976e8d",
+  "linked_at": "2026-07-28T01:11:19Z",
+  "decls": [
+    {
+      "fqn": "GolodShafarevichInequality",
+      "name": "GolodShafarevichInequality",
+      "status": "linked",
+      "kind": "proposition",
+      "confidence": 0.95,
+      "paper_span": {
+        "tex_file": "unit-distance-proof.tex",
+        "quote": "If a finite nontrivial pro-\\(p\\) group has generator"
+      },
+      "rationale": "Proposition 3.4 (Golod\u2013Shafarevich inequality): a finite nontrivial finitely generated pro-p group has \\(r > d^2/4\\); stated division-free in Lean as \\(d(G)^2 < 4\\,r(G)\\)."
+    }
+  ],
+  "file_sha256": "8d3231db9b482e75f59853a3a6c151d02c13bbe9a0e04f1630f12c9a8c0b2698"
+}

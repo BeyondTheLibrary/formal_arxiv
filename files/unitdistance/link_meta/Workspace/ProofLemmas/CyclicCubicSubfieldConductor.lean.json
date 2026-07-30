@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "lean_file": "lean_workspace/Workspace/ProofLemmas/CyclicCubicSubfieldConductor.lean",
+  "sig_sha256": "51cf973d15f716f8c37c40b950f2d26fa96caf52048e2d6c7891c61c43965202",
+  "linked_at": "2026-07-28T01:11:19Z",
+  "decls": [
+    {
+      "fqn": "Workspace.ProofLemmas.CyclicCubicSubfieldConductorProof.zetaC_pow_of_dvd",
+      "name": "zetaC_pow_of_dvd",
+      "status": "helper",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Conductor bookkeeping behind the conductor\u2013discriminant formula used in Proposition 3.2. Not a standalone paper statement."
+    },
+    {
+      "fqn": "Workspace.ProofLemmas.CyclicCubicSubfieldConductorProof.cyclotomicField'_mono",
+      "name": "cyclotomicField'_mono",
+      "status": "helper",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Cyclotomic-field infrastructure behind Proposition 3.2 and Proposition A.11. Not a standalone paper statement."
+    },
+    {
+      "fqn": "Workspace.ProofLemmas.CyclicCubicSubfieldConductorProof.cubes_range_ne_top",
+      "name": "cubes_range_ne_top",
+      "status": "helper",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Conductor bookkeeping behind the conductor\u2013discriminant formula used in Proposition 3.2. Not a standalone paper statement."
+    },
+    {
+      "fqn": "Workspace.ProofLemmas.CyclicCubicSubfieldConductorProof.comap_val_roundtrip_gen",
+      "name": "comap_val_roundtrip_gen",
+      "status": "helper",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Conductor bookkeeping behind the conductor\u2013discriminant formula used in Proposition 3.2. Not a standalone paper statement."
+    },
+    {
+      "fqn": "Workspace.ProofLemmas.CyclicCubicSubfieldConductorProof.comapValEquiv",
+      "name": "comapValEquiv",
+      "status": "helper",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Conductor bookkeeping behind the conductor\u2013discriminant formula used in Proposition 3.2. Not a standalone paper statement."
+    },
+    {
+      "fqn": "Workspace.ProofLemmas.CyclicCubicSubfieldConductorProof.cyclicCubicSubfield_ne_bot",
+      "name": "cyclicCubicSubfield_ne_bot",
+      "status": "helper",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Conductor bookkeeping behind the conductor\u2013discriminant formula used in Proposition 3.2. Not a standalone paper statement."
+    },
+    {
+      "fqn": "Workspace.ProofLemmas.CyclicCubicSubfieldConductorProof.hardDir",
+      "name": "hardDir",
+      "status": "helper",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Conductor bookkeeping behind the conductor\u2013discriminant formula used in Proposition 3.2. Not a standalone paper statement."
+    },
+    {
+      "fqn": "CyclicCubicSubfieldConductor",
+      "name": "CyclicCubicSubfieldConductor",
+      "status": "linked",
+      "kind": "proposition",
+      "confidence": 0.85,
+      "paper_span": {
+        "tex_file": "unit-distance-proof.tex",
+        "quote": "The standard cyclotomic facts are that \\(L_i\\) is totally real, has conductor \\(r_i\\), and is ramified"
+      },
+      "rationale": "The conductor clause of Proposition A.11 / Step 1: the cyclic cubic subfield \\(L_i\\) has conductor \\(r_i\\)."
+    }
+  ],
+  "file_sha256": "66754b2e3a5d04d1783f448a5e3ccd6acbb947e06ff57ffe16abea3f8c26117a"
+}

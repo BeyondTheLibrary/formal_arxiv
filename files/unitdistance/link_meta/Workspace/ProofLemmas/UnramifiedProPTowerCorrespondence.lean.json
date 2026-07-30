@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "lean_file": "lean_workspace/Workspace/ProofLemmas/UnramifiedProPTowerCorrespondence.lean",
+  "sig_sha256": "2af4d24ed066d18131ccb7db5f1ebaba4071a18947790133aabae7efc056ae0a",
+  "linked_at": "2026-07-28T01:11:19Z",
+  "decls": [
+    {
+      "fqn": "UnramifiedProPTowerCorrespondence_partA",
+      "name": "UnramifiedProPTowerCorrespondence_partA",
+      "status": "helper",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Pro-p group-theory plumbing behind the Frattini/Golod\u2013Shafarevich statements of Section 3. Not a standalone paper statement."
+    },
+    {
+      "fqn": "UnramifiedProPTowerCorrespondence",
+      "name": "UnramifiedProPTowerCorrespondence",
+      "status": "helper",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Pro-p group-theory plumbing behind the Frattini/Golod\u2013Shafarevich statements of Section 3. Not a standalone paper statement."
+    }
+  ],
+  "file_sha256": "88585f4630c587d75c5c0e72116dabb5bdc7fd90b3495e9a30b7e518889704ab"
+}

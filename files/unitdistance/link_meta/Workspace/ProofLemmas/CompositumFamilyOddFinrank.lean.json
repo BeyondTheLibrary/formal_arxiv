@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "lean_file": "lean_workspace/Workspace/ProofLemmas/CompositumFamilyOddFinrank.lean",
+  "sig_sha256": "0da6551f8da64eb9457770be2d8e2aeb0d9763b61edc5e27097f5f047f173c80",
+  "linked_at": "2026-07-28T01:11:19Z",
+  "decls": [
+    {
+      "fqn": "finrank_sup_dvd",
+      "name": "finrank_sup_dvd",
+      "status": "no_counterpart",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Not part of the compiled formalization: this module is never imported by the main theorem's build, so the declaration does not appear in the dependency graph."
+    },
+    {
+      "fqn": "member_odd",
+      "name": "member_odd",
+      "status": "no_counterpart",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Not part of the compiled formalization: this module is never imported by the main theorem's build, so the declaration does not appear in the dependency graph."
+    },
+    {
+      "fqn": "family_props",
+      "name": "family_props",
+      "status": "no_counterpart",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Not part of the compiled formalization: this module is never imported by the main theorem's build, so the declaration does not appear in the dependency graph."
+    },
+    {
+      "fqn": "CompositumFamilyOddFinrank",
+      "name": "CompositumFamilyOddFinrank",
+      "status": "helper",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Facts about the compositum \\(M = L_1\\cdots L_\\ell\\) (degree, Galois group, ramification) used inside the proof of Proposition 3.2."
+    }
+  ],
+  "file_sha256": "a9012cf9f90279005c44bb33d1a048b014e4e5e3bb970330e87d9f078565aac0"
+}

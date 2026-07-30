@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "lean_file": "lean_workspace/Workspace/ProofLemmas/PrimesOneModThreeReduction.lean",
+  "sig_sha256": "bdabc60f8fff46ff978d8cc11b31c2a770972aa149034b94e2300ca2018389fb",
+  "linked_at": "2026-07-28T01:11:19Z",
+  "decls": [
+    {
+      "fqn": "Workspace.ProofLemmas.PrimesOneModThreeReduction.POne",
+      "name": "POne",
+      "status": "helper",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Elementary bookkeeping about primes \\(\\equiv 1 \\bmod 3\\) supporting Fact 3.10."
+    },
+    {
+      "fqn": "Workspace.ProofLemmas.PrimesOneModThreeReduction.logSum_le_of_poly_bound",
+      "name": "logSum_le_of_poly_bound",
+      "status": "helper",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Elementary bookkeeping about primes \\(\\equiv 1 \\bmod 3\\) supporting Fact 3.10."
+    }
+  ],
+  "file_sha256": "1292ee7e54d5fa768af733350394f83f99c3b32da9db11bf5553b39229f3177f"
+}

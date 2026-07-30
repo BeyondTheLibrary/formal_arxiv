@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "lean_file": "lean_workspace/Workspace/ProofLemmas/Thm23EmbeddingSelectionExists.lean",
+  "sig_sha256": "bd88912e679049a268c1c3bfeb53173592b768004fcebe7dc7217bfac2c6ab08",
+  "linked_at": "2026-07-28T01:11:19Z",
+  "decls": [
+    {
+      "fqn": "Thm23EmbeddingSelectionExists",
+      "name": "Thm23EmbeddingSelectionExists",
+      "status": "helper",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Internal step assembling the proof of Theorem 2.3 from Lemmas 2.4\u20132.6."
+    }
+  ],
+  "file_sha256": "946c1ccb5127a90971c19fd9de1c4e5b7381634a1d797e56e5fd97c6e91690ea"
+}

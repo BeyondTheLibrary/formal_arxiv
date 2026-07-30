@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "lean_file": "lean_workspace/Workspace/ProofLemmas/BaseRootDiscriminantBound.lean",
+  "sig_sha256": "4e2f7f5f9537ccc8876edd6c9bd6d096675e9b60760eb4ca6e71c42b400527fa",
+  "linked_at": "2026-07-28T01:11:19Z",
+  "decls": [
+    {
+      "fqn": "BaseRootDiscriminantBound",
+      "name": "BaseRootDiscriminantBound",
+      "status": "linked",
+      "kind": "equation",
+      "confidence": 0.9,
+      "paper_span": {
+        "tex_file": "unit-distance-proof.tex",
+        "quote": "\\log \\operatorname{rd}(F)=\\frac{1}{3}\\log |D_F|",
+        "pdf_page": 13,
+        "pdf_match": "log rd(F ) ="
+      },
+      "rationale": "Establishes display (6), property (P1)'s root-discriminant bound: \\(\\log\\mathrm{rd}(F) = \\tfrac13\\log|D_F| = \\tfrac23\\sum_i \\log r_i = O(\\ell\\log\\ell)\\)."
+    }
+  ],
+  "file_sha256": "967ac9f302f9491704f8023a8eb7e99e79107a3d04676bbbd3e59d230e96c2fa"
+}

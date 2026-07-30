@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "lean_file": "lean_workspace/Workspace/ProofLemmas/Thm23FinalBound.lean",
+  "sig_sha256": "1f2928a2048fb8f988837eb31d62716a38f6a193670b7318325a05f10b9ece7f",
+  "linked_at": "2026-07-28T01:11:19Z",
+  "decls": [
+    {
+      "fqn": "Thm23FinalBound",
+      "name": "Thm23FinalBound",
+      "status": "linked",
+      "kind": "proof_case",
+      "confidence": 0.88,
+      "paper_span": {
+        "tex_file": "unit-distance-proof.tex",
+        "quote": "Set \\(\\delta=\\gamma/(4B)>0\\). Since \\(n_j\\to\\infty\\), the factor \\(1/2\\) is absorbed for all sufficiently large \\(j\\), and"
+      },
+      "rationale": "The final numeric step in the proof of Theorem 2.3: from \\(\\nu(P_j) \\ge \\tfrac12 n_j e^{\\gamma f_j/2}\\) and \\(n_j \\le e^{Bf_j}\\) it derives \\(\\nu(P_j) \\ge n_j^{1+\\delta}\\) with \\(\\delta = \\gamma/(4B)\\), absorbing the factor 1/2 for large j."
+    }
+  ],
+  "file_sha256": "7a65de96418618d77618ee38bcdb4fc01398e07b4fe63a558723d303e5920ab4"
+}

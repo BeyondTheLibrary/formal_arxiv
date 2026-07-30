@@ -1,0 +1,129 @@
+{
+  "schema_version": 1,
+  "lean_file": "lean_workspace/Workspace/ProofLemmas/ProPGeneratorRankFrattini.lean",
+  "sig_sha256": "bf15cbda3ebb6baf750fd4590bb2f46be35409babda61b2c180678a95bc4b2d1",
+  "linked_at": "2026-07-28T01:11:19Z",
+  "decls": [
+    {
+      "fqn": "ProPGeneratorRankFrattiniAux.eq_of_eqOn_topgen",
+      "name": "eq_of_eqOn_topgen",
+      "status": "helper",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Pro-p group-theory infrastructure supporting Proposition 3.3 (generator rank via the Frattini quotient). Not a standalone paper statement."
+    },
+    {
+      "fqn": "ProPGeneratorRankFrattiniAux.card_le_of_gen_span",
+      "name": "card_le_of_gen_span",
+      "status": "helper",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Pro-p group-theory infrastructure supporting Proposition 3.3 (generator rank via the Frattini quotient). Not a standalone paper statement."
+    },
+    {
+      "fqn": "ProPGeneratorRankFrattiniAux.mem_span_of_mem_closure",
+      "name": "mem_span_of_mem_closure",
+      "status": "helper",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Pro-p group-theory infrastructure supporting Proposition 3.3 (generator rank via the Frattini quotient). Not a standalone paper statement."
+    },
+    {
+      "fqn": "ProPGeneratorRankFrattiniAux.card_quot_le",
+      "name": "card_quot_le",
+      "status": "helper",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Pro-p group-theory infrastructure supporting Proposition 3.3 (generator rank via the Frattini quotient). Not a standalone paper statement."
+    },
+    {
+      "fqn": "ProPGeneratorRankFrattiniAux.exists_hom_ker",
+      "name": "exists_hom_ker",
+      "status": "helper",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Pro-p group-theory infrastructure supporting Proposition 3.3 (generator rank via the Frattini quotient). Not a standalone paper statement."
+    },
+    {
+      "fqn": "ProPGeneratorRankFrattiniAux.finite_maximalOpen",
+      "name": "finite_maximalOpen",
+      "status": "helper",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Pro-p group-theory infrastructure supporting Proposition 3.3 (generator rank via the Frattini quotient). Not a standalone paper statement."
+    },
+    {
+      "fqn": "ProPGeneratorRankFrattiniAux.frattiniOpen_isOpen",
+      "name": "frattiniOpen_isOpen",
+      "status": "helper",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Pro-p group-theory infrastructure supporting Proposition 3.3 (generator rank via the Frattini quotient). Not a standalone paper statement."
+    },
+    {
+      "fqn": "ProPGeneratorRankFrattiniAux.frattiniOpen_normal",
+      "name": "frattiniOpen_normal",
+      "status": "helper",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Pro-p group-theory infrastructure supporting Proposition 3.3 (generator rank via the Frattini quotient). Not a standalone paper statement."
+    },
+    {
+      "fqn": "ProPGeneratorRankFrattiniAux.commutator_mem_frattini",
+      "name": "commutator_mem_frattini",
+      "status": "helper",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Pro-p group-theory infrastructure supporting Proposition 3.3 (generator rank via the Frattini quotient). Not a standalone paper statement."
+    },
+    {
+      "fqn": "ProPGeneratorRankFrattiniAux.pow_mem_frattini",
+      "name": "pow_mem_frattini",
+      "status": "helper",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Pro-p group-theory infrastructure supporting Proposition 3.3 (generator rank via the Frattini quotient). Not a standalone paper statement."
+    },
+    {
+      "fqn": "ProPGeneratorRankFrattiniAux.frattiniQuotient_comm",
+      "name": "frattiniQuotient_comm",
+      "status": "helper",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Pro-p group-theory infrastructure supporting Proposition 3.3 (generator rank via the Frattini quotient). Not a standalone paper statement."
+    },
+    {
+      "fqn": "ProPGeneratorRankFrattiniAux.frattiniQuotient_expp",
+      "name": "frattiniQuotient_expp",
+      "status": "helper",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Pro-p group-theory infrastructure supporting Proposition 3.3 (generator rank via the Frattini quotient). Not a standalone paper statement."
+    },
+    {
+      "fqn": "ProPGeneratorRankFrattiniAux.frattiniQuotient_card",
+      "name": "frattiniQuotient_card",
+      "status": "helper",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Pro-p group-theory infrastructure supporting Proposition 3.3 (generator rank via the Frattini quotient). Not a standalone paper statement."
+    },
+    {
+      "fqn": "ProPGeneratorRankFrattiniAux.main",
+      "name": "main",
+      "status": "helper",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Pro-p group-theory infrastructure supporting Proposition 3.3 (generator rank via the Frattini quotient). Not a standalone paper statement."
+    },
+    {
+      "fqn": "ProPGeneratorRankFrattini",
+      "name": "ProPGeneratorRankFrattini",
+      "status": "helper",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Pro-p group-theory infrastructure supporting Proposition 3.3 (generator rank via the Frattini quotient). Not a standalone paper statement."
+    }
+  ],
+  "file_sha256": "52e8a294fac60564b5ea830bba56c398f05d5300345afa6d9858b8e88eea71b5"
+}

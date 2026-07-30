@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "lean_file": "lean_workspace/Workspace/ProofLemmas/SublemmaNoZeta3.lean",
+  "sig_sha256": "6fbadad8faa014a1c4b15b323073c9435bfe1310c4e88de2ed17018398d9f130",
+  "linked_at": "2026-07-28T01:11:19Z",
+  "decls": [
+    {
+      "fqn": "SublemmaNoZeta3",
+      "name": "SublemmaNoZeta3",
+      "status": "linked",
+      "kind": "proof_case",
+      "confidence": 0.88,
+      "paper_span": {
+        "tex_file": "unit-distance-proof.tex",
+        "quote": "Since \\(F\\) is totally real, it does not contain the non-real root of unity \\(\\zeta_3\\)."
+      },
+      "rationale": "Proves the hypothesis \\(\\zeta_3 \\notin F\\) needed by Shafarevich's estimate: `F` is totally real, and \\(\\zeta_3\\) is not real."
+    }
+  ],
+  "file_sha256": "bf31f82bbf5df5c4552baf719c0b4d7e8a4c9265fd1c942e0d967b714002e09b"
+}

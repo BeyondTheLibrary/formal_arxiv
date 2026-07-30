@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "lean_file": "lean_workspace/Workspace/ProofLemmas/LocalSplitGenerator.lean",
+  "sig_sha256": "8803e368d3d94369e468fccfe380290321b5d587c70865e2933ed7224c72a685",
+  "linked_at": "2026-07-28T01:11:19Z",
+  "decls": [
+    {
+      "fqn": "LocalSplitGenerator",
+      "name": "LocalSplitGenerator",
+      "status": "helper",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Splitting bookkeeping (complete splitting descends along the tower, e = f = 1) supporting property P4 of Proposition 3.8. Not a standalone paper statement."
+    }
+  ],
+  "file_sha256": "ebf197c66247b3b836337fd0c0f6add817c0e4ee827f712a306122c62531e876"
+}

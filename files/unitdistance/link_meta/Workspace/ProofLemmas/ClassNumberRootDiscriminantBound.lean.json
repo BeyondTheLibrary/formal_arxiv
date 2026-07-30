@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "lean_file": "lean_workspace/Workspace/ProofLemmas/ClassNumberRootDiscriminantBound.lean",
+  "sig_sha256": "f53c6509b38a10dd57af951542814f8bf8f54e7ff5792a86c95b0bb25b478cc8",
+  "linked_at": "2026-07-28T01:11:19Z",
+  "decls": [
+    {
+      "fqn": "ClassNumberRootDiscriminantBound",
+      "name": "ClassNumberRootDiscriminantBound",
+      "status": "linked",
+      "kind": "proposition",
+      "confidence": 0.95,
+      "paper_span": {
+        "tex_file": "unit-distance-proof.tex",
+        "quote": "There is an absolute constant \\(C_{\\mathrm{class}}>0\\) such that every number field \\(K\\)"
+      },
+      "rationale": "Proposition 3.7 (class-number bound): every number field satisfies \\(h(K) \\le \\max\\{2, \\mathrm{rd}(K)\\}^{C_{\\mathrm{class}}[K:\\mathbb{Q}]}\\) with \\(C_{\\mathrm{class}}\\) absolute. Proved from Mathlib (Minkowski + divisor-function count), not admitted."
+    }
+  ],
+  "file_sha256": "59be927640c2df7f310111dbce8ca265ad56e976366cfe587aa6de54c173bb58"
+}

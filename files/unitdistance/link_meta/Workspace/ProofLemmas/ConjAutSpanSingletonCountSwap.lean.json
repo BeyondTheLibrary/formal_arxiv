@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "lean_file": "lean_workspace/Workspace/ProofLemmas/ConjAutSpanSingletonCountSwap.lean",
+  "sig_sha256": "62e773bfa7054940ac7eb0e3081b1e2771ade9b98e6a1cb561843dc16602052a",
+  "linked_at": "2026-07-28T01:11:19Z",
+  "decls": [
+    {
+      "fqn": "ConjAutSpanSingletonCountSwap",
+      "name": "ConjAutSpanSingletonCountSwap",
+      "status": "helper",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Measure-theoretic bookkeeping for the point count \\(N_a\\) in the averaging argument of Lemma 2.4. Not a standalone paper statement."
+    }
+  ],
+  "file_sha256": "16ddb320c7658b07a67cf5da327eedb17ed0f985ac67f14f9189163faca14463"
+}

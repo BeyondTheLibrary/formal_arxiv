@@ -1,0 +1,65 @@
+{
+  "schema_version": 1,
+  "lean_file": "lean_workspace/Workspace/ProofLemmas/TameDifferent.lean",
+  "sig_sha256": "7e74cc6b29b31a03deee89c7e08ee53297f5d3e7fc4eed03e4dae867364885e0",
+  "linked_at": "2026-07-30T05:11:41Z",
+  "decls": [
+    {
+      "fqn": "Workspace.ProofLemmas.TameDifferent.ramificationIdx_le_finrank",
+      "name": "ramificationIdx_le_finrank",
+      "status": "helper",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Different-ideal and tame-ramification machinery behind the discriminant computations of Section 3. Not a standalone paper statement."
+    },
+    {
+      "fqn": "Workspace.ProofLemmas.TameDifferent.inertiaDeg_eq_one_of_totally_ramified",
+      "name": "inertiaDeg_eq_one_of_totally_ramified",
+      "status": "helper",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Different-ideal and tame-ramification machinery behind the discriminant computations of Section 3. Not a standalone paper statement."
+    },
+    {
+      "fqn": "Workspace.ProofLemmas.TameDifferent.span_r_ne_bot",
+      "name": "span_r_ne_bot",
+      "status": "helper",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Different-ideal and tame-ramification machinery behind the discriminant computations of Section 3. Not a standalone paper statement."
+    },
+    {
+      "fqn": "Workspace.ProofLemmas.TameDifferent.span_r_isPrime",
+      "name": "span_r_isPrime",
+      "status": "helper",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Different-ideal and tame-ramification machinery behind the discriminant computations of Section 3. Not a standalone paper statement."
+    },
+    {
+      "fqn": "Workspace.ProofLemmas.TameDifferent.span_r_isMaximal",
+      "name": "span_r_isMaximal",
+      "status": "helper",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Different-ideal and tame-ramification machinery behind the discriminant computations of Section 3. Not a standalone paper statement."
+    },
+    {
+      "fqn": "Workspace.ProofLemmas.TameDifferent.totally_ramified",
+      "name": "totally_ramified",
+      "status": "helper",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Different-ideal and tame-ramification machinery behind the discriminant computations of Section 3. Not a standalone paper statement."
+    },
+    {
+      "fqn": "Workspace.ProofLemmas.TameDifferent.natAbs_discr_subfield",
+      "name": "natAbs_discr_subfield",
+      "status": "helper",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Different-ideal and tame-ramification machinery behind the discriminant computations of Section 3. Not a standalone paper statement."
+    }
+  ],
+  "file_sha256": "812d81975b169202450c8d9af9d6449f2d83d7fa74b7eaf231b916aa14e1aaba"
+}

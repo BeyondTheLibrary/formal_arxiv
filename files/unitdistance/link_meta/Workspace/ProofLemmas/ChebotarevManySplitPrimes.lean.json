@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "lean_file": "lean_workspace/Workspace/ProofLemmas/ChebotarevManySplitPrimes.lean",
+  "sig_sha256": "5b363b9fd6d1a0eea7f4d6f093e322ccd0097801ca332208b395c2ce73794528",
+  "linked_at": "2026-07-28T01:11:19Z",
+  "decls": [
+    {
+      "fqn": "ChebotarevManySplitPrimes",
+      "name": "ChebotarevManySplitPrimes",
+      "status": "linked",
+      "kind": "proposition",
+      "confidence": 0.88,
+      "paper_span": {
+        "tex_file": "unit-distance-proof.tex",
+        "quote": "Chebotarev's density theorem implies that,"
+      },
+      "rationale": "Proposition A.12 (Chebotarev density theorem) in the form the paper uses: after excluding finitely many bad primes, one can find arbitrarily many distinct rational primes splitting completely in a prescribed finite Galois extension of \\(\\mathbb{Q}\\). Proved from Mathlib rather than admitted."
+    }
+  ],
+  "file_sha256": "ba9dfd4a9bde641d9aacf5cfa32130c9307349301505279b4a171a5798af6545"
+}

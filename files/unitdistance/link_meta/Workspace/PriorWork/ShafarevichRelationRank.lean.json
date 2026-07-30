@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "lean_file": "lean_workspace/Workspace/PriorWork/ShafarevichRelationRank.lean",
+  "sig_sha256": "b27b965867a331b0acee986eb71b125d11a78097e68e4af72e259da198681b60",
+  "linked_at": "2026-07-28T01:11:19Z",
+  "decls": [
+    {
+      "fqn": "ShafarevichRelationRank",
+      "name": "ShafarevichRelationRank",
+      "status": "linked",
+      "kind": "proposition",
+      "confidence": 0.95,
+      "paper_span": {
+        "tex_file": "unit-distance-proof.tex",
+        "quote": "pro-\\(3\\) extension, in the sense of Definition A.3. Then \\(r(G)\\le d(G)+C_0\\) for an absolute constant"
+      },
+      "rationale": "Proposition 3.5 (Shafarevich relation-rank estimate), admitted as an axiom exactly as the paper cites it: for `F` totally real cubic (so \\(\\zeta_3 \\notin F\\)) and \\(G = \\mathrm{Gal}(F^{\\mathrm{ur},3}/F)\\), \\(r(G) \\le d(G) + C_0\\) with \\(C_0\\) absolute."
+    }
+  ],
+  "file_sha256": "8a42ea5d62d7bbab273c25b0c37c5e3e23b9febb95e0c52fe4441a532a865e8d"
+}

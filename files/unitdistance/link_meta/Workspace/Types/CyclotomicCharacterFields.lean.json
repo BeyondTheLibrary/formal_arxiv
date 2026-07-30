@@ -1,0 +1,97 @@
+{
+  "schema_version": 1,
+  "lean_file": "lean_workspace/Workspace/Types/CyclotomicCharacterFields.lean",
+  "sig_sha256": "006f6c474847065063607db8f6dd2ba80b12d6987361cacd7736b9eb7ce784df",
+  "linked_at": "2026-07-30T05:19:37Z",
+  "decls": [
+    {
+      "fqn": "Workspace.Types.CyclotomicCharacterFields.instNeZeroPNatVal",
+      "name": "instNeZeroPNatVal",
+      "status": "helper",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Cyclotomic-field infrastructure behind Proposition 3.2 and Proposition A.11. Not a standalone paper statement."
+    },
+    {
+      "fqn": "Workspace.Types.CyclotomicCharacterFields.zetaC",
+      "name": "zetaC",
+      "status": "helper",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Cyclotomic-field infrastructure behind Proposition 3.2 and Proposition A.11. Not a standalone paper statement."
+    },
+    {
+      "fqn": "Workspace.Types.CyclotomicCharacterFields.isPrimitiveRoot_zetaC",
+      "name": "isPrimitiveRoot_zetaC",
+      "status": "helper",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Cyclotomic-field infrastructure behind Proposition 3.2 and Proposition A.11. Not a standalone paper statement."
+    },
+    {
+      "fqn": "Workspace.Types.CyclotomicCharacterFields.cyclotomicField'",
+      "name": "cyclotomicField'",
+      "status": "helper",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Cyclotomic-field infrastructure behind Proposition 3.2 and Proposition A.11. Not a standalone paper statement."
+    },
+    {
+      "fqn": "Workspace.Types.CyclotomicCharacterFields.instIsCyclotomic",
+      "name": "instIsCyclotomic",
+      "status": "helper",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Cyclotomic-field infrastructure behind Proposition 3.2 and Proposition A.11. Not a standalone paper statement."
+    },
+    {
+      "fqn": "Workspace.Types.CyclotomicCharacterFields.instNumberField",
+      "name": "instNumberField",
+      "status": "helper",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Cyclotomic-field infrastructure behind Proposition 3.2 and Proposition A.11. Not a standalone paper statement."
+    },
+    {
+      "fqn": "Workspace.Types.CyclotomicCharacterFields.instIsGalois",
+      "name": "instIsGalois",
+      "status": "helper",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Cyclotomic-field infrastructure behind Proposition 3.2 and Proposition A.11. Not a standalone paper statement."
+    },
+    {
+      "fqn": "Workspace.Types.CyclotomicCharacterFields.galToUnits",
+      "name": "galToUnits",
+      "status": "helper",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Cyclotomic-field infrastructure behind Proposition 3.2 and Proposition A.11. Not a standalone paper statement."
+    },
+    {
+      "fqn": "Workspace.Types.CyclotomicCharacterFields.cutOutField",
+      "name": "cutOutField",
+      "status": "linked",
+      "kind": "definition",
+      "confidence": 0.92,
+      "paper_span": {
+        "tex_file": "unit-distance-proof.tex",
+        "quote": "If \\(X=\\langle\\chi\\rangle\\), we say that this field is cut out by"
+      },
+      "rationale": "`cutOutField m chi` formalizes the field *cut out by* a Dirichlet character: the fixed field of the kernel of \\(\\mathrm{Gal}(\\mathbb{Q}(\\zeta_m)/\\mathbb{Q}) \\cong (\\mathbb{Z}/m\\mathbb{Z})^\\times \\xrightarrow{\\chi} \\mathbb{C}^\\times\\)."
+    },
+    {
+      "fqn": "Workspace.Types.CyclotomicCharacterFields.cyclicCubicSubfield",
+      "name": "cyclicCubicSubfield",
+      "status": "linked",
+      "kind": "definition",
+      "confidence": 0.9,
+      "paper_span": {
+        "tex_file": "unit-distance-proof.tex",
+        "quote": "let \\(L_i\\) be the cyclic cubic subfield of \\(\\mathbb{Q}(\\zeta_{r_i})\\), and put \\(M=L_1\\cdots L_\\ell\\)."
+      },
+      "rationale": "`cyclicCubicSubfield r` is the paper's \\(L_i\\): the unique cyclic cubic subfield of \\(\\mathbb{Q}(\\zeta_{r_i})\\) for a prime \\(r_i \\equiv 1 \\pmod 3\\), realised as the fixed field of the index-3 subgroup of cubes."
+    }
+  ],
+  "file_sha256": "b44ab37883eb5b2087f73082ac8add32e3d7c79e64ef3c756c32f61ee4008a53"
+}

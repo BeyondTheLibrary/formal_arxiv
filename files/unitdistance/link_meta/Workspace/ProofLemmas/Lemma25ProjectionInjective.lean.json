@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "lean_file": "lean_workspace/Workspace/ProofLemmas/Lemma25ProjectionInjective.lean",
+  "sig_sha256": "00230242be4f1b0a74a6a822227a1cf6311fd5b936f399c3cec10daea5e76738",
+  "linked_at": "2026-07-28T01:11:19Z",
+  "decls": [
+    {
+      "fqn": "Lemma25ProjectionInjective",
+      "name": "Lemma25ProjectionInjective",
+      "status": "linked",
+      "kind": "lemma",
+      "confidence": 0.93,
+      "paper_span": {
+        "tex_file": "unit-distance-proof.tex",
+        "quote": "The map \\(\\pi_1 : X \\to \\mathbb{C}\\) is injective."
+      },
+      "rationale": "Lemma 2.5, part 1: the first-coordinate projection \\(\\pi_1\\) is injective on a coset of \\(\\Lambda\\) (two points with the same first coordinate differ by \\(\\Phi(D^{-1}\\beta)\\) with \\(\\sigma_1(\\beta) = 0\\), forcing \\(\\beta = 0\\)); hence \\(|P| = |X|\\)."
+    }
+  ],
+  "file_sha256": "604eb9c31106066b1add3d25225edc4ea2e395f296b3aa3107c12c44291fc043"
+}

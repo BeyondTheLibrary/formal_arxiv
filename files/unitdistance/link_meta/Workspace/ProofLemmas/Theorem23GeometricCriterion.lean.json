@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "lean_file": "lean_workspace/Workspace/ProofLemmas/Theorem23GeometricCriterion.lean",
+  "sig_sha256": "2ac98e8fff7d7f36c0ac3b937e95367d1ddb3dc96284740381b244f4df2eae70",
+  "linked_at": "2026-07-28T01:11:19Z",
+  "decls": [
+    {
+      "fqn": "Theorem23GeometricCriterion",
+      "name": "Theorem23GeometricCriterion",
+      "status": "linked",
+      "kind": "theorem",
+      "confidence": 0.97,
+      "paper_span": {
+        "tex_file": "unit-distance-proof.tex",
+        "quote": "Then there is a constant $\\delta>0$"
+      },
+      "rationale": "Theorem 2.3, the geometric criterion: given a sequence of admissible data sharing the primes \\(q_1,\\ldots,q_t\\), with \\(f_j \\to \\infty\\), \\(h(K_j) \\le H^{f_j}\\) and \\(\\gamma = t\\log 2 - \\log H > 0\\), there are \\(\\delta > 0\\) and infinitely many `n` with \\(\\nu(n) \\ge n^{1+\\delta}\\)."
+    }
+  ],
+  "file_sha256": "0b7e0c4e5ac833690bdfaf98169aaaa6423b62f1d33b65a4df5b58394988e5af"
+}

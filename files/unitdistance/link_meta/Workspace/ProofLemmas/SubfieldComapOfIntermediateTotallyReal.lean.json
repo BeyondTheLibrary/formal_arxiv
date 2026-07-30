@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "lean_file": "lean_workspace/Workspace/ProofLemmas/SubfieldComapOfIntermediateTotallyReal.lean",
+  "sig_sha256": "e667aec67e4b188fd518af1d716f5d6473aefe12799446dad7dc35047ceb484b",
+  "linked_at": "2026-07-28T01:11:19Z",
+  "decls": [
+    {
+      "fqn": "SubfieldComapOfIntermediateTotallyReal",
+      "name": "SubfieldComapOfIntermediateTotallyReal",
+      "status": "helper",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Field-theoretic plumbing (normal closures, subfields, fixed fields) used across Section 3."
+    }
+  ],
+  "file_sha256": "ced7fd1d7e2ec1e1027848c9aa87d555da892078978a0320d4261240c7017bdd"
+}

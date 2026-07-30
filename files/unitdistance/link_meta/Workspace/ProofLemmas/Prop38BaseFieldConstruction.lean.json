@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "lean_file": "lean_workspace/Workspace/ProofLemmas/Prop38BaseFieldConstruction.lean",
+  "sig_sha256": "12925fcf5a1ccf4fdf13784d42af78e4eeffcf1ceb7afb18e462212ad56bab6e",
+  "linked_at": "2026-07-28T01:11:19Z",
+  "decls": [
+    {
+      "fqn": "Prop38BaseFieldConstruction",
+      "name": "Prop38BaseFieldConstruction",
+      "status": "linked",
+      "kind": "proof_case",
+      "confidence": 0.9,
+      "paper_span": {
+        "tex_file": "unit-distance-proof.tex",
+        "quote": "Let \\(F\\) be the cyclic cubic field cut out by the character \\(\\chi=\\chi_1\\cdots\\chi_\\ell\\)."
+      },
+      "rationale": "Step 1 of Proposition 3.8: builds the base field `F` \u2014 the first \\(\\ell\\) primes \\(r_i \\equiv 1 \\pmod 3\\), their cyclic cubic subfields \\(L_i\\), the product character \\(\\chi = \\chi_1\\cdots\\chi_\\ell\\) of conductor \\(D = \\prod_i r_i\\), and the field it cuts out."
+    }
+  ],
+  "file_sha256": "c75cb7084381f89927bf98d9872576fb12c178e6501ad95f2f17bef3158ca088"
+}

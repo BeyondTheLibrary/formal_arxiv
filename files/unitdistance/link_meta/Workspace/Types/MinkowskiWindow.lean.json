@@ -1,0 +1,141 @@
+{
+  "schema_version": 1,
+  "lean_file": "lean_workspace/Workspace/Types/MinkowskiWindow.lean",
+  "sig_sha256": "626fc0c3097d24a017083e9e62a0a21809231e83a3e03521a29129da1cc62669",
+  "linked_at": "2026-07-30T05:11:41Z",
+  "decls": [
+    {
+      "fqn": "Workspace.Types.MinkowskiWindow.EmbeddingSelection",
+      "name": "EmbeddingSelection",
+      "status": "linked",
+      "kind": "definition",
+      "confidence": 0.9,
+      "paper_span": {
+        "tex_file": "unit-distance-proof.tex",
+        "quote": "For each real embedding of \\(L\\), choose one extension \\(\\sigma_r : K \\hookrightarrow \\mathbb{C}\\), \\(r = 1,\\ldots,f\\), and use the"
+      },
+      "rationale": "`EmbeddingSelection L K f` formalizes the paper's choice of one complex embedding \\(\\sigma_r\\) of `K` above each of the `f` real embeddings of `L` (the restriction map is required to be a bijection onto the embeddings of `L`)."
+    },
+    {
+      "fqn": "Workspace.Types.MinkowskiWindow.minkowskiMap",
+      "name": "minkowskiMap",
+      "status": "linked",
+      "kind": "definition",
+      "confidence": 0.93,
+      "paper_span": {
+        "tex_file": "unit-distance-proof.tex",
+        "quote": "\\Phi : K \\longrightarrow V = \\mathbb{C}^f,\\qquad",
+        "pdf_page": 8,
+        "pdf_match": "Minkowski map"
+      },
+      "rationale": "`minkowskiMap sel` is the paper's Minkowski map \\(\\Phi(x) = (\\sigma_1(x), \\ldots, \\sigma_f(x))\\), as a ring homomorphism \\(K \\to \\mathbb{C}^f\\)."
+    },
+    {
+      "fqn": "Workspace.Types.MinkowskiWindow.latticeHom",
+      "name": "latticeHom",
+      "status": "helper",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Lattice infrastructure for the Minkowski embedding of Section 2.1 (discreteness, full rank, fundamental domain). Not a standalone paper statement."
+    },
+    {
+      "fqn": "Workspace.Types.MinkowskiWindow.lattice",
+      "name": "lattice",
+      "status": "linked",
+      "kind": "definition",
+      "confidence": 0.9,
+      "paper_span": {
+        "tex_file": "unit-distance-proof.tex",
+        "quote": "We identify the fractional ideal \\(D^{-1}\\mathcal{O}_K\\) with the lattice \\(\\Lambda = \\Phi(D^{-1}\\mathcal{O}_K) \\subset V\\)"
+      },
+      "rationale": "`lattice sel DD` is the paper's \\(\\Lambda = \\Phi(D^{-1}\\mathcal{O}_K) \\subset V\\)."
+    },
+    {
+      "fqn": "Workspace.Types.MinkowskiWindow.window",
+      "name": "window",
+      "status": "linked",
+      "kind": "definition",
+      "confidence": 0.9,
+      "paper_span": {
+        "tex_file": "unit-distance-proof.tex",
+        "quote": "and let \\(B_R = \\{z \\in V : \\|z\\|_\\infty \\le R\\}\\). Thus \\(B_R\\) is a product of \\(f\\) radius-\\(R\\) discs."
+      },
+      "rationale": "`window R` is the paper's \\(B_R = \\{z : \\|z\\|_\\infty \\le R\\}\\), a product of `f` radius-`R` discs."
+    },
+    {
+      "fqn": "Workspace.Types.MinkowskiWindow.Xset",
+      "name": "Xset",
+      "status": "linked",
+      "kind": "definition",
+      "confidence": 0.9,
+      "paper_span": {
+        "tex_file": "unit-distance-proof.tex",
+        "quote": "For a coset \\(a+\\Lambda\\), define \\(X_a = (a+\\Lambda)\\cap B_R\\)"
+      },
+      "rationale": "`Xset sel DD R a` is the paper's \\(X_a = (a + \\Lambda) \\cap B_R\\)."
+    },
+    {
+      "fqn": "Workspace.Types.MinkowskiWindow.Ncount",
+      "name": "Ncount",
+      "status": "linked",
+      "kind": "definition",
+      "confidence": 0.88,
+      "paper_span": {
+        "tex_file": "unit-distance-proof.tex",
+        "quote": "\\(N_a = |X_a|\\), and"
+      },
+      "rationale": "`Ncount sel DD R a` is the paper's \\(N_a = |X_a|\\)."
+    },
+    {
+      "fqn": "Workspace.Types.MinkowskiWindow.Ecount",
+      "name": "Ecount",
+      "status": "linked",
+      "kind": "definition",
+      "confidence": 0.9,
+      "paper_span": {
+        "tex_file": "unit-distance-proof.tex",
+        "quote": "E_a = \\#\\{(x,x') \\in X_a^2 : x' - x \\in U\\}.",
+        "pdf_page": 8,
+        "pdf_match": "Ea = #{(x, x0 ) \u2208 Xa2 : x0 \u2212 x \u2208 U }."
+      },
+      "rationale": "`Ecount sel DD R U a` is the paper's \\(E_a\\): the number of *ordered* pairs in \\(X_a\\) whose difference lies in \\(U\\)."
+    },
+    {
+      "fqn": "Workspace.Types.MinkowskiWindow.discArea",
+      "name": "discArea",
+      "status": "linked",
+      "kind": "definition",
+      "confidence": 0.88,
+      "paper_span": {
+        "tex_file": "unit-distance-proof.tex",
+        "quote": "Let \\(b(R)=\\pi R^2\\) be the area of one radius-\\(R\\) disc"
+      },
+      "rationale": "`discArea R = \u03c0R\u00b2` is the paper's \\(b(R)\\)."
+    },
+    {
+      "fqn": "Workspace.Types.MinkowskiWindow.overlapArea",
+      "name": "overlapArea",
+      "status": "linked",
+      "kind": "definition",
+      "confidence": 0.88,
+      "paper_span": {
+        "tex_file": "unit-distance-proof.tex",
+        "quote": "let \\(a(R)\\) be the overlap area of two radius-\\(R\\)"
+      },
+      "rationale": "`overlapArea R` is the paper's \\(a(R)\\): the area of intersection of two radius-`R` discs whose centres are at distance 1 (the coordinatewise size of a translation in `U`)."
+    },
+    {
+      "fqn": "Workspace.Types.MinkowskiWindow.rho",
+      "name": "rho",
+      "status": "linked",
+      "kind": "definition",
+      "confidence": 0.9,
+      "paper_span": {
+        "tex_file": "unit-distance-proof.tex",
+        "quote": "and set \\(\\rho_R = a(R)/b(R)\\). Then \\(\\rho_R \\to 1\\) as \\(R \\to \\infty\\)."
+      },
+      "rationale": "`rho R = overlapArea R / discArea R` is the paper's \\(\\rho_R = a(R)/b(R)\\)."
+    }
+  ],
+  "file_sha256": "b167bdb75764f50287cfad9c567ffa4b048fe103ef4687f645cdfc27b8f6fb0c"
+}

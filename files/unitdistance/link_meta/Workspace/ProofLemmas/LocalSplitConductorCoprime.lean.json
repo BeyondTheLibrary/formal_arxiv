@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "lean_file": "lean_workspace/Workspace/ProofLemmas/LocalSplitConductorCoprime.lean",
+  "sig_sha256": "9e917e48651a61c38ca6b84e122f9d3cfb7739bb5ac04c2a8276a00fc276ad38",
+  "linked_at": "2026-07-28T01:11:19Z",
+  "decls": [
+    {
+      "fqn": "LocalSplitConductorCoprime",
+      "name": "LocalSplitConductorCoprime",
+      "status": "helper",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Conductor bookkeeping behind the conductor\u2013discriminant formula used in Proposition 3.2. Not a standalone paper statement."
+    }
+  ],
+  "file_sha256": "0192a33b3205507e6edbf03e72c444b751f87ff84bd5058cab0ed22b363b85d1"
+}

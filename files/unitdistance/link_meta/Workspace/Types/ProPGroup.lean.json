@@ -1,0 +1,65 @@
+{
+  "schema_version": 1,
+  "lean_file": "lean_workspace/Workspace/Types/ProPGroup.lean",
+  "sig_sha256": "471b04dd5bb3217852defb06d645f0c928abd2931bc0b5a20516629c9ff4eadc",
+  "linked_at": "2026-07-28T01:11:19Z",
+  "decls": [
+    {
+      "fqn": "Workspace.Types.ProPGroup.IsProP",
+      "name": "IsProP",
+      "status": "helper",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Pro-p group-theory plumbing behind the Frattini/Golod\u2013Shafarevich statements of Section 3. Not a standalone paper statement."
+    },
+    {
+      "fqn": "Workspace.Types.ProPGroup.IsMaximalOpenSubgroup",
+      "name": "IsMaximalOpenSubgroup",
+      "status": "helper",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Pro-p group-theory plumbing behind the Frattini/Golod\u2013Shafarevich statements of Section 3. Not a standalone paper statement."
+    },
+    {
+      "fqn": "Workspace.Types.ProPGroup.frattiniOpen",
+      "name": "frattiniOpen",
+      "status": "linked",
+      "kind": "definition",
+      "confidence": 0.92,
+      "paper_span": {
+        "tex_file": "unit-distance-proof.tex",
+        "quote": "its Frattini subgroup is"
+      },
+      "rationale": "`frattiniOpen G` is the paper's \\(\\Phi(G) = \\bigcap_M M\\), the intersection of all maximal proper *open* subgroups \u2014 the topological Frattini subgroup of a pro-p group."
+    },
+    {
+      "fqn": "Workspace.Types.ProPGroup.TopologicallyGenerates",
+      "name": "TopologicallyGenerates",
+      "status": "helper",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Pro-p group-theory plumbing behind the Frattini/Golod\u2013Shafarevich statements of Section 3. Not a standalone paper statement."
+    },
+    {
+      "fqn": "Workspace.Types.ProPGroup.dRank",
+      "name": "dRank",
+      "status": "linked",
+      "kind": "definition",
+      "confidence": 0.92,
+      "paper_span": {
+        "tex_file": "unit-distance-proof.tex",
+        "quote": "Write \\(d(G)\\) for the minimal number"
+      },
+      "rationale": "`dRank G` is the paper's \\(d(G)\\): the least cardinality of a finite subset that topologically generates `G`."
+    },
+    {
+      "fqn": "Workspace.Types.ProPGroup.TopFinitelyGenerated",
+      "name": "TopFinitelyGenerated",
+      "status": "helper",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Pro-p group-theory plumbing behind the Frattini/Golod\u2013Shafarevich statements of Section 3. Not a standalone paper statement."
+    }
+  ],
+  "file_sha256": "8ce9af5f8c727916f247805f73ad89e98000a9c0d6b9c48c06eebebecb2748b0"
+}

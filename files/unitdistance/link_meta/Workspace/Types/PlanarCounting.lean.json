@@ -1,0 +1,65 @@
+{
+  "schema_version": 1,
+  "lean_file": "lean_workspace/Workspace/Types/PlanarCounting.lean",
+  "sig_sha256": "9836e759301d310cda00ce3b68feb84ee2b6177ff19f9bd11637e343cac1b215",
+  "linked_at": "2026-07-30T05:11:41Z",
+  "decls": [
+    {
+      "fqn": "Workspace.Types.PlanarCounting.distSym2",
+      "name": "distSym2",
+      "status": "helper",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Plumbing for the planar unit-distance count of Definition 1.0 (the \\(\\mathbb{C} \\cong \\mathbb{R}^2\\) isometry and `Sym2` encoding). Not a standalone paper statement."
+    },
+    {
+      "fqn": "Workspace.Types.PlanarCounting.distSym2_mk",
+      "name": "distSym2_mk",
+      "status": "helper",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Plumbing for the planar unit-distance count of Definition 1.0 (the \\(\\mathbb{C} \\cong \\mathbb{R}^2\\) isometry and `Sym2` encoding). Not a standalone paper statement."
+    },
+    {
+      "fqn": "Workspace.Types.PlanarCounting.nu",
+      "name": "nu",
+      "status": "linked",
+      "kind": "definition",
+      "confidence": 0.95,
+      "paper_span": {
+        "tex_file": "unit-distance-proof.tex",
+        "quote": "\\nu(P)=\\#\\{\\{x,y\\}\\subset P:|x-y|=1\\}"
+      },
+      "rationale": "Formalizes the unit-distance count \\(\\nu(P)\\): `nu P` counts the non-diagonal elements of `Finset.sym2 P` (i.e. unordered pairs of distinct points of `P`) whose endpoints are at distance 1."
+    },
+    {
+      "fqn": "Workspace.Types.PlanarCounting.nuMax",
+      "name": "nuMax",
+      "status": "linked",
+      "kind": "definition",
+      "confidence": 0.95,
+      "paper_span": {
+        "tex_file": "unit-distance-proof.tex",
+        "quote": "\\(\\nu(n)=\\max_{|P|=n}\\nu(P)\\)"
+      },
+      "rationale": "Formalizes \\(\\nu(n)\\), the maximum of \\(\\nu(P)\\) over all n-point planar sets, as the supremum of `nu P` over `P : Finset (EuclideanSpace \u211d (Fin 2))` with `P.card = n`."
+    },
+    {
+      "fqn": "Workspace.Types.PlanarCounting.toPlane",
+      "name": "toPlane",
+      "status": "helper",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Plumbing for the planar unit-distance count of Definition 1.0 (the \\(\\mathbb{C} \\cong \\mathbb{R}^2\\) isometry and `Sym2` encoding). Not a standalone paper statement."
+    },
+    {
+      "fqn": "Workspace.Types.PlanarCounting.embedFinset",
+      "name": "embedFinset",
+      "status": "helper",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Plumbing for the planar unit-distance count of Definition 1.0 (the \\(\\mathbb{C} \\cong \\mathbb{R}^2\\) isometry and `Sym2` encoding). Not a standalone paper statement."
+    }
+  ],
+  "file_sha256": "e782b4241a4ae51cb6a7062b6e2573802f62ddba8bb171fdf0f82ee7e8fcb600"
+}

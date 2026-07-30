@@ -1,0 +1,45 @@
+{
+  "schema_version": 1,
+  "lean_file": "lean_workspace/Workspace/Types/CMAdjoinI.lean",
+  "sig_sha256": "fa3856728ebf83e302d7016aca4332b3c8ca90379a4d10756ceb6097c9ebda93",
+  "linked_at": "2026-07-28T01:11:19Z",
+  "decls": [
+    {
+      "fqn": "Workspace.Types.CMAdjoinI.IsAdjoinI",
+      "name": "IsAdjoinI",
+      "status": "linked",
+      "kind": "definition",
+      "confidence": 0.9,
+      "paper_span": {
+        "tex_file": "unit-distance-proof.tex",
+        "quote": "In this paper \\(K=L(i)\\) with \\(L\\) totally real, and for every complex embedding \\(\\sigma:K\\hookrightarrow \\mathbb C\\),"
+      },
+      "rationale": "`IsAdjoinI L K` is the paper's CM situation \\(K = L(i)\\): there is `iota : K` with `iota^2 = -1` generating `K` over the totally real field `L`."
+    },
+    {
+      "fqn": "Workspace.Types.CMAdjoinI.conjAut",
+      "name": "conjAut",
+      "status": "linked",
+      "kind": "definition",
+      "confidence": 0.9,
+      "paper_span": {
+        "tex_file": "unit-distance-proof.tex",
+        "quote": "The nontrivial automorphism of \\(K/K^+\\) is denoted \\(c\\)."
+      },
+      "rationale": "`conjAut h` is the paper's automorphism \\(c\\): the unique non-identity element of \\(\\mathrm{Gal}(K/L)\\), sending the chosen square root of \u22121 to its negative, which becomes complex conjugation under every complex embedding."
+    },
+    {
+      "fqn": "Workspace.Types.CMAdjoinI.relNorm_KL",
+      "name": "relNorm_KL",
+      "status": "linked",
+      "kind": "definition",
+      "confidence": 0.9,
+      "paper_span": {
+        "tex_file": "unit-distance-proof.tex",
+        "quote": "where, for \\(K=L(i)\\), the relative norm is \\(N_{K/L}(u)=u\\,c(u)\\)"
+      },
+      "rationale": "`relNorm_KL h u = u * conjAut h u` is exactly the paper's relative norm \\(N_{K/L}(u) = u\\,c(u)\\)."
+    }
+  ],
+  "file_sha256": "28debcf6771dabd59be45906a0203313de1894261af35402e59f0599b478beb9"
+}

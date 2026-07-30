@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "lean_file": "lean_workspace/Workspace/ProofLemmas/SublemmaCMModelExists.lean",
+  "sig_sha256": "fe9311683bf43717795570402482d5712eed53ac6acaba515f6c9421a6ff54d9",
+  "linked_at": "2026-07-28T01:11:19Z",
+  "decls": [
+    {
+      "fqn": "SublemmaCMModelExists",
+      "name": "SublemmaCMModelExists",
+      "status": "linked",
+      "kind": "proof_case",
+      "confidence": 0.85,
+      "paper_span": {
+        "tex_file": "unit-distance-proof.tex",
+        "quote": "Finally put \\(K_j=F_j(i)\\)."
+      },
+      "rationale": "Step 4's construction of the CM layer \\(K_j = F_j(i)\\) on top of each tower field."
+    }
+  ],
+  "file_sha256": "9b5015ce257e1c010441f7bda2a91abd2a0908fc3f1f9afbb689439feb30e706"
+}

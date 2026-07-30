@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "lean_file": "lean_workspace/Workspace/ProofLemmas/FieldConstructionNumericBounds.lean",
+  "sig_sha256": "96ec9afb96aebeafad5a6fd0bce0deaac58159f6cfeedb36d7ce4bbd73a9bfc7",
+  "linked_at": "2026-07-28T01:11:19Z",
+  "decls": [
+    {
+      "fqn": "FieldConstructionNumericBounds",
+      "name": "FieldConstructionNumericBounds",
+      "status": "linked",
+      "kind": "proof_case",
+      "confidence": 0.9,
+      "paper_span": {
+        "tex_file": "unit-distance-proof.tex",
+        "quote": "Combining this quadratic lower bound for \\(t\\) with \\(\\log H_\\ell=O(\\ell\\log\\ell)\\)"
+      },
+      "rationale": "Property (P6): the quadratic \\(t \\ge (\\ell-1)^2/200\\) beats \\(\\log H_\\ell = O(\\ell\\log\\ell)\\), so \\(t\\log 2 - \\log H_\\ell > 0\\) for all sufficiently large \\(\\ell\\)."
+    }
+  ],
+  "file_sha256": "6016ea7c3dee6a42451ed0a4ea5104fda8ba513b7ba311377d189d1d5a959953"
+}

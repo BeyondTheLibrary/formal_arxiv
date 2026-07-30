@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "lean_file": "lean_workspace/Workspace/ProofLemmas/ProPMaxOpenFree.lean",
+  "sig_sha256": "2101af7f1f23f81d427c679e9513de51755dbec187ab7e7ec70a1273f02abeac",
+  "linked_at": "2026-07-28T01:11:19Z",
+  "decls": [
+    {
+      "fqn": "Workspace.ProofLemmas.ProPMaxOpenFree.maxOpen_normal_index_p",
+      "name": "maxOpen_normal_index_p",
+      "status": "helper",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Pro-p group-theory plumbing behind the Frattini/Golod\u2013Shafarevich statements of Section 3. Not a standalone paper statement."
+    }
+  ],
+  "file_sha256": "b1f93211cbdfc8b992ff072a6aacfa9d12bf2aa9fff854ca4f4436bf139a2533"
+}

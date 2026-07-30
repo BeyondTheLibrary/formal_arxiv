@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "lean_file": "lean_workspace/Workspace/ProofLemmas/PrimesOneModThreeLogSum.lean",
+  "sig_sha256": "9064a547f6540c6d9427eb26624d7d3dd18e42afe630092074a05b272171bb4e",
+  "linked_at": "2026-07-28T01:11:19Z",
+  "decls": [
+    {
+      "fqn": "PrimesOneModThreeLogSum",
+      "name": "PrimesOneModThreeLogSum",
+      "status": "linked",
+      "kind": "proof_case",
+      "confidence": 0.9,
+      "paper_span": {
+        "tex_file": "unit-distance-proof.tex",
+        "quote": "congruent to \\(1 \\bmod 3\\), the prime number theorem in arithmetic progressions [Dav00] gives"
+      },
+      "rationale": "Fact 3.10: the prime number theorem in arithmetic progressions gives \\(\\sum_{i \\le \\ell} \\log r_i = O(\\ell\\log\\ell)\\) for the first \\(\\ell\\) primes \\(\\equiv 1 \\pmod 3\\)."
+    }
+  ],
+  "file_sha256": "5675d21c33232b99ef6faf6e354f211c4edaeb7e5af812a1a38157576dc7a526"
+}

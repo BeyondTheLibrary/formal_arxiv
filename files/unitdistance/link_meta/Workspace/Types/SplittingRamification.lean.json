@@ -1,0 +1,59 @@
+{
+  "schema_version": 1,
+  "lean_file": "lean_workspace/Workspace/Types/SplittingRamification.lean",
+  "sig_sha256": "ae8c4ec7727453582045aaf434f0194456613a5c9730c22eb66ca94a3d35fdf9",
+  "linked_at": "2026-07-28T01:11:19Z",
+  "decls": [
+    {
+      "fqn": "Workspace.Types.SplittingRamification.SplitsCompletelyRat",
+      "name": "SplitsCompletelyRat",
+      "status": "linked",
+      "kind": "definition",
+      "confidence": 0.92,
+      "paper_span": {
+        "tex_file": "unit-distance-proof.tex",
+        "quote": "For a rational prime \\(q\\), complete splitting in \\(L\\) means"
+      },
+      "rationale": "`SplitsCompletelyRat q L` formalizes complete splitting of a rational prime: exactly `[L:\u211a]` primes of `\ud835\udcaa L` over `(q)`, each with ramification index 1 and residue degree 1 \u2014 i.e. \\(q\\mathcal{O}_L = \\mathfrak{p}_1\\cdots\\mathfrak{p}_{[L:\\mathbb{Q}]}\\) with residue fields \\(\\mathbb{F}_q\\)."
+    },
+    {
+      "fqn": "Workspace.Types.SplittingRamification.SplitsCompletely",
+      "name": "SplitsCompletely",
+      "status": "linked",
+      "kind": "definition",
+      "confidence": 0.9,
+      "paper_span": {
+        "tex_file": "unit-distance-proof.tex",
+        "quote": "and it splits completely if there are \\([M:F]\\) primes above it, all unramified and with"
+      },
+      "rationale": "`SplitsCompletely p` (for `M/F`) is the paper's relative notion: exactly `[M:F]` primes above `p`, each with ramification index 1 and residue degree 1."
+    },
+    {
+      "fqn": "Workspace.Types.SplittingRamification.UnramifiedAtFinitePrimes",
+      "name": "UnramifiedAtFinitePrimes",
+      "status": "linked",
+      "kind": "definition",
+      "confidence": 0.9,
+      "paper_span": {
+        "tex_file": "unit-distance-proof.tex",
+        "quote": "the exponent \\(e(\\mathfrak P/\\mathfrak p)\\) is the ramification index. The prime \\(\\mathfrak p\\) is unramified if all these indices"
+      },
+      "rationale": "`UnramifiedAtFinitePrimes F M` formalizes \"unramified at all finite primes\": every prime `P` of `\ud835\udcaa M` over every prime `p` of `\ud835\udcaa F` has ramification index \\(e(\\mathfrak{P}/\\mathfrak{p}) = 1\\)."
+    },
+    {
+      "fqn": "Workspace.Types.SplittingRamification.EverywhereUnramified",
+      "name": "EverywhereUnramified",
+      "status": "linked",
+      "kind": "definition",
+      "confidence": 0.9,
+      "paper_span": {
+        "tex_file": "unit-distance-proof.tex",
+        "quote": "unramified'' means unramified at all finite and infinite places.",
+        "pdf_page": 15,
+        "pdf_match": "means unrami\ufb01ed at all \ufb01nite and in\ufb01nite places."
+      },
+      "rationale": "`EverywhereUnramified F M` is the paper's \"everywhere unramified\": unramified at all finite primes and at all infinite places (no real place of `F` becomes complex in `M`)."
+    }
+  ],
+  "file_sha256": "97210f81b2cfed386764ab036046289d5f7e34036c867e8d30de809c05e76bfd"
+}

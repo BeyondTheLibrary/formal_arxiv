@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "lean_file": "lean_workspace/Workspace/ProofLemmas/SublemmaLatticeNormBound.lean",
+  "sig_sha256": "d539873a9be188eeeb9c5f3e69eb4eff19240dce198e097ebe5077464faa449f",
+  "linked_at": "2026-07-28T01:11:19Z",
+  "decls": [
+    {
+      "fqn": "SublemmaLatticeNormBound",
+      "name": "SublemmaLatticeNormBound",
+      "status": "helper",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Lattice infrastructure for the Minkowski embedding of Section 2.1 (discreteness, full rank, fundamental domain). Not a standalone paper statement."
+    }
+  ],
+  "file_sha256": "2b55f168490ab70dcbb248a1729d0252e4814a329430e87e5bf6b97e7bbf3f6f"
+}

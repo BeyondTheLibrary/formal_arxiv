@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "lean_file": "lean_workspace/Workspace/ProofLemmas/SublemmaPacking.lean",
+  "sig_sha256": "820482d93c939a6f203af3a6dae3ef3001bdcaf2aec940dd52b84ba931a45b4d",
+  "linked_at": "2026-07-28T01:11:19Z",
+  "decls": [
+    {
+      "fqn": "SublemmaPacking",
+      "name": "SublemmaPacking",
+      "status": "linked",
+      "kind": "proof_case",
+      "confidence": 0.88,
+      "paper_span": {
+        "tex_file": "unit-distance-proof.tex",
+        "quote": "The open polydiscs of sup-norm radius \\(D^{-1}/2\\) centered at the points of \\(X\\) are pairwise disjoint"
+      },
+      "rationale": "The volume-comparison packing argument of Lemma 2.6: disjoint polydiscs of sup-norm radius \\(D^{-1}/2\\) around the points of \\(X\\) all fit in \\(B_{R + D^{-1}/2}\\), giving \\(|X| \\le (1 + 2RD)^{2f}\\)."
+    }
+  ],
+  "file_sha256": "c38f451150aa01aab3ee4be42156e6ce69f95933cf4d13cf0948b73217dd4356"
+}

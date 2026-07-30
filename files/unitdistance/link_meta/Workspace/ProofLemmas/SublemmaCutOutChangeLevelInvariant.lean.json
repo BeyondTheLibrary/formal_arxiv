@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "lean_file": "lean_workspace/Workspace/ProofLemmas/SublemmaCutOutChangeLevelInvariant.lean",
+  "sig_sha256": "895a3081e427e7f2c9776ed21348403e1534c638612cd4d7427c0c4ab57d0da0",
+  "linked_at": "2026-07-28T01:11:19Z",
+  "decls": [
+    {
+      "fqn": "SublemmaCutOutChangeLevelInvariant",
+      "name": "SublemmaCutOutChangeLevelInvariant",
+      "status": "helper",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Internal Lean helper: a supporting step of the formalization with no standalone counterpart in the paper, which states only the numbered results it is used to prove."
+    }
+  ],
+  "file_sha256": "b1e5e16a29cb0b7b27ad125deaaeb37f98b2151429fd69af9fe2a4a254275eb8"
+}

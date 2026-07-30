@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "lean_file": "lean_workspace/Workspace/ProofLemmas/SublemmaWindowVolume.lean",
+  "sig_sha256": "5737bb3007ec90ca74e87fa53c1596d84521cfd18eadab4849bae6eb83a401ad",
+  "linked_at": "2026-07-28T01:11:19Z",
+  "decls": [
+    {
+      "fqn": "SublemmaWindowVolume",
+      "name": "SublemmaWindowVolume",
+      "status": "linked",
+      "kind": "equation",
+      "confidence": 0.85,
+      "paper_span": {
+        "tex_file": "unit-distance-proof.tex",
+        "quote": "\\mathbb{E}_a[N_a] = \\frac{\\operatorname{vol}(B_R)}{\\operatorname{covol}(\\Lambda)}",
+        "pdf_page": 8,
+        "pdf_match": "vol(BR )"
+      },
+      "rationale": "Supplies the volume in the numerator of Lemma 2.4's first averaged identity: the window satisfies \\(\\mathrm{vol}(B_R) = b(R)^f\\), giving \\(\\mathbb{E}_a[N_a] = b(R)^f/\\mathrm{covol}(\\Lambda)\\)."
+    }
+  ],
+  "file_sha256": "381567cc24aa3e629db06ab6125f29a73d97606f6f5c7455a6ab33e58befcf9b"
+}

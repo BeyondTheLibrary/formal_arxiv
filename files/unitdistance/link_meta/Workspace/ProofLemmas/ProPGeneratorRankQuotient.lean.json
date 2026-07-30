@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "lean_file": "lean_workspace/Workspace/ProofLemmas/ProPGeneratorRankQuotient.lean",
+  "sig_sha256": "371d5a544453c088f7f72bcb37c072447734f53738ab4b83ea7ab5b317e034f2",
+  "linked_at": "2026-07-28T01:11:19Z",
+  "decls": [
+    {
+      "fqn": "Workspace.ProofLemmas.ProPGeneratorRankQuotient.comap_maximalOpen",
+      "name": "comap_maximalOpen",
+      "status": "helper",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Pro-p group-theory infrastructure supporting Proposition 3.3 (generator rank via the Frattini quotient). Not a standalone paper statement."
+    },
+    {
+      "fqn": "Workspace.ProofLemmas.ProPGeneratorRankQuotient.map_maximalOpen",
+      "name": "map_maximalOpen",
+      "status": "helper",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Pro-p group-theory infrastructure supporting Proposition 3.3 (generator rank via the Frattini quotient). Not a standalone paper statement."
+    },
+    {
+      "fqn": "Workspace.ProofLemmas.ProPGeneratorRankQuotient.frattini_comap_eq",
+      "name": "frattini_comap_eq",
+      "status": "helper",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Pro-p group-theory infrastructure supporting Proposition 3.3 (generator rank via the Frattini quotient). Not a standalone paper statement."
+    },
+    {
+      "fqn": "Workspace.ProofLemmas.ProPGeneratorRankQuotient.main",
+      "name": "main",
+      "status": "helper",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Pro-p group-theory infrastructure supporting Proposition 3.3 (generator rank via the Frattini quotient). Not a standalone paper statement."
+    }
+  ],
+  "file_sha256": "d971298721c58f275a4254939134612963e76827622bd590f753c9204e9f4165"
+}

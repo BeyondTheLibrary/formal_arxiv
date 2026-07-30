@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "lean_file": "lean_workspace/Workspace/ProofLemmas/SublemmaSeparation.lean",
+  "sig_sha256": "76fa3c4d1a8225b258bad3cf43943e3b6fa855419c45f4a67020f1b1414a4fd9",
+  "linked_at": "2026-07-28T01:11:19Z",
+  "decls": [
+    {
+      "fqn": "Workspace.ProofLemmas.SublemmaSeparation",
+      "name": "SublemmaSeparation",
+      "status": "linked",
+      "kind": "proof_case",
+      "confidence": 0.88,
+      "paper_span": {
+        "tex_file": "unit-distance-proof.tex",
+        "quote": "Hence some coordinate differs by at least \\(D^{-1}\\), so \\(X\\) is \\(D^{-1}\\)-separated in the sup norm."
+      },
+      "rationale": "Proves that \\(X\\) is \\(D^{-1}\\)-separated in the sup norm \u2014 the separation input to the packing count of Lemma 2.6."
+    }
+  ],
+  "file_sha256": "ca538dbdea54a74ed592b94786d7f5d1a9a1e082d0347d0e8530a14995f47dac"
+}

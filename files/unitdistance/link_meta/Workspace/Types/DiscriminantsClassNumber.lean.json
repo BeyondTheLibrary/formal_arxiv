@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "lean_file": "lean_workspace/Workspace/Types/DiscriminantsClassNumber.lean",
+  "sig_sha256": "260357543d7ef3f29b508b3bb46e93f19c4c250fa5e96f7d4d80cbf317902af1",
+  "linked_at": "2026-07-30T05:11:41Z",
+  "decls": [
+    {
+      "fqn": "Workspace.Types.DiscriminantsClassNumber.rootDiscriminant",
+      "name": "rootDiscriminant",
+      "status": "linked",
+      "kind": "definition",
+      "confidence": 0.95,
+      "paper_span": {
+        "tex_file": "unit-distance-proof.tex",
+        "quote": "The root discriminant is"
+      },
+      "rationale": "`rootDiscriminant K` is the paper's \\(\\mathrm{rd}(L) = |D_L|^{1/[L:\\mathbb{Q}]}\\)."
+    },
+    {
+      "fqn": "Workspace.Types.DiscriminantsClassNumber.classNumber",
+      "name": "classNumber",
+      "status": "helper",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Discriminant bookkeeping (tower formula, root discriminant) behind Definition A.6 and Proposition 3.8. Not a standalone paper statement."
+    }
+  ],
+  "file_sha256": "54866897faac17150a9ce40a30253d7ae03bbe9d727caf822b04f4706ffbafc9"
+}

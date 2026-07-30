@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "lean_file": "lean_workspace/Workspace/Types/AdmissibleDatum.lean",
+  "sig_sha256": "9d14a3a3b06726b6b40bbace2b6a3ea6cb4ac6a0ae7bf5a2216abad8c39f6909",
+  "linked_at": "2026-07-28T01:11:19Z",
+  "decls": [
+    {
+      "fqn": "Workspace.Types.AdmissibleDatum.AdmissibleDatum",
+      "name": "AdmissibleDatum",
+      "status": "linked",
+      "kind": "definition",
+      "confidence": 0.95,
+      "paper_span": {
+        "tex_file": "unit-distance-proof.tex",
+        "quote": "An admissible datum consists of:"
+      },
+      "rationale": "The `AdmissibleDatum` structure bundles exactly the four items of Definition 2.1: a totally real number field `L`, the CM field `K = L(i)` with its nontrivial automorphism `c` (`h_adjoin`), the count `t`, and `t` distinct rational primes `q b \u2261 1 (mod 4)` splitting completely in `L`."
+    },
+    {
+      "fqn": "Workspace.Types.AdmissibleDatum.deg",
+      "name": "deg",
+      "status": "linked",
+      "kind": "definition",
+      "confidence": 0.8,
+      "paper_span": {
+        "tex_file": "unit-distance-proof.tex",
+        "quote": "a totally real number field \\(L\\) of degree \\(f=[L:\\mathbb Q]\\);"
+      },
+      "rationale": "`deg d = Module.finrank \u211a d.L` is the paper's degree \\(f = [L:\\mathbb{Q}]\\) of the base field."
+    },
+    {
+      "fqn": "Workspace.Types.AdmissibleDatum.Qprod",
+      "name": "Qprod",
+      "status": "linked",
+      "kind": "definition",
+      "confidence": 0.9,
+      "paper_span": {
+        "tex_file": "unit-distance-proof.tex",
+        "quote": "Put \\(Q=\\prod_{b=1}^t q_b\\)."
+      },
+      "rationale": "`Qprod d = \u220f_b q b` is the paper's \\(Q = \\prod_{b=1}^t q_b\\)."
+    },
+    {
+      "fqn": "Workspace.Types.AdmissibleDatum.Dq",
+      "name": "Dq",
+      "status": "linked",
+      "kind": "definition",
+      "confidence": 0.9,
+      "paper_span": {
+        "tex_file": "unit-distance-proof.tex",
+        "quote": "In the geometric part we also write \\(D=Q^2\\) for the corresponding fixed denominator."
+      },
+      "rationale": "`Dq d = (Qprod d)^2` is the paper's fixed denominator \\(D = Q^2\\)."
+    }
+  ],
+  "file_sha256": "125a3ddba32b571cf2a2db77c0689461c7aa6430440a6d2cc12a4174f851bfe7"
+}

@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "lean_file": "lean_workspace/Workspace/ProofLemmas/IdealClassPigeonholeFiber.lean",
+  "sig_sha256": "2e0df7723e141b73cf9583c797c9dd50f8e251a5c780b5d330913368741ecd63",
+  "linked_at": "2026-07-28T01:11:19Z",
+  "decls": [
+    {
+      "fqn": "IdealClassPigeonholeFiber",
+      "name": "IdealClassPigeonholeFiber",
+      "status": "linked",
+      "kind": "proof_case",
+      "confidence": 0.85,
+      "paper_span": {
+        "tex_file": "unit-distance-proof.tex",
+        "quote": "These $2^m$ ideals need not be principal, but they occupy only $h(K)$ ideal classes. Thus some"
+      },
+      "rationale": "The class-group pigeonhole opening the proof of Proposition 2.2, in abstract form: for any \\(\\Phi : D \\to C\\) between nonempty finite types some fibre has size \\(\\ge |D|/|C|\\) \u2014 here \\(\\varepsilon \\mapsto [A_\\varepsilon]\\), giving a fibre of size \\(\\ge 2^m/h(K)\\)."
+    }
+  ],
+  "file_sha256": "f0a8d6d7b0013bcf757afd51e07b0da4335e268d25d676502eeb070124183301"
+}

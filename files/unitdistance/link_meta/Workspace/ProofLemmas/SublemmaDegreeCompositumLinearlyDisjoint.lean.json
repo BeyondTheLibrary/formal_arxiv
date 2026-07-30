@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "lean_file": "lean_workspace/Workspace/ProofLemmas/SublemmaDegreeCompositumLinearlyDisjoint.lean",
+  "sig_sha256": "0aa87e567f610d11eb7cf46016c7bd91ed3d61ce62b6f82e476ac3e0a204d4d4",
+  "linked_at": "2026-07-28T01:11:19Z",
+  "decls": [
+    {
+      "fqn": "SublemmaDegreeCompositumLinearlyDisjoint",
+      "name": "SublemmaDegreeCompositumLinearlyDisjoint",
+      "status": "helper",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Facts about the compositum \\(M = L_1\\cdots L_\\ell\\) (degree, Galois group, ramification) used inside the proof of Proposition 3.2."
+    }
+  ],
+  "file_sha256": "501e81fe6a4a2f08e3941241cd79af188984a15daff7c6a96a85545b0664b274"
+}

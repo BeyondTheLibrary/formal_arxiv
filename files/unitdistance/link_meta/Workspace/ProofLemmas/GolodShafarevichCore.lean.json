@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "lean_file": "lean_workspace/Workspace/ProofLemmas/GolodShafarevichCore.lean",
+  "sig_sha256": "0196a7ba4ca3de3169e45c4b67f4cddcd8c5dd894bbf81dfd6a5a4e8504b57c2",
+  "linked_at": "2026-07-28T01:11:19Z",
+  "decls": [
+    {
+      "fqn": "Workspace.ProofLemmas.GolodShafarevichCore.gs_core",
+      "name": "gs_core",
+      "status": "helper",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Internal step of the Golod\u2013Shafarevich argument (Proposition 3.4); the paper states only the inequality itself."
+    },
+    {
+      "fqn": "Workspace.ProofLemmas.GolodShafarevichCore.one_le_dRank",
+      "name": "one_le_dRank",
+      "status": "helper",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Internal step of the Golod\u2013Shafarevich argument (Proposition 3.4); the paper states only the inequality itself."
+    }
+  ],
+  "file_sha256": "470d9b2318ca99827f024c1e0bf54cb4461741bf5edce71aaea66788d13a3bb0"
+}

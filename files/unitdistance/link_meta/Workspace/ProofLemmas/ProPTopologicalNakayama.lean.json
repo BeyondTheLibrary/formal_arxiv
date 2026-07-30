@@ -1,0 +1,81 @@
+{
+  "schema_version": 1,
+  "lean_file": "lean_workspace/Workspace/ProofLemmas/ProPTopologicalNakayama.lean",
+  "sig_sha256": "cff02d587a899bae60a4f486f1fcc8bc0af01ce8d02e598cc960be1e7247f2c8",
+  "linked_at": "2026-07-28T01:11:19Z",
+  "decls": [
+    {
+      "fqn": "ProPTopologicalNakayamaAux.gen_finset_of_module",
+      "name": "gen_finset_of_module",
+      "status": "helper",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Topological Nakayama machinery used to control generators of pro-p groups (Proposition 3.3). Not a standalone paper statement."
+    },
+    {
+      "fqn": "ProPTopologicalNakayamaAux.exists_gen_finset",
+      "name": "exists_gen_finset",
+      "status": "helper",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Topological Nakayama machinery used to control generators of pro-p groups (Proposition 3.3). Not a standalone paper statement."
+    },
+    {
+      "fqn": "ProPTopologicalNakayamaAux.exists_maximalOpen_ge",
+      "name": "exists_maximalOpen_ge",
+      "status": "helper",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Topological Nakayama machinery used to control generators of pro-p groups (Proposition 3.3). Not a standalone paper statement."
+    },
+    {
+      "fqn": "ProPTopologicalNakayamaAux.frattiniOpen_normal",
+      "name": "frattiniOpen_normal",
+      "status": "helper",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Topological Nakayama machinery used to control generators of pro-p groups (Proposition 3.3). Not a standalone paper statement."
+    },
+    {
+      "fqn": "ProPTopologicalNakayamaAux.commutator_mem_frattini",
+      "name": "commutator_mem_frattini",
+      "status": "helper",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Topological Nakayama machinery used to control generators of pro-p groups (Proposition 3.3). Not a standalone paper statement."
+    },
+    {
+      "fqn": "ProPTopologicalNakayamaAux.pow_mem_frattini",
+      "name": "pow_mem_frattini",
+      "status": "helper",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Topological Nakayama machinery used to control generators of pro-p groups (Proposition 3.3). Not a standalone paper statement."
+    },
+    {
+      "fqn": "ProPTopologicalNakayamaAux.frattiniQuotient_comm",
+      "name": "frattiniQuotient_comm",
+      "status": "helper",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Topological Nakayama machinery used to control generators of pro-p groups (Proposition 3.3). Not a standalone paper statement."
+    },
+    {
+      "fqn": "ProPTopologicalNakayamaAux.frattiniQuotient_expp",
+      "name": "frattiniQuotient_expp",
+      "status": "helper",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Topological Nakayama machinery used to control generators of pro-p groups (Proposition 3.3). Not a standalone paper statement."
+    },
+    {
+      "fqn": "ProPTopologicalNakayama",
+      "name": "ProPTopologicalNakayama",
+      "status": "helper",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Topological Nakayama machinery used to control generators of pro-p groups (Proposition 3.3). Not a standalone paper statement."
+    }
+  ],
+  "file_sha256": "57f26754e05b9b5f3b197901c3ecce86a93a096ae7c52ad6e35e4f12ddc66c74"
+}

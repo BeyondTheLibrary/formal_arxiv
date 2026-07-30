@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "lean_file": "lean_workspace/Workspace/ProofLemmas/ValuationVectorInjective.lean",
+  "sig_sha256": "82a0e4ad68fa0568c420ab4b6f848ba00fed634dc98e97bb26c320cdd9728f43",
+  "linked_at": "2026-07-28T01:11:19Z",
+  "decls": [
+    {
+      "fqn": "ValuationVectorInjective",
+      "name": "ValuationVectorInjective",
+      "status": "linked",
+      "kind": "proof_case",
+      "confidence": 0.88,
+      "paper_span": {
+        "tex_file": "unit-distance-proof.tex",
+        "quote": "By (4), distinct $\\varepsilon$'s give distinct valuation vectors, hence distinct elements $u_\\varepsilon$."
+      },
+      "rationale": "Proves the distinctness step of Proposition 2.2: the valuation vector determines \\(\\varepsilon\\), so distinct \\(\\varepsilon\\) give distinct \\(u_\\varepsilon\\) \u2014 which is what makes \\(|U|\\) as large as the fibre."
+    }
+  ],
+  "file_sha256": "6fb5970c24890d1d1ad4d484b10d1a8f5ba1b63e8c27aec3a1cb0b6b7cedf825"
+}

@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "lean_file": "lean_workspace/Workspace/ProofLemmas/SublemmaCutOutFieldGalois.lean",
+  "sig_sha256": "afb50ce8a7fa106f0a03261912c8b555d9015bfb26d3f8dea52d4f9aa390ba21",
+  "linked_at": "2026-07-28T01:11:19Z",
+  "decls": [
+    {
+      "fqn": "SublemmaCutOutFieldGalois",
+      "name": "SublemmaCutOutFieldGalois",
+      "status": "helper",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Infrastructure for the field cut out by a Dirichlet character (Definition A.5) \u2014 level invariance, degree and Galois properties. Not a standalone paper statement."
+    }
+  ],
+  "file_sha256": "54ed2b6802fa86154b8b81fbc2b9076d907ae98d816b64938acd3cca361ce38b"
+}

@@ -581,13 +581,17 @@ async function ensureLeanLoaded() {
   return state.lean;
 }
 
+// Does this link actually point at somewhere in the paper? Three anchorings are
+// in use: an older *label* link (env hotspot), a *span* link carrying the LaTeX
+// range it was cut from, and — for papers whose LaTeX source we don't hold — a
+// link resolved straight to a PDF page. Any of them earns the Lean→PDF arrow.
+function pointsAtPaper(l) {
+  return !!(l.paper_label || l.paper_latex_range || l.paper_page_range);
+}
+
 // Best paper-side link for a Lean decl (one that actually points at a paper env).
 function bestPaperLink(decl) {
-  // A decl reaches the PDF two ways: an older *label* link (env hotspot) or a
-  // new *span* link keyed by the decl's fqn (latex_range highlight). Accept both
-  // so the gutter arrow appears for span-linked decls — otherwise span-model
-  // papers (which carry no paper_label) show no Lean→PDF arrow at all.
-  const cands = (decl.links || []).filter(l => l.paper_label || l.paper_latex_range);
+  const cands = (decl.links || []).filter(pointsAtPaper);
   if (!cands.length) return null;
   const best = cands.reduce((a, b) => ((a && (a.confidence || 0) > (b.confidence || 0)) ? a : b), null);
   return {
@@ -633,14 +637,18 @@ function renderLinkWhy(decl) {
     el.hidden = true; el.innerHTML = ''; return;
   }
   const links = decl ? (decl.links || []) : [];
-  const paperLinks = links.filter(l => l.paper_label || l.paper_latex_range);
+  const paperLinks = links.filter(pointsAtPaper);
   if (!decl || (!paperLinks.length && !links.length)) {
     el.hidden = true; el.innerHTML = ''; return;
   }
   if (!paperLinks.length) {
     // Lean-only orphan: explain why it is NOT linked (helper/scaffolding/…).
+    // `paper_status` says which when the manifest carries it; older papers only
+    // hint at it through the link source.
     const o = links[0];
-    const role = ORPHAN_ROLE[o.source && o.source.includes('orphan') ? 'helper' : ''] || 'Not linked to a paper statement';
+    const role = ORPHAN_ROLE[o.paper_status]
+      || ORPHAN_ROLE[o.source && o.source.includes('orphan') ? 'helper' : '']
+      || 'Not linked to a paper statement';
     el.hidden = false;
     el.innerHTML = LW_CLOSE_BTN + `<div class="lw-row lw-orphan"><div class="lw-line"><span class="lw-rel">${escapeHtml(role)}</span></div>` +
       (o.rationale ? `<div class="lw-why">${escapeHtml(o.rationale)}</div>` : '') + `</div>`;

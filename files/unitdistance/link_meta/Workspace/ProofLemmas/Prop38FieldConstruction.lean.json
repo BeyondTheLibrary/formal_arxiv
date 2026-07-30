@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "lean_file": "lean_workspace/Workspace/ProofLemmas/Prop38FieldConstruction.lean",
+  "sig_sha256": "fadbf45ffc00c70f416065d10a9771c8f5c2bd5a299c1c77459f8d00ed528350",
+  "linked_at": "2026-07-28T01:11:19Z",
+  "decls": [
+    {
+      "fqn": "Prop38FieldConstruction",
+      "name": "Prop38FieldConstruction",
+      "status": "linked",
+      "kind": "proposition",
+      "confidence": 0.97,
+      "paper_span": {
+        "tex_file": "unit-distance-proof.tex",
+        "quote": "Then one can find a number field \\(F\\), distinct rational primes \\(q_1,\\ldots,q_t\\) fixed independently of \\(j\\), and fields \\(F_j\\) with \\(F_0=F\\), satisfying the following properties."
+      },
+      "rationale": "Proposition 3.8, the field construction, in full: for large \\(\\ell\\) with \\(t = \\lfloor(\\ell-1)^2/100\\rfloor\\) it produces `F`, the fixed primes \\(q_b\\) and the tower \\(F_j\\) satisfying properties (P1)\u2013(P6). The Lean statement's six conjuncts are exactly P1\u2013P6."
+    }
+  ],
+  "file_sha256": "cdd046d6dcc9f7675368f5a596ff06731f2c145f20efd0391428d62acac68872"
+}

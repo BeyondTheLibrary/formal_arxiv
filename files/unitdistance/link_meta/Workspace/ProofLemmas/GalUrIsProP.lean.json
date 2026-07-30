@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "lean_file": "lean_workspace/Workspace/ProofLemmas/GalUrIsProP.lean",
+  "sig_sha256": "6f1c5c765c0e2dcfe70d322444b26c9f85c5960c4ec9ea21e40ba6834ccd236e",
+  "linked_at": "2026-07-28T01:11:19Z",
+  "decls": [
+    {
+      "fqn": "GalUrIsProP",
+      "name": "GalUrIsProP",
+      "status": "helper",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Pro-p group-theory plumbing behind the Frattini/Golod\u2013Shafarevich statements of Section 3. Not a standalone paper statement."
+    }
+  ],
+  "file_sha256": "1879541a029e3d46d4297c798fdcee73def351b03197df4c1f5d5c32a80df2fc"
+}

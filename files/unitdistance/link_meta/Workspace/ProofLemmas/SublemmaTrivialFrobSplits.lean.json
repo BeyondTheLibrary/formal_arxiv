@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "lean_file": "lean_workspace/Workspace/ProofLemmas/SublemmaTrivialFrobSplits.lean",
+  "sig_sha256": "78005681f826b99ecbdfbe0205d516aafecff4da3fa883927636b3c3dadb0a14",
+  "linked_at": "2026-07-28T01:11:19Z",
+  "decls": [
+    {
+      "fqn": "card_le_of_forall_pow_eq_self",
+      "name": "card_le_of_forall_pow_eq_self",
+      "status": "helper",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Frobenius bookkeeping behind Definition A.7 and Proposition 3.6 (existence and compatibility of Frobenius representatives). Not a standalone paper statement."
+    },
+    {
+      "fqn": "SublemmaTrivialFrobSplits",
+      "name": "SublemmaTrivialFrobSplits",
+      "status": "linked",
+      "kind": "proof_case",
+      "confidence": 0.9,
+      "paper_span": {
+        "tex_file": "unit-distance-proof.tex",
+        "quote": "Since trivial Frobenius is equivalent to complete splitting (Definition A.7), the quotient makes"
+      },
+      "rationale": "The direction of Definition A.7's equivalence that property (P4) needs: a prime whose Frobenius is trivial in a finite unramified Galois extension splits completely in it \u2014 so killing the selected Frobenius classes makes each \\(q_b\\) split completely in every layer \\(F_j\\)."
+    }
+  ],
+  "file_sha256": "e5f3baef746ba853ea727c8f4adf4b46e931d503b193c9747ae6febfff9c23a0"
+}

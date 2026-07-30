@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "lean_file": "lean_workspace/Workspace/ProofLemmas/ResidueMapSurjectiveOfInertiaDegOne.lean",
+  "sig_sha256": "65ea9ef9dc49938617e786c5634ba708abcc84d126789ab5552140da40ad9ef1",
+  "linked_at": "2026-07-28T01:11:19Z",
+  "decls": [
+    {
+      "fqn": "ResidueMapSurjectiveOfInertiaDegOne",
+      "name": "ResidueMapSurjectiveOfInertiaDegOne",
+      "status": "helper",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Residue-field bookkeeping behind the complete-splitting criteria of Section 3."
+    }
+  ],
+  "file_sha256": "7409fb3b8ff3f64d2056114d6bb3da8fdaa99cd2142f81efa8d015c72e8eb79b"
+}

@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "lean_file": "lean_workspace/Workspace/ProofLemmas/Lemma26SizeBound.lean",
+  "sig_sha256": "41c8a29cdf4d600d3a5bf8a120995cf5e53bb7afa3b68e12f7086a8604eb3c25",
+  "linked_at": "2026-07-28T01:11:19Z",
+  "decls": [
+    {
+      "fqn": "Lemma26SizeBound",
+      "name": "Lemma26SizeBound",
+      "status": "linked",
+      "kind": "lemma",
+      "confidence": 0.95,
+      "paper_span": {
+        "tex_file": "unit-distance-proof.tex",
+        "quote": "Let \\(n=|P|\\). Then \\(n\\le e^{Bf}\\), where \\(B=2\\log(4RD)\\)."
+      },
+      "rationale": "Lemma 2.6 (size bound / packing) verbatim: the projected point set has \\(n \\le e^{Bf}\\) with \\(B = 2\\log(4RD)\\); the Lean form states the equivalent \\(N_a \\le (4RD)^{2f}\\)."
+    }
+  ],
+  "file_sha256": "884194043c97afe628cfdfb069dfa43118df4ea6ac7ec6343c9142963ae6cc9b"
+}

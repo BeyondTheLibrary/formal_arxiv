@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "lean_file": "lean_workspace/Workspace/ProofLemmas/SublemmaSplitCompletelyFrobTrivial.lean",
+  "sig_sha256": "0b1f8e9b9ddaf236c2612e258072b771607ee7b38ee28fe23352035aedab1a4d",
+  "linked_at": "2026-07-28T01:11:19Z",
+  "decls": [
+    {
+      "fqn": "SublemmaSplitCompletelyFrobTrivial",
+      "name": "SublemmaSplitCompletelyFrobTrivial",
+      "status": "linked",
+      "kind": "proof_case",
+      "confidence": 0.85,
+      "paper_span": {
+        "tex_file": "unit-distance-proof.tex",
+        "quote": "Since trivial Frobenius is equivalent to complete splitting (Definition A.7), the quotient makes"
+      },
+      "rationale": "The converse direction of Definition A.7's equivalence: a prime that splits completely in a finite Galois extension has trivial Frobenius there."
+    }
+  ],
+  "file_sha256": "b00e415e67dcf34480ef12fc15c32f41d47165a17c306d60fc38256d0bd0e238"
+}

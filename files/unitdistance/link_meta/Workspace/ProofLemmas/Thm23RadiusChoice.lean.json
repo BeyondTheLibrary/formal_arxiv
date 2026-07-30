@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "lean_file": "lean_workspace/Workspace/ProofLemmas/Thm23RadiusChoice.lean",
+  "sig_sha256": "a1edb1c0cfaba431f21c1a10d0e3dd3c1793405a456665dbf635f7c432125502",
+  "linked_at": "2026-07-28T01:11:19Z",
+  "decls": [
+    {
+      "fqn": "Thm23RadiusChoice",
+      "name": "Thm23RadiusChoice",
+      "status": "helper",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Internal step assembling the proof of Theorem 2.3 from Lemmas 2.4\u20132.6."
+    }
+  ],
+  "file_sha256": "10d9a52276101b737ac450a00f2b443c99e60ac4b235250f383975b237f4fc0f"
+}

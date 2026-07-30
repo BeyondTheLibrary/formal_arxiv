@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "lean_file": "lean_workspace/Workspace/ProofLemmas/AdicValuationEqNegCount.lean",
+  "sig_sha256": "8c7d02dcb7b2a7e6a79b26968c955e0ebdc6b7d18da433e2829962904e4e19d8",
+  "linked_at": "2026-07-28T01:11:19Z",
+  "decls": [
+    {
+      "fqn": "AdicValuationEqNegCount",
+      "name": "AdicValuationEqNegCount",
+      "status": "helper",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Valuation bookkeeping behind the pole/separation analysis in the proof of Proposition 2.2."
+    }
+  ],
+  "file_sha256": "3049f8879aaaa61e7839d13e5c8ae41e9a387d395e5a7cef70bb387394e47a1d"
+}

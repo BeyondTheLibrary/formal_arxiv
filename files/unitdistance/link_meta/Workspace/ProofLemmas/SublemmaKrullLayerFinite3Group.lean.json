@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "lean_file": "lean_workspace/Workspace/ProofLemmas/SublemmaKrullLayerFinite3Group.lean",
+  "sig_sha256": "5adb699b673e22346637f054ff830df0fe97c3505251d9665a4ca5d01926b12a",
+  "linked_at": "2026-07-28T01:11:19Z",
+  "decls": [
+    {
+      "fqn": "SublemmaKrullLayerFinite3Group",
+      "name": "SublemmaKrullLayerFinite3Group",
+      "status": "helper",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Tower-layer bookkeeping for properties P2\u2013P4 of Proposition 3.8."
+    }
+  ],
+  "file_sha256": "fb1311c4038012c6a4c9103ca58ba45ca4fb25d9b19610466d6584937d951ed3"
+}

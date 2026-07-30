@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "lean_file": "lean_workspace/Workspace/ProofLemmas/SublemmaArithmeticBound.lean",
+  "sig_sha256": "5a1ff47b023b254dd150b59b972256d56693aa1067beb602f2de1b8f3ec4f021",
+  "linked_at": "2026-07-28T01:11:19Z",
+  "decls": [
+    {
+      "fqn": "SublemmaArithmeticBound",
+      "name": "SublemmaArithmeticBound",
+      "status": "linked",
+      "kind": "proof_case",
+      "confidence": 0.88,
+      "paper_span": {
+        "tex_file": "unit-distance-proof.tex",
+        "quote": "Using \\(|U| \\ge e^{\\gamma f}\\) and the choice of \\(R\\) gives \\(E_a \\ge e^{\\gamma f/2}N_a\\)."
+      },
+      "rationale": "The closing arithmetic of Lemma 2.4: from \\(|U| \\ge e^{\\gamma f}\\) and \\(\\log\\rho_R > -\\gamma/2\\) it derives \\(|U|\\rho_R^f \\ge e^{\\gamma f/2}\\), turning the pigeonhole bound \\(E_a \\ge |U|\\rho_R^f N_a\\) into \\(E_a \\ge e^{\\gamma f/2}N_a\\)."
+    }
+  ],
+  "file_sha256": "e1478429198308f98a318abfb2fbc0a1c5caaa247e299f78c1d173c78bb5e591"
+}

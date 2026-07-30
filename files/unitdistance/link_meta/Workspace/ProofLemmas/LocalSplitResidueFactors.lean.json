@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "lean_file": "lean_workspace/Workspace/ProofLemmas/LocalSplitResidueFactors.lean",
+  "sig_sha256": "dd1a6baa2f0137d66a654e1f5fed82306c8e9fffcc3c6ad00741eb1bb5b913ea",
+  "linked_at": "2026-07-28T01:11:19Z",
+  "decls": [
+    {
+      "fqn": "LocalSplitResidueFactors",
+      "name": "LocalSplitResidueFactors",
+      "status": "helper",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Splitting bookkeeping (complete splitting descends along the tower, e = f = 1) supporting property P4 of Proposition 3.8. Not a standalone paper statement."
+    }
+  ],
+  "file_sha256": "243d70c308297a02e8ee3fffd1a74f21410aa981e6e30698d9b83b18b41082aa"
+}

@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "lean_file": "lean_workspace/Workspace/ProofLemmas/SublemmaCyclicCubicSubfieldNormal.lean",
+  "sig_sha256": "9b66cfe736a15379fb4f4c4f4b6306382cd14b07f214211bf918f2c4b9add1c9",
+  "linked_at": "2026-07-28T01:11:19Z",
+  "decls": [
+    {
+      "fqn": "SublemmaCyclicCubicSubfieldNormal",
+      "name": "SublemmaCyclicCubicSubfieldNormal",
+      "status": "helper",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Field-theoretic plumbing (normal closures, subfields, fixed fields) used across Section 3."
+    }
+  ],
+  "file_sha256": "db81dc2d1a95afc3604fd8632d1866b0f18cbcacdec57c4988281126ab77fffc"
+}

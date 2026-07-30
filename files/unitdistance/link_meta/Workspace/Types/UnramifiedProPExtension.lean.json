@@ -1,0 +1,65 @@
+{
+  "schema_version": 1,
+  "lean_file": "lean_workspace/Workspace/Types/UnramifiedProPExtension.lean",
+  "sig_sha256": "956061e54a7e3adc979930e174c635d693cab8d76dbc827d432f0f420d1ff544",
+  "linked_at": "2026-07-30T05:11:41Z",
+  "decls": [
+    {
+      "fqn": "Workspace.Types.UnramifiedProPExtension.IsFiniteUnramifiedProPExt",
+      "name": "IsFiniteUnramifiedProPExt",
+      "status": "helper",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Pro-p group-theory plumbing behind the Frattini/Golod\u2013Shafarevich statements of Section 3. Not a standalone paper statement."
+    },
+    {
+      "fqn": "Workspace.Types.UnramifiedProPExtension.maxUnramifiedProPExt",
+      "name": "maxUnramifiedProPExt",
+      "status": "linked",
+      "kind": "definition",
+      "confidence": 0.93,
+      "paper_span": {
+        "tex_file": "unit-distance-proof.tex",
+        "quote": "the compositum of all finite everywhere-unramified Galois extensions of \\(F\\) whose Galois groups"
+      },
+      "rationale": "`maxUnramifiedProPExt p F` is the paper's \\(F^{\\mathrm{ur},p}\\): the compositum of all finite everywhere-unramified Galois extensions of `F` with p-group Galois group."
+    },
+    {
+      "fqn": "Workspace.Types.UnramifiedProPExtension.galUr",
+      "name": "galUr",
+      "status": "linked",
+      "kind": "definition",
+      "confidence": 0.93,
+      "paper_span": {
+        "tex_file": "unit-distance-proof.tex",
+        "quote": "Its Galois group \\(\\operatorname{Gal}(F^{\\mathrm{ur},p}/F)\\) is a pro-\\(p\\) group, and its finite quotients"
+      },
+      "rationale": "`galUr p F` is the paper's \\(G = \\mathrm{Gal}(F^{\\mathrm{ur},p}/F)\\), carrying the Krull topology, the pro-p group the whole tower argument runs in."
+    },
+    {
+      "fqn": "Workspace.Types.UnramifiedProPExtension.fixedFieldOf",
+      "name": "fixedFieldOf",
+      "status": "linked",
+      "kind": "definition",
+      "confidence": 0.8,
+      "paper_span": {
+        "tex_file": "unit-distance-proof.tex",
+        "quote": "of open normal subgroups with indices tending to infinity, and let \\(F_j\\) be the corresponding fixed"
+      },
+      "rationale": "`fixedFieldOf H` gives the finite tower layer attached to an open normal subgroup \u2014 the paper's step \"let \\(F_j\\) be the corresponding fixed fields\"."
+    },
+    {
+      "fqn": "Workspace.Types.UnramifiedProPExtension.IsFrobeniusRepAt",
+      "name": "IsFrobeniusRepAt",
+      "status": "linked",
+      "kind": "definition",
+      "confidence": 0.88,
+      "paper_span": {
+        "tex_file": "unit-distance-proof.tex",
+        "quote": "Choose one Frobenius"
+      },
+      "rationale": "`IsFrobeniusRepAt \u03c3 q` formalizes the paper's *Frobenius representative* \\(\\sigma_v \\in G\\) in the infinite group \\(G = \\mathrm{Gal}(F^{\\mathrm{ur},3}/F)\\): a compatible system restricting to a Frobenius element on every finite Galois layer."
+    }
+  ],
+  "file_sha256": "4a44fc07b8fe5b779c9e3e7c7655bbd557bea7b1bdd1cdb0e32f73f176c7c9a1"
+}

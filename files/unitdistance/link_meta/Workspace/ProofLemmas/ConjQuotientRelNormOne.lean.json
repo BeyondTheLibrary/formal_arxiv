@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "lean_file": "lean_workspace/Workspace/ProofLemmas/ConjQuotientRelNormOne.lean",
+  "sig_sha256": "b2e674b611b88c547713231a9f294cf1ec090af7340a541c926df90813f0a577",
+  "linked_at": "2026-07-28T01:11:19Z",
+  "decls": [
+    {
+      "fqn": "ConjQuotientRelNormOne",
+      "name": "ConjQuotientRelNormOne",
+      "status": "linked",
+      "kind": "proof_case",
+      "confidence": 0.9,
+      "paper_span": {
+        "tex_file": "unit-distance-proof.tex",
+        "quote": "Then $u_\\varepsilon c(u_\\varepsilon)=1$, so $N_{K/L}(u_\\varepsilon)=1$."
+      },
+      "rationale": "Proves the paper's step that \\(u = \\alpha/c(\\alpha)\\) has relative norm one: \\(u\\,c(u) = 1\\), i.e. \\(N_{K/L}(u) = 1\\)."
+    }
+  ],
+  "file_sha256": "a2740c4bf2a72855b088a16f22495383170610a19917cccd5a1fde48bf87af6c"
+}

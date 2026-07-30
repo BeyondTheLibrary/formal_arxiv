@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "lean_file": "lean_workspace/Workspace/ProofLemmas/SublemmaSplittingTransitive.lean",
+  "sig_sha256": "5eef44736837582c70bfe0f77e13f7d3b7578ed93cbbc80c1396fb1397461e09",
+  "linked_at": "2026-07-28T01:11:19Z",
+  "decls": [
+    {
+      "fqn": "SublemmaSplittingTransitive_relCount",
+      "name": "SublemmaSplittingTransitive_relCount",
+      "status": "helper",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Splitting bookkeeping (complete splitting descends along the tower, e = f = 1) supporting property P4 of Proposition 3.8. Not a standalone paper statement."
+    },
+    {
+      "fqn": "SublemmaSplittingTransitive_towerEF",
+      "name": "SublemmaSplittingTransitive_towerEF",
+      "status": "helper",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Splitting bookkeeping (complete splitting descends along the tower, e = f = 1) supporting property P4 of Proposition 3.8. Not a standalone paper statement."
+    },
+    {
+      "fqn": "SublemmaSplittingTransitive",
+      "name": "SublemmaSplittingTransitive",
+      "status": "helper",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Splitting bookkeeping (complete splitting descends along the tower, e = f = 1) supporting property P4 of Proposition 3.8. Not a standalone paper statement."
+    }
+  ],
+  "file_sha256": "dd437bb7dd8ec18115fd50f850b15cbab5d5cc2ce36d5f2fa20a24a6bc432879"
+}

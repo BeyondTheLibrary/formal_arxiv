@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "lean_file": "lean_workspace/Workspace/ProofLemmas/SublemmaOverlapVolume.lean",
+  "sig_sha256": "f30a6f72309b62076ec0713a0e6f0d645c23b57a44fa8af8d97def5e30514ab4",
+  "linked_at": "2026-07-28T01:11:19Z",
+  "decls": [
+    {
+      "fqn": "SublemmaOverlapVolume",
+      "name": "SublemmaOverlapVolume",
+      "status": "linked",
+      "kind": "proof_case",
+      "confidence": 0.85,
+      "paper_span": {
+        "tex_file": "unit-distance-proof.tex",
+        "quote": "By (3), every coordinate of this Minkowski-space translation has absolute value \\(1\\). Hence \\(\\operatorname{vol}(B_R\\cap"
+      },
+      "rationale": "Computes the overlap volume in Lemma 2.4: since every coordinate of a translation \\(u \\in U\\) has modulus 1, \\(\\mathrm{vol}(B_R \\cap (B_R - u)) = a(R)^f\\)."
+    }
+  ],
+  "file_sha256": "cf9947adf7a58a1320eafbb5655a888b06efac2a0556567096a8139573053eea"
+}

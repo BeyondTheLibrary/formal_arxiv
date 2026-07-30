@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "lean_file": "lean_workspace/Workspace/ProofLemmas/Fact215ConjugatePrimePairs.lean",
+  "sig_sha256": "a437a89a646c27ee9facd80f82113bb06b730a181eb7cfb8e2a3889370763cf5",
+  "linked_at": "2026-07-28T01:11:19Z",
+  "decls": [
+    {
+      "fqn": "Fact215ConjugatePrimePairs",
+      "name": "Fact215ConjugatePrimePairs",
+      "status": "linked",
+      "kind": "paragraph",
+      "confidence": 0.9,
+      "paper_span": {
+        "tex_file": "unit-distance-proof.tex",
+        "quote": "Hence the fixed rational primes give \\(m=tf\\) conjugate pairs of prime ideals of \\(K\\):"
+      },
+      "rationale": "Formalizes the setup fact of Section 2: each \\(q_b\\) splits completely in `L` and \\(q_b \\equiv 1 \\pmod 4\\), so the `t` rational primes produce exactly \\(m = tf\\) conjugate pairs \\(\\{\\mathfrak{P}_s, c\\mathfrak{P}_s\\}\\) \u2014 i.e. `2 * t * f` primes of `K` over the `q_b`."
+    }
+  ],
+  "file_sha256": "ecf45bde91e6e8e085cf1eb00e559b46ac0f8ca17589257b0b736f59cf6ad91e"
+}

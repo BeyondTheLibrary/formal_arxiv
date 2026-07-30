@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "lean_file": "lean_workspace/Workspace/ProofLemmas/Lemma25PlanarCount.lean",
+  "sig_sha256": "bd90efc6f7d096de3333c7d2b1ac0dd453c1a70fe863d3c223c8208b422450d2",
+  "linked_at": "2026-07-28T01:11:19Z",
+  "decls": [
+    {
+      "fqn": "card_ordered_unit",
+      "name": "card_ordered_unit",
+      "status": "linked",
+      "kind": "proof_case",
+      "confidence": 0.85,
+      "paper_span": {
+        "tex_file": "unit-distance-proof.tex",
+        "quote": "Since each unordered unit segment has at most two orientations,"
+      },
+      "rationale": "The counting identity used at the end of Lemma 2.5: the number of *ordered* pairs of distinct points at distance 1 is exactly twice the unordered count \\(\\nu\\), since each unit segment has two orientations."
+    },
+    {
+      "fqn": "Lemma25PlanarCount",
+      "name": "Lemma25PlanarCount",
+      "status": "linked",
+      "kind": "lemma",
+      "confidence": 0.93,
+      "paper_span": {
+        "tex_file": "unit-distance-proof.tex",
+        "quote": "Moreover, \\(\\nu(P) \\ge"
+      },
+      "rationale": "Lemma 2.5, part 2: the projected planar set satisfies \\(\\nu(P) \\ge \\tfrac12 e^{\\gamma f/2}|P|\\) \u2014 each ordered pair counted by \\(E_a\\) projects to a unit segment, and each unordered segment is counted at most twice."
+    }
+  ],
+  "file_sha256": "de3bf1bb1cab465575752acaa8f55d43e4a0ebb8a00cc3351c7146409f2bc558"
+}

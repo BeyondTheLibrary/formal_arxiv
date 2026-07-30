@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "lean_file": "lean_workspace/Workspace/ProofLemmas/SublemmaTotallyRealDescends.lean",
+  "sig_sha256": "06af40eb5c35e1826eaa273e5677785e2a4e5092009a40f4e5e8de8ceb5f761a",
+  "linked_at": "2026-07-28T01:11:19Z",
+  "decls": [
+    {
+      "fqn": "SublemmaTotallyRealDescends",
+      "name": "SublemmaTotallyRealDescends",
+      "status": "linked",
+      "kind": "proof_case",
+      "confidence": 0.88,
+      "paper_span": {
+        "tex_file": "unit-distance-proof.tex",
+        "quote": "The layers remain totally real: if a real place became complex in \\(F_j/F\\), the decomposition"
+      },
+      "rationale": "Property (P3), total reality: a real place becoming complex would give a decomposition group of order 2 at an infinite place, impossible inside a 3-group."
+    }
+  ],
+  "file_sha256": "d892efe896adc28fd9d1ea722be122d3a2cf3cc79b81692517a93e7d60a54e9d"
+}

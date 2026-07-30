@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "lean_file": "lean_workspace/Workspace/ProofLemmas/CutOutFieldEqCyclicCubic.lean",
+  "sig_sha256": "f171b602767ea5b4612e2ed26bd31a105a792f0101d517af0cfddef6ea5a2282",
+  "linked_at": "2026-07-28T01:11:19Z",
+  "decls": [
+    {
+      "fqn": "CutOutFieldEqCyclicCubic",
+      "name": "CutOutFieldEqCyclicCubic",
+      "status": "helper",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Infrastructure for the field cut out by a Dirichlet character (Definition A.5) \u2014 level invariance, degree and Galois properties. Not a standalone paper statement."
+    }
+  ],
+  "file_sha256": "a29066b20a509233a93f8e9695d374f49fb03eb21ad325cf4a48961209d4c1c1"
+}

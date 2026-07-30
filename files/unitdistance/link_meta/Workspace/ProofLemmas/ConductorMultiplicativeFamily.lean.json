@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "lean_file": "lean_workspace/Workspace/ProofLemmas/ConductorMultiplicativeFamily.lean",
+  "sig_sha256": "1f403350e7624a4e034c0d96735c6cd5a5b66f3ee9b96d99cdfea512df17234d",
+  "linked_at": "2026-07-28T01:11:19Z",
+  "decls": [
+    {
+      "fqn": "cmf_lcmHelper",
+      "name": "cmf_lcmHelper",
+      "status": "no_counterpart",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Not part of the compiled formalization: this module is never imported by the main theorem's build, so the declaration does not appear in the dependency graph."
+    },
+    {
+      "fqn": "cmf_binary",
+      "name": "cmf_binary",
+      "status": "no_counterpart",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Not part of the compiled formalization: this module is never imported by the main theorem's build, so the declaration does not appear in the dependency graph."
+    },
+    {
+      "fqn": "cmf_family",
+      "name": "cmf_family",
+      "status": "no_counterpart",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Not part of the compiled formalization: this module is never imported by the main theorem's build, so the declaration does not appear in the dependency graph."
+    },
+    {
+      "fqn": "ConductorMultiplicativeFamily",
+      "name": "ConductorMultiplicativeFamily",
+      "status": "helper",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Conductor bookkeeping behind the conductor\u2013discriminant formula used in Proposition 3.2. Not a standalone paper statement."
+    }
+  ],
+  "file_sha256": "c3167d7fcfebca09b4b029897bee9748b26c55b8887800ef28202e8eb8fb9007"
+}

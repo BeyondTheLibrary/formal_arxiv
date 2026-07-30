@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "lean_file": "lean_workspace/Workspace/ProofLemmas/ProPRelationRank.lean",
+  "sig_sha256": "8b6fcad832327291194d59a55fa14768402758e14e200d98cb04dd36c3e88e4c",
+  "linked_at": "2026-07-28T01:11:19Z",
+  "decls": [
+    {
+      "fqn": "Workspace.ProofLemmas.ProPRelationRank.compactSpace_freeProP",
+      "name": "compactSpace_freeProP",
+      "status": "helper",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Pro-p group-theory infrastructure supporting Proposition 3.3 (relation rank under a Frattini quotient). Not a standalone paper statement."
+    },
+    {
+      "fqn": "Workspace.ProofLemmas.ProPRelationRank.quotHom",
+      "name": "quotHom",
+      "status": "helper",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Pro-p group-theory infrastructure supporting Proposition 3.3 (relation rank under a Frattini quotient). Not a standalone paper statement."
+    },
+    {
+      "fqn": "Workspace.ProofLemmas.ProPRelationRank.quotHom_apply",
+      "name": "quotHom_apply",
+      "status": "no_counterpart",
+      "kind": "other",
+      "confidence": 0.85,
+      "rationale": "Dead code: present in the sources but not reachable from the main theorem `theorem_1_1_unit_distance` in the compiled dependency graph, so it carries no weight in the formalization of the paper."
+    },
+    {
+      "fqn": "Workspace.ProofLemmas.ProPRelationRank.proPRelationRankFrattiniQuotient",
+      "name": "proPRelationRankFrattiniQuotient",
+      "status": "helper",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Pro-p group-theory infrastructure supporting Proposition 3.3 (relation rank under a Frattini quotient). Not a standalone paper statement."
+    }
+  ],
+  "file_sha256": "8901743d1857b8d83c5dd68ed3f6fa22c7c6d9a687e7ab77b866c515d5973c9a"
+}

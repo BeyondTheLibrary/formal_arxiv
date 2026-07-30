@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "lean_file": "lean_workspace/Workspace/ProofLemmas/SublemmaTotallyRealSubfield.lean",
+  "sig_sha256": "f844f9db859d40f10d693511a1092d9546d95ab18ac32975fdf2ed9116891076",
+  "linked_at": "2026-07-28T01:11:19Z",
+  "decls": [
+    {
+      "fqn": "SublemmaTotallyRealSubfield",
+      "name": "SublemmaTotallyRealSubfield",
+      "status": "helper",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Field-theoretic plumbing (normal closures, subfields, fixed fields) used across Section 3."
+    }
+  ],
+  "file_sha256": "da3322d44d4a6b90b769260307ecdd175c50026016e19436a1ce8179c55de8c5"
+}

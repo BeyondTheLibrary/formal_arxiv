@@ -1,0 +1,73 @@
+{
+  "schema_version": 1,
+  "lean_file": "lean_workspace/Workspace/ProofLemmas/SublemmaLayerIso.lean",
+  "sig_sha256": "5bb7f1bc32ec29726c91e87969909408b30041cfccaf3b043156c997ac5bc30a",
+  "linked_at": "2026-07-28T01:11:19Z",
+  "decls": [
+    {
+      "fqn": "SublemmaLayerIsoAux.map_symm_map",
+      "name": "map_symm_map",
+      "status": "helper",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Tower-layer bookkeeping for properties P2\u2013P4 of Proposition 3.8."
+    },
+    {
+      "fqn": "SublemmaLayerIsoAux.map_injective",
+      "name": "map_injective",
+      "status": "helper",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Tower-layer bookkeeping for properties P2\u2013P4 of Proposition 3.8."
+    },
+    {
+      "fqn": "SublemmaLayerIsoAux.primesOver_image",
+      "name": "primesOver_image",
+      "status": "helper",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Elementary bookkeeping about primes \\(\\equiv 1 \\bmod 3\\) supporting Fact 3.10."
+    },
+    {
+      "fqn": "SublemmaLayerIsoAux.primesOver_ncard",
+      "name": "primesOver_ncard",
+      "status": "helper",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Elementary bookkeeping about primes \\(\\equiv 1 \\bmod 3\\) supporting Fact 3.10."
+    },
+    {
+      "fqn": "SublemmaLayerIsoAux.ram_transfer",
+      "name": "ram_transfer",
+      "status": "helper",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Tower-layer bookkeeping for properties P2\u2013P4 of Proposition 3.8."
+    },
+    {
+      "fqn": "SublemmaLayerIsoAux.raminertia_transfer",
+      "name": "raminertia_transfer",
+      "status": "helper",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Tower-layer bookkeeping for properties P2\u2013P4 of Proposition 3.8."
+    },
+    {
+      "fqn": "SublemmaLayerIsoAux.inf_transfer",
+      "name": "inf_transfer",
+      "status": "helper",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Tower-layer bookkeeping for properties P2\u2013P4 of Proposition 3.8."
+    },
+    {
+      "fqn": "SublemmaLayerIso",
+      "name": "SublemmaLayerIso",
+      "status": "helper",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Tower-layer bookkeeping for properties P2\u2013P4 of Proposition 3.8."
+    }
+  ],
+  "file_sha256": "54ae12b175a5560a52b49ca9fcbf8742302345706f0a146127bb1a4f831582ef"
+}

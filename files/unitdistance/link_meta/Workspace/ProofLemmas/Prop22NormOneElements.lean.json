@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "lean_file": "lean_workspace/Workspace/ProofLemmas/Prop22NormOneElements.lean",
+  "sig_sha256": "e250ff981627b16a8ec11ee4c21b45c99e4791d09af612477f6b581be00ccf2f",
+  "linked_at": "2026-07-28T01:11:19Z",
+  "decls": [
+    {
+      "fqn": "Prop22NormOneElements",
+      "name": "Prop22NormOneElements",
+      "status": "linked",
+      "kind": "proposition",
+      "confidence": 0.97,
+      "paper_span": {
+        "tex_file": "unit-distance-proof.tex",
+        "quote": "Then there is a set \\(U\\subset Q^{-2}\\mathcal O_K\\) such that every \\(u\\in U\\) satisfies \\(N_{K/L}(u)=1\\)"
+      },
+      "rationale": "Proposition 2.2 in full: from an admissible datum with \\(h(K) \\le H^f\\) it produces the set \\(U \\subset Q^{-2}\\mathcal{O}_K\\) of relative-norm-one elements, all of whose complex embeddings have modulus 1, with \\(|U| \\ge \\exp\\{(t\\log 2 - \\log H)f\\}\\) \u2014 the three conclusions of the Lean statement."
+    }
+  ],
+  "file_sha256": "34940ed0c33d84dab4ee1bbc8c2f3e970408b2b9b6d72fa4412250f92135ec30"
+}

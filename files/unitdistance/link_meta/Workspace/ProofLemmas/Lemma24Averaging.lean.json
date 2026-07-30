@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "lean_file": "lean_workspace/Workspace/ProofLemmas/Lemma24Averaging.lean",
+  "sig_sha256": "82c0531075a11514bae0ce14bca154b6d1a3284ed22803c184406d196f374304",
+  "linked_at": "2026-07-28T01:11:19Z",
+  "decls": [
+    {
+      "fqn": "Lemma24Averaging",
+      "name": "Lemma24Averaging",
+      "status": "linked",
+      "kind": "lemma",
+      "confidence": 0.95,
+      "paper_span": {
+        "tex_file": "unit-distance-proof.tex",
+        "quote": "Then some nonempty coset \\(a+\\Lambda\\)"
+      },
+      "rationale": "Lemma 2.4 (averaging): with \\(R > 1/2\\) chosen so that \\(\\log\\rho_R > -\\gamma/2\\) and \\(|U| \\ge e^{\\gamma f}\\), some nonempty coset satisfies \\(E_a \\ge e^{\\gamma f/2} N_a\\)."
+    }
+  ],
+  "file_sha256": "f6c3571faee431ae877f2240892b867d39d80dee0527ec22414883572c038c61"
+}

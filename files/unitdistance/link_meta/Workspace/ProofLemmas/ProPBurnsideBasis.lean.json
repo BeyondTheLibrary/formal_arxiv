@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "lean_file": "lean_workspace/Workspace/ProofLemmas/ProPBurnsideBasis.lean",
+  "sig_sha256": "26ef94d223347b30e11d45b7c98285bf64fe2e0b8bf1651e05a4bf43363c49ac",
+  "linked_at": "2026-07-28T01:11:19Z",
+  "decls": [
+    {
+      "fqn": "ProPBurnsideBasis",
+      "name": "ProPBurnsideBasis",
+      "status": "linked",
+      "kind": "proposition",
+      "confidence": 0.93,
+      "paper_span": {
+        "tex_file": "unit-distance-proof.tex",
+        "quote": "Then \\(d(G)=\\dim_{\\mathbb F_p}G/\\Phi(G)\\)."
+      },
+      "rationale": "Proposition 3.3, Burnside basis half: for a finitely generated pro-p group, \\(d(G) = \\dim_{\\mathbb{F}_p} G/\\Phi(G)\\); the Lean form also records that `G/\u03a6(G)` is elementary abelian (commutators and p-th powers lie in \u03a6(G)) and that \\(|G/\\Phi(G)| = p^d\\)."
+    }
+  ],
+  "file_sha256": "544872005598fd6c719caec09725236c856063ddd2db37cc3103a98a0cff6b37"
+}

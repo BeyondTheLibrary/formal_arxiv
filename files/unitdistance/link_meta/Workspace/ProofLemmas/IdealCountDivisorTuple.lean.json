@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "lean_file": "lean_workspace/Workspace/ProofLemmas/IdealCountDivisorTuple.lean",
+  "sig_sha256": "ab08640d4fd58be6fa821a6b3c3cf08603d279edcaee8c2d9024336ddf2937a6",
+  "linked_at": "2026-07-28T01:11:19Z",
+  "decls": [
+    {
+      "fqn": "IdealCountDivisorTuple",
+      "name": "IdealCountDivisorTuple",
+      "status": "helper",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Counting infrastructure for the class-number bound (Proposition 3.7): the divisor-function estimate for the number of ideals of bounded norm. Not a standalone paper statement."
+    }
+  ],
+  "file_sha256": "82788e6027af33a187e9cd0377e73675422f900ecf6166412f499df605207688"
+}

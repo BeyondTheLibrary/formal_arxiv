@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "lean_file": "lean_workspace/Workspace/ProofLemmas/UnramifiedOutsideLevel.lean",
+  "sig_sha256": "f856ea5ec13181602535efbd069f35094b7788369cd1c417766f4c2045424280",
+  "linked_at": "2026-07-30T05:11:41Z",
+  "decls": [
+    {
+      "fqn": "Workspace.ProofLemmas.UnramifiedOutsideLevel.not_dvd_discr_of_unramified",
+      "name": "not_dvd_discr_of_unramified",
+      "status": "helper",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Ramification bookkeeping for the unramified tower (properties P2/P3 of Proposition 3.8). Not a standalone paper statement."
+    },
+    {
+      "fqn": "Workspace.ProofLemmas.UnramifiedOutsideLevel.unramified_of_not_dvd",
+      "name": "unramified_of_not_dvd",
+      "status": "helper",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Ramification bookkeeping for the unramified tower (properties P2/P3 of Proposition 3.8). Not a standalone paper statement."
+    }
+  ],
+  "file_sha256": "171a0fddbe1f798f579ad0508eb2f70322b4ab823ce17b0b71766c4fbb023e17"
+}

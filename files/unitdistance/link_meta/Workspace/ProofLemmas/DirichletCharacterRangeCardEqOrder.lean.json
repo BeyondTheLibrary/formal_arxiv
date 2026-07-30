@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "lean_file": "lean_workspace/Workspace/ProofLemmas/DirichletCharacterRangeCardEqOrder.lean",
+  "sig_sha256": "e92cdbbe7265ef13bba43adde3f3c7bbbab3e59c9444f291a85087404aca128e",
+  "linked_at": "2026-07-28T01:11:19Z",
+  "decls": [
+    {
+      "fqn": "DirichletCharacterRangeCardEqOrder",
+      "name": "DirichletCharacterRangeCardEqOrder",
+      "status": "helper",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Dirichlet-character infrastructure behind the conductor\u2013discriminant computation of Proposition 3.2. Not a standalone paper statement."
+    }
+  ],
+  "file_sha256": "ab5137e5bc799cd2ebfc542d10b37ff6de2ff549e7da734fde0ce4595355eed5"
+}

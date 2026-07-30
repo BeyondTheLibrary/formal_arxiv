@@ -1,0 +1,81 @@
+{
+  "schema_version": 1,
+  "lean_file": "lean_workspace/Workspace/ProofLemmas/ChebotarevSplitPrimes.lean",
+  "sig_sha256": "7f30baa9c77894bff11997c20ab3a7f376a4bc624d713479dbfbff21abbd9091",
+  "linked_at": "2026-07-28T01:11:19Z",
+  "decls": [
+    {
+      "fqn": "Workspace.ProofLemmas.ChebotarevSplitPrimes.finite_bad",
+      "name": "finite_bad",
+      "status": "no_counterpart",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Not part of the compiled formalization: this module is never imported by the main theorem's build, so the declaration does not appear in the dependency graph."
+    },
+    {
+      "fqn": "Workspace.ProofLemmas.ChebotarevSplitPrimes.exists_prime_gt_dvd_eval",
+      "name": "exists_prime_gt_dvd_eval",
+      "status": "helper",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Internal step of the Chebotarev application (Proposition 3.6); the paper states only the conclusion."
+    },
+    {
+      "fqn": "Workspace.ProofLemmas.ChebotarevSplitPrimes.exists_int_mul_mem_adjoin",
+      "name": "exists_int_mul_mem_adjoin",
+      "status": "helper",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Internal step of the Chebotarev application (Proposition 3.6); the paper states only the conclusion."
+    },
+    {
+      "fqn": "Workspace.ProofLemmas.ChebotarevSplitPrimes.exponent_ne_zero",
+      "name": "exponent_ne_zero",
+      "status": "helper",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Internal step of the Chebotarev application (Proposition 3.6); the paper states only the conclusion."
+    },
+    {
+      "fqn": "Workspace.ProofLemmas.ChebotarevSplitPrimes.exists_integral_primitive_element",
+      "name": "exists_integral_primitive_element",
+      "status": "helper",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Internal step of the Chebotarev application (Proposition 3.6); the paper states only the conclusion."
+    },
+    {
+      "fqn": "Workspace.ProofLemmas.ChebotarevSplitPrimes.ramificationIdx_one_of_not_dvd_discr",
+      "name": "ramificationIdx_one_of_not_dvd_discr",
+      "status": "helper",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Internal step of the Chebotarev application (Proposition 3.6); the paper states only the conclusion."
+    },
+    {
+      "fqn": "Workspace.ProofLemmas.ChebotarevSplitPrimes.splitsCompletelyRat_of_root",
+      "name": "splitsCompletelyRat_of_root",
+      "status": "helper",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Internal step of the Chebotarev application (Proposition 3.6); the paper states only the conclusion."
+    },
+    {
+      "fqn": "Workspace.ProofLemmas.ChebotarevSplitPrimes.infinite_splitsCompletelyRat",
+      "name": "infinite_splitsCompletelyRat",
+      "status": "helper",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Internal step of the Chebotarev application (Proposition 3.6); the paper states only the conclusion."
+    },
+    {
+      "fqn": "Workspace.ProofLemmas.ChebotarevSplitPrimes.chebotarevManySplitPrimes",
+      "name": "chebotarevManySplitPrimes",
+      "status": "helper",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Internal step of the Chebotarev application (Proposition 3.6); the paper states only the conclusion."
+    }
+  ],
+  "file_sha256": "f99ed58ec5688d1cde00025823ad04a9ac5aba3c597e74aae576726262c55803"
+}

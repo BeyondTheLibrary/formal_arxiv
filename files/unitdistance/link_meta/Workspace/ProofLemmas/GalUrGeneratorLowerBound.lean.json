@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "lean_file": "lean_workspace/Workspace/ProofLemmas/GalUrGeneratorLowerBound.lean",
+  "sig_sha256": "3f380562077bfbf82389dbdb610b0f11bb3e659abcdee8b21c8b5e79c9990e11",
+  "linked_at": "2026-07-28T01:11:19Z",
+  "decls": [
+    {
+      "fqn": "elem_abelian_rank",
+      "name": "elem_abelian_rank",
+      "status": "no_counterpart",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Not part of the compiled formalization: this module is never imported by the main theorem's build, so the declaration does not appear in the dependency graph."
+    },
+    {
+      "fqn": "GalUrGeneratorLowerBound",
+      "name": "GalUrGeneratorLowerBound",
+      "status": "linked",
+      "kind": "equation",
+      "confidence": 0.9,
+      "paper_span": {
+        "tex_file": "unit-distance-proof.tex",
+        "quote": "d(G)\\geq \\ell-1."
+      },
+      "rationale": "Establishes display (5), the generator-rank lower bound \\(d(G) \\ge \\ell - 1\\): the everywhere-unramified elementary abelian extension \\(M/F\\) with \\(\\mathrm{Gal}(M/F) \\cong (\\mathbb{Z}/3\\mathbb{Z})^{\\ell-1}\\) is a quotient of \\(G = \\mathrm{Gal}(F^{\\mathrm{ur},3}/F)\\)."
+    }
+  ],
+  "file_sha256": "f04a6f8b1f3f8cf773a89b333e74e51be76fe1795ba92b17ba4de5ec18d5a7b0"
+}

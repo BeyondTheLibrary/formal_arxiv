@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "lean_file": "lean_workspace/Workspace/ProofLemmas/ConjQuotientValuationFormula.lean",
+  "sig_sha256": "53fe2e69dfd08d9d96dfcab2ade9ecb9138b662b1e03880b3b3904d55a0e8ecc",
+  "linked_at": "2026-07-28T01:11:19Z",
+  "decls": [
+    {
+      "fqn": "recon",
+      "name": "recon",
+      "status": "no_counterpart",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Not part of the compiled formalization: this module is never imported by the main theorem's build, so the declaration does not appear in the dependency graph."
+    },
+    {
+      "fqn": "countA",
+      "name": "countA",
+      "status": "no_counterpart",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Not part of the compiled formalization: this module is never imported by the main theorem's build, so the declaration does not appear in the dependency graph."
+    },
+    {
+      "fqn": "span_mk'",
+      "name": "span_mk'",
+      "status": "no_counterpart",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Not part of the compiled formalization: this module is never imported by the main theorem's build, so the declaration does not appear in the dependency graph."
+    },
+    {
+      "fqn": "countA",
+      "name": "countA",
+      "status": "no_counterpart",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Not part of the compiled formalization: this module is never imported by the main theorem's build, so the declaration does not appear in the dependency graph."
+    },
+    {
+      "fqn": "multMap",
+      "name": "multMap",
+      "status": "no_counterpart",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Not part of the compiled formalization: this module is never imported by the main theorem's build, so the declaration does not appear in the dependency graph."
+    },
+    {
+      "fqn": "countA",
+      "name": "countA",
+      "status": "no_counterpart",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Not part of the compiled formalization: this module is never imported by the main theorem's build, so the declaration does not appear in the dependency graph."
+    },
+    {
+      "fqn": "ConjQuotientValuationFormula",
+      "name": "ConjQuotientValuationFormula",
+      "status": "linked",
+      "kind": "equation",
+      "confidence": 0.88,
+      "paper_span": {
+        "tex_file": "unit-distance-proof.tex",
+        "quote": "v_{\\mathfrak{P}_s}(u_\\varepsilon)=2(\\varepsilon_s-\\eta_s),\\qquad"
+      },
+      "rationale": "Establishes display (4), the valuation formula \\(v_{\\mathfrak{P}_s}(u_\\varepsilon) = 2(\\varepsilon_s - \\eta_s)\\) (and \\(-2(\\varepsilon_s-\\eta_s)\\) at \\(c\\mathfrak{P}_s\\)) that both bounds the poles and separates the \\(u_\\varepsilon\\)."
+    }
+  ],
+  "file_sha256": "73768e6530b1e5a2a9523a1352e178fc3d122db7b13bed99002bf5e3f707efe3"
+}

@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "lean_file": "lean_workspace/Workspace/ProofLemmas/QSquaredClearsConjQuotient.lean",
+  "sig_sha256": "2c4800bd66bcf6de185e455a69caff22ed3fc338ea04b4ef794d7992b0b4fe16",
+  "linked_at": "2026-07-28T01:11:19Z",
+  "decls": [
+    {
+      "fqn": "QSquaredClearsConjQuotient",
+      "name": "QSquaredClearsConjQuotient",
+      "status": "linked",
+      "kind": "proof_case",
+      "confidence": 0.9,
+      "paper_span": {
+        "tex_file": "unit-distance-proof.tex",
+        "quote": "Since $Q\\mathcal{O}_K$ has valuation $1$ at each such prime, $Q^2u_\\varepsilon\\in\\mathcal{O}_K$. So $u_\\varepsilon\\in Q^{-2}\\mathcal{O}_K$."
+      },
+      "rationale": "Proves the integrality step: all poles of \\(u_\\varepsilon\\) have order \\(\\le 2\\) and lie above the \\(q_b\\), so \\(Q^2 u_\\varepsilon \\in \\mathcal{O}_K\\), i.e. \\(u_\\varepsilon \\in Q^{-2}\\mathcal{O}_K\\)."
+    }
+  ],
+  "file_sha256": "9a5ad82f7f1b473bed9579df87f9040dee87c25afbfc9bb0d794eafc4cc396d6"
+}

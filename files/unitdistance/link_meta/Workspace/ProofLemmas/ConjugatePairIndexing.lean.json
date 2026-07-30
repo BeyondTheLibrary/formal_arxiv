@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "lean_file": "lean_workspace/Workspace/ProofLemmas/ConjugatePairIndexing.lean",
+  "sig_sha256": "69783b01bae8e09e59140435d1805dc6ff0911fb36f93027e351411a5aff7d54",
+  "linked_at": "2026-07-28T01:11:19Z",
+  "decls": [
+    {
+      "fqn": "pairEnum",
+      "name": "pairEnum",
+      "status": "no_counterpart",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Not part of the compiled formalization: this module is never imported by the main theorem's build, so the declaration does not appear in the dependency graph."
+    },
+    {
+      "fqn": "conjIdealInvol",
+      "name": "conjIdealInvol",
+      "status": "no_counterpart",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Not part of the compiled formalization: this module is never imported by the main theorem's build, so the declaration does not appear in the dependency graph."
+    },
+    {
+      "fqn": "ConjugatePairIndexing",
+      "name": "ConjugatePairIndexing",
+      "status": "helper",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Bookkeeping for the CM automorphism \\(c\\) and conjugate prime pairs used in Proposition 2.2."
+    }
+  ],
+  "file_sha256": "cf18c01ca47136b922bf6346a0a67f2e6f67f7233645b31f15a9c8bb463e127d"
+}

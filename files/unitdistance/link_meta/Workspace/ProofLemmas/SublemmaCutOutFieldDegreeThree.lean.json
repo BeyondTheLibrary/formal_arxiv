@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "lean_file": "lean_workspace/Workspace/ProofLemmas/SublemmaCutOutFieldDegreeThree.lean",
+  "sig_sha256": "f1c237104ad3f6124df95f2d2d7eb90db6f387a9babf5f155245901425a65b16",
+  "linked_at": "2026-07-28T01:11:19Z",
+  "decls": [
+    {
+      "fqn": "SublemmaCutOutFieldDegreeThree",
+      "name": "SublemmaCutOutFieldDegreeThree",
+      "status": "linked",
+      "kind": "proof_case",
+      "confidence": 0.85,
+      "paper_span": {
+        "tex_file": "unit-distance-proof.tex",
+        "quote": "Thus an order-3 character cuts out a cyclic cubic field."
+      },
+      "rationale": "Formalizes the last sentence of Definition A.5: an order-3 Dirichlet character cuts out a field of degree 3 over \\(\\mathbb{Q}\\)."
+    }
+  ],
+  "file_sha256": "72c4201d7dcc5603e52a877d49d9b97424e6a726d456ae480bbe54017cb11169"
+}

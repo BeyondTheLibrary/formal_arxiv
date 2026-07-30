@@ -1,0 +1,105 @@
+{
+  "schema_version": 1,
+  "lean_file": "lean_workspace/Workspace/ProofLemmas/CyclotomicTameDiscriminant.lean",
+  "sig_sha256": "bcdafe64bd3d611bd25530a3ad45155a0a0395fdfea9f7f2e230f0ba6c596bf5",
+  "linked_at": "2026-07-28T01:11:19Z",
+  "decls": [
+    {
+      "fqn": "Workspace.ProofLemmas.CyclotomicTameDiscriminant.zetaC_pow_of_dvd",
+      "name": "zetaC_pow_of_dvd",
+      "status": "helper",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Cyclotomic-field infrastructure behind Proposition 3.2 and Proposition A.11. Not a standalone paper statement."
+    },
+    {
+      "fqn": "Workspace.ProofLemmas.CyclotomicTameDiscriminant.cyclotomicField'_mono",
+      "name": "cyclotomicField'_mono",
+      "status": "helper",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Cyclotomic-field infrastructure behind Proposition 3.2 and Proposition A.11. Not a standalone paper statement."
+    },
+    {
+      "fqn": "Workspace.ProofLemmas.CyclotomicTameDiscriminant.conductor_dvd_of_cutOutField_le",
+      "name": "conductor_dvd_of_cutOutField_le",
+      "status": "helper",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Cyclotomic-field infrastructure behind Proposition 3.2 and Proposition A.11. Not a standalone paper statement."
+    },
+    {
+      "fqn": "Workspace.ProofLemmas.CyclotomicTameDiscriminant.comapEquiv",
+      "name": "comapEquiv",
+      "status": "helper",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Cyclotomic-field infrastructure behind Proposition 3.2 and Proposition A.11. Not a standalone paper statement."
+    },
+    {
+      "fqn": "Workspace.ProofLemmas.CyclotomicTameDiscriminant.discr_comap",
+      "name": "discr_comap",
+      "status": "helper",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Cyclotomic-field infrastructure behind Proposition 3.2 and Proposition A.11. Not a standalone paper statement."
+    },
+    {
+      "fqn": "Workspace.ProofLemmas.CyclotomicTameDiscriminant.le_of_inertia",
+      "name": "le_of_inertia",
+      "status": "helper",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Cyclotomic-field infrastructure behind Proposition 3.2 and Proposition A.11. Not a standalone paper statement."
+    },
+    {
+      "fqn": "Workspace.ProofLemmas.CyclotomicTameDiscriminant.le_cyclotomicField_of_not_dvd_discr",
+      "name": "le_cyclotomicField_of_not_dvd_discr",
+      "status": "helper",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Cyclotomic-field infrastructure behind Proposition 3.2 and Proposition A.11. Not a standalone paper statement."
+    },
+    {
+      "fqn": "Workspace.ProofLemmas.CyclotomicTameDiscriminant.not_pow_totient_dvd_discr",
+      "name": "not_pow_totient_dvd_discr",
+      "status": "helper",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Cyclotomic-field infrastructure behind Proposition 3.2 and Proposition A.11. Not a standalone paper statement."
+    },
+    {
+      "fqn": "Workspace.ProofLemmas.CyclotomicTameDiscriminant.sq_dvd_discr_of_dvd_discr",
+      "name": "sq_dvd_discr_of_dvd_discr",
+      "status": "helper",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Cyclotomic-field infrastructure behind Proposition 3.2 and Proposition A.11. Not a standalone paper statement."
+    },
+    {
+      "fqn": "Workspace.ProofLemmas.CyclotomicTameDiscriminant.dvd_discr_cutOutField",
+      "name": "dvd_discr_cutOutField",
+      "status": "helper",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Cyclotomic-field infrastructure behind Proposition 3.2 and Proposition A.11. Not a standalone paper statement."
+    },
+    {
+      "fqn": "Workspace.ProofLemmas.CyclotomicTameDiscriminant.natAbs_discr_cutOutField",
+      "name": "natAbs_discr_cutOutField",
+      "status": "helper",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Cyclotomic-field infrastructure behind Proposition 3.2 and Proposition A.11. Not a standalone paper statement."
+    },
+    {
+      "fqn": "Workspace.ProofLemmas.CyclotomicTameDiscriminant.discr_cyclicCubicSubfield",
+      "name": "discr_cyclicCubicSubfield",
+      "status": "helper",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Cyclotomic-field infrastructure behind Proposition 3.2 and Proposition A.11. Not a standalone paper statement."
+    }
+  ],
+  "file_sha256": "09116505b7815a647afd348124ae5703ce15edd540f33ddcb5b1632fa94349c4"
+}

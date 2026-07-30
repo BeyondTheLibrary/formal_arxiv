@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "lean_file": "lean_workspace/Workspace/ProofLemmas/SublemmaFrattiniQuotientField.lean",
+  "sig_sha256": "0dad0f28c019abb36deed26826666e7a0a792771e8270d23b2a1d327d0832457",
+  "linked_at": "2026-07-28T01:11:19Z",
+  "decls": [
+    {
+      "fqn": "SublemmaFrattiniQuotientField",
+      "name": "SublemmaFrattiniQuotientField",
+      "status": "linked",
+      "kind": "proof_case",
+      "confidence": 0.85,
+      "paper_span": {
+        "tex_file": "unit-distance-proof.tex",
+        "quote": "Let \\(E/F\\) be the Frattini quotient extension corresponding to \\(G/\\Phi(G)\\), and put \\(d=d(G)\\) and"
+      },
+      "rationale": "Makes Step 2's Frattini quotient extension \\(E/F\\) well defined: \\(\\Phi(G)\\) is open and normal of 3-power index in \\(G\\), so \\(G/\\Phi(G)\\) is finite and corresponds to a finite extension \\(E/F\\) \u2014 the field Chebotarev is then applied to."
+    }
+  ],
+  "file_sha256": "cfbf1f808c87eaef530bf3cef91492c4670c5da401cd419405550ae0d3c33b82"
+}

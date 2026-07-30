@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "lean_file": "lean_workspace/Workspace/ProofLemmas/ProPRelationRankFrattiniQuotient.lean",
+  "sig_sha256": "f3ab29f33e2a0690b9b82f5a7be6335d258d40666fa7e8263c525fd56273ae3a",
+  "linked_at": "2026-07-28T01:11:19Z",
+  "decls": [
+    {
+      "fqn": "ProPRelationRankFrattiniQuotient",
+      "name": "ProPRelationRankFrattiniQuotient",
+      "status": "helper",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Pro-p group-theory infrastructure supporting Proposition 3.3 (relation rank under a Frattini quotient). Not a standalone paper statement."
+    }
+  ],
+  "file_sha256": "7ffb1254c9c796cf9cf5612e3a356d6255d0351247eb95ab07aebbe173fb8652"
+}

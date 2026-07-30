@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "lean_file": "lean_workspace/Workspace/ProofLemmas/PrimeOverQbLiesOverPrimeOverQ.lean",
+  "sig_sha256": "214f773ae05007f4e48ccf7fa57da3d648c149290fbdbd450e52c1f7d0efe358",
+  "linked_at": "2026-07-28T01:11:19Z",
+  "decls": [
+    {
+      "fqn": "PrimeOverQbLiesOverPrimeOverQ",
+      "name": "PrimeOverQbLiesOverPrimeOverQ",
+      "status": "helper",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Prime-ideal bookkeeping supporting the splitting arguments of Sections 2\u20133."
+    }
+  ],
+  "file_sha256": "8192e7c200a28ad8eb3f9f6c8766d69985142c1410b8b6ef4b4cd20f7ac48b78"
+}

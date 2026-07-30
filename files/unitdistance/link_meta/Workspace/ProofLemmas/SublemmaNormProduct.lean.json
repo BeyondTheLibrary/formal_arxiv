@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "lean_file": "lean_workspace/Workspace/ProofLemmas/SublemmaNormProduct.lean",
+  "sig_sha256": "e49f54d09a3b99a5a28ba9bbd9c61f037a7eb4d3905d64d4435fc7ac8bda0cbc",
+  "linked_at": "2026-07-28T01:11:19Z",
+  "decls": [
+    {
+      "fqn": "Workspace.ProofLemmas.SublemmaNormProduct",
+      "name": "SublemmaNormProduct",
+      "status": "linked",
+      "kind": "proof_case",
+      "confidence": 0.85,
+      "paper_span": {
+        "tex_file": "unit-distance-proof.tex",
+        "quote": "because the algebraic norm of a nonzero algebraic integer is a nonzero integer."
+      },
+      "rationale": "The norm inequality driving Lemma 2.6: for \\(0 \\ne \\beta \\in \\mathcal{O}_K\\), \\(\\prod_r |\\sigma_r(D^{-1}\\beta)| = D^{-f}|N_{K/\\mathbb{Q}}(\\beta)|^{1/2} \\ge D^{-f}\\), because the norm of a nonzero algebraic integer is a nonzero integer."
+    }
+  ],
+  "file_sha256": "524faed20f75cbce0f33b4498aed8d4522931411cc6e8da5a46041ba796d1708"
+}

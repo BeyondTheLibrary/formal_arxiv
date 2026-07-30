@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "lean_file": "lean_workspace/Workspace/ProofLemmas/MultiplicityEqFractionalCount.lean",
+  "sig_sha256": "4875c0e0db3877bb9e5fa4b71e0f1e6bd47d24142e05e15a119ca79c90cf01ba",
+  "linked_at": "2026-07-28T01:11:19Z",
+  "decls": [
+    {
+      "fqn": "MultiplicityEqFractionalCount",
+      "name": "MultiplicityEqFractionalCount",
+      "status": "helper",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Multiplicity and valuation bookkeeping behind the ideal factorization steps of Proposition 2.2."
+    }
+  ],
+  "file_sha256": "eca207e81fa7da511f6e0df98586f06425ea943fd9e7985cb787bd9d919c12b6"
+}

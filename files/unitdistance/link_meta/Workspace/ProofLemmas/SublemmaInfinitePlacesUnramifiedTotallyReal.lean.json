@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "lean_file": "lean_workspace/Workspace/ProofLemmas/SublemmaInfinitePlacesUnramifiedTotallyReal.lean",
+  "sig_sha256": "c97e6ca20053bf582790f7499602689742eda1f1f2136dee00c91db09d6e46b7",
+  "linked_at": "2026-07-28T01:11:19Z",
+  "decls": [
+    {
+      "fqn": "SublemmaInfinitePlacesUnramifiedTotallyReal",
+      "name": "SublemmaInfinitePlacesUnramifiedTotallyReal",
+      "status": "linked",
+      "kind": "proof_case",
+      "confidence": 0.82,
+      "paper_span": {
+        "tex_file": "unit-distance-proof.tex",
+        "quote": "Thus a totally real extension of a totally real field has no infinite ramification."
+      },
+      "rationale": "Formalizes the infinite-place clause of Definition A.2: a totally real extension of a totally real field is unramified at all infinite places."
+    }
+  ],
+  "file_sha256": "6e3a24e6ea9098b39a8c8440b5856307e9aedd3f1749ac42b08664b2fecb8dc4"
+}

@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "lean_file": "lean_workspace/Workspace/PriorWork/GolodShafarevichFiltration.lean",
+  "sig_sha256": "0f3f1a7004308659e5d2eea27e5ddfa90aa58957e0c27149641b720494a74a74",
+  "linked_at": "2026-07-28T01:11:19Z",
+  "decls": [
+    {
+      "fqn": "GolodShafarevichFiltration",
+      "name": "GolodShafarevichFiltration",
+      "status": "linked",
+      "kind": "proposition",
+      "confidence": 0.9,
+      "paper_span": {
+        "tex_file": "unit-distance-proof.tex",
+        "quote": "group with $r\\le d^2/4$ is infinite. See [GS64, GS65] and [Koc02, Chapter 11]."
+      },
+      "rationale": "Proposition A.9, admitted as an axiom: the augmentation-filtration (Hilbert-function) input to the Golod\u2013Shafarevich inequality, cited by the paper as prior work [GS64, GS65]."
+    }
+  ],
+  "file_sha256": "3938a80072ab4abb5331cd4a86b92376cff977db5e1436aa10a3b91114ace289"
+}

@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "lean_file": "lean_workspace/Workspace/ProofLemmas/SublemmaDegKQ.lean",
+  "sig_sha256": "8ae1dc07e0821cc27dce69d702ba1ef39bec5309e680a237ae0b30a2cfe287ca",
+  "linked_at": "2026-07-28T01:11:19Z",
+  "decls": [
+    {
+      "fqn": "SublemmaDegKQ",
+      "name": "SublemmaDegKQ",
+      "status": "linked",
+      "kind": "proof_case",
+      "confidence": 0.8,
+      "paper_span": {
+        "tex_file": "unit-distance-proof.tex",
+        "quote": "since \\([K_j:\\mathbb Q]=2f_j\\)"
+      },
+      "rationale": "Records the degree \\([K_j : \\mathbb{Q}] = 2f_j\\) of the CM layer used when taking \\(2f_j\\)-th roots in Step 4."
+    }
+  ],
+  "file_sha256": "c617148a51c781284f5b19ed2576f9b06b71fe0e17a6d54a99e5783276d37b80"
+}

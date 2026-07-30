@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "lean_file": "lean_workspace/Workspace/ProofLemmas/SublemmaNcountEqTsum.lean",
+  "sig_sha256": "a43bd6f8d043899f56be8d231c7ec86c6699cb7a5a2d18d89a61d33922167631",
+  "linked_at": "2026-07-28T01:11:19Z",
+  "decls": [
+    {
+      "fqn": "SublemmaNcountEqTsum",
+      "name": "SublemmaNcountEqTsum",
+      "status": "helper",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Measure-theoretic bookkeeping for the point count \\(N_a\\) in the averaging argument of Lemma 2.4. Not a standalone paper statement."
+    }
+  ],
+  "file_sha256": "1de01f42e0a06e08b3ad874de72a722c1f3ea8eefd8cfae6c38c5547224302a5"
+}

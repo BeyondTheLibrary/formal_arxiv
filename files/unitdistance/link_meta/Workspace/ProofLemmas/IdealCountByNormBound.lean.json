@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "lean_file": "lean_workspace/Workspace/ProofLemmas/IdealCountByNormBound.lean",
+  "sig_sha256": "2d758a661c1bba2fd388a434e826579aeb0dc132944cf9b7f094d5a30b590f08",
+  "linked_at": "2026-07-28T01:11:19Z",
+  "decls": [
+    {
+      "fqn": "IdealCountByNormBound",
+      "name": "IdealCountByNormBound",
+      "status": "linked",
+      "kind": "equation",
+      "confidence": 0.85,
+      "paper_span": {
+        "tex_file": "unit-distance-proof.tex",
+        "quote": "combined with the elementary divisor-function bound for the number of ideals of a given norm"
+      },
+      "rationale": "The divisor-function count completing Proposition 3.7: the number of ideals of norm \\(m\\) is at most \\(d_n(m)\\), and \\(\\sum_{m \\le X} d_n(m) \\le C^n X(1+\\log X)^{n-1}/(n-1)!\\), exponential in \\(n\\) when \\(\\log X = O_A(n)\\)."
+    }
+  ],
+  "file_sha256": "0e26ab6a5d137e7e90d9331c4c0629345943c282bbbbb1e454d6877ecb7b5565"
+}

@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "lean_file": "lean_workspace/Workspace/ProofLemmas/CyclicCubicSubfieldTotallyReal.lean",
+  "sig_sha256": "02e519c60d0bddb4009c94620d54238f324e3d0b3d7946ca17f2fb5d041048b4",
+  "linked_at": "2026-07-28T01:11:19Z",
+  "decls": [
+    {
+      "fqn": "CyclicCubicSubfieldTotallyReal",
+      "name": "CyclicCubicSubfieldTotallyReal",
+      "status": "linked",
+      "kind": "proposition",
+      "confidence": 0.85,
+      "paper_span": {
+        "tex_file": "unit-distance-proof.tex",
+        "quote": "of $\\mathbb Q(\\zeta_r)$ is totally real, has conductor $r$, and is ramified only at $r$."
+      },
+      "rationale": "The totally-real clause of Proposition A.11: the unique cyclic cubic subfield of \\(\\mathbb{Q}(\\zeta_r)\\), \\(r \\equiv 1 \\pmod 3\\), is totally real."
+    }
+  ],
+  "file_sha256": "06b480b2d6ce34e47e40d9fdecdefa10d7582de876b06bbc95db9a481dc25341"
+}

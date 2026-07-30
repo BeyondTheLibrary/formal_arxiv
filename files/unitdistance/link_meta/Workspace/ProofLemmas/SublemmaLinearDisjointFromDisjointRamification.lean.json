@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "lean_file": "lean_workspace/Workspace/ProofLemmas/SublemmaLinearDisjointFromDisjointRamification.lean",
+  "sig_sha256": "799971beecbc3b0006654150cd117a467d4098201fd8e2497427e4b9152a9ecf",
+  "linked_at": "2026-07-28T01:11:19Z",
+  "decls": [
+    {
+      "fqn": "SublemmaLinearDisjointFromDisjointRamification",
+      "name": "SublemmaLinearDisjointFromDisjointRamification",
+      "status": "linked",
+      "kind": "proof_case",
+      "confidence": 0.85,
+      "paper_span": {
+        "tex_file": "unit-distance-proof.tex",
+        "quote": "Since the ramified rational primes are disjoint, the \\(L_i\\)'s are linearly disjoint, giving"
+      },
+      "rationale": "The linear-disjointness half of Proposition 3.2(1): the \\(L_i\\) ramify at pairwise distinct primes \\(r_i\\), hence are linearly disjoint over \\(\\mathbb{Q}\\)."
+    }
+  ],
+  "file_sha256": "660749eb1b31c6f35b9dc938b530e3fcceb4075220bd28a041014cd97bb83078"
+}

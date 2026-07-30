@@ -1,0 +1,401 @@
+{
+  "schema_version": 1,
+  "lean_file": "lean_workspace/Workspace/ProofLemmas/MertensThreeMod.lean",
+  "sig_sha256": "29b475eab5eef6473df88f6c48df48134186f7a0ac7c05c7f2b851da36a2f873",
+  "linked_at": "2026-07-30T05:11:41Z",
+  "decls": [
+    {
+      "fqn": "Workspace.ProofLemmas.MertensThreeMod.chi",
+      "name": "chi",
+      "status": "helper",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Analytic-number-theory infrastructure for Fact 3.10 (Mertens-type sums over primes \u2261 1 mod 3). The paper cites the prime number theorem in arithmetic progressions as a black box; this is the Lean machinery that discharges it."
+    },
+    {
+      "fqn": "Workspace.ProofLemmas.MertensThreeMod.chi_one",
+      "name": "chi_one",
+      "status": "helper",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Analytic-number-theory infrastructure for Fact 3.10 (Mertens-type sums over primes \u2261 1 mod 3). The paper cites the prime number theorem in arithmetic progressions as a black box; this is the Lean machinery that discharges it."
+    },
+    {
+      "fqn": "Workspace.ProofLemmas.MertensThreeMod.chi_mul",
+      "name": "chi_mul",
+      "status": "helper",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Analytic-number-theory infrastructure for Fact 3.10 (Mertens-type sums over primes \u2261 1 mod 3). The paper cites the prime number theorem in arithmetic progressions as a black box; this is the Lean machinery that discharges it."
+    },
+    {
+      "fqn": "Workspace.ProofLemmas.MertensThreeMod.r",
+      "name": "r",
+      "status": "helper",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Analytic-number-theory infrastructure for Fact 3.10 (Mertens-type sums over primes \u2261 1 mod 3). The paper cites the prime number theorem in arithmetic progressions as a black box; this is the Lean machinery that discharges it."
+    },
+    {
+      "fqn": "Workspace.ProofLemmas.MertensThreeMod.A",
+      "name": "A",
+      "status": "helper",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Analytic-number-theory infrastructure for Fact 3.10 (Mertens-type sums over primes \u2261 1 mod 3). The paper cites the prime number theorem in arithmetic progressions as a black box; this is the Lean machinery that discharges it."
+    },
+    {
+      "fqn": "Workspace.ProofLemmas.MertensThreeMod.divisors_eq_filter",
+      "name": "divisors_eq_filter",
+      "status": "helper",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Analytic-number-theory infrastructure for Fact 3.10 (Mertens-type sums over primes \u2261 1 mod 3). The paper cites the prime number theorem in arithmetic progressions as a black box; this is the Lean machinery that discharges it."
+    },
+    {
+      "fqn": "Workspace.ProofLemmas.MertensThreeMod.card_multiples_Icc",
+      "name": "card_multiples_Icc",
+      "status": "helper",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Analytic-number-theory infrastructure for Fact 3.10 (Mertens-type sums over primes \u2261 1 mod 3). The paper cites the prime number theorem in arithmetic progressions as a black box; this is the Lean machinery that discharges it."
+    },
+    {
+      "fqn": "Workspace.ProofLemmas.MertensThreeMod.A_eq",
+      "name": "A_eq",
+      "status": "helper",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Analytic-number-theory infrastructure for Fact 3.10 (Mertens-type sums over primes \u2261 1 mod 3). The paper cites the prime number theorem in arithmetic progressions as a black box; this is the Lean machinery that discharges it."
+    },
+    {
+      "fqn": "Workspace.ProofLemmas.MertensThreeMod.X",
+      "name": "X",
+      "status": "helper",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Analytic-number-theory infrastructure for Fact 3.10 (Mertens-type sums over primes \u2261 1 mod 3). The paper cites the prime number theorem in arithmetic progressions as a black box; this is the Lean machinery that discharges it."
+    },
+    {
+      "fqn": "Workspace.ProofLemmas.MertensThreeMod.X_zero",
+      "name": "X_zero",
+      "status": "helper",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Analytic-number-theory infrastructure for Fact 3.10 (Mertens-type sums over primes \u2261 1 mod 3). The paper cites the prime number theorem in arithmetic progressions as a black box; this is the Lean machinery that discharges it."
+    },
+    {
+      "fqn": "Workspace.ProofLemmas.MertensThreeMod.X_succ",
+      "name": "X_succ",
+      "status": "helper",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Analytic-number-theory infrastructure for Fact 3.10 (Mertens-type sums over primes \u2261 1 mod 3). The paper cites the prime number theorem in arithmetic progressions as a black box; this is the Lean machinery that discharges it."
+    },
+    {
+      "fqn": "Workspace.ProofLemmas.MertensThreeMod.X_eq",
+      "name": "X_eq",
+      "status": "helper",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Analytic-number-theory infrastructure for Fact 3.10 (Mertens-type sums over primes \u2261 1 mod 3). The paper cites the prime number theorem in arithmetic progressions as a black box; this is the Lean machinery that discharges it."
+    },
+    {
+      "fqn": "Workspace.ProofLemmas.MertensThreeMod.X_nonneg",
+      "name": "X_nonneg",
+      "status": "helper",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Analytic-number-theory infrastructure for Fact 3.10 (Mertens-type sums over primes \u2261 1 mod 3). The paper cites the prime number theorem in arithmetic progressions as a black box; this is the Lean machinery that discharges it."
+    },
+    {
+      "fqn": "Workspace.ProofLemmas.MertensThreeMod.X_le_one",
+      "name": "X_le_one",
+      "status": "helper",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Analytic-number-theory infrastructure for Fact 3.10 (Mertens-type sums over primes \u2261 1 mod 3). The paper cites the prime number theorem in arithmetic progressions as a black box; this is the Lean machinery that discharges it."
+    },
+    {
+      "fqn": "Workspace.ProofLemmas.MertensThreeMod.X_one",
+      "name": "X_one",
+      "status": "helper",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Analytic-number-theory infrastructure for Fact 3.10 (Mertens-type sums over primes \u2261 1 mod 3). The paper cites the prime number theorem in arithmetic progressions as a black box; this is the Lean machinery that discharges it."
+    },
+    {
+      "fqn": "Workspace.ProofLemmas.MertensThreeMod.abel",
+      "name": "abel",
+      "status": "helper",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Analytic-number-theory infrastructure for Fact 3.10 (Mertens-type sums over primes \u2261 1 mod 3). The paper cites the prime number theorem in arithmetic progressions as a black box; this is the Lean machinery that discharges it."
+    },
+    {
+      "fqn": "Workspace.ProofLemmas.MertensThreeMod.telescope",
+      "name": "telescope",
+      "status": "helper",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Analytic-number-theory infrastructure for Fact 3.10 (Mertens-type sums over primes \u2261 1 mod 3). The paper cites the prime number theorem in arithmetic progressions as a black box; this is the Lean machinery that discharges it."
+    },
+    {
+      "fqn": "Workspace.ProofLemmas.MertensThreeMod.A_le",
+      "name": "A_le",
+      "status": "helper",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Analytic-number-theory infrastructure for Fact 3.10 (Mertens-type sums over primes \u2261 1 mod 3). The paper cites the prime number theorem in arithmetic progressions as a black box; this is the Lean machinery that discharges it."
+    },
+    {
+      "fqn": "Workspace.ProofLemmas.MertensThreeMod.A_ge",
+      "name": "A_ge",
+      "status": "helper",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Analytic-number-theory infrastructure for Fact 3.10 (Mertens-type sums over primes \u2261 1 mod 3). The paper cites the prime number theorem in arithmetic progressions as a black box; this is the Lean machinery that discharges it."
+    },
+    {
+      "fqn": "Workspace.ProofLemmas.MertensThreeMod.swap",
+      "name": "swap",
+      "status": "helper",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Analytic-number-theory infrastructure for Fact 3.10 (Mertens-type sums over primes \u2261 1 mod 3). The paper cites the prime number theorem in arithmetic progressions as a black box; this is the Lean machinery that discharges it."
+    },
+    {
+      "fqn": "Workspace.ProofLemmas.MertensThreeMod.hyp_symm",
+      "name": "hyp_symm",
+      "status": "helper",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Analytic-number-theory infrastructure for Fact 3.10 (Mertens-type sums over primes \u2261 1 mod 3). The paper cites the prime number theorem in arithmetic progressions as a black box; this is the Lean machinery that discharges it."
+    },
+    {
+      "fqn": "Workspace.ProofLemmas.MertensThreeMod.sumLog_eq",
+      "name": "sumLog_eq",
+      "status": "helper",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Analytic-number-theory infrastructure for Fact 3.10 (Mertens-type sums over primes \u2261 1 mod 3). The paper cites the prime number theorem in arithmetic progressions as a black box; this is the Lean machinery that discharges it."
+    },
+    {
+      "fqn": "Workspace.ProofLemmas.MertensThreeMod.T_eq",
+      "name": "T_eq",
+      "status": "helper",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Analytic-number-theory infrastructure for Fact 3.10 (Mertens-type sums over primes \u2261 1 mod 3). The paper cites the prime number theorem in arithmetic progressions as a black box; this is the Lean machinery that discharges it."
+    },
+    {
+      "fqn": "Workspace.ProofLemmas.MertensThreeMod.abel_gen",
+      "name": "abel_gen",
+      "status": "helper",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Analytic-number-theory infrastructure for Fact 3.10 (Mertens-type sums over primes \u2261 1 mod 3). The paper cites the prime number theorem in arithmetic progressions as a black box; this is the Lean machinery that discharges it."
+    },
+    {
+      "fqn": "Workspace.ProofLemmas.MertensThreeMod.log_succ_sub_le",
+      "name": "log_succ_sub_le",
+      "status": "helper",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Analytic-number-theory infrastructure for Fact 3.10 (Mertens-type sums over primes \u2261 1 mod 3). The paper cites the prime number theorem in arithmetic progressions as a black box; this is the Lean machinery that discharges it."
+    },
+    {
+      "fqn": "Workspace.ProofLemmas.MertensThreeMod.T_ge",
+      "name": "T_ge",
+      "status": "helper",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Analytic-number-theory infrastructure for Fact 3.10 (Mertens-type sums over primes \u2261 1 mod 3). The paper cites the prime number theorem in arithmetic progressions as a black box; this is the Lean machinery that discharges it."
+    },
+    {
+      "fqn": "Workspace.ProofLemmas.MertensThreeMod.LK",
+      "name": "LK",
+      "status": "helper",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Analytic-number-theory infrastructure for Fact 3.10 (Mertens-type sums over primes \u2261 1 mod 3). The paper cites the prime number theorem in arithmetic progressions as a black box; this is the Lean machinery that discharges it."
+    },
+    {
+      "fqn": "Workspace.ProofLemmas.MertensThreeMod.LK_nonneg",
+      "name": "LK_nonneg",
+      "status": "helper",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Analytic-number-theory infrastructure for Fact 3.10 (Mertens-type sums over primes \u2261 1 mod 3). The paper cites the prime number theorem in arithmetic progressions as a black box; this is the Lean machinery that discharges it."
+    },
+    {
+      "fqn": "Workspace.ProofLemmas.MertensThreeMod.LK_le_two_vonMangoldt",
+      "name": "LK_le_two_vonMangoldt",
+      "status": "helper",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Analytic-number-theory infrastructure for Fact 3.10 (Mertens-type sums over primes \u2261 1 mod 3). The paper cites the prime number theorem in arithmetic progressions as a black box; this is the Lean machinery that discharges it."
+    },
+    {
+      "fqn": "Workspace.ProofLemmas.MertensThreeMod.mertens_lower",
+      "name": "mertens_lower",
+      "status": "helper",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Analytic-number-theory infrastructure for Fact 3.10 (Mertens-type sums over primes \u2261 1 mod 3). The paper cites the prime number theorem in arithmetic progressions as a black box; this is the Lean machinery that discharges it."
+    },
+    {
+      "fqn": "Workspace.ProofLemmas.MertensThreeMod.psi_eq_sum",
+      "name": "psi_eq_sum",
+      "status": "helper",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Analytic-number-theory infrastructure for Fact 3.10 (Mertens-type sums over primes \u2261 1 mod 3). The paper cites the prime number theorem in arithmetic progressions as a black box; this is the Lean machinery that discharges it."
+    },
+    {
+      "fqn": "Workspace.ProofLemmas.MertensThreeMod.mertens_upper",
+      "name": "mertens_upper",
+      "status": "helper",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Analytic-number-theory infrastructure for Fact 3.10 (Mertens-type sums over primes \u2261 1 mod 3). The paper cites the prime number theorem in arithmetic progressions as a black box; this is the Lean machinery that discharges it."
+    },
+    {
+      "fqn": "Workspace.ProofLemmas.MertensThreeMod.theta_eq_sum",
+      "name": "theta_eq_sum",
+      "status": "helper",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Analytic-number-theory infrastructure for Fact 3.10 (Mertens-type sums over primes \u2261 1 mod 3). The paper cites the prime number theorem in arithmetic progressions as a black box; this is the Lean machinery that discharges it."
+    },
+    {
+      "fqn": "Workspace.ProofLemmas.MertensThreeMod.telescope_inv",
+      "name": "telescope_inv",
+      "status": "helper",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Analytic-number-theory infrastructure for Fact 3.10 (Mertens-type sums over primes \u2261 1 mod 3). The paper cites the prime number theorem in arithmetic progressions as a black box; this is the Lean machinery that discharges it."
+    },
+    {
+      "fqn": "Workspace.ProofLemmas.MertensThreeMod.sum_log_div_sq_le",
+      "name": "sum_log_div_sq_le",
+      "status": "helper",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Analytic-number-theory infrastructure for Fact 3.10 (Mertens-type sums over primes \u2261 1 mod 3). The paper cites the prime number theorem in arithmetic progressions as a black box; this is the Lean machinery that discharges it."
+    },
+    {
+      "fqn": "Workspace.ProofLemmas.MertensThreeMod.sum_log_div_pow_le",
+      "name": "sum_log_div_pow_le",
+      "status": "helper",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Analytic-number-theory infrastructure for Fact 3.10 (Mertens-type sums over primes \u2261 1 mod 3). The paper cites the prime number theorem in arithmetic progressions as a black box; this is the Lean machinery that discharges it."
+    },
+    {
+      "fqn": "Workspace.ProofLemmas.MertensThreeMod.sum_geom_shift",
+      "name": "sum_geom_shift",
+      "status": "helper",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Analytic-number-theory infrastructure for Fact 3.10 (Mertens-type sums over primes \u2261 1 mod 3). The paper cites the prime number theorem in arithmetic progressions as a black box; this is the Lean machinery that discharges it."
+    },
+    {
+      "fqn": "Workspace.ProofLemmas.MertensThreeMod.tail_le",
+      "name": "tail_le",
+      "status": "helper",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Analytic-number-theory infrastructure for Fact 3.10 (Mertens-type sums over primes \u2261 1 mod 3). The paper cites the prime number theorem in arithmetic progressions as a black box; this is the Lean machinery that discharges it."
+    },
+    {
+      "fqn": "Workspace.ProofLemmas.MertensThreeMod.S1",
+      "name": "S1",
+      "status": "helper",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Analytic-number-theory infrastructure for Fact 3.10 (Mertens-type sums over primes \u2261 1 mod 3). The paper cites the prime number theorem in arithmetic progressions as a black box; this is the Lean machinery that discharges it."
+    },
+    {
+      "fqn": "Workspace.ProofLemmas.MertensThreeMod.S1_lower",
+      "name": "S1_lower",
+      "status": "helper",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Analytic-number-theory infrastructure for Fact 3.10 (Mertens-type sums over primes \u2261 1 mod 3). The paper cites the prime number theorem in arithmetic progressions as a black box; this is the Lean machinery that discharges it."
+    },
+    {
+      "fqn": "Workspace.ProofLemmas.MertensThreeMod.S1_upper",
+      "name": "S1_upper",
+      "status": "helper",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Analytic-number-theory infrastructure for Fact 3.10 (Mertens-type sums over primes \u2261 1 mod 3). The paper cites the prime number theorem in arithmetic progressions as a black box; this is the Lean machinery that discharges it."
+    },
+    {
+      "fqn": "Workspace.ProofLemmas.MertensThreeMod.C4",
+      "name": "C4",
+      "status": "helper",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Analytic-number-theory infrastructure for Fact 3.10 (Mertens-type sums over primes \u2261 1 mod 3). The paper cites the prime number theorem in arithmetic progressions as a black box; this is the Lean machinery that discharges it."
+    },
+    {
+      "fqn": "Workspace.ProofLemmas.MertensThreeMod.C4_pos",
+      "name": "C4_pos",
+      "status": "helper",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Analytic-number-theory infrastructure for Fact 3.10 (Mertens-type sums over primes \u2261 1 mod 3). The paper cites the prime number theorem in arithmetic progressions as a black box; this is the Lean machinery that discharges it."
+    },
+    {
+      "fqn": "Workspace.ProofLemmas.MertensThreeMod.m0",
+      "name": "m0",
+      "status": "helper",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Analytic-number-theory infrastructure for Fact 3.10 (Mertens-type sums over primes \u2261 1 mod 3). The paper cites the prime number theorem in arithmetic progressions as a black box; this is the Lean machinery that discharges it."
+    },
+    {
+      "fqn": "Workspace.ProofLemmas.MertensThreeMod.log_ge_of_m0_le",
+      "name": "log_ge_of_m0_le",
+      "status": "helper",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Analytic-number-theory infrastructure for Fact 3.10 (Mertens-type sums over primes \u2261 1 mod 3). The paper cites the prime number theorem in arithmetic progressions as a black box; this is the Lean machinery that discharges it."
+    },
+    {
+      "fqn": "Workspace.ProofLemmas.MertensThreeMod.two_le_m0",
+      "name": "two_le_m0",
+      "status": "helper",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Analytic-number-theory infrastructure for Fact 3.10 (Mertens-type sums over primes \u2261 1 mod 3). The paper cites the prime number theorem in arithmetic progressions as a black box; this is the Lean machinery that discharges it."
+    },
+    {
+      "fqn": "Workspace.ProofLemmas.MertensThreeMod.count_lower",
+      "name": "count_lower",
+      "status": "helper",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Analytic-number-theory infrastructure for Fact 3.10 (Mertens-type sums over primes \u2261 1 mod 3). The paper cites the prime number theorem in arithmetic progressions as a black box; this is the Lean machinery that discharges it."
+    },
+    {
+      "fqn": "Workspace.ProofLemmas.MertensThreeMod.card_eq_count",
+      "name": "card_eq_count",
+      "status": "helper",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Analytic-number-theory infrastructure for Fact 3.10 (Mertens-type sums over primes \u2261 1 mod 3). The paper cites the prime number theorem in arithmetic progressions as a black box; this is the Lean machinery that discharges it."
+    },
+    {
+      "fqn": "Workspace.ProofLemmas.MertensThreeMod.primes_one_mod_three_poly_bound",
+      "name": "primes_one_mod_three_poly_bound",
+      "status": "helper",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Analytic-number-theory infrastructure for Fact 3.10 (Mertens-type sums over primes \u2261 1 mod 3). The paper cites the prime number theorem in arithmetic progressions as a black box; this is the Lean machinery that discharges it."
+    }
+  ],
+  "file_sha256": "4c5e12aa8b907b09c62b120de07de00c953cc065ce843edab893cf56001528b0"
+}

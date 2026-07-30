@@ -1,0 +1,65 @@
+{
+  "schema_version": 1,
+  "lean_file": "lean_workspace/Workspace/ProofLemmas/CompositumRamification.lean",
+  "sig_sha256": "4741fd127f0f48fdce4c114771c511277855c77a5eaf6fdf3e24a8a3328d03b6",
+  "linked_at": "2026-07-30T05:11:41Z",
+  "decls": [
+    {
+      "fqn": "Workspace.ProofLemmas.CompositumRamification.eq_one_of_fixes_family'",
+      "name": "eq_one_of_fixes_family'",
+      "status": "helper",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Facts about the compositum \\(M = L_1\\cdots L_\\ell\\) (degree, Galois group, ramification) used inside the proof of Proposition 3.2."
+    },
+    {
+      "fqn": "Workspace.ProofLemmas.CompositumRamification.ramificationIdx_eq_three",
+      "name": "ramificationIdx_eq_three",
+      "status": "helper",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Facts about the compositum \\(M = L_1\\cdots L_\\ell\\) (degree, Galois group, ramification) used inside the proof of Proposition 3.2."
+    },
+    {
+      "fqn": "Workspace.ProofLemmas.CompositumRamification.iSup_comap_eq_top",
+      "name": "iSup_comap_eq_top",
+      "status": "helper",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Facts about the compositum \\(M = L_1\\cdots L_\\ell\\) (degree, Galois group, ramification) used inside the proof of Proposition 3.2."
+    },
+    {
+      "fqn": "Workspace.ProofLemmas.CompositumRamification.ramificationIdx_compositum_eq_three",
+      "name": "ramificationIdx_compositum_eq_three",
+      "status": "helper",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Facts about the compositum \\(M = L_1\\cdots L_\\ell\\) (degree, Galois group, ramification) used inside the proof of Proposition 3.2."
+    },
+    {
+      "fqn": "Workspace.ProofLemmas.CompositumRamification.ramificationIdx_eq_three_of_dvd_discr",
+      "name": "ramificationIdx_eq_three_of_dvd_discr",
+      "status": "helper",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Facts about the compositum \\(M = L_1\\cdots L_\\ell\\) (degree, Galois group, ramification) used inside the proof of Proposition 3.2."
+    },
+    {
+      "fqn": "Workspace.ProofLemmas.CompositumRamification.exists_prime_span",
+      "name": "exists_prime_span",
+      "status": "helper",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Facts about the compositum \\(M = L_1\\cdots L_\\ell\\) (degree, Galois group, ramification) used inside the proof of Proposition 3.2."
+    },
+    {
+      "fqn": "Workspace.ProofLemmas.CompositumRamification.unramified_compositum",
+      "name": "unramified_compositum",
+      "status": "helper",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Facts about the compositum \\(M = L_1\\cdots L_\\ell\\) (degree, Galois group, ramification) used inside the proof of Proposition 3.2."
+    }
+  ],
+  "file_sha256": "014a1520d62bc21aef0ea0168b41e896629ba41e5d5fe30d835da293ab1a37f9"
+}

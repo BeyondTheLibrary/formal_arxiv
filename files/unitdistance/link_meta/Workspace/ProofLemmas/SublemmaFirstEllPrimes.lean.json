@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "lean_file": "lean_workspace/Workspace/ProofLemmas/SublemmaFirstEllPrimes.lean",
+  "sig_sha256": "d22a60b03bc139da4ee229425cee8019186719619ea0aa9c92c8773c2edee06a",
+  "linked_at": "2026-07-28T01:11:19Z",
+  "decls": [
+    {
+      "fqn": "SublemmaFirstEllPrimes",
+      "name": "SublemmaFirstEllPrimes",
+      "status": "linked",
+      "kind": "proof_case",
+      "confidence": 0.85,
+      "paper_span": {
+        "tex_file": "unit-distance-proof.tex",
+        "quote": "Choose \\(r_1,\\ldots,r_\\ell\\) to be the first \\(\\ell\\) rational primes with \\(r_i\\equiv 1 \\pmod 3\\)."
+      },
+      "rationale": "Supplies the paper's \\(r_1, \\ldots, r_\\ell\\): the first \\(\\ell\\) rational primes congruent to \\(1 \\bmod 3\\)."
+    }
+  ],
+  "file_sha256": "7fa272d409c64bb12547c233427246f04bc2dc5472a454978606d8d70dc66616"
+}

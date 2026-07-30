@@ -1,0 +1,87 @@
+{
+  "schema_version": 1,
+  "lean_file": "lean_workspace/Workspace/ProofLemmas/Prop32CyclotomicBase.lean",
+  "sig_sha256": "8cdc50236483ad003cd3787d71d76f9ae624c4fdb43c2cb9281e31be20710751",
+  "linked_at": "2026-07-30T05:11:41Z",
+  "decls": [
+    {
+      "fqn": "Prop32CyclotomicBase_totally_real",
+      "name": "Prop32CyclotomicBase_totally_real",
+      "status": "linked",
+      "kind": "proposition",
+      "confidence": 0.9,
+      "paper_span": {
+        "tex_file": "unit-distance-proof.tex",
+        "quote": "Then the fields \\(L_i\\) are totally real and linearly disjoint,"
+      },
+      "rationale": "The totally-real half of Proposition 3.2(1): the compositum \\(M = L_1\\cdots L_\\ell\\) of the cyclic cubic subfields is totally real."
+    },
+    {
+      "fqn": "Prop32CyclotomicBase_degree",
+      "name": "Prop32CyclotomicBase_degree",
+      "status": "linked",
+      "kind": "proposition",
+      "confidence": 0.88,
+      "paper_span": {
+        "tex_file": "unit-distance-proof.tex",
+        "quote": "\\operatorname{Gal}(M/\\mathbb{Q})\\cong (\\mathbb{Z}/3\\mathbb{Z})^\\ell,\\qquad",
+        "pdf_page": 10,
+        "pdf_match": "Gal(M/Q) ="
+      },
+      "rationale": "The degree consequence of Proposition 3.2(2): \\(\\mathrm{Gal}(M/\\mathbb{Q}) \\cong (\\mathbb{Z}/3\\mathbb{Z})^\\ell\\) gives \\([M:\\mathbb{Q}] = 3^\\ell\\)."
+    },
+    {
+      "fqn": "Prop32CyclotomicBase_galois_elementary_abelian",
+      "name": "Prop32CyclotomicBase_galois_elementary_abelian",
+      "status": "linked",
+      "kind": "proposition",
+      "confidence": 0.88,
+      "paper_span": {
+        "tex_file": "unit-distance-proof.tex",
+        "quote": "\\operatorname{Gal}(M/\\mathbb{Q})\\cong (\\mathbb{Z}/3\\mathbb{Z})^\\ell,\\qquad",
+        "pdf_page": 10,
+        "pdf_match": "Gal(M/Q) ="
+      },
+      "rationale": "The group-structure content of Proposition 3.2(2): \\(\\mathrm{Gal}(M/\\mathbb{Q})\\) is elementary abelian of exponent 3 \u2014 stated in Lean as commutativity together with \\(\\sigma^3 = 1\\)."
+    },
+    {
+      "fqn": "Prop32CyclotomicBase_relative_degree",
+      "name": "Prop32CyclotomicBase_relative_degree",
+      "status": "linked",
+      "kind": "proposition",
+      "confidence": 0.9,
+      "paper_span": {
+        "tex_file": "unit-distance-proof.tex",
+        "quote": "\\operatorname{Gal}(M/F)\\cong (\\mathbb{Z}/3\\mathbb{Z})^{\\ell-1},",
+        "pdf_page": 10,
+        "pdf_match": "Gal(M/F ) ="
+      },
+      "rationale": "Proposition 3.2(2), relative half: \\(\\mathrm{Gal}(M/F) \\cong (\\mathbb{Z}/3\\mathbb{Z})^{\\ell-1}\\) for the cyclic cubic field `F` cut out by \\(\\chi = \\chi_1\\cdots\\chi_\\ell\\)."
+    },
+    {
+      "fqn": "Prop32CyclotomicBase_discriminant",
+      "name": "Prop32CyclotomicBase_discriminant",
+      "status": "linked",
+      "kind": "proposition",
+      "confidence": 0.92,
+      "paper_span": {
+        "tex_file": "unit-distance-proof.tex",
+        "quote": "and, writing \\(D=\\prod_i r_i\\), \\(|D_F|=D^2\\)."
+      },
+      "rationale": "Proposition 3.2(3): with \\(D = \\prod_i r_i\\), the base field satisfies \\(|D_F| = D^2\\) \u2014 the conductor\u2013discriminant computation (both nontrivial characters of `F` have conductor `D`)."
+    },
+    {
+      "fqn": "Prop32CyclotomicBase_unramified",
+      "name": "Prop32CyclotomicBase_unramified",
+      "status": "linked",
+      "kind": "proposition",
+      "confidence": 0.93,
+      "paper_span": {
+        "tex_file": "unit-distance-proof.tex",
+        "quote": "Moreover, \\(M/F\\) is everywhere unramified."
+      },
+      "rationale": "Proposition 3.2(4): \\(M/F\\) is everywhere unramified \u2014 forced by \\(|D_M| = |D_F|^{[M:F]}\\) via the tower formula, plus total reality at the infinite places."
+    }
+  ],
+  "file_sha256": "0c3536527f7169f5dacca58fa0e97f8d26c390eea2355129182f63c901abc42e"
+}

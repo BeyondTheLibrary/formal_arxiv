@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "lean_file": "lean_workspace/Workspace/ProofLemmas/CyclicCubicSubfieldDegree.lean",
+  "sig_sha256": "7ec071d1fdc278c3d58659ebefa8a6973e26dd86f679ab52f6ced5eb3ba39007",
+  "linked_at": "2026-07-28T01:11:19Z",
+  "decls": [
+    {
+      "fqn": "CyclicCubicSubfieldDegree",
+      "name": "CyclicCubicSubfieldDegree",
+      "status": "helper",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Field-theoretic plumbing (normal closures, subfields, fixed fields) used across Section 3."
+    }
+  ],
+  "file_sha256": "4308086d0f33af33590bd6242b86fdbdec6ed7dd0dcefe4be306305d9175e36e"
+}

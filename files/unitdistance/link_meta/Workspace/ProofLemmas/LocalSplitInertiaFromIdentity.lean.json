@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "lean_file": "lean_workspace/Workspace/ProofLemmas/LocalSplitInertiaFromIdentity.lean",
+  "sig_sha256": "48b16f223ebea90907c305aab8d0337c8801ddbae36219595fa5740d2a5be822",
+  "linked_at": "2026-07-28T01:11:19Z",
+  "decls": [
+    {
+      "fqn": "LocalSplitInertiaFromIdentity",
+      "name": "LocalSplitInertiaFromIdentity",
+      "status": "helper",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Splitting bookkeeping (complete splitting descends along the tower, e = f = 1) supporting property P4 of Proposition 3.8. Not a standalone paper statement."
+    }
+  ],
+  "file_sha256": "cdb5cd77f00c9d38d174830fb988198d946e201c0d6cbbaa77744410c1dd0ee5"
+}

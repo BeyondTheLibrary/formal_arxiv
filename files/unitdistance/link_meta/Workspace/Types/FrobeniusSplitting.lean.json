@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "lean_file": "lean_workspace/Workspace/Types/FrobeniusSplitting.lean",
+  "sig_sha256": "71d04a1e005b3e3517f9fb0fcfdbdb40d5201e21965888bed2d36a455f50e11c",
+  "linked_at": "2026-07-30T05:11:41Z",
+  "decls": [
+    {
+      "fqn": "Workspace.Types.FrobeniusSplitting.IsFrobeniusAtPrime",
+      "name": "IsFrobeniusAtPrime",
+      "status": "linked",
+      "kind": "definition",
+      "confidence": 0.9,
+      "paper_span": {
+        "tex_file": "unit-distance-proof.tex",
+        "quote": "the Frobenius element $\\operatorname{Frob}_{\\mathfrak P/\\mathfrak p}\\in \\operatorname{Gal}(N/K)$"
+      },
+      "rationale": "`IsFrobeniusAtPrime \u03c3 P` formalizes the Frobenius element at a prime `P | p`: it acts on the residue field by \\(x \\mapsto x^{|\\mathcal{O}_K/\\mathfrak{p}|}\\)."
+    },
+    {
+      "fqn": "Workspace.Types.FrobeniusSplitting.IsFrobeniusAt",
+      "name": "IsFrobeniusAt",
+      "status": "helper",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Frobenius bookkeeping behind Definition A.7 and Proposition 3.6 (existence and compatibility of Frobenius representatives). Not a standalone paper statement."
+    },
+    {
+      "fqn": "Workspace.Types.FrobeniusSplitting.IsFrobeniusRepAt",
+      "name": "IsFrobeniusRepAt",
+      "status": "helper",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Frobenius bookkeeping behind Definition A.7 and Proposition 3.6 (existence and compatibility of Frobenius representatives). Not a standalone paper statement."
+    }
+  ],
+  "file_sha256": "56bc8b57262cf6e311196571cf198ea320df069ac962a93c61da6cdc1d31b594"
+}

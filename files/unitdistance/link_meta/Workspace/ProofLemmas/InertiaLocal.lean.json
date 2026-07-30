@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "lean_file": "lean_workspace/Workspace/ProofLemmas/InertiaLocal.lean",
+  "sig_sha256": "d02d37a0844dd5cd61942566a481cee86c34d7db8f8cb70c33b8d48ce6a06e73",
+  "linked_at": "2026-07-30T05:11:41Z",
+  "decls": [
+    {
+      "fqn": "Workspace.ProofLemmas.InertiaLocal.dvd_discr_of_ramified",
+      "name": "dvd_discr_of_ramified",
+      "status": "helper",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Local inertia/decomposition-group machinery behind the splitting statements of Section 3. Not a standalone paper statement."
+    },
+    {
+      "fqn": "Workspace.ProofLemmas.InertiaLocal.ramificationIdx_eq_one_of_not_dvd_discr",
+      "name": "ramificationIdx_eq_one_of_not_dvd_discr",
+      "status": "helper",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Local inertia/decomposition-group machinery behind the splitting statements of Section 3. Not a standalone paper statement."
+    },
+    {
+      "fqn": "Workspace.ProofLemmas.InertiaLocal.residue_isSeparable_int",
+      "name": "residue_isSeparable_int",
+      "status": "helper",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Local inertia/decomposition-group machinery behind the splitting statements of Section 3. Not a standalone paper statement."
+    },
+    {
+      "fqn": "Workspace.ProofLemmas.InertiaLocal.card_inertia_eq_ramificationIdx_int",
+      "name": "card_inertia_eq_ramificationIdx_int",
+      "status": "helper",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Local inertia/decomposition-group machinery behind the splitting statements of Section 3. Not a standalone paper statement."
+    },
+    {
+      "fqn": "Workspace.ProofLemmas.InertiaLocal.inertia_le_fixingSubgroup_int",
+      "name": "inertia_le_fixingSubgroup_int",
+      "status": "helper",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Local inertia/decomposition-group machinery behind the splitting statements of Section 3. Not a standalone paper statement."
+    },
+    {
+      "fqn": "Workspace.ProofLemmas.InertiaLocal.inertia_le_fixingSubgroup_of_not_dvd_discr",
+      "name": "inertia_le_fixingSubgroup_of_not_dvd_discr",
+      "status": "helper",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Local inertia/decomposition-group machinery behind the splitting statements of Section 3. Not a standalone paper statement."
+    }
+  ],
+  "file_sha256": "267f1f13d0dca36ef5b9869c50f3df207b2dbcf4fc6f47fd3b96807108d8bce0"
+}

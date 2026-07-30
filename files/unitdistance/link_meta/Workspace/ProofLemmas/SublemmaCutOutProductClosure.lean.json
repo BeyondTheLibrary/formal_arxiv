@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "lean_file": "lean_workspace/Workspace/ProofLemmas/SublemmaCutOutProductClosure.lean",
+  "sig_sha256": "8515dfe67f9f1c5f4057a04b302cc5bb47b170471331ad31c86b0c736378f40b",
+  "linked_at": "2026-07-28T01:11:19Z",
+  "decls": [
+    {
+      "fqn": "SublemmaCutOutProductClosure",
+      "name": "SublemmaCutOutProductClosure",
+      "status": "helper",
+      "kind": "other",
+      "confidence": 0.8,
+      "rationale": "Internal Lean helper: a supporting step of the formalization with no standalone counterpart in the paper, which states only the numbered results it is used to prove."
+    }
+  ],
+  "file_sha256": "c4746f414f7305d4551f8b75799a092ca2f84e18ccbd85ce71621ea7763f5bf3"
+}
