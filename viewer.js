@@ -389,7 +389,18 @@ function placeSpanHighlightsForPage(pageNumber) {
       els.push(badge);
     }
     for (const m of g.members) state.highlightByFqn.set(m.lean_fqn, { ...m, _els: els, _gid: gid });
-    if (g.members.some(m => state.pendingHlFlash === m.link_id)) { els.forEach(flashHotspot); state.pendingHlFlash = null; }
+    if (g.members.some(m => state.pendingHlFlash === m.link_id)) {
+      state.pendingHlFlash = null;
+      els[0].scrollIntoView({ block: 'center' });
+      els.forEach(flashHotspot);
+    }
+    if (refuted && state.pendingErratumOpen === g.members[0].link_id) {
+      // The header's "Error in the paper" button scrolled here; now that the
+      // red block exists, centre it and open its note.
+      state.pendingErratumOpen = null;
+      const placed = state.highlightByFqn.get(g.members[0].lean_fqn);
+      setTimeout(() => { els[0].scrollIntoView({ block: 'center' }); els.forEach(flashHotspot); openErratumAt(placed); }, 250);
+    }
   }
 }
 
@@ -450,6 +461,44 @@ function erratumRefs(h, e) {
   return all.filter((r, i) => r && r.fqn && all.findIndex(x => x && x.fqn === r.fqn) === i);
 }
 
+// Header button "⚠ Error in the paper": jump to the refuted passage(s).
+function setupErrataButton() {
+  const btn = document.getElementById('btn-errata');
+  if (!btn) return;
+  const list = state.errata || [];
+  if (!list.length) { btn.hidden = true; return; }
+  btn.hidden = false;
+  btn.textContent = list.length === 1 ? '⚠ Error in the paper' : `⚠ ${list.length} errors in the paper`;
+  btn.title = list.map(h => (h.erratum && h.erratum.title) || ('PDF p. ' + h.pdf_page)).join('\n')
+    + '\n\nJump to it in the PDF and see what is wrong and how the formalization fixed it';
+  let i = 0;
+  btn.addEventListener('click', (e) => { e.stopPropagation(); goToErratum(i++ % list.length); });
+}
+
+function goToErratum(i) {
+  const h = (state.errata || [])[i];
+  if (!h) return;
+  const placed = state.highlightByFqn.get(h.lean_fqn);
+  if (placed && placed._els && placed._els.length && placed._els[0].isConnected) {
+    placed._els[0].scrollIntoView({ block: 'center', behavior: 'smooth' });
+    placed._els.forEach(flashHotspot);
+    setTimeout(() => openErratumAt(placed), 400);
+    return;
+  }
+  if (h.pdf_page && state.pdfViewer) {
+    state.pendingErratumOpen = h.link_id;   // opened once that page's highlights are placed
+    state.pdfViewer.scrollPageIntoView({ pageNumber: h.pdf_page });
+    setTimeout(() => placeSpanHighlightsForPage(h.pdf_page), 300);
+  }
+}
+
+function openErratumAt(h) {
+  const el = h && h._els && h._els[0];
+  const r = el ? el.getBoundingClientRect() : null;
+  showErratumPopover(h, r ? { clientX: r.left + Math.min(r.width / 2, 240), clientY: r.bottom + 2 }
+                          : { clientX: 100, clientY: 60 });
+}
+
 // A refuted passage: explain what is wrong in the paper and how the
 // formalization repaired it, with buttons into the Lean.
 function showErratumPopover(h, ev) {
@@ -500,7 +549,12 @@ async function openLeanFromHighlight(h) {
 function scrollPdfToHighlight(fqn) {
   const h = state.highlightByFqn.get(fqn);
   if (!h) return false;
-  if (h._els && h._els.length) {
+  // The placed elements are only usable while their page is alive: pdf.js
+  // destroys pages that scroll far out of view (it keeps ~10), which detaches
+  // everything we appended — scrollIntoView on a detached node is a silent
+  // no-op. On a long paper that is the common case, so fall back to a page
+  // scroll and flash the block once it is placed again.
+  if (h._els && h._els.length && h._els[0].isConnected) {
     h._els[0].scrollIntoView({ block: 'center', behavior: 'smooth' });
     h._els.forEach(flashHotspot);
     return true;
@@ -508,6 +562,9 @@ function scrollPdfToHighlight(fqn) {
   if (h.pdf_page && state.pdfViewer) {
     state.pendingHlFlash = h.link_id;
     state.pdfViewer.scrollPageIntoView({ pageNumber: h.pdf_page });
+    // If the page's text layer is already rendered no textlayerrendered event
+    // will fire; re-place now so the pending flash (and centring) happen.
+    setTimeout(() => placeSpanHighlightsForPage(h.pdf_page), 300);
     return true;
   }
   return false;
@@ -518,7 +575,7 @@ function scrollPdfToHighlight(fqn) {
 // layer), arm a pending flash that fires when the hotspot appears.
 function scrollPdfToEnv(label, pageRange) {
   const hot = state.hotspotsByLabel.get(label);
-  if (hot) {
+  if (hot && hot.isConnected) {   // detached once pdf.js evicts the page
     hot.scrollIntoView({ block: 'center', behavior: 'smooth' });
     flashHotspot(hot);
     return;
@@ -1015,9 +1072,10 @@ function renderToken(t) {
 }
 
 // Render full text → lines of HTML with gutter.
-// opts: { hl, declLinks: Map<line,{label,page}>, goalLines: Set<line> }
+// opts: { hl, declLinks: Map<line,{label,page,fqn}> (arrow rows),
+//         linkRows: Map<line,{label,page,fqn}> (every row of a linked decl), goalLines: Set<line> }
 function renderLean(text, opts = {}) {
-  const { hl, declLinks, goalLines } = opts;
+  const { hl, declLinks, linkRows, goalLines } = opts;
   const tokens = tokenize(text);
   // Split tokens into lines by walking the text and tracking offsets.
   const lines = [];
@@ -1052,9 +1110,17 @@ function renderLean(text, opts = {}) {
       const ttl = dl.label ? `Show in PDF: ${dl.label}` : 'Show in PDF';
       arrow = `<span class="arr" role="button" title="${escapeHtml(ttl)}" ${attrs}>←</span>`;
     }
+    const lr = linkRows && linkRows.get(ln);
+    let rowAttrs = '';
+    if (lr) {
+      cls.push('in-link');
+      rowAttrs = lr.label
+        ? ` data-link-label="${escapeHtml(lr.label)}" data-link-page="${lr.page || ''}"`
+        : ` data-link-fqn="${escapeHtml(lr.fqn)}"`;
+    }
     if (goalLines && goalLines.has(ln)) cls.push('has-goal');
     const inner = toks.map(renderToken).join('') || ' ';
-    return `<div class="${cls.join(' ')}" data-line="${ln}">${arrow}<span class="lno">${ln}</span><span class="src">${inner}</span></div>`;
+    return `<div class="${cls.join(' ')}" data-line="${ln}"${rowAttrs}>${arrow}<span class="lno">${ln}</span><span class="src">${inner}</span></div>`;
   });
   return out.join('');
 }
@@ -1074,6 +1140,7 @@ function importPathToFile(path) {
 // Map<line, goalString> or null (feature not generated for this paper yet).
 async function ensureInfo(relPath) {
   if (state.infoByFile.has(relPath)) return state.infoByFile.get(relPath);
+  if (window.__STATIC__) { state.infoByFile.set(relPath, null); return null; }  // static site ships no goal info
   let result = null;
   try {
     const r = await fetch(api('info/' + relPath.split('/').map(encodeURIComponent).join('/')));
@@ -1103,11 +1170,15 @@ async function loadFile(relPath, hl = null) {
   // "Why relevant" banner for the focused decl (the one a link/arrow jumped to).
   renderLinkWhy(hl?.fqn ? state.declsByFqn.get(hl.fqn) : null);
 
-  // Build the decl→paper-env arrow map for this file.
-  const declLinks = new Map();
+  // Build the decl→paper arrow map for this file (arrow on the decl's first
+  // line) and the row map (every line of a linked decl jumps to the PDF on click).
+  const declLinks = new Map(), linkRows = new Map();
   for (const d of (state.declsByFile.get(relPath) || [])) {
     const pl = bestPaperLink(d);
-    if (pl) declLinks.set(d.decl_range.start_line, pl);
+    if (!pl) continue;
+    declLinks.set(d.decl_range.start_line, pl);
+    const last = d.decl_range.end_line || d.decl_range.start_line;
+    for (let ln = d.decl_range.start_line; ln <= last; ln++) if (!linkRows.has(ln)) linkRows.set(ln, pl);
   }
   const goalMap = await ensureInfo(relPath);
 
@@ -1118,7 +1189,7 @@ async function loadFile(relPath, hl = null) {
     if (!r.ok) throw new Error(`HTTP ${r.status}`);
     const text = await r.text();
     codeEl.innerHTML = renderLean(text, {
-      hl, declLinks,
+      hl, declLinks, linkRows,
       goalLines: goalMap ? new Set(goalMap.keys()) : null,
     });
     if (hl) {
@@ -1294,6 +1365,18 @@ function setupHover() {
         if (list.includes(path)) loadFile(path);
         else flashTip(imp, `no local file for ${imp.dataset.import}`);
       });
+      return;
+    }
+    // Anywhere on a linked declaration (not only its gutter arrow) → show it in
+    // the PDF. Skipped while the user is selecting text.
+    const row = e.target.closest('.ln.in-link');
+    if (row && !(window.getSelection && String(window.getSelection()))) {
+      if (row.dataset.linkLabel) {
+        const page = row.dataset.linkPage ? parseInt(row.dataset.linkPage, 10) : null;
+        scrollPdfToEnv(row.dataset.linkLabel, page ? { start_page: page } : null);
+      } else if (row.dataset.linkFqn) {
+        scrollPdfToHighlight(row.dataset.linkFqn);
+      }
     }
   });
 
@@ -1569,6 +1652,9 @@ async function main() {
     state.highlightsByPage.get(h.pdf_page).push(h);
     if (h.lean_fqn) state.highlightByFqn.set(h.lean_fqn, h);
   }
+  // Passages the Lean refutes (errata): the header button jumps to them.
+  state.errata = (paper.highlights || []).filter(h => h.refuted && h.pdf_page && h.prose);
+  setupErrataButton();
 
   // Deep link: ?file=<lean path> opens the Lean panel straight on that source
   // (used by the proof-graph viewer's "open file" action). Run it alongside the
