@@ -307,15 +307,19 @@ function placeSpanHighlightsForPage(pageNumber) {
   //    Lean decls formalizing the same passage become a single block instead of
   //    a stack of overlapping highlights.
   matched.sort((a, b) => a.s0 - b.s0 || a.s1 - b.s1);
-  const groups = [];
+  const groups = [], refutedGroups = [];
   for (const m of matched) {
+    // A refuted passage (the Lean shows the printed text is false) is its own
+    // red block, never merged into the ordinary highlight of the statement it
+    // sits in — and drawn after them so it stays on top.
+    if (m.h.refuted) { refutedGroups.push({ s0: m.s0, s1: m.s1, members: [m.h], refuted: true }); continue; }
     const g = groups[groups.length - 1];
     if (g && m.s0 <= g.s1) { g.s1 = Math.max(g.s1, m.s1); g.members.push(m.h); }
     else groups.push({ s0: m.s0, s1: m.s1, members: [m.h] });
   }
 
   // 3) Render one flowing block per group, with a count badge + popover if many.
-  for (const g of groups) {
+  for (const g of [...groups, ...refutedGroups]) {
     const rows = [];
     for (let si = g.s0; si <= g.s1; si++) {
       const r = spans[si].getBoundingClientRect();
@@ -332,13 +336,21 @@ function placeSpanHighlightsForPage(pageNumber) {
     if (!valid.length) continue;
     g.members.sort((a, b) => (b.confidence || 0) - (a.confidence || 0));
     const multi = g.members.length > 1;
+    const refuted = !!g.refuted;
     const gid = g.members.map(m => m.link_id).join('|');
     const blockLeft = Math.min(...valid.map(r => r.x0));
     const blockRight = Math.max(...valid.map(r => r.x1));
-    const title = multi
+    const title = refuted
+      ? ('⚠ Error in the paper — ' + ((g.members[0].erratum && g.members[0].erratum.title) || 'this passage is refuted in Lean')
+         + '\n\nClick for what is wrong and how the formalization fixes it')
+      : multi
       ? (g.members.length + ' Lean declarations formalize this passage — click to choose')
       : (relationPhrase(g.members[0].kind) + ' — ' + g.members[0].lean_fqn
          + (g.members[0].rationale ? '\n\nWhy: ' + g.members[0].rationale : ''));
+    const onClick = (ev) => {
+      ev.preventDefault(); ev.stopPropagation();
+      if (refuted) showErratumPopover(g.members[0], ev); else openHighlightGroup(g.members, ev);
+    };
     const els = [];
     for (let i = 0; i < valid.length; i++) {
       const row = valid[i];
@@ -348,29 +360,29 @@ function placeSpanHighlightsForPage(pageNumber) {
       const hl = document.createElement('button');
       hl.type = 'button';
       hl.className = 'lean-span-hl' + (first ? ' lean-span-hl-first' : '') + (last ? ' lean-span-hl-last' : '')
-        + (multi ? ' lean-span-hl-multi' : '');
+        + (multi ? ' lean-span-hl-multi' : '') + (refuted ? ' lean-span-hl-refuted' : '');
       hl.style.left = left + 'px';
       hl.style.top = row.y0 + 'px';
       hl.style.width = Math.max(2, right - left) + 'px';
       hl.style.height = Math.max(2, (last ? row.y1 : valid[i + 1].y0) - row.y0) + 'px';
       hl.title = title;
       hl.dataset.hlGroup = gid;
-      hl.addEventListener('click', (ev) => { ev.preventDefault(); ev.stopPropagation(); openHighlightGroup(g.members, ev); });
+      hl.addEventListener('click', onClick);
       hl.addEventListener('mouseenter', () => setHlHover(gid, true));
       hl.addEventListener('mouseleave', () => setHlHover(gid, false));
       pageDiv.appendChild(hl);
       els.push(hl);
     }
-    if (multi) {
+    if (multi || refuted) {
       const badge = document.createElement('button');
       badge.type = 'button';
-      badge.className = 'lean-hl-badge';
-      badge.textContent = String(g.members.length);
+      badge.className = 'lean-hl-badge' + (refuted ? ' lean-hl-badge-refuted' : '');
+      badge.textContent = refuted ? '⚠' : String(g.members.length);
       badge.title = title;
       badge.style.left = (valid[0].x0 - 16) + 'px';
       badge.style.top = valid[0].y0 + 'px';
       badge.dataset.hlGroup = gid;
-      badge.addEventListener('click', (ev) => { ev.preventDefault(); ev.stopPropagation(); openHighlightGroup(g.members, ev); });
+      badge.addEventListener('click', onClick);
       badge.addEventListener('mouseenter', () => setHlHover(gid, true));
       badge.addEventListener('mouseleave', () => setHlHover(gid, false));
       pageDiv.appendChild(badge);
@@ -389,8 +401,8 @@ function openHighlightGroup(members, ev) {
 
 // Floating chooser listing every Lean decl that formalizes a shared passage.
 function showHlPopover(members, ev) {
-  let pop = document.getElementById('hl-popover');
-  if (!pop) { pop = document.createElement('div'); pop.id = 'hl-popover'; document.body.appendChild(pop); }
+  const pop = ensureHlPopover();
+  pop.className = '';
   pop.innerHTML = '<div class="hlp-head">' + members.length + ' declarations formalize this passage</div>' +
     members.map((m, i) => {
       const c = m.confidence || 0, w = confWord(c);
@@ -402,9 +414,7 @@ function showHlPopover(members, ev) {
         (m.rationale ? '<div class="hlp-why">' + escapeHtml(m.rationale) + '</div>' : '') + '</button>';
     }).join('');
   pop.hidden = false;
-  const pad = 8, vw = window.innerWidth, vh = window.innerHeight;
-  pop.style.left = Math.max(pad, Math.min(ev.clientX, vw - pop.offsetWidth - pad)) + 'px';
-  pop.style.top = Math.max(pad, Math.min(ev.clientY + 12, vh - pop.offsetHeight - pad)) + 'px';
+  placePopover(pop, ev);
   for (const it of pop.querySelectorAll('.hlp-item')) {
     it.addEventListener('click', () => { hideHlPopover(); openLeanFromHighlight(members[+it.dataset.i]); });
   }
@@ -414,6 +424,56 @@ function hideHlPopover() {
   const pop = document.getElementById('hl-popover');
   if (pop) { pop.hidden = true; pop.innerHTML = ''; }
 }
+
+function ensureHlPopover() {
+  let pop = document.getElementById('hl-popover');
+  if (!pop) { pop = document.createElement('div'); pop.id = 'hl-popover'; document.body.appendChild(pop); }
+  return pop;
+}
+
+function placePopover(pop, ev) {
+  const pad = 8, vw = window.innerWidth, vh = window.innerHeight;
+  pop.style.left = Math.max(pad, Math.min(ev.clientX, vw - pop.offsetWidth - pad)) + 'px';
+  pop.style.top = Math.max(pad, Math.min(ev.clientY + 12, vh - pop.offsetHeight - pad)) + 'px';
+}
+
+// Curated erratum prose → paragraphs; `code` spans become <code>.
+function erratumParas(text) {
+  return String(text || '').split(/\n\s*\n/).map(t => t.trim()).filter(Boolean)
+    .map(t => '<p>' + escapeHtml(t).replace(/`([^`]+)`/g, '<code>$1</code>') + '</p>').join('');
+}
+
+// The Lean declarations an erratum points at: the refuting decl first, then the
+// curated references (the corrected statement, the printed conclusion, …).
+function erratumRefs(h, e) {
+  const all = [{ fqn: h.lean_fqn, label: 'Lean: the refutation' }, ...((e && e.refs) || [])];
+  return all.filter((r, i) => r && r.fqn && all.findIndex(x => x && x.fqn === r.fqn) === i);
+}
+
+// A refuted passage: explain what is wrong in the paper and how the
+// formalization repaired it, with buttons into the Lean.
+function showErratumPopover(h, ev) {
+  const pop = ensureHlPopover();
+  const e = h.erratum || {};
+  const refs = erratumRefs(h, e);
+  pop.className = 'erratum';
+  pop.innerHTML = '<div class="hlp-head erx-head">⚠ Error in the paper — refuted in Lean</div>' +
+    '<div class="erx-body">' +
+    (e.title ? '<div class="erx-title">' + escapeHtml(e.title) + '</div>' : '') +
+    (e.problem ? '<div class="erx-label">What is wrong</div>' + erratumParas(e.problem)
+               : (h.rationale ? erratumParas(h.rationale) : '')) +
+    (e.fix ? '<div class="erx-label">How the formalization fixes it</div>' + erratumParas(e.fix) : '') +
+    '<div class="erx-refs">' + refs.map((r, i) =>
+      '<button class="erx-ref" type="button" data-i="' + i + '" title="' + escapeHtml(r.fqn) + '">' +
+      escapeHtml(r.label || r.fqn.split('.').slice(-1)[0]) +
+      ' <span class="erx-fqn">' + escapeHtml(r.fqn.split('.').slice(-2).join('.')) + '</span></button>').join('') +
+    '</div></div>';
+  pop.hidden = false;
+  placePopover(pop, ev);
+  for (const b of pop.querySelectorAll('.erx-ref')) {
+    b.addEventListener('click', () => { hideHlPopover(); openLeanFromFqn(refs[+b.dataset.i].fqn); });
+  }
+}
 document.addEventListener('click', (e) => {
   const pop = document.getElementById('hl-popover');
   if (pop && !pop.hidden && !pop.contains(e.target)) hideHlPopover();
@@ -422,7 +482,7 @@ document.addEventListener('keydown', (e) => { if (e.key === 'Escape') hideHlPopo
 
 // Hover any row of a multi-line highlight → light up all rows of that link.
 function setHlHover(fqn, on) {
-  for (const el of document.querySelectorAll(`.lean-span-hl[data-hl-fqn="${CSS.escape(fqn)}"]`)) {
+  for (const el of document.querySelectorAll(`.lean-span-hl[data-hl-group="${CSS.escape(fqn)}"], .lean-hl-badge[data-hl-group="${CSS.escape(fqn)}"]`)) {
     el.classList.toggle('hl-hover', on);
   }
 }
@@ -679,6 +739,23 @@ function renderLinkWhy(decl) {
     const target = l.paper_label
       ? `<a class="lw-label" href="#" data-label="${escapeHtml(l.paper_label)}" title="Show in the PDF">${escapeHtml(l.paper_label)}</a>`
       : `<a class="lw-label" href="#" data-fqn="${escapeHtml(fqn)}" title="Show in the PDF">show in PDF ↩</a>`;
+    if (l.paper_status === 'refuted') {
+      // This decl refutes the printed passage: say so in red, with the erratum.
+      const e = l.erratum || {};
+      return `<div class="lw-row lw-refuted">
+        <div class="lw-line">
+          <span class="lw-rel">⚠ Refutes the printed text</span>
+          ${target}
+          <span class="lw-conf lw-${w}" title="confidence ${(c * 100) | 0}%">${w}</span>
+        </div>
+        <div class="lw-erratum">
+          ${e.title ? `<div class="lw-erx-title">${escapeHtml(e.title)}</div>` : ''}
+          ${e.problem ? `<div class="lw-erx-label">What is wrong</div>${erratumParas(e.problem)}` : ''}
+          ${e.fix ? `<div class="lw-erx-label">How the formalization fixes it</div>${erratumParas(e.fix)}` : ''}
+        </div>
+        ${l.rationale ? `<div class="lw-why">${escapeHtml(l.rationale)}</div>` : ''}
+      </div>`;
+    }
     return `<div class="lw-row">
       <div class="lw-line">
         <span class="lw-rel">${escapeHtml(relationPhrase(l.kind))}</span>

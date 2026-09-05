@@ -1450,6 +1450,8 @@
       "rationale": "The Strong Perfect Graph Theorem itself, statement 1.2 of the paper, and the main result of this development: for every graph on a finite vertex type, `IsPerfect G \u2194 Berge G`. The Lean statement quantifies over all graphs with no further hypothesis, exactly as printed, and is proved sorry-free (axioms `propext`, `Classical.choice`, `Quot.sound`). The forward direction is the paper's *\"It is easy to see that every perfect graph is Berge\"* (external result E5); the converse is obtained from `no_minimumImperfect` by passing to a minimum counterexample, which is the paper's *\"a counterexample to 1.2 with as few vertices as possible\"*.",
       "reachable": true,
       "assumption_tainted": false,
+      "refuted": false,
+      "erratum": null,
       "latex_file": "paper_text.tex",
       "latex_range": {
         "start_line": 51,
@@ -1477,6 +1479,8 @@
       "rationale": "External result cited by the paper, not proved in it: G. A. Dirac, *A property of 4-chromatic graphs and some remarks on critical graphs*, J. London Math. Soc. 27 (1952) 85\u201392 \u2014 every finite simple graph of minimum degree at least 3 contains a subdivision of K\u2084 as a subgraph. The paper invokes it without proof in the opening sentence of the proof of 5.3 (quoted). NOTE ON THE ARTIFACT: this module is filed under `PriorWork/`, but the declaration is no longer an `axiom` \u2014 it is a `theorem` with a complete Lean proof (via `ProofLemmas.DiracK4SubdivisionInduction` and `ProofLemmas.SubdivisionDatumRealize`, both sorry-free), so the result is discharged here rather than assumed. `Nonempty U` is a genuine hypothesis: on the empty vertex type the degree condition is vacuous but no subgraph can carry an injection `Fin 4 \u2192 S.verts`.",
       "reachable": true,
       "assumption_tainted": false,
+      "refuted": false,
+      "erratum": null,
       "latex_file": "paper_text.tex",
       "latex_range": {
         "start_line": 812,
@@ -1486,6 +1490,49 @@
       },
       "pdf_page": 22,
       "prose": "Proof. There is a subgraph of H which is a subdivision of K 4 , and we may assume that it does not satisfy the theorem. Hence there are tracks p 1 - \u00b7 \u00b7 \u00b7 -pm (= P say) and q1 - \u00b7 \u00b7 \u00b7 -qn (= Q say) of H,"
+    },
+    {
+      "link_id": "lnk_4e008ffd9feab13c",
+      "lean_fqn": "Workspace.ProofLemmas.Thm93CaseTwoCounterexample.not_conclusion",
+      "lean_file": "lean_workspace/Workspace/ProofLemmas/Thm93CaseTwoCounterexample.lean",
+      "lean_range": {
+        "start_line": 124,
+        "end_line": 151,
+        "start_col": null,
+        "end_col": null
+      },
+      "kind": "other",
+      "confidence": 0.9,
+      "source": "manual",
+      "verifier_vote": "none",
+      "rationale": "All four alternatives of 9.3 as printed fail for F = {x\u2081}.",
+      "reachable": false,
+      "assumption_tainted": false,
+      "refuted": true,
+      "erratum": {
+        "title": "Theorem 9.3, outcome 4, is false as printed",
+        "problem": "Outcome 4 asks for a vertex f \u2208 F with the same neighbours as x\u2081 in V(P\u2081) \u222a V(P\u2082) \u222a V(Q\u2082) that is not adjacent to y\u2081. This can fail when Q\u2081 is long. Let H be the bipartite subdivision of K\u2084 whose two diagonals become branches of length 4 and 2, let G be the complement of the line graph L(H) on its 10 edges, and add one vertex f with exactly the neighbours of x\u2081. With the knot P\u2081 = a\u2081-b\u2081, P\u2082 = a\u2082-b\u2082, Q\u2081 = x\u2081-z\u2081-z\u2082-y\u2081, Q\u2082 = x\u2082-y\u2082 and F = {f}, every hypothesis of 9.3 holds (G is Berge; G and its complement have no K\u2084-enlargement appearance and no overshadowed K\u2084 appearance; the attachments of F are not local), yet all four outcomes fail. Outcome 4 fails because f is adjacent to y\u2081, exactly as x\u2081 is.",
+        "fix": "The formalized statement `thm_9_3` weakens the last clause of outcome 4 to \"f has a non-neighbour on Q\u2081 other than x\u2081\" (here z\u2081). The printed clause implies this one, and the two agree when Q\u2081 has length 1, so case (1) of the printed proof is untouched; case (2) and everything downstream, up to the main theorem, go through with the weaker outcome.\n\nLean checks that the four lists form a knot, that f is a twin of x\u2081, and that all four printed outcomes fail (`not_conclusion`). The absence of K\u2084-enlargement appearances was verified by an exhaustive finite search outside Lean.",
+        "refs": [
+          {
+            "fqn": "Workspace.Statements.S09.SPGT.thm_9_3",
+            "label": "Lean: 9.3 with the corrected outcome 4"
+          },
+          {
+            "fqn": "Workspace.ProofLemmas.Thm93CaseTwoCounterexample.PrintedConclusion",
+            "label": "Lean: the conclusion of 9.3 exactly as printed"
+          }
+        ]
+      },
+      "latex_file": "paper_text.tex",
+      "latex_range": {
+        "start_line": 2030,
+        "end_line": 2031,
+        "start_col": null,
+        "end_col": null
+      },
+      "pdf_page": 50,
+      "prose": "4. there is a vertex f \u2208 F such that (up to symmetry) f, x 1 have the same neighbours in V (P1 ) \u222a V (P2 ) \u222a V (Q2 ) and f is not adjacent to y1 ."
     },
     {
       "link_id": "lnk_ba6c936ae3673d0f",
@@ -1504,6 +1551,8 @@
       "rationale": "A result cited from earlier literature, not proved in this paper; linked to the sentence of the paper that invokes it. The Lean statement of the paper's numbered result 1.1 (printed on PDF page 3).",
       "reachable": true,
       "assumption_tainted": false,
+      "refuted": false,
+      "erratum": null,
       "latex_file": "paper_text.tex",
       "latex_range": {
         "start_line": 50,
@@ -1531,6 +1580,8 @@
       "rationale": "The Lean statement of the paper's numbered result 1.3 (printed on PDF page 5).",
       "reachable": true,
       "assumption_tainted": false,
+      "refuted": false,
+      "erratum": null,
       "latex_file": "paper_text.tex",
       "latex_range": {
         "start_line": 130,
@@ -1558,6 +1609,8 @@
       "rationale": "The Lean statement of the paper's numbered result 1.5 (printed on PDF page 5).",
       "reachable": true,
       "assumption_tainted": false,
+      "refuted": false,
+      "erratum": null,
       "latex_file": "paper_text.tex",
       "latex_range": {
         "start_line": 148,
@@ -1585,6 +1638,8 @@
       "rationale": "A result cited from earlier literature, not proved in this paper; linked to the sentence of the paper that invokes it. E2, due to Cornu\u00e9jols and Cunningham [13]; the external fact the proof of 1.2 from 1.3 cites to rule out the proper-2-join outcome for a minimum imperfect graph.",
       "reachable": true,
       "assumption_tainted": false,
+      "refuted": false,
+      "erratum": null,
       "latex_file": "paper_text.tex",
       "latex_range": {
         "start_line": 189,
@@ -1612,6 +1667,8 @@
       "rationale": "A result cited from earlier literature, not proved in this paper; linked to the sentence of the paper that invokes it. E3, due to Chv\u00e1tal and Sbihi [7]; the external fact the proof of 1.2 from 1.3 cites to rule out the proper-homogeneous-pair outcome for a minimum imperfect graph.",
       "reachable": true,
       "assumption_tainted": false,
+      "refuted": false,
+      "erratum": null,
       "latex_file": "paper_text.tex",
       "latex_range": {
         "start_line": 191,
@@ -1639,6 +1696,8 @@
       "rationale": "A result cited from earlier literature, not proved in this paper; linked to the sentence of the paper that invokes it. E4 \u2014 every basic graph is perfect, combining the bipartite, line-graph-of-bipartite (K\u00f6nig), double-split, and complement (via 1.1) cases the paper sketches in the definition of \"basic\".",
       "reachable": true,
       "assumption_tainted": false,
+      "refuted": false,
+      "erratum": null,
       "latex_file": "paper_text.tex",
       "latex_range": {
         "start_line": 81,
@@ -1666,6 +1725,8 @@
       "rationale": "A result cited from earlier literature, not proved in this paper; linked to the sentence of the paper that invokes it. E5, the easy direction of 1.2 that the paper dispatches in one sentence, giving the reason a minimum imperfect graph is Berge but not perfect.",
       "reachable": true,
       "assumption_tainted": false,
+      "refuted": false,
+      "erratum": null,
       "latex_file": "paper_text.tex",
       "latex_range": {
         "start_line": 55,
@@ -1693,6 +1754,8 @@
       "rationale": "Chv\u00e1tal's star-cutset lemma [6], stated by the paper in its survey after the proof of 1.2 (the quoted sentence, PDF p. 7) and invoked inside the proof of 1.5 on PDF p. 6 ('Now by [6], there are at least two vertices of G not in H'). E6, due to Chv\u00e1tal [6] (with [2],[18]); the external fact used inside the proof of 1.5 that no minimum imperfect graph has a star cutset.",
       "reachable": true,
       "assumption_tainted": false,
+      "refuted": false,
+      "erratum": null,
       "latex_file": "paper_text.tex",
       "latex_range": {
         "start_line": 200,
@@ -1720,6 +1783,8 @@
       "rationale": "A result cited from earlier literature, not proved in this paper; linked to the sentence of the paper that invokes it. E7, the replication lemma of Lov\u00e1sz [16], invoked inside the proof of claim (2) of 1.5 to build a t-colourable perfect graph from H.",
       "reachable": true,
       "assumption_tainted": false,
+      "refuted": false,
+      "erratum": null,
       "latex_file": "paper_text.tex",
       "latex_range": {
         "start_line": 171,
@@ -1747,6 +1812,8 @@
       "rationale": "The Lean statement of the paper's numbered result 2.1 (printed on PDF page 10).",
       "reachable": true,
       "assumption_tainted": false,
+      "refuted": false,
+      "erratum": null,
       "latex_file": "paper_text.tex",
       "latex_range": {
         "start_line": 324,
@@ -1774,6 +1841,8 @@
       "rationale": "The Lean statement of the paper's numbered result 2.10 (printed on PDF page 14).",
       "reachable": true,
       "assumption_tainted": false,
+      "refuted": false,
+      "erratum": null,
       "latex_file": "paper_text.tex",
       "latex_range": {
         "start_line": 473,
@@ -1801,6 +1870,8 @@
       "rationale": "The Lean statement of the paper's numbered result 2.11 (printed on PDF page 14).",
       "reachable": true,
       "assumption_tainted": false,
+      "refuted": false,
+      "erratum": null,
       "latex_file": "paper_text.tex",
       "latex_range": {
         "start_line": 490,
@@ -1828,6 +1899,8 @@
       "rationale": "The Lean statement of the paper's numbered result 2.2 (printed on PDF page 10).",
       "reachable": true,
       "assumption_tainted": false,
+      "refuted": false,
+      "erratum": null,
       "latex_file": "paper_text.tex",
       "latex_range": {
         "start_line": 324,
@@ -1855,6 +1928,8 @@
       "rationale": "The Lean statement of the paper's numbered result 2.3 (printed on PDF page 10).",
       "reachable": true,
       "assumption_tainted": false,
+      "refuted": false,
+      "erratum": null,
       "latex_file": "paper_text.tex",
       "latex_range": {
         "start_line": 324,
@@ -1882,6 +1957,8 @@
       "rationale": "The Lean statement of the paper's numbered result 2.4 (printed on PDF page 11).",
       "reachable": true,
       "assumption_tainted": false,
+      "refuted": false,
+      "erratum": null,
       "latex_file": "paper_text.tex",
       "latex_range": {
         "start_line": 362,
@@ -1909,6 +1986,8 @@
       "rationale": "The Lean statement of the paper's numbered result 2.5 (printed on PDF page 11).",
       "reachable": true,
       "assumption_tainted": false,
+      "refuted": false,
+      "erratum": null,
       "latex_file": "paper_text.tex",
       "latex_range": {
         "start_line": 376,
@@ -1936,6 +2015,8 @@
       "rationale": "The Lean statement of the paper's numbered result 2.6 (printed on PDF page 11).",
       "reachable": true,
       "assumption_tainted": false,
+      "refuted": false,
+      "erratum": null,
       "latex_file": "paper_text.tex",
       "latex_range": {
         "start_line": 384,
@@ -1963,6 +2044,8 @@
       "rationale": "The Lean statement of the paper's numbered result 2.7 (printed on PDF page 11).",
       "reachable": true,
       "assumption_tainted": false,
+      "refuted": false,
+      "erratum": null,
       "latex_file": "paper_text.tex",
       "latex_range": {
         "start_line": 387,
@@ -1990,6 +2073,8 @@
       "rationale": "The Lean statement of the paper's numbered result 2.8 (printed on PDF page 12).",
       "reachable": true,
       "assumption_tainted": false,
+      "refuted": false,
+      "erratum": null,
       "latex_file": "paper_text.tex",
       "latex_range": {
         "start_line": 404,
@@ -2017,6 +2102,8 @@
       "rationale": "The Lean statement of the paper's numbered result 2.9 (printed on PDF page 13).",
       "reachable": true,
       "assumption_tainted": false,
+      "refuted": false,
+      "erratum": null,
       "latex_file": "paper_text.tex",
       "latex_range": {
         "start_line": 432,
@@ -2044,6 +2131,8 @@
       "rationale": "The Lean statement of the paper's numbered result 3.2 (printed on PDF page 15).",
       "reachable": true,
       "assumption_tainted": false,
+      "refuted": false,
+      "erratum": null,
       "latex_file": "paper_text.tex",
       "latex_range": {
         "start_line": 535,
@@ -2071,6 +2160,8 @@
       "rationale": "The Lean statement of the paper's numbered result 3.3 (printed on PDF page 15).",
       "reachable": true,
       "assumption_tainted": false,
+      "refuted": false,
+      "erratum": null,
       "latex_file": "paper_text.tex",
       "latex_range": {
         "start_line": 521,
@@ -2098,6 +2189,8 @@
       "rationale": "The Lean statement of the paper's numbered result 4.1 (printed on PDF page 16).",
       "reachable": true,
       "assumption_tainted": false,
+      "refuted": false,
+      "erratum": null,
       "latex_file": "paper_text.tex",
       "latex_range": {
         "start_line": 588,
@@ -2125,6 +2218,8 @@
       "rationale": "The Lean statement of the paper's numbered result 4.2 (printed on PDF page 17).",
       "reachable": true,
       "assumption_tainted": false,
+      "refuted": false,
+      "erratum": null,
       "latex_file": "paper_text.tex",
       "latex_range": {
         "start_line": 606,
@@ -2152,6 +2247,8 @@
       "rationale": "The Lean statement of the paper's numbered result 4.3 (printed on PDF page 17).",
       "reachable": true,
       "assumption_tainted": false,
+      "refuted": false,
+      "erratum": null,
       "latex_file": "paper_text.tex",
       "latex_range": {
         "start_line": 606,
@@ -2179,6 +2276,8 @@
       "rationale": "The Lean statement of the paper's numbered result 4.4 (printed on PDF page 18).",
       "reachable": true,
       "assumption_tainted": false,
+      "refuted": false,
+      "erratum": null,
       "latex_file": "paper_text.tex",
       "latex_range": {
         "start_line": 648,
@@ -2206,6 +2305,8 @@
       "rationale": "The Lean statement of the paper's numbered result 4.5 (printed on PDF page 19).",
       "reachable": true,
       "assumption_tainted": false,
+      "refuted": false,
+      "erratum": null,
       "latex_file": "paper_text.tex",
       "latex_range": {
         "start_line": 677,
@@ -2233,6 +2334,8 @@
       "rationale": "The Lean statement of the paper's numbered result 4.6 (printed on PDF page 19).",
       "reachable": true,
       "assumption_tainted": false,
+      "refuted": false,
+      "erratum": null,
       "latex_file": "paper_text.tex",
       "latex_range": {
         "start_line": 682,
@@ -2260,6 +2363,8 @@
       "rationale": "The Lean statement of the paper's numbered result 5.1 (printed on PDF page 20).",
       "reachable": true,
       "assumption_tainted": false,
+      "refuted": false,
+      "erratum": null,
       "latex_file": "paper_text.tex",
       "latex_range": {
         "start_line": 725,
@@ -2287,6 +2392,8 @@
       "rationale": "The Lean statement of the paper's numbered result 5.2 (printed on PDF page 20).",
       "reachable": true,
       "assumption_tainted": false,
+      "refuted": false,
+      "erratum": null,
       "latex_file": "paper_text.tex",
       "latex_range": {
         "start_line": 744,
@@ -2314,6 +2421,8 @@
       "rationale": "The Lean statement of the paper's numbered result 5.3 (printed on PDF page 22).",
       "reachable": true,
       "assumption_tainted": false,
+      "refuted": false,
+      "erratum": null,
       "latex_file": "paper_text.tex",
       "latex_range": {
         "start_line": 804,
@@ -2341,6 +2450,8 @@
       "rationale": "The Lean statement of the paper's numbered result 5.4 (printed on PDF page 23).",
       "reachable": true,
       "assumption_tainted": false,
+      "refuted": false,
+      "erratum": null,
       "latex_file": "paper_text.tex",
       "latex_range": {
         "start_line": 849,
@@ -2368,6 +2479,8 @@
       "rationale": "The Lean statement of the paper's numbered result 5.5 (printed on PDF page 23).",
       "reachable": true,
       "assumption_tainted": false,
+      "refuted": false,
+      "erratum": null,
       "latex_file": "paper_text.tex",
       "latex_range": {
         "start_line": 869,
@@ -2395,6 +2508,8 @@
       "rationale": "The Lean statement of the paper's numbered result 5.6 (printed on PDF page 23).",
       "reachable": true,
       "assumption_tainted": false,
+      "refuted": false,
+      "erratum": null,
       "latex_file": "paper_text.tex",
       "latex_range": {
         "start_line": 872,
@@ -2422,6 +2537,8 @@
       "rationale": "The Lean statement of the paper's numbered result 5.7 (printed on PDF page 24).",
       "reachable": true,
       "assumption_tainted": false,
+      "refuted": false,
+      "erratum": null,
       "latex_file": "paper_text.tex",
       "latex_range": {
         "start_line": 896,
@@ -2449,6 +2566,8 @@
       "rationale": "The Lean statement of the paper's numbered result 5.8 (printed on PDF page 27).",
       "reachable": true,
       "assumption_tainted": false,
+      "refuted": false,
+      "erratum": null,
       "latex_file": "paper_text.tex",
       "latex_range": {
         "start_line": 1021,
@@ -2476,6 +2595,8 @@
       "rationale": "The Lean statement of the paper's numbered result 6.1 (printed on PDF page 31).",
       "reachable": true,
       "assumption_tainted": false,
+      "refuted": false,
+      "erratum": null,
       "latex_file": "paper_text.tex",
       "latex_range": {
         "start_line": 1175,
@@ -2503,6 +2624,8 @@
       "rationale": "The Lean statement of the paper's numbered result 7.1 (printed on PDF page 36).",
       "reachable": true,
       "assumption_tainted": false,
+      "refuted": false,
+      "erratum": null,
       "latex_file": "paper_text.tex",
       "latex_range": {
         "start_line": 1417,
@@ -2530,6 +2653,8 @@
       "rationale": "The Lean statement of the paper's numbered result 7.2 (printed on PDF page 37).",
       "reachable": true,
       "assumption_tainted": false,
+      "refuted": false,
+      "erratum": null,
       "latex_file": "paper_text.tex",
       "latex_range": {
         "start_line": 1428,
@@ -2557,6 +2682,8 @@
       "rationale": "The Lean statement of the paper's numbered result 7.3 (printed on PDF page 37).",
       "reachable": true,
       "assumption_tainted": false,
+      "refuted": false,
+      "erratum": null,
       "latex_file": "paper_text.tex",
       "latex_range": {
         "start_line": 1430,
@@ -2584,6 +2711,8 @@
       "rationale": "The Lean statement of the paper's numbered result 7.4 (printed on PDF page 37).",
       "reachable": true,
       "assumption_tainted": false,
+      "refuted": false,
+      "erratum": null,
       "latex_file": "paper_text.tex",
       "latex_range": {
         "start_line": 1431,
@@ -2611,6 +2740,8 @@
       "rationale": "The Lean statement of the paper's numbered result 7.5 (printed on PDF page 37).",
       "reachable": true,
       "assumption_tainted": false,
+      "refuted": false,
+      "erratum": null,
       "latex_file": "paper_text.tex",
       "latex_range": {
         "start_line": 1444,
@@ -2638,6 +2769,8 @@
       "rationale": "The Lean statement of the paper's numbered result 8.1 (printed on PDF page 41).",
       "reachable": true,
       "assumption_tainted": false,
+      "refuted": false,
+      "erratum": null,
       "latex_file": "paper_text.tex",
       "latex_range": {
         "start_line": 1623,
@@ -2665,6 +2798,8 @@
       "rationale": "The Lean statement of the paper's numbered result 8.2 (printed on PDF page 42).",
       "reachable": true,
       "assumption_tainted": false,
+      "refuted": false,
+      "erratum": null,
       "latex_file": "paper_text.tex",
       "latex_range": {
         "start_line": 1635,
@@ -2692,6 +2827,8 @@
       "rationale": "The Lean statement of the paper's numbered result 8.3 (printed on PDF page 42).",
       "reachable": true,
       "assumption_tainted": false,
+      "refuted": false,
+      "erratum": null,
       "latex_file": "paper_text.tex",
       "latex_range": {
         "start_line": 1635,
@@ -2719,6 +2856,8 @@
       "rationale": "The Lean statement of the paper's numbered result 8.4 (printed on PDF page 42).",
       "reachable": true,
       "assumption_tainted": false,
+      "refuted": false,
+      "erratum": null,
       "latex_file": "paper_text.tex",
       "latex_range": {
         "start_line": 1635,
@@ -2746,6 +2885,8 @@
       "rationale": "The Lean statement of the paper's numbered result 8.5 (printed on PDF page 44).",
       "reachable": true,
       "assumption_tainted": false,
+      "refuted": false,
+      "erratum": null,
       "latex_file": "paper_text.tex",
       "latex_range": {
         "start_line": 1771,
@@ -2773,6 +2914,8 @@
       "rationale": "The Lean statement of the paper's numbered result 8.6 (printed on PDF page 47).",
       "reachable": true,
       "assumption_tainted": false,
+      "refuted": false,
+      "erratum": null,
       "latex_file": "paper_text.tex",
       "latex_range": {
         "start_line": 1891,
@@ -2800,6 +2943,8 @@
       "rationale": "The Lean statement of the paper's numbered result 9.1 (printed on PDF page 49).",
       "reachable": true,
       "assumption_tainted": false,
+      "refuted": false,
+      "erratum": null,
       "latex_file": "paper_text.tex",
       "latex_range": {
         "start_line": 1991,
@@ -2827,6 +2972,8 @@
       "rationale": "The Lean statement of the paper's numbered result 9.2 (printed on PDF page 50).",
       "reachable": true,
       "assumption_tainted": false,
+      "refuted": false,
+      "erratum": null,
       "latex_file": "paper_text.tex",
       "latex_range": {
         "start_line": 2013,
@@ -2854,6 +3001,8 @@
       "rationale": "The Lean statement of the paper's 9.3 (PDF p. 50), with one documented, user-approved deviation: the printed final clause of outcome 9.3.4, 'f is not adjacent to y1', is false (an eleven-vertex twin-of-x1 counterexample, see REPORT.md and lean_workspace/REPORT.md); the Lean 9.3.4 asks instead for a non-neighbour of f on the antipath of x other than x, which is strictly weaker.",
       "reachable": true,
       "assumption_tainted": false,
+      "refuted": false,
+      "erratum": null,
       "latex_file": "paper_text.tex",
       "latex_range": {
         "start_line": 2010,
@@ -2881,6 +3030,8 @@
       "rationale": "The Lean statement of the paper's numbered result 9.4 (printed on PDF page 53).",
       "reachable": true,
       "assumption_tainted": false,
+      "refuted": false,
+      "erratum": null,
       "latex_file": "paper_text.tex",
       "latex_range": {
         "start_line": 2130,
@@ -2908,6 +3059,8 @@
       "rationale": "The Lean statement of the paper's numbered result 9.5 (printed on PDF page 54).",
       "reachable": true,
       "assumption_tainted": false,
+      "refuted": false,
+      "erratum": null,
       "latex_file": "paper_text.tex",
       "latex_range": {
         "start_line": 2171,
@@ -2935,6 +3088,8 @@
       "rationale": "The Lean statement of the paper's numbered result 9.6 (printed on PDF page 56).",
       "reachable": true,
       "assumption_tainted": false,
+      "refuted": false,
+      "erratum": null,
       "latex_file": "paper_text.tex",
       "latex_range": {
         "start_line": 2268,
@@ -2962,6 +3117,8 @@
       "rationale": "The Lean statement of the paper's numbered result 9.7 (printed on PDF page 58).",
       "reachable": true,
       "assumption_tainted": false,
+      "refuted": false,
+      "erratum": null,
       "latex_file": "paper_text.tex",
       "latex_range": {
         "start_line": 2332,
@@ -2989,6 +3146,8 @@
       "rationale": "The Lean statement of the paper's numbered result 10.1 (printed on PDF page 58).",
       "reachable": true,
       "assumption_tainted": false,
+      "refuted": false,
+      "erratum": null,
       "latex_file": "paper_text.tex",
       "latex_range": {
         "start_line": 2349,
@@ -3016,6 +3175,8 @@
       "rationale": "The Lean statement of the paper's numbered result 10.2 (printed on PDF page 60).",
       "reachable": true,
       "assumption_tainted": false,
+      "refuted": false,
+      "erratum": null,
       "latex_file": "paper_text.tex",
       "latex_range": {
         "start_line": 2425,
@@ -3043,6 +3204,8 @@
       "rationale": "The Lean statement of the paper's numbered result 10.3 (printed on PDF page 60).",
       "reachable": true,
       "assumption_tainted": false,
+      "refuted": false,
+      "erratum": null,
       "latex_file": "paper_text.tex",
       "latex_range": {
         "start_line": 2434,
@@ -3070,6 +3233,8 @@
       "rationale": "The Lean statement of the paper's numbered result 10.4 (printed on PDF page 61).",
       "reachable": true,
       "assumption_tainted": false,
+      "refuted": false,
+      "erratum": null,
       "latex_file": "paper_text.tex",
       "latex_range": {
         "start_line": 2459,
@@ -3097,6 +3262,8 @@
       "rationale": "The Lean statement of the paper's numbered result 10.5 (printed on PDF page 61).",
       "reachable": true,
       "assumption_tainted": false,
+      "refuted": false,
+      "erratum": null,
       "latex_file": "paper_text.tex",
       "latex_range": {
         "start_line": 2471,
@@ -3124,6 +3291,8 @@
       "rationale": "The Lean statement of the paper's numbered result 10.6 (printed on PDF page 62).",
       "reachable": true,
       "assumption_tainted": false,
+      "refuted": false,
+      "erratum": null,
       "latex_file": "paper_text.tex",
       "latex_range": {
         "start_line": 2501,
@@ -3151,6 +3320,8 @@
       "rationale": "The Lean statement of the paper's numbered result 11.1 (printed on PDF page 66).",
       "reachable": true,
       "assumption_tainted": false,
+      "refuted": false,
+      "erratum": null,
       "latex_file": "paper_text.tex",
       "latex_range": {
         "start_line": 2672,
@@ -3178,6 +3349,8 @@
       "rationale": "The Lean statement of the paper's numbered result 11.2 (printed on PDF page 66).",
       "reachable": true,
       "assumption_tainted": false,
+      "refuted": false,
+      "erratum": null,
       "latex_file": "paper_text.tex",
       "latex_range": {
         "start_line": 2672,
@@ -3205,6 +3378,8 @@
       "rationale": "The Lean statement of the paper's numbered result 11.3 (printed on PDF page 67).",
       "reachable": true,
       "assumption_tainted": false,
+      "refuted": false,
+      "erratum": null,
       "latex_file": "paper_text.tex",
       "latex_range": {
         "start_line": 2717,
@@ -3232,6 +3407,8 @@
       "rationale": "The Lean statement of the paper's numbered result 11.4 (printed on PDF page 67).",
       "reachable": true,
       "assumption_tainted": false,
+      "refuted": false,
+      "erratum": null,
       "latex_file": "paper_text.tex",
       "latex_range": {
         "start_line": 2711,
@@ -3259,6 +3436,8 @@
       "rationale": "The Lean statement of the paper's numbered result 11.5 (printed on PDF page 68).",
       "reachable": true,
       "assumption_tainted": false,
+      "refuted": false,
+      "erratum": null,
       "latex_file": "paper_text.tex",
       "latex_range": {
         "start_line": 2761,
@@ -3286,6 +3465,8 @@
       "rationale": "The Lean statement of the paper's numbered result 12.1 (printed on PDF page 71).",
       "reachable": true,
       "assumption_tainted": false,
+      "refuted": false,
+      "erratum": null,
       "latex_file": "paper_text.tex",
       "latex_range": {
         "start_line": 2873,
@@ -3313,6 +3494,8 @@
       "rationale": "The Lean statement of the paper's numbered result 12.2 (printed on PDF page 73).",
       "reachable": true,
       "assumption_tainted": false,
+      "refuted": false,
+      "erratum": null,
       "latex_file": "paper_text.tex",
       "latex_range": {
         "start_line": 2932,
@@ -3340,6 +3523,8 @@
       "rationale": "The Lean statement of the paper's numbered result 12.3 (printed on PDF page 74).",
       "reachable": true,
       "assumption_tainted": false,
+      "refuted": false,
+      "erratum": null,
       "latex_file": "paper_text.tex",
       "latex_range": {
         "start_line": 2997,
@@ -3367,6 +3552,8 @@
       "rationale": "The Lean statement of the paper's numbered result 12.4 (printed on PDF page 76).",
       "reachable": true,
       "assumption_tainted": false,
+      "refuted": false,
+      "erratum": null,
       "latex_file": "paper_text.tex",
       "latex_range": {
         "start_line": 3066,
@@ -3394,6 +3581,8 @@
       "rationale": "The Lean statement of the paper's numbered result 12.5 (printed on PDF page 78).",
       "reachable": true,
       "assumption_tainted": false,
+      "refuted": false,
+      "erratum": null,
       "latex_file": "paper_text.tex",
       "latex_range": {
         "start_line": 3149,
@@ -3421,6 +3610,8 @@
       "rationale": "The Lean statement of the paper's numbered result 13.1 (printed on PDF page 81).",
       "reachable": true,
       "assumption_tainted": false,
+      "refuted": false,
+      "erratum": null,
       "latex_file": "paper_text.tex",
       "latex_range": {
         "start_line": 3252,
@@ -3448,6 +3639,8 @@
       "rationale": "The Lean statement of the paper's numbered result 13.2 (printed on PDF page 83).",
       "reachable": true,
       "assumption_tainted": false,
+      "refuted": false,
+      "erratum": null,
       "latex_file": "paper_text.tex",
       "latex_range": {
         "start_line": 3347,
@@ -3475,6 +3668,8 @@
       "rationale": "The Lean statement of the paper's numbered result 13.3 (printed on PDF page 85).",
       "reachable": true,
       "assumption_tainted": false,
+      "refuted": false,
+      "erratum": null,
       "latex_file": "paper_text.tex",
       "latex_range": {
         "start_line": 3419,
@@ -3502,6 +3697,8 @@
       "rationale": "The Lean statement of the paper's numbered result 13.4 (printed on PDF page 86).",
       "reachable": true,
       "assumption_tainted": false,
+      "refuted": false,
+      "erratum": null,
       "latex_file": "paper_text.tex",
       "latex_range": {
         "start_line": 3478,
@@ -3529,6 +3726,8 @@
       "rationale": "The Lean statement of the paper's numbered result 13.5 (printed on PDF page 88).",
       "reachable": true,
       "assumption_tainted": false,
+      "refuted": false,
+      "erratum": null,
       "latex_file": "paper_text.tex",
       "latex_range": {
         "start_line": 3534,
@@ -3556,6 +3755,8 @@
       "rationale": "The Lean statement of the paper's numbered result 13.6 (printed on PDF page 88).",
       "reachable": true,
       "assumption_tainted": false,
+      "refuted": false,
+      "erratum": null,
       "latex_file": "paper_text.tex",
       "latex_range": {
         "start_line": 3543,
@@ -3583,6 +3784,8 @@
       "rationale": "The Lean statement of the paper's numbered result 13.7 (printed on PDF page 88).",
       "reachable": true,
       "assumption_tainted": false,
+      "refuted": false,
+      "erratum": null,
       "latex_file": "paper_text.tex",
       "latex_range": {
         "start_line": 3552,
@@ -3610,6 +3813,8 @@
       "rationale": "The Lean statement of the paper's numbered result 14.1 (printed on PDF page 89).",
       "reachable": true,
       "assumption_tainted": false,
+      "refuted": false,
+      "erratum": null,
       "latex_file": "paper_text.tex",
       "latex_range": {
         "start_line": 3598,
@@ -3637,6 +3842,8 @@
       "rationale": "The Lean statement of the paper's numbered result 14.2 (printed on PDF page 90).",
       "reachable": true,
       "assumption_tainted": false,
+      "refuted": false,
+      "erratum": null,
       "latex_file": "paper_text.tex",
       "latex_range": {
         "start_line": 3604,
@@ -3664,6 +3871,8 @@
       "rationale": "The Lean statement of the paper's numbered result 14.3 (printed on PDF page 93).",
       "reachable": true,
       "assumption_tainted": false,
+      "refuted": false,
+      "erratum": null,
       "latex_file": "paper_text.tex",
       "latex_range": {
         "start_line": 3739,
@@ -3691,6 +3900,8 @@
       "rationale": "The Lean statement of the paper's numbered result 14.3 (printed on PDF page 93). This module carries the closing hypothesis-free sentence of that statement.",
       "reachable": true,
       "assumption_tainted": false,
+      "refuted": false,
+      "erratum": null,
       "latex_file": "paper_text.tex",
       "latex_range": {
         "start_line": 3739,
@@ -3718,6 +3929,8 @@
       "rationale": "The Lean statement of the paper's numbered result 15.1 (printed on PDF page 94).",
       "reachable": true,
       "assumption_tainted": false,
+      "refuted": false,
+      "erratum": null,
       "latex_file": "paper_text.tex",
       "latex_range": {
         "start_line": 3808,
@@ -3745,6 +3958,8 @@
       "rationale": "The Lean statement of the paper's numbered result 15.2 (printed on PDF page 95).",
       "reachable": true,
       "assumption_tainted": false,
+      "refuted": false,
+      "erratum": null,
       "latex_file": "paper_text.tex",
       "latex_range": {
         "start_line": 3832,
@@ -3772,6 +3987,8 @@
       "rationale": "The Lean statement of the paper's numbered result 15.3 (printed on PDF page 95).",
       "reachable": true,
       "assumption_tainted": false,
+      "refuted": false,
+      "erratum": null,
       "latex_file": "paper_text.tex",
       "latex_range": {
         "start_line": 3848,
@@ -3799,6 +4016,8 @@
       "rationale": "The Lean statement of the paper's numbered result 15.4 (printed on PDF page 96).",
       "reachable": true,
       "assumption_tainted": false,
+      "refuted": false,
+      "erratum": null,
       "latex_file": "paper_text.tex",
       "latex_range": {
         "start_line": 3864,
@@ -3826,6 +4045,8 @@
       "rationale": "The Lean statement of the paper's numbered result 15.5 (printed on PDF page 96).",
       "reachable": true,
       "assumption_tainted": false,
+      "refuted": false,
+      "erratum": null,
       "latex_file": "paper_text.tex",
       "latex_range": {
         "start_line": 3872,
@@ -3853,6 +4074,8 @@
       "rationale": "The Lean statement of the paper's numbered result 15.6 (printed on PDF page 96).",
       "reachable": true,
       "assumption_tainted": false,
+      "refuted": false,
+      "erratum": null,
       "latex_file": "paper_text.tex",
       "latex_range": {
         "start_line": 3872,
@@ -3880,6 +4103,8 @@
       "rationale": "The Lean statement of the paper's numbered result 15.7 (printed on PDF page 97).",
       "reachable": true,
       "assumption_tainted": false,
+      "refuted": false,
+      "erratum": null,
       "latex_file": "paper_text.tex",
       "latex_range": {
         "start_line": 3931,
@@ -3907,6 +4132,8 @@
       "rationale": "The Lean statement of the paper's numbered result 16.1 (printed on PDF page 98).",
       "reachable": true,
       "assumption_tainted": false,
+      "refuted": false,
+      "erratum": null,
       "latex_file": "paper_text.tex",
       "latex_range": {
         "start_line": 3966,
@@ -3934,6 +4161,8 @@
       "rationale": "The Lean statement of the paper's numbered result 16.2 (printed on PDF page 100).",
       "reachable": true,
       "assumption_tainted": false,
+      "refuted": false,
+      "erratum": null,
       "latex_file": "paper_text.tex",
       "latex_range": {
         "start_line": 4030,
@@ -3961,6 +4190,8 @@
       "rationale": "The Lean statement of the paper's numbered result 16.3 (printed on PDF page 103).",
       "reachable": true,
       "assumption_tainted": false,
+      "refuted": false,
+      "erratum": null,
       "latex_file": "paper_text.tex",
       "latex_range": {
         "start_line": 4167,
@@ -3988,6 +4219,8 @@
       "rationale": "The Lean statement of the paper's numbered result 16.3 (printed on PDF page 103). This module carries the closing hypothesis-free sentence of that statement.",
       "reachable": true,
       "assumption_tainted": false,
+      "refuted": false,
+      "erratum": null,
       "latex_file": "paper_text.tex",
       "latex_range": {
         "start_line": 4167,
@@ -4015,6 +4248,8 @@
       "rationale": "The Lean statement of the paper's numbered result 17.1 (printed on PDF page 104).",
       "reachable": true,
       "assumption_tainted": false,
+      "refuted": false,
+      "erratum": null,
       "latex_file": "paper_text.tex",
       "latex_range": {
         "start_line": 4221,
@@ -4042,6 +4277,8 @@
       "rationale": "The Lean statement of the paper's numbered result 17.2 (printed on PDF page 105).",
       "reachable": true,
       "assumption_tainted": false,
+      "refuted": false,
+      "erratum": null,
       "latex_file": "paper_text.tex",
       "latex_range": {
         "start_line": 4253,
@@ -4069,6 +4306,8 @@
       "rationale": "The Lean statement of the paper's numbered result 17.3 (printed on PDF page 106).",
       "reachable": true,
       "assumption_tainted": false,
+      "refuted": false,
+      "erratum": null,
       "latex_file": "paper_text.tex",
       "latex_range": {
         "start_line": 4272,
@@ -4096,6 +4335,8 @@
       "rationale": "The Lean statement of the paper's numbered result 17.4 (printed on PDF page 107).",
       "reachable": true,
       "assumption_tainted": false,
+      "refuted": false,
+      "erratum": null,
       "latex_file": "paper_text.tex",
       "latex_range": {
         "start_line": 4321,
@@ -4123,6 +4364,8 @@
       "rationale": "The Lean statement of the paper's numbered result 17.5 (printed on PDF page 107).",
       "reachable": true,
       "assumption_tainted": false,
+      "refuted": false,
+      "erratum": null,
       "latex_file": "paper_text.tex",
       "latex_range": {
         "start_line": 4321,
@@ -4150,6 +4393,8 @@
       "rationale": "The Lean statement of the paper's numbered result 18.2 (printed on PDF page 111).",
       "reachable": true,
       "assumption_tainted": false,
+      "refuted": false,
+      "erratum": null,
       "latex_file": "paper_text.tex",
       "latex_range": {
         "start_line": 4486,
@@ -4177,6 +4422,8 @@
       "rationale": "The Lean statement of the paper's numbered result 18.3 (printed on PDF page 112).",
       "reachable": true,
       "assumption_tainted": false,
+      "refuted": false,
+      "erratum": null,
       "latex_file": "paper_text.tex",
       "latex_range": {
         "start_line": 4522,
@@ -4204,6 +4451,8 @@
       "rationale": "The Lean statement of the paper's numbered result 18.4 (printed on PDF page 113).",
       "reachable": true,
       "assumption_tainted": false,
+      "refuted": false,
+      "erratum": null,
       "latex_file": "paper_text.tex",
       "latex_range": {
         "start_line": 4564,
@@ -4231,6 +4480,8 @@
       "rationale": "The Lean statement of the paper's numbered result 18.5 (printed on PDF page 113).",
       "reachable": true,
       "assumption_tainted": false,
+      "refuted": false,
+      "erratum": null,
       "latex_file": "paper_text.tex",
       "latex_range": {
         "start_line": 4564,
@@ -4258,6 +4509,8 @@
       "rationale": "The Lean statement of the paper's numbered result 18.6 (printed on PDF page 116).",
       "reachable": true,
       "assumption_tainted": false,
+      "refuted": false,
+      "erratum": null,
       "latex_file": "paper_text.tex",
       "latex_range": {
         "start_line": 4694,
@@ -4285,6 +4538,8 @@
       "rationale": "The Lean statement of the paper's numbered result 18.7 (printed on PDF page 117).",
       "reachable": true,
       "assumption_tainted": false,
+      "refuted": false,
+      "erratum": null,
       "latex_file": "paper_text.tex",
       "latex_range": {
         "start_line": 4753,
@@ -4312,6 +4567,8 @@
       "rationale": "The Lean statement of the paper's numbered result 18.7 (printed on PDF page 117). This module carries the closing hypothesis-free sentence of that statement.",
       "reachable": true,
       "assumption_tainted": false,
+      "refuted": false,
+      "erratum": null,
       "latex_file": "paper_text.tex",
       "latex_range": {
         "start_line": 4753,
@@ -4339,6 +4596,8 @@
       "rationale": "The Lean statement of the paper's numbered result 19.1 (printed on PDF page 119).",
       "reachable": true,
       "assumption_tainted": false,
+      "refuted": false,
+      "erratum": null,
       "latex_file": "paper_text.tex",
       "latex_range": {
         "start_line": 4802,
@@ -4366,6 +4625,8 @@
       "rationale": "The Lean statement of the paper's numbered result 19.2 (printed on PDF page 120).",
       "reachable": true,
       "assumption_tainted": false,
+      "refuted": false,
+      "erratum": null,
       "latex_file": "paper_text.tex",
       "latex_range": {
         "start_line": 4846,
@@ -4393,6 +4654,8 @@
       "rationale": "The Lean statement of the paper's numbered result 20.1 (printed on PDF page 126).",
       "reachable": true,
       "assumption_tainted": false,
+      "refuted": false,
+      "erratum": null,
       "latex_file": "paper_text.tex",
       "latex_range": {
         "start_line": 5093,
@@ -4420,6 +4683,8 @@
       "rationale": "The Lean statement of the paper's numbered result 20.2 (printed on PDF page 126).",
       "reachable": true,
       "assumption_tainted": false,
+      "refuted": false,
+      "erratum": null,
       "latex_file": "paper_text.tex",
       "latex_range": {
         "start_line": 5093,
@@ -4447,6 +4712,8 @@
       "rationale": "The packaged core of 20.3: given a Y-diamond of height \u2265 4 with no smaller anticonnected diamond, square or polished diamond, derives that `z` is `Y`-complete and `G` contains a wheel `(C,Y)`; `thm_20_3` is exactly `assembly` applied to its stated hypotheses.",
       "reachable": true,
       "assumption_tainted": false,
+      "refuted": false,
+      "erratum": null,
       "latex_file": "paper_text.tex",
       "latex_range": {
         "start_line": 5143,
@@ -4474,6 +4741,8 @@
       "rationale": "The Lean statement of the paper's numbered result 20.3 (printed on PDF page 127).",
       "reachable": true,
       "assumption_tainted": false,
+      "refuted": false,
+      "erratum": null,
       "latex_file": "paper_text.tex",
       "latex_range": {
         "start_line": 5132,
@@ -4501,6 +4770,8 @@
       "rationale": "The Lean statement of the paper's numbered result 20.4 (printed on PDF page 130).",
       "reachable": true,
       "assumption_tainted": false,
+      "refuted": false,
+      "erratum": null,
       "latex_file": "paper_text.tex",
       "latex_range": {
         "start_line": 5249,
@@ -4528,6 +4799,8 @@
       "rationale": "The Lean statement of the paper's numbered result 20.5 (printed on PDF page 131).",
       "reachable": true,
       "assumption_tainted": false,
+      "refuted": false,
+      "erratum": null,
       "latex_file": "paper_text.tex",
       "latex_range": {
         "start_line": 5287,
@@ -4555,6 +4828,8 @@
       "rationale": "The Lean statement of the paper's numbered result 21.1 (printed on PDF page 132).",
       "reachable": true,
       "assumption_tainted": false,
+      "refuted": false,
+      "erratum": null,
       "latex_file": "paper_text.tex",
       "latex_range": {
         "start_line": 5348,
@@ -4582,6 +4857,8 @@
       "rationale": "The Lean statement of the paper's numbered result 21.2 (printed on PDF page 133).",
       "reachable": true,
       "assumption_tainted": false,
+      "refuted": false,
+      "erratum": null,
       "latex_file": "paper_text.tex",
       "latex_range": {
         "start_line": 5356,
@@ -4609,6 +4886,8 @@
       "rationale": "The Lean statement of the paper's numbered result 21.3 (printed on PDF page 137).",
       "reachable": true,
       "assumption_tainted": false,
+      "refuted": false,
+      "erratum": null,
       "latex_file": "paper_text.tex",
       "latex_range": {
         "start_line": 5519,
@@ -4636,6 +4915,8 @@
       "rationale": "The Lean statement of the paper's numbered result 22.1 (printed on PDF page 137).",
       "reachable": true,
       "assumption_tainted": false,
+      "refuted": false,
+      "erratum": null,
       "latex_file": "paper_text.tex",
       "latex_range": {
         "start_line": 5532,
@@ -4663,6 +4944,8 @@
       "rationale": "The Lean statement of the paper's numbered result 22.2 (printed on PDF page 138).",
       "reachable": true,
       "assumption_tainted": false,
+      "refuted": false,
+      "erratum": null,
       "latex_file": "paper_text.tex",
       "latex_range": {
         "start_line": 5564,
@@ -4690,6 +4973,8 @@
       "rationale": "The Lean statement of the paper's numbered result 22.3 (printed on PDF page 138).",
       "reachable": true,
       "assumption_tainted": false,
+      "refuted": false,
+      "erratum": null,
       "latex_file": "paper_text.tex",
       "latex_range": {
         "start_line": 5564,
@@ -4717,6 +5002,8 @@
       "rationale": "The Lean statement of the paper's numbered result 22.4 (printed on PDF page 138).",
       "reachable": true,
       "assumption_tainted": false,
+      "refuted": false,
+      "erratum": null,
       "latex_file": "paper_text.tex",
       "latex_range": {
         "start_line": 5557,
@@ -4744,6 +5031,8 @@
       "rationale": "The Lean statement of the paper's numbered result 22.5 (printed on PDF page 141).",
       "reachable": true,
       "assumption_tainted": false,
+      "refuted": false,
+      "erratum": null,
       "latex_file": "paper_text.tex",
       "latex_range": {
         "start_line": 5676,
@@ -4771,6 +5060,8 @@
       "rationale": "The Lean statement of the paper's numbered result 23.1 (printed on PDF page 141).",
       "reachable": true,
       "assumption_tainted": false,
+      "refuted": false,
+      "erratum": null,
       "latex_file": "paper_text.tex",
       "latex_range": {
         "start_line": 5676,
@@ -4798,6 +5089,8 @@
       "rationale": "The Lean statement of the paper's numbered result 23.2 (printed on PDF page 141).",
       "reachable": true,
       "assumption_tainted": false,
+      "refuted": false,
+      "erratum": null,
       "latex_file": "paper_text.tex",
       "latex_range": {
         "start_line": 5708,
@@ -4825,6 +5118,8 @@
       "rationale": "The Lean statement of the paper's numbered result 23.2 (printed on PDF page 141). This module carries the closing hypothesis-free sentence of that statement.",
       "reachable": true,
       "assumption_tainted": false,
+      "refuted": false,
+      "erratum": null,
       "latex_file": "paper_text.tex",
       "latex_range": {
         "start_line": 5708,
@@ -4852,6 +5147,8 @@
       "rationale": "The Lean statement of the paper's numbered result 23.3 (printed on PDF page 143).",
       "reachable": true,
       "assumption_tainted": false,
+      "refuted": false,
+      "erratum": null,
       "latex_file": "paper_text.tex",
       "latex_range": {
         "start_line": 5779,
@@ -4879,6 +5176,8 @@
       "rationale": "The Lean statement of the paper's numbered result 23.4 (printed on PDF page 144).",
       "reachable": true,
       "assumption_tainted": false,
+      "refuted": false,
+      "erratum": null,
       "latex_file": "paper_text.tex",
       "latex_range": {
         "start_line": 5793,
@@ -4906,6 +5205,8 @@
       "rationale": "The Lean statement of the paper's numbered result 23.4 (printed on PDF page 144). This module carries the closing hypothesis-free sentence of that statement.",
       "reachable": true,
       "assumption_tainted": false,
+      "refuted": false,
+      "erratum": null,
       "latex_file": "paper_text.tex",
       "latex_range": {
         "start_line": 5793,
@@ -4933,6 +5234,8 @@
       "rationale": "The body of the printed proof of 23.5: same statement, verb for verb, as `thm_23_5` (identical hypotheses `InF10 G` and identical conclusion) \u2014 `thm_23_5` is just `thm_23_5_main` re-exported under the frozen-context namespace.",
       "reachable": true,
       "assumption_tainted": false,
+      "refuted": false,
+      "erratum": null,
       "latex_file": "paper_text.tex",
       "latex_range": {
         "start_line": 5814,
@@ -4960,6 +5263,8 @@
       "rationale": "The Lean statement of the paper's numbered result 23.5 (printed on PDF page 144).",
       "reachable": true,
       "assumption_tainted": false,
+      "refuted": false,
+      "erratum": null,
       "latex_file": "paper_text.tex",
       "latex_range": {
         "start_line": 5814,
@@ -4987,6 +5292,8 @@
       "rationale": "The Lean statement of the paper's numbered result 23.5 (printed on PDF page 144). This module carries the closing hypothesis-free sentence of that statement.",
       "reachable": true,
       "assumption_tainted": false,
+      "refuted": false,
+      "erratum": null,
       "latex_file": "paper_text.tex",
       "latex_range": {
         "start_line": 5814,
@@ -5014,6 +5321,8 @@
       "rationale": "The Lean statement of the paper's numbered result 24.1 (printed on PDF page 145).",
       "reachable": true,
       "assumption_tainted": false,
+      "refuted": false,
+      "erratum": null,
       "latex_file": "paper_text.tex",
       "latex_range": {
         "start_line": 5878,
@@ -5041,6 +5350,8 @@
       "rationale": "The Lean statement of the paper's numbered result 24.2 (printed on PDF page 145).",
       "reachable": true,
       "assumption_tainted": false,
+      "refuted": false,
+      "erratum": null,
       "latex_file": "paper_text.tex",
       "latex_range": {
         "start_line": 5881,
@@ -5068,6 +5379,8 @@
       "rationale": "The Lean statement of the paper's numbered result 24.3 (printed on PDF page 146).",
       "reachable": true,
       "assumption_tainted": false,
+      "refuted": false,
+      "erratum": null,
       "latex_file": "paper_text.tex",
       "latex_range": {
         "start_line": 5888,
@@ -5095,6 +5408,8 @@
       "rationale": "The Lean statement of the paper's numbered result 24.4 (printed on PDF page 146).",
       "reachable": true,
       "assumption_tainted": false,
+      "refuted": false,
+      "erratum": null,
       "latex_file": "paper_text.tex",
       "latex_range": {
         "start_line": 5897,
@@ -5122,6 +5437,8 @@
       "rationale": "The Lean statement of the paper's numbered result 24.5 (printed on PDF page 147).",
       "reachable": true,
       "assumption_tainted": false,
+      "refuted": false,
+      "erratum": null,
       "latex_file": "paper_text.tex",
       "latex_range": {
         "start_line": 5944,
@@ -5149,6 +5466,8 @@
       "rationale": "The Lean statement of the paper's numbered result 24.6 (printed on PDF page 147).",
       "reachable": true,
       "assumption_tainted": false,
+      "refuted": false,
+      "erratum": null,
       "latex_file": "paper_text.tex",
       "latex_range": {
         "start_line": 5944,
@@ -5176,6 +5495,8 @@
       "rationale": "The Lean statement of the paper's numbered result 24.7 (printed on PDF page 148).",
       "reachable": true,
       "assumption_tainted": false,
+      "refuted": false,
+      "erratum": null,
       "latex_file": "paper_text.tex",
       "latex_range": {
         "start_line": 5967,
@@ -5203,6 +5524,8 @@
       "rationale": "`Appears` is the Lean transcription of this defining sentence, quoted verbatim in its doc-comment. \"There is a bipartite subdivision H\" quantifies over all finite graphs, which throughout this project is rendered by \u2203 (n : \u2115) (H : SimpleGraph (Fin n)).",
       "reachable": true,
       "assumption_tainted": false,
+      "refuted": false,
+      "erratum": null,
       "latex_file": "paper_text.tex",
       "latex_range": {
         "start_line": 834,
@@ -5230,6 +5553,8 @@
       "rationale": "`DegenerateAppearance` is the Lean transcription of this defining sentence, quoted verbatim in its doc-comment; the definition dispatches on whether J is K\u2084. Equality of graphs given on different vertex types is isomorphism (Nonempty (\u00b7 \u2243g \u00b7)), as everywhere in this project. K\u2084 is the complete graph \u22a4 : SimpleGraph (Fin 4) and K\u2083,\u2083 is completeBipartiteGraph (Fin 3) (Fin 3).",
       "reachable": true,
       "assumption_tainted": false,
+      "refuted": false,
+      "erratum": null,
       "latex_file": "paper_text.tex",
       "latex_range": {
         "start_line": 841,
@@ -5257,6 +5582,8 @@
       "rationale": "`DegenerateK4Appearance` is the Lean transcription of this defining sentence, quoted verbatim in its doc-comment. A cycle of H of length four is a subgraph of H (not an induced subgraph), so it is given by four distinct vertices a, b, c, d that are cyclically adjacent in H.",
       "reachable": true,
       "assumption_tainted": false,
+      "refuted": false,
+      "erratum": null,
       "latex_file": "paper_text.tex",
       "latex_range": {
         "start_line": 741,
@@ -5284,6 +5611,8 @@
       "rationale": "`IsAppearance` is the Lean transcription of this defining sentence, quoted verbatim in its doc-comment; an appearance is therefore the data of a bipartite subdivision H of J together with the induced subgraph of G that L(H) is isomorphic to. Induced subgraphs of G are the G.induce K for K : Set V, and L(H) is Mathlib's H.lineGraph : SimpleGraph H.edgeSet.",
       "reachable": true,
       "assumption_tainted": false,
+      "refuted": false,
+      "erratum": null,
       "latex_file": "paper_text.tex",
       "latex_range": {
         "start_line": 834,
@@ -5311,6 +5640,8 @@
       "rationale": "`IsAttachment` is the Lean transcription of this defining sentence, quoted verbatim in its doc-comment; the induced subgraphs F and K are given by their vertex sets F K : Set V (the paper says \"an attachment of F (or of V(F))\", so the notion depends only on the vertex sets).",
       "reachable": true,
       "assumption_tainted": false,
+      "refuted": false,
+      "erratum": null,
       "latex_file": "paper_text.tex",
       "latex_range": {
         "start_line": 808,
@@ -5338,6 +5669,8 @@
       "rationale": "`IsJEnlargement` is the Lean transcription of this defining sentence, quoted verbatim in its doc-comment. A subgraph of J' is a SimpleGraph.Subgraph J' (a set of vertices together with a set of edges among them), and it is proper when it is not the whole of J', i.e. S \u2260 \u22a4. The graph that such a subgraph is is S.coe : SimpleGraph S.verts.",
       "reachable": true,
       "assumption_tainted": false,
+      "refuted": false,
+      "erratum": null,
       "latex_file": "paper_text.tex",
       "latex_range": {
         "start_line": 845,
@@ -5365,6 +5698,8 @@
       "rationale": "`LocalForLineGraph` is the Lean transcription of this defining sentence, quoted verbatim in its doc-comment; under the standing hypothesis that L(H) is an appearance of J (so H is a subdivision of J), the first alternative below is therefore exactly the printed one, and it avoids having to expose the embedding of V(J) into V(H). The second alternative uses Tracks.IsBranch and the edge-set Tracks.trackEdges of a branch.",
       "reachable": true,
       "assumption_tainted": false,
+      "refuted": false,
+      "erratum": null,
       "latex_file": "paper_text.tex",
       "latex_range": {
         "start_line": 1021,
@@ -5392,6 +5727,8 @@
       "rationale": "`MajorForLineGraph` is the Lean transcription of this defining sentence, quoted verbatim in its doc-comment; this is the one notion of \u00a75 that has to cross between the two sides of an appearance, so the isomorphism \u03c6 : H.lineGraph \u2243g G.induce K identifying L(H) with the induced subgraph of G on K is an explicit argument.",
       "reachable": true,
       "assumption_tainted": false,
+      "refuted": false,
+      "erratum": null,
       "latex_file": "paper_text.tex",
       "latex_range": {
         "start_line": 1023,
@@ -5419,6 +5756,8 @@
       "rationale": "`NondegenerateAppearance` is the Lean transcription of this defining sentence, quoted verbatim in its doc-comment; in both cases \"nondegenerate\" is exactly the negation of \"degenerate\".",
       "reachable": true,
       "assumption_tainted": false,
+      "refuted": false,
+      "erratum": null,
       "latex_file": "paper_text.tex",
       "latex_range": {
         "start_line": 742,
@@ -5446,6 +5785,8 @@
       "rationale": "`SaturatesLineGraph` is the Lean transcription of this defining sentence, quoted verbatim in its doc-comment; the parenthetical reformulation is flagged by the paper as an equivalent, not as a further requirement, so it is not part of the definition; nor is the preamble \"let H be bipartite and cyclically 3-connected\", which is a hypothesis of the surrounding statements.",
       "reachable": true,
       "assumption_tainted": false,
+      "refuted": false,
+      "erratum": null,
       "latex_file": "paper_text.tex",
       "latex_range": {
         "start_line": 889,
@@ -5473,6 +5814,8 @@
       "rationale": "`attachments` is the Lean transcription of this defining sentence, quoted verbatim in its doc-comment; the set of all attachments of F lying in K; unfolded, {k \u2208 K | \u2203 f \u2208 F, G.Adj k f}.",
       "reachable": true,
       "assumption_tainted": false,
+      "refuted": false,
+      "erratum": null,
       "latex_file": "paper_text.tex",
       "latex_range": {
         "start_line": 808,
@@ -5500,6 +5843,8 @@
       "rationale": "`IsBasic` is the Lean transcription of this defining sentence, quoted verbatim in its doc-comment; the paper's \u1e20 is Mathlib's G\u1d9c. The parenthetical remark is flagged by the authors as a consequence, not as part of the definition, so it is not a conjunct here.",
       "reachable": true,
       "assumption_tainted": false,
+      "refuted": false,
+      "erratum": null,
       "latex_file": "paper_text.tex",
       "latex_range": {
         "start_line": 79,
@@ -5527,6 +5872,8 @@
       "rationale": "`IsDoubleSplitGraph` is the Lean transcription of this defining sentence, quoted verbatim in its doc-comment. the only candidate edges are the four pairs a\u1d62c_j, a\u1d62d_j, b\u1d62c_j, b\u1d62d_j, and the only two-element sets of candidates with no common end are {a\u1d62c_j, b\u1d62d_j} and {a\u1d62d_j, b\u1d62c_j}. Hence the condition is exactly the printed two-case disjunction below; the negative conjuncts are what makes it \"exactly two\" rather than \"at least two\".",
       "reachable": true,
       "assumption_tainted": false,
+      "refuted": false,
+      "erratum": null,
       "latex_file": "paper_text.tex",
       "latex_range": {
         "start_line": 67,
@@ -5554,6 +5901,8 @@
       "rationale": "`IsLineGraphOfBipartite` is the Lean transcription of this defining sentence, quoted verbatim in its doc-comment. L(H) is Mathlib's SimpleGraph.lineGraph (for H : SimpleGraph W it is a SimpleGraph H.edgeSet, exactly the paper's vertex set E(H), with two edges adjacent iff they are distinct and meet), and \"bipartite\" is Mathlib's SimpleGraph.IsBipartite (an abbreviation for Colorable 2).",
       "reachable": true,
       "assumption_tainted": false,
+      "refuted": false,
+      "erratum": null,
       "latex_file": "paper_text.tex",
       "latex_range": {
         "start_line": 78,
@@ -5581,6 +5930,8 @@
       "rationale": "`InF10` is the Lean transcription of this defining sentence, quoted verbatim in its doc-comment. A hole is given by the list C of its vertices in cyclic order (Core.IsHoleList), and its length is Core.holeLength C = C.length.;.",
       "reachable": true,
       "assumption_tainted": false,
+      "refuted": false,
+      "erratum": null,
       "latex_file": "paper_text.tex",
       "latex_range": {
         "start_line": 281,
@@ -5608,6 +5959,8 @@
       "rationale": "`InF11` is the Lean transcription of this defining sentence, quoted verbatim in its doc-comment; encoding note. An antihole of G is a hole of G\u1d9c (Core.IsAntiholeList), and its length is again the number of its vertices, Core.holeLength.",
       "reachable": true,
       "assumption_tainted": false,
+      "refuted": false,
+      "erratum": null,
       "latex_file": "paper_text.tex",
       "latex_range": {
         "start_line": 281,
@@ -5635,6 +5988,8 @@
       "rationale": "`InF3` is the Lean transcription of this defining sentence, quoted verbatim in its doc-comment. the Lean form is a conjunction of two negated existentials, one for G and one for G\u1d9c.",
       "reachable": true,
       "assumption_tainted": false,
+      "refuted": false,
+      "erratum": null,
       "latex_file": "paper_text.tex",
       "latex_range": {
         "start_line": 272,
@@ -5662,6 +6017,8 @@
       "rationale": "`InF5` is the Lean transcription of this defining sentence, quoted verbatim in its doc-comment; printed quirk, reproduced: the preamble to the list claims that each class is a subclass of the previous one, but this bullet is literally defined from F\u2083, not from F\u2084 \u2014 just as F\u2084 itself is. It is InF3 that appears below. Encoding note. A prism is long when at least one of its three paths has length > 1 (printed p. 35).",
       "reachable": true,
       "assumption_tainted": false,
+      "refuted": false,
+      "erratum": null,
       "latex_file": "paper_text.tex",
       "latex_range": {
         "start_line": 281,
@@ -5689,6 +6046,8 @@
       "rationale": "`InF6` is the Lean transcription of this defining sentence, quoted verbatim in its doc-comment; encoding note. A double diamond (printed p. 87) is the graph on eight vertices a\u2081,\u2026,a\u2084,b\u2081,\u2026,b\u2084 with a prescribed adjacency pattern; an induced subgraph of G isomorphic to it is exactly a choice of eight vertices of G realising that pattern and no other adjacency among them, which is what DoubleDiamond.IsDoubleDiamond records.",
       "reachable": true,
       "assumption_tainted": false,
+      "refuted": false,
+      "erratum": null,
       "latex_file": "paper_text.tex",
       "latex_range": {
         "start_line": 281,
@@ -5716,6 +6075,8 @@
       "rationale": "`InF7` is the Lean transcription of this defining sentence, quoted verbatim in its doc-comment; encoding note. A wheel (printed p. 96) is a pair (C, Y) with C a hole of length \u2265 6, Y a non-null anticonnected set disjoint from C, and two disjoint Y-complete edges of C; it is odd when some Y-segment of the rim C has odd length.",
       "reachable": true,
       "assumption_tainted": false,
+      "refuted": false,
+      "erratum": null,
       "latex_file": "paper_text.tex",
       "latex_range": {
         "start_line": 281,
@@ -5743,6 +6104,8 @@
       "rationale": "`InF8` is the Lean transcription of this defining sentence, quoted verbatim in its doc-comment; encoding note. A pseudowheel (printed p. 109) is a triple (X, Y, P); \"G does not contain a pseudowheel\" negates the existence of such a triple in G, and likewise for G\u1d9c.",
       "reachable": true,
       "assumption_tainted": false,
+      "refuted": false,
+      "erratum": null,
       "latex_file": "paper_text.tex",
       "latex_range": {
         "start_line": 281,
@@ -5770,6 +6133,8 @@
       "rationale": "`InF9` is the Lean transcription of this defining sentence, quoted verbatim in its doc-comment; encoding note. Same shape as InF7, with the wheel condition (Wheels.IsWheel) in place of the odd-wheel condition.",
       "reachable": true,
       "assumption_tainted": false,
+      "refuted": false,
+      "erratum": null,
       "latex_file": "paper_text.tex",
       "latex_range": {
         "start_line": 281,
@@ -5797,6 +6162,8 @@
       "rationale": "`Anticomplete` is the Lean transcription of this defining sentence, quoted verbatim in its doc-comment; that is, X is anticomplete to Y if every vertex of X is Y-anticomplete. As above, disjointness is not built into the definition.",
       "reachable": true,
       "assumption_tainted": false,
+      "refuted": false,
+      "erratum": null,
       "latex_file": "paper_text.tex",
       "latex_range": {
         "start_line": 102,
@@ -5824,6 +6191,8 @@
       "rationale": "`AnticonnectedSet` is the Lean transcription of this defining sentence, quoted verbatim in its doc-comment, with the paper's sets, paths and holes encoded by the module's stated conventions (sets as `Set V`, paths and holes as vertex lists). (Quote given in the PDF's own rendering: the overline/subscript is lost by text extraction.)",
       "reachable": true,
       "assumption_tainted": false,
+      "refuted": false,
+      "erratum": null,
       "latex_file": "paper_text.tex",
       "latex_range": {
         "start_line": 119,
@@ -5851,6 +6220,8 @@
       "rationale": "`Balanced` is the Lean transcription of this defining sentence, quoted verbatim in its doc-comment; disjointness of A and B is a hypothesis of the surrounding statements in the paper, so it is not part of this definition.",
       "reachable": true,
       "assumption_tainted": false,
+      "refuted": false,
+      "erratum": null,
       "latex_file": "paper_text.tex",
       "latex_range": {
         "start_line": 114,
@@ -5878,6 +6249,8 @@
       "rationale": "`Berge` is the Lean transcription of this defining sentence, quoted verbatim in its doc-comment, with the paper's sets, paths and holes encoded by the module's stated conventions (sets as `Set V`, paths and holes as vertex lists).",
       "reachable": true,
       "assumption_tainted": false,
+      "refuted": false,
+      "erratum": null,
       "latex_file": "paper_text.tex",
       "latex_range": {
         "start_line": 40,
@@ -5905,6 +6278,8 @@
       "rationale": "`Complete` is the Lean transcription of this defining sentence, quoted verbatim in its doc-comment; disjointness is stated by the paper as a separate hypothesis wherever it is needed, so it is deliberately not built into this definition.",
       "reachable": true,
       "assumption_tainted": false,
+      "refuted": false,
+      "erratum": null,
       "latex_file": "paper_text.tex",
       "latex_range": {
         "start_line": 100,
@@ -5932,6 +6307,8 @@
       "rationale": "`ConnectedSet` is the Lean transcription of this defining sentence, quoted verbatim in its doc-comment; since the empty set must count as connected, this is Mathlib's SimpleGraph.Preconnected (every two vertices are joined by a walk) rather than SimpleGraph.Connected, which additionally demands nonemptiness.",
       "reachable": true,
       "assumption_tainted": false,
+      "refuted": false,
+      "erratum": null,
       "latex_file": "paper_text.tex",
       "latex_range": {
         "start_line": 119,
@@ -5959,6 +6336,8 @@
       "rationale": "`EdgeComplete` is the Lean transcription of this defining sentence, quoted verbatim in its doc-comment, with the paper's sets, paths and holes encoded by the module's stated conventions (sets as `Set V`, paths and holes as vertex lists).",
       "reachable": true,
       "assumption_tainted": false,
+      "refuted": false,
+      "erratum": null,
       "latex_file": "paper_text.tex",
       "latex_range": {
         "start_line": 324,
@@ -5986,6 +6365,8 @@
       "rationale": "`IsAnticomponent` is the Lean transcription of this defining sentence, quoted verbatim in its doc-comment; that is, an anticomponent of A in G is a component of A in G\u1d9c.",
       "reachable": true,
       "assumption_tainted": false,
+      "refuted": false,
+      "erratum": null,
       "latex_file": "paper_text.tex",
       "latex_range": {
         "start_line": 144,
@@ -6013,6 +6394,8 @@
       "rationale": "`IsAntiholeList` is the Lean transcription of this defining sentence, quoted verbatim in its doc-comment; so c is an antihole of G exactly when it is a hole of G\u1d9c; its length is again holeLength c.",
       "reachable": true,
       "assumption_tainted": false,
+      "refuted": false,
+      "erratum": null,
       "latex_file": "paper_text.tex",
       "latex_range": {
         "start_line": 38,
@@ -6040,6 +6423,8 @@
       "rationale": "`IsAntipathList` is the Lean transcription of this defining sentence, quoted verbatim in its doc-comment; so p is an antipath of G exactly when it is a path of the complement G\u1d9c, and its length is again pathLength p.",
       "reachable": true,
       "assumption_tainted": false,
+      "refuted": false,
+      "erratum": null,
       "latex_file": "paper_text.tex",
       "latex_range": {
         "start_line": 111,
@@ -6067,6 +6452,8 @@
       "rationale": "`IsComponent` is the Lean transcription of this defining sentence, quoted verbatim in its doc-comment. C is a component of A if C \u2286 A, C is connected, and C is maximal with these two properties.",
       "reachable": true,
       "assumption_tainted": false,
+      "refuted": false,
+      "erratum": null,
       "latex_file": "paper_text.tex",
       "latex_range": {
         "start_line": 144,
@@ -6094,6 +6481,8 @@
       "rationale": "`IsHoleList` is the Lean transcription of this defining sentence, quoted verbatim in its doc-comment. A hole is represented by the list c of its vertices in cyclic order: c has at least four vertices, no repeated vertex, and two vertices of c are adjacent in G exactly when their positions are cyclically consecutive.",
       "reachable": true,
       "assumption_tainted": false,
+      "refuted": false,
+      "erratum": null,
       "latex_file": "paper_text.tex",
       "latex_range": {
         "start_line": 38,
@@ -6121,6 +6510,8 @@
       "rationale": "`IsPathList` is the Lean transcription of this defining sentence, quoted verbatim in its doc-comment. A path is represented by the list p of its vertices in order. The list is non-null and has no repeated vertex, and two vertices of the list are adjacent in G exactly when their positions differ by one. The \"only if\" direction is what makes the subgraph induced;.",
       "reachable": true,
       "assumption_tainted": false,
+      "refuted": false,
+      "erratum": null,
       "latex_file": "paper_text.tex",
       "latex_range": {
         "start_line": 109,
@@ -6148,6 +6539,8 @@
       "rationale": "`IsPerfect` is the Lean transcription of this defining sentence, quoted verbatim in its doc-comment; the induced subgraphs of G are exactly the G.induce X for X : Set V; SimpleGraph.chromaticNumber is the chromatic number (valued in \u2115\u221e) and SimpleGraph.cliqueNum is the size of a largest clique.",
       "reachable": true,
       "assumption_tainted": false,
+      "refuted": false,
+      "erratum": null,
       "latex_file": "paper_text.tex",
       "latex_range": {
         "start_line": 42,
@@ -6175,6 +6568,8 @@
       "rationale": "`MinimumImperfect` is the Lean transcription of this defining sentence, quoted verbatim in its doc-comment; so G is a counterexample to \"perfect iff Berge\", and no finite graph with fewer vertices is a counterexample.",
       "reachable": true,
       "assumption_tainted": false,
+      "refuted": false,
+      "erratum": null,
       "latex_file": "paper_text.tex",
       "latex_range": {
         "start_line": 56,
@@ -6202,6 +6597,8 @@
       "rationale": "`VertexAnticomplete` is the Lean transcription of this defining sentence, quoted verbatim in its doc-comment, with the paper's sets, paths and holes encoded by the module's stated conventions (sets as `Set V`, paths and holes as vertex lists).",
       "reachable": true,
       "assumption_tainted": false,
+      "refuted": false,
+      "erratum": null,
       "latex_file": "paper_text.tex",
       "latex_range": {
         "start_line": 100,
@@ -6229,6 +6626,8 @@
       "rationale": "`VertexComplete` is the Lean transcription of this defining sentence, quoted verbatim in its doc-comment, with the paper's sets, paths and holes encoded by the module's stated conventions (sets as `Set V`, paths and holes as vertex lists).",
       "reachable": true,
       "assumption_tainted": false,
+      "refuted": false,
+      "erratum": null,
       "latex_file": "paper_text.tex",
       "latex_range": {
         "start_line": 90,
@@ -6256,6 +6655,8 @@
       "rationale": "`interior` is the Lean transcription of this defining sentence, quoted verbatim in its doc-comment; the interior of p is p with its first and last vertex removed.",
       "reachable": true,
       "assumption_tainted": false,
+      "refuted": false,
+      "erratum": null,
       "latex_file": "paper_text.tex",
       "latex_range": {
         "start_line": 113,
@@ -6283,6 +6684,8 @@
       "rationale": "`pathLength` is the Lean transcription of this defining sentence, quoted verbatim in its doc-comment; for a path given by its list of vertices, the number of edges is one less than the number of vertices (natural subtraction, so the empty list also gets 0).",
       "reachable": true,
       "assumption_tainted": false,
+      "refuted": false,
+      "erratum": null,
       "latex_file": "paper_text.tex",
       "latex_range": {
         "start_line": 112,
@@ -6310,6 +6713,8 @@
       "rationale": "`AdmitsBalancedSkewPartition` is the Lean transcription of this defining sentence, quoted verbatim in its doc-comment. that is, there is a partition (A,B) of V(G) which is a balanced skew partition in G.",
       "reachable": true,
       "assumption_tainted": false,
+      "refuted": false,
+      "erratum": null,
       "latex_file": "paper_text.tex",
       "latex_range": {
         "start_line": 131,
@@ -6337,6 +6742,8 @@
       "rationale": "`AdmitsProper2Join` is the Lean transcription of this defining sentence, quoted verbatim in its doc-comment. that is, there is a partition (X\u2081,X\u2082) of V(G) which is a proper 2-join in G.",
       "reachable": true,
       "assumption_tainted": false,
+      "refuted": false,
+      "erratum": null,
       "latex_file": "paper_text.tex",
       "latex_range": {
         "start_line": 130,
@@ -6364,6 +6771,8 @@
       "rationale": "`AdmitsProperHomogeneousPair` is the Lean transcription of this defining sentence, quoted verbatim in its doc-comment. that is, there is a pair (A,B) of subsets of V(G) which is a proper homogeneous pair in G.",
       "reachable": true,
       "assumption_tainted": false,
+      "refuted": false,
+      "erratum": null,
       "latex_file": "paper_text.tex",
       "latex_range": {
         "start_line": 130,
@@ -6391,6 +6800,8 @@
       "rationale": "`AdmitsSkewPartition` is the Lean transcription of this defining sentence, quoted verbatim in its doc-comment. that is, there is a partition (A,B) of V(G) which is a skew partition in G.",
       "reachable": true,
       "assumption_tainted": false,
+      "refuted": false,
+      "erratum": null,
       "latex_file": "paper_text.tex",
       "latex_range": {
         "start_line": 262,
@@ -6418,6 +6829,8 @@
       "rationale": "`AdmitsStarCutset` is the Lean transcription of this defining sentence, quoted verbatim in its doc-comment. that is, there is a partition (A,B) of V(G) which is a star cutset of G.",
       "reachable": true,
       "assumption_tainted": false,
+      "refuted": false,
+      "erratum": null,
       "latex_file": "paper_text.tex",
       "latex_range": {
         "start_line": 204,
@@ -6445,6 +6858,8 @@
       "rationale": "`IsBalancedSkewPartition` is the Lean transcription of this defining sentence, quoted verbatim in its doc-comment, with the paper's sets, paths and holes encoded by the module's stated conventions (sets as `Set V`, paths and holes as vertex lists).",
       "reachable": true,
       "assumption_tainted": false,
+      "refuted": false,
+      "erratum": null,
       "latex_file": "paper_text.tex",
       "latex_range": {
         "start_line": 115,
@@ -6472,6 +6887,8 @@
       "rationale": "`IsProper2Join` is the Lean transcription of this defining sentence, quoted verbatim in its doc-comment. the Lean form is: some list p of vertices is a path of G with ends the unique member a of A\u1d62 and the unique member b of B\u1d62, whose vertex set is the whole of X\u1d62. (Because the vertex set is inside X\u1d62, being an induced path of G and of G|X\u1d62 agree.) Both conjuncts of the conclusion, odd and \u2265 3, are required.",
       "reachable": true,
       "assumption_tainted": false,
+      "refuted": false,
+      "erratum": null,
       "latex_file": "paper_text.tex",
       "latex_range": {
         "start_line": 87,
@@ -6499,6 +6916,8 @@
       "rationale": "`IsProperHomogeneousPair` is the Lean transcription of this defining sentence, quoted verbatim in its doc-comment; under the unrestricted reading complement-invariance genuinely fails (an explicit 8-vertex counterexample is recorded in FIXES.md \u00a7F3).; V(G) (A \u222a B) is the set complement (A \u222a B)\u1d9c.;. Confidence lowered: the encoding restricts A1,A2 to V(G)\\A and B1,B2 to V(G)\\B, an argued interpretation rather than a literal transcription.",
       "reachable": true,
       "assumption_tainted": false,
+      "refuted": false,
+      "erratum": null,
       "latex_file": "paper_text.tex",
       "latex_range": {
         "start_line": 88,
@@ -6526,6 +6945,8 @@
       "rationale": "`IsSkewPartition` is the Lean transcription of this defining sentence, quoted verbatim in its doc-comment; here connected and anticonnected are Core's ConnectedSet and AnticonnectedSet, which follow the paper in counting \u2205 as connected; so this definition already forces A and B to be nonempty.",
       "reachable": true,
       "assumption_tainted": false,
+      "refuted": false,
+      "erratum": null,
       "latex_file": "paper_text.tex",
       "latex_range": {
         "start_line": 121,
@@ -6553,6 +6974,8 @@
       "rationale": "`IsStarCutset` is the Lean transcription of this defining sentence, quoted verbatim in its doc-comment, with the paper's sets, paths and holes encoded by the module's stated conventions (sets as `Set V`, paths and holes as vertex lists).",
       "reachable": true,
       "assumption_tainted": false,
+      "refuted": false,
+      "erratum": null,
       "latex_file": "paper_text.tex",
       "latex_range": {
         "start_line": 198,
@@ -6580,6 +7003,8 @@
       "rationale": "`AntisquareConnected` is the Lean transcription of this defining sentence, quoted verbatim in its doc-comment, with the paper's sets, paths and holes encoded by the module's stated conventions (sets as `Set V`, paths and holes as vertex lists).",
       "reachable": true,
       "assumption_tainted": false,
+      "refuted": false,
+      "erratum": null,
       "latex_file": "paper_text.tex",
       "latex_range": {
         "start_line": 3579,
@@ -6607,6 +7032,8 @@
       "rationale": "`IsCube` is the Lean transcription of this defining sentence, quoted verbatim in its doc-comment, with the paper's sets, paths and holes encoded by the module's stated conventions (sets as `Set V`, paths and holes as vertex lists).",
       "reachable": true,
       "assumption_tainted": false,
+      "refuted": false,
+      "erratum": null,
       "latex_file": "paper_text.tex",
       "latex_range": {
         "start_line": 3572,
@@ -6634,6 +7061,8 @@
       "rationale": "`IsDoubleDiamond` is the Lean transcription of this defining sentence, quoted verbatim in its doc-comment. IsDoubleDiamond G a\u2081 a\u2082 a\u2083 a\u2084 b\u2081 b\u2082 b\u2083 b\u2084 says that these eight distinct vertices of G induce a double diamond: the listed pairs are edges of G and every other pair of the eight is a non-edge (which is exactly what it means for the subgraph of G induced on the eight vertices to be a double diamond).",
       "reachable": true,
       "assumption_tainted": false,
+      "refuted": false,
+      "erratum": null,
       "latex_file": "paper_text.tex",
       "latex_range": {
         "start_line": 3567,
@@ -6661,6 +7090,8 @@
       "rationale": "`IsSquare` is the Lean transcription of this defining sentence, quoted verbatim in its doc-comment; the hole is given by the list of its vertices in cyclic order, so \"of length 4\" is automatic: Core.SPGT.holeLength [a\u2081, b\u2081, b\u2082, a\u2082] = 4. As in Core, the section's standing hypotheses (G Berge, A and B disjoint) are not built in; they are supplied wherever the paper states them.",
       "reachable": true,
       "assumption_tainted": false,
+      "refuted": false,
+      "erratum": null,
       "latex_file": "paper_text.tex",
       "latex_range": {
         "start_line": 3571,
@@ -6688,6 +7119,8 @@
       "rationale": "`MajorForCube` is the Lean transcription of this defining sentence, quoted verbatim in its doc-comment. \"X includes S\" means S \u2286 X. As for MinorForCube, V(K) is A \u222a B \u222a C \u222a D, X is G.neighborSet v \u2229 (A \u222a B \u222a C \u222a D), and the hypotheses of 14.1 are supplied by the statements that use this notion. Confidence lowered: defined by reference to the two cases of 14.1, which the quote itself does not contain.",
       "reachable": true,
       "assumption_tainted": false,
+      "refuted": false,
+      "erratum": null,
       "latex_file": "paper_text.tex",
       "latex_range": {
         "start_line": 3621,
@@ -6715,6 +7148,8 @@
       "rationale": "`MaximalCube` is the Lean transcription of this defining sentence, quoted verbatim in its doc-comment; equivalently (and this is the form stated below): (A, B, C, D) is a cube, and every cube (A\u2032, B\u2032, C\u2032, D\u2032) containing it componentwise is equal to it.",
       "reachable": true,
       "assumption_tainted": false,
+      "refuted": false,
+      "erratum": null,
       "latex_file": "paper_text.tex",
       "latex_range": {
         "start_line": 3591,
@@ -6742,6 +7177,8 @@
       "rationale": "`MinorForCube` is the Lean transcription of this defining sentence, quoted verbatim in its doc-comment. V(K) is A \u222a B \u222a C \u222a D and X is G.neighborSet v \u2229 (A \u222a B \u222a C \u222a D). The hypotheses of 14.1 (G \u2208 F\u2085, and (A, B, C, D) maximal) are supplied by the statements that use this notion, not built into it. Confidence lowered: defined by reference to the two cases of 14.1, which the quote itself does not contain.",
       "reachable": true,
       "assumption_tainted": false,
+      "refuted": false,
+      "erratum": null,
       "latex_file": "paper_text.tex",
       "latex_range": {
         "start_line": 3621,
@@ -6769,6 +7206,8 @@
       "rationale": "`SquareConnected` is the Lean transcription of this defining sentence, quoted verbatim in its doc-comment. the Lean form is flagged as a consequence, and so is deliberately not a conjunct of the definition.",
       "reachable": true,
       "assumption_tainted": false,
+      "refuted": false,
+      "erratum": null,
       "latex_file": "paper_text.tex",
       "latex_range": {
         "start_line": 3572,
@@ -6796,6 +7235,8 @@
       "rationale": "`AgreeOn` is the Lean transcription of this defining sentence, quoted verbatim in its doc-comment; the dual notion (\"T\u2081, T\u2082 agree on S\", defined \"similarly\") is the same condition with the roles of the two families exchanged, i.e. ParallelStripAntistrip G S T\u2081 \u2227 ParallelStripAntistrip G S T\u2082 or both co-parallel;.",
       "reachable": true,
       "assumption_tainted": false,
+      "refuted": false,
+      "erratum": null,
       "latex_file": "paper_text.tex",
       "latex_range": {
         "start_line": 2103,
@@ -6823,6 +7264,8 @@
       "rationale": "`CoParallel` is the Lean transcription of this defining sentence, quoted verbatim in its doc-comment, with the paper's sets, paths and holes encoded by the module's stated conventions (sets as `Set V`, paths and holes as vertex lists).",
       "reachable": true,
       "assumption_tainted": false,
+      "refuted": false,
+      "erratum": null,
       "latex_file": "paper_text.tex",
       "latex_range": {
         "start_line": 2098,
@@ -6850,6 +7293,8 @@
       "rationale": "`IsAntistrip` is the Lean transcription of this defining sentence, quoted verbatim in its doc-comment; the antirungs of T are then the lists p with IsSRung G\u1d9c T p.",
       "reachable": true,
       "assumption_tainted": false,
+      "refuted": false,
+      "erratum": null,
       "latex_file": "paper_text.tex",
       "latex_range": {
         "start_line": 2094,
@@ -6877,6 +7322,8 @@
       "rationale": "`IsKnot` is the Lean transcription of this defining sentence, quoted verbatim in its doc-comment. \"The only edges between V(P\u1d62) and {x\u2c7c, y\u2c7c} are a\u1d62x\u2c7c and b\u1d62y\u2c7c\" is rendered as an if-and-only-if: those two pairs are edges and no other pair is. Likewise for the nonedges in the last bullet.",
       "reachable": true,
       "assumption_tainted": false,
+      "refuted": false,
+      "erratum": null,
       "latex_file": "paper_text.tex",
       "latex_range": {
         "start_line": 1976,
@@ -6904,6 +7351,8 @@
       "rationale": "`IsSRung` is the Lean transcription of this defining sentence, quoted verbatim in its doc-comment; this is \u00a79's own notion of a rung, and is unrelated to the uv-rungs of \u00a78. Note that IsSRung G\u1d9c T p is the paper's antirung of the antistrip T.",
       "reachable": true,
       "assumption_tainted": false,
+      "refuted": false,
+      "erratum": null,
       "latex_file": "paper_text.tex",
       "latex_range": {
         "start_line": 2090,
@@ -6931,6 +7380,8 @@
       "rationale": "`IsStriation` is the Lean transcription of this defining sentence, quoted verbatim in its doc-comment. \"S\u1d62 is anticomplete to S\u1d62'\" is anticompleteness of the vertex sets V(S\u1d62), V(S\u1d62'), and likewise for \"T\u2c7c is complete to T\u2c7c'\"; \"pairwise disjoint\" is disjointness of the vertex sets, over all three kinds of pair. A T\u2c7c-antirung is an IsSRung G\u1d9c (T j).",
       "reachable": true,
       "assumption_tainted": false,
+      "refuted": false,
+      "erratum": null,
       "latex_file": "paper_text.tex",
       "latex_range": {
         "start_line": 2111,
@@ -6958,6 +7409,8 @@
       "rationale": "`IsStrip` is the Lean transcription of this defining sentence, quoted verbatim in its doc-comment; the three sets being pairwise disjoint is part of the data of a strip (it is what makes the labels A, C, B meaningful, and it is not implied by the covering condition), so unlike a standing hypothesis about the ambient graph it is recorded as a conjunct.",
       "reachable": true,
       "assumption_tainted": false,
+      "refuted": false,
+      "erratum": null,
       "latex_file": "paper_text.tex",
       "latex_range": {
         "start_line": 2090,
@@ -6985,6 +7438,8 @@
       "rationale": "`IsTwist` is the Lean transcription of this defining sentence, quoted verbatim in its doc-comment; the parenthetical reformulation is flagged by the paper as an equivalent, so it is not a further conjunct; the preamble \"all pairwise disjoint\" is a hypothesis of the surrounding statements.",
       "reachable": true,
       "assumption_tainted": false,
+      "refuted": false,
+      "erratum": null,
       "latex_file": "paper_text.tex",
       "latex_range": {
         "start_line": 2107,
@@ -7012,6 +7467,8 @@
       "rationale": "`KnotInduces` is the Lean transcription of this defining sentence, quoted verbatim in its doc-comment; induced subgraphs of G are throughout this project given by their vertex sets (G.induce K for K : Set V), so \"the knot induces K\" says that K is that union of vertex sets; the graph G itself plays no role in the condition.",
       "reachable": true,
       "assumption_tainted": false,
+      "refuted": false,
+      "erratum": null,
       "latex_file": "paper_text.tex",
       "latex_range": {
         "start_line": 1991,
@@ -7039,6 +7496,8 @@
       "rationale": "`LocalForKnot` is the Lean transcription of this defining sentence, quoted verbatim in its doc-comment. \"X includes neither of V(Q\u2081), V(Q\u2082)\" is \u00ac (V(Q\u2081) \u2286 X) \u2227 \u00ac (V(Q\u2082) \u2286 X). Following the style of Core (and of Appearances.LocalForLineGraph), the preamble \"X \u2286 V(K)\" records where the notion is applied and is a hypothesis of the surrounding statements, not a conjunct of the definition; consequently K is not an argument.",
       "reachable": true,
       "assumption_tainted": false,
+      "refuted": false,
+      "erratum": null,
       "latex_file": "paper_text.tex",
       "latex_range": {
         "start_line": 2004,
@@ -7066,6 +7525,8 @@
       "rationale": "`LocalForStriation` is the Lean transcription of this defining sentence, quoted verbatim in its doc-comment. \"At most one of X \u2229 V(S\u2081), \u2026, X \u2229 V(S_m) is nonempty\" is rendered as: any two indices whose intersections with X are nonempty coincide. As for LocalForKnot, the preamble X \u2286 V(L) records where the notion is applied and is a hypothesis of the surrounding statements.",
       "reachable": true,
       "assumption_tainted": false,
+      "refuted": false,
+      "erratum": null,
       "latex_file": "paper_text.tex",
       "latex_range": {
         "start_line": 2123,
@@ -7093,6 +7554,8 @@
       "rationale": "`MaximalStriation` is the Lean transcription of this defining sentence, quoted verbatim in its doc-comment; the paper's \u2282 is proper inclusion, Mathlib's \u2282. Being a maximal striation includes being a striation, as in \"let L be a maximal striation in G*\" (9.4, 9.5).",
       "reachable": true,
       "assumption_tainted": false,
+      "refuted": false,
+      "erratum": null,
       "latex_file": "paper_text.tex",
       "latex_range": {
         "start_line": 2135,
@@ -7120,6 +7583,8 @@
       "rationale": "`ParallelStripAntistrip` is the Lean transcription of this defining sentence, quoted verbatim in its doc-comment; this is the published two-bullet form, transcribed as printed. The preamble \u2014 S a strip, T an antistrip, V(S) \u2229 V(T) = \u2205 \u2014 is a hypothesis of the surrounding statements (in a striation, for instance, disjointness of all the strips and antistrips is required separately), so, as for Core.Complete, it is not a conjunct here.",
       "reachable": true,
       "assumption_tainted": false,
+      "refuted": false,
+      "erratum": null,
       "latex_file": "paper_text.tex",
       "latex_range": {
         "start_line": 2098,
@@ -7147,6 +7612,8 @@
       "rationale": "`ResolvesKnot` is the Lean transcription of this defining sentence, quoted verbatim in its doc-comment; the paper gives the two forms as the same condition; the second (\"that is, \u2026\") is the one transcribed here, because it is self-contained and is what 9.2, 9.3 and 9.4 use.",
       "reachable": true,
       "assumption_tainted": false,
+      "refuted": false,
+      "erratum": null,
       "latex_file": "paper_text.tex",
       "latex_range": {
         "start_line": 2010,
@@ -7174,6 +7641,8 @@
       "rationale": "`ResolvesStriation` is the Lean transcription of this defining sentence, quoted verbatim in its doc-comment; the paper gives the two forms as the same condition; the second (\"that is, \u2026\") is the one transcribed here. \"T\u2c7c is a subset of X\" means V(T\u2c7c) \u2286 X.",
       "reachable": true,
       "assumption_tainted": false,
+      "refuted": false,
+      "erratum": null,
       "latex_file": "paper_text.tex",
       "latex_range": {
         "start_line": 2130,
@@ -7201,6 +7670,8 @@
       "rationale": "`reverseStrip` is the Lean transcription of this defining sentence, quoted verbatim in its doc-comment, with the paper's sets, paths and holes encoded by the module's stated conventions (sets as `Set V`, paths and holes as vertex lists).",
       "reachable": true,
       "assumption_tainted": false,
+      "refuted": false,
+      "erratum": null,
       "latex_file": "paper_text.tex",
       "latex_range": {
         "start_line": 2093,
@@ -7228,6 +7699,8 @@
       "rationale": "`striationVertices` is the Lean transcription of this defining sentence, quoted verbatim in its doc-comment, with the paper's sets, paths and holes encoded by the module's stated conventions (sets as `Set V`, paths and holes as vertex lists).",
       "reachable": true,
       "assumption_tainted": false,
+      "refuted": false,
+      "erratum": null,
       "latex_file": "paper_text.tex",
       "latex_range": {
         "start_line": 2122,
@@ -7255,6 +7728,8 @@
       "rationale": "`stripVertices` is the Lean transcription of this defining sentence, quoted verbatim in its doc-comment, with the paper's sets, paths and holes encoded by the module's stated conventions (sets as `Set V`, paths and holes as vertex lists). (Quote given in the PDF's own rendering: the overline/subscript is lost by text extraction.)",
       "reachable": true,
       "assumption_tainted": false,
+      "refuted": false,
+      "erratum": null,
       "latex_file": "paper_text.tex",
       "latex_range": {
         "start_line": 2093,
@@ -7282,6 +7757,8 @@
       "rationale": "`BOptimalBanister` is the Lean transcription of this defining sentence, quoted verbatim in its doc-comment; that b is a right-star, and that a is a left-star, are part of Staircases.SPGT.IsBanister (by the convention of \u00a711, the left-star end of a banister is listed first), so the opening sentence needs no separate conjunct.",
       "reachable": true,
       "assumption_tainted": false,
+      "refuted": false,
+      "erratum": null,
       "latex_file": "paper_text.tex",
       "latex_range": {
         "start_line": 3252,
@@ -7309,6 +7786,8 @@
       "rationale": "`Earlier` is the Lean transcription of this defining sentence, quoted verbatim in its doc-comment; earlier x u v says that u occurs in the right-sequence x strictly before v does. (Since the terms of a right-sequence are distinct, the position of a term determines it and conversely, so this relation between the vertices u = x_i and v = x_j is exactly the paper's relation between their positions.)",
       "reachable": true,
       "assumption_tainted": false,
+      "refuted": false,
+      "erratum": null,
       "latex_file": "paper_text.tex",
       "latex_range": {
         "start_line": 3236,
@@ -7336,6 +7815,8 @@
       "rationale": "`IsRightSequence` is the Lean transcription of this defining sentence, quoted verbatim in its doc-comment. (That last sentence is a remark, not an axiom.) The sequence is the list x; \"distinct\" is x.Nodup, and the paper's {x\u2081, \u2026, x_{i-1}}, the set of terms strictly earlier than the term at 0-based position i, is x.take i.",
       "reachable": true,
       "assumption_tainted": false,
+      "refuted": false,
+      "erratum": null,
       "latex_file": "paper_text.tex",
       "latex_range": {
         "start_line": 3208,
@@ -7363,6 +7844,8 @@
       "rationale": "`IsThreeBreaker` is the Lean transcription of this defining sentence, quoted verbatim in its doc-comment; the pair (K, x) is carried by the staircase data A, C, B, a\u2080, R\u2080, b\u2080 together with the vertex x, exactly as Staircases.SPGT.IsTwoBreaker carries the pair (K, Q). V(K) is Staircases.SPGT.staircaseVertices.",
       "reachable": true,
       "assumption_tainted": false,
+      "refuted": false,
+      "erratum": null,
       "latex_file": "paper_text.tex",
       "latex_range": {
         "start_line": 3419,
@@ -7390,6 +7873,8 @@
       "rationale": "`Predecessor` is the Lean transcription of this defining sentence, quoted verbatim in its doc-comment; predecessor G x u p says that p is the predecessor of u (first the vertex, then its predecessor): u is the term of x at some position i, p is the term at position h < i, p is nonadjacent to u, and h is minimum with those properties, i.e. every term at a position k < h is adjacent to u.",
       "reachable": true,
       "assumption_tainted": false,
+      "refuted": false,
+      "erratum": null,
       "latex_file": "paper_text.tex",
       "latex_range": {
         "start_line": 3232,
@@ -7417,6 +7902,8 @@
       "rationale": "`Recalcitrant` is the Lean transcription of this defining sentence, quoted verbatim in its doc-comment; the paper's \u1e20 is G\u1d9c;. Confidence lowered: reads \"line graphs\" as \"line graphs of bipartite graphs\", the reading 13.5 => 1.3 requires.",
       "reachable": true,
       "assumption_tainted": false,
+      "refuted": false,
+      "erratum": null,
       "latex_file": "paper_text.tex",
       "latex_range": {
         "start_line": 3528,
@@ -7444,6 +7931,8 @@
       "rationale": "`birth` is the Lean transcription of this defining sentence, quoted verbatim in its doc-comment; the birth is a partial function, so it is rendered as a relation; the paper's guard \"if it is not X-complete\" is transcribed literally, and is in any case implied by the existence of the nonneighbour x[i].",
       "reachable": true,
       "assumption_tainted": false,
+      "refuted": false,
+      "erratum": null,
       "latex_file": "paper_text.tex",
       "latex_range": {
         "start_line": 3251,
@@ -7471,6 +7960,8 @@
       "rationale": "`trajectoryOfIndex` is the Lean transcription of this defining sentence, quoted verbatim in its doc-comment. \"Clearly the trajectory is unique, and is an antipath.\" This is the first of the section's two trajectory definitions: the trajectory of a vertex x_i of the right-sequence, identified here by its position i in the list x (0-based, so x[i] is the paper's x_{i+1}).",
       "reachable": true,
       "assumption_tainted": false,
+      "refuted": false,
+      "erratum": null,
       "latex_file": "paper_text.tex",
       "latex_range": {
         "start_line": 3239,
@@ -7498,6 +7989,8 @@
       "rationale": "`trajectoryOfVertex` is the Lean transcription of this defining sentence, quoted verbatim in its doc-comment. the Lean form are the paper's own applicability condition for the definition and are transcribed as the first conjunct, with X = {y | y \u2208 x}. \"w\u2081 is the earliest nonneighbour of v in X\" is: w\u2081 = x[i] is a nonneighbour of v, and every earlier term x[k] (k < i) is a neighbour of v.",
       "reachable": true,
       "assumption_tainted": false,
+      "refuted": false,
+      "erratum": null,
       "latex_file": "paper_text.tex",
       "latex_range": {
         "start_line": 3248,
@@ -7525,6 +8018,8 @@
       "rationale": "`IsOvershadowedAppearance` is the Lean transcription of this defining sentence, quoted verbatim in its doc-comment; the standing hypothesis \"L(H) is an appearance of J in G*\" \u2014 i.e. Appearances.IsAppearance G J H K \u2014 is supplied by the surrounding statements, following the style of Workspace.Types.Appearances, where such preambles are never built into a definition; note that the argument \u03c6 already witnesses the second half of it.",
       "reachable": true,
       "assumption_tainted": false,
+      "refuted": false,
+      "erratum": null,
       "latex_file": "paper_text.tex",
       "latex_range": {
         "start_line": 1168,
@@ -7552,6 +8047,8 @@
       "rationale": "`FormPrism` is the Lean transcription of this defining sentence, quoted verbatim in its doc-comment; so FormPrism G a b P\u2081 P\u2082 P\u2083 says that the three paths P\u2081, P\u2082, P\u2083 of G form a prism of G with triangles {a 0, a 1, a 2} and {b 0, b 1, b 2}. The conjuncts are, in order: {a\u2081, a\u2082, a\u2083} is a triangle (three pairwise adjacent vertices; adjacency in a simple graph forces them to be distinct); ; {b\u2081, b\u2082, b\u2083} is a triangle; ;.",
       "reachable": true,
       "assumption_tainted": false,
+      "refuted": false,
+      "erratum": null,
       "latex_file": "paper_text.tex",
       "latex_range": {
         "start_line": 1422,
@@ -7579,6 +8076,8 @@
       "rationale": "`IsEvenPrism` is the Lean transcription of this defining sentence, quoted verbatim in its doc-comment. IsEvenPrism G a b R\u2081 R\u2082 R\u2083 says that R\u2081, R\u2082, R\u2083 form a prism of G with triangles {a 0, a 1, a 2}, {b 0, b 1, b 2}, and that this prism is even. (The quoted appeal to 7.2 is a remark about Berge graphs, not part of the definition, so it is not built in.)",
       "reachable": true,
       "assumption_tainted": false,
+      "refuted": false,
+      "erratum": null,
       "latex_file": "paper_text.tex",
       "latex_range": {
         "start_line": 2351,
@@ -7606,6 +8105,8 @@
       "rationale": "`IsHyperprism` is the Lean transcription of this defining sentence, quoted verbatim in its doc-comment. \"Pairwise disjoint\" is spelled out as the six families of disjointness conditions between the nine sets A i, B i, C i (i : Fin 3). \"There are no other edges\" is the implication that any edge between A\u1d62 \u222a B\u1d62 \u222a C\u1d62 and A\u2c7c \u222a B\u2c7c \u222a C\u2c7c runs from A\u1d62 to A\u2c7c or from B\u1d62 to B\u2c7c.",
       "reachable": true,
       "assumption_tainted": false,
+      "refuted": false,
+      "erratum": null,
       "latex_file": "paper_text.tex",
       "latex_range": {
         "start_line": 2504,
@@ -7633,6 +8134,8 @@
       "rationale": "`IsLongPrism` is the Lean transcription of this defining sentence, quoted verbatim in its doc-comment. IsLongPrism G a b P\u2081 P\u2082 P\u2083 says that P\u2081, P\u2082, P\u2083 form a prism of G with triangles {a 0, a 1, a 2}, {b 0, b 1, b 2}, and that this prism is long.",
       "reachable": true,
       "assumption_tainted": false,
+      "refuted": false,
+      "erratum": null,
       "latex_file": "paper_text.tex",
       "latex_range": {
         "start_line": 1426,
@@ -7660,6 +8163,8 @@
       "rationale": "`IsOddPrism` is the Lean transcription of this defining sentence, quoted verbatim in its doc-comment; so a prism is odd exactly when it fails to be even, i.e. when it is not the case that all three of R\u2081, R\u2082, R\u2083 have even length. (In a Berge graph the three lengths have the same parity, by 7.2, so there \"odd\" amounts to all three lengths being odd; that is a theorem about Berge graphs and is not part of the definition.)",
       "reachable": true,
       "assumption_tainted": false,
+      "refuted": false,
+      "erratum": null,
       "latex_file": "paper_text.tex",
       "latex_range": {
         "start_line": 2352,
@@ -7687,6 +8192,8 @@
       "rationale": "`IsRungOfHyperprism` is the Lean transcription of this defining sentence, quoted verbatim in its doc-comment. IsRungOfHyperprism G A B C i p says that the list p is an i-rung for the nine sets A\u2c7c, B\u2c7c, C\u2c7c (j : Fin 3): a path of G one of whose ends lies in A i and the other in B i, all of whose internal vertices lie in C i.",
       "reachable": true,
       "assumption_tainted": false,
+      "refuted": false,
+      "erratum": null,
       "latex_file": "paper_text.tex",
       "latex_range": {
         "start_line": 2516,
@@ -7714,6 +8221,8 @@
       "rationale": "`LocalForHyperprism` is the Lean transcription of this defining sentence, quoted verbatim in its doc-comment; the ambient assumption X \u2286 V(H) is not restated as a conjunct: it is implied by each of the five alternatives.",
       "reachable": true,
       "assumption_tainted": false,
+      "refuted": false,
+      "erratum": null,
       "latex_file": "paper_text.tex",
       "latex_range": {
         "start_line": 2525,
@@ -7741,6 +8250,8 @@
       "rationale": "`LocalForPrism` is the Lean transcription of this defining sentence, quoted verbatim in its doc-comment; here K is the prism formed by the three paths R\u2081, R\u2082, R\u2083, and its two triangles are {a 0, a 1, a 2} and {b 0, b 1, b 2}. The ambient assumption X \u2286 V(K) is not restated as a conjunct: it is implied by each of the five alternatives, since each triangle vertex a\u1d62 (resp. b\u1d62) is an end of R\u1d62 and hence lies in V(K).",
       "reachable": true,
       "assumption_tainted": false,
+      "refuted": false,
+      "erratum": null,
       "latex_file": "paper_text.tex",
       "latex_range": {
         "start_line": 2349,
@@ -7768,6 +8279,8 @@
       "rationale": "`MajorForPrism` is the Lean transcription of this defining sentence, quoted verbatim in its doc-comment, with the paper's sets, paths and holes encoded by the module's stated conventions (sets as `Set V`, paths and holes as vertex lists).",
       "reachable": true,
       "assumption_tainted": false,
+      "refuted": false,
+      "erratum": null,
       "latex_file": "paper_text.tex",
       "latex_range": {
         "start_line": 2349,
@@ -7795,6 +8308,8 @@
       "rationale": "`SaturatesPrism` is the Lean transcription of this defining sentence, quoted verbatim in its doc-comment; the two triangles of the prism are {a 0, a 1, a 2} and {b 0, b 1, b 2}, so this says that each of these two three-element sets meets X in at least two vertices.",
       "reachable": true,
       "assumption_tainted": false,
+      "refuted": false,
+      "erratum": null,
       "latex_file": "paper_text.tex",
       "latex_range": {
         "start_line": 2348,
@@ -7822,6 +8337,8 @@
       "rationale": "`IsPseudowheel` is the Lean transcription of this defining sentence, quoted verbatim in its doc-comment. the Lean form is an \"if and only if\" over the vertices of P: it asserts both that p\u2081 and p\u2099 are X-complete and that no other vertex of P is.; \"at least one other vertex of P\" is a vertex of P different from p\u2081.",
       "reachable": true,
       "assumption_tainted": false,
+      "refuted": false,
+      "erratum": null,
       "latex_file": "paper_text.tex",
       "latex_range": {
         "start_line": 4485,
@@ -7849,6 +8366,8 @@
       "rationale": "`OptimalPseudowheel` is the Lean transcription of this defining sentence, quoted verbatim in its doc-comment; the paper's subject is a pseudowheel (X,Y,P), so IsPseudowheel G X Y P is part of the definition.; \"the number of Y'-complete vertices in P'\" is the number of vertices of the path P' that are Y'-complete, i.e. Set.ncard of {v | v \u2208 P' \u2227 SPGT.VertexComplete G v Y'}.",
       "reachable": true,
       "assumption_tainted": false,
+      "refuted": false,
+      "erratum": null,
       "latex_file": "paper_text.tex",
       "latex_range": {
         "start_line": 4560,
@@ -7876,6 +8395,8 @@
       "rationale": "`replicateVertex` is the Lean transcription of this defining sentence, quoted verbatim in its doc-comment; sum.inl a and Sum.inl b are adjacent iff G.Adj a b (the old graph is unchanged); ; Sum.inl a and w are adjacent iff a = v \u2228 G.Adj a v; ; w is not adjacent to itself. Confidence lowered: the paper uses the operation inside the proof of 1.5 without defining it.",
       "reachable": true,
       "assumption_tainted": false,
+      "refuted": false,
+      "erratum": null,
       "latex_file": "paper_text.tex",
       "latex_range": {
         "start_line": 171,
@@ -7903,6 +8424,8 @@
       "rationale": "`IsHatForHole` is the Lean transcription of this defining sentence, quoted verbatim in its doc-comment. \"To no other vertex of C\" means: to no vertex of C besides u and v.",
       "reachable": true,
       "assumption_tainted": false,
+      "refuted": false,
+      "erratum": null,
       "latex_file": "paper_text.tex",
       "latex_range": {
         "start_line": 468,
@@ -7930,6 +8453,8 @@
       "rationale": "`IsLeapForHole` is the Lean transcription of this defining sentence, quoted verbatim in its doc-comment; encoding. c lists the vertices of the hole C in cyclic order. \"e = uv is an edge of C\" means that u and v are cyclically consecutive in c; the two arguments are named in the cyclic order of c, so that v is the successor of u. Cutting the cycle at e leaves the path C e on the same vertex set, running from v round to u;.",
       "reachable": true,
       "assumption_tainted": false,
+      "refuted": false,
+      "erratum": null,
       "latex_file": "paper_text.tex",
       "latex_range": {
         "start_line": 467,
@@ -7957,6 +8482,8 @@
       "rationale": "`IsLeapForPath` is the Lean transcription of this defining sentence, quoted verbatim in its doc-comment; nothing further need be assumed: a, b \u2209 V(P) already follows, since a \u2208 V(P) would make one of the required adjacencies a loop or would contradict inducedness of P.",
       "reachable": true,
       "assumption_tainted": false,
+      "refuted": false,
+      "erratum": null,
       "latex_file": "paper_text.tex",
       "latex_range": {
         "start_line": 324,
@@ -7984,6 +8511,8 @@
       "rationale": "`IsTriangle` is the Lean transcription of this defining sentence, quoted verbatim in its doc-comment, with the paper's sets, paths and holes encoded by the module's stated conventions (sets as `Set V`, paths and holes as vertex lists).",
       "reachable": true,
       "assumption_tainted": false,
+      "refuted": false,
+      "erratum": null,
       "latex_file": "paper_text.tex",
       "latex_range": {
         "start_line": 362,
@@ -8011,6 +8540,8 @@
       "rationale": "`SetLinkedOntoTriangle` is the Lean transcription of this defining sentence, quoted verbatim in its doc-comment; x-completeness of a vertex is Core's VertexComplete G x X.",
       "reachable": true,
       "assumption_tainted": false,
+      "refuted": false,
+      "erratum": null,
       "latex_file": "paper_text.tex",
       "latex_range": {
         "start_line": 403,
@@ -8038,6 +8569,8 @@
       "rationale": "`VertexCanBeLinkedOntoTriangle` is the Lean transcription of this defining sentence, quoted verbatim in its doc-comment, with the paper's sets, paths and holes encoded by the module's stated conventions (sets as `Set V`, paths and holes as vertex lists).",
       "reachable": true,
       "assumption_tainted": false,
+      "refuted": false,
+      "erratum": null,
       "latex_file": "paper_text.tex",
       "latex_range": {
         "start_line": 362,
@@ -8065,6 +8598,8 @@
       "rationale": "`VertexLinkedOntoTriangle` is the Lean transcription of this defining sentence, quoted verbatim in its doc-comment; the third bullet is a uniqueness statement, so it is rendered as an if and only if: a vertex of P\u1d62 and a vertex of P\u2c7c are adjacent exactly when they are a\u1d62 and a\u2c7c. (Together with the second bullet this already gives G.Adj a\u1d62 a\u2c7c, and together with the first bullet it gives a\u1d62 \u2260 a\u2c7c;.",
       "reachable": true,
       "assumption_tainted": false,
+      "refuted": false,
+      "erratum": null,
       "latex_file": "paper_text.tex",
       "latex_range": {
         "start_line": 362,
@@ -8092,6 +8627,8 @@
       "rationale": "`AdmitsLooseSkewPartition` is the Lean transcription of this defining sentence, quoted verbatim in its doc-comment. G admits a loose skew partition if some skew partition (A,B) of G is loose.",
       "reachable": true,
       "assumption_tainted": false,
+      "refuted": false,
+      "erratum": null,
       "latex_file": "paper_text.tex",
       "latex_range": {
         "start_line": 606,
@@ -8119,6 +8656,8 @@
       "rationale": "`IsAntipathPair` is the Lean transcription of this defining sentence, quoted verbatim in its doc-comment; the antipath is given by the list p of its vertices in order (equivalently, p is a path of G\u1d9c); its ends are the adjacent vertices u and v of A', its interior is SPGT.interior p, and \"odd\" refers to its length SPGT.pathLength p.",
       "reachable": true,
       "assumption_tainted": false,
+      "refuted": false,
+      "erratum": null,
       "latex_file": "paper_text.tex",
       "latex_range": {
         "start_line": 644,
@@ -8146,6 +8685,8 @@
       "rationale": "`IsKernel` is the Lean transcription of this defining sentence, quoted verbatim in its doc-comment, with the paper's sets, paths and holes encoded by the module's stated conventions (sets as `Set V`, paths and holes as vertex lists).",
       "reachable": true,
       "assumption_tainted": false,
+      "refuted": false,
+      "erratum": null,
       "latex_file": "paper_text.tex",
       "latex_range": {
         "start_line": 689,
@@ -8173,6 +8714,8 @@
       "rationale": "`IsLooseSkewPartition` is the Lean transcription of this defining sentence, quoted verbatim in its doc-comment. \"b has no neighbour in A'\" is b being A'-anticomplete, and \"a is complete to B'\" is a being B'-complete; both are the Core notions. The two alternatives appear in the order printed.",
       "reachable": true,
       "assumption_tainted": false,
+      "refuted": false,
+      "erratum": null,
       "latex_file": "paper_text.tex",
       "latex_range": {
         "start_line": 602,
@@ -8200,6 +8743,8 @@
       "rationale": "`IsPathPair` is the Lean transcription of this defining sentence, quoted verbatim in its doc-comment; the path is given by the list p of its vertices in order; its ends are u and v, its interior is SPGT.interior p, and \"odd\" refers to its length SPGT.pathLength p.",
       "reachable": true,
       "assumption_tainted": false,
+      "refuted": false,
+      "erratum": null,
       "latex_file": "paper_text.tex",
       "latex_range": {
         "start_line": 644,
@@ -8227,6 +8772,8 @@
       "rationale": "`CentralForStaircase` is the Lean transcription of this defining sentence, quoted verbatim in its doc-comment, with the paper's sets, paths and holes encoded by the module's stated conventions (sets as `Set V`, paths and holes as vertex lists).",
       "reachable": true,
       "assumption_tainted": false,
+      "refuted": false,
+      "erratum": null,
       "latex_file": "paper_text.tex",
       "latex_range": {
         "start_line": 2879,
@@ -8254,6 +8801,8 @@
       "rationale": "`IsBanister` is the Lean transcription of this defining sentence, quoted verbatim in its doc-comment. \"A path of G (A \u222a B \u222a C)\" is a path of G none of whose vertices lies in A \u222a B \u222a C. The paper's ordering convention is captured by the argument order a, R, b. \"A banister can have length 1\" is a remark, not a constraint, so no length condition is imposed.",
       "reachable": true,
       "assumption_tainted": false,
+      "refuted": false,
+      "erratum": null,
       "latex_file": "paper_text.tex",
       "latex_range": {
         "start_line": 2674,
@@ -8281,6 +8830,8 @@
       "rationale": "`IsLeftStar` is the Lean transcription of this defining sentence, quoted verbatim in its doc-comment; that G is Berge and that (A, C, B) is step-connected are hypotheses of the surrounding sentence, not part of the property of v.",
       "reachable": true,
       "assumption_tainted": false,
+      "refuted": false,
+      "erratum": null,
       "latex_file": "paper_text.tex",
       "latex_range": {
         "start_line": 2672,
@@ -8308,6 +8859,8 @@
       "rationale": "`IsOneBreaker` is the Lean transcription of this defining sentence, quoted verbatim in its doc-comment; here V(S) = A \u222a B \u222a C. The triple (S, F, Q) is carried by the five sets A, C, B, F, Q.",
       "reachable": true,
       "assumption_tainted": false,
+      "refuted": false,
+      "erratum": null,
       "latex_file": "paper_text.tex",
       "latex_range": {
         "start_line": 2751,
@@ -8335,6 +8888,8 @@
       "rationale": "`IsRightStar` is the Lean transcription of this defining sentence, quoted verbatim in its doc-comment. (The ambient hypotheses are the same as for a left-star: v is a vertex of V(G) (A \u222a B \u222a C), and (A, C, B) is a step-connected strip in a Berge graph G.)",
       "reachable": true,
       "assumption_tainted": false,
+      "refuted": false,
+      "erratum": null,
       "latex_file": "paper_text.tex",
       "latex_range": {
         "start_line": 2673,
@@ -8362,6 +8917,8 @@
       "rationale": "`IsRungOfStrip` is the Lean transcription of this defining sentence, quoted verbatim in its doc-comment. IsRungOfStrip G A C B a p b is the paper's \"rung a-p-b\" of the strip S = (A, C, B): p is a path of G from a to b, its first vertex a is the only vertex of p in A, its last vertex b is the only vertex of p in B, and every internal vertex of p lies in C.",
       "reachable": true,
       "assumption_tainted": false,
+      "refuted": false,
+      "erratum": null,
       "latex_file": "paper_text.tex",
       "latex_range": {
         "start_line": 2090,
@@ -8389,6 +8946,8 @@
       "rationale": "`IsStaircase` is the Lean transcription of this defining sentence, quoted verbatim in its doc-comment. the Lean form is part of IsBanister, by the convention of \u00a711). \"A banister of length \u2265 3\" is 3 \u2264 SPGT.pathLength R\u2080.",
       "reachable": true,
       "assumption_tainted": false,
+      "refuted": false,
+      "erratum": null,
       "latex_file": "paper_text.tex",
       "latex_range": {
         "start_line": 2871,
@@ -8416,6 +8975,8 @@
       "rationale": "`IsStep` is the Lean transcription of this defining sentence, quoted verbatim in its doc-comment; the second bullet asserts both that a\u2081a\u2082 and b\u2081b\u2082 are edges and that no other edge runs between V(R\u2081) and V(R\u2082), so it is rendered as an \u2194 (exactly as the analogous clause of a prism is in FormPrism). That (A, C, B) is a strip is a hypothesis of the surrounding sentence, not part of the definition of a step.",
       "reachable": true,
       "assumption_tainted": false,
+      "refuted": false,
+      "erratum": null,
       "latex_file": "paper_text.tex",
       "latex_range": {
         "start_line": 2662,
@@ -8443,6 +9004,8 @@
       "rationale": "`IsTwoBreaker` is the Lean transcription of this defining sentence, quoted verbatim in its doc-comment; the pair (K, Q) is carried by the staircase data A, C, B, a\u2080, R\u2080, b\u2080 together with the set Q.",
       "reachable": true,
       "assumption_tainted": false,
+      "refuted": false,
+      "erratum": null,
       "latex_file": "paper_text.tex",
       "latex_range": {
         "start_line": 3064,
@@ -8470,6 +9033,8 @@
       "rationale": "`LeftDiagonal` is the Lean transcription of this defining sentence, quoted verbatim in its doc-comment, with the paper's sets, paths and holes encoded by the module's stated conventions (sets as `Set V`, paths and holes as vertex lists).",
       "reachable": true,
       "assumption_tainted": false,
+      "refuted": false,
+      "erratum": null,
       "latex_file": "paper_text.tex",
       "latex_range": {
         "start_line": 2879,
@@ -8497,6 +9062,8 @@
       "rationale": "`LocalForStaircase` is the Lean transcription of this defining sentence, quoted verbatim in its doc-comment; the four alternatives are listed in the printed order. The ambient assumption X \u2286 V(K) is not restated as a conjunct: it is implied by each of the four alternatives, since V(S) \u2286 V(K), V(R\u2080) \u2286 V(K), and a\u2080, b\u2080 \u2208 V(R\u2080).",
       "reachable": true,
       "assumption_tainted": false,
+      "refuted": false,
+      "erratum": null,
       "latex_file": "paper_text.tex",
       "latex_range": {
         "start_line": 2873,
@@ -8524,6 +9091,8 @@
       "rationale": "`MajorForStaircase` is the Lean transcription of this defining sentence, quoted verbatim in its doc-comment, with the paper's sets, paths and holes encoded by the module's stated conventions (sets as `Set V`, paths and holes as vertex lists).",
       "reachable": true,
       "assumption_tainted": false,
+      "refuted": false,
+      "erratum": null,
       "latex_file": "paper_text.tex",
       "latex_range": {
         "start_line": 2879,
@@ -8551,6 +9120,8 @@
       "rationale": "`MaximalStaircase` is the Lean transcription of this defining sentence, quoted verbatim in its doc-comment. V(S) \u2282 V(S') is strict inclusion, i.e. \u2282 of Set V. Being maximal is a property of a staircase, so IsStaircase is a conjunct.",
       "reachable": true,
       "assumption_tainted": false,
+      "refuted": false,
+      "erratum": null,
       "latex_file": "paper_text.tex",
       "latex_range": {
         "start_line": 2873,
@@ -8578,6 +9149,8 @@
       "rationale": "`MinorForStaircase` is the Lean transcription of this defining sentence, quoted verbatim in its doc-comment; the set of neighbours of v in V(K) is G.neighborSet v \u2229 V(K).",
       "reachable": true,
       "assumption_tainted": false,
+      "refuted": false,
+      "erratum": null,
       "latex_file": "paper_text.tex",
       "latex_range": {
         "start_line": 2879,
@@ -8605,6 +9178,8 @@
       "rationale": "`RightDiagonal` is the Lean transcription of this defining sentence, quoted verbatim in its doc-comment, with the paper's sets, paths and holes encoded by the module's stated conventions (sets as `Set V`, paths and holes as vertex lists).",
       "reachable": true,
       "assumption_tainted": false,
+      "refuted": false,
+      "erratum": null,
       "latex_file": "paper_text.tex",
       "latex_range": {
         "start_line": 2879,
@@ -8632,6 +9207,8 @@
       "rationale": "`StepConnected` is the Lean transcription of this defining sentence, quoted verbatim in its doc-comment. StepConnected G A C B says that S = (A, C, B) is a step-connected strip in G, which is how \u00a711 and \u00a712 always use the term: the first three conjuncts are the \u00a79 definition of a strip (A, B, C disjoint; A, B nonempty; every vertex of A \u222a B \u222a C lies on a rung), and the last two are the two conditions quoted above.",
       "reachable": true,
       "assumption_tainted": false,
+      "refuted": false,
+      "erratum": null,
       "latex_file": "paper_text.tex",
       "latex_range": {
         "start_line": 2641,
@@ -8659,6 +9236,8 @@
       "rationale": "`StronglyMaximalStaircase` is the Lean transcription of this defining sentence, quoted verbatim in its doc-comment; the complement G\u0305 is G\u1d9c. A staircase of G\u1d9c is again a pair (strip, banister), written (S', R') in the printed order; here S' = (A', C', B') and R' is the banister, whose two ends must be named to state that it is one, so they appear as the bound variables a\u2080' and b\u2080'. C \u2260 \u2205 is C.Nonempty.",
       "reachable": true,
       "assumption_tainted": false,
+      "refuted": false,
+      "erratum": null,
       "latex_file": "paper_text.tex",
       "latex_range": {
         "start_line": 3063,
@@ -8686,6 +9265,8 @@
       "rationale": "`staircaseVertices` is the Lean transcription of this defining sentence, quoted verbatim in its doc-comment; with V(S) = A \u222a B \u222a C and V(R\u2080) = {v | v \u2208 R\u2080}.",
       "reachable": true,
       "assumption_tainted": false,
+      "refuted": false,
+      "erratum": null,
       "latex_file": "paper_text.tex",
       "latex_range": {
         "start_line": 2872,
@@ -8713,6 +9294,8 @@
       "rationale": "`FormsLineGraph` is the Lean transcription of this defining sentence, quoted verbatim in its doc-comment. the Lean form is exactly Appearances.IsAppearance G J H K for K that union: H is a bipartite subdivision of J, and L(H) = H.lineGraph is isomorphic to G.induce K.",
       "reachable": true,
       "assumption_tainted": false,
+      "refuted": false,
+      "erratum": null,
       "latex_file": "paper_text.tex",
       "latex_range": {
         "start_line": 1631,
@@ -8740,6 +9323,8 @@
       "rationale": "`IsJStripSystem` is the Lean transcription of this defining sentence, quoted verbatim in its doc-comment. the Lean form is flagged by the authors as a consequence (\"It follows that\"), not as a further axiom, and so is deliberately not included.",
       "reachable": true,
       "assumption_tainted": false,
+      "refuted": false,
+      "erratum": null,
       "latex_file": "paper_text.tex",
       "latex_range": {
         "start_line": 1604,
@@ -8767,6 +9352,8 @@
       "rationale": "`IsStripOfStripSystem` is the Lean transcription of this defining sentence, quoted verbatim in its doc-comment; so a set T \u2286 V(G) is a strip of (S,N) exactly when T = S_{uv} for some edge uv of J.",
       "reachable": true,
       "assumption_tainted": false,
+      "refuted": false,
+      "erratum": null,
       "latex_file": "paper_text.tex",
       "latex_range": {
         "start_line": 1769,
@@ -8794,6 +9381,8 @@
       "rationale": "`IsUVRung` is the Lean transcription of this defining sentence, quoted verbatim in its doc-comment. the Lean form is rendered by \u2200 x \u2208 R, (x \u2208 N u \u2194 x = s): instantiating at x = s (which lies on R, being its first vertex) gives s \u2208 N_u, and the other instances give the uniqueness. Likewise for t and N_v. Both uniqueness clauses are part of the definition.",
       "reachable": true,
       "assumption_tainted": false,
+      "refuted": false,
+      "erratum": null,
       "latex_file": "paper_text.tex",
       "latex_range": {
         "start_line": 1607,
@@ -8821,6 +9410,8 @@
       "rationale": "`LocalForStripSystem` is the Lean transcription of this defining sentence, quoted verbatim in its doc-comment. V(J) is the whole vertex type U, so \"for some v \u2208 V(J)\" is \u2203 v : U; \"for some edge uv \u2208 E(J)\" is \u2203 u v : U, J.Adj u v \u2227 \u2026. As above, the precondition X \u2286 V(S,N) records where the notion is applied and is not a conjunct.",
       "reachable": true,
       "assumption_tainted": false,
+      "refuted": false,
+      "erratum": null,
       "latex_file": "paper_text.tex",
       "latex_range": {
         "start_line": 1658,
@@ -8848,6 +9439,8 @@
       "rationale": "`MajorForStripSystem` is the Lean transcription of this defining sentence, quoted verbatim in its doc-comment. V(G) V(S,N) is y \u2209 stripSystemVertices J S, and the set of neighbours of y in V(S,N) is G.neighborSet y \u2229 stripSystemVertices J S.",
       "reachable": true,
       "assumption_tainted": false,
+      "refuted": false,
+      "erratum": null,
       "latex_file": "paper_text.tex",
       "latex_range": {
         "start_line": 1659,
@@ -8875,6 +9468,8 @@
       "rationale": "`MaximalStripSystem` is the Lean transcription of this defining sentence, quoted verbatim in its doc-comment. V(S,N) \u2282 V(S',N') is the proper inclusion \u2282 of Set V. The preamble \"a J-strip system (S,N) in G*\" is a hypothesis of 8.5 and is supplied there, so IsJStripSystem G J S N is not a conjunct here; being a J-strip system is of course demanded of the competitor (S',N'), since the paper says so explicitly.",
       "reachable": true,
       "assumption_tainted": false,
+      "refuted": false,
+      "erratum": null,
       "latex_file": "paper_text.tex",
       "latex_range": {
         "start_line": 1764,
@@ -8902,6 +9497,8 @@
       "rationale": "`NondegenerateStripSystem` is the Lean transcription of this defining sentence, quoted verbatim in its doc-comment. \"Some choice of rungs\" is an existentially quantified family R, and the graph H it forms is an arbitrary finite graph, rendered as everywhere in this project by \u2203 (n : \u2115) (H : SimpleGraph (Fin n)). Nondegeneracy of the appearance is Appearances.NondegenerateAppearance J H.",
       "reachable": true,
       "assumption_tainted": false,
+      "refuted": false,
+      "erratum": null,
       "latex_file": "paper_text.tex",
       "latex_range": {
         "start_line": 1643,
@@ -8929,6 +9526,8 @@
       "rationale": "`SaturatesStripSystem` is the Lean transcription of this defining sentence, quoted verbatim in its doc-comment. \"At most one\" is Set.Subsingleton of the set of those neighbours v. The precondition X \u2286 V(S,N) records where the notion is applied (at the only use, MajorForStripSystem, it holds automatically) and, as in Appearances.LocalForLineGraph, is not made a conjunct.",
       "reachable": true,
       "assumption_tainted": false,
+      "refuted": false,
+      "erratum": null,
       "latex_file": "paper_text.tex",
       "latex_range": {
         "start_line": 1658,
@@ -8956,6 +9555,8 @@
       "rationale": "`stripSystemNuv` is the Lean transcription of this defining sentence, quoted verbatim in its doc-comment; the hypothesis \"u,v \u2208 V(J) are adjacent\" says when the notation is used; the sentence \"every vertex of N_u belongs to N_{uv} for exactly one v\" is a consequence of the J-strip system axioms and is not part of the definition. As the paper notes, this operation is not symmetric in u and v.",
       "reachable": true,
       "assumption_tainted": false,
+      "refuted": false,
+      "erratum": null,
       "latex_file": "paper_text.tex",
       "latex_range": {
         "start_line": 1656,
@@ -8983,6 +9584,8 @@
       "rationale": "`stripSystemVertices` is the Lean transcription of this defining sentence, quoted verbatim in its doc-comment; the union is over the edges of J, so only J and the family S occur on the right-hand side (the paper's notation V(S,N) mentions N for symmetry only); the second sentence, \"Hence every N_v \u2286 V(S,N)\", is flagged as a consequence of the second axiom of a J-strip system and so is not part of the definition.",
       "reachable": true,
       "assumption_tainted": false,
+      "refuted": false,
+      "erratum": null,
       "latex_file": "paper_text.tex",
       "latex_range": {
         "start_line": 1655,
@@ -9010,6 +9613,8 @@
       "rationale": "`CyclicallyThreeConnected` is the Lean transcription of this defining sentence, quoted verbatim in its doc-comment. \"Some finite graph J\" is rendered, as everywhere in this project, by quantifying over SimpleGraph (Fin n) for some n.",
       "reachable": true,
       "assumption_tainted": false,
+      "refuted": false,
+      "erratum": null,
       "latex_file": "paper_text.tex",
       "latex_range": {
         "start_line": 806,
@@ -9037,6 +9642,8 @@
       "rationale": "`DifferentBiparity` is the Lean transcription of this defining sentence, quoted verbatim in its doc-comment. u and v have different biparity when every track of H between them has odd length.",
       "reachable": true,
       "assumption_tainted": false,
+      "refuted": false,
+      "erratum": null,
       "latex_file": "paper_text.tex",
       "latex_range": {
         "start_line": 899,
@@ -9064,6 +9671,8 @@
       "rationale": "`DisjointEdges` is the Lean transcription of this defining sentence, quoted verbatim in its doc-comment. (The published paper writes G here, but the surrounding discussion \u2014 and the use made of the notion in 5.7 \u2014 is about edges of H; the same slip is present in the arXiv version. We transcribe the intended notion: two edges of a graph on the vertex type W are disjoint when no vertex is an end of both.)",
       "reachable": true,
       "assumption_tainted": false,
+      "refuted": false,
+      "erratum": null,
       "latex_file": "paper_text.tex",
       "latex_range": {
         "start_line": 901,
@@ -9091,6 +9700,8 @@
       "rationale": "`IsBipartiteSubdivision` is the Lean transcription of this defining sentence, quoted verbatim in its doc-comment. H is a subdivision of J which is moreover bipartite. (Quote given in the PDF's own rendering: the overline/subscript is lost by text extraction.)",
       "reachable": true,
       "assumption_tainted": false,
+      "refuted": false,
+      "erratum": null,
       "latex_file": "paper_text.tex",
       "latex_range": {
         "start_line": 272,
@@ -9118,6 +9729,8 @@
       "rationale": "`IsBranch` is the Lean transcription of this defining sentence, quoted verbatim in its doc-comment; so q is a track of H, none of whose internal vertices is a branch-vertex, and which is maximal with this property.",
       "reachable": true,
       "assumption_tainted": false,
+      "refuted": false,
+      "erratum": null,
       "latex_file": "paper_text.tex",
       "latex_range": {
         "start_line": 796,
@@ -9145,6 +9758,8 @@
       "rationale": "`IsKConnected` is the Lean transcription of this defining sentence, quoted verbatim in its doc-comment; so H is k-connected when it has more than k vertices and deleting any set of fewer than k vertices leaves a connected graph. (Mathlib has no notion of k-connectivity, so this is defined from scratch.). Confidence lowered: the paper states only the >k-vertices convention; the connectivity content is standard, not quoted.",
       "reachable": true,
       "assumption_tainted": false,
+      "refuted": false,
+      "erratum": null,
       "latex_file": "paper_text.tex",
       "latex_range": {
         "start_line": 803,
@@ -9172,6 +9787,8 @@
       "rationale": "`IsSubdivision` is the Lean transcription of this defining sentence, quoted verbatim in its doc-comment; we formalize the paper's own characterisation \u2014 the second sentence \u2014 which is what the rest of the paper actually uses. H is a subdivision of J when there is an injection \u03b9 embedding the vertices of J into those of H (this is the paper's V(J) \u2286 V(H)) together with, for each edge uv of J, a track T u v of H joining \u03b9 u to \u03b9 v:.",
       "reachable": true,
       "assumption_tainted": false,
+      "refuted": false,
+      "erratum": null,
       "latex_file": "paper_text.tex",
       "latex_range": {
         "start_line": 801,
@@ -9199,6 +9816,8 @@
       "rationale": "`IsTrackFrom` is the Lean transcription of this defining sentence, quoted verbatim in its doc-comment. IsTrackFrom H q u v says that q is a track of H whose two ends are u and v. A track consisting of a single vertex has both ends equal to that vertex.",
       "reachable": true,
       "assumption_tainted": false,
+      "refuted": false,
+      "erratum": null,
       "latex_file": "paper_text.tex",
       "latex_range": {
         "start_line": 789,
@@ -9226,6 +9845,8 @@
       "rationale": "`IsTrackList` is the Lean transcription of this defining sentence, quoted verbatim in its doc-comment. A non-null connected graph which is not a cycle and in which every vertex has degree \u2264 2 is exactly a (graph-theoretic) simple path, so we represent a track by the list q of its vertices in order: q is non-null, has no repeated vertex, and consecutive entries are adjacent in H.",
       "reachable": true,
       "assumption_tainted": false,
+      "refuted": false,
+      "erratum": null,
       "latex_file": "paper_text.tex",
       "latex_range": {
         "start_line": 788,
@@ -9253,6 +9874,8 @@
       "rationale": "`MeetEdges` is the Lean transcription of this defining sentence, quoted verbatim in its doc-comment; so two edges meet exactly when they are not disjoint, i.e. when they have an end in common.",
       "reachable": true,
       "assumption_tainted": false,
+      "refuted": false,
+      "erratum": null,
       "latex_file": "paper_text.tex",
       "latex_range": {
         "start_line": 901,
@@ -9280,6 +9903,8 @@
       "rationale": "`SameBiparity` is the Lean transcription of this defining sentence, quoted verbatim in its doc-comment. (That for connected bipartite H exactly one of SameBiparity and DifferentBiparity holds is a fact about bipartite graphs, not part of the definition, so it is not asserted here.)",
       "reachable": true,
       "assumption_tainted": false,
+      "refuted": false,
+      "erratum": null,
       "latex_file": "paper_text.tex",
       "latex_range": {
         "start_line": 899,
@@ -9307,6 +9932,8 @@
       "rationale": "`branchVertices` is the Lean transcription of this defining sentence, quoted verbatim in its doc-comment; the degree of v is written here as (H.neighborSet v).ncard, the number of neighbours of v; for a finite graph this is exactly SimpleGraph.degree.",
       "reachable": true,
       "assumption_tainted": false,
+      "refuted": false,
+      "erratum": null,
       "latex_file": "paper_text.tex",
       "latex_range": {
         "start_line": 796,
@@ -9334,6 +9961,8 @@
       "rationale": "`incidentEdges` is the Lean transcription of this defining sentence, quoted verbatim in its doc-comment, with the paper's sets, paths and holes encoded by the module's stated conventions (sets as `Set V`, paths and holes as vertex lists).",
       "reachable": true,
       "assumption_tainted": false,
+      "refuted": false,
+      "erratum": null,
       "latex_file": "paper_text.tex",
       "latex_range": {
         "start_line": 896,
@@ -9361,6 +9990,8 @@
       "rationale": "`trackEdges` is the Lean transcription of this defining sentence, quoted verbatim in its doc-comment. (the track/path correspondence, printed p. 19). Since a track is a subgraph and not an induced subgraph, its edges are exactly the pairs of consecutive vertices of q \u2014 never a \"chord\" of q that happens to be an edge of the host graph.",
       "reachable": true,
       "assumption_tainted": false,
+      "refuted": false,
+      "erratum": null,
       "latex_file": "paper_text.tex",
       "latex_range": {
         "start_line": 792,
@@ -9388,6 +10019,8 @@
       "rationale": "`trackInterior` is the Lean transcription of this defining sentence, quoted verbatim in its doc-comment; the internal vertices of the track q are all of its vertices except its two ends, i.e. q with its first and last entries removed.",
       "reachable": true,
       "assumption_tainted": false,
+      "refuted": false,
+      "erratum": null,
       "latex_file": "paper_text.tex",
       "latex_range": {
         "start_line": 789,
@@ -9415,6 +10048,8 @@
       "rationale": "`trackLength` is the Lean transcription of this defining sentence, quoted verbatim in its doc-comment. A track on q.length vertices has q.length - 1 edges.",
       "reachable": true,
       "assumption_tainted": false,
+      "refuted": false,
+      "erratum": null,
       "latex_file": "paper_text.tex",
       "latex_range": {
         "start_line": 789,
@@ -9442,6 +10077,8 @@
       "rationale": "`Catches` is the Lean transcription of this defining sentence, quoted verbatim in its doc-comment; the three conjuncts after IsTriangle G T are the paper's three, in the printed order: F is connected (Core.ConnectedSet), F is disjoint from T, and every vertex of T has a neighbour in F.",
       "reachable": true,
       "assumption_tainted": false,
+      "refuted": false,
+      "erratum": null,
       "latex_file": "paper_text.tex",
       "latex_range": {
         "start_line": 4218,
@@ -9469,6 +10106,8 @@
       "rationale": "`IsReflectionOfTriangle` is the Lean transcription of this defining sentence, quoted verbatim in its doc-comment. the Lean form is a uniqueness statement, so \u2014 as for the \"unique edge\" bullets of RousselRubio.VertexLinkedOntoTriangle \u2014 it is rendered as an if and only if: a vertex of the first triangle and a vertex of the second are adjacent exactly when they are a\u1d62 and b\u1d62 for the same i.",
       "reachable": true,
       "assumption_tainted": false,
+      "refuted": false,
+      "erratum": null,
       "latex_file": "paper_text.tex",
       "latex_range": {
         "start_line": 4216,
@@ -9496,6 +10135,8 @@
       "rationale": "`IsFrame` is the Lean transcription of this defining sentence, quoted verbatim in its doc-comment. \"nonnull\" is A\u2080.Nonempty, \"connected\" is SPGT.ConnectedSet G A\u2080.; \"subset of V(G) {z}\" is z \u2209 A\u2080 (every Set V is a subset of V(G)).; \"containing no neighbours of z\" is \u2200 v \u2208 A\u2080, \u00ac G.Adj z v. This is a genuinely separate condition from z \u2209 A\u2080, since z is not adjacent to itself; both conjuncts are stated.",
       "reachable": true,
       "assumption_tainted": false,
+      "refuted": false,
+      "erratum": null,
       "latex_file": "paper_text.tex",
       "latex_range": {
         "start_line": 4778,
@@ -9523,6 +10164,8 @@
       "rationale": "`IsHubForWheelSystem` is the Lean transcription of this defining sentence, quoted verbatim in its doc-comment. \"subset of V(G) (A\u2080 \u222a {z})\" is y \u2209 A\u2080 \u2227 y \u2260 z for every y \u2208 Y. This is the hub condition of \u00a719 and is deliberately not the same as the disjointness condition in the Y-diamond / Y-square preamble of \u00a720, which is disjointness from {z, x\u2080,\u2026,x_t}.;.",
       "reachable": true,
       "assumption_tainted": false,
+      "refuted": false,
+      "erratum": null,
       "latex_file": "paper_text.tex",
       "latex_range": {
         "start_line": 4795,
@@ -9550,6 +10193,8 @@
       "rationale": "`IsKite` is the Lean transcription of this defining sentence, quoted verbatim in its doc-comment; the preamble \"Let (C,Y) be a wheel in G\" is a conjunct, so IsKite is exactly the paper's relation \"y is a kite for (C,Y)\".; \"y \u2208 V(G) (Y \u222a V(C))\" is y \u2209 Y and y \u2209 C.; \"at least four neighbours in C\" counts the vertices of the rim adjacent to y: 4 \u2264 {c | c \u2208 C \u2227 G.Adj y c}.ncard.",
       "reachable": true,
       "assumption_tainted": false,
+      "refuted": false,
+      "erratum": null,
       "latex_file": "paper_text.tex",
       "latex_range": {
         "start_line": 5579,
@@ -9577,6 +10222,8 @@
       "rationale": "`IsPolishedYDiamond` is the Lean transcription of this defining sentence, quoted verbatim in its doc-comment; so a polished Y-diamond is a Y-diamond satisfying, in addition, those five conditions; t \u2265 4 makes the natural subtractions in X_{t\u22123}, A_{t\u22123}, A_{t\u22122} the intended ones.",
       "reachable": true,
       "assumption_tainted": false,
+      "refuted": false,
+      "erratum": null,
       "latex_file": "paper_text.tex",
       "latex_range": {
         "start_line": 5133,
@@ -9604,6 +10251,8 @@
       "rationale": "`IsTail` is the Lean transcription of this defining sentence, quoted verbatim in its doc-comment; this is the published three-bullet definition. (The earlier arXiv draft has six bullets: it forbids all vertices of T \u2014 not only the internal ones \u2014 from lying in Y, and it folds in \"no vertex of G is a kite for (C,Y)\".",
       "reachable": true,
       "assumption_tainted": false,
+      "refuted": false,
+      "erratum": null,
       "latex_file": "paper_text.tex",
       "latex_range": {
         "start_line": 5560,
@@ -9631,6 +10280,8 @@
       "rationale": "`IsWheelSystem` is the Lean transcription of this defining sentence, quoted verbatim in its doc-comment; also a remark; condition 2 is formalized below in the existential form in which it is printed, not via wheelSystemA. \"of height t \u2265 1\" is 1 \u2264 t.; \"a sequence x\u2080,\u2026,x_t of distinct vertices\" constrains only the first t + 1 values of x : \u2115 \u2192 V: they are pairwise distinct.; \"of G (A\u2080 \u222a {z})\" is x j \u2209 A\u2080 \u2227 x j \u2260 z for every j \u2264 t.;.",
       "reachable": true,
       "assumption_tainted": false,
+      "refuted": false,
+      "erratum": null,
       "latex_file": "paper_text.tex",
       "latex_range": {
         "start_line": 4778,
@@ -9658,6 +10309,8 @@
       "rationale": "`IsYDiamond` is the Lean transcription of this defining sentence, quoted verbatim in its doc-comment; the common preamble is part of the definition, so IsYDiamond is exactly the paper's relation \"x\u2080,\u2026,x_t is a Y-diamond\".; \"Y is disjoint from {z, x\u2080,\u2026,x_t}\" is z \u2209 Y together with x i \u2209 Y for every i \u2264 t. Note this is a different condition from the hub condition Y \u2286 V(G) (A\u2080 \u222a {z}) of \u00a719; the two are kept distinct.;.",
       "reachable": true,
       "assumption_tainted": false,
+      "refuted": false,
+      "erratum": null,
       "latex_file": "paper_text.tex",
       "latex_range": {
         "start_line": 5050,
@@ -9685,6 +10338,8 @@
       "rationale": "`IsYSquare` is the Lean transcription of this defining sentence, quoted verbatim in its doc-comment; encoding notes are as for IsYDiamond: the common preamble is part of the definition, \"Y is disjoint from {z, x\u2080,\u2026,x_t}\" is z \u2209 Y and x i \u2209 Y for i \u2264 t, and t \u2265 3 makes the natural subtractions in A_{t\u22121}, A_{t\u22122} the intended ones.",
       "reachable": true,
       "assumption_tainted": false,
+      "refuted": false,
+      "erratum": null,
       "latex_file": "paper_text.tex",
       "latex_range": {
         "start_line": 5050,
@@ -9712,6 +10367,8 @@
       "rationale": "`OptimalWheel` is the Lean transcription of this defining sentence, quoted verbatim in its doc-comment. SPGT.IsWheel is the \u00a716 notion of a wheel (rim C, hub Y).; The maximality is over the hub only: the rim C' of the competing wheel is unconstrained, and \u2282 is strict inclusion of sets.",
       "reachable": true,
       "assumption_tainted": false,
+      "refuted": false,
+      "erratum": null,
       "latex_file": "paper_text.tex",
       "latex_range": {
         "start_line": 5578,
@@ -9739,6 +10396,8 @@
       "rationale": "`wheelSystemA` is the Lean transcription of this defining sentence, quoted verbatim in its doc-comment; encoding note \u2014 why the union realises the paper's maximal set. Write \ud835\udc9c for the family of all A : Set V that include A\u2080, are connected, contain no neighbour of z, and contain no X\u1d62-complete vertex; wheelSystemA is \u22c3\u2080 \ud835\udc9c. This union is itself a member of \ud835\udc9c, and hence is its greatest element, i.e. exactly the paper's A\u1d62:.",
       "reachable": true,
       "assumption_tainted": false,
+      "refuted": false,
+      "erratum": null,
       "latex_file": "paper_text.tex",
       "latex_range": {
         "start_line": 4778,
@@ -9766,6 +10425,8 @@
       "rationale": "`wheelSystemX` is the Lean transcription of this defining sentence, quoted verbatim in its doc-comment; the paper only names X\u1d62 for 1 \u2264 i \u2264 t, but the formula makes sense for every i : \u2115 and is used here at every index (in particular X\u2080 = {x\u2080} occurs implicitly as {x\u2080,\u2026,x_{i-1}} with i = 1). It does not depend on G, z or A\u2080.",
       "reachable": true,
       "assumption_tainted": false,
+      "refuted": false,
+      "erratum": null,
       "latex_file": "paper_text.tex",
       "latex_range": {
         "start_line": 4791,
@@ -9793,6 +10454,8 @@
       "rationale": "`IsOddWheel` is the Lean transcription of this defining sentence, quoted verbatim in its doc-comment; the segments meant are the Y-segments of the rim C, and the length of a segment is the length of the path, i.e. its number of edges (SPGT.pathLength S = S.length - 1).",
       "reachable": true,
       "assumption_tainted": false,
+      "refuted": false,
+      "erratum": null,
       "latex_file": "paper_text.tex",
       "latex_range": {
         "start_line": 3955,
@@ -9820,6 +10483,8 @@
       "rationale": "`IsSegment` is the Lean transcription of this defining sentence, quoted verbatim in its doc-comment. IsSegment G H Y S says that S is a Y-segment of H. The ambient path-or-hole H and the candidate segment S are both given as lists of vertices, and Y : Set V. \"a path in H\": S is a path of G (SPGT.IsPathList, so in particular non-null and induced) whose vertices are vertices of H occupying consecutive positions of H.",
       "reachable": true,
       "assumption_tainted": false,
+      "refuted": false,
+      "erratum": null,
       "latex_file": "paper_text.tex",
       "latex_range": {
         "start_line": 3954,
@@ -9847,6 +10512,8 @@
       "rationale": "`IsWheel` is the Lean transcription of this defining sentence, quoted verbatim in its doc-comment; the rim and the hub are therefore just names for the two components C and Y of the pair; they carry no content beyond the pair itself and so get no separate definition. C is the list of the vertices of the hole in cyclic order, and its length \u2014 the paper's length of a cycle \u2014 is SPGT.holeLength C = C.length.;.",
       "reachable": true,
       "assumption_tainted": false,
+      "refuted": false,
+      "erratum": null,
       "latex_file": "paper_text.tex",
       "latex_range": {
         "start_line": 3947,
@@ -9874,6 +10541,8 @@
       "rationale": "`OppositeWheelParity` is the Lean transcription of this defining sentence, quoted verbatim in its doc-comment. \"Otherwise\" is read inside the scope the paper sets up, namely that of distinct vertices u,v of the rim: u and v are distinct vertices of C for which no path of the rim joining them contains an even number of Y-complete edges.",
       "reachable": true,
       "assumption_tainted": false,
+      "refuted": false,
+      "erratum": null,
       "latex_file": "paper_text.tex",
       "latex_range": {
         "start_line": 3960,
@@ -9901,6 +10570,8 @@
       "rationale": "`SameWheelParity` is the Lean transcription of this defining sentence, quoted verbatim in its doc-comment. the Lean form is a remark on well-definedness, not a further condition, and so is not formalized here.",
       "reachable": true,
       "assumption_tainted": false,
+      "refuted": false,
+      "erratum": null,
       "latex_file": "paper_text.tex",
       "latex_range": {
         "start_line": 3960,
