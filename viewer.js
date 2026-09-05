@@ -341,7 +341,7 @@ function placeSpanHighlightsForPage(pageNumber) {
     const blockLeft = Math.min(...valid.map(r => r.x0));
     const blockRight = Math.max(...valid.map(r => r.x1));
     const title = refuted
-      ? ('⚠ Error in the paper — ' + ((g.members[0].erratum && g.members[0].erratum.title) || 'this passage is refuted in Lean')
+      ? ('⚠ Error found in the paper — ' + ((g.members[0].erratum && g.members[0].erratum.title) || 'the formalization refutes this passage')
          + '\n\nClick for what is wrong and how the formalization fixes it')
       : multi
       ? (g.members.length + ' Lean declarations formalize this passage — click to choose')
@@ -388,7 +388,12 @@ function placeSpanHighlightsForPage(pageNumber) {
       pageDiv.appendChild(badge);
       els.push(badge);
     }
-    for (const m of g.members) state.highlightByFqn.set(m.lean_fqn, { ...m, _els: els, _gid: gid });
+    for (const m of g.members) {
+      // Keep the page-bucket object itself (not a copy) so reveal/un-reveal
+      // bookkeeping and the placed elements stay on one record.
+      m._els = els; m._gid = gid;
+      state.highlightByFqn.set(m.lean_fqn, m);
+    }
     if (g.members.some(m => state.pendingHlFlash === m.link_id)) {
       state.pendingHlFlash = null;
       els[0].scrollIntoView({ block: 'center' });
@@ -468,7 +473,7 @@ function setupErrataButton() {
   const list = state.errata || [];
   if (!list.length) { btn.hidden = true; return; }
   btn.hidden = false;
-  btn.textContent = list.length === 1 ? '⚠ Error in the paper' : `⚠ ${list.length} errors in the paper`;
+  btn.textContent = list.length === 1 ? '⚠ Error found in the paper' : `⚠ ${list.length} errors found in the paper`;
   btn.title = list.map(h => (h.erratum && h.erratum.title) || ('PDF p. ' + h.pdf_page)).join('\n')
     + '\n\nJump to it in the PDF and see what is wrong and how the formalization fixed it';
   let i = 0;
@@ -506,7 +511,7 @@ function showErratumPopover(h, ev) {
   const e = h.erratum || {};
   const refs = erratumRefs(h, e);
   pop.className = 'erratum';
-  pop.innerHTML = '<div class="hlp-head erx-head">⚠ Error in the paper — refuted in Lean</div>' +
+  pop.innerHTML = '<div class="hlp-head erx-head">⚠ Error found in the paper — the formalization refutes this passage</div>' +
     '<div class="erx-body">' +
     (e.title ? '<div class="erx-title">' + escapeHtml(e.title) + '</div>' : '') +
     (e.problem ? '<div class="erx-label">What is wrong</div>' + erratumParas(e.problem)
@@ -545,10 +550,31 @@ async function openLeanFromHighlight(h) {
   });
 }
 
+// A link the paper's scope keeps off the PDF by default: draw it now that the
+// reader asked for it from the Lean panel. Only the most recently requested
+// one stays drawn, so the page never fills up with proof-step highlights.
+function revealLeanOnlyHighlight(h) {
+  const prev = state.revealedHl;
+  if (prev && prev !== h) {
+    const list = state.highlightsByPage.get(prev.pdf_page) || [];
+    const i = list.indexOf(prev);
+    if (i >= 0) list.splice(i, 1);
+    prev._revealed = false;
+    for (const el of (prev._els || [])) el.remove();
+    state.highlightByFqn.set(prev.lean_fqn, prev);
+  }
+  h._revealed = true;
+  state.revealedHl = h;
+  if (!state.highlightsByPage.has(h.pdf_page)) state.highlightsByPage.set(h.pdf_page, []);
+  state.highlightsByPage.get(h.pdf_page).push(h);
+  placeSpanHighlightsForPage(h.pdf_page);   // no-op until the page's text layer exists
+}
+
 // Scroll the PDF to a span highlight for a Lean fqn (used from the Lean panel).
 function scrollPdfToHighlight(fqn) {
   const h = state.highlightByFqn.get(fqn);
   if (!h) return false;
+  if (h.show_in_pdf === false && !h._revealed) revealLeanOnlyHighlight(h);
   // The placed elements are only usable while their page is alive: pdf.js
   // destroys pages that scroll far out of view (it keeps ~10), which detaches
   // everything we appended — scrollIntoView on a detached node is a silent
@@ -801,7 +827,7 @@ function renderLinkWhy(decl) {
       const e = l.erratum || {};
       return `<div class="lw-row lw-refuted">
         <div class="lw-line">
-          <span class="lw-rel">⚠ Refutes the printed text</span>
+          <span class="lw-rel">⚠ Error found in the paper — refutes this passage</span>
           ${target}
           <span class="lw-conf lw-${w}" title="confidence ${(c * 100) | 0}%">${w}</span>
         </div>
@@ -1646,10 +1672,14 @@ async function main() {
   }
 
   // Span-based highlights (new link model): bucket by page, index by Lean fqn.
+  // Links outside the paper's link_scope (show_in_pdf === false) are indexed
+  // for the Lean panel's jump but not drawn until the reader asks for one.
   for (const h of (paper.highlights || [])) {
     if (!h.pdf_page || !h.prose) continue;
-    if (!state.highlightsByPage.has(h.pdf_page)) state.highlightsByPage.set(h.pdf_page, []);
-    state.highlightsByPage.get(h.pdf_page).push(h);
+    if (h.show_in_pdf !== false) {
+      if (!state.highlightsByPage.has(h.pdf_page)) state.highlightsByPage.set(h.pdf_page, []);
+      state.highlightsByPage.get(h.pdf_page).push(h);
+    }
     if (h.lean_fqn) state.highlightByFqn.set(h.lean_fqn, h);
   }
   // Passages the Lean refutes (errata): the header button jumps to them.
