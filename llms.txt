@@ -18,6 +18,8 @@ Formalized math papers with bidirectional PDF/LaTeX <-> Lean cross-references.
     api/cdc/paper.json  api/cdc/lean.json  api/cdc/links.json
 - unitdistance: Planar Point Sets with Many Unit Distances
     api/unitdistance/paper.json  api/unitdistance/lean.json  api/unitdistance/links.json
+- StrongPerfectGraphTheorem: The Strong Perfect Graph Theorem
+    api/StrongPerfectGraphTheorem/paper.json  api/StrongPerfectGraphTheorem/lean.json  api/StrongPerfectGraphTheorem/links.json
 
 ## Global
 - api/papers.json — JSON list of all papers
