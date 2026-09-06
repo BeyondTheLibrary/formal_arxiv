@@ -18,7 +18,6 @@ open Workspace.Types.Staircases Workspace.Types.Staircases.SPGT
 open Workspace.Types.LongOddPrism Workspace.Types.LongOddPrism.SPGT
 open Workspace.Types.RousselRubio Workspace.Types.RousselRubio.SPGT
 open Workspace.ProofLemmas.Thm131Trajectory
-open Workspace.ProofLemmas.Thm131OptimalLength
 open Workspace.ProofLemmas.Thm131ComplementStars
 open Workspace.ProofLemmas.Thm132Optimal
 open Workspace.ProofLemmas.Thm132BanisterSeparation

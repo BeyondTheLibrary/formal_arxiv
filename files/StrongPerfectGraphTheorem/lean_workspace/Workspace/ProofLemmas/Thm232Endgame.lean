@@ -45,9 +45,8 @@ The printed argument runs:
 > *Let `F = {y, v₁, …, v_n}`. … But then the hole formed by the union of `R` and the path
 > `C \ x₀` is the rim of an odd wheel with hub `Y`, a contradiction.  This proves 23.2.*
 
-**Status: statement only** — the body is `sorry`, to be discharged by splitting this file into
-one module per printed claim ((3), (4), (5), endgame).  The hypotheses are exactly the data the
-printed proof has in hand at the start of step (3).
+The hypotheses are exactly the data the printed proof has in hand at the start of step (3);
+the proof runs through one module per printed claim ((3), (4), (5), endgame).
 -/
 
 set_option autoImplicit false
@@ -202,7 +201,6 @@ theorem no_wheel_contradiction (G : SimpleGraph V) (hG : InF8 G)
     { hG := hG
       hbsp := hbsp
       hopt := hopt
-      hmin := hmin
       hd2 := hd2
       hdn := hdn
       hpre1 := hpre1

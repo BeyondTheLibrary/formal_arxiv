@@ -381,7 +381,6 @@ structure EndgameContext (G : SimpleGraph V) (C : List V) (Y : Set V)
   hG : InF8 G
   hbsp : ¬ AdmitsBalancedSkewPartition G
   hopt : OptimalWheel G C Y
-  hmin : ∀ C' : List V, IsWheel G C' Y → yEdgeCount G Y C ≤ yEdgeCount G Y C'
   hd2 : 2 ≤ d
   hdn : d + 2 ≤ C.length
   hpre1 : [x₀, z, x₁] <+: C.rotate k
@@ -466,9 +465,9 @@ theorem final_odd_wheel_gap (G : SimpleGraph V) (C : List V) (Y : Set V)
     (hQF : ∀ v ∈ SPGT.interior Q, v ∈ SPGT.interior T)
     (hQiso : ∀ c ∈ C, ∀ v ∈ SPGT.interior Q, G.Adj c v → c = z ∨ c = c₂) :
     False := by
-  exact Workspace.ProofLemmas.Thm232Final.closing G C Y ctx.hopt.1 ctx.hmin
+  exact Workspace.ProofLemmas.Thm232Final.closing G ctx.hG C Y ctx.hopt.1
     x₀ z x₁ c₁ c₂ c₃ k d ctx.hd2 ctx.hdn ctx.hpre1 ctx.hpre2
-    ctx.h0Y ctx.hzY ctx.h1Y ctx.hc1Y ctx.hc2Y ctx.hc3Y ctx.hnb ctx.hnbc
+    ctx.h0Y ctx.hzY ctx.h1Y ctx.hc1Y ctx.hc2Y ctx.hc3Y ctx.hexh ctx.hnb ctx.hnbc
     (horient.elim (fun h => Or.inl h.2.1) (fun h => Or.inr h.2.1))
     Q hQ (fun v hv => (ctx.hint v (hQF v hv)).1)
     (fun v hv => (ctx.hint v (hQF v hv)).2) hQiso

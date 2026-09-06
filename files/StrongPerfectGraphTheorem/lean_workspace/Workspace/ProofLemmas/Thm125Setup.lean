@@ -10,11 +10,16 @@ set_option maxHeartbeats 1000000
 /-!
 # Common setup for Theorem 12.5
 
-This file contains the elementary list bookkeeping and the direct `1`-breaker
-construction used in parts (1) and (2) of the printed proof of 12.5.  In
-particular, it does not appeal to 11.4: the breaker prohibited by the hypotheses
-is assembled directly from the interior of the old banister and the given
-antipath.
+This file contains the elementary list bookkeeping shared by the four parts of
+the printed proof of 12.5, together with the `1`-breaker construction used in
+part (1).  Part (1) reads
+
+PAPER: *"Since `(S, R₀*, Q)` is not a 1-breaker, it follows that `Q` contains a
+left-star, which must be `q₁`; and similarly `q_k` is a right-star."*
+
+so the triple `(S, R₀*, Q)` is assembled here and handed to the hypothesis that
+`G` has no 1-breaker.  Part (2) cites 11.4 instead, and does so in
+`Workspace.ProofLemmas.Thm125Case2LeftStar`.
 -/
 
 namespace Workspace.ProofLemmas.Thm125Setup

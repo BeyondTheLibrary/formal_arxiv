@@ -312,7 +312,7 @@ function placeSpanHighlightsForPage(pageNumber) {
     // A refuted passage (the Lean shows the printed text is false) is its own
     // red block, never merged into the ordinary highlight of the statement it
     // sits in — and drawn after them so it stays on top.
-    if (m.h.refuted) { refutedGroups.push({ s0: m.s0, s1: m.s1, members: [m.h], refuted: true }); continue; }
+    if (m.h.refuted || m.h.erratum) { refutedGroups.push({ s0: m.s0, s1: m.s1, members: [m.h], refuted: true }); continue; }
     const g = groups[groups.length - 1];
     if (g && m.s0 <= g.s1) { g.s1 = Math.max(g.s1, m.s1); g.members.push(m.h); }
     else groups.push({ s0: m.s0, s1: m.s1, members: [m.h] });
@@ -462,7 +462,7 @@ function erratumParas(text) {
 // The Lean declarations an erratum points at: the refuting decl first, then the
 // curated references (the corrected statement, the printed conclusion, …).
 function erratumRefs(h, e) {
-  const all = [{ fqn: h.lean_fqn, label: 'Lean: the refutation' }, ...((e && e.refs) || [])];
+  const all = [{ fqn: h.lean_fqn, label: h.refuted ? 'Lean: the refutation' : 'Lean: the corrected statement' }, ...((e && e.refs) || [])];
   return all.filter((r, i) => r && r.fqn && all.findIndex(x => x && x.fqn === r.fqn) === i);
 }
 
@@ -476,8 +476,27 @@ function setupErrataButton() {
   btn.textContent = list.length === 1 ? '⚠ Error found in the paper' : `⚠ ${list.length} errors found in the paper`;
   btn.title = list.map(h => (h.erratum && h.erratum.title) || ('PDF p. ' + h.pdf_page)).join('\n')
     + '\n\nJump to it in the PDF and see what is wrong and how the formalization fixed it';
-  let i = 0;
-  btn.addEventListener('click', (e) => { e.stopPropagation(); goToErratum(i++ % list.length); });
+  btn.addEventListener('click', (e) => {
+    e.stopPropagation();
+    if (list.length === 1) { goToErratum(0); return; }
+    const r = btn.getBoundingClientRect();
+    showErrataList(list, { clientX: r.left, clientY: r.bottom - 8 });
+  });
+}
+
+// Chooser listing every erratum (title + page); pick one to jump to it.
+function showErrataList(list, ev) {
+  const pop = ensureHlPopover();
+  pop.className = 'erratum';
+  pop.innerHTML = '<div class="hlp-head erx-head">⚠ Errors found in the paper</div>' +
+    list.map((h, i) => '<button class="hlp-item" data-i="' + i + '">' +
+      '<div class="hlp-line"><span class="hlp-rel">' + escapeHtml((h.erratum && h.erratum.title) || h.lean_fqn) + '</span>' +
+      '<span class="hlp-name">p. ' + h.pdf_page + '</span></div></button>').join('');
+  pop.hidden = false;
+  placePopover(pop, ev);
+  for (const it of pop.querySelectorAll('.hlp-item')) {
+    it.addEventListener('click', () => { hideHlPopover(); goToErratum(+it.dataset.i); });
+  }
 }
 
 function goToErratum(i) {
@@ -511,7 +530,8 @@ function showErratumPopover(h, ev) {
   const e = h.erratum || {};
   const refs = erratumRefs(h, e);
   pop.className = 'erratum';
-  pop.innerHTML = '<div class="hlp-head erx-head">⚠ Error found in the paper — the formalization refutes this passage</div>' +
+  pop.innerHTML = '<div class="hlp-head erx-head">⚠ Error found in the paper — ' +
+    (h.refuted ? 'the formalization refutes this passage' : 'the formalization states a corrected version') + '</div>' +
     '<div class="erx-body">' +
     (e.title ? '<div class="erx-title">' + escapeHtml(e.title) + '</div>' : '') +
     (e.problem ? '<div class="erx-label">What is wrong</div>' + erratumParas(e.problem)
@@ -822,12 +842,13 @@ function renderLinkWhy(decl) {
     const target = l.paper_label
       ? `<a class="lw-label" href="#" data-label="${escapeHtml(l.paper_label)}" title="Show in the PDF">${escapeHtml(l.paper_label)}</a>`
       : `<a class="lw-label" href="#" data-fqn="${escapeHtml(fqn)}" title="Show in the PDF">show in PDF ↩</a>`;
-    if (l.paper_status === 'refuted') {
-      // This decl refutes the printed passage: say so in red, with the erratum.
+    if (l.paper_status === 'refuted' || l.erratum) {
+      // This decl refutes or corrects the printed passage: say so in red, with the erratum.
       const e = l.erratum || {};
+      const rel = l.paper_status === 'refuted' ? 'refutes this passage' : 'corrected in this statement';
       return `<div class="lw-row lw-refuted">
         <div class="lw-line">
-          <span class="lw-rel">⚠ Error found in the paper — refutes this passage</span>
+          <span class="lw-rel">⚠ Error found in the paper — ${rel}</span>
           ${target}
           <span class="lw-conf lw-${w}" title="confidence ${(c * 100) | 0}%">${w}</span>
         </div>
@@ -1683,7 +1704,7 @@ async function main() {
     if (h.lean_fqn) state.highlightByFqn.set(h.lean_fqn, h);
   }
   // Passages the Lean refutes (errata): the header button jumps to them.
-  state.errata = (paper.highlights || []).filter(h => h.refuted && h.pdf_page && h.prose);
+  state.errata = (paper.highlights || []).filter(h => (h.erratum || h.refuted) && h.show_in_pdf !== false && h.pdf_page && h.prose);
   setupErrataButton();
 
   // Deep link: ?file=<lean path> opens the Lean panel straight on that source

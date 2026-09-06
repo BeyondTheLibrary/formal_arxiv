@@ -147,20 +147,34 @@ theorem exists_mixed_hole (h : Context G m J n H K φ N F P p₁ p₂ c q) (hcq 
       (∀ x ∈ L, x ≠ a → ¬ G.Adj p₁ x) ∧
       1 ≤ k ∧ k + 2 ≤ L.length ∧ L[k]? = some r ∧ L[k+1]? = some s := by
   classical
+  -- PAPER: "Let `A` be the neighbours of `p₁` in `N_u` and `B = N_u \ A`."
+  set Av : Set (Fin n) :=
+    {x : Fin n | ∃ he : s(c, x) ∈ H.edgeSet, G.Adj p₁ (↑(φ ⟨s(c, x), he⟩) : V)} with hAv
   obtain ⟨a, haN, hpa⟩ := hA
   obtain ⟨b, hbN, hpb⟩ := hB
   rw [star_eq h c] at haN hbN
   obtain ⟨eA, heA, heAc, haeq⟩ := haN
   obtain ⟨eB, heB, heBc, hbeq⟩ := hbN
-  obtain ⟨xA, rfl⟩ := Sym2.mem_iff_exists.mp heAc.2
-  obtain ⟨xB, rfl⟩ := Sym2.mem_iff_exists.mp heBc.2
-  have hxAB : xA ≠ xB := by
-    rintro rfl
-    exact hpb (by rw [hbeq, ← haeq]; exact hpa)
-  obtain ⟨Q, D, w₁, w₂, j, hQ, hQ2, hQe, hD, hD3, hdisj, hj1, hj2, hcj, hxA', hxB'⟩ :=
-    Thm58StarBranchMixedHoleTrack.exists_mixed_track h hcq heA heB hxAB
+  obtain ⟨yA, rfl⟩ := Sym2.mem_iff_exists.mp heAc.2
+  obtain ⟨yB, rfl⟩ := Sym2.mem_iff_exists.mp heBc.2
+  have hAne : ∃ x, H.Adj c x ∧ x ∈ Av :=
+    ⟨yA, heA, heA, by rw [← haeq]; exact hpa⟩
+  have hBne : ∃ x, H.Adj c x ∧ x ∉ Av := by
+    refine ⟨yB, heB, ?_⟩
+    rintro ⟨he, hadj⟩
+    exact hpb (by rw [hbeq]; exact hadj)
+  obtain ⟨Q, D, w₁, w₂, xA, xB, j, hAedge, hxAmem, hBedge, hxBmem,
+      hQ, hQ2, hQe, hD, hD3, hdisj, hj1, hj2, hcj, hxA', hxB'⟩ :=
+    Thm58StarBranchMixedHoleTrack.exists_mixed_track h hcq Av hAne hBne
+  have hAadj : ∀ he : s(c, xA) ∈ H.edgeSet, G.Adj p₁ (↑(φ ⟨s(c, xA), he⟩) : V) := by
+    obtain ⟨he0, hadj⟩ := hxAmem
+    intro he
+    exact hadj
+  have hBadj : ∀ he : s(c, xB) ∈ H.edgeSet, ¬ G.Adj p₁ (↑(φ ⟨s(c, xB), he⟩) : V) := by
+    intro he hadj
+    exact hxBmem ⟨he, hadj⟩
   refine Thm58StarBranchMixedHoleCycle.exists_hole h hQ hQ2 hD hD3 hdisj hj1 hj2 hcj hxA' hxB'
-    heA (fun he => haeq ▸ hpa) (fun he => hbeq ▸ hpb) ?_ ?_ hrs
+    hAedge hAadj hBadj ?_ ?_ hrs
   · rw [hQe]; exact hr
   · rw [hQe]; exact hs
 

@@ -10,8 +10,10 @@ import Workspace.Types.LongOddPrism
 import Workspace.Types.Classes
 import Workspace.Types.Decompositions
 import Workspace.Types.Appearances
-import Workspace.ProofLemmas.Thm131LastMiss
-import Workspace.ProofLemmas.Thm131SingletonEdge
+import Workspace.ProofLemmas.Thm131Claim2
+import Workspace.ProofLemmas.Thm131Claim4
+import Workspace.ProofLemmas.Thm131Claim7
+import Workspace.ProofLemmas.Thm131Closing
 
 /-!
 # Section 13 — The long odd prism
@@ -70,10 +72,11 @@ open Workspace.Types.Classes Workspace.Types.Classes.SPGT
 open Workspace.Types.Decompositions Workspace.Types.Decompositions.SPGT
 open Workspace.Types.Appearances Workspace.Types.Appearances.SPGT
 open Workspace.ProofLemmas.Thm131Trajectory
-open Workspace.ProofLemmas.Thm131OptimalLength
 open Workspace.ProofLemmas.Thm131EdgeCases
-open Workspace.ProofLemmas.Thm131LastMiss
-open Workspace.ProofLemmas.Thm131SingletonEdge
+open Workspace.ProofLemmas.Thm131Claim2
+open Workspace.ProofLemmas.Thm131Claim4
+open Workspace.ProofLemmas.Thm131Claim7
+open Workspace.ProofLemmas.Thm131Closing
 open Workspace.ProofLemmas.Thm132Infrastructure
 
 namespace SPGT
@@ -123,6 +126,9 @@ theorem thm_13_1 (G : SimpleGraph V) (hG : Berge G)
           ∃ m : ℕ, Even m ∧ 1 ≤ m ∧ m < w.length ∧
             IsAntipathList G (a :: (w.take m ++ [b])))) := by
   classical
+  -- The printed proof is an induction on `t`, the length of the right-sequence:
+  -- *"We proceed by induction on `t`, and assume the result holds for all smaller
+  -- values of `t`."*
   have claim : ∀ n : ℕ, ∀ (y : List V), y.length = n →
       IsRightSequence G A C B y →
       ∀ (d : V), IsRightStar G A C B d →
@@ -142,12 +148,8 @@ theorem thm_13_1 (G : SimpleGraph V) (hG : Berge G)
             TrajectoryConclusion G c' Q d' z' := by
         intro q hq hqseq d' hd' c' Q hQ z' hz'
         exact ih q.length (by omega) q rfl hqseq d' hd' c' Q hQ z' hz'
+      -- PAPER (1): *"`n` is odd."*
       have hodd : Odd z.length := trajectory_tail_odd hG hS hy hP.1.2.2.1 hz
-      have hPone : pathLength P = 1 :=
-        optimal_banister_length_one hG hK4 heven h1br h2br hK hy hIH hP
-      have hPeq : P = [c, d] := path_eq_pair_of_length_one hP.1.1 hPone
-      have hcd : G.Adj c d :=
-        Workspace.ProofLemmas.PathBasics.isPathFrom_ends_adj_of_length_one hP.1.1 hPone
       obtain ⟨i, hi, j, hj, hcbirth, hantiData, hidx⟩ :=
         trajectoryOfVertex_data hS hy hP.1.2.2.1 hz
       let last : V := y[j]
@@ -158,101 +160,62 @@ theorem thm_13_1 (G : SimpleGraph V) (hG : Berge G)
       have hzB : ∀ u ∈ z, VertexComplete G u B :=
         trajectory_tail_right_complete hS hy hP.1.2.2.1 hz hanti
       have hdnotz : d ∉ z := optimal_right_end_not_mem_trajectory hS hy hd hP hz
-      have hzpos : 0 < z.length := by
-        obtain ⟨k, hk⟩ := hodd
-        omega
-      have hz0 : z[0]'hzpos ∈ z := List.getElem_mem hzpos
-      have hcNotComplete : ¬ VertexComplete G c {u : V | u ∈ z} := by
-        intro hccomp
-        have hadjC : Gᶜ.Adj c z[0] := by
-          have hp := Workspace.ProofLemmas.PathBasics.path_adj_succ hanti.1 (i := 0)
-            (by simp; omega)
-          simpa using hp
-        exact hadjC.2 (hccomp z[0] hz0)
-
-      refine ⟨hodd, ?_⟩
-      by_cases hdcomp : VertexComplete G d {u : V | u ∈ z}
-      · left
-        intro r hr
-        rw [hPeq] at hr
-        simp at hr
-        rcases hr with hrc | hrd
-        · subst r
-          exact iff_of_false hcNotComplete hcd.ne
-        · subst r
-          exact iff_of_true hdcomp rfl
-      · have hex : ∃ k : ℕ, ∃ hk : k < z.length, ¬ G.Adj d z[k] := by
-          rw [VertexComplete] at hdcomp
-          push Not at hdcomp
-          obtain ⟨u, huz, hdu⟩ := hdcomp
-          obtain ⟨k, hk, hku⟩ := List.mem_iff_getElem.mp huz
-          exact ⟨k, hk, by simpa [hku] using hdu⟩
-        let k : ℕ := Nat.find hex
-        obtain ⟨hk, hdk⟩ := Nat.find_spec hex
-        have hdprev : ∀ (ell : ℕ) (hell : ell < k),
-            G.Adj d (z[ell]'(by omega)) := by
-          intro ell hell
-          by_contra hn
-          exact Nat.find_min hex hell ⟨by omega, hn⟩
-        by_cases hkearly : k + 1 < z.length
-        · right
-          obtain ⟨hkeven, hantiPrefix⟩ := early_miss_gives_second_outcome
-            hG hS hP.1.2.2.1 hd hcd hanti hbeforeA hzB hdnotz
-            k hk hdk hdprev hkearly
-          exact ⟨hPone, k + 1, hkeven, by omega, hkearly, hantiPrefix⟩
-        · have hklast : k = z.length - 1 := by omega
-          have hlastZ : z.getLast? = some last := by
-            have hz_ne : z ≠ [] := List.ne_nil_of_length_pos hzpos
-            simpa [List.getLast?_cons_of_ne_nil hz_ne] using hanti.2.2
-          have hzlastElem : z[z.length - 1]'(by omega) = last :=
-            Workspace.ProofLemmas.PathBasics.getElem_last_of_getLast? hlastZ hzpos
-          have hzklast : z[k]'hk = last := by
-            have hidxeq : z[k]'hk = z[z.length - 1]'(by omega) :=
-              getElem_congr rfl hklast hk
-            exact hidxeq.trans hzlastElem
-          have hdmissLast : ¬ G.Adj d last := by
-            intro hdlast
-            exact hdk (hzklast.symm ▸ hdlast)
-          have hdBefore : ∀ u ∈ z, u ≠ last → G.Adj d u := by
-            intro u huz hulast
-            obtain ⟨ell, hell, hellu⟩ := List.mem_iff_getElem.mp huz
-            have hellk : ell < k := by
-              have hellle : ell ≤ k := by omega
-              rcases lt_or_eq_of_le hellle with hlt | heq
-              · exact hlt
-              · subst ell
-                exact absurd (hellu.symm.trans hzklast) hulast
-            simpa [hellu] using hdprev ell hellk
-          obtain ⟨aMiss, haMissA, hlastMiss⟩ :=
-            trajectory_last_misses_left hz hanti
-          have hlastAntiA : VertexAnticomplete G last A := by
-            intro u huA
-            by_contra hlu
-            exact terminal_miss_neighbor_absurd hG hS hP.1.2.2.1 hd hcd
-              hanti hodd hbeforeA hzB hdnotz hdBefore hdmissLast
-              huA (by simpa using hlu) haMissA hlastMiss
-          have hlastB : VertexComplete G last B := hzB last
-            (Workspace.ProofLemmas.PathBasics.getLast_mem hlastZ)
-          have hlastStar : IsRightStar G A C B last := by
-            by_cases heq : last = b₀
-            · simpa [heq] using hK.1.1.2.1.2.2.2.1
-            · have hout : last ∉ staircaseVertices A C B R₀ :=
-                bComplete_not_mem_staircase hK.1.1 hlastB heq
-              rcases bComplete_rightStar_or_major hG hK4 heven h1br hK.1 hout hlastB with
-                hs | hm
-              · exact hs
-              · obtain ⟨u, huA, hlu⟩ := hm.2.1
-                exact absurd hlu (hlastAntiA u huA)
-          by_cases hzone : z.length = 1
-          · exact False.elim (singleton_edge_terminal_miss_absurd
-              hG hK4 heven h1br h2br hK hy hd hlastStar hP hz hIH
-              hPone hanti hzone hdnotz hdmissLast)
-          · have hzlong : 1 < z.length := by
-              obtain ⟨ko, hko⟩ := hodd
-              omega
-            exact False.elim (terminal_miss_absurd hG hK4 heven h1br h2br hK hy
-              hd hP hz hIH hPone hanti hodd hzlong hbeforeA hzB hdnotz
-              hdBefore hdmissLast hlastStar)
+      have hzpos : 0 < z.length := by obtain ⟨k, hk⟩ := hodd; omega
+      have hz_ne : z ≠ [] := List.ne_nil_of_length_pos hzpos
+      have hlastZ : z.getLast? = some last := by
+        simpa [List.getLast?_cons_of_ne_nil hz_ne] using hanti.2.2
+      obtain ⟨aMiss, haMissA, hlastMiss⟩ := trajectory_last_misses_left hz hanti
+      -- PAPER (2): *"If `wₙ` has a neighbour in `A` then the theorem holds."*
+      by_cases hAnb : ∃ u ∈ A, G.Adj last u
+      · exact claim_two hG heven hK hP.1 hanti hodd hbeforeA hzB hdnotz hAnb
+          ⟨aMiss, haMissA, hlastMiss⟩
+      · -- PAPER: *"From (2) we may assume that `wₙ` has no neighbour in `A`."*
+        push Not at hAnb
+        have hlastAntiA : VertexAnticomplete G last A := fun u hu => hAnb u hu
+        have hlastB : VertexComplete G last B :=
+          hzB last (Workspace.ProofLemmas.PathBasics.getLast_mem hlastZ)
+        have hlastStar : IsRightStar G A C B last := by
+          by_cases heq : last = b₀
+          · simpa [heq] using hK.1.1.2.1.2.2.2.1
+          · have hout : last ∉ staircaseVertices A C B R₀ :=
+              bComplete_not_mem_staircase hK.1.1 hlastB heq
+            rcases bComplete_rightStar_or_major hG hK4 heven h1br hK.1 hout hlastB with
+              hs | hm
+            · exact hs
+            · obtain ⟨u, huA, hlu⟩ := hm.2.1
+              exact absurd hlu (hlastAntiA u huA)
+        -- PAPER (4): *"If `n = 1` then the theorem holds."*
+        by_cases hzone : z.length = 1
+        · exact claim_four hG hK4 heven h1br h2br hK hy hd hlastStar hP hz hIH
+            hanti hzone
+        · -- PAPER: *"We may therefore assume that `n ≥ 3` (since it is odd.)"*
+          have hzlong : 1 < z.length := by
+            obtain ⟨ko, hko⟩ := hodd
+            omega
+          by_cases hother : ∃ r ∈ P, r ≠ d ∧ VertexComplete G r {u : V | u ∈ z}
+          · -- PAPER (closing paragraph): *"We may therefore assume that some
+            -- vertex of `R \ b` is `W`-complete, for otherwise the theorem holds
+            -- by (7). … a contradiction."*
+            exact absurd (closing_absurd hG heven hK hP.1 hanti hodd hzlong
+              hbeforeA hzB hdnotz hlastStar hother) (fun h => h.elim)
+          · push Not at hother
+            by_cases hdW : VertexComplete G d {u : V | u ∈ z}
+            · refine ⟨hodd, Or.inl ?_⟩
+              intro r hr
+              constructor
+              · intro hc
+                by_contra hne
+                exact hother r hr hne hc
+              · rintro rfl
+                exact hdW
+            · -- PAPER (7): *"If no vertex in `R` is `W`-complete then the
+              -- theorem holds."*
+              refine claim_seven hG hK4 heven h1br h2br hK hy hd hP hz hIH hanti
+                hodd hzlong hbeforeA hzB hdnotz hlastStar ?_
+              intro r hr hc
+              by_cases hrd : r = d
+              · exact hdW (hrd ▸ hc)
+              · exact hother r hr hrd hc
   exact claim x.length x rfl hx b hb a R hopt w htraj
 
 

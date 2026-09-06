@@ -9478,8 +9478,8 @@
       "lean_fqn": "Workspace.ProofLemmas.Thm125Case2LeftStar.leftStar",
       "lean_file": "lean_workspace/Workspace/ProofLemmas/Thm125Case2LeftStar.lean",
       "lean_range": {
-        "start_line": 28,
-        "end_line": 239,
+        "start_line": 38,
+        "end_line": 178,
         "start_col": null,
         "end_col": null
       },
@@ -9658,8 +9658,8 @@
       "lean_fqn": "Workspace.ProofLemmas.Thm125Setup.stars_of_complete_ends_and_interior_neighbours",
       "lean_file": "lean_workspace/Workspace/ProofLemmas/Thm125Setup.lean",
       "lean_range": {
-        "start_line": 137,
-        "end_line": 295,
+        "start_line": 142,
+        "end_line": 300,
         "start_col": null,
         "end_col": null
       },
@@ -9688,8 +9688,8 @@
       "lean_fqn": "Workspace.ProofLemmas.Thm131EdgeCases.early_miss_gives_second_outcome",
       "lean_file": "lean_workspace/Workspace/ProofLemmas/Thm131EdgeCases.lean",
       "lean_range": {
-        "start_line": 80,
-        "end_line": 254,
+        "start_line": 81,
+        "end_line": 253,
         "start_col": null,
         "end_col": null
       },
@@ -9718,8 +9718,8 @@
       "lean_fqn": "Workspace.ProofLemmas.Thm131LastCase.middle_empty_of_last_rightStar",
       "lean_file": "lean_workspace/Workspace/ProofLemmas/Thm131LastCase.lean",
       "lean_range": {
-        "start_line": 42,
-        "end_line": 227,
+        "start_line": 41,
+        "end_line": 226,
         "start_col": null,
         "end_col": null
       },
@@ -10019,7 +10019,7 @@
       "lean_file": "lean_workspace/Workspace/ProofLemmas/Thm132EndgameSetup.lean",
       "lean_range": {
         "start_line": 24,
-        "end_line": 143,
+        "end_line": 150,
         "start_col": null,
         "end_col": null
       },
@@ -10049,7 +10049,7 @@
       "lean_file": "lean_workspace/Workspace/ProofLemmas/Thm132FinalContradiction.lean",
       "lean_range": {
         "start_line": 50,
-        "end_line": 256,
+        "end_line": 259,
         "start_col": null,
         "end_col": null
       },
@@ -10949,7 +10949,7 @@
       "lean_file": "lean_workspace/Workspace/ProofLemmas/Thm174Main.lean",
       "lean_range": {
         "start_line": 81,
-        "end_line": 453,
+        "end_line": 472,
         "start_col": null,
         "end_col": null
       },
@@ -17968,8 +17968,8 @@
       "lean_fqn": "Workspace.ProofLemmas.Thm232Endgame.no_wheel_contradiction",
       "lean_file": "lean_workspace/Workspace/ProofLemmas/Thm232Endgame.lean",
       "lean_range": {
-        "start_line": 69,
-        "end_line": 242,
+        "start_line": 68,
+        "end_line": 240,
         "start_col": null,
         "end_col": null
       },
@@ -17998,8 +17998,8 @@
       "lean_fqn": "Workspace.ProofLemmas.Thm232Final.closing",
       "lean_file": "lean_workspace/Workspace/ProofLemmas/Thm232Final.lean",
       "lean_range": {
-        "start_line": 22,
-        "end_line": 53,
+        "start_line": 27,
+        "end_line": 68,
         "start_col": null,
         "end_col": null
       },
@@ -18028,8 +18028,8 @@
       "lean_fqn": "Workspace.ProofLemmas.Thm232FinalRim.replacement_absurd",
       "lean_file": "lean_workspace/Workspace/ProofLemmas/Thm232FinalRim.lean",
       "lean_range": {
-        "start_line": 56,
-        "end_line": 109,
+        "start_line": 74,
+        "end_line": 141,
         "start_col": null,
         "end_col": null
       },
@@ -18178,8 +18178,8 @@
       "lean_fqn": "Workspace.ProofLemmas.Thm232RemainingClaims.attachment_path_gap",
       "lean_file": "lean_workspace/Workspace/ProofLemmas/Thm232RemainingClaims.lean",
       "lean_range": {
-        "start_line": 434,
-        "end_line": 455,
+        "start_line": 433,
+        "end_line": 454,
         "start_col": null,
         "end_col": null
       },
@@ -18328,8 +18328,8 @@
       "lean_fqn": "Workspace.ProofLemmas.Thm232RemainingClaims.closing_orientation_gap",
       "lean_file": "lean_workspace/Workspace/ProofLemmas/Thm232RemainingClaims.lean",
       "lean_range": {
-        "start_line": 415,
-        "end_line": 433,
+        "start_line": 414,
+        "end_line": 432,
         "start_col": null,
         "end_col": null
       },
@@ -18358,8 +18358,8 @@
       "lean_fqn": "Workspace.ProofLemmas.Thm232RemainingClaims.final_odd_wheel_gap",
       "lean_file": "lean_workspace/Workspace/ProofLemmas/Thm232RemainingClaims.lean",
       "lean_range": {
-        "start_line": 456,
-        "end_line": 476,
+        "start_line": 455,
+        "end_line": 475,
         "start_col": null,
         "end_col": null
       },
@@ -21179,7 +21179,7 @@
       "lean_file": "lean_workspace/Workspace/ProofLemmas/Thm58StarBranchMixedHole.lean",
       "lean_range": {
         "start_line": 140,
-        "end_line": 167,
+        "end_line": 181,
         "start_col": null,
         "end_col": null
       },
@@ -21238,8 +21238,8 @@
       "lean_fqn": "Workspace.ProofLemmas.Thm58StarBranchMixedHoleTrack.exists_mixed_track",
       "lean_file": "lean_workspace/Workspace/ProofLemmas/Thm58StarBranchMixedHoleTrack.lean",
       "lean_range": {
-        "start_line": 54,
-        "end_line": 285,
+        "start_line": 63,
+        "end_line": 266,
         "start_col": null,
         "end_col": null
       },
@@ -28901,22 +28901,8 @@
       "reachable": false,
       "assumption_tainted": false,
       "refuted": true,
-      "erratum": {
-        "title": "Theorem 9.3, outcome 4, is false as printed",
-        "problem": "Outcome 4 asks for a vertex f \u2208 F with the same neighbours as x\u2081 in V(P\u2081) \u222a V(P\u2082) \u222a V(Q\u2082) that is not adjacent to y\u2081. This can fail when Q\u2081 is long. Let H be the bipartite subdivision of K\u2084 whose two diagonals become branches of length 4 and 2, let G be the complement of the line graph L(H) on its 10 edges, and add one vertex f with exactly the neighbours of x\u2081. With the knot P\u2081 = a\u2081-b\u2081, P\u2082 = a\u2082-b\u2082, Q\u2081 = x\u2081-z\u2081-z\u2082-y\u2081, Q\u2082 = x\u2082-y\u2082 and F = {f}, every hypothesis of 9.3 holds (G is Berge; G and its complement have no K\u2084-enlargement appearance and no overshadowed K\u2084 appearance; the attachments of F are not local), yet all four outcomes fail. Outcome 4 fails because f is adjacent to y\u2081, exactly as x\u2081 is.",
-        "fix": "The formalized statement `thm_9_3` weakens the last clause of outcome 4 to \"f has a non-neighbour on Q\u2081 other than x\u2081\" (here z\u2081). The printed clause implies this one, and the two agree when Q\u2081 has length 1, so case (1) of the printed proof is untouched; case (2) and everything downstream, up to the main theorem, go through with the weaker outcome.\n\nLean checks that the four lists form a knot, that f is a twin of x\u2081, and that all four printed outcomes fail (`not_conclusion`). The absence of K\u2084-enlargement appearances was verified by an exhaustive finite search outside Lean.",
-        "refs": [
-          {
-            "fqn": "Workspace.Statements.S09.SPGT.thm_9_3",
-            "label": "Lean: 9.3 with the corrected outcome 4"
-          },
-          {
-            "fqn": "Workspace.ProofLemmas.Thm93CaseTwoCounterexample.PrintedConclusion",
-            "label": "Lean: the conclusion of 9.3 exactly as printed"
-          }
-        ]
-      },
-      "show_in_pdf": true,
+      "erratum": null,
+      "show_in_pdf": false,
       "latex_file": "paper_text.tex",
       "latex_range": {
         "start_line": 2030,
@@ -30968,36 +30954,6 @@
       "prose": "For let M1 be a component of M , and N1 an anticomponent of N . By taking complements we may assume that there is a nonedge between M 1 and N1 . Since the set of attachments of M1 in"
     },
     {
-      "link_id": "lnk_5cd88799f9e359db",
-      "lean_fqn": "Workspace.ProofLemmas.TwoConnectedSplitVertex.exists_split_tracks",
-      "lean_file": "lean_workspace/Workspace/ProofLemmas/TwoConnectedSplitVertex.lean",
-      "lean_range": {
-        "start_line": 283,
-        "end_line": 351,
-        "start_col": null,
-        "end_col": null
-      },
-      "kind": "proof_case",
-      "confidence": 0.85,
-      "source": "manual",
-      "verifier_vote": "none",
-      "rationale": "Formalizes the quoted parenthetical of the proof of 5.8(6), via the dual one-new-vertex construction instead of literally splitting u.",
-      "reachable": true,
-      "assumption_tainted": false,
-      "refuted": false,
-      "erratum": null,
-      "show_in_pdf": false,
-      "latex_file": "paper_text.tex",
-      "latex_range": {
-        "start_line": 1141,
-        "end_line": 1143,
-        "start_col": null,
-        "end_col": null
-      },
-      "pdf_page": 30,
-      "prose": "in B. (To see this, divide u into two adjacent vertices, one incident with the edges in A and the other with those in B, and use Menger\u2019s theorem to deduce that there are two vertex-disjoint paths between these two vertices and v1 , v2 .) Hence in G, there is a path between N v1 and Nv2 using a"
-    },
-    {
       "link_id": "lnk_ba6c936ae3673d0f",
       "lean_fqn": "Workspace.MainTheorem.SPGT.thm_1_1",
       "lean_file": "lean_workspace/Workspace/Statements/S01/Thm_1_1.lean",
@@ -31465,7 +31421,22 @@
       "reachable": true,
       "assumption_tainted": false,
       "refuted": false,
-      "erratum": null,
+      "erratum": {
+        "title": "Theorem 2.5, statement: the hypothesis that X is anticonnected is missing",
+        "problem": "Theorem 2.5 (p. 10) is stated for a set X with no anticonnectedness assumption, unlike 2.1, 2.2, 2.3 and 2.10, which all require it. Without that hypothesis the theorem is false. Take 7 vertices with X = {x\u2081, x\u2082} adjacent, path P = p\u2081p\u2082p\u2083p\u2084, one further vertex v, and edges x\u2081x\u2082, x\u2081p\u2081, x\u2081p\u2082, x\u2081p\u2084, x\u2081v, x\u2082p\u2081, x\u2082p\u2083, x\u2082p\u2084, x\u2082v, p\u2081p\u2082, p\u2082p\u2083, p\u2083p\u2084. This graph is Berge (its only holes are three 4-holes, and it has no antihole), the vertex v is X-complete with no neighbour on P, and both disjuncts of the conclusion fail.",
+        "fix": "The formalized 2.5 adds the hypothesis that X is anticonnected, matching the neighbouring theorems of \u00a72. The single place the paper uses 2.5 is inside the proof of 2.8, where X is anticonnected, so nothing downstream is weakened.",
+        "refs": [
+          {
+            "fqn": "Workspace.Statements.S02.SPGT.thm_2_5",
+            "label": "Lean: 2.5"
+          },
+          {
+            "fqn": "Workspace.Statements.S02.SPGT.thm_2_8",
+            "label": "Lean: 2.8, the only consumer"
+          }
+        ],
+        "paper_span": null
+      },
       "show_in_pdf": true,
       "latex_file": "paper_text.tex",
       "latex_range": {
@@ -32875,7 +32846,18 @@
       "reachable": true,
       "assumption_tainted": false,
       "refuted": false,
-      "erratum": null,
+      "erratum": {
+        "title": "Theorem 1.8(4), statement: the hypothesis must be G \u2208 F\u2083, not G \u2208 F\u2081",
+        "problem": "Item (4) of 1.8 reads \"For every G \u2208 F\u2081, either G is an even prism with 9 vertices, or G admits a proper 2-join or a balanced skew partition, or G \u2208 F\u2084\" (p. 7). Since F\u2084 \u2286 F\u2083 and F\u2081 is not contained in F\u2083, the alternatives cannot cover F\u2081. An 8-vertex counterexample is G = L(H), where H is K\u2084 with two opposite edges ac and bd each subdivided once: G is Berge and self-complementary, its only K\u2084-appearance is degenerate so G \u2208 F\u2081, and G \u2209 F\u2083. Exhaustively, G is not an even prism, has 8 vertices rather than 9, admits no proper 2-join over any split, and has exactly one skew partition, which is not balanced. It does satisfy items (1), (2) and (3) of 1.8.",
+        "fix": "Theorem 10.6, which the paper calls 1.8(4) \"restated\", carries the hypothesis G \u2208 F\u2081 together with the K\u2084 condition that F\u2083 encodes, and never mentions F\u2084. The formalization proves 10.6 as printed and uses it directly, so the repaired reading is the one in force. Item 1.8(4) itself is not part of the Lean build: the route to the main theorem runs through 10.6 and the section theorems, not through 1.8.",
+        "refs": [
+          {
+            "fqn": "Workspace.Statements.S10.SPGT.thm_10_6",
+            "label": "Lean: 10.6"
+          }
+        ],
+        "paper_span": null
+      },
       "show_in_pdf": true,
       "latex_file": "paper_text.tex",
       "latex_range": {
@@ -33192,8 +33174,8 @@
       "lean_fqn": "Workspace.Statements.S13.SPGT.thm_13_1",
       "lean_file": "lean_workspace/Workspace/Statements/S13/Thm_13_1.lean",
       "lean_range": {
-        "start_line": 108,
-        "end_line": 261,
+        "start_line": 111,
+        "end_line": 224,
         "start_col": null,
         "end_col": null
       },
@@ -33223,7 +33205,7 @@
       "lean_file": "lean_workspace/Workspace/Statements/S13/Thm_13_2.lean",
       "lean_range": {
         "start_line": 82,
-        "end_line": 122,
+        "end_line": 138,
         "start_col": null,
         "end_col": null
       },
@@ -34045,7 +34027,22 @@
       "reachable": true,
       "assumption_tainted": false,
       "refuted": false,
-      "erratum": null,
+      "erratum": {
+        "title": "Theorem 18.3, second conclusion: the parity clause fails for lines of length 1",
+        "problem": "The second conclusion of 18.3 (p. 110) says that for every maximal subpath P\u2032 of P with no Y-complete internal vertex, the length of P\u2032 has the same parity as the number of ends of P\u2032 in {p\u2081, p\u2099} that are not Y-complete. A Y-complete edge p\u1d62p\u1d62\u208a\u2081 of P is such a maximal subpath: it has no internal vertex, length 1, and no end in {p\u2081, p\u2099} that fails to be Y-complete, so the clause demands 1 \u2261 0. Read literally the sentence therefore forces P to have no Y-complete edge, which contradicts the third conclusion of 18.3 and the paper's own use of it in 18.4 (\"P contains an odd number of Y-complete edges\"). The paper's proof carries the side condition \"let P\u2032 be a line of length \u2265 2\", and its recap states the correct trichotomy including \"either it has length 1\"; the alternative was dropped when the recap became the statement.",
+        "fix": "The formalized 18.3 adds the side condition 2 \u2264 length of the subpath to the second conclusion, exactly the condition the printed proof uses. The only consumer, 18.5, applies the conclusion with index \u2265 3, so the paper's own uses are unaffected.",
+        "refs": [
+          {
+            "fqn": "Workspace.Statements.S18.SPGT.thm_18_3",
+            "label": "Lean: 18.3"
+          },
+          {
+            "fqn": "Workspace.Statements.S18.SPGT.thm_18_5",
+            "label": "Lean: 18.5, the only consumer"
+          }
+        ],
+        "paper_span": null
+      },
       "show_in_pdf": true,
       "latex_file": "paper_text.tex",
       "latex_range": {
@@ -40416,6 +40413,55 @@
       },
       "pdf_page": 98,
       "prose": "Let us say that distinct vertices u, v of the rim of a wheel (C, Y ) have the same wheel-parity if there is a path of the rim joining them containing an even number of Y -complete edges (and hence by 2.3, so does the second path, if u, v are nonadjacent); and opposite wheel-parity otherwise. In any"
+    },
+    {
+      "link_id": "lnk_12b5482d7dca85c3",
+      "lean_fqn": "Workspace.ProofLemmas.Thm93PrintedCounterexample.printed_nine_three_false",
+      "lean_file": "lean_workspace/Workspace/ProofLemmas/Thm93PrintedCounterexample.lean",
+      "lean_range": {
+        "start_line": 460,
+        "end_line": 498,
+        "start_col": null,
+        "end_col": null
+      },
+      "kind": "other",
+      "confidence": 0.95,
+      "source": "manual",
+      "verifier_vote": "none",
+      "rationale": "Erratum anchor: Theorem 9.3, outcome 4, is false as printed",
+      "reachable": true,
+      "assumption_tainted": false,
+      "refuted": true,
+      "erratum": {
+        "title": "Theorem 9.3, outcome 4, is false as printed",
+        "problem": "Outcome 4 asks for a vertex f \u2208 F with the same neighbours as x\u2081 in V(P\u2081) \u222a V(P\u2082) \u222a V(Q\u2082) that is not adjacent to y\u2081. This can fail when Q\u2081 is long. Let H be the bipartite subdivision of K\u2084 whose two diagonals become branches of length 4 and 2, let G be the complement of the line graph L(H) on its 10 edges, and add one vertex f with exactly the neighbours of x\u2081. With the knot P\u2081 = a\u2081-b\u2081, P\u2082 = a\u2082-b\u2082, Q\u2081 = x\u2081-z\u2081-z\u2082-y\u2081, Q\u2082 = x\u2082-y\u2082 and F = {f}, every hypothesis of 9.3 holds (G is Berge; G and its complement have no K\u2084-enlargement appearance and no overshadowed K\u2084 appearance; the attachments of F are not local), yet all four outcomes fail. Outcome 4 fails because f is adjacent to y\u2081, exactly as x\u2081 is.",
+        "fix": "The formalized statement `thm_9_3` weakens the last clause of outcome 4 to \"f has a non-neighbour on Q\u2081 other than x\u2081\" (here z\u2081). The printed clause implies this one, and the two agree when Q\u2081 has length 1, so case (1) of the printed proof is untouched; case (2) and everything downstream, up to the main theorem, go through with the weaker outcome.\n\nLean checks that the four lists form a knot, that f is a twin of x\u2081, that all four printed outcomes fail, and that neither G nor its complement has a K\u2084-enlargement appearance, and bundles this as `printed_nine_three_false`.",
+        "refs": [
+          {
+            "fqn": "Workspace.Statements.S09.SPGT.thm_9_3",
+            "label": "Lean: 9.3 with the corrected outcome 4"
+          },
+          {
+            "fqn": "Workspace.ProofLemmas.Thm93CaseTwoCounterexample.PrintedConclusion",
+            "label": "Lean: the conclusion of 9.3 exactly as printed"
+          }
+        ],
+        "paper_span": {
+          "pdf_file": "perfect.pdf",
+          "pdf_page": 50,
+          "quote": "there is a vertex f \u2208 F such that (up to symmetry) f, x 1 have the same neighbours in V (P1 ) \u222a V (P2 ) \u222a V (Q2 ) and f is not adjacent to y1 ."
+        }
+      },
+      "show_in_pdf": true,
+      "latex_file": "paper_text.tex",
+      "latex_range": {
+        "start_line": 2030,
+        "end_line": 2031,
+        "start_col": null,
+        "end_col": null
+      },
+      "pdf_page": 50,
+      "prose": "4. there is a vertex f \u2208 F such that (up to symmetry) f, x 1 have the same neighbours in V (P1 ) \u222a V (P2 ) \u222a V (Q2 ) and f is not adjacent to y1 ."
     }
   ]
 }

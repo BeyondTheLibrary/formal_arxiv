@@ -1,8 +1,11 @@
 import Workspace.ProofLemmas.Thm58StarBranchBasics
 import Workspace.ProofLemmas.Thm58StarBranchMixedHoleExpand
-import Workspace.ProofLemmas.TwoConnectedSplitVertex
+import Workspace.ProofLemmas.SplitVertexTwoPaths
 import Workspace.ProofLemmas.Thm58StarBranchParityTrack
 import Workspace.ProofLemmas.Connectivity58Concat
+import Workspace.ProofLemmas.Connectivity58CycleAvoid
+import Workspace.ProofLemmas.Thm57Claim2Structure
+import Workspace.ProofLemmas.LineGraphDegree
 import Workspace.ProofLemmas.TrackSlice
 
 /-!
@@ -14,23 +17,30 @@ an edge in `A` and an edge in `B`.  (To see this, divide `u` into two adjacent v
 incident with the edges in `A` and the other with those in `B`, and use Menger's theorem to
 deduce that there are two vertex-disjoint paths between these two vertices and `{v₁,v₂}`.)"*
 
-The cycle is presented here as a pair of tracks with the same two ends: the branch (up to
-orientation, so `Q` is the branch read in one direction or the other) and a second track `D`
-meeting it only at those ends and running through the star vertex `c` between the prescribed
-`A`-neighbour and the prescribed `B`-neighbour.  `Connectivity58CycleBuild.baseCycle` glues the
-two tracks into the cycle, and `Thm58StarBranchMixedHoleCycle.exists_hole` reads its rung in
-`G`.
+The division of `u` is carried out in `H` itself by `SplitVertexTwoPaths.exists_split_paths`,
+which is the printed parenthesis verbatim: it divides the star vertex `u` into two adjacent
+vertices, one carrying the edges into `A` and one those into `B`, and returns the two
+vertex-disjoint paths of Menger's theorem, read back in `H` as two tracks out of `u` meeting
+only at `u`, one leaving along an edge into `A` and one along an edge into `B`, ending at the
+two ends `v₁`, `v₂` of the branch in one order or the other.
+
+Gluing those two tracks at `u` gives the track `D` from `v₁` to `v₂` through `u`; together with
+the branch `Q` it is the cycle `C₂`, since neither of the two paths can enter the interior of
+the branch (it would then have to run along the branch to its far end, which lies on the other
+path).  `Connectivity58CycleBuild.baseCycle` glues `Q` and `D` into the cycle, and
+`Thm58StarBranchMixedHoleCycle.exists_hole` reads its rung in `G`.
 -/
 
 set_option autoImplicit false
 set_option linter.unusedSectionVars false
+set_option maxHeartbeats 1000000
 
 namespace Workspace.ProofLemmas.Thm58StarBranchMixedHoleTrack
 
 open Workspace.Types.Core.SPGT Workspace.Types.Tracks.SPGT
 open Workspace.Types.Appearances.SPGT
 open Thm58StarBranchBasics
-open Workspace.ProofLemmas.SubdivisionCompose
+open Workspace.ProofLemmas.SubdivisionCounting
 open Workspace.ProofLemmas.Thm58StarBranchMixedHoleExpand
 
 variable {V : Type*} [Fintype V] [DecidableEq V]
@@ -39,22 +49,22 @@ variable {G : SimpleGraph V} {m n : ℕ} {J : SimpleGraph (Fin m)}
   {N : Fin n → Set V} {F : Set V} {P : List V} {p₁ p₂ : V}
   {c : Fin n} {q : List (Fin n)}
 
-/-- **The cycle `C₂` of 5.8 (6).**  PAPER, proof of 5.8 (6), printed p. 28: *"In `H` there is a cycle `C₂` using the
-branch between `v₁` and `v₂`, and using an edge in `A` and an edge in `B`.  (To see this,
-divide `u` into two adjacent vertices, one incident with the edges in `A` and the other with
-those in `B`, and use Menger's theorem to deduce that there are two vertex-disjoint paths
-between these two vertices and `{v₁,v₂}`.)"*
+/-- **The cycle `C₂` of 5.8 (6).**  PAPER, proof of 5.8 (6), printed p. 28: *"In `H` there is a
+cycle `C₂` using the branch between `v₁` and `v₂`, and using an edge in `A` and an edge in `B`.
+(To see this, divide `u` into two adjacent vertices, one incident with the edges in `A` and the
+other with those in `B`, and use Menger's theorem to deduce that there are two vertex-disjoint
+paths between these two vertices and `{v₁,v₂}`.)"*
 
-Here `u` is the star vertex `c`, the chosen edge of `A` is `c xA` and the chosen edge of `B` is
-`c xB`, and `v₁`, `v₂` are the two ends of the branch `q`.  The cycle `C₂` is returned as the
-branch `Q` (that is `q`, read in whichever direction makes the `A`-edge the one on the `v₁`
-side) together with the complementary track `D`, which runs from `v₁` to `v₂` through `c`,
-arriving along the `A`-edge and leaving along the `B`-edge, and which meets the branch only at
-`v₁` and `v₂`. -/
+Here `u` is the star vertex `c` and `Av` is the set `A`; `v₁`, `v₂` are the two ends of the
+branch `q`.  The cycle `C₂` is returned as the branch `Q` (that is `q`, read in whichever
+direction makes the `A`-edge the one on the `w₁` side) together with the complementary track
+`D`, which runs from `w₁` to `w₂` through `c`, arriving along an edge `c xA` into `A` and
+leaving along an edge `c xB` into `B`, and which meets the branch only at `w₁` and `w₂`. -/
 theorem exists_mixed_track (h : Context G m J n H K φ N F P p₁ p₂ c q) (hcq : c ∉ q)
-    {xA xB : Fin n} (hAedge : s(c, xA) ∈ H.edgeSet) (hBedge : s(c, xB) ∈ H.edgeSet)
-    (hxAB : xA ≠ xB) :
-    ∃ (Q D : List (Fin n)) (w₁ w₂ : Fin n) (j : ℕ),
+    (Av : Set (Fin n))
+    (hAne : ∃ x, H.Adj c x ∧ x ∈ Av) (hBne : ∃ x, H.Adj c x ∧ x ∉ Av) :
+    ∃ (Q D : List (Fin n)) (w₁ w₂ xA xB : Fin n) (j : ℕ),
+      s(c, xA) ∈ H.edgeSet ∧ xA ∈ Av ∧ s(c, xB) ∈ H.edgeSet ∧ xB ∉ Av ∧
       IsTrackFrom H Q w₁ w₂ ∧ 2 ≤ Q.length ∧ trackEdges Q = trackEdges q ∧
       IsTrackFrom H D w₁ w₂ ∧ 3 ≤ D.length ∧ (∀ z ∈ trackInterior D, z ∉ Q) ∧
       1 ≤ j ∧ j + 1 < D.length ∧
@@ -62,224 +72,195 @@ theorem exists_mixed_track (h : Context G m J n H K φ N F P p₁ p₂ c q) (hcq
   classical
   have hJ3 : IsKConnected J 3 := h.ready.2.1
   have hsubd : IsSubdivision J H := h.ready.2.2.1.1
-  obtain ⟨ι, T, hι, htrack, hlen, hrev, hdisjint, hnew, hcover, hedges⟩ := hsubd
-  have hS : SubdivWitness J H ι T := ⟨hι, htrack, hlen, hrev, hdisjint, hnew⟩
-  have hdeg := SubdivisionCounting.three_le_degree_of_three_connected J hJ3
+  have hc3 : CyclicallyThreeConnected H := ⟨m, J, hJ3, hsubd⟩
+  have hcut : ∀ z : Fin n, ConnectedSet H ({z}ᶜ : Set (Fin n)) :=
+    Workspace.ProofLemmas.CyclicThreeConnectedAttachments.no_cutvertex_of_cyclicallyThreeConnected
+      hc3
+  have hdeg2 : ∀ z : Fin n, 2 ≤ (H.neighborSet z).ncard :=
+    Workspace.ProofLemmas.LineGraphDegree.two_le_degree_of_isSubdivision hJ3 hsubd
+  -- the branch and its two ends
   have hq2 : 2 ≤ q.length := branch_two_le_length h
-  obtain ⟨a, b, hab, hqE⟩ :=
-    BranchClassification.exists_trackEdges_eq_of_isBranch hι htrack hlen hrev hdisjint hnew
-      hcover hedges hdeg h.branch hq2
-  -- every vertex of the subdividing track of `ab` lies on the branch
-  have hmemq : ∀ z : Fin n, z ∈ T a b → z ∈ q := by
-    intro z hz
-    obtain ⟨i, hi, hiz⟩ := List.getElem_of_mem hz
-    by_cases hlt : i + 1 < (T a b).length
-    · refine Thm58StarBranchParityTrack.mem_of_mem_edge (t := q)
-        (g := s((T a b)[i], (T a b)[i + 1])) (by rw [hqE]; exact ⟨i, hlt, rfl⟩) ?_
-      rw [← hiz]; exact Sym2.mem_mk_left _ _
-    · have h2 : 2 ≤ (T a b).length := two_le_track_length hS hab
-      refine Thm58StarBranchParityTrack.mem_of_mem_edge (t := q)
-        (g := s((T a b)[i - 1]'(by omega), (T a b)[i - 1 + 1]'(by omega)))
-        (by rw [hqE]; exact ⟨i - 1, by omega, rfl⟩) ?_
-      rw [← hiz, SubdivisionCounting.getElem_eq_of_index_eq (T a b)
-        (show i - 1 + 1 = i by omega) (by omega) hi]
-      exact Sym2.mem_mk_right _ _
-  have hlen0 : 0 < (T a b).length := by
-    have := two_le_track_length hS hab; omega
-  have hιa : ι a ∈ T a b := by
-    rw [← SubdivisionCounting.track_head (htrack a b hab) hlen0]; exact List.getElem_mem _
-  have hιb : ι b ∈ T a b := by
-    rw [← DegenerateK4Tracks.track_getLast (htrack a b hab) hlen0]; exact List.getElem_mem _
-  -- the star vertex is the image of a skeleton vertex, distinct from the two branch ends
-  obtain ⟨u, hu⟩ : ∃ u : Fin m, ι u = c :=
-    SubdivisionCounting.branchVertices_subset_range htrack hrev hdisjint hcover hedges h.star
-  subst hu
-  have hau : a ≠ u := by rintro rfl; exact hcq (hmemq _ hιa)
-  have hbu : b ≠ u := by rintro rfl; exact hcq (hmemq _ hιb)
-  -- the two prescribed edges at the star vertex lie on two subdividing tracks
-  obtain ⟨x', hux', hAT⟩ :=
-    SubdivisionTrackExpansion.edge_at_embedded_vertex hS hedges hAedge (Sym2.mem_mk_left _ _)
-  obtain ⟨y', huy', hBT⟩ :=
-    SubdivisionTrackExpansion.edge_at_embedded_vertex hS hedges hBedge (Sym2.mem_mk_left _ _)
-  have second : ∀ (z : Fin m) (w : Fin n) (huz : J.Adj u z),
-      s(ι u, w) ∈ trackEdges (T u z) →
-      w = (T u z)[1]'(by have := two_le_track_length hS huz; omega) := by
-    intro z w huz hT
-    have hTz : IsTrackFrom H (T u z) (ι u) (ι z) := htrack u z huz
-    have h2 : 2 ≤ (T u z).length := two_le_track_length hS huz
-    have h0 : (T u z)[0]'(by omega) = ι u :=
-      SubdivisionCounting.track_head hTz (by omega)
-    have heq := edge_at_head hTz.1 hT h2 (by rw [h0]; exact Sym2.mem_mk_left _ _)
-    rw [h0] at heq
-    rcases Sym2.eq_iff.mp heq with ⟨-, hh⟩ | ⟨hh, -⟩
-    · exact hh
-    · exfalso
-      have := (hTz.1.2.1.getElem_inj_iff (hi := (by omega : (0 : ℕ) < (T u z).length))
-        (hj := (by omega : (1 : ℕ) < (T u z).length))).mp (h0.trans hh)
-      omega
-  have hxA1 := second x' xA hux' hAT
-  have hxB1 := second y' xB huy' hBT
-  have hx'y' : x' ≠ y' := by
-    rintro rfl
-    exact hxAB (hxA1.trans hxB1.symm)
-  -- Menger for the split vertex
-  obtain ⟨tA0, tB0, a', b', hends, htA0, htB0, hlA0, hlB0, hmeet0, hstart0⟩ :=
-    TwoConnectedSplitVertex.exists_split_tracks hJ3 hux' huy' hx'y' hab hau hbu
-  have hswapE : ∀ z w : Fin m, J.Adj z w → trackEdges (T w z) = trackEdges (T z w) := by
-    intro z w hzw
-    rw [hrev z w hzw, SubdivisionCounting.trackEdges_reverse]
-  obtain ⟨sA, sB, eA, eB, hEAB, hsA, hsB, hlenA, hlenB, hmeetAB, hsA1, hsB1, hqE', heAu,
-      heBu⟩ :
-      ∃ (sA sB : List (Fin m)) (eA eB : Fin m),
-        J.Adj eA eB ∧ IsTrackFrom J sA u eA ∧ IsTrackFrom J sB u eB ∧
-        2 ≤ sA.length ∧ 2 ≤ sB.length ∧ (∀ z ∈ sA, z ∈ sB → z = u) ∧
-        sA[1]? = some x' ∧ sB[1]? = some y' ∧ trackEdges (T eA eB) = trackEdges q ∧
-        eA ≠ u ∧ eB ≠ u := by
-    rcases hends with ⟨rfl, rfl⟩ | ⟨rfl, rfl⟩ <;> rcases hstart0 with ⟨h1, h2⟩ | ⟨h1, h2⟩
-    · exact ⟨tA0, tB0, a', b', hab, htA0, htB0, hlA0, hlB0, hmeet0, h1, h2, hqE.symm, hau, hbu⟩
-    · exact ⟨tB0, tA0, b', a', hab.symm, htB0, htA0, hlB0, hlA0,
-        fun z hz hz' => hmeet0 z hz' hz, h2, h1, (hswapE _ _ hab).trans hqE.symm, hbu, hau⟩
-    · exact ⟨tA0, tB0, a', b', hab.symm, htA0, htB0, hlA0, hlB0, hmeet0, h1, h2,
-        (hswapE b' a' hab).trans hqE.symm, hbu, hau⟩
-    · exact ⟨tB0, tA0, b', a', hab, htB0, htA0, hlB0, hlA0,
-        fun z hz hz' => hmeet0 z hz' hz, h2, h1, hqE.symm, hau, hbu⟩
-  have hchA : List.IsChain J.Adj sA := List.isChain_iff_getElem.mpr hsA.1.2.2
-  have hchB : List.IsChain J.Adj sB := List.isChain_iff_getElem.mpr hsB.1.2.2
-  have heAsA : eA ∈ sA := List.mem_of_mem_getLast? (by rw [hsA.2.2]; rfl)
-  have heBsB : eB ∈ sB := List.mem_of_mem_getLast? (by rw [hsB.2.2]; rfl)
-  have heBnA : eB ∉ sA := fun hh => heBu (hmeetAB _ hh heBsB)
-  have heAnB : eA ∉ sB := fun hh => heAu (hmeetAB _ heAsA hh)
-  -- the two skeleton tracks share no edge, and neither uses the branch edge
-  have hnoedgeAB : ∀ e ∈ trackEdges sA, e ∉ trackEdges sB := by
-    rintro e ⟨i, hi, rfl⟩ he'
-    have h1 : sA[i] = u := hmeetAB _ (List.getElem_mem _)
-      (Thm58StarBranchParityTrack.mem_of_mem_edge he' (Sym2.mem_mk_left _ _))
-    have h2 : sA[i + 1] = u := hmeetAB _ (List.getElem_mem _)
-      (Thm58StarBranchParityTrack.mem_of_mem_edge he' (Sym2.mem_mk_right _ _))
-    have := (hsA.1.2.1.getElem_inj_iff (hi := (by omega : i < sA.length))
-      (hj := hi)).mp (h1.trans h2.symm)
+  have hqbr : IsBranch H q := h.branch
+  have hqt : IsTrackList H q := hqbr.1
+  have hqfrom : IsTrackFrom H q (q[0]'(by omega)) (q[q.length - 1]'(by omega)) := by
+    refine ⟨hqt, ?_, ?_⟩
+    · rw [List.head?_eq_getElem?, List.getElem?_eq_getElem (by omega : 0 < q.length)]
+    · rw [List.getLast?_eq_getElem?,
+        List.getElem?_eq_getElem (by omega : q.length - 1 < q.length)]
+  have hvne : (q[0]'(by omega)) ≠ (q[q.length - 1]'(by omega)) := by
+    intro hc
+    have := (hqt.2.1.getElem_inj_iff (hi := (by omega : 0 < q.length))
+      (hj := (by omega : q.length - 1 < q.length))).mp hc
     omega
-  have hpairedge : ∀ (s : List (Fin m)), eB ∉ s ∨ eA ∉ s →
-      ∀ e ∈ trackEdges s, e ∉ trackEdges [eA, eB] := by
-    rintro l hl e he ⟨i, hi, hEq⟩
-    simp only [List.length_cons, List.length_nil] at hi
-    have hi0 : i = 0 := by omega
-    subst hi0
-    rw [show ([eA, eB][0]'(by simp)) = eA from rfl, show ([eA, eB][1]'(by simp)) = eB from rfl]
-      at hEq
-    subst hEq
-    rcases hl with hl | hl
-    · exact hl (Thm58StarBranchParityTrack.mem_of_mem_edge he (Sym2.mem_mk_right _ _))
-    · exact hl (Thm58StarBranchParityTrack.mem_of_mem_edge he (Sym2.mem_mk_left _ _))
-  have hchPair : List.IsChain J.Adj [eA, eB] := by
-    refine List.isChain_iff_getElem.mpr ?_
-    intro i hi
-    simp only [List.length_cons, List.length_nil] at hi
-    have : i = 0 := by omega
-    subst this
-    exact hEAB
-  have hQpair : expandTracks ι T [eA, eB] = T eA eB := expandTracks_pair hS hEAB
-  -- expand to the host graph
-  have hLA : IsTrackFrom H (expandTracks ι T sA) (ι u) (ι eA) :=
-    SubdivisionTrackExpansion.expandTracks_isTrackFrom hS hsA
-  have hLB : IsTrackFrom H (expandTracks ι T sB) (ι u) (ι eB) :=
-    SubdivisionTrackExpansion.expandTracks_isTrackFrom hS hsB
-  have hLAr : IsTrackFrom H (expandTracks ι T sA).reverse (ι eA) (ι u) :=
-    TrackSlice.isTrackFrom_reverse hLA
-  have hlenLA : 2 ≤ (expandTracks ι T sA).length :=
-    two_le_expandTracks_length hS hchA hlenA
-  have hlenLB : 2 ≤ (expandTracks ι T sB).length :=
-    two_le_expandTracks_length hS hchB hlenB
-  have hmeetLL : ∀ w ∈ (expandTracks ι T sA).reverse, w ∈ expandTracks ι T sB → w = ι u := by
-    intro w hw hw'
-    obtain ⟨z, hz, hz', rfl⟩ :=
-      expandTracks_meet hS hchA hchB hnoedgeAB w (List.mem_reverse.mp hw) hw'
-    rw [hmeetAB z hz hz']
-  have hD : IsTrackFrom H ((expandTracks ι T sA).reverse ++ (expandTracks ι T sB).tail)
-      (ι eA) (ι eB) := Connectivity58Concat.isTrackFrom_append hLAr hLB hmeetLL
-  have hpairA : ∀ w ∈ expandTracks ι T sA, w ∈ T eA eB → w = ι eA := by
-    intro w hw hw'
-    rw [← hQpair] at hw'
-    obtain ⟨z, hz, hz', rfl⟩ :=
-      expandTracks_meet hS hchA hchPair (hpairedge sA (Or.inl heBnA)) w hw hw'
-    rcases List.mem_pair.mp hz' with rfl | rfl
-    · rfl
-    · exact absurd hz heBnA
-  have hpairB : ∀ w ∈ expandTracks ι T sB, w ∈ T eA eB → w = ι eB := by
-    intro w hw hw'
-    rw [← hQpair] at hw'
-    obtain ⟨z, hz, hz', rfl⟩ :=
-      expandTracks_meet hS hchB hchPair (hpairedge sB (Or.inr heAnB)) w hw hw'
-    rcases List.mem_pair.mp hz' with rfl | rfl
-    · exact absurd hz heAnB
-    · rfl
-  -- the second vertices of the two expanded tracks are the two prescribed neighbours
-  obtain ⟨restA, hAeq⟩ : ∃ rest, sA = u :: x' :: rest := by
-    match sA, hlenA, hsA.2.1, hsA1 with
-    | z :: w :: rest, _, hh, h1 =>
-      refine ⟨rest, ?_⟩
-      have hz : z = u := Option.some_injective _ hh
-      have hw : w = x' := Option.some_injective _ h1
-      rw [hz, hw]
-  obtain ⟨restB, hBeq⟩ : ∃ rest, sB = u :: y' :: rest := by
-    match sB, hlenB, hsB.2.1, hsB1 with
-    | z :: w :: rest, _, hh, h1 =>
-      refine ⟨rest, ?_⟩
-      have hz : z = u := Option.some_injective _ hh
-      have hw : w = y' := Option.some_injective _ h1
-      rw [hz, hw]
-  have hchA2 : List.IsChain J.Adj (u :: x' :: restA) := hAeq ▸ hchA
-  have hchB2 : List.IsChain J.Adj (u :: y' :: restB) := hBeq ▸ hchB
-  have hLA1 : (expandTracks ι T sA)[1]? = some xA := by
-    rw [hAeq, expandTracks_second hS hux' hchA2.tail,
-      hxA1, List.getElem?_eq_getElem (by have := two_le_track_length hS hux'; omega)]
-  have hLB1 : (expandTracks ι T sB)[1]? = some xB := by
-    rw [hBeq, expandTracks_second hS huy' hchB2.tail,
-      hxB1, List.getElem?_eq_getElem (by have := two_le_track_length hS huy'; omega)]
-  -- assemble
-  refine ⟨T eA eB, (expandTracks ι T sA).reverse ++ (expandTracks ι T sB).tail, ι eA, ι eB,
-    (expandTracks ι T sA).length - 1, htrack eA eB hEAB, two_le_track_length hS hEAB, hqE',
-    hD, ?_, ?_, by omega, ?_, ?_, ?_, ?_⟩
-  · rw [Connectivity58Concat.length_append, List.length_reverse]; omega
-  · intro z hz hzQ
-    have hzD := mem_of_mem_trackInterior hz
-    rcases List.mem_append.mp hzD with hh | hh
-    · exact ne_head_of_mem_trackInterior hD.1.2.1 hD.2.1 hz
-        (hpairA z (List.mem_reverse.mp hh) hzQ)
-    · exact ne_getLast_of_mem_trackInterior hD.1.2.1 hD.2.2 hz
-        (hpairB z (List.mem_of_mem_tail hh) hzQ)
-  · rw [Connectivity58Concat.length_append, List.length_reverse]; omega
-  · have hb : (expandTracks ι T sA).length - 1 <
-        ((expandTracks ι T sA).reverse ++ (expandTracks ι T sB).tail).length := by
-      rw [Connectivity58Concat.length_append, List.length_reverse]; omega
-    rw [List.getElem?_eq_getElem hb,
-      Connectivity58Concat.append_getElem_left _ _ _ (by rw [List.length_reverse]; omega) hb,
-      List.getElem_reverse,
-      SubdivisionCounting.getElem_eq_of_index_eq (expandTracks ι T sA)
-        (show (expandTracks ι T sA).length - 1 - ((expandTracks ι T sA).length - 1) = 0
-          by omega) (by omega) (by omega),
-      SubdivisionCounting.track_head hLA (by omega)]
-  · have hb : (expandTracks ι T sA).length - 1 - 1 <
-        ((expandTracks ι T sA).reverse ++ (expandTracks ι T sB).tail).length := by
-      rw [Connectivity58Concat.length_append, List.length_reverse]; omega
-    rw [List.getElem?_eq_getElem hb,
-      Connectivity58Concat.append_getElem_left _ _ _ (by rw [List.length_reverse]; omega) hb,
-      List.getElem_reverse,
-      SubdivisionCounting.getElem_eq_of_index_eq (expandTracks ι T sA)
-        (show (expandTracks ι T sA).length - 1 - ((expandTracks ι T sA).length - 1 - 1) = 1
-          by omega) (by omega) (by omega)]
-    rw [← List.getElem?_eq_getElem (l := expandTracks ι T sA) (i := 1) (by omega)] at *
-    exact hLA1
-  · have hb : (expandTracks ι T sA).length - 1 + 1 <
-        ((expandTracks ι T sA).reverse ++ (expandTracks ι T sB).tail).length := by
-      rw [Connectivity58Concat.length_append, List.length_reverse]; omega
-    have hidx : (expandTracks ι T sA).reverse.length - 1 + 1
-        = (expandTracks ι T sA).length - 1 + 1 := by rw [List.length_reverse]
-    rw [List.getElem?_eq_getElem hb, ← SubdivisionCounting.getElem_eq_of_index_eq
-        ((expandTracks ι T sA).reverse ++ (expandTracks ι T sB).tail) hidx (by omega) hb,
-      Connectivity58Concat.append_getElem_right hLAr hLB 1 (by omega) (by omega)]
-    rw [← List.getElem?_eq_getElem (l := expandTracks ι T sB) (i := 1) (by omega)] at *
-    exact hLB1
-
+  have hcv1 : c ≠ q[0]'(by omega) := by
+    intro hc; exact hcq (hc ▸ List.getElem_mem _)
+  have hcv2 : c ≠ q[q.length - 1]'(by omega) := by
+    intro hc; exact hcq (hc ▸ List.getElem_mem _)
+  -- PAPER: "divide `u` into two adjacent vertices, one incident with the edges in `A` and the
+  -- other with those in `B`, and use Menger's theorem to deduce that there are two
+  -- vertex-disjoint paths between these two vertices and `{v₁,v₂}`."
+  obtain ⟨tA, tB, xA, xB, w₁, w₂, htA, htB, hlA, hlB, hxAget, hxBget, hxAadj, hxAmem,
+      hxBadj, hxBmem, hmeet, hends⟩ :=
+    Workspace.ProofLemmas.SplitVertexTwoPaths.exists_split_paths hcut hdeg2 hvne hcv1 hcv2
+      hAne hBne
+  have hAedge : s(c, xA) ∈ H.edgeSet := hxAadj
+  have hBedge : s(c, xB) ∈ H.edgeSet := hxBadj
+  have hA1 : tA[1]'(by omega) = xA := by
+    rw [List.getElem?_eq_getElem (by omega : 1 < tA.length)] at hxAget
+    exact Option.some_injective _ hxAget
+  have hB1 : tB[1]'(by omega) = xB := by
+    rw [List.getElem?_eq_getElem (by omega : 1 < tB.length)] at hxBget
+    exact Option.some_injective _ hxBget
+  -- glue the two paths at the star vertex
+  have hAr : IsTrackFrom H tA.reverse w₁ c :=
+    Workspace.ProofLemmas.TrackSlice.isTrackFrom_reverse htA
+  have hmeetRev : ∀ z ∈ tA.reverse, z ∈ tB → z = c := fun z hz hz' =>
+    hmeet z (List.mem_reverse.mp hz) hz'
+  have hD : IsTrackFrom H (tA.reverse ++ tB.tail) w₁ w₂ :=
+    Workspace.ProofLemmas.Connectivity58Concat.isTrackFrom_append hAr htB hmeetRev
+  have hDlen : (tA.reverse ++ tB.tail).length = tA.length + (tB.length - 1) := by
+    rw [Workspace.ProofLemmas.Connectivity58Concat.length_append, List.length_reverse]
+  have hAmemA : w₁ ∈ tA :=
+    List.mem_of_mem_getLast? (by rw [htA.2.2]; rfl)
+  have hBmemB : w₂ ∈ tB :=
+    List.mem_of_mem_getLast? (by rw [htB.2.2]; rfl)
+  have hcA : c ∈ tA := List.mem_of_mem_head? (by rw [htA.2.1]; rfl)
+  have hcB : c ∈ tB := List.mem_of_mem_head? (by rw [htB.2.1]; rfl)
+  -- the branch, oriented from `w₁` to `w₂`
+  have build : ∀ Q : List (Fin n), IsBranch H Q → IsTrackFrom H Q w₁ w₂ → 2 ≤ Q.length →
+      trackEdges Q = trackEdges q → c ∉ Q →
+      (∃ (Q' D : List (Fin n)) (w₁' w₂' xA' xB' : Fin n) (j : ℕ),
+        s(c, xA') ∈ H.edgeSet ∧ xA' ∈ Av ∧ s(c, xB') ∈ H.edgeSet ∧ xB' ∉ Av ∧
+        IsTrackFrom H Q' w₁' w₂' ∧ 2 ≤ Q'.length ∧ trackEdges Q' = trackEdges q ∧
+        IsTrackFrom H D w₁' w₂' ∧ 3 ≤ D.length ∧ (∀ z ∈ trackInterior D, z ∉ Q') ∧
+        1 ≤ j ∧ j + 1 < D.length ∧
+        D[j]? = some c ∧ D[j - 1]? = some xA' ∧ D[j + 1]? = some xB') := by
+    intro Q hQbr hQfrom hQ2 hQedges hcQ
+    have hQ0 : Q[0]'(by omega) = w₁ := track_head hQfrom (by omega)
+    have hQl : Q[Q.length - 1]'(by omega) = w₂ := by
+      have h' := hQfrom.2.2
+      rw [List.getLast?_eq_getElem?,
+        List.getElem?_eq_getElem (by omega : Q.length - 1 < Q.length)] at h'
+      exact Option.some_injective _ h'
+    have hQrev : IsBranch H Q.reverse :=
+      Workspace.ProofLemmas.Thm57Claim2Structure.isBranch_reverse hQbr
+    have hQrevFrom : IsTrackFrom H Q.reverse w₂ w₁ :=
+      Workspace.ProofLemmas.TrackSlice.isTrackFrom_reverse hQfrom
+    have hQrevl : Q.reverse[Q.reverse.length - 1]'(by rw [List.length_reverse]; omega) = w₁ := by
+      have h' := hQrevFrom.2.2
+      rw [List.getLast?_eq_getElem?,
+        List.getElem?_eq_getElem
+          (by rw [List.length_reverse]; omega : Q.reverse.length - 1 < Q.reverse.length)] at h'
+      exact Option.some_injective _ h'
+    -- neither end of the branch is an internal vertex of it
+    have hQends : ∀ x : Fin n, (x = w₁ ∨ x = w₂) → x ∉ trackInterior Q := by
+      intro x hx hmem
+      obtain ⟨j, hj, hjx⟩ := (mem_trackInterior_iff Q x).mp hmem
+      rcases hx with rfl | rfl
+      · have := (hQfrom.1.2.1.getElem_inj_iff (hi := (by omega : j + 1 < Q.length))
+          (hj := (by omega : 0 < Q.length))).mp (by rw [hjx, hQ0])
+        omega
+      · have := (hQfrom.1.2.1.getElem_inj_iff (hi := (by omega : j + 1 < Q.length))
+          (hj := (by omega : Q.length - 1 < Q.length))).mp (by rw [hjx, hQl])
+        omega
+    have hw₁w₂ : w₁ ≠ w₂ := by
+      intro hc
+      have := (hQfrom.1.2.1.getElem_inj_iff (hi := (by omega : 0 < Q.length))
+        (hj := (by omega : Q.length - 1 < Q.length))).mp (by rw [hQ0, hQl, hc])
+      omega
+    have hw₂A : w₂ ∉ tA := by
+      intro hc
+      exact hcQ (hmeet w₂ hc hBmemB ▸ (by rw [← hQl]; exact List.getElem_mem _))
+    have hw₁B : w₁ ∉ tB := by
+      intro hc
+      exact hcQ ((hmeet w₁ hAmemA hc) ▸ (by rw [← hQ0]; exact List.getElem_mem _))
+    -- neither path enters the interior of the branch
+    have hAint : ∀ x ∈ trackInterior Q, x ∉ tA := by
+      refine Workspace.ProofLemmas.Connectivity58CycleAvoid.interior_disjoint_of_last_not_mem
+        hdeg2 hQbr hQ2 htA.1 ?_ ?_
+      · intro x hx hend
+        rcases hend with hh | hh
+        · rw [htA.2.1] at hh
+          have : x = c := (Option.some_injective _ hh).symm
+          subst this
+          exact fun hc => hcQ
+            (Workspace.ProofLemmas.SubdivisionCompose.mem_of_mem_trackInterior hc)
+        · rw [htA.2.2] at hh
+          have : x = w₁ := (Option.some_injective _ hh).symm
+          subst this
+          exact hQends _ (Or.inl rfl)
+      · rw [hQl]; exact hw₂A
+    have hBint : ∀ x ∈ trackInterior Q, x ∉ tB := by
+      have hkey := Workspace.ProofLemmas.Connectivity58CycleAvoid.interior_disjoint_of_last_not_mem
+        hdeg2 hQrev (by rw [List.length_reverse]; omega) htB.1 ?_ ?_
+      · intro x hx
+        exact hkey x (Workspace.ProofLemmas.TrackSlice.mem_trackInterior_reverse.mpr hx)
+      · intro x hx hend
+        rcases hend with hh | hh
+        · rw [htB.2.1] at hh
+          have : x = c := (Option.some_injective _ hh).symm
+          subst this
+          intro hc
+          exact hcQ (Workspace.ProofLemmas.SubdivisionCompose.mem_of_mem_trackInterior
+            (Workspace.ProofLemmas.TrackSlice.mem_trackInterior_reverse.mp hc))
+        · rw [htB.2.2] at hh
+          have : x = w₂ := (Option.some_injective _ hh).symm
+          subst this
+          intro hc
+          exact hQends _ (Or.inr rfl)
+            (Workspace.ProofLemmas.TrackSlice.mem_trackInterior_reverse.mp hc)
+      · rw [hQrevl]; exact hw₁B
+    -- so the two tracks meet only at the two ends
+    have hdisjD : ∀ z ∈ trackInterior (tA.reverse ++ tB.tail), z ∉ Q := by
+      intro z hz hzQ
+      have hzD : z ∈ tA.reverse ++ tB.tail :=
+        Workspace.ProofLemmas.SubdivisionCompose.mem_of_mem_trackInterior hz
+      have hz1 : z ≠ w₁ :=
+        Workspace.ProofLemmas.SubdivisionCompose.ne_head_of_mem_trackInterior hD.1.2.1 hD.2.1 hz
+      have hz2 : z ≠ w₂ :=
+        Workspace.ProofLemmas.SubdivisionCompose.ne_getLast_of_mem_trackInterior
+          hD.1.2.1 hD.2.2 hz
+      have hzint : z ∉ trackInterior Q := by
+        rcases List.mem_append.mp hzD with hh | hh
+        · exact fun hc => hAint z hc (List.mem_reverse.mp hh)
+        · exact fun hc => hBint z hc (List.mem_of_mem_tail hh)
+      rcases Workspace.ProofLemmas.SubdivisionCompose.mem_ends_of_mem
+        hQfrom.2.1 hQfrom.2.2 hzQ hzint with hh | hh
+      · exact hz1 hh
+      · exact hz2 hh
+    refine ⟨Q, tA.reverse ++ tB.tail, w₁, w₂, xA, xB, tA.length - 1, hAedge, hxAmem, hBedge,
+      hxBmem, hQfrom, hQ2, hQedges, hD, by omega, hdisjD, by omega, by omega, ?_, ?_, ?_⟩
+    · have hb : tA.length - 1 < (tA.reverse ++ tB.tail).length := by omega
+      rw [List.getElem?_eq_getElem hb,
+        Workspace.ProofLemmas.Connectivity58Concat.append_getElem_left _ _ _
+          (by rw [List.length_reverse]; omega) hb,
+        List.getElem_reverse,
+        getElem_eq_of_index_eq tA
+          (show tA.length - 1 - (tA.length - 1) = 0 by omega) (by omega) (by omega),
+        track_head htA (by omega)]
+    · have hb : tA.length - 1 - 1 < (tA.reverse ++ tB.tail).length := by omega
+      rw [List.getElem?_eq_getElem hb,
+        Workspace.ProofLemmas.Connectivity58Concat.append_getElem_left _ _ _
+          (by rw [List.length_reverse]; omega) hb,
+        List.getElem_reverse,
+        getElem_eq_of_index_eq tA
+          (show tA.length - 1 - (tA.length - 1 - 1) = 1 by omega) (by omega) (by omega),
+        hA1]
+    · have hb : tA.length - 1 + 1 < (tA.reverse ++ tB.tail).length := by omega
+      have hidx : tA.reverse.length - 1 + 1 = tA.length - 1 + 1 := by
+        rw [List.length_reverse]
+      rw [List.getElem?_eq_getElem hb,
+        ← getElem_eq_of_index_eq (tA.reverse ++ tB.tail) hidx (by omega) hb,
+        Workspace.ProofLemmas.Connectivity58Concat.append_getElem_right hAr htB 1
+          (by omega) (by omega),
+        hB1]
+  -- orient the branch so that it runs from `w₁` to `w₂`
+  rcases hends with ⟨rfl, rfl⟩ | ⟨rfl, rfl⟩
+  · exact build q hqbr hqfrom hq2 rfl hcq
+  · refine build q.reverse
+      (Workspace.ProofLemmas.Thm57Claim2Structure.isBranch_reverse hqbr)
+      (Workspace.ProofLemmas.TrackSlice.isTrackFrom_reverse hqfrom)
+      (by rw [List.length_reverse]; omega) (trackEdges_reverse q) ?_
+    rw [List.mem_reverse]; exact hcq
 
 end Workspace.ProofLemmas.Thm58StarBranchMixedHoleTrack

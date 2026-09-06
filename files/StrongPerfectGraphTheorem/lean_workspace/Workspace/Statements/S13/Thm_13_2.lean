@@ -90,32 +90,48 @@ theorem thm_13_2 (G : SimpleGraph V) (hG : Berge G)
     (x : List V) (hx : IsRightSequence G A C B x) :
     ∀ v ∈ x, G.Adj v a₀ := by
   classical
-  intro v hv
-  by_contra hvbad
-  have hex : ∃ k : ℕ, ∃ hk : k < x.length, ¬ G.Adj x[k] a₀ := by
-    obtain ⟨k, hk, hkv⟩ := List.mem_iff_getElem.mp hv
-    exact ⟨k, hk, by simpa [hkv] using hvbad⟩
-  let i : ℕ := Nat.find hex
-  obtain ⟨hi, hbad⟩ := Nat.find_spec hex
-  have hprev : ∀ (j : ℕ) (hj : j < i), G.Adj x[j] a₀ := by
-    intro j hj
-    by_contra hn
-    exact Nat.find_min hex hj ⟨by omega, hn⟩
-  obtain ⟨d⟩ := Workspace.ProofLemmas.Thm132Setup.exists_firstBadData
-    hG hK4 heven h1br h2br hK hx i hi hprev hbad
-  have hbW := Workspace.ProofLemmas.Thm132Claim2.right_end_complete_trajectory
-    hG hK4 heven h1br h2br hK hx hi hprev hbad d
-  obtain ⟨hra, hlast⟩ :=
-    Workspace.ProofLemmas.Thm132Claim3.left_end_adj_and_last_rightStar
-      hG hK4 heven h1br h2br hK hx hi hprev hbad d hbW
-  have hwone := Workspace.ProofLemmas.Thm132Claim5.trajectory_length_one
-    hG heven hK d hbW hra hlast
-  obtain ⟨P, hP, hPodd, hPint⟩ :=
-    Workspace.ProofLemmas.Thm132FinalPath.exists_final_odd_path
-      hG heven hK d hbW hra hlast hwone
-  exact Workspace.ProofLemmas.Thm132FinalContradiction.endgame_contradiction
-    hG hK4 heven h1br h2br hK hx d hlast hwone P hP hPodd hPint
-
+  -- PAPER: *"Suppose the theorem is false, and choose `t` as small as possible such that the
+  -- statement of the theorem does not hold."*  Equivalently, we induct on the length of the
+  -- right-sequence: the staircase may change, but the strip `(A, C, B)` does not.
+  suffices H : ∀ n : ℕ, ∀ (a₀' b₀' : V) (R₀' x' : List V), x'.length = n →
+      StronglyMaximalStaircase G A C B a₀' R₀' b₀' → IsRightSequence G A C B x' →
+      ∀ v ∈ x', G.Adj v a₀' from
+    H x.length a₀ b₀ R₀ x rfl hK hx
+  intro n
+  induction n using Nat.strong_induction_on with
+  | _ n IHn =>
+    intro a₀ b₀ R₀ x hxlen hK hx
+    have hIH : ∀ y : List V, y.length < x.length → IsRightSequence G A C B y →
+        ∀ (a' b' : V) (R' : List V), StronglyMaximalStaircase G A C B a' R' b' →
+        ∀ v ∈ y, G.Adj v a' := by
+      intro y hylen hy a' b' R' hK' v hv
+      exact IHn y.length (by omega) a' b' R' y rfl hK' hy v hv
+    intro v hv
+    by_contra hvbad
+    -- *"So `t ≥ 1`, and `x₁, …, x_{t−1}` are all adjacent to `a₀`, and `x_t` is not."*
+    have hex : ∃ k : ℕ, ∃ hk : k < x.length, ¬ G.Adj x[k] a₀ := by
+      obtain ⟨k, hk, hkv⟩ := List.mem_iff_getElem.mp hv
+      exact ⟨k, hk, by simpa [hkv] using hvbad⟩
+    let i : ℕ := Nat.find hex
+    obtain ⟨hi, hbad⟩ := Nat.find_spec hex
+    have hprev : ∀ (j : ℕ) (hj : j < i), G.Adj x[j] a₀ := by
+      intro j hj
+      by_contra hn
+      exact Nat.find_min hex hj ⟨by omega, hn⟩
+    obtain ⟨d⟩ := Workspace.ProofLemmas.Thm132Setup.exists_firstBadData
+      hG hK4 heven h1br h2br hK hx i hi hprev hbad hIH
+    have hbW := Workspace.ProofLemmas.Thm132Claim2.right_end_complete_trajectory
+      hG hK4 heven h1br h2br hK hx hi hprev hbad d
+    obtain ⟨hra, hlast⟩ :=
+      Workspace.ProofLemmas.Thm132Claim3.left_end_adj_and_last_rightStar
+        hG hK4 heven h1br h2br hK hx hi hprev hbad d hbW
+    have hwone := Workspace.ProofLemmas.Thm132Claim5.trajectory_length_one
+      hG heven hK d hbW hra hlast
+    obtain ⟨P, hP, hPodd, hPint⟩ :=
+      Workspace.ProofLemmas.Thm132FinalPath.exists_final_odd_path
+        hG heven hK d hbW hra hlast hwone
+    exact Workspace.ProofLemmas.Thm132FinalContradiction.endgame_contradiction
+      hG hK4 heven h1br h2br hK hx d hlast hwone P hP hPodd hPint hIH
 
 end SPGT
 

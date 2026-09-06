@@ -3657,6 +3657,54 @@
       ]
     },
     {
+      "decl_id": "StrongPerfectGraphTheorem:lean:Workspace.ProofLemmas.BergeTwoRegularCriterion.hole_deg_two",
+      "fqn": "Workspace.ProofLemmas.BergeTwoRegularCriterion.hole_deg_two",
+      "name": "hole_deg_two",
+      "kind": "theorem",
+      "file": "lean_workspace/Workspace/ProofLemmas/BergeTwoRegularCriterion.lean",
+      "decl_range": {
+        "start_line": 23,
+        "end_line": 72,
+        "start_col": null,
+        "end_col": null
+      },
+      "header_range": {
+        "start_line": 23,
+        "end_line": 26,
+        "start_col": null,
+        "end_col": null
+      },
+      "docstring": "In a hole, every vertex has **exactly two** neighbours among the hole's own vertices:\nits cyclic successor `c[(i+1) % n]` and its cyclic predecessor `c[(i + (n-1)) % n]`.",
+      "has_sorry": false,
+      "is_axiom": false,
+      "assumption_sources": [],
+      "links": []
+    },
+    {
+      "decl_id": "StrongPerfectGraphTheorem:lean:Workspace.ProofLemmas.BergeTwoRegularCriterion.even_of_no_odd_two_regular",
+      "fqn": "Workspace.ProofLemmas.BergeTwoRegularCriterion.even_of_no_odd_two_regular",
+      "name": "even_of_no_odd_two_regular",
+      "kind": "theorem",
+      "file": "lean_workspace/Workspace/ProofLemmas/BergeTwoRegularCriterion.lean",
+      "decl_range": {
+        "start_line": 73,
+        "end_line": 87,
+        "start_col": null,
+        "end_col": null
+      },
+      "header_range": {
+        "start_line": 73,
+        "end_line": 77,
+        "start_col": null,
+        "end_col": null
+      },
+      "docstring": "If no odd-sized subset of size `\u2265 5` is `2`-regular, then every hole has even length.",
+      "has_sorry": false,
+      "is_axiom": false,
+      "assumption_sources": [],
+      "links": []
+    },
+    {
       "decl_id": "StrongPerfectGraphTheorem:lean:Workspace.ProofLemmas.BipartiteClosedWalkEven.exists_walk_of_chain",
       "fqn": "Workspace.ProofLemmas.BipartiteClosedWalkEven.exists_walk_of_chain",
       "name": "exists_walk_of_chain",
@@ -39193,6 +39241,510 @@
       ]
     },
     {
+      "decl_id": "StrongPerfectGraphTheorem:lean:Workspace.ProofLemmas.K4AppearanceDegreeCriterion.degree_le_three_of_isSubdivision",
+      "fqn": "Workspace.ProofLemmas.K4AppearanceDegreeCriterion.degree_le_three_of_isSubdivision",
+      "name": "degree_le_three_of_isSubdivision",
+      "kind": "theorem",
+      "file": "lean_workspace/Workspace/ProofLemmas/K4AppearanceDegreeCriterion.lean",
+      "decl_range": {
+        "start_line": 50,
+        "end_line": 142,
+        "start_col": null,
+        "end_col": null
+      },
+      "header_range": {
+        "start_line": 50,
+        "end_line": 53,
+        "start_col": null,
+        "end_col": null
+      },
+      "docstring": "**Every vertex of a subdivision of a graph of maximum degree `\u2264 3` has degree `\u2264 3`.**\n\nA vertex of `H` is either an old vertex `\u03b9 u` \u2014 whose `H`-neighbours are the second vertices of\nthe tracks issuing from `u`, one per `J`-neighbour of `u` \u2014 or an internal vertex of a track,\nwhich is not a branch-vertex of `H` at all.",
+      "has_sorry": false,
+      "is_axiom": false,
+      "assumption_sources": [],
+      "links": []
+    },
+    {
+      "decl_id": "StrongPerfectGraphTheorem:lean:Workspace.ProofLemmas.K4AppearanceDegreeCriterion.lineGraph_neighborSet_val_subset",
+      "fqn": "Workspace.ProofLemmas.K4AppearanceDegreeCriterion.lineGraph_neighborSet_val_subset",
+      "name": "lineGraph_neighborSet_val_subset",
+      "kind": "theorem",
+      "file": "lean_workspace/Workspace/ProofLemmas/K4AppearanceDegreeCriterion.lean",
+      "decl_range": {
+        "start_line": 143,
+        "end_line": 172,
+        "start_col": null,
+        "end_col": null
+      },
+      "header_range": {
+        "start_line": 143,
+        "end_line": 146,
+        "start_col": null,
+        "end_col": null
+      },
+      "docstring": "The `L(H)`-neighbours of `s(a,b)`, listed by their far end: each is an edge `s(a,x)` with\n`x` a neighbour of `a` other than `b`, or an edge `s(b,y)` with `y` a neighbour of `b` other\nthan `a`.",
+      "has_sorry": false,
+      "is_axiom": false,
+      "assumption_sources": [],
+      "links": []
+    },
+    {
+      "decl_id": "StrongPerfectGraphTheorem:lean:Workspace.ProofLemmas.K4AppearanceDegreeCriterion.lineGraph_degree_le_four",
+      "fqn": "Workspace.ProofLemmas.K4AppearanceDegreeCriterion.lineGraph_degree_le_four",
+      "name": "lineGraph_degree_le_four",
+      "kind": "theorem",
+      "file": "lean_workspace/Workspace/ProofLemmas/K4AppearanceDegreeCriterion.lean",
+      "decl_range": {
+        "start_line": 173,
+        "end_line": 203,
+        "start_col": null,
+        "end_col": null
+      },
+      "header_range": {
+        "start_line": 173,
+        "end_line": 175,
+        "start_col": null,
+        "end_col": null
+      },
+      "docstring": "**The `L(H)`-degree of an edge is at most `deg(a) - 1 + deg(b) - 1`**, hence at most `4`\nwhen `H` has maximum degree `3`.",
+      "has_sorry": false,
+      "is_axiom": false,
+      "assumption_sources": [],
+      "links": []
+    },
+    {
+      "decl_id": "StrongPerfectGraphTheorem:lean:Workspace.ProofLemmas.K4AppearanceDegreeCriterion.two_le_lineGraph_degree",
+      "fqn": "Workspace.ProofLemmas.K4AppearanceDegreeCriterion.two_le_lineGraph_degree",
+      "name": "two_le_lineGraph_degree",
+      "kind": "theorem",
+      "file": "lean_workspace/Workspace/ProofLemmas/K4AppearanceDegreeCriterion.lean",
+      "decl_range": {
+        "start_line": 204,
+        "end_line": 249,
+        "start_col": null,
+        "end_col": null
+      },
+      "header_range": {
+        "start_line": 204,
+        "end_line": 206,
+        "start_col": null,
+        "end_col": null
+      },
+      "docstring": "**The `L(H)`-degree of an edge is at least `2`** as soon as both of its ends have degree\nat least `2`: take another edge at `a` and another edge at `b`.",
+      "has_sorry": false,
+      "is_axiom": false,
+      "assumption_sources": [],
+      "links": []
+    },
+    {
+      "decl_id": "StrongPerfectGraphTheorem:lean:Workspace.ProofLemmas.K4AppearanceDegreeCriterion.lineGraph_degree_bounds",
+      "fqn": "Workspace.ProofLemmas.K4AppearanceDegreeCriterion.lineGraph_degree_bounds",
+      "name": "lineGraph_degree_bounds",
+      "kind": "theorem",
+      "file": "lean_workspace/Workspace/ProofLemmas/K4AppearanceDegreeCriterion.lean",
+      "decl_range": {
+        "start_line": 250,
+        "end_line": 268,
+        "start_col": null,
+        "end_col": null
+      },
+      "header_range": {
+        "start_line": 250,
+        "end_line": 253,
+        "start_col": null,
+        "end_col": null
+      },
+      "docstring": "**The `L(H)`-degree of every vertex of `L(H)` is between `2` and `4`**, when `H` has all\ndegrees between `2` and `3`.",
+      "has_sorry": false,
+      "is_axiom": false,
+      "assumption_sources": [],
+      "links": []
+    },
+    {
+      "decl_id": "StrongPerfectGraphTheorem:lean:Workspace.ProofLemmas.K4AppearanceDegreeCriterion.induce_neighborSet_ncard",
+      "fqn": "Workspace.ProofLemmas.K4AppearanceDegreeCriterion.induce_neighborSet_ncard",
+      "name": "induce_neighborSet_ncard",
+      "kind": "theorem",
+      "file": "lean_workspace/Workspace/ProofLemmas/K4AppearanceDegreeCriterion.lean",
+      "decl_range": {
+        "start_line": 269,
+        "end_line": 283,
+        "start_col": null,
+        "end_col": null
+      },
+      "header_range": {
+        "start_line": 269,
+        "end_line": 270,
+        "start_col": null,
+        "end_col": null
+      },
+      "docstring": "The degree of `v \u2208 K` in `Gx|K` counts exactly the neighbours of `v` lying in `K`.",
+      "has_sorry": false,
+      "is_axiom": false,
+      "assumption_sources": [],
+      "links": []
+    },
+    {
+      "decl_id": "StrongPerfectGraphTheorem:lean:Workspace.ProofLemmas.K4AppearanceDegreeCriterion.no_appearance_of_degree_criterion",
+      "fqn": "Workspace.ProofLemmas.K4AppearanceDegreeCriterion.no_appearance_of_degree_criterion",
+      "name": "no_appearance_of_degree_criterion",
+      "kind": "theorem",
+      "file": "lean_workspace/Workspace/ProofLemmas/K4AppearanceDegreeCriterion.lean",
+      "decl_range": {
+        "start_line": 284,
+        "end_line": 342,
+        "start_col": null,
+        "end_col": null
+      },
+      "header_range": {
+        "start_line": 284,
+        "end_line": 287,
+        "start_col": null,
+        "end_col": null
+      },
+      "docstring": "**The degree criterion.**\n\nIf every vertex subset `K` of `Gx` with `8 \u2264 K.ncard` contains a vertex whose number of\nneighbours inside `K` is `< 2` or `> 4`, then `K\u2084` does not appear in `Gx`.",
+      "has_sorry": false,
+      "is_axiom": false,
+      "assumption_sources": [],
+      "links": []
+    },
+    {
+      "decl_id": "StrongPerfectGraphTheorem:lean:Workspace.ProofLemmas.K4AppearanceDegreeCriterion.lineGraph_neighborSet_val_eq",
+      "fqn": "Workspace.ProofLemmas.K4AppearanceDegreeCriterion.lineGraph_neighborSet_val_eq",
+      "name": "lineGraph_neighborSet_val_eq",
+      "kind": "theorem",
+      "file": "lean_workspace/Workspace/ProofLemmas/K4AppearanceDegreeCriterion.lean",
+      "decl_range": {
+        "start_line": 343,
+        "end_line": 370,
+        "start_col": null,
+        "end_col": null
+      },
+      "header_range": {
+        "start_line": 343,
+        "end_line": 346,
+        "start_col": null,
+        "end_col": null
+      },
+      "docstring": "The `L(H)`-neighbours of `s(a,b)` are **exactly** the other edges at `a` together with the\nother edges at `b`.",
+      "has_sorry": false,
+      "is_axiom": false,
+      "assumption_sources": [],
+      "links": []
+    },
+    {
+      "decl_id": "StrongPerfectGraphTheorem:lean:Workspace.ProofLemmas.K4AppearanceDegreeCriterion.lineGraph_degree_eq",
+      "fqn": "Workspace.ProofLemmas.K4AppearanceDegreeCriterion.lineGraph_degree_eq",
+      "name": "lineGraph_degree_eq",
+      "kind": "theorem",
+      "file": "lean_workspace/Workspace/ProofLemmas/K4AppearanceDegreeCriterion.lean",
+      "decl_range": {
+        "start_line": 371,
+        "end_line": 406,
+        "start_col": null,
+        "end_col": null
+      },
+      "header_range": {
+        "start_line": 371,
+        "end_line": 373,
+        "start_col": null,
+        "end_col": null
+      },
+      "docstring": "**`deg_{L(H)} s(a,b) = (deg_H a - 1) + (deg_H b - 1)`.**",
+      "has_sorry": false,
+      "is_axiom": false,
+      "assumption_sources": [],
+      "links": []
+    },
+    {
+      "decl_id": "StrongPerfectGraphTheorem:lean:Workspace.ProofLemmas.K4AppearanceDegreeCriterion.ncard_edges_at",
+      "fqn": "Workspace.ProofLemmas.K4AppearanceDegreeCriterion.ncard_edges_at",
+      "name": "ncard_edges_at",
+      "kind": "theorem",
+      "file": "lean_workspace/Workspace/ProofLemmas/K4AppearanceDegreeCriterion.lean",
+      "decl_range": {
+        "start_line": 407,
+        "end_line": 430,
+        "start_col": null,
+        "end_col": null
+      },
+      "header_range": {
+        "start_line": 407,
+        "end_line": 408,
+        "start_col": null,
+        "end_col": null
+      },
+      "docstring": "The edges of `H` at `w` are in bijection with the neighbours of `w`.",
+      "has_sorry": false,
+      "is_axiom": false,
+      "assumption_sources": [],
+      "links": []
+    },
+    {
+      "decl_id": "StrongPerfectGraphTheorem:lean:Workspace.ProofLemmas.K4AppearanceDegreeCriterion.mem_branchVertices_iff",
+      "fqn": "Workspace.ProofLemmas.K4AppearanceDegreeCriterion.mem_branchVertices_iff",
+      "name": "mem_branchVertices_iff",
+      "kind": "theorem",
+      "file": "lean_workspace/Workspace/ProofLemmas/K4AppearanceDegreeCriterion.lean",
+      "decl_range": {
+        "start_line": 431,
+        "end_line": 443,
+        "start_col": null,
+        "end_col": null
+      },
+      "header_range": {
+        "start_line": 431,
+        "end_line": 432,
+        "start_col": null,
+        "end_col": null
+      },
+      "docstring": "A vertex of a graph all of whose degrees are `\u2264 3` is a branch-vertex exactly when its\ndegree is `3`.",
+      "has_sorry": false,
+      "is_axiom": false,
+      "assumption_sources": [],
+      "links": []
+    },
+    {
+      "decl_id": "StrongPerfectGraphTheorem:lean:Workspace.ProofLemmas.K4AppearanceDegreeCriterion.lineGraph_degree_eq_two_add",
+      "fqn": "Workspace.ProofLemmas.K4AppearanceDegreeCriterion.lineGraph_degree_eq_two_add",
+      "name": "lineGraph_degree_eq_two_add",
+      "kind": "theorem",
+      "file": "lean_workspace/Workspace/ProofLemmas/K4AppearanceDegreeCriterion.lean",
+      "decl_range": {
+        "start_line": 444,
+        "end_line": 504,
+        "start_col": null,
+        "end_col": null
+      },
+      "header_range": {
+        "start_line": 444,
+        "end_line": 449,
+        "start_col": null,
+        "end_col": null
+      },
+      "docstring": "**`deg_{L(H)} e = 2 + (number of branch-vertex ends of e)`**, when all degrees of `H` are\n`2` or `3`.",
+      "has_sorry": false,
+      "is_axiom": false,
+      "assumption_sources": [],
+      "links": []
+    },
+    {
+      "decl_id": "StrongPerfectGraphTheorem:lean:Workspace.ProofLemmas.K4AppearanceDegreeCriterion.ncard_setOf_eq_card_filter",
+      "fqn": "Workspace.ProofLemmas.K4AppearanceDegreeCriterion.ncard_setOf_eq_card_filter",
+      "name": "ncard_setOf_eq_card_filter",
+      "kind": "theorem",
+      "file": "lean_workspace/Workspace/ProofLemmas/K4AppearanceDegreeCriterion.lean",
+      "decl_range": {
+        "start_line": 506,
+        "end_line": 515,
+        "start_col": null,
+        "end_col": null
+      },
+      "header_range": {
+        "start_line": 506,
+        "end_line": 507,
+        "start_col": null,
+        "end_col": null
+      },
+      "docstring": "**`deg_{L(H)} e = 2 + (number of branch-vertex ends of e)`**, when all degrees of `H` are\n`2` or `3`. -/\ntheorem lineGraph_degree_eq_two_add [Fintype W] [DecidableEq W]\n    (hlo : \u2200 w : W, 2 \u2264 (H.neighborSet w).ncard)\n    (hhi : \u2200 w : W, (H.neighborSet w).ncard \u2264 3)\n    (Bv : Finset W) (hBv : \u2200 w : W, w \u2208 Bv \u2194 w \u2208 branchVertices H) (e : \u21a5H.edgeSet) :\n    (H.lineGraph.neighborSet e).ncard\n      = 2 + (Bv.filter (fun w => w \u2208 (\u2191e : Sym2 W))).card := by\n  obtain \u27e8z, hz\u27e9 := e\n  revert hz\n  induction z using Sym2.ind with\n  | _ a b =>\n    intro hz\n    have hadj : H.Adj a b := hz\n    have hnab : a \u2260 b := hadj.ne\n    have hd := lineGraph_degree_eq hz\n    have h3 : \u2200 w : W, w \u2208 Bv \u2192 (H.neighborSet w).ncard = 3 := fun w hw =>\n      (mem_branchVertices_iff hhi w).mp ((hBv w).mp hw)\n    have h2 : \u2200 w : W, w \u2209 Bv \u2192 (H.neighborSet w).ncard = 2 := by\n      intro w hw\n      have hnb : w \u2209 branchVertices H := fun h => hw ((hBv w).mpr h)\n      have hlo' := hlo w\n      have hhi' := hhi w\n      have : \u00ac (3 \u2264 (H.neighborSet w).ncard) := hnb\n      omega\n    by_cases ha : a \u2208 Bv <;> by_cases hb : b \u2208 Bv\n    \u00b7 have hf : Bv.filter (fun w => w \u2208 (s(a, b) : Sym2 W)) = {a, b} := by\n        ext w\n        simp only [Finset.mem_filter, Sym2.mem_iff, Finset.mem_insert, Finset.mem_singleton]\n        constructor\n        \u00b7 rintro \u27e8-, h\u27e9; exact h\n        \u00b7 rintro (rfl | rfl)\n          exacts [\u27e8ha, Or.inl rfl\u27e9, \u27e8hb, Or.inr rfl\u27e9]\n      rw [hd, hf, Finset.card_pair hnab, h3 a ha, h3 b hb]\n    \u00b7 have hf : Bv.filter (fun w => w \u2208 (s(a, b) : Sym2 W)) = {a} := by\n        ext w\n        simp only [Finset.mem_filter, Sym2.mem_iff, Finset.mem_singleton]\n        constructor\n        \u00b7 rintro \u27e8hwB, (rfl | rfl)\u27e9\n          \u00b7 rfl\n          \u00b7 exact absurd hwB hb\n        \u00b7 rintro rfl; exact \u27e8ha, Or.inl rfl\u27e9\n      rw [hd, hf, Finset.card_singleton, h3 a ha, h2 b hb]\n    \u00b7 have hf : Bv.filter (fun w => w \u2208 (s(a, b) : Sym2 W)) = {b} := by\n        ext w\n        simp only [Finset.mem_filter, Sym2.mem_iff, Finset.mem_singleton]\n        constructor\n        \u00b7 rintro \u27e8hwB, (rfl | rfl)\u27e9\n          \u00b7 exact absurd hwB ha\n          \u00b7 rfl\n        \u00b7 rintro rfl; exact \u27e8hb, Or.inr rfl\u27e9\n      rw [hd, hf, Finset.card_singleton, h2 a ha, h3 b hb]\n    \u00b7 have hf : Bv.filter (fun w => w \u2208 (s(a, b) : Sym2 W)) = \u2205 := by\n        ext w\n        simp only [Finset.mem_filter, Sym2.mem_iff, Finset.notMem_empty, iff_false, not_and]\n        rintro hwB (rfl | rfl)\n        \u00b7 exact ha hwB\n        \u00b7 exact hb hwB\n      rw [hd, hf, Finset.card_empty, h2 a ha, h2 b hb]\n\nend ExactDegree\n\n/-! ### Set-cardinality bookkeeping",
+      "has_sorry": false,
+      "is_axiom": false,
+      "assumption_sources": [],
+      "links": []
+    },
+    {
+      "decl_id": "StrongPerfectGraphTheorem:lean:Workspace.ProofLemmas.K4AppearanceDegreeCriterion.count_aux",
+      "fqn": "Workspace.ProofLemmas.K4AppearanceDegreeCriterion.count_aux",
+      "name": "count_aux",
+      "kind": "theorem",
+      "file": "lean_workspace/Workspace/ProofLemmas/K4AppearanceDegreeCriterion.lean",
+      "decl_range": {
+        "start_line": 516,
+        "end_line": 547,
+        "start_col": null,
+        "end_col": null
+      },
+      "header_range": {
+        "start_line": 516,
+        "end_line": 522,
+        "start_col": null,
+        "end_col": null
+      },
+      "docstring": "**The handshake count, abstractly.**  `Bv` is a four-element set of \"branch\" points, every\none of which lies on exactly three \"edges\" `a : \u03b1`, and every edge carries at most two branch\npoints.  Then `2\u00b7#(edges with two branch ends) + #(edges with one) = 12`.",
+      "has_sorry": false,
+      "is_axiom": false,
+      "assumption_sources": [],
+      "links": []
+    },
+    {
+      "decl_id": "StrongPerfectGraphTheorem:lean:Workspace.ProofLemmas.K4AppearanceDegreeCriterion.lineGraph_degree_eq_induce",
+      "fqn": "Workspace.ProofLemmas.K4AppearanceDegreeCriterion.lineGraph_degree_eq_induce",
+      "name": "lineGraph_degree_eq_induce",
+      "kind": "theorem",
+      "file": "lean_workspace/Workspace/ProofLemmas/K4AppearanceDegreeCriterion.lean",
+      "decl_range": {
+        "start_line": 548,
+        "end_line": 557,
+        "start_col": null,
+        "end_col": null
+      },
+      "header_range": {
+        "start_line": 548,
+        "end_line": 550,
+        "start_col": null,
+        "end_col": null
+      },
+      "docstring": "The `Gx|K`-degree of the vertex `\u03c6 e` is the `L(H)`-degree of the edge `e`.",
+      "has_sorry": false,
+      "is_axiom": false,
+      "assumption_sources": [],
+      "links": []
+    },
+    {
+      "decl_id": "StrongPerfectGraphTheorem:lean:Workspace.ProofLemmas.K4AppearanceDegreeCriterion.ncard_deg_eq",
+      "fqn": "Workspace.ProofLemmas.K4AppearanceDegreeCriterion.ncard_deg_eq",
+      "name": "ncard_deg_eq",
+      "kind": "theorem",
+      "file": "lean_workspace/Workspace/ProofLemmas/K4AppearanceDegreeCriterion.lean",
+      "decl_range": {
+        "start_line": 558,
+        "end_line": 583,
+        "start_col": null,
+        "end_col": null
+      },
+      "header_range": {
+        "start_line": 558,
+        "end_line": 561,
+        "start_col": null,
+        "end_col": null
+      },
+      "docstring": "Counting the vertices of `K` of a given `Gx|K`-degree is the same as counting the edges of\n`H` of that `L(H)`-degree.",
+      "has_sorry": false,
+      "is_axiom": false,
+      "assumption_sources": [],
+      "links": []
+    },
+    {
+      "decl_id": "StrongPerfectGraphTheorem:lean:Workspace.ProofLemmas.K4AppearanceDegreeCriterion.k4_degree_le_three",
+      "fqn": "Workspace.ProofLemmas.K4AppearanceDegreeCriterion.k4_degree_le_three",
+      "name": "k4_degree_le_three",
+      "kind": "theorem",
+      "file": "lean_workspace/Workspace/ProofLemmas/K4AppearanceDegreeCriterion.lean",
+      "decl_range": {
+        "start_line": 584,
+        "end_line": 594,
+        "start_col": null,
+        "end_col": null
+      },
+      "header_range": {
+        "start_line": 584,
+        "end_line": 585,
+        "start_col": null,
+        "end_col": null
+      },
+      "docstring": "Every vertex of `K\u2084` has degree `\u2264 3` (indeed exactly `3`).",
+      "has_sorry": false,
+      "is_axiom": false,
+      "assumption_sources": [],
+      "links": []
+    },
+    {
+      "decl_id": "StrongPerfectGraphTheorem:lean:Workspace.ProofLemmas.K4AppearanceDegreeCriterion.branchVertices_ncard",
+      "fqn": "Workspace.ProofLemmas.K4AppearanceDegreeCriterion.branchVertices_ncard",
+      "name": "branchVertices_ncard",
+      "kind": "theorem",
+      "file": "lean_workspace/Workspace/ProofLemmas/K4AppearanceDegreeCriterion.lean",
+      "decl_range": {
+        "start_line": 595,
+        "end_line": 608,
+        "start_col": null,
+        "end_col": null
+      },
+      "header_range": {
+        "start_line": 595,
+        "end_line": 597,
+        "start_col": null,
+        "end_col": null
+      },
+      "docstring": "The branch-vertices of a bipartite subdivision of `K\u2084` are its four `K\u2084`-vertices.",
+      "has_sorry": false,
+      "is_axiom": false,
+      "assumption_sources": [],
+      "links": []
+    },
+    {
+      "decl_id": "StrongPerfectGraphTheorem:lean:Workspace.ProofLemmas.K4AppearanceDegreeCriterion.lineGraph_degree_eq_four_iff",
+      "fqn": "Workspace.ProofLemmas.K4AppearanceDegreeCriterion.lineGraph_degree_eq_four_iff",
+      "name": "lineGraph_degree_eq_four_iff",
+      "kind": "theorem",
+      "file": "lean_workspace/Workspace/ProofLemmas/K4AppearanceDegreeCriterion.lean",
+      "decl_range": {
+        "start_line": 609,
+        "end_line": 637,
+        "start_col": null,
+        "end_col": null
+      },
+      "header_range": {
+        "start_line": 609,
+        "end_line": 612,
+        "start_col": null,
+        "end_col": null
+      },
+      "docstring": "The `L(H)`-degree of an edge is `4` exactly when both its ends are branch-vertices.",
+      "has_sorry": false,
+      "is_axiom": false,
+      "assumption_sources": [],
+      "links": []
+    },
+    {
+      "decl_id": "StrongPerfectGraphTheorem:lean:Workspace.ProofLemmas.K4AppearanceDegreeCriterion.deg_four_eq_branch_edges",
+      "fqn": "Workspace.ProofLemmas.K4AppearanceDegreeCriterion.deg_four_eq_branch_edges",
+      "name": "deg_four_eq_branch_edges",
+      "kind": "theorem",
+      "file": "lean_workspace/Workspace/ProofLemmas/K4AppearanceDegreeCriterion.lean",
+      "decl_range": {
+        "start_line": 638,
+        "end_line": 659,
+        "start_col": null,
+        "end_col": null
+      },
+      "header_range": {
+        "start_line": 638,
+        "end_line": 641,
+        "start_col": null,
+        "end_col": null
+      },
+      "docstring": "**The degree-`4` vertices of an appearance of `K\u2084` correspond to the branch-to-branch edges\nof the subdivision.**",
+      "has_sorry": false,
+      "is_axiom": false,
+      "assumption_sources": [],
+      "links": []
+    },
+    {
+      "decl_id": "StrongPerfectGraphTheorem:lean:Workspace.ProofLemmas.K4AppearanceDegreeCriterion.two_mul_deg_four_add_deg_three",
+      "fqn": "Workspace.ProofLemmas.K4AppearanceDegreeCriterion.two_mul_deg_four_add_deg_three",
+      "name": "two_mul_deg_four_add_deg_three",
+      "kind": "theorem",
+      "file": "lean_workspace/Workspace/ProofLemmas/K4AppearanceDegreeCriterion.lean",
+      "decl_range": {
+        "start_line": 660,
+        "end_line": 713,
+        "start_col": null,
+        "end_col": null
+      },
+      "header_range": {
+        "start_line": 660,
+        "end_line": 664,
+        "start_col": null,
+        "end_col": null
+      },
+      "docstring": "**`2 \u00b7 #{degree-4 vertices} + #{degree-3 vertices} = 12`** for an appearance of `K\u2084`.\n\nThe left-hand side is the handshake count `\u2211_{w a branch-vertex of H} deg_H w = 4 \u00b7 3`.",
+      "has_sorry": false,
+      "is_axiom": false,
+      "assumption_sources": [],
+      "links": []
+    },
+    {
       "decl_id": "StrongPerfectGraphTheorem:lean:Workspace.ProofLemmas.K4AppearanceEightVertices.trackEdges_subset_edgeSet",
       "fqn": "Workspace.ProofLemmas.K4AppearanceEightVertices.trackEdges_subset_edgeSet",
       "name": "trackEdges_subset_edgeSet",
@@ -39534,6 +40086,150 @@
           "assumption_tainted": false
         }
       ]
+    },
+    {
+      "decl_id": "StrongPerfectGraphTheorem:lean:Workspace.ProofLemmas.K4TrackLengthDegeneracy.bedges",
+      "fqn": "Workspace.ProofLemmas.K4TrackLengthDegeneracy.bedges",
+      "name": "bedges",
+      "kind": "def",
+      "file": "lean_workspace/Workspace/ProofLemmas/K4TrackLengthDegeneracy.lean",
+      "decl_range": {
+        "start_line": 64,
+        "end_line": 65,
+        "start_col": null,
+        "end_col": null
+      },
+      "header_range": {
+        "start_line": 64,
+        "end_line": 64,
+        "start_col": null,
+        "end_col": null
+      },
+      "docstring": "The edges of `H` both of whose ends are branch-vertices.",
+      "has_sorry": false,
+      "is_axiom": false,
+      "assumption_sources": [],
+      "links": []
+    },
+    {
+      "decl_id": "StrongPerfectGraphTheorem:lean:Workspace.ProofLemmas.K4TrackLengthDegeneracy.mem_bedges",
+      "fqn": "Workspace.ProofLemmas.K4TrackLengthDegeneracy.mem_bedges",
+      "name": "mem_bedges",
+      "kind": "theorem",
+      "file": "lean_workspace/Workspace/ProofLemmas/K4TrackLengthDegeneracy.lean",
+      "decl_range": {
+        "start_line": 67,
+        "end_line": 70,
+        "start_col": null,
+        "end_col": null
+      },
+      "header_range": {
+        "start_line": 67,
+        "end_line": 68,
+        "start_col": null,
+        "end_col": null
+      },
+      "docstring": null,
+      "has_sorry": false,
+      "is_axiom": false,
+      "assumption_sources": [],
+      "links": []
+    },
+    {
+      "decl_id": "StrongPerfectGraphTheorem:lean:Workspace.ProofLemmas.K4TrackLengthDegeneracy.nodup4",
+      "fqn": "Workspace.ProofLemmas.K4TrackLengthDegeneracy.nodup4",
+      "name": "nodup4",
+      "kind": "theorem",
+      "file": "lean_workspace/Workspace/ProofLemmas/K4TrackLengthDegeneracy.lean",
+      "decl_range": {
+        "start_line": 71,
+        "end_line": 76,
+        "start_col": null,
+        "end_col": null
+      },
+      "header_range": {
+        "start_line": 71,
+        "end_line": 72,
+        "start_col": null,
+        "end_col": null
+      },
+      "docstring": "A four-element list of pairwise distinct entries has no duplicates.",
+      "has_sorry": false,
+      "is_axiom": false,
+      "assumption_sources": [],
+      "links": []
+    },
+    {
+      "decl_id": "StrongPerfectGraphTheorem:lean:Workspace.ProofLemmas.K4TrackLengthDegeneracy.structure_of_four_branch_edges",
+      "fqn": "Workspace.ProofLemmas.K4TrackLengthDegeneracy.structure_of_four_branch_edges",
+      "name": "structure_of_four_branch_edges",
+      "kind": "theorem",
+      "file": "lean_workspace/Workspace/ProofLemmas/K4TrackLengthDegeneracy.lean",
+      "decl_range": {
+        "start_line": 77,
+        "end_line": 314,
+        "start_col": null,
+        "end_col": null
+      },
+      "header_range": {
+        "start_line": 77,
+        "end_line": 81,
+        "start_col": null,
+        "end_col": null
+      },
+      "docstring": "**The common core.**  A bipartite subdivision of `K\u2084` with at least four branch-to-branch\nedges is degenerate, and has no branch of odd length `\u2265 3`.",
+      "has_sorry": false,
+      "is_axiom": false,
+      "assumption_sources": [],
+      "links": []
+    },
+    {
+      "decl_id": "StrongPerfectGraphTheorem:lean:Workspace.ProofLemmas.K4TrackLengthDegeneracy.degenerate_of_four_branch_edges",
+      "fqn": "Workspace.ProofLemmas.K4TrackLengthDegeneracy.degenerate_of_four_branch_edges",
+      "name": "degenerate_of_four_branch_edges",
+      "kind": "theorem",
+      "file": "lean_workspace/Workspace/ProofLemmas/K4TrackLengthDegeneracy.lean",
+      "decl_range": {
+        "start_line": 315,
+        "end_line": 320,
+        "start_col": null,
+        "end_col": null
+      },
+      "header_range": {
+        "start_line": 315,
+        "end_line": 317,
+        "start_col": null,
+        "end_col": null
+      },
+      "docstring": "**Four branch-to-branch edges make the `K\u2084`-subdivision degenerate.**",
+      "has_sorry": false,
+      "is_axiom": false,
+      "assumption_sources": [],
+      "links": []
+    },
+    {
+      "decl_id": "StrongPerfectGraphTheorem:lean:Workspace.ProofLemmas.K4TrackLengthDegeneracy.no_long_odd_branch_of_four_branch_edges",
+      "fqn": "Workspace.ProofLemmas.K4TrackLengthDegeneracy.no_long_odd_branch_of_four_branch_edges",
+      "name": "no_long_odd_branch_of_four_branch_edges",
+      "kind": "theorem",
+      "file": "lean_workspace/Workspace/ProofLemmas/K4TrackLengthDegeneracy.lean",
+      "decl_range": {
+        "start_line": 321,
+        "end_line": 327,
+        "start_col": null,
+        "end_col": null
+      },
+      "header_range": {
+        "start_line": 321,
+        "end_line": 324,
+        "start_col": null,
+        "end_col": null
+      },
+      "docstring": "**With four branch-to-branch edges, no branch has odd length `\u2265 3`.**",
+      "has_sorry": false,
+      "is_axiom": false,
+      "assumption_sources": [],
+      "links": []
     },
     {
       "decl_id": "StrongPerfectGraphTheorem:lean:Workspace.ProofLemmas.KiteTailBasics.exists_four_cons",
@@ -45164,6 +45860,294 @@
           "assumption_tainted": false
         }
       ]
+    },
+    {
+      "decl_id": "StrongPerfectGraphTheorem:lean:Workspace.ProofLemmas.LK33Regular.K33",
+      "fqn": "Workspace.ProofLemmas.LK33Regular.K33",
+      "name": "K33",
+      "kind": "abbrev",
+      "file": "lean_workspace/Workspace/ProofLemmas/LK33Regular.lean",
+      "decl_range": {
+        "start_line": 25,
+        "end_line": 27,
+        "start_col": null,
+        "end_col": null
+      },
+      "header_range": {
+        "start_line": 25,
+        "end_line": 25,
+        "start_col": null,
+        "end_col": null
+      },
+      "docstring": "`K\u2083,\u2083`.",
+      "has_sorry": false,
+      "is_axiom": false,
+      "assumption_sources": [],
+      "links": []
+    },
+    {
+      "decl_id": "StrongPerfectGraphTheorem:lean:Workspace.ProofLemmas.LK33Regular.L33",
+      "fqn": "Workspace.ProofLemmas.LK33Regular.L33",
+      "name": "L33",
+      "kind": "abbrev",
+      "file": "lean_workspace/Workspace/ProofLemmas/LK33Regular.lean",
+      "decl_range": {
+        "start_line": 28,
+        "end_line": 32,
+        "start_col": null,
+        "end_col": null
+      },
+      "header_range": {
+        "start_line": 28,
+        "end_line": 28,
+        "start_col": null,
+        "end_col": null
+      },
+      "docstring": "The line graph of `K\u2083,\u2083`.",
+      "has_sorry": false,
+      "is_axiom": false,
+      "assumption_sources": [],
+      "links": []
+    },
+    {
+      "decl_id": "StrongPerfectGraphTheorem:lean:Workspace.ProofLemmas.LK33Regular.mkE",
+      "fqn": "Workspace.ProofLemmas.LK33Regular.mkE",
+      "name": "mkE",
+      "kind": "def",
+      "file": "lean_workspace/Workspace/ProofLemmas/LK33Regular.lean",
+      "decl_range": {
+        "start_line": 33,
+        "end_line": 33,
+        "start_col": null,
+        "end_col": null
+      },
+      "header_range": {
+        "start_line": 33,
+        "end_line": 33,
+        "start_col": null,
+        "end_col": null
+      },
+      "docstring": "The edge of `K\u2083,\u2083` joining the left vertex `a` to the right vertex `b`.",
+      "has_sorry": false,
+      "is_axiom": false,
+      "assumption_sources": [],
+      "links": []
+    },
+    {
+      "decl_id": "StrongPerfectGraphTheorem:lean:Workspace.ProofLemmas.LK33Regular.mkE_injective",
+      "fqn": "Workspace.ProofLemmas.LK33Regular.mkE_injective",
+      "name": "mkE_injective",
+      "kind": "theorem",
+      "file": "lean_workspace/Workspace/ProofLemmas/LK33Regular.lean",
+      "decl_range": {
+        "start_line": 35,
+        "end_line": 44,
+        "start_col": null,
+        "end_col": null
+      },
+      "header_range": {
+        "start_line": 35,
+        "end_line": 35,
+        "start_col": null,
+        "end_col": null
+      },
+      "docstring": null,
+      "has_sorry": false,
+      "is_axiom": false,
+      "assumption_sources": [],
+      "links": []
+    },
+    {
+      "decl_id": "StrongPerfectGraphTheorem:lean:Workspace.ProofLemmas.LK33Regular.exists_mkE",
+      "fqn": "Workspace.ProofLemmas.LK33Regular.exists_mkE",
+      "name": "exists_mkE",
+      "kind": "theorem",
+      "file": "lean_workspace/Workspace/ProofLemmas/LK33Regular.lean",
+      "decl_range": {
+        "start_line": 45,
+        "end_line": 52,
+        "start_col": null,
+        "end_col": null
+      },
+      "header_range": {
+        "start_line": 45,
+        "end_line": 45,
+        "start_col": null,
+        "end_col": null
+      },
+      "docstring": "Every edge of `K\u2083,\u2083` is of the form `mkE a b`.",
+      "has_sorry": false,
+      "is_axiom": false,
+      "assumption_sources": [],
+      "links": []
+    },
+    {
+      "decl_id": "StrongPerfectGraphTheorem:lean:Workspace.ProofLemmas.LK33Regular.card_L33",
+      "fqn": "Workspace.ProofLemmas.LK33Regular.card_L33",
+      "name": "card_L33",
+      "kind": "theorem",
+      "file": "lean_workspace/Workspace/ProofLemmas/LK33Regular.lean",
+      "decl_range": {
+        "start_line": 53,
+        "end_line": 69,
+        "start_col": null,
+        "end_col": null
+      },
+      "header_range": {
+        "start_line": 53,
+        "end_line": 53,
+        "start_col": null,
+        "end_col": null
+      },
+      "docstring": "**`K\u2083,\u2083` has nine edges.**",
+      "has_sorry": false,
+      "is_axiom": false,
+      "assumption_sources": [],
+      "links": []
+    },
+    {
+      "decl_id": "StrongPerfectGraphTheorem:lean:Workspace.ProofLemmas.LK33Regular.L33_adj_mkE",
+      "fqn": "Workspace.ProofLemmas.LK33Regular.L33_adj_mkE",
+      "name": "L33_adj_mkE",
+      "kind": "theorem",
+      "file": "lean_workspace/Workspace/ProofLemmas/LK33Regular.lean",
+      "decl_range": {
+        "start_line": 70,
+        "end_line": 104,
+        "start_col": null,
+        "end_col": null
+      },
+      "header_range": {
+        "start_line": 70,
+        "end_line": 71,
+        "start_col": null,
+        "end_col": null
+      },
+      "docstring": "Two edges of `K\u2083,\u2083` are adjacent in the line graph exactly when they share precisely one\nendpoint: same left end and different right ends, or different left ends and the same right end.",
+      "has_sorry": false,
+      "is_axiom": false,
+      "assumption_sources": [],
+      "links": []
+    },
+    {
+      "decl_id": "StrongPerfectGraphTheorem:lean:Workspace.ProofLemmas.LK33Regular.nbrIdx",
+      "fqn": "Workspace.ProofLemmas.LK33Regular.nbrIdx",
+      "name": "nbrIdx",
+      "kind": "def",
+      "file": "lean_workspace/Workspace/ProofLemmas/LK33Regular.lean",
+      "decl_range": {
+        "start_line": 105,
+        "end_line": 106,
+        "start_col": null,
+        "end_col": null
+      },
+      "header_range": {
+        "start_line": 105,
+        "end_line": 105,
+        "start_col": null,
+        "end_col": null
+      },
+      "docstring": "The index set of the `L33`-neighbours of `mkE a b`.",
+      "has_sorry": false,
+      "is_axiom": false,
+      "assumption_sources": [],
+      "links": []
+    },
+    {
+      "decl_id": "StrongPerfectGraphTheorem:lean:Workspace.ProofLemmas.LK33Regular.card_nbrIdx",
+      "fqn": "Workspace.ProofLemmas.LK33Regular.card_nbrIdx",
+      "name": "card_nbrIdx",
+      "kind": "theorem",
+      "file": "lean_workspace/Workspace/ProofLemmas/LK33Regular.lean",
+      "decl_range": {
+        "start_line": 108,
+        "end_line": 110,
+        "start_col": null,
+        "end_col": null
+      },
+      "header_range": {
+        "start_line": 108,
+        "end_line": 108,
+        "start_col": null,
+        "end_col": null
+      },
+      "docstring": null,
+      "has_sorry": false,
+      "is_axiom": false,
+      "assumption_sources": [],
+      "links": []
+    },
+    {
+      "decl_id": "StrongPerfectGraphTheorem:lean:Workspace.ProofLemmas.LK33Regular.neighborSet_mkE",
+      "fqn": "Workspace.ProofLemmas.LK33Regular.neighborSet_mkE",
+      "name": "neighborSet_mkE",
+      "kind": "theorem",
+      "file": "lean_workspace/Workspace/ProofLemmas/LK33Regular.lean",
+      "decl_range": {
+        "start_line": 112,
+        "end_line": 132,
+        "start_col": null,
+        "end_col": null
+      },
+      "header_range": {
+        "start_line": 112,
+        "end_line": 113,
+        "start_col": null,
+        "end_col": null
+      },
+      "docstring": null,
+      "has_sorry": false,
+      "is_axiom": false,
+      "assumption_sources": [],
+      "links": []
+    },
+    {
+      "decl_id": "StrongPerfectGraphTheorem:lean:Workspace.ProofLemmas.LK33Regular.L33_degree",
+      "fqn": "Workspace.ProofLemmas.LK33Regular.L33_degree",
+      "name": "L33_degree",
+      "kind": "theorem",
+      "file": "lean_workspace/Workspace/ProofLemmas/LK33Regular.lean",
+      "decl_range": {
+        "start_line": 133,
+        "end_line": 144,
+        "start_col": null,
+        "end_col": null
+      },
+      "header_range": {
+        "start_line": 133,
+        "end_line": 134,
+        "start_col": null,
+        "end_col": null
+      },
+      "docstring": "**The line graph of `K\u2083,\u2083` is 4-regular.**",
+      "has_sorry": false,
+      "is_axiom": false,
+      "assumption_sources": [],
+      "links": []
+    },
+    {
+      "decl_id": "StrongPerfectGraphTheorem:lean:Workspace.ProofLemmas.LK33Regular.no_induced_L33_of_degree_criterion",
+      "fqn": "Workspace.ProofLemmas.LK33Regular.no_induced_L33_of_degree_criterion",
+      "name": "no_induced_L33_of_degree_criterion",
+      "kind": "theorem",
+      "file": "lean_workspace/Workspace/ProofLemmas/LK33Regular.lean",
+      "decl_range": {
+        "start_line": 145,
+        "end_line": 163,
+        "start_col": null,
+        "end_col": null
+      },
+      "header_range": {
+        "start_line": 145,
+        "end_line": 149,
+        "start_col": null,
+        "end_col": null
+      },
+      "docstring": "**A degree criterion excluding an induced copy of `L(K\u2083,\u2083)`.**\n\nIf every nine-element vertex subset `K` of `Gx` contains a vertex whose number of neighbours\ninside `K` differs from `4`, then `Gx` has no induced subgraph isomorphic to `L(K\u2083,\u2083)`.",
+      "has_sorry": false,
+      "is_axiom": false,
+      "assumption_sources": [],
+      "links": []
     },
     {
       "decl_id": "StrongPerfectGraphTheorem:lean:Workspace.ProofLemmas.LK33eAppearance.trackEdges_pair",
@@ -81734,6 +82718,462 @@
       ]
     },
     {
+      "decl_id": "StrongPerfectGraphTheorem:lean:Workspace.ProofLemmas.SplitVertexTwoPaths.Extra",
+      "fqn": "Workspace.ProofLemmas.SplitVertexTwoPaths.Extra",
+      "name": "Extra",
+      "kind": "inductive",
+      "file": "lean_workspace/Workspace/ProofLemmas/SplitVertexTwoPaths.lean",
+      "decl_range": {
+        "start_line": 43,
+        "end_line": 52,
+        "start_col": null,
+        "end_col": null
+      },
+      "header_range": {
+        "start_line": 43,
+        "end_line": 47,
+        "start_col": null,
+        "end_col": null
+      },
+      "docstring": "The three vertices added to `H`: the second half `u_B` of the divided vertex, the\nsuper-source and the super-sink.",
+      "has_sorry": false,
+      "is_axiom": false,
+      "assumption_sources": [],
+      "links": []
+    },
+    {
+      "decl_id": "StrongPerfectGraphTheorem:lean:Workspace.ProofLemmas.SplitVertexTwoPaths.SV",
+      "fqn": "Workspace.ProofLemmas.SplitVertexTwoPaths.SV",
+      "name": "SV",
+      "kind": "abbrev",
+      "file": "lean_workspace/Workspace/ProofLemmas/SplitVertexTwoPaths.lean",
+      "decl_range": {
+        "start_line": 53,
+        "end_line": 55,
+        "start_col": null,
+        "end_col": null
+      },
+      "header_range": {
+        "start_line": 53,
+        "end_line": 53,
+        "start_col": null,
+        "end_col": null
+      },
+      "docstring": "The vertices of the divided graph: those of `H` (the vertex `u` itself playing the role of\n`u_A`) together with the three added ones.",
+      "has_sorry": false,
+      "is_axiom": false,
+      "assumption_sources": [],
+      "links": []
+    },
+    {
+      "decl_id": "StrongPerfectGraphTheorem:lean:Workspace.ProofLemmas.SplitVertexTwoPaths.extraAdj",
+      "fqn": "Workspace.ProofLemmas.SplitVertexTwoPaths.extraAdj",
+      "name": "extraAdj",
+      "kind": "def",
+      "file": "lean_workspace/Workspace/ProofLemmas/SplitVertexTwoPaths.lean",
+      "decl_range": {
+        "start_line": 56,
+        "end_line": 61,
+        "start_col": null,
+        "end_col": null
+      },
+      "header_range": {
+        "start_line": 56,
+        "end_line": 61,
+        "start_col": null,
+        "end_col": null
+      },
+      "docstring": "Which vertices of `H` each added vertex is joined to.",
+      "has_sorry": false,
+      "is_axiom": false,
+      "assumption_sources": [],
+      "links": []
+    },
+    {
+      "decl_id": "StrongPerfectGraphTheorem:lean:Workspace.ProofLemmas.SplitVertexTwoPaths.splitAdj",
+      "fqn": "Workspace.ProofLemmas.SplitVertexTwoPaths.splitAdj",
+      "name": "splitAdj",
+      "kind": "def",
+      "file": "lean_workspace/Workspace/ProofLemmas/SplitVertexTwoPaths.lean",
+      "decl_range": {
+        "start_line": 62,
+        "end_line": 71,
+        "start_col": null,
+        "end_col": null
+      },
+      "header_range": {
+        "start_line": 62,
+        "end_line": 71,
+        "start_col": null,
+        "end_col": null
+      },
+      "docstring": "Adjacency of the divided graph.",
+      "has_sorry": false,
+      "is_axiom": false,
+      "assumption_sources": [],
+      "links": []
+    },
+    {
+      "decl_id": "StrongPerfectGraphTheorem:lean:Workspace.ProofLemmas.SplitVertexTwoPaths.splitGraph",
+      "fqn": "Workspace.ProofLemmas.SplitVertexTwoPaths.splitGraph",
+      "name": "splitGraph",
+      "kind": "def",
+      "file": "lean_workspace/Workspace/ProofLemmas/SplitVertexTwoPaths.lean",
+      "decl_range": {
+        "start_line": 72,
+        "end_line": 89,
+        "start_col": null,
+        "end_col": null
+      },
+      "header_range": {
+        "start_line": 72,
+        "end_line": 73,
+        "start_col": null,
+        "end_col": null
+      },
+      "docstring": "**The divided graph.**  `H` with `u` divided into `u_A` (the vertex `u` itself, keeping the\nedges into `A`) and `u_B` (keeping those into `B`), the two joined by an edge, plus the source\njoined to both halves and the sink joined to `v\u2081` and `v\u2082`.",
+      "has_sorry": false,
+      "is_axiom": false,
+      "assumption_sources": [],
+      "links": []
+    },
+    {
+      "decl_id": "StrongPerfectGraphTheorem:lean:Workspace.ProofLemmas.SplitVertexTwoPaths.adj_inl_inl",
+      "fqn": "Workspace.ProofLemmas.SplitVertexTwoPaths.adj_inl_inl",
+      "name": "adj_inl_inl",
+      "kind": "theorem",
+      "file": "lean_workspace/Workspace/ProofLemmas/SplitVertexTwoPaths.lean",
+      "decl_range": {
+        "start_line": 91,
+        "end_line": 93,
+        "start_col": null,
+        "end_col": null
+      },
+      "header_range": {
+        "start_line": 91,
+        "end_line": 93,
+        "start_col": null,
+        "end_col": null
+      },
+      "docstring": null,
+      "has_sorry": false,
+      "is_axiom": false,
+      "assumption_sources": [],
+      "links": []
+    },
+    {
+      "decl_id": "StrongPerfectGraphTheorem:lean:Workspace.ProofLemmas.SplitVertexTwoPaths.adj_inl_inr",
+      "fqn": "Workspace.ProofLemmas.SplitVertexTwoPaths.adj_inl_inr",
+      "name": "adj_inl_inr",
+      "kind": "theorem",
+      "file": "lean_workspace/Workspace/ProofLemmas/SplitVertexTwoPaths.lean",
+      "decl_range": {
+        "start_line": 95,
+        "end_line": 97,
+        "start_col": null,
+        "end_col": null
+      },
+      "header_range": {
+        "start_line": 95,
+        "end_line": 97,
+        "start_col": null,
+        "end_col": null
+      },
+      "docstring": null,
+      "has_sorry": false,
+      "is_axiom": false,
+      "assumption_sources": [],
+      "links": []
+    },
+    {
+      "decl_id": "StrongPerfectGraphTheorem:lean:Workspace.ProofLemmas.SplitVertexTwoPaths.adj_inr_inl",
+      "fqn": "Workspace.ProofLemmas.SplitVertexTwoPaths.adj_inr_inl",
+      "name": "adj_inr_inl",
+      "kind": "theorem",
+      "file": "lean_workspace/Workspace/ProofLemmas/SplitVertexTwoPaths.lean",
+      "decl_range": {
+        "start_line": 99,
+        "end_line": 101,
+        "start_col": null,
+        "end_col": null
+      },
+      "header_range": {
+        "start_line": 99,
+        "end_line": 101,
+        "start_col": null,
+        "end_col": null
+      },
+      "docstring": null,
+      "has_sorry": false,
+      "is_axiom": false,
+      "assumption_sources": [],
+      "links": []
+    },
+    {
+      "decl_id": "StrongPerfectGraphTheorem:lean:Workspace.ProofLemmas.SplitVertexTwoPaths.adj_inr_inr",
+      "fqn": "Workspace.ProofLemmas.SplitVertexTwoPaths.adj_inr_inr",
+      "name": "adj_inr_inr",
+      "kind": "theorem",
+      "file": "lean_workspace/Workspace/ProofLemmas/SplitVertexTwoPaths.lean",
+      "decl_range": {
+        "start_line": 103,
+        "end_line": 105,
+        "start_col": null,
+        "end_col": null
+      },
+      "header_range": {
+        "start_line": 103,
+        "end_line": 105,
+        "start_col": null,
+        "end_col": null
+      },
+      "docstring": null,
+      "has_sorry": false,
+      "is_axiom": false,
+      "assumption_sources": [],
+      "links": []
+    },
+    {
+      "decl_id": "StrongPerfectGraphTheorem:lean:Workspace.ProofLemmas.SplitVertexTwoPaths.extra_ne",
+      "fqn": "Workspace.ProofLemmas.SplitVertexTwoPaths.extra_ne",
+      "name": "extra_ne",
+      "kind": "theorem",
+      "file": "lean_workspace/Workspace/ProofLemmas/SplitVertexTwoPaths.lean",
+      "decl_range": {
+        "start_line": 107,
+        "end_line": 113,
+        "start_col": null,
+        "end_col": null
+      },
+      "header_range": {
+        "start_line": 107,
+        "end_line": 107,
+        "start_col": null,
+        "end_col": null
+      },
+      "docstring": null,
+      "has_sorry": false,
+      "is_axiom": false,
+      "assumption_sources": [],
+      "links": []
+    },
+    {
+      "decl_id": "StrongPerfectGraphTheorem:lean:Workspace.ProofLemmas.SplitVertexTwoPaths.lift_reach",
+      "fqn": "Workspace.ProofLemmas.SplitVertexTwoPaths.lift_reach",
+      "name": "lift_reach",
+      "kind": "theorem",
+      "file": "lean_workspace/Workspace/ProofLemmas/SplitVertexTwoPaths.lean",
+      "decl_range": {
+        "start_line": 114,
+        "end_line": 159,
+        "start_col": null,
+        "end_col": null
+      },
+      "header_range": {
+        "start_line": 114,
+        "end_line": 120,
+        "start_col": null,
+        "end_col": null
+      },
+      "docstring": "Walks of `H` avoiding one vertex lift to the divided graph: an edge at `u` that the\ndivision has moved to `u_B` is replaced by the two-edge detour through `u_B`.",
+      "has_sorry": false,
+      "is_axiom": false,
+      "assumption_sources": [],
+      "links": []
+    },
+    {
+      "decl_id": "StrongPerfectGraphTheorem:lean:Workspace.ProofLemmas.SplitVertexTwoPaths.split_nocut",
+      "fqn": "Workspace.ProofLemmas.SplitVertexTwoPaths.split_nocut",
+      "name": "split_nocut",
+      "kind": "theorem",
+      "file": "lean_workspace/Workspace/ProofLemmas/SplitVertexTwoPaths.lean",
+      "decl_range": {
+        "start_line": 160,
+        "end_line": 272,
+        "start_col": null,
+        "end_col": null
+      },
+      "header_range": {
+        "start_line": 160,
+        "end_line": 164,
+        "start_col": null,
+        "end_col": null
+      },
+      "docstring": "**The divided graph has no cutvertex.**",
+      "has_sorry": false,
+      "is_axiom": false,
+      "assumption_sources": [],
+      "links": []
+    },
+    {
+      "decl_id": "StrongPerfectGraphTheorem:lean:Workspace.ProofLemmas.SplitVertexTwoPaths.pick_ne",
+      "fqn": "Workspace.ProofLemmas.SplitVertexTwoPaths.pick_ne",
+      "name": "pick_ne",
+      "kind": "theorem",
+      "file": "lean_workspace/Workspace/ProofLemmas/SplitVertexTwoPaths.lean",
+      "decl_range": {
+        "start_line": 274,
+        "end_line": 278,
+        "start_col": null,
+        "end_col": null
+      },
+      "header_range": {
+        "start_line": 274,
+        "end_line": 275,
+        "start_col": null,
+        "end_col": null
+      },
+      "docstring": "**The divided graph has no cutvertex.** -/\ntheorem split_nocut\n    (hcut : \u2200 z : W, ConnectedSet H ({z}\u1d9c : Set W))\n    (hv : v\u2081 \u2260 v\u2082) (hu1 : u \u2260 v\u2081) (hu2 : u \u2260 v\u2082)\n    (ha : \u2203 x, H.Adj u x \u2227 x \u2208 A) (hb : \u2203 x, H.Adj u x \u2227 x \u2209 A) :\n    NoCutvertex (splitGraph H u A v\u2081 v\u2082) := by\n  classical\n  obtain \u27e8a\u2080, ha\u2080adj, ha\u2080A\u27e9 := ha\n  obtain \u27e8b\u2080, hb\u2080adj, hb\u2080A\u27e9 := hb\n  have ha\u2080u : a\u2080 \u2260 u := ha\u2080adj.ne'\n  have hb\u2080u : b\u2080 \u2260 u := hb\u2080adj.ne'\n  intro Z Pv Rv hPZ hRZ\n  set \u0393 := splitGraph H u A v\u2081 v\u2082 with h\u0393\n  set X : Set (SV W) := ({Z}\u1d9c : Set (SV W)) with hX\n  have hmemX : \u2200 V : SV W, V \u2260 Z \u2192 V \u2208 X := fun V h => h\n  suffices hkey : \u2203 \u03b1 : SV W, \u2200 V : SV W, V \u2260 Z \u2192 RchIn \u0393 X V \u03b1 by\n    obtain \u27e8\u03b1, hk\u27e9 := hkey\n    exact (hk Pv hPZ).trans (hk Rv hRZ).symm\n  -- the source and the sink are attached in two places each\n  have hsrcuB : \u0393.Adj (Sum.inr Extra.src) (Sum.inr Extra.uB) := Or.inr \u27e8rfl, rfl\u27e9\n  have hsrcu : \u0393.Adj (Sum.inr Extra.src) (Sum.inl u) := rfl\n  have huuB : \u0393.Adj (Sum.inl u) (Sum.inr Extra.uB) := Or.inl rfl\n  have hsnk\u2081 : \u0393.Adj (Sum.inr Extra.snk) (Sum.inl v\u2081) := Or.inl rfl\n  have hsnk\u2082 : \u0393.Adj (Sum.inr Extra.snk) (Sum.inl v\u2082) := Or.inr rfl\n  have hb\u2080uB : \u0393.Adj (Sum.inl b\u2080) (Sum.inr Extra.uB) := Or.inr \u27e8hb\u2080adj, hb\u2080A\u27e9\n  have ha\u2080u' : \u0393.Adj (Sum.inl a\u2080) (Sum.inl u) :=\n    \u27e8ha\u2080adj.symm, fun hh => absurd hh ha\u2080u, fun _ => ha\u2080A\u27e9\n  rcases Z with w | e\n  \u00b7 -- a vertex of `H` is deleted\n    have hXinl : \u2200 z : W, z \u2260 w \u2192 (Sum.inl z : SV W) \u2208 X := by\n      intro z hz\n      exact hmemX _ (by simpa using hz)\n    have huBX : (Sum.inr Extra.uB : SV W) \u2208 X := hmemX _ (by simp)\n    have hsrcX : (Sum.inr Extra.src : SV W) \u2208 X := hmemX _ (by simp)\n    refine \u27e8Sum.inr Extra.uB, ?_\u27e9\n    intro V hV\n    have step : \u2200 p : W, p \u2260 w \u2192 RchIn \u0393 X (Sum.inl p) (Sum.inr Extra.uB) := by\n      intro p hp\n      by_cases hwu : w = u\n      \u00b7 subst hwu\n        refine (lift_reach hcut w hXinl (Or.inl rfl) hp hb\u2080u).trans ?_\n        exact RchIn.of_adj (hXinl _ hb\u2080u) huBX hb\u2080uB\n      \u00b7 refine (lift_reach hcut w hXinl (Or.inr huBX) hp (fun hh => hwu hh.symm)).trans ?_\n        exact RchIn.of_adj (hXinl _ (fun hh => hwu hh.symm)) huBX huuB\n    rcases V with p | k\n    \u00b7 exact step p (by simpa using hV)\n    \u00b7 match k with\n      | Extra.uB => exact RchIn.refl huBX\n      | Extra.src => exact RchIn.of_adj hsrcX huBX hsrcuB\n      | Extra.snk =>\n        have hsnkX : (Sum.inr Extra.snk : SV W) \u2208 X := hmemX _ (by simp)\n        by_cases h1 : v\u2081 = w\n        \u00b7 have h2 : v\u2082 \u2260 w := fun hh => hv (h1.trans hh.symm)\n          exact (RchIn.of_adj hsnkX (hXinl _ h2) hsnk\u2082).trans (step v\u2082 h2)\n        \u00b7 exact (RchIn.of_adj hsnkX (hXinl _ h1) hsnk\u2081).trans (step v\u2081 h1)\n  \u00b7 -- one of the three added vertices is deleted\n    have hXinl : \u2200 z : W, (Sum.inl z : SV W) \u2208 X := by\n      intro z; exact hmemX _ (by simp)\n    match e with\n    | Extra.uB =>\n      refine \u27e8Sum.inl u, ?_\u27e9\n      intro V hV\n      have step : \u2200 p : W, RchIn \u0393 X (Sum.inl p) (Sum.inl u) := by\n        intro p\n        by_cases hp : p = u\n        \u00b7 exact hp \u25b8 RchIn.refl (hXinl p)\n        \u00b7 refine (lift_reach hcut u (fun z _ => hXinl z) (Or.inl rfl) hp ha\u2080u).trans ?_\n          exact RchIn.of_adj (hXinl a\u2080) (hXinl u) ha\u2080u'\n      rcases V with p | k\n      \u00b7 exact step p\n      \u00b7 match k with\n        | Extra.uB => exact absurd rfl hV\n        | Extra.src =>\n          exact RchIn.of_adj (hmemX _ (extra_ne (by decide))) (hXinl u) hsrcu\n        | Extra.snk =>\n          exact (RchIn.of_adj (hmemX _ (extra_ne (by decide))) (hXinl v\u2081) hsnk\u2081).trans\n            (step v\u2081)\n    | Extra.src =>\n      have huBX : (Sum.inr Extra.uB : SV W) \u2208 X := hmemX _ (extra_ne (by decide))\n      refine \u27e8Sum.inr Extra.uB, ?_\u27e9\n      intro V hV\n      have step : \u2200 p : W, RchIn \u0393 X (Sum.inl p) (Sum.inr Extra.uB) := by\n        intro p\n        by_cases hp : p = u\n        \u00b7 exact hp \u25b8 RchIn.of_adj (hXinl u) huBX huuB\n        \u00b7 refine (lift_reach hcut u (fun z _ => hXinl z) (Or.inl rfl) hp hb\u2080u).trans ?_\n          exact RchIn.of_adj (hXinl b\u2080) huBX hb\u2080uB\n      rcases V with p | k\n      \u00b7 exact step p\n      \u00b7 match k with\n        | Extra.uB => exact RchIn.refl huBX\n        | Extra.src => exact absurd rfl hV\n        | Extra.snk =>\n          exact (RchIn.of_adj (hmemX _ (extra_ne (by decide))) (hXinl v\u2081) hsnk\u2081).trans\n            (step v\u2081)\n    | Extra.snk =>\n      have huBX : (Sum.inr Extra.uB : SV W) \u2208 X := hmemX _ (extra_ne (by decide))\n      refine \u27e8Sum.inr Extra.uB, ?_\u27e9\n      intro V hV\n      have step : \u2200 p : W, RchIn \u0393 X (Sum.inl p) (Sum.inr Extra.uB) := by\n        intro p\n        by_cases hp : p = u\n        \u00b7 exact hp \u25b8 RchIn.of_adj (hXinl u) huBX huuB\n        \u00b7 refine (lift_reach hcut u (fun z _ => hXinl z) (Or.inl rfl) hp hb\u2080u).trans ?_\n          exact RchIn.of_adj (hXinl b\u2080) huBX hb\u2080uB\n      rcases V with p | k\n      \u00b7 exact step p\n      \u00b7 match k with\n        | Extra.uB => exact RchIn.refl huBX\n        | Extra.src =>\n          exact RchIn.of_adj (hmemX _ (extra_ne (by decide))) huBX hsrcuB\n        | Extra.snk => exact absurd rfl hV\n\n/-! ### Every vertex of the divided graph has two distinct neighbours",
+      "has_sorry": false,
+      "is_axiom": false,
+      "assumption_sources": [],
+      "links": []
+    },
+    {
+      "decl_id": "StrongPerfectGraphTheorem:lean:Workspace.ProofLemmas.SplitVertexTwoPaths.split_hdeg",
+      "fqn": "Workspace.ProofLemmas.SplitVertexTwoPaths.split_hdeg",
+      "name": "split_hdeg",
+      "kind": "theorem",
+      "file": "lean_workspace/Workspace/ProofLemmas/SplitVertexTwoPaths.lean",
+      "decl_range": {
+        "start_line": 280,
+        "end_line": 342,
+        "start_col": null,
+        "end_col": null
+      },
+      "header_range": {
+        "start_line": 280,
+        "end_line": 284,
+        "start_col": null,
+        "end_col": null
+      },
+      "docstring": null,
+      "has_sorry": false,
+      "is_axiom": false,
+      "assumption_sources": [],
+      "links": []
+    },
+    {
+      "decl_id": "StrongPerfectGraphTheorem:lean:Workspace.ProofLemmas.SplitVertexTwoPaths.collapse",
+      "fqn": "Workspace.ProofLemmas.SplitVertexTwoPaths.collapse",
+      "name": "collapse",
+      "kind": "def",
+      "file": "lean_workspace/Workspace/ProofLemmas/SplitVertexTwoPaths.lean",
+      "decl_range": {
+        "start_line": 343,
+        "end_line": 346,
+        "start_col": null,
+        "end_col": null
+      },
+      "header_range": {
+        "start_line": 343,
+        "end_line": 346,
+        "start_col": null,
+        "end_col": null
+      },
+      "docstring": "Undo the division: `u_B` becomes `u` again.",
+      "has_sorry": false,
+      "is_axiom": false,
+      "assumption_sources": [],
+      "links": []
+    },
+    {
+      "decl_id": "StrongPerfectGraphTheorem:lean:Workspace.ProofLemmas.SplitVertexTwoPaths.succ_get",
+      "fqn": "Workspace.ProofLemmas.SplitVertexTwoPaths.succ_get",
+      "name": "succ_get",
+      "kind": "theorem",
+      "file": "lean_workspace/Workspace/ProofLemmas/SplitVertexTwoPaths.lean",
+      "decl_range": {
+        "start_line": 347,
+        "end_line": 349,
+        "start_col": null,
+        "end_col": null
+      },
+      "header_range": {
+        "start_line": 347,
+        "end_line": 348,
+        "start_col": null,
+        "end_col": null
+      },
+      "docstring": "Index bookkeeping: the successor form of `getElem`.",
+      "has_sorry": false,
+      "is_axiom": false,
+      "assumption_sources": [],
+      "links": []
+    },
+    {
+      "decl_id": "StrongPerfectGraphTheorem:lean:Workspace.ProofLemmas.SplitVertexTwoPaths.four_le_length",
+      "fqn": "Workspace.ProofLemmas.SplitVertexTwoPaths.four_le_length",
+      "name": "four_le_length",
+      "kind": "theorem",
+      "file": "lean_workspace/Workspace/ProofLemmas/SplitVertexTwoPaths.lean",
+      "decl_range": {
+        "start_line": 351,
+        "end_line": 401,
+        "start_col": null,
+        "end_col": null
+      },
+      "header_range": {
+        "start_line": 351,
+        "end_line": 355,
+        "start_col": null,
+        "end_col": null
+      },
+      "docstring": null,
+      "has_sorry": false,
+      "is_axiom": false,
+      "assumption_sources": [],
+      "links": []
+    },
+    {
+      "decl_id": "StrongPerfectGraphTheorem:lean:Workspace.ProofLemmas.SplitVertexTwoPaths.decode",
+      "fqn": "Workspace.ProofLemmas.SplitVertexTwoPaths.decode",
+      "name": "decode",
+      "kind": "theorem",
+      "file": "lean_workspace/Workspace/ProofLemmas/SplitVertexTwoPaths.lean",
+      "decl_range": {
+        "start_line": 402,
+        "end_line": 615,
+        "start_col": null,
+        "end_col": null
+      },
+      "header_range": {
+        "start_line": 402,
+        "end_line": 413,
+        "start_col": null,
+        "end_col": null
+      },
+      "docstring": "**Reading one of the two source-to-sink tracks back in `H`.**  A track of the divided graph\nfrom the source to the sink which does not use both halves of the divided vertex becomes a\ntrack of `H` out of `u`, leaving along an edge into `A` or into `B` according to which half it\nuses, and ending at `v\u2081` or at `v\u2082`.",
+      "has_sorry": false,
+      "is_axiom": false,
+      "assumption_sources": [],
+      "links": []
+    },
+    {
+      "decl_id": "StrongPerfectGraphTheorem:lean:Workspace.ProofLemmas.SplitVertexTwoPaths.exists_split_paths",
+      "fqn": "Workspace.ProofLemmas.SplitVertexTwoPaths.exists_split_paths",
+      "name": "exists_split_paths",
+      "kind": "theorem",
+      "file": "lean_workspace/Workspace/ProofLemmas/SplitVertexTwoPaths.lean",
+      "decl_range": {
+        "start_line": 616,
+        "end_line": 745,
+        "start_col": null,
+        "end_col": null
+      },
+      "header_range": {
+        "start_line": 616,
+        "end_line": 627,
+        "start_col": null,
+        "end_col": null
+      },
+      "docstring": "**The two vertex-disjoint paths of 5.8 (6).**  PAPER: *\"divide `u` into two adjacent\nvertices, one incident with the edges in `A` and the other with those in `B`, and use Menger's\ntheorem to deduce that there are two vertex-disjoint paths between these two vertices and\n`{v\u2081,v\u2082}`.\"*  Read back in `H`, the two paths become two tracks out of `u` meeting only at\n`u`, one leaving along an edge into `A` and the other along an edge into `B`, and ending at\n`v\u2081` and `v\u2082` in one order or the other.",
+      "has_sorry": false,
+      "is_axiom": false,
+      "assumption_sources": [],
+      "links": []
+    },
+    {
       "decl_id": "StrongPerfectGraphTheorem:lean:Workspace.ProofLemmas.isSquare_mono",
       "fqn": "Workspace.ProofLemmas.isSquare_mono",
       "name": "isSquare_mono",
@@ -104938,18 +106378,18 @@
       "kind": "theorem",
       "file": "lean_workspace/Workspace/ProofLemmas/Thm125Case2LeftStar.lean",
       "decl_range": {
-        "start_line": 28,
-        "end_line": 239,
+        "start_line": 38,
+        "end_line": 178,
         "start_col": null,
         "end_col": null
       },
       "header_range": {
-        "start_line": 28,
-        "end_line": 45,
+        "start_line": 38,
+        "end_line": 55,
         "start_col": null,
         "end_col": null
       },
-      "docstring": "In the asymmetric endpoint case of 12.5, the left endpoint is a left-star.",
+      "docstring": "In the asymmetric endpoint case of 12.5, the left endpoint is a left-star.\n\nPAPER: *\"By 11.4 it follows that `Q` contains a left-star, which must be `q\u2081`.\"*",
       "has_sorry": false,
       "is_axiom": false,
       "assumption_sources": [],
@@ -105499,14 +106939,14 @@
       "kind": "theorem",
       "file": "lean_workspace/Workspace/ProofLemmas/Thm125Setup.lean",
       "decl_range": {
-        "start_line": 30,
-        "end_line": 41,
+        "start_line": 35,
+        "end_line": 46,
         "start_col": null,
         "end_col": null
       },
       "header_range": {
-        "start_line": 30,
-        "end_line": 37,
+        "start_line": 35,
+        "end_line": 42,
         "start_col": null,
         "end_col": null
       },
@@ -105540,14 +106980,14 @@
       "kind": "theorem",
       "file": "lean_workspace/Workspace/ProofLemmas/Thm125Setup.lean",
       "decl_range": {
-        "start_line": 42,
-        "end_line": 56,
+        "start_line": 47,
+        "end_line": 61,
         "start_col": null,
         "end_col": null
       },
       "header_range": {
-        "start_line": 42,
-        "end_line": 50,
+        "start_line": 47,
+        "end_line": 55,
         "start_col": null,
         "end_col": null
       },
@@ -105581,14 +107021,14 @@
       "kind": "theorem",
       "file": "lean_workspace/Workspace/ProofLemmas/Thm125Setup.lean",
       "decl_range": {
-        "start_line": 57,
-        "end_line": 71,
+        "start_line": 62,
+        "end_line": 76,
         "start_col": null,
         "end_col": null
       },
       "header_range": {
-        "start_line": 57,
-        "end_line": 65,
+        "start_line": 62,
+        "end_line": 70,
         "start_col": null,
         "end_col": null
       },
@@ -105622,14 +107062,14 @@
       "kind": "theorem",
       "file": "lean_workspace/Workspace/ProofLemmas/Thm125Setup.lean",
       "decl_range": {
-        "start_line": 72,
-        "end_line": 90,
+        "start_line": 77,
+        "end_line": 95,
         "start_col": null,
         "end_col": null
       },
       "header_range": {
-        "start_line": 72,
-        "end_line": 80,
+        "start_line": 77,
+        "end_line": 85,
         "start_col": null,
         "end_col": null
       },
@@ -105663,14 +107103,14 @@
       "kind": "theorem",
       "file": "lean_workspace/Workspace/ProofLemmas/Thm125Setup.lean",
       "decl_range": {
-        "start_line": 91,
-        "end_line": 111,
+        "start_line": 96,
+        "end_line": 116,
         "start_col": null,
         "end_col": null
       },
       "header_range": {
-        "start_line": 91,
-        "end_line": 96,
+        "start_line": 96,
+        "end_line": 101,
         "start_col": null,
         "end_col": null
       },
@@ -105704,14 +107144,14 @@
       "kind": "theorem",
       "file": "lean_workspace/Workspace/ProofLemmas/Thm125Setup.lean",
       "decl_range": {
-        "start_line": 112,
-        "end_line": 136,
+        "start_line": 117,
+        "end_line": 141,
         "start_col": null,
         "end_col": null
       },
       "header_range": {
-        "start_line": 112,
-        "end_line": 129,
+        "start_line": 117,
+        "end_line": 134,
         "start_col": null,
         "end_col": null
       },
@@ -105745,14 +107185,14 @@
       "kind": "theorem",
       "file": "lean_workspace/Workspace/ProofLemmas/Thm125Setup.lean",
       "decl_range": {
-        "start_line": 137,
-        "end_line": 295,
+        "start_line": 142,
+        "end_line": 300,
         "start_col": null,
         "end_col": null
       },
       "header_range": {
-        "start_line": 137,
-        "end_line": 154,
+        "start_line": 142,
+        "end_line": 159,
         "start_col": null,
         "end_col": null
       },
@@ -105786,6 +107226,126 @@
           "assumption_tainted": false
         }
       ]
+    },
+    {
+      "decl_id": "StrongPerfectGraphTheorem:lean:Workspace.ProofLemmas.Thm131Claim2.claim_two",
+      "fqn": "Workspace.ProofLemmas.Thm131Claim2.claim_two",
+      "name": "claim_two",
+      "kind": "theorem",
+      "file": "lean_workspace/Workspace/ProofLemmas/Thm131Claim2.lean",
+      "decl_range": {
+        "start_line": 52,
+        "end_line": 633,
+        "start_col": null,
+        "end_col": null
+      },
+      "header_range": {
+        "start_line": 52,
+        "end_line": 66,
+        "start_col": null,
+        "end_col": null
+      },
+      "docstring": "Claim (2).",
+      "has_sorry": false,
+      "is_axiom": false,
+      "assumption_sources": [],
+      "links": []
+    },
+    {
+      "decl_id": "StrongPerfectGraphTheorem:lean:Workspace.ProofLemmas.Thm131Claim4.claim_four",
+      "fqn": "Workspace.ProofLemmas.Thm131Claim4.claim_four",
+      "name": "claim_four",
+      "kind": "theorem",
+      "file": "lean_workspace/Workspace/ProofLemmas/Thm131Claim4.lean",
+      "decl_range": {
+        "start_line": 56,
+        "end_line": 958,
+        "start_col": null,
+        "end_col": null
+      },
+      "header_range": {
+        "start_line": 56,
+        "end_line": 80,
+        "start_col": null,
+        "end_col": null
+      },
+      "docstring": "Claim (4) of the printed proof: a trajectory with a single tail vertex\nalready forces the conclusion of 13.1.",
+      "has_sorry": false,
+      "is_axiom": false,
+      "assumption_sources": [],
+      "links": []
+    },
+    {
+      "decl_id": "StrongPerfectGraphTheorem:lean:Workspace.ProofLemmas.Thm131Claim6.claim_six",
+      "fqn": "Workspace.ProofLemmas.Thm131Claim6.claim_six",
+      "name": "claim_six",
+      "kind": "theorem",
+      "file": "lean_workspace/Workspace/ProofLemmas/Thm131Claim6.lean",
+      "decl_range": {
+        "start_line": 44,
+        "end_line": 302,
+        "start_col": null,
+        "end_col": null
+      },
+      "header_range": {
+        "start_line": 44,
+        "end_line": 58,
+        "start_col": null,
+        "end_col": null
+      },
+      "docstring": "Claim (6).",
+      "has_sorry": false,
+      "is_axiom": false,
+      "assumption_sources": [],
+      "links": []
+    },
+    {
+      "decl_id": "StrongPerfectGraphTheorem:lean:Workspace.ProofLemmas.Thm131Claim7.claim_seven",
+      "fqn": "Workspace.ProofLemmas.Thm131Claim7.claim_seven",
+      "name": "claim_seven",
+      "kind": "theorem",
+      "file": "lean_workspace/Workspace/ProofLemmas/Thm131Claim7.lean",
+      "decl_range": {
+        "start_line": 43,
+        "end_line": 225,
+        "start_col": null,
+        "end_col": null
+      },
+      "header_range": {
+        "start_line": 43,
+        "end_line": 71,
+        "start_col": null,
+        "end_col": null
+      },
+      "docstring": "Claim (7).",
+      "has_sorry": false,
+      "is_axiom": false,
+      "assumption_sources": [],
+      "links": []
+    },
+    {
+      "decl_id": "StrongPerfectGraphTheorem:lean:Workspace.ProofLemmas.Thm131Closing.closing_absurd",
+      "fqn": "Workspace.ProofLemmas.Thm131Closing.closing_absurd",
+      "name": "closing_absurd",
+      "kind": "theorem",
+      "file": "lean_workspace/Workspace/ProofLemmas/Thm131Closing.lean",
+      "decl_range": {
+        "start_line": 43,
+        "end_line": 491,
+        "start_col": null,
+        "end_col": null
+      },
+      "header_range": {
+        "start_line": 43,
+        "end_line": 57,
+        "start_col": null,
+        "end_col": null
+      },
+      "docstring": "The closing paragraph: a `W`-complete vertex of `R \\ b` is impossible.",
+      "has_sorry": false,
+      "is_axiom": false,
+      "assumption_sources": [],
+      "links": []
     },
     {
       "decl_id": "StrongPerfectGraphTheorem:lean:Workspace.ProofLemmas.Thm131ComplementStars.step_symm",
@@ -105883,14 +107443,14 @@
       "kind": "theorem",
       "file": "lean_workspace/Workspace/ProofLemmas/Thm131EdgeCases.lean",
       "decl_range": {
-        "start_line": 20,
-        "end_line": 33,
+        "start_line": 21,
+        "end_line": 34,
         "start_col": null,
         "end_col": null
       },
       "header_range": {
-        "start_line": 20,
-        "end_line": 21,
+        "start_line": 21,
+        "end_line": 22,
         "start_col": null,
         "end_col": null
       },
@@ -105924,14 +107484,14 @@
       "kind": "theorem",
       "file": "lean_workspace/Workspace/ProofLemmas/Thm131EdgeCases.lean",
       "decl_range": {
-        "start_line": 34,
-        "end_line": 79,
+        "start_line": 35,
+        "end_line": 80,
         "start_col": null,
         "end_col": null
       },
       "header_range": {
-        "start_line": 34,
-        "end_line": 41,
+        "start_line": 35,
+        "end_line": 42,
         "start_col": null,
         "end_col": null
       },
@@ -105965,14 +107525,14 @@
       "kind": "theorem",
       "file": "lean_workspace/Workspace/ProofLemmas/Thm131EdgeCases.lean",
       "decl_range": {
-        "start_line": 80,
-        "end_line": 254,
+        "start_line": 81,
+        "end_line": 253,
         "start_col": null,
         "end_col": null
       },
       "header_range": {
-        "start_line": 80,
-        "end_line": 94,
+        "start_line": 81,
+        "end_line": 95,
         "start_col": null,
         "end_col": null
       },
@@ -106008,45 +107568,388 @@
       ]
     },
     {
-      "decl_id": "StrongPerfectGraphTheorem:lean:Workspace.ProofLemmas.Thm131EdgeCases.terminal_miss_neighbor_absurd",
-      "fqn": "Workspace.ProofLemmas.Thm131EdgeCases.terminal_miss_neighbor_absurd",
-      "name": "terminal_miss_neighbor_absurd",
+      "decl_id": "StrongPerfectGraphTheorem:lean:Workspace.ProofLemmas.Thm131Enlarge.step_symm",
+      "fqn": "Workspace.ProofLemmas.Thm131Enlarge.step_symm",
+      "name": "step_symm",
       "kind": "theorem",
-      "file": "lean_workspace/Workspace/ProofLemmas/Thm131EdgeCases.lean",
+      "file": "lean_workspace/Workspace/ProofLemmas/Thm131Enlarge.lean",
       "decl_range": {
-        "start_line": 255,
-        "end_line": 406,
+        "start_line": 47,
+        "end_line": 59,
         "start_col": null,
         "end_col": null
       },
       "header_range": {
-        "start_line": 255,
-        "end_line": 268,
+        "start_line": 47,
+        "end_line": 50,
         "start_col": null,
         "end_col": null
       },
-      "docstring": "If the terminal trajectory vertex has both a neighbour and a non-neighbour\nin `A`, the terminal-only missing pattern at the right end produces two\nantipaths of opposite total parity.",
+      "docstring": null,
       "has_sorry": false,
       "is_axiom": false,
       "assumption_sources": [],
-      "links": [
-        {
-          "link_id": "lnk_6de421f86a68d2ce",
-          "paper_label": null,
-          "paper_page_range": null,
-          "paper_latex_range": null,
-          "kind": "other",
-          "paper_status": "helper",
-          "erratum": null,
-          "show_in_pdf": true,
-          "confidence": 0.8,
-          "source": "manual",
-          "verifier_vote": "none",
-          "rationale": "If the terminal trajectory vertex `last` has both a neighbour and a non-neighbour in `A`, comparing the two antipaths this yields (through `b`, resp. through the crossed step pair) forces incompatible parities, a contradiction.",
-          "reachable": true,
-          "assumption_tainted": false
-        }
-      ]
+      "links": []
+    },
+    {
+      "decl_id": "StrongPerfectGraphTheorem:lean:Workspace.ProofLemmas.Thm131Enlarge.exists_left_nonneighbor",
+      "fqn": "Workspace.ProofLemmas.Thm131Enlarge.exists_left_nonneighbor",
+      "name": "exists_left_nonneighbor",
+      "kind": "theorem",
+      "file": "lean_workspace/Workspace/ProofLemmas/Thm131Enlarge.lean",
+      "decl_range": {
+        "start_line": 60,
+        "end_line": 93,
+        "start_col": null,
+        "end_col": null
+      },
+      "header_range": {
+        "start_line": 60,
+        "end_line": 63,
+        "start_col": null,
+        "end_col": null
+      },
+      "docstring": "Mirror of `Thm131Trajectory.exists_right_nonneighbor`: every vertex of the\nright class of a step-connected strip has a nonneighbour in the left class.",
+      "has_sorry": false,
+      "is_axiom": false,
+      "assumption_sources": [],
+      "links": []
+    },
+    {
+      "decl_id": "StrongPerfectGraphTheorem:lean:Workspace.ProofLemmas.Thm131Enlarge.rungUB",
+      "fqn": "Workspace.ProofLemmas.Thm131Enlarge.rungUB",
+      "name": "rungUB",
+      "kind": "theorem",
+      "file": "lean_workspace/Workspace/ProofLemmas/Thm131Enlarge.lean",
+      "decl_range": {
+        "start_line": 94,
+        "end_line": 119,
+        "start_col": null,
+        "end_col": null
+      },
+      "header_range": {
+        "start_line": 94,
+        "end_line": 98,
+        "start_col": null,
+        "end_col": null
+      },
+      "docstring": "The two-vertex rung `u`-`b` of the enlarged strip.",
+      "has_sorry": false,
+      "is_axiom": false,
+      "assumption_sources": [],
+      "links": []
+    },
+    {
+      "decl_id": "StrongPerfectGraphTheorem:lean:Workspace.ProofLemmas.Thm131Enlarge.rungAV",
+      "fqn": "Workspace.ProofLemmas.Thm131Enlarge.rungAV",
+      "name": "rungAV",
+      "kind": "theorem",
+      "file": "lean_workspace/Workspace/ProofLemmas/Thm131Enlarge.lean",
+      "decl_range": {
+        "start_line": 120,
+        "end_line": 146,
+        "start_col": null,
+        "end_col": null
+      },
+      "header_range": {
+        "start_line": 120,
+        "end_line": 124,
+        "start_col": null,
+        "end_col": null
+      },
+      "docstring": "The two-vertex rung `a`-`v` of the enlarged strip.",
+      "has_sorry": false,
+      "is_axiom": false,
+      "assumption_sources": [],
+      "links": []
+    },
+    {
+      "decl_id": "StrongPerfectGraphTheorem:lean:Workspace.ProofLemmas.Thm131Enlarge.mkStep",
+      "fqn": "Workspace.ProofLemmas.Thm131Enlarge.mkStep",
+      "name": "mkStep",
+      "kind": "theorem",
+      "file": "lean_workspace/Workspace/ProofLemmas/Thm131Enlarge.lean",
+      "decl_range": {
+        "start_line": 147,
+        "end_line": 182,
+        "start_col": null,
+        "end_col": null
+      },
+      "header_range": {
+        "start_line": 147,
+        "end_line": 152,
+        "start_col": null,
+        "end_col": null
+      },
+      "docstring": "The steps of the enlarged strip: one new rung on each side, joined across a\nnonedge of the old strip.",
+      "has_sorry": false,
+      "is_axiom": false,
+      "assumption_sources": [],
+      "links": []
+    },
+    {
+      "decl_id": "StrongPerfectGraphTheorem:lean:Workspace.ProofLemmas.Thm131Enlarge.rungOld",
+      "fqn": "Workspace.ProofLemmas.Thm131Enlarge.rungOld",
+      "name": "rungOld",
+      "kind": "theorem",
+      "file": "lean_workspace/Workspace/ProofLemmas/Thm131Enlarge.lean",
+      "decl_range": {
+        "start_line": 183,
+        "end_line": 196,
+        "start_col": null,
+        "end_col": null
+      },
+      "header_range": {
+        "start_line": 183,
+        "end_line": 185,
+        "start_col": null,
+        "end_col": null
+      },
+      "docstring": "A rung of the old strip is a rung of the enlarged one.",
+      "has_sorry": false,
+      "is_axiom": false,
+      "assumption_sources": [],
+      "links": []
+    },
+    {
+      "decl_id": "StrongPerfectGraphTheorem:lean:Workspace.ProofLemmas.Thm131Enlarge.stepOld",
+      "fqn": "Workspace.ProofLemmas.Thm131Enlarge.stepOld",
+      "name": "stepOld",
+      "kind": "theorem",
+      "file": "lean_workspace/Workspace/ProofLemmas/Thm131Enlarge.lean",
+      "decl_range": {
+        "start_line": 197,
+        "end_line": 205,
+        "start_col": null,
+        "end_col": null
+      },
+      "header_range": {
+        "start_line": 197,
+        "end_line": 200,
+        "start_col": null,
+        "end_col": null
+      },
+      "docstring": "A step of the old strip is a step of the enlarged one.",
+      "has_sorry": false,
+      "is_axiom": false,
+      "assumption_sources": [],
+      "links": []
+    },
+    {
+      "decl_id": "StrongPerfectGraphTheorem:lean:Workspace.ProofLemmas.Thm131Enlarge.stepConnected_adjoin_complete_pair",
+      "fqn": "Workspace.ProofLemmas.Thm131Enlarge.stepConnected_adjoin_complete_pair",
+      "name": "stepConnected_adjoin_complete_pair",
+      "kind": "theorem",
+      "file": "lean_workspace/Workspace/ProofLemmas/Thm131Enlarge.lean",
+      "decl_range": {
+        "start_line": 206,
+        "end_line": 302,
+        "start_col": null,
+        "end_col": null
+      },
+      "header_range": {
+        "start_line": 206,
+        "end_line": 210,
+        "start_col": null,
+        "end_col": null
+      },
+      "docstring": "PAPER (claim (2), printed p. 80): *\"`w\u2081, w\u2082` are both `A \u222a B`-complete.  But\nthen `S' = (A \u222a {w\u2082}, C, B \u222a {w\u2081})` is a step-connected strip\"*; and the same\nconstruction for claim (6)'s `(A \u222a {x}, \u2205, B \u222a {y})`.",
+      "has_sorry": false,
+      "is_axiom": false,
+      "assumption_sources": [],
+      "links": []
+    },
+    {
+      "decl_id": "StrongPerfectGraphTheorem:lean:Workspace.ProofLemmas.Thm131Enlarge.staircase_adjoin_complete_pair",
+      "fqn": "Workspace.ProofLemmas.Thm131Enlarge.staircase_adjoin_complete_pair",
+      "name": "staircase_adjoin_complete_pair",
+      "kind": "theorem",
+      "file": "lean_workspace/Workspace/ProofLemmas/Thm131Enlarge.lean",
+      "decl_range": {
+        "start_line": 303,
+        "end_line": 366,
+        "start_col": null,
+        "end_col": null
+      },
+      "header_range": {
+        "start_line": 303,
+        "end_line": 312,
+        "start_col": null,
+        "end_col": null
+      },
+      "docstring": "PAPER (claim (2), printed p. 80): *\"\u2026 and `(S', a-R-b)` is a staircase\"*;\nPAPER (claim (6), printed p. 81): *\"But then `((A \u222a {x}, \u2205, B \u222a {y}), a-R-b)` is\na staircase\"*.  The hypotheses `hua`, `hvb`, `huother`, `hvother` are the printed\n*\"the only edges between `w\u2081, w\u2082` and `R` are `w\u2081b` and `w\u2082a`\"*, resp.\n*\"`x-a-R-b-y` is a path\"*.",
+      "has_sorry": false,
+      "is_axiom": false,
+      "assumption_sources": [],
+      "links": []
+    },
+    {
+      "decl_id": "StrongPerfectGraphTheorem:lean:Workspace.ProofLemmas.Thm131Enlarge.adjoin_complete_pair_absurd",
+      "fqn": "Workspace.ProofLemmas.Thm131Enlarge.adjoin_complete_pair_absurd",
+      "name": "adjoin_complete_pair_absurd",
+      "kind": "theorem",
+      "file": "lean_workspace/Workspace/ProofLemmas/Thm131Enlarge.lean",
+      "decl_range": {
+        "start_line": 367,
+        "end_line": 389,
+        "start_col": null,
+        "end_col": null
+      },
+      "header_range": {
+        "start_line": 367,
+        "end_line": 370,
+        "start_col": null,
+        "end_col": null
+      },
+      "docstring": "PAPER (claims (2) and (6)): *\"\u2026 contrary to the maximality of `(S, R\u2080)`.\"*",
+      "has_sorry": false,
+      "is_axiom": false,
+      "assumption_sources": [],
+      "links": []
+    },
+    {
+      "decl_id": "StrongPerfectGraphTheorem:lean:Workspace.ProofLemmas.Thm131Enlarge.exists_edge_right",
+      "fqn": "Workspace.ProofLemmas.Thm131Enlarge.exists_edge_right",
+      "name": "exists_edge_right",
+      "kind": "theorem",
+      "file": "lean_workspace/Workspace/ProofLemmas/Thm131Enlarge.lean",
+      "decl_range": {
+        "start_line": 390,
+        "end_line": 417,
+        "start_col": null,
+        "end_col": null
+      },
+      "header_range": {
+        "start_line": 390,
+        "end_line": 391,
+        "start_col": null,
+        "end_col": null
+      },
+      "docstring": "With an empty middle class every rung is an edge, so every vertex of the\nleft class has a neighbour in the right class.",
+      "has_sorry": false,
+      "is_axiom": false,
+      "assumption_sources": [],
+      "links": []
+    },
+    {
+      "decl_id": "StrongPerfectGraphTheorem:lean:Workspace.ProofLemmas.Thm131Enlarge.exists_edge_left",
+      "fqn": "Workspace.ProofLemmas.Thm131Enlarge.exists_edge_left",
+      "name": "exists_edge_left",
+      "kind": "theorem",
+      "file": "lean_workspace/Workspace/ProofLemmas/Thm131Enlarge.lean",
+      "decl_range": {
+        "start_line": 419,
+        "end_line": 448,
+        "start_col": null,
+        "end_col": null
+      },
+      "header_range": {
+        "start_line": 419,
+        "end_line": 420,
+        "start_col": null,
+        "end_col": null
+      },
+      "docstring": null,
+      "has_sorry": false,
+      "is_axiom": false,
+      "assumption_sources": [],
+      "links": []
+    },
+    {
+      "decl_id": "StrongPerfectGraphTheorem:lean:Workspace.ProofLemmas.Thm131Enlarge.mkStepC",
+      "fqn": "Workspace.ProofLemmas.Thm131Enlarge.mkStepC",
+      "name": "mkStepC",
+      "kind": "theorem",
+      "file": "lean_workspace/Workspace/ProofLemmas/Thm131Enlarge.lean",
+      "decl_range": {
+        "start_line": 449,
+        "end_line": 535,
+        "start_col": null,
+        "end_col": null
+      },
+      "header_range": {
+        "start_line": 449,
+        "end_line": 454,
+        "start_col": null,
+        "end_col": null
+      },
+      "docstring": "The two new rungs and the step joining them, in the complement.",
+      "has_sorry": false,
+      "is_axiom": false,
+      "assumption_sources": [],
+      "links": []
+    },
+    {
+      "decl_id": "StrongPerfectGraphTheorem:lean:Workspace.ProofLemmas.Thm131Enlarge.stepConnected_compl_adjoin_interior_pair",
+      "fqn": "Workspace.ProofLemmas.Thm131Enlarge.stepConnected_compl_adjoin_interior_pair",
+      "name": "stepConnected_compl_adjoin_interior_pair",
+      "kind": "theorem",
+      "file": "lean_workspace/Workspace/ProofLemmas/Thm131Enlarge.lean",
+      "decl_range": {
+        "start_line": 536,
+        "end_line": 625,
+        "start_col": null,
+        "end_col": null
+      },
+      "header_range": {
+        "start_line": 536,
+        "end_line": 540,
+        "start_col": null,
+        "end_col": null
+      },
+      "docstring": "PAPER (claim (7), printed p. 81): *\"Hence `x, y` are both anticomplete to\n`A \u222a B`, and so `((B \u222a {x}, \u2205, A \u222a {y}), a-w\u2081-\u22ef-w\u2099)` is a staircase\"* \u2014 the\nstep-connected strip half.",
+      "has_sorry": false,
+      "is_axiom": false,
+      "assumption_sources": [],
+      "links": []
+    },
+    {
+      "decl_id": "StrongPerfectGraphTheorem:lean:Workspace.ProofLemmas.Thm131Enlarge.staircase_compl_adjoin_pair",
+      "fqn": "Workspace.ProofLemmas.Thm131Enlarge.staircase_compl_adjoin_pair",
+      "name": "staircase_compl_adjoin_pair",
+      "kind": "theorem",
+      "file": "lean_workspace/Workspace/ProofLemmas/Thm131Enlarge.lean",
+      "decl_range": {
+        "start_line": 626,
+        "end_line": 697,
+        "start_col": null,
+        "end_col": null
+      },
+      "header_range": {
+        "start_line": 626,
+        "end_line": 638,
+        "start_col": null,
+        "end_col": null
+      },
+      "docstring": "PAPER (claim (7) and the closing paragraph of 13.1): the complementary\nstaircase `((B \u222a {p}, \u2205, A \u222a {q}), a-w\u2081-\u22ef-w\u2099)` whose banister is the trajectory\nantipath.  `hpT` and `hqT` say that, along the antipath, the new left-class\nvertex `p` sees only `a` and the new right-class vertex `q` sees only `w\u2099`.",
+      "has_sorry": false,
+      "is_axiom": false,
+      "assumption_sources": [],
+      "links": []
+    },
+    {
+      "decl_id": "StrongPerfectGraphTheorem:lean:Workspace.ProofLemmas.Thm131Enlarge.compl_adjoin_pair_absurd",
+      "fqn": "Workspace.ProofLemmas.Thm131Enlarge.compl_adjoin_pair_absurd",
+      "name": "compl_adjoin_pair_absurd",
+      "kind": "theorem",
+      "file": "lean_workspace/Workspace/ProofLemmas/Thm131Enlarge.lean",
+      "decl_range": {
+        "start_line": 698,
+        "end_line": 715,
+        "start_col": null,
+        "end_col": null
+      },
+      "header_range": {
+        "start_line": 698,
+        "end_line": 701,
+        "start_col": null,
+        "end_col": null
+      },
+      "docstring": "PAPER (claim (7) and the closing paragraph): *\"\u2026 a staircase in `G`,\ncontradicting that `(S, R\u2080)` is strongly maximal.\"*",
+      "has_sorry": false,
+      "is_axiom": false,
+      "assumption_sources": [],
+      "links": []
     },
     {
       "decl_id": "StrongPerfectGraphTheorem:lean:Workspace.ProofLemmas.Thm131LastCase.step_symm",
@@ -106055,14 +107958,14 @@
       "kind": "theorem",
       "file": "lean_workspace/Workspace/ProofLemmas/Thm131LastCase.lean",
       "decl_range": {
-        "start_line": 29,
-        "end_line": 41,
+        "start_line": 28,
+        "end_line": 40,
         "start_col": null,
         "end_col": null
       },
       "header_range": {
-        "start_line": 29,
-        "end_line": 32,
+        "start_line": 28,
+        "end_line": 31,
         "start_col": null,
         "end_col": null
       },
@@ -106079,14 +107982,14 @@
       "kind": "theorem",
       "file": "lean_workspace/Workspace/ProofLemmas/Thm131LastCase.lean",
       "decl_range": {
-        "start_line": 42,
-        "end_line": 227,
+        "start_line": 41,
+        "end_line": 226,
         "start_col": null,
         "end_col": null
       },
       "header_range": {
-        "start_line": 42,
-        "end_line": 53,
+        "start_line": 41,
+        "end_line": 52,
         "start_col": null,
         "end_col": null
       },
@@ -106122,72 +108025,24 @@
       ]
     },
     {
-      "decl_id": "StrongPerfectGraphTheorem:lean:Workspace.ProofLemmas.Thm131LastMiss.leap_inner_path",
-      "fqn": "Workspace.ProofLemmas.Thm131LastMiss.leap_inner_path",
-      "name": "leap_inner_path",
-      "kind": "theorem",
-      "file": "lean_workspace/Workspace/ProofLemmas/Thm131LastMiss.lean",
-      "decl_range": {
-        "start_line": 39,
-        "end_line": 89,
-        "start_col": null,
-        "end_col": null
-      },
-      "header_range": {
-        "start_line": 39,
-        "end_line": 45,
-        "start_col": null,
-        "end_col": null
-      },
-      "docstring": "The path between the two vertices of a leap, whose interior is the\ninterior of the path on which the leap sits.",
-      "has_sorry": false,
-      "is_axiom": false,
-      "assumption_sources": [],
-      "links": []
-    },
-    {
-      "decl_id": "StrongPerfectGraphTheorem:lean:Workspace.ProofLemmas.Thm131LastMiss.staircase_compl_adjoin_stars",
-      "fqn": "Workspace.ProofLemmas.Thm131LastMiss.staircase_compl_adjoin_stars",
-      "name": "staircase_compl_adjoin_stars",
-      "kind": "theorem",
-      "file": "lean_workspace/Workspace/ProofLemmas/Thm131LastMiss.lean",
-      "decl_range": {
-        "start_line": 90,
-        "end_line": 239,
-        "start_col": null,
-        "end_col": null
-      },
-      "header_range": {
-        "start_line": 90,
-        "end_line": 106,
-        "start_col": null,
-        "end_col": null
-      },
-      "docstring": "The complementary staircase at the end of claim (7) of the paper.  The\nouter path records that the new left-class vertex `r` sees only the first\nvertex of the displayed complement-banister.",
-      "has_sorry": false,
-      "is_axiom": false,
-      "assumption_sources": [],
-      "links": []
-    },
-    {
       "decl_id": "StrongPerfectGraphTheorem:lean:Workspace.ProofLemmas.Thm131LastMiss.terminal_miss_absurd",
       "fqn": "Workspace.ProofLemmas.Thm131LastMiss.terminal_miss_absurd",
       "name": "terminal_miss_absurd",
       "kind": "theorem",
       "file": "lean_workspace/Workspace/ProofLemmas/Thm131LastMiss.lean",
       "decl_range": {
-        "start_line": 240,
-        "end_line": 599,
+        "start_line": 52,
+        "end_line": 555,
         "start_col": null,
         "end_col": null
       },
       "header_range": {
-        "start_line": 240,
-        "end_line": 269,
+        "start_line": 52,
+        "end_line": 81,
         "start_col": null,
         "end_col": null
       },
-      "docstring": "If the right end sees every trajectory vertex except its terminal\nright-star, strong maximality is contradicted.",
+      "docstring": "The end of claim (7): if the right end of the optimal banister sees every\ntrajectory vertex except its terminal right-star, strong maximality fails.",
       "has_sorry": false,
       "is_axiom": false,
       "assumption_sources": [],
@@ -106211,127 +108066,76 @@
       ]
     },
     {
-      "decl_id": "StrongPerfectGraphTheorem:lean:Workspace.ProofLemmas.Thm131OptimalLength.optimal_banister_length_one",
-      "fqn": "Workspace.ProofLemmas.Thm131OptimalLength.optimal_banister_length_one",
-      "name": "optimal_banister_length_one",
+      "decl_id": "StrongPerfectGraphTheorem:lean:Workspace.ProofLemmas.Thm131Prefix.interior_getElem",
+      "fqn": "Workspace.ProofLemmas.Thm131Prefix.interior_getElem",
+      "name": "interior_getElem",
       "kind": "theorem",
-      "file": "lean_workspace/Workspace/ProofLemmas/Thm131OptimalLength.lean",
+      "file": "lean_workspace/Workspace/ProofLemmas/Thm131Prefix.lean",
       "decl_range": {
-        "start_line": 33,
-        "end_line": 77,
+        "start_line": 13,
+        "end_line": 20,
         "start_col": null,
         "end_col": null
       },
       "header_range": {
-        "start_line": 33,
-        "end_line": 52,
+        "start_line": 13,
+        "end_line": 16,
         "start_col": null,
         "end_col": null
       },
-      "docstring": "In the induction used for 13.1, every optimal banister for the current\nright-sequence is an edge.",
+      "docstring": null,
       "has_sorry": false,
       "is_axiom": false,
       "assumption_sources": [],
-      "links": [
-        {
-          "link_id": "lnk_6ad52449a76b786b",
-          "paper_label": null,
-          "paper_page_range": null,
-          "paper_latex_range": null,
-          "kind": "other",
-          "paper_status": "helper",
-          "erratum": null,
-          "show_in_pdf": true,
-          "confidence": 0.8,
-          "source": "manual",
-          "verifier_vote": "none",
-          "rationale": "In the induction used for 13.1, every optimal banister for the current right-sequence is an edge.",
-          "reachable": true,
-          "assumption_tainted": false
-        }
-      ]
+      "links": []
     },
     {
-      "decl_id": "StrongPerfectGraphTheorem:lean:Workspace.ProofLemmas.Thm131Singleton.singleton_long_optimal_absurd",
-      "fqn": "Workspace.ProofLemmas.Thm131Singleton.singleton_long_optimal_absurd",
-      "name": "singleton_long_optimal_absurd",
+      "decl_id": "StrongPerfectGraphTheorem:lean:Workspace.ProofLemmas.Thm131Prefix.eq_cons_interior_append",
+      "fqn": "Workspace.ProofLemmas.Thm131Prefix.eq_cons_interior_append",
+      "name": "eq_cons_interior_append",
       "kind": "theorem",
-      "file": "lean_workspace/Workspace/ProofLemmas/Thm131Singleton.lean",
+      "file": "lean_workspace/Workspace/ProofLemmas/Thm131Prefix.lean",
       "decl_range": {
-        "start_line": 44,
-        "end_line": 869,
+        "start_line": 22,
+        "end_line": 57,
         "start_col": null,
         "end_col": null
       },
       "header_range": {
-        "start_line": 44,
-        "end_line": 65,
+        "start_line": 22,
+        "end_line": 24,
         "start_col": null,
         "end_col": null
       },
-      "docstring": "The singleton trajectory cannot occur when the same optimal banister is\nthe long banister of a strongly maximal staircase.",
+      "docstring": null,
       "has_sorry": false,
       "is_axiom": false,
       "assumption_sources": [],
-      "links": [
-        {
-          "link_id": "lnk_246515de9bdcd518",
-          "paper_label": null,
-          "paper_page_range": null,
-          "paper_latex_range": null,
-          "kind": "other",
-          "paper_status": "helper",
-          "erratum": null,
-          "show_in_pdf": true,
-          "confidence": 0.8,
-          "source": "manual",
-          "verifier_vote": "none",
-          "rationale": "The singleton trajectory cannot occur when the same optimal banister is the long banister of a strongly maximal staircase.",
-          "reachable": true,
-          "assumption_tainted": false
-        }
-      ]
+      "links": []
     },
     {
-      "decl_id": "StrongPerfectGraphTheorem:lean:Workspace.ProofLemmas.Thm131SingletonEdge.singleton_edge_terminal_miss_absurd",
-      "fqn": "Workspace.ProofLemmas.Thm131SingletonEdge.singleton_edge_terminal_miss_absurd",
-      "name": "singleton_edge_terminal_miss_absurd",
+      "decl_id": "StrongPerfectGraphTheorem:lean:Workspace.ProofLemmas.Thm131Prefix.antipath_prefix",
+      "fqn": "Workspace.ProofLemmas.Thm131Prefix.antipath_prefix",
+      "name": "antipath_prefix",
       "kind": "theorem",
-      "file": "lean_workspace/Workspace/ProofLemmas/Thm131SingletonEdge.lean",
+      "file": "lean_workspace/Workspace/ProofLemmas/Thm131Prefix.lean",
       "decl_range": {
-        "start_line": 33,
-        "end_line": 412,
+        "start_line": 58,
+        "end_line": 146,
         "start_col": null,
         "end_col": null
       },
       "header_range": {
-        "start_line": 33,
-        "end_line": 58,
+        "start_line": 58,
+        "end_line": 63,
         "start_col": null,
         "end_col": null
       },
-      "docstring": "A terminal miss is impossible when the trajectory has only one tail\nvertex and the current optimal banister is an edge.",
+      "docstring": "PAPER (13.1, claim (2)): *\"there is an antipath `Q` joining `a`, `b` with\ninterior in `W`\"* \u2014 such an antipath runs along an initial segment of the\ntrajectory `a-w\u2081-\u22ef-w\u2099`, because the antipath is induced and `a` has a unique\n`\u1e20`-neighbour in `W`.",
       "has_sorry": false,
       "is_axiom": false,
       "assumption_sources": [],
-      "links": [
-        {
-          "link_id": "lnk_c6af83ac00ff76cc",
-          "paper_label": null,
-          "paper_page_range": null,
-          "paper_latex_range": null,
-          "kind": "other",
-          "paper_status": "helper",
-          "erratum": null,
-          "show_in_pdf": true,
-          "confidence": 0.8,
-          "source": "manual",
-          "verifier_vote": "none",
-          "rationale": "A terminal miss is impossible when the trajectory has only one tail vertex and the current optimal banister is an edge.",
-          "reachable": true,
-          "assumption_tainted": false
-        }
-      ]
+      "links": []
     },
     {
       "decl_id": "StrongPerfectGraphTheorem:lean:Workspace.ProofLemmas.Thm131Trajectory.TrajectoryConclusion",
@@ -108321,13 +110125,13 @@
       "file": "lean_workspace/Workspace/ProofLemmas/Thm132EndgameSetup.lean",
       "decl_range": {
         "start_line": 24,
-        "end_line": 143,
+        "end_line": 150,
         "start_col": null,
         "end_col": null
       },
       "header_range": {
         "start_line": 24,
-        "end_line": 47,
+        "end_line": 50,
         "start_col": null,
         "end_col": null
       },
@@ -108394,13 +110198,13 @@
       "file": "lean_workspace/Workspace/ProofLemmas/Thm132FinalContradiction.lean",
       "decl_range": {
         "start_line": 50,
-        "end_line": 256,
+        "end_line": 259,
         "start_col": null,
         "end_col": null
       },
       "header_range": {
         "start_line": 50,
-        "end_line": 66,
+        "end_line": 69,
         "start_col": null,
         "end_col": null
       },
@@ -109140,24 +110944,48 @@
       ]
     },
     {
+      "decl_id": "StrongPerfectGraphTheorem:lean:Workspace.ProofLemmas.Thm132OptimalLength.isRightSequence_take",
+      "fqn": "Workspace.ProofLemmas.Thm132OptimalLength.isRightSequence_take",
+      "name": "isRightSequence_take",
+      "kind": "theorem",
+      "file": "lean_workspace/Workspace/ProofLemmas/Thm132OptimalLength.lean",
+      "decl_range": {
+        "start_line": 40,
+        "end_line": 75,
+        "start_col": null,
+        "end_col": null
+      },
+      "header_range": {
+        "start_line": 40,
+        "end_line": 42,
+        "start_col": null,
+        "end_col": null
+      },
+      "docstring": "PAPER (\u00a713, printed p. 78): *\"Any initial subsequence of a right-sequence is therefore\nanother right-sequence.\"*",
+      "has_sorry": false,
+      "is_axiom": false,
+      "assumption_sources": [],
+      "links": []
+    },
+    {
       "decl_id": "StrongPerfectGraphTheorem:lean:Workspace.ProofLemmas.Thm132OptimalLength.optimal_banister_length_one",
       "fqn": "Workspace.ProofLemmas.Thm132OptimalLength.optimal_banister_length_one",
       "name": "optimal_banister_length_one",
       "kind": "theorem",
       "file": "lean_workspace/Workspace/ProofLemmas/Thm132OptimalLength.lean",
       "decl_range": {
-        "start_line": 33,
-        "end_line": 71,
+        "start_line": 76,
+        "end_line": 122,
         "start_col": null,
         "end_col": null
       },
       "header_range": {
-        "start_line": 33,
-        "end_line": 46,
+        "start_line": 76,
+        "end_line": 90,
         "start_col": null,
         "end_col": null
       },
-      "docstring": "Every optimal banister (for the fixed strip and right-sequence occurring in\n13.2) is an edge.",
+      "docstring": "Every optimal banister occurring in the proof of 13.2 is an edge.\n\nPAPER: *\"From the minimality of `t` (replacing `R\u2080` by `R`) it follows that `R` has length 1,\nand so `rb\u2080` is an edge.\"*  The minimality of `t` is `hIH`; `x[j]` is the birth of the left\nend `a` of the optimal banister, and `hjlast` says that it is not the last term of the\nright-sequence, which is what *\"replacing `R\u2080` by `R`\"* needs in order to shorten the\nsequence.",
       "has_sorry": false,
       "is_axiom": false,
       "assumption_sources": [],
@@ -109335,13 +111163,13 @@
       "file": "lean_workspace/Workspace/ProofLemmas/Thm132Setup.lean",
       "decl_range": {
         "start_line": 54,
-        "end_line": 195,
+        "end_line": 201,
         "start_col": null,
         "end_col": null
       },
       "header_range": {
         "start_line": 54,
-        "end_line": 68,
+        "end_line": 71,
         "start_col": null,
         "end_col": null
       },
@@ -116501,7 +118329,7 @@
       "file": "lean_workspace/Workspace/ProofLemmas/Thm174Main.lean",
       "decl_range": {
         "start_line": 81,
-        "end_line": 453,
+        "end_line": 472,
         "start_col": null,
         "end_col": null
       },
@@ -116537,431 +118365,6 @@
           "source": "manual",
           "verifier_vote": "none",
           "rationale": "The Lean statement of the paper's numbered result 17.4, concluding that p_{n-1} is nonadjacent to x1.",
-          "reachable": true,
-          "assumption_tainted": false
-        }
-      ]
-    },
-    {
-      "decl_id": "StrongPerfectGraphTheorem:lean:Workspace.ProofLemmas.Thm174RRStrip.gidx",
-      "fqn": "Workspace.ProofLemmas.Thm174RRStrip.gidx",
-      "name": "gidx",
-      "kind": "theorem",
-      "file": "lean_workspace/Workspace/ProofLemmas/Thm174RRStrip.lean",
-      "decl_range": {
-        "start_line": 48,
-        "end_line": 51,
-        "start_col": null,
-        "end_col": null
-      },
-      "header_range": {
-        "start_line": 48,
-        "end_line": 49,
-        "start_col": null,
-        "end_col": null
-      },
-      "docstring": null,
-      "has_sorry": false,
-      "is_axiom": false,
-      "assumption_sources": [],
-      "links": []
-    },
-    {
-      "decl_id": "StrongPerfectGraphTheorem:lean:Workspace.ProofLemmas.Thm174RRStrip.two_le_length_of_ends_ne",
-      "fqn": "Workspace.ProofLemmas.Thm174RRStrip.two_le_length_of_ends_ne",
-      "name": "two_le_length_of_ends_ne",
-      "kind": "theorem",
-      "file": "lean_workspace/Workspace/ProofLemmas/Thm174RRStrip.lean",
-      "decl_range": {
-        "start_line": 53,
-        "end_line": 62,
-        "start_col": null,
-        "end_col": null
-      },
-      "header_range": {
-        "start_line": 53,
-        "end_line": 54,
-        "start_col": null,
-        "end_col": null
-      },
-      "docstring": null,
-      "has_sorry": false,
-      "is_axiom": false,
-      "assumption_sources": [],
-      "links": []
-    },
-    {
-      "decl_id": "StrongPerfectGraphTheorem:lean:Workspace.ProofLemmas.Thm174RRStrip.rotate_index_eq",
-      "fqn": "Workspace.ProofLemmas.Thm174RRStrip.rotate_index_eq",
-      "name": "rotate_index_eq",
-      "kind": "theorem",
-      "file": "lean_workspace/Workspace/ProofLemmas/Thm174RRStrip.lean",
-      "decl_range": {
-        "start_line": 64,
-        "end_line": 75,
-        "start_col": null,
-        "end_col": null
-      },
-      "header_range": {
-        "start_line": 64,
-        "end_line": 67,
-        "start_col": null,
-        "end_col": null
-      },
-      "docstring": null,
-      "has_sorry": false,
-      "is_axiom": false,
-      "assumption_sources": [],
-      "links": []
-    },
-    {
-      "decl_id": "StrongPerfectGraphTheorem:lean:Workspace.ProofLemmas.Thm174RRStrip.singleton_anticonnected",
-      "fqn": "Workspace.ProofLemmas.Thm174RRStrip.singleton_anticonnected",
-      "name": "singleton_anticonnected",
-      "kind": "theorem",
-      "file": "lean_workspace/Workspace/ProofLemmas/Thm174RRStrip.lean",
-      "decl_range": {
-        "start_line": 77,
-        "end_line": 82,
-        "start_col": null,
-        "end_col": null
-      },
-      "header_range": {
-        "start_line": 77,
-        "end_line": 78,
-        "start_col": null,
-        "end_col": null
-      },
-      "docstring": null,
-      "has_sorry": false,
-      "is_axiom": false,
-      "assumption_sources": [],
-      "links": []
-    },
-    {
-      "decl_id": "StrongPerfectGraphTheorem:lean:Workspace.ProofLemmas.Thm174RRStrip.triangle_ne",
-      "fqn": "Workspace.ProofLemmas.Thm174RRStrip.triangle_ne",
-      "name": "triangle_ne",
-      "kind": "theorem",
-      "file": "lean_workspace/Workspace/ProofLemmas/Thm174RRStrip.lean",
-      "decl_range": {
-        "start_line": 84,
-        "end_line": 89,
-        "start_col": null,
-        "end_col": null
-      },
-      "header_range": {
-        "start_line": 84,
-        "end_line": 86,
-        "start_col": null,
-        "end_col": null
-      },
-      "docstring": null,
-      "has_sorry": false,
-      "is_axiom": false,
-      "assumption_sources": [],
-      "links": []
-    },
-    {
-      "decl_id": "StrongPerfectGraphTheorem:lean:Workspace.ProofLemmas.Thm174RRStrip.reflection_pair",
-      "fqn": "Workspace.ProofLemmas.Thm174RRStrip.reflection_pair",
-      "name": "reflection_pair",
-      "kind": "theorem",
-      "file": "lean_workspace/Workspace/ProofLemmas/Thm174RRStrip.lean",
-      "decl_range": {
-        "start_line": 90,
-        "end_line": 144,
-        "start_col": null,
-        "end_col": null
-      },
-      "header_range": {
-        "start_line": 90,
-        "end_line": 95,
-        "start_col": null,
-        "end_col": null
-      },
-      "docstring": "Two distinct vertices of the first triangle have adjacent partners in a reflection.",
-      "has_sorry": false,
-      "is_axiom": false,
-      "assumption_sources": [],
-      "links": []
-    },
-    {
-      "decl_id": "StrongPerfectGraphTheorem:lean:Workspace.ProofLemmas.Thm174RRStrip.no_complete_on_bridge_path",
-      "fqn": "Workspace.ProofLemmas.Thm174RRStrip.no_complete_on_bridge_path",
-      "name": "no_complete_on_bridge_path",
-      "kind": "theorem",
-      "file": "lean_workspace/Workspace/ProofLemmas/Thm174RRStrip.lean",
-      "decl_range": {
-        "start_line": 145,
-        "end_line": 280,
-        "start_col": null,
-        "end_col": null
-      },
-      "header_range": {
-        "start_line": 145,
-        "end_line": 156,
-        "start_col": null,
-        "end_col": null
-      },
-      "docstring": "The first parity paragraph of 17.2: the bridge hole has no `Y`-complete\nvertex on its `a`--`b` path.",
-      "has_sorry": false,
-      "is_axiom": false,
-      "assumption_sources": [],
-      "links": []
-    },
-    {
-      "decl_id": "StrongPerfectGraphTheorem:lean:Workspace.ProofLemmas.Thm174RRStrip.no_hat_on_bridge",
-      "fqn": "Workspace.ProofLemmas.Thm174RRStrip.no_hat_on_bridge",
-      "name": "no_hat_on_bridge",
-      "kind": "theorem",
-      "file": "lean_workspace/Workspace/ProofLemmas/Thm174RRStrip.lean",
-      "decl_range": {
-        "start_line": 281,
-        "end_line": 409,
-        "start_col": null,
-        "end_col": null
-      },
-      "header_range": {
-        "start_line": 281,
-        "end_line": 291,
-        "start_col": null,
-        "end_col": null
-      },
-      "docstring": "The hat branch of 2.10 in 17.2 contradicts 17.1.",
-      "has_sorry": false,
-      "is_axiom": false,
-      "assumption_sources": [],
-      "links": []
-    },
-    {
-      "decl_id": "StrongPerfectGraphTheorem:lean:Workspace.ProofLemmas.Thm174RRStrip.leap_on_bridge_ends",
-      "fqn": "Workspace.ProofLemmas.Thm174RRStrip.leap_on_bridge_ends",
-      "name": "leap_on_bridge_ends",
-      "kind": "theorem",
-      "file": "lean_workspace/Workspace/ProofLemmas/Thm174RRStrip.lean",
-      "decl_range": {
-        "start_line": 410,
-        "end_line": 534,
-        "start_col": null,
-        "end_col": null
-      },
-      "header_range": {
-        "start_line": 410,
-        "end_line": 418,
-        "start_col": null,
-        "end_col": null
-      },
-      "docstring": "Read the genuine orientation of a leap on the canonical bridge hole\n`b\u2080-a\u2080-P-b\u2080`.  Its two vertices attach to the two ends of `P` in opposite\norders.",
-      "has_sorry": false,
-      "is_axiom": false,
-      "assumption_sources": [],
-      "links": []
-    },
-    {
-      "decl_id": "StrongPerfectGraphTheorem:lean:Workspace.ProofLemmas.Thm174RRStrip.exists_opposite_end_pair",
-      "fqn": "Workspace.ProofLemmas.Thm174RRStrip.exists_opposite_end_pair",
-      "name": "exists_opposite_end_pair",
-      "kind": "theorem",
-      "file": "lean_workspace/Workspace/ProofLemmas/Thm174RRStrip.lean",
-      "decl_range": {
-        "start_line": 535,
-        "end_line": 645,
-        "start_col": null,
-        "end_col": null
-      },
-      "header_range": {
-        "start_line": 535,
-        "end_line": 547,
-        "start_col": null,
-        "end_col": null
-      },
-      "docstring": "Claim (1) of the proof of 17.2.  Under the standing assumption that every\nhub vertex meets `F`, 2.10 supplies two nonadjacent hub vertices with the two\nopposite end-attachment patterns.",
-      "has_sorry": false,
-      "is_axiom": false,
-      "assumption_sources": [],
-      "links": []
-    },
-    {
-      "decl_id": "StrongPerfectGraphTheorem:lean:Workspace.ProofLemmas.Thm174RRStrip.no_pair_neighbor_in_path_interior",
-      "fqn": "Workspace.ProofLemmas.Thm174RRStrip.no_pair_neighbor_in_path_interior",
-      "name": "no_pair_neighbor_in_path_interior",
-      "kind": "theorem",
-      "file": "lean_workspace/Workspace/ProofLemmas/Thm174RRStrip.lean",
-      "decl_range": {
-        "start_line": 646,
-        "end_line": 762,
-        "start_col": null,
-        "end_col": null
-      },
-      "header_range": {
-        "start_line": 646,
-        "end_line": 658,
-        "start_col": null,
-        "end_col": null
-      },
-      "docstring": "Claim (2) of the proof of 17.2, for one chosen `a`--`b` path.",
-      "has_sorry": false,
-      "is_axiom": false,
-      "assumption_sources": [],
-      "links": []
-    },
-    {
-      "decl_id": "StrongPerfectGraphTheorem:lean:Workspace.ProofLemmas.Thm174RRStrip.no_pair_neighbor_in_F_path",
-      "fqn": "Workspace.ProofLemmas.Thm174RRStrip.no_pair_neighbor_in_F_path",
-      "name": "no_pair_neighbor_in_F_path",
-      "kind": "theorem",
-      "file": "lean_workspace/Workspace/ProofLemmas/Thm174RRStrip.lean",
-      "decl_range": {
-        "start_line": 763,
-        "end_line": 840,
-        "start_col": null,
-        "end_col": null
-      },
-      "header_range": {
-        "start_line": 763,
-        "end_line": 776,
-        "start_col": null,
-        "end_col": null
-      },
-      "docstring": "Claim (2), uniformly for every induced `a`--`b` path contained in `F`.",
-      "has_sorry": false,
-      "is_axiom": false,
-      "assumption_sources": [],
-      "links": []
-    },
-    {
-      "decl_id": "StrongPerfectGraphTheorem:lean:Workspace.ProofLemmas.Thm174RRStrip.exists_connector_through",
-      "fqn": "Workspace.ProofLemmas.Thm174RRStrip.exists_connector_through",
-      "name": "exists_connector_through",
-      "kind": "theorem",
-      "file": "lean_workspace/Workspace/ProofLemmas/Thm174RRStrip.lean",
-      "decl_range": {
-        "start_line": 841,
-        "end_line": 945,
-        "start_col": null,
-        "end_col": null
-      },
-      "header_range": {
-        "start_line": 841,
-        "end_line": 847,
-        "start_col": null,
-        "end_col": null
-      },
-      "docstring": "The two connected deletion hypotheses provide a connected set avoiding both\nends, attached to both ends and containing any prescribed third vertex.",
-      "has_sorry": false,
-      "is_axiom": false,
-      "assumption_sources": [],
-      "links": []
-    },
-    {
-      "decl_id": "StrongPerfectGraphTheorem:lean:Workspace.ProofLemmas.Thm174RRStrip.GoodConnector",
-      "fqn": "Workspace.ProofLemmas.Thm174RRStrip.GoodConnector",
-      "name": "GoodConnector",
-      "kind": "def",
-      "file": "lean_workspace/Workspace/ProofLemmas/Thm174RRStrip.lean",
-      "decl_range": {
-        "start_line": 946,
-        "end_line": 953,
-        "start_col": null,
-        "end_col": null
-      },
-      "header_range": {
-        "start_line": 946,
-        "end_line": 947,
-        "start_col": null,
-        "end_col": null
-      },
-      "docstring": "The property minimised in the last paragraph of the proof of 17.2.",
-      "has_sorry": false,
-      "is_axiom": false,
-      "assumption_sources": [],
-      "links": []
-    },
-    {
-      "decl_id": "StrongPerfectGraphTheorem:lean:Workspace.ProofLemmas.Thm174RRStrip.minimal_connector_delete",
-      "fqn": "Workspace.ProofLemmas.Thm174RRStrip.minimal_connector_delete",
-      "name": "minimal_connector_delete",
-      "kind": "theorem",
-      "file": "lean_workspace/Workspace/ProofLemmas/Thm174RRStrip.lean",
-      "decl_range": {
-        "start_line": 954,
-        "end_line": 1115,
-        "start_col": null,
-        "end_col": null
-      },
-      "header_range": {
-        "start_line": 954,
-        "end_line": 967,
-        "start_col": null,
-        "end_col": null
-      },
-      "docstring": "The minimal connected set in 17.2 remains connected after deleting a chosen\nhub-neighbour, and both hub vertices are anticomplete to what remains.",
-      "has_sorry": false,
-      "is_axiom": false,
-      "assumption_sources": [],
-      "links": []
-    },
-    {
-      "decl_id": "StrongPerfectGraphTheorem:lean:Workspace.ProofLemmas.Thm174RRStrip.force_end_edge",
-      "fqn": "Workspace.ProofLemmas.Thm174RRStrip.force_end_edge",
-      "name": "force_end_edge",
-      "kind": "theorem",
-      "file": "lean_workspace/Workspace/ProofLemmas/Thm174RRStrip.lean",
-      "decl_range": {
-        "start_line": 1116,
-        "end_line": 1246,
-        "start_col": null,
-        "end_col": null
-      },
-      "header_range": {
-        "start_line": 1116,
-        "end_line": 1133,
-        "start_col": null,
-        "end_col": null
-      },
-      "docstring": "The final parity argument of 17.2, abstracted so that its two symmetric\napplications (`x`--`b` and `x`--`a`) share all list bookkeeping.",
-      "has_sorry": false,
-      "is_axiom": false,
-      "assumption_sources": [],
-      "links": []
-    },
-    {
-      "decl_id": "StrongPerfectGraphTheorem:lean:Workspace.ProofLemmas.Thm174RRStrip.oneSided",
-      "fqn": "Workspace.ProofLemmas.Thm174RRStrip.oneSided",
-      "name": "oneSided",
-      "kind": "theorem",
-      "file": "lean_workspace/Workspace/ProofLemmas/Thm174RRStrip.lean",
-      "decl_range": {
-        "start_line": 1247,
-        "end_line": 1421,
-        "start_col": null,
-        "end_col": null
-      },
-      "header_range": {
-        "start_line": 1247,
-        "end_line": 1258,
-        "start_col": null,
-        "end_col": null
-      },
-      "docstring": "The precise one-sided consequence of 17.2 used in the proof of 17.4.  This\nis proved here directly from 2.3, 2.10, and 17.1, rather than importing the\nplaceholder canonical formalization of 17.2.",
-      "has_sorry": false,
-      "is_axiom": false,
-      "assumption_sources": [],
-      "links": [
-        {
-          "link_id": "lnk_d3677d0c1c4d62f8",
-          "paper_label": null,
-          "paper_page_range": null,
-          "paper_latex_range": null,
-          "kind": "other",
-          "paper_status": "helper",
-          "erratum": null,
-          "show_in_pdf": true,
-          "confidence": 0.8,
-          "source": "manual",
-          "verifier_vote": "none",
-          "rationale": "The precise one-sided consequence of 17.2 needed by the proof of 17.4, proved directly from 2.3, 2.10 and 17.1 rather than by invoking the (separately formalized) canonical statement of 17.2 itself.",
           "reachable": true,
           "assumption_tainted": false
         }
@@ -145778,14 +147181,14 @@
       "kind": "theorem",
       "file": "lean_workspace/Workspace/ProofLemmas/Thm232Endgame.lean",
       "decl_range": {
-        "start_line": 69,
-        "end_line": 242,
+        "start_line": 68,
+        "end_line": 240,
         "start_col": null,
         "end_col": null
       },
       "header_range": {
-        "start_line": 69,
-        "end_line": 89,
+        "start_line": 68,
+        "end_line": 88,
         "start_col": null,
         "end_col": null
       },
@@ -145827,18 +147230,18 @@
       "kind": "theorem",
       "file": "lean_workspace/Workspace/ProofLemmas/Thm232Final.lean",
       "decl_range": {
-        "start_line": 22,
-        "end_line": 53,
+        "start_line": 27,
+        "end_line": 68,
         "start_col": null,
         "end_col": null
       },
       "header_range": {
-        "start_line": 22,
-        "end_line": 39,
+        "start_line": 27,
+        "end_line": 46,
         "start_col": null,
         "end_col": null
       },
-      "docstring": "PAPER (23.2, printed p. 141): \u201cBut then the hole formed by the union of `R` and\nthe path `C \\ x\u2080` is the rim of an odd wheel with hub `Y`, a contradiction.\u201d\n\nWe build this hole using `RimSurgery`.  The surviving edges already make it a wheel\nwith two fewer complete edges, so the opening minimum choice gives the contradiction.",
+      "docstring": "PAPER (23.2, printed p. 141): \u201cBut then the hole formed by the union of `R` and\nthe path `C \\ x\u2080` is the rim of an odd wheel with hub `Y`, a contradiction.\u201d\n\nWe build this hole using `RimSurgery`.  On it, the segment through `z` is the single edge\n`z`-`x\u2081`: the interior of `R` carries no `Y`-complete vertex, `x\u2080` has been deleted, and the\nfour `Y`-complete edges of `C` listed in `hexh` leave `x\u2081` no other `Y`-complete neighbour.\nSo the new wheel is odd, contrary to the no-odd-wheel clause of `G \u2208 F\u2088`.",
       "has_sorry": false,
       "is_axiom": false,
       "assumption_sources": [],
@@ -145876,14 +147279,14 @@
       "kind": "theorem",
       "file": "lean_workspace/Workspace/ProofLemmas/Thm232FinalRim.lean",
       "decl_range": {
-        "start_line": 25,
-        "end_line": 55,
+        "start_line": 35,
+        "end_line": 73,
         "start_col": null,
         "end_col": null
       },
       "header_range": {
-        "start_line": 25,
-        "end_line": 30,
+        "start_line": 35,
+        "end_line": 40,
         "start_col": null,
         "end_col": null
       },
@@ -145917,18 +147320,18 @@
       "kind": "theorem",
       "file": "lean_workspace/Workspace/ProofLemmas/Thm232FinalRim.lean",
       "decl_range": {
-        "start_line": 56,
-        "end_line": 109,
+        "start_line": 74,
+        "end_line": 141,
         "start_col": null,
         "end_col": null
       },
       "header_range": {
-        "start_line": 56,
-        "end_line": 68,
+        "start_line": 74,
+        "end_line": 85,
         "start_col": null,
         "end_col": null
       },
-      "docstring": "The paper's last hole remains a wheel if two disjoint complete edges avoid the\ndeleted vertex.  It then contradicts \u201cas few `Y`-complete edges as possible\u201d.",
+      "docstring": "The paper's last hole is a wheel with hub `Y`, and the segment through `p` is the\nsingle edge `p`-`u`, so the wheel is **odd** \u2014 contrary to `G \u2208 F\u2088`.\n\nThe vertex `x` is the one the paper deletes, `p, q` are its two neighbours on the old rim\n(so the new hole is `(C \\ x) \u222a R*`), and `u` is the other neighbour of `p` on the old rim.\n`hpNbr` and `huNbr` say that on the old rim the only `Y`-complete neighbours of `p` and `u`\nare each other and the deleted `x`, and the interior of the joining path carries no\n`Y`-complete vertex, so `p`-`u` is a whole segment of the new hole.  The fourth\n`Y`-complete vertex `hfourth` shows that the new hole has `Y`-complete vertices beyond\n`p, u`, which is what an odd wheel forbids.",
       "has_sorry": false,
       "is_axiom": false,
       "assumption_sources": [],
@@ -145966,14 +147369,14 @@
       "kind": "theorem",
       "file": "lean_workspace/Workspace/ProofLemmas/Thm232FinalRim.lean",
       "decl_range": {
-        "start_line": 110,
-        "end_line": 126,
+        "start_line": 142,
+        "end_line": 161,
         "start_col": null,
         "end_col": null
       },
       "header_range": {
-        "start_line": 110,
-        "end_line": 112,
+        "start_line": 142,
+        "end_line": 144,
         "start_col": null,
         "end_col": null
       },
@@ -146007,18 +147410,18 @@
       "kind": "theorem",
       "file": "lean_workspace/Workspace/ProofLemmas/Thm232FinalRim.lean",
       "decl_range": {
-        "start_line": 127,
-        "end_line": 160,
+        "start_line": 162,
+        "end_line": 213,
         "start_col": null,
         "end_col": null
       },
       "header_range": {
-        "start_line": 127,
-        "end_line": 137,
+        "start_line": 162,
+        "end_line": 174,
         "start_col": null,
         "end_col": null
       },
-      "docstring": "When the two complete triples meet at an end, deleting that end leaves the\ntwo other complete edges disjoint.  The hole has at least six vertices, so those\nedges cannot meet to form a four-cycle with the deleted end.",
+      "docstring": "When the two complete triples meet at an end, deleting that end leaves the\ntwo other complete edges disjoint.  The hole has at least six vertices, so those\nedges cannot meet to form a four-cycle with the deleted end.\n\n`hedgeY` is the layout of the four `Y`-complete edges of the old rim established before the\nclosing paragraph of 23.2: they are `x`-`p`, `p`-`u`, `v`-`q` and `q`-`x`.",
       "has_sorry": false,
       "is_axiom": false,
       "assumption_sources": [],
@@ -146783,13 +148186,13 @@
       "file": "lean_workspace/Workspace/ProofLemmas/Thm232RemainingClaims.lean",
       "decl_range": {
         "start_line": 379,
-        "end_line": 414,
+        "end_line": 413,
         "start_col": null,
         "end_col": null
       },
       "header_range": {
         "start_line": 379,
-        "end_line": 414,
+        "end_line": 413,
         "start_col": null,
         "end_col": null
       },
@@ -146823,14 +148226,14 @@
       "kind": "theorem",
       "file": "lean_workspace/Workspace/ProofLemmas/Thm232RemainingClaims.lean",
       "decl_range": {
-        "start_line": 415,
-        "end_line": 433,
+        "start_line": 414,
+        "end_line": 432,
         "start_col": null,
         "end_col": null
       },
       "header_range": {
-        "start_line": 415,
-        "end_line": 423,
+        "start_line": 414,
+        "end_line": 422,
         "start_col": null,
         "end_col": null
       },
@@ -146872,14 +148275,14 @@
       "kind": "theorem",
       "file": "lean_workspace/Workspace/ProofLemmas/Thm232RemainingClaims.lean",
       "decl_range": {
-        "start_line": 434,
-        "end_line": 455,
+        "start_line": 433,
+        "end_line": 454,
         "start_col": null,
         "end_col": null
       },
       "header_range": {
-        "start_line": 434,
-        "end_line": 444,
+        "start_line": 433,
+        "end_line": 443,
         "start_col": null,
         "end_col": null
       },
@@ -146921,14 +148324,14 @@
       "kind": "theorem",
       "file": "lean_workspace/Workspace/ProofLemmas/Thm232RemainingClaims.lean",
       "decl_range": {
-        "start_line": 456,
-        "end_line": 476,
+        "start_line": 455,
+        "end_line": 475,
         "start_col": null,
         "end_col": null
       },
       "header_range": {
-        "start_line": 456,
-        "end_line": 468,
+        "start_line": 455,
+        "end_line": 467,
         "start_col": null,
         "end_col": null
       },
@@ -166521,7 +167924,7 @@
       "file": "lean_workspace/Workspace/ProofLemmas/Thm58StarBranchMixedHole.lean",
       "decl_range": {
         "start_line": 140,
-        "end_line": 167,
+        "end_line": 181,
         "start_col": null,
         "end_col": null
       },
@@ -167175,18 +168578,18 @@
       "kind": "theorem",
       "file": "lean_workspace/Workspace/ProofLemmas/Thm58StarBranchMixedHoleTrack.lean",
       "decl_range": {
-        "start_line": 54,
-        "end_line": 285,
+        "start_line": 63,
+        "end_line": 266,
         "start_col": null,
         "end_col": null
       },
       "header_range": {
-        "start_line": 54,
-        "end_line": 61,
+        "start_line": 63,
+        "end_line": 71,
         "start_col": null,
         "end_col": null
       },
-      "docstring": "**The cycle `C\u2082` of 5.8 (6).**  PAPER, proof of 5.8 (6), printed p. 28: *\"In `H` there is a cycle `C\u2082` using the\nbranch between `v\u2081` and `v\u2082`, and using an edge in `A` and an edge in `B`.  (To see this,\ndivide `u` into two adjacent vertices, one incident with the edges in `A` and the other with\nthose in `B`, and use Menger's theorem to deduce that there are two vertex-disjoint paths\nbetween these two vertices and `{v\u2081,v\u2082}`.)\"*\n\nHere `u` is the star vertex `c`, the chosen edge of `A` is `c xA` and the chosen edge of `B` is\n`c xB`, and `v\u2081`, `v\u2082` are the two ends of the branch `q`.  The cycle `C\u2082` is returned as the\nbranch `Q` (that is `q`, read in whichever direction makes the `A`-edge the one on the `v\u2081`\nside) together with the complementary track `D`, which runs from `v\u2081` to `v\u2082` through `c`,\narriving along the `A`-edge and leaving along the `B`-edge, and which meets the branch only at\n`v\u2081` and `v\u2082`.",
+      "docstring": "**The cycle `C\u2082` of 5.8 (6).**  PAPER, proof of 5.8 (6), printed p. 28: *\"In `H` there is a\ncycle `C\u2082` using the branch between `v\u2081` and `v\u2082`, and using an edge in `A` and an edge in `B`.\n(To see this, divide `u` into two adjacent vertices, one incident with the edges in `A` and the\nother with those in `B`, and use Menger's theorem to deduce that there are two vertex-disjoint\npaths between these two vertices and `{v\u2081,v\u2082}`.)\"*\n\nHere `u` is the star vertex `c` and `Av` is the set `A`; `v\u2081`, `v\u2082` are the two ends of the\nbranch `q`.  The cycle `C\u2082` is returned as the branch `Q` (that is `q`, read in whichever\ndirection makes the `A`-edge the one on the `w\u2081` side) together with the complementary track\n`D`, which runs from `w\u2081` to `w\u2082` through `c`, arriving along an edge `c xA` into `A` and\nleaving along an edge `c xB` into `B`, and which meets the branch only at `w\u2081` and `w\u2082`.",
       "has_sorry": false,
       "is_axiom": false,
       "assumption_sources": [],
@@ -214049,22 +215452,8 @@
           },
           "kind": "other",
           "paper_status": "refuted",
-          "erratum": {
-            "title": "Theorem 9.3, outcome 4, is false as printed",
-            "problem": "Outcome 4 asks for a vertex f \u2208 F with the same neighbours as x\u2081 in V(P\u2081) \u222a V(P\u2082) \u222a V(Q\u2082) that is not adjacent to y\u2081. This can fail when Q\u2081 is long. Let H be the bipartite subdivision of K\u2084 whose two diagonals become branches of length 4 and 2, let G be the complement of the line graph L(H) on its 10 edges, and add one vertex f with exactly the neighbours of x\u2081. With the knot P\u2081 = a\u2081-b\u2081, P\u2082 = a\u2082-b\u2082, Q\u2081 = x\u2081-z\u2081-z\u2082-y\u2081, Q\u2082 = x\u2082-y\u2082 and F = {f}, every hypothesis of 9.3 holds (G is Berge; G and its complement have no K\u2084-enlargement appearance and no overshadowed K\u2084 appearance; the attachments of F are not local), yet all four outcomes fail. Outcome 4 fails because f is adjacent to y\u2081, exactly as x\u2081 is.",
-            "fix": "The formalized statement `thm_9_3` weakens the last clause of outcome 4 to \"f has a non-neighbour on Q\u2081 other than x\u2081\" (here z\u2081). The printed clause implies this one, and the two agree when Q\u2081 has length 1, so case (1) of the printed proof is untouched; case (2) and everything downstream, up to the main theorem, go through with the weaker outcome.\n\nLean checks that the four lists form a knot, that f is a twin of x\u2081, and that all four printed outcomes fail (`not_conclusion`). The absence of K\u2084-enlargement appearances was verified by an exhaustive finite search outside Lean.",
-            "refs": [
-              {
-                "fqn": "Workspace.Statements.S09.SPGT.thm_9_3",
-                "label": "Lean: 9.3 with the corrected outcome 4"
-              },
-              {
-                "fqn": "Workspace.ProofLemmas.Thm93CaseTwoCounterexample.PrintedConclusion",
-                "label": "Lean: the conclusion of 9.3 exactly as printed"
-              }
-            ]
-          },
-          "show_in_pdf": true,
+          "erratum": null,
+          "show_in_pdf": false,
           "confidence": 0.9,
           "source": "manual",
           "verifier_vote": "none",
@@ -221396,6 +222785,842 @@
           "source": "manual",
           "verifier_vote": "none",
           "rationale": "Auxiliary declaration in the formalization of the paper's 9.3. The printed clause of 9.3.4 implies the clause used in the statement.",
+          "reachable": true,
+          "assumption_tainted": false
+        }
+      ]
+    },
+    {
+      "decl_id": "StrongPerfectGraphTheorem:lean:Workspace.ProofLemmas.Thm93PrintedCounterexample.PrintedConclusion",
+      "fqn": "Workspace.ProofLemmas.Thm93PrintedCounterexample.PrintedConclusion",
+      "name": "PrintedConclusion",
+      "kind": "abbrev",
+      "file": "lean_workspace/Workspace/ProofLemmas/Thm93PrintedCounterexample.lean",
+      "decl_range": {
+        "start_line": 61,
+        "end_line": 111,
+        "start_col": null,
+        "end_col": null
+      },
+      "header_range": {
+        "start_line": 61,
+        "end_line": 62,
+        "start_col": null,
+        "end_col": null
+      },
+      "docstring": "**The conclusion of 9.3 as printed.**\n\nThis is `Thm93Infrastructure.Conclusion` with the printed form of outcome 9.3.4, namely\n`\u00ac G.Adj f y`, in place of the repaired clause\n`\u2203 w, (w \u2208 Q\u2081 \u2228 w \u2208 Q\u2082) \u2227 w \u2209 Q' \u2227 w \u2260 x \u2227 \u00ac G.Adj f w`.  It is what the graph of this module\nrefutes; the repaired conclusion does hold for that graph, with the witness `w = 5`.",
+      "has_sorry": false,
+      "is_axiom": false,
+      "assumption_sources": [],
+      "links": []
+    },
+    {
+      "decl_id": "StrongPerfectGraphTheorem:lean:Workspace.ProofLemmas.Thm93PrintedCounterexample.edges11",
+      "fqn": "Workspace.ProofLemmas.Thm93PrintedCounterexample.edges11",
+      "name": "edges11",
+      "kind": "def",
+      "file": "lean_workspace/Workspace/ProofLemmas/Thm93PrintedCounterexample.lean",
+      "decl_range": {
+        "start_line": 112,
+        "end_line": 122,
+        "start_col": null,
+        "end_col": null
+      },
+      "header_range": {
+        "start_line": 112,
+        "end_line": 112,
+        "start_col": null,
+        "end_col": null
+      },
+      "docstring": "The thirty-six edges: the twenty-nine above, plus `10` joined to `K \\ {b\u2081, b\u2082, z\u2081}`.",
+      "has_sorry": false,
+      "is_axiom": false,
+      "assumption_sources": [],
+      "links": []
+    },
+    {
+      "decl_id": "StrongPerfectGraphTheorem:lean:Workspace.ProofLemmas.Thm93PrintedCounterexample.graph11",
+      "fqn": "Workspace.ProofLemmas.Thm93PrintedCounterexample.graph11",
+      "name": "graph11",
+      "kind": "def",
+      "file": "lean_workspace/Workspace/ProofLemmas/Thm93PrintedCounterexample.lean",
+      "decl_range": {
+        "start_line": 123,
+        "end_line": 123,
+        "start_col": null,
+        "end_col": null
+      },
+      "header_range": {
+        "start_line": 123,
+        "end_line": 123,
+        "start_col": null,
+        "end_col": null
+      },
+      "docstring": "The eleven-vertex graph: the knot of `graph`, plus a `\u1e20`-twin of `x\u2081` outside it.",
+      "has_sorry": false,
+      "is_axiom": false,
+      "assumption_sources": [],
+      "links": []
+    },
+    {
+      "decl_id": "StrongPerfectGraphTheorem:lean:Workspace.ProofLemmas.Thm93PrintedCounterexample.K11",
+      "fqn": "Workspace.ProofLemmas.Thm93PrintedCounterexample.K11",
+      "name": "K11",
+      "kind": "def",
+      "file": "lean_workspace/Workspace/ProofLemmas/Thm93PrintedCounterexample.lean",
+      "decl_range": {
+        "start_line": 132,
+        "end_line": 134,
+        "start_col": null,
+        "end_col": null
+      },
+      "header_range": {
+        "start_line": 132,
+        "end_line": 132,
+        "start_col": null,
+        "end_col": null
+      },
+      "docstring": "The knot's vertex set: everything except the new vertex `10`.",
+      "has_sorry": false,
+      "is_axiom": false,
+      "assumption_sources": [],
+      "links": []
+    },
+    {
+      "decl_id": "StrongPerfectGraphTheorem:lean:Workspace.ProofLemmas.Thm93PrintedCounterexample.short_paths11",
+      "fqn": "Workspace.ProofLemmas.Thm93PrintedCounterexample.short_paths11",
+      "name": "short_paths11",
+      "kind": "theorem",
+      "file": "lean_workspace/Workspace/ProofLemmas/Thm93PrintedCounterexample.lean",
+      "decl_range": {
+        "start_line": 136,
+        "end_line": 139,
+        "start_col": null,
+        "end_col": null
+      },
+      "header_range": {
+        "start_line": 136,
+        "end_line": 137,
+        "start_col": null,
+        "end_col": null
+      },
+      "docstring": "The knot's vertex set: everything except the new vertex `10`. -/\ndef K11 : Set (Fin 11) := {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}\n\n/-! ### `hknot`, `hP\u2081 hP\u2082`, `hQ\u2081 hQ\u2082`, `hK`",
+      "has_sorry": false,
+      "is_axiom": false,
+      "assumption_sources": [],
+      "links": []
+    },
+    {
+      "decl_id": "StrongPerfectGraphTheorem:lean:Workspace.ProofLemmas.Thm93PrintedCounterexample.antipaths11",
+      "fqn": "Workspace.ProofLemmas.Thm93PrintedCounterexample.antipaths11",
+      "name": "antipaths11",
+      "kind": "theorem",
+      "file": "lean_workspace/Workspace/ProofLemmas/Thm93PrintedCounterexample.lean",
+      "decl_range": {
+        "start_line": 141,
+        "end_line": 145,
+        "start_col": null,
+        "end_col": null
+      },
+      "header_range": {
+        "start_line": 141,
+        "end_line": 142,
+        "start_col": null,
+        "end_col": null
+      },
+      "docstring": null,
+      "has_sorry": false,
+      "is_axiom": false,
+      "assumption_sources": [],
+      "links": []
+    },
+    {
+      "decl_id": "StrongPerfectGraphTheorem:lean:Workspace.ProofLemmas.Thm93PrintedCounterexample.isKnot11",
+      "fqn": "Workspace.ProofLemmas.Thm93PrintedCounterexample.isKnot11",
+      "name": "isKnot11",
+      "kind": "theorem",
+      "file": "lean_workspace/Workspace/ProofLemmas/Thm93PrintedCounterexample.lean",
+      "decl_range": {
+        "start_line": 147,
+        "end_line": 155,
+        "start_col": null,
+        "end_col": null
+      },
+      "header_range": {
+        "start_line": 147,
+        "end_line": 147,
+        "start_col": null,
+        "end_col": null
+      },
+      "docstring": null,
+      "has_sorry": false,
+      "is_axiom": false,
+      "assumption_sources": [],
+      "links": []
+    },
+    {
+      "decl_id": "StrongPerfectGraphTheorem:lean:Workspace.ProofLemmas.Thm93PrintedCounterexample.induces11",
+      "fqn": "Workspace.ProofLemmas.Thm93PrintedCounterexample.induces11",
+      "name": "induces11",
+      "kind": "theorem",
+      "file": "lean_workspace/Workspace/ProofLemmas/Thm93PrintedCounterexample.lean",
+      "decl_range": {
+        "start_line": 157,
+        "end_line": 164,
+        "start_col": null,
+        "end_col": null
+      },
+      "header_range": {
+        "start_line": 157,
+        "end_line": 157,
+        "start_col": null,
+        "end_col": null
+      },
+      "docstring": null,
+      "has_sorry": false,
+      "is_axiom": false,
+      "assumption_sources": [],
+      "links": []
+    },
+    {
+      "decl_id": "StrongPerfectGraphTheorem:lean:Workspace.ProofLemmas.Thm93PrintedCounterexample.berge11",
+      "fqn": "Workspace.ProofLemmas.Thm93PrintedCounterexample.berge11",
+      "name": "berge11",
+      "kind": "theorem",
+      "file": "lean_workspace/Workspace/ProofLemmas/Thm93PrintedCounterexample.lean",
+      "decl_range": {
+        "start_line": 165,
+        "end_line": 172,
+        "start_col": null,
+        "end_col": null
+      },
+      "header_range": {
+        "start_line": 165,
+        "end_line": 165,
+        "start_col": null,
+        "end_col": null
+      },
+      "docstring": "The eleven-vertex graph is Berge, by the same `2`-regular criterion.",
+      "has_sorry": false,
+      "is_axiom": false,
+      "assumption_sources": [],
+      "links": []
+    },
+    {
+      "decl_id": "StrongPerfectGraphTheorem:lean:Workspace.ProofLemmas.Thm93PrintedCounterexample.F_subset_compl11",
+      "fqn": "Workspace.ProofLemmas.Thm93PrintedCounterexample.F_subset_compl11",
+      "name": "F_subset_compl11",
+      "kind": "theorem",
+      "file": "lean_workspace/Workspace/ProofLemmas/Thm93PrintedCounterexample.lean",
+      "decl_range": {
+        "start_line": 173,
+        "end_line": 179,
+        "start_col": null,
+        "end_col": null
+      },
+      "header_range": {
+        "start_line": 173,
+        "end_line": 173,
+        "start_col": null,
+        "end_col": null
+      },
+      "docstring": "`hFsub` **holds** here: the new vertex `10` lies outside the knot.",
+      "has_sorry": false,
+      "is_axiom": false,
+      "assumption_sources": [],
+      "links": []
+    },
+    {
+      "decl_id": "StrongPerfectGraphTheorem:lean:Workspace.ProofLemmas.Thm93PrintedCounterexample.F_connected11",
+      "fqn": "Workspace.ProofLemmas.Thm93PrintedCounterexample.F_connected11",
+      "name": "F_connected11",
+      "kind": "theorem",
+      "file": "lean_workspace/Workspace/ProofLemmas/Thm93PrintedCounterexample.lean",
+      "decl_range": {
+        "start_line": 181,
+        "end_line": 187,
+        "start_col": null,
+        "end_col": null
+      },
+      "header_range": {
+        "start_line": 181,
+        "end_line": 181,
+        "start_col": null,
+        "end_col": null
+      },
+      "docstring": "`hFsub` **holds** here: the new vertex `10` lies outside the knot. -/\ntheorem F_subset_compl11 : ({10} : Set (Fin 11)) \u2286 K11\u1d9c := by\n  intro v hv\n  have hv10 : v = 10 := hv\n  subst hv10\n  simp [K11]\n\n/-! ### `hFconn : ConnectedSet G F`",
+      "has_sorry": false,
+      "is_axiom": false,
+      "assumption_sources": [],
+      "links": []
+    },
+    {
+      "decl_id": "StrongPerfectGraphTheorem:lean:Workspace.ProofLemmas.Thm93PrintedCounterexample.mem_attachments11",
+      "fqn": "Workspace.ProofLemmas.Thm93PrintedCounterexample.mem_attachments11",
+      "name": "mem_attachments11",
+      "kind": "theorem",
+      "file": "lean_workspace/Workspace/ProofLemmas/Thm93PrintedCounterexample.lean",
+      "decl_range": {
+        "start_line": 189,
+        "end_line": 191,
+        "start_col": null,
+        "end_col": null
+      },
+      "header_range": {
+        "start_line": 189,
+        "end_line": 190,
+        "start_col": null,
+        "end_col": null
+      },
+      "docstring": "`hFsub` **holds** here: the new vertex `10` lies outside the knot. -/\ntheorem F_subset_compl11 : ({10} : Set (Fin 11)) \u2286 K11\u1d9c := by\n  intro v hv\n  have hv10 : v = 10 := hv\n  subst hv10\n  simp [K11]\n\n/-! ### `hFconn : ConnectedSet G F` -/\n\ntheorem F_connected11 : ConnectedSet graph11 ({10} : Set (Fin 11)) := by\n  intro u v\n  have huv : u = v :=\n    Subtype.ext ((u.2 : (u : Fin 11) = 10).trans (v.2 : (v : Fin 11) = 10).symm)\n  exact huv \u25b8 SimpleGraph.Reachable.refl u\n\n/-! ### `hFattach`",
+      "has_sorry": false,
+      "is_axiom": false,
+      "assumption_sources": [],
+      "links": []
+    },
+    {
+      "decl_id": "StrongPerfectGraphTheorem:lean:Workspace.ProofLemmas.Thm93PrintedCounterexample.attachments_not_local11",
+      "fqn": "Workspace.ProofLemmas.Thm93PrintedCounterexample.attachments_not_local11",
+      "name": "attachments_not_local11",
+      "kind": "theorem",
+      "file": "lean_workspace/Workspace/ProofLemmas/Thm93PrintedCounterexample.lean",
+      "decl_range": {
+        "start_line": 193,
+        "end_line": 206,
+        "start_col": null,
+        "end_col": null
+      },
+      "header_range": {
+        "start_line": 193,
+        "end_line": 195,
+        "start_col": null,
+        "end_col": null
+      },
+      "docstring": null,
+      "has_sorry": false,
+      "is_axiom": false,
+      "assumption_sources": [],
+      "links": []
+    },
+    {
+      "decl_id": "StrongPerfectGraphTheorem:lean:Workspace.ProofLemmas.Thm93PrintedCounterexample.not_resolves11",
+      "fqn": "Workspace.ProofLemmas.Thm93PrintedCounterexample.not_resolves11",
+      "name": "not_resolves11",
+      "kind": "theorem",
+      "file": "lean_workspace/Workspace/ProofLemmas/Thm93PrintedCounterexample.lean",
+      "decl_range": {
+        "start_line": 207,
+        "end_line": 216,
+        "start_col": null,
+        "end_col": null
+      },
+      "header_range": {
+        "start_line": 207,
+        "end_line": 209,
+        "start_col": null,
+        "end_col": null
+      },
+      "docstring": "The attachment set of `F` does not resolve the knot: the edge `b\u2081z\u2081 = (1,5)` has neither\nend in it.",
+      "has_sorry": false,
+      "is_axiom": false,
+      "assumption_sources": [],
+      "links": []
+    },
+    {
+      "decl_id": "StrongPerfectGraphTheorem:lean:Workspace.ProofLemmas.Thm93PrintedCounterexample.not_conclusion11",
+      "fqn": "Workspace.ProofLemmas.Thm93PrintedCounterexample.not_conclusion11",
+      "name": "not_conclusion11",
+      "kind": "theorem",
+      "file": "lean_workspace/Workspace/ProofLemmas/Thm93PrintedCounterexample.lean",
+      "decl_range": {
+        "start_line": 217,
+        "end_line": 248,
+        "start_col": null,
+        "end_col": null
+      },
+      "header_range": {
+        "start_line": 217,
+        "end_line": 219,
+        "start_col": null,
+        "end_col": null
+      },
+      "docstring": "**All four alternatives of 9.3 as printed fail**, now with `F` genuinely outside `K`.",
+      "has_sorry": false,
+      "is_axiom": false,
+      "assumption_sources": [],
+      "links": []
+    },
+    {
+      "decl_id": "StrongPerfectGraphTheorem:lean:Workspace.ProofLemmas.Thm93PrintedCounterexample.repaired_conclusion11",
+      "fqn": "Workspace.ProofLemmas.Thm93PrintedCounterexample.repaired_conclusion11",
+      "name": "repaired_conclusion11",
+      "kind": "theorem",
+      "file": "lean_workspace/Workspace/ProofLemmas/Thm93PrintedCounterexample.lean",
+      "decl_range": {
+        "start_line": 249,
+        "end_line": 269,
+        "start_col": null,
+        "end_col": null
+      },
+      "header_range": {
+        "start_line": 249,
+        "end_line": 251,
+        "start_col": null,
+        "end_col": null
+      },
+      "docstring": "**The repaired conclusion does hold** for this graph, with witness `w = 5`.\n\nTogether with `not_conclusion11` this pins the repair exactly: the printed 9.3.4 fails here\nwhile the weakened clause succeeds, so the change is neither vacuous nor too generous.",
+      "has_sorry": false,
+      "is_axiom": false,
+      "assumption_sources": [],
+      "links": []
+    },
+    {
+      "decl_id": "StrongPerfectGraphTheorem:lean:Workspace.ProofLemmas.Thm93PrintedCounterexample.deg_crit11",
+      "fqn": "Workspace.ProofLemmas.Thm93PrintedCounterexample.deg_crit11",
+      "name": "deg_crit11",
+      "kind": "theorem",
+      "file": "lean_workspace/Workspace/ProofLemmas/Thm93PrintedCounterexample.lean",
+      "decl_range": {
+        "start_line": 270,
+        "end_line": 275,
+        "start_col": null,
+        "end_col": null
+      },
+      "header_range": {
+        "start_line": 270,
+        "end_line": 273,
+        "start_col": null,
+        "end_col": null
+      },
+      "docstring": null,
+      "has_sorry": false,
+      "is_axiom": false,
+      "assumption_sources": [],
+      "links": []
+    },
+    {
+      "decl_id": "StrongPerfectGraphTheorem:lean:Workspace.ProofLemmas.Thm93PrintedCounterexample.no_appearance11",
+      "fqn": "Workspace.ProofLemmas.Thm93PrintedCounterexample.no_appearance11",
+      "name": "no_appearance11",
+      "kind": "theorem",
+      "file": "lean_workspace/Workspace/ProofLemmas/Thm93PrintedCounterexample.lean",
+      "decl_range": {
+        "start_line": 276,
+        "end_line": 292,
+        "start_col": null,
+        "end_col": null
+      },
+      "header_range": {
+        "start_line": 276,
+        "end_line": 276,
+        "start_col": null,
+        "end_col": null
+      },
+      "docstring": "`graph11` has no appearance of `K\u2084` whatsoever.",
+      "has_sorry": false,
+      "is_axiom": false,
+      "assumption_sources": [],
+      "links": []
+    },
+    {
+      "decl_id": "StrongPerfectGraphTheorem:lean:Workspace.ProofLemmas.Thm93PrintedCounterexample.no_overshadowed11",
+      "fqn": "Workspace.ProofLemmas.Thm93PrintedCounterexample.no_overshadowed11",
+      "name": "no_overshadowed11",
+      "kind": "theorem",
+      "file": "lean_workspace/Workspace/ProofLemmas/Thm93PrintedCounterexample.lean",
+      "decl_range": {
+        "start_line": 293,
+        "end_line": 307,
+        "start_col": null,
+        "end_col": null
+      },
+      "header_range": {
+        "start_line": 293,
+        "end_line": 297,
+        "start_col": null,
+        "end_col": null
+      },
+      "docstring": "`hnoover`: with no appearance at all, none can be overshadowed.",
+      "has_sorry": false,
+      "is_axiom": false,
+      "assumption_sources": [],
+      "links": []
+    },
+    {
+      "decl_id": "StrongPerfectGraphTheorem:lean:Workspace.ProofLemmas.Thm93PrintedCounterexample.deg9_crit11",
+      "fqn": "Workspace.ProofLemmas.Thm93PrintedCounterexample.deg9_crit11",
+      "name": "deg9_crit11",
+      "kind": "theorem",
+      "file": "lean_workspace/Workspace/ProofLemmas/Thm93PrintedCounterexample.lean",
+      "decl_range": {
+        "start_line": 308,
+        "end_line": 312,
+        "start_col": null,
+        "end_col": null
+      },
+      "header_range": {
+        "start_line": 308,
+        "end_line": 310,
+        "start_col": null,
+        "end_col": null
+      },
+      "docstring": null,
+      "has_sorry": false,
+      "is_axiom": false,
+      "assumption_sources": [],
+      "links": []
+    },
+    {
+      "decl_id": "StrongPerfectGraphTheorem:lean:Workspace.ProofLemmas.Thm93PrintedCounterexample.deg9_crit11c",
+      "fqn": "Workspace.ProofLemmas.Thm93PrintedCounterexample.deg9_crit11c",
+      "name": "deg9_crit11c",
+      "kind": "theorem",
+      "file": "lean_workspace/Workspace/ProofLemmas/Thm93PrintedCounterexample.lean",
+      "decl_range": {
+        "start_line": 313,
+        "end_line": 318,
+        "start_col": null,
+        "end_col": null
+      },
+      "header_range": {
+        "start_line": 313,
+        "end_line": 315,
+        "start_col": null,
+        "end_col": null
+      },
+      "docstring": null,
+      "has_sorry": false,
+      "is_axiom": false,
+      "assumption_sources": [],
+      "links": []
+    },
+    {
+      "decl_id": "StrongPerfectGraphTheorem:lean:Workspace.ProofLemmas.Thm93PrintedCounterexample.nine_criterion_of_finset",
+      "fqn": "Workspace.ProofLemmas.Thm93PrintedCounterexample.nine_criterion_of_finset",
+      "name": "nine_criterion_of_finset",
+      "kind": "theorem",
+      "file": "lean_workspace/Workspace/ProofLemmas/Thm93PrintedCounterexample.lean",
+      "decl_range": {
+        "start_line": 319,
+        "end_line": 334,
+        "start_col": null,
+        "end_col": null
+      },
+      "header_range": {
+        "start_line": 319,
+        "end_line": 322,
+        "start_col": null,
+        "end_col": null
+      },
+      "docstring": "Shared bridge: a `Finset`-level degree fact transfers to the `Set`-level form that\n`LK33Regular.no_induced_L33_of_degree_criterion` wants.",
+      "has_sorry": false,
+      "is_axiom": false,
+      "assumption_sources": [],
+      "links": []
+    },
+    {
+      "decl_id": "StrongPerfectGraphTheorem:lean:Workspace.ProofLemmas.Thm93PrintedCounterexample.no_L33_11",
+      "fqn": "Workspace.ProofLemmas.Thm93PrintedCounterexample.no_L33_11",
+      "name": "no_L33_11",
+      "kind": "theorem",
+      "file": "lean_workspace/Workspace/ProofLemmas/Thm93PrintedCounterexample.lean",
+      "decl_range": {
+        "start_line": 336,
+        "end_line": 340,
+        "start_col": null,
+        "end_col": null
+      },
+      "header_range": {
+        "start_line": 336,
+        "end_line": 338,
+        "start_col": null,
+        "end_col": null
+      },
+      "docstring": null,
+      "has_sorry": false,
+      "is_axiom": false,
+      "assumption_sources": [],
+      "links": []
+    },
+    {
+      "decl_id": "StrongPerfectGraphTheorem:lean:Workspace.ProofLemmas.Thm93PrintedCounterexample.no_L33_11c",
+      "fqn": "Workspace.ProofLemmas.Thm93PrintedCounterexample.no_L33_11c",
+      "name": "no_L33_11c",
+      "kind": "theorem",
+      "file": "lean_workspace/Workspace/ProofLemmas/Thm93PrintedCounterexample.lean",
+      "decl_range": {
+        "start_line": 342,
+        "end_line": 352,
+        "start_col": null,
+        "end_col": null
+      },
+      "header_range": {
+        "start_line": 342,
+        "end_line": 344,
+        "start_col": null,
+        "end_col": null
+      },
+      "docstring": null,
+      "has_sorry": false,
+      "is_axiom": false,
+      "assumption_sources": [],
+      "links": []
+    },
+    {
+      "decl_id": "StrongPerfectGraphTheorem:lean:Workspace.ProofLemmas.Thm93PrintedCounterexample.no_enlargement11",
+      "fqn": "Workspace.ProofLemmas.Thm93PrintedCounterexample.no_enlargement11",
+      "name": "no_enlargement11",
+      "kind": "theorem",
+      "file": "lean_workspace/Workspace/ProofLemmas/Thm93PrintedCounterexample.lean",
+      "decl_range": {
+        "start_line": 353,
+        "end_line": 369,
+        "start_col": null,
+        "end_col": null
+      },
+      "header_range": {
+        "start_line": 353,
+        "end_line": 355,
+        "start_col": null,
+        "end_col": null
+      },
+      "docstring": "`hnoenl`, the `graph11` half: no `K\u2084`-enlargement appears in `graph11`.\n\n`NoK4EnlargementAppearance.no_k4_enlargement_appears` needs \"every `K\u2084`-appearance is\ndegenerate\" and \"no induced `L(K\u2083,\u2083)`\".  Here the first is vacuous, since there is no\nappearance at all.",
+      "has_sorry": false,
+      "is_axiom": false,
+      "assumption_sources": [],
+      "links": []
+    },
+    {
+      "decl_id": "StrongPerfectGraphTheorem:lean:Workspace.ProofLemmas.Thm93PrintedCounterexample.track_count_crit11c",
+      "fqn": "Workspace.ProofLemmas.Thm93PrintedCounterexample.track_count_crit11c",
+      "name": "track_count_crit11c",
+      "kind": "theorem",
+      "file": "lean_workspace/Workspace/ProofLemmas/Thm93PrintedCounterexample.lean",
+      "decl_range": {
+        "start_line": 370,
+        "end_line": 375,
+        "start_col": null,
+        "end_col": null
+      },
+      "header_range": {
+        "start_line": 370,
+        "end_line": 374,
+        "start_col": null,
+        "end_col": null
+      },
+      "docstring": null,
+      "has_sorry": false,
+      "is_axiom": false,
+      "assumption_sources": [],
+      "links": []
+    },
+    {
+      "decl_id": "StrongPerfectGraphTheorem:lean:Workspace.ProofLemmas.Thm93PrintedCounterexample.count_conv",
+      "fqn": "Workspace.ProofLemmas.Thm93PrintedCounterexample.count_conv",
+      "name": "count_conv",
+      "kind": "theorem",
+      "file": "lean_workspace/Workspace/ProofLemmas/Thm93PrintedCounterexample.lean",
+      "decl_range": {
+        "start_line": 377,
+        "end_line": 397,
+        "start_col": null,
+        "end_col": null
+      },
+      "header_range": {
+        "start_line": 377,
+        "end_line": 380,
+        "start_col": null,
+        "end_col": null
+      },
+      "docstring": null,
+      "has_sorry": false,
+      "is_axiom": false,
+      "assumption_sources": [],
+      "links": []
+    },
+    {
+      "decl_id": "StrongPerfectGraphTheorem:lean:Workspace.ProofLemmas.Thm93PrintedCounterexample.four_le_bedges11c",
+      "fqn": "Workspace.ProofLemmas.Thm93PrintedCounterexample.four_le_bedges11c",
+      "name": "four_le_bedges11c",
+      "kind": "theorem",
+      "file": "lean_workspace/Workspace/ProofLemmas/Thm93PrintedCounterexample.lean",
+      "decl_range": {
+        "start_line": 398,
+        "end_line": 416,
+        "start_col": null,
+        "end_col": null
+      },
+      "header_range": {
+        "start_line": 398,
+        "end_line": 401,
+        "start_col": null,
+        "end_col": null
+      },
+      "docstring": "Every `K\u2084`-appearance in `graph11\u1d9c` has at least four branch-to-branch edges.",
+      "has_sorry": false,
+      "is_axiom": false,
+      "assumption_sources": [],
+      "links": []
+    },
+    {
+      "decl_id": "StrongPerfectGraphTheorem:lean:Workspace.ProofLemmas.Thm93PrintedCounterexample.degenerate11c",
+      "fqn": "Workspace.ProofLemmas.Thm93PrintedCounterexample.degenerate11c",
+      "name": "degenerate11c",
+      "kind": "theorem",
+      "file": "lean_workspace/Workspace/ProofLemmas/Thm93PrintedCounterexample.lean",
+      "decl_range": {
+        "start_line": 417,
+        "end_line": 424,
+        "start_col": null,
+        "end_col": null
+      },
+      "header_range": {
+        "start_line": 417,
+        "end_line": 419,
+        "start_col": null,
+        "end_col": null
+      },
+      "docstring": "Every `K\u2084`-appearance in `graph11\u1d9c` is degenerate \u2014 the `hdeg` input of\n`NoK4EnlargementAppearance.no_k4_enlargement_appears`.",
+      "has_sorry": false,
+      "is_axiom": false,
+      "assumption_sources": [],
+      "links": []
+    },
+    {
+      "decl_id": "StrongPerfectGraphTheorem:lean:Workspace.ProofLemmas.Thm93PrintedCounterexample.no_overshadowed11c",
+      "fqn": "Workspace.ProofLemmas.Thm93PrintedCounterexample.no_overshadowed11c",
+      "name": "no_overshadowed11c",
+      "kind": "theorem",
+      "file": "lean_workspace/Workspace/ProofLemmas/Thm93PrintedCounterexample.lean",
+      "decl_range": {
+        "start_line": 425,
+        "end_line": 434,
+        "start_col": null,
+        "end_col": null
+      },
+      "header_range": {
+        "start_line": 425,
+        "end_line": 429,
+        "start_col": null,
+        "end_col": null
+      },
+      "docstring": "`hnoovercompl`: no overshadowed appearance of `K\u2084` in `graph11\u1d9c`.",
+      "has_sorry": false,
+      "is_axiom": false,
+      "assumption_sources": [],
+      "links": []
+    },
+    {
+      "decl_id": "StrongPerfectGraphTheorem:lean:Workspace.ProofLemmas.Thm93PrintedCounterexample.no_enlargement11c",
+      "fqn": "Workspace.ProofLemmas.Thm93PrintedCounterexample.no_enlargement11c",
+      "name": "no_enlargement11c",
+      "kind": "theorem",
+      "file": "lean_workspace/Workspace/ProofLemmas/Thm93PrintedCounterexample.lean",
+      "decl_range": {
+        "start_line": 435,
+        "end_line": 441,
+        "start_col": null,
+        "end_col": null
+      },
+      "header_range": {
+        "start_line": 435,
+        "end_line": 437,
+        "start_col": null,
+        "end_col": null
+      },
+      "docstring": "No `K\u2084`-enlargement appears in `graph11\u1d9c`.",
+      "has_sorry": false,
+      "is_axiom": false,
+      "assumption_sources": [],
+      "links": []
+    },
+    {
+      "decl_id": "StrongPerfectGraphTheorem:lean:Workspace.ProofLemmas.Thm93PrintedCounterexample.no_enlargement11_both",
+      "fqn": "Workspace.ProofLemmas.Thm93PrintedCounterexample.no_enlargement11_both",
+      "name": "no_enlargement11_both",
+      "kind": "theorem",
+      "file": "lean_workspace/Workspace/ProofLemmas/Thm93PrintedCounterexample.lean",
+      "decl_range": {
+        "start_line": 442,
+        "end_line": 459,
+        "start_col": null,
+        "end_col": null
+      },
+      "header_range": {
+        "start_line": 442,
+        "end_line": 445,
+        "start_col": null,
+        "end_col": null
+      },
+      "docstring": "`hnoenl`, in the exact shape `thm_9_3` asks for.",
+      "has_sorry": false,
+      "is_axiom": false,
+      "assumption_sources": [],
+      "links": []
+    },
+    {
+      "decl_id": "StrongPerfectGraphTheorem:lean:Workspace.ProofLemmas.Thm93PrintedCounterexample.printed_nine_three_false",
+      "fqn": "Workspace.ProofLemmas.Thm93PrintedCounterexample.printed_nine_three_false",
+      "name": "printed_nine_three_false",
+      "kind": "theorem",
+      "file": "lean_workspace/Workspace/ProofLemmas/Thm93PrintedCounterexample.lean",
+      "decl_range": {
+        "start_line": 460,
+        "end_line": 498,
+        "start_col": null,
+        "end_col": null
+      },
+      "header_range": {
+        "start_line": 460,
+        "end_line": 492,
+        "start_col": null,
+        "end_col": null
+      },
+      "docstring": "**Statement 9.3 as printed is false.**\n\nEvery hypothesis of `Workspace.Statements.S09.SPGT.thm_9_3` holds of the configuration\n`G = graph11`, `(P\u2081,P\u2082,Q\u2081,Q\u2082) = ([0,1],[2,3],[4,5,6,7],[8,9])`, `K = K11`, `F = {10}` \u2014 listed\nbelow in the order of that theorem's binders \u2014 and yet the printed conclusion fails.\n\nThe repository's `thm_9_3` is *not* contradicted: it carries the approved repair of outcome\n9.3.4, which this configuration does satisfy (`repaired_conclusion11`, witness `w = 5`).",
+      "has_sorry": false,
+      "is_axiom": false,
+      "assumption_sources": [],
+      "links": [
+        {
+          "link_id": "lnk_12b5482d7dca85c3",
+          "paper_label": null,
+          "paper_page_range": {
+            "start_page": 50,
+            "end_page": 50
+          },
+          "paper_latex_range": {
+            "start_line": 2030,
+            "end_line": 2031,
+            "start_col": null,
+            "end_col": null
+          },
+          "kind": "other",
+          "paper_status": "refuted",
+          "erratum": {
+            "title": "Theorem 9.3, outcome 4, is false as printed",
+            "problem": "Outcome 4 asks for a vertex f \u2208 F with the same neighbours as x\u2081 in V(P\u2081) \u222a V(P\u2082) \u222a V(Q\u2082) that is not adjacent to y\u2081. This can fail when Q\u2081 is long. Let H be the bipartite subdivision of K\u2084 whose two diagonals become branches of length 4 and 2, let G be the complement of the line graph L(H) on its 10 edges, and add one vertex f with exactly the neighbours of x\u2081. With the knot P\u2081 = a\u2081-b\u2081, P\u2082 = a\u2082-b\u2082, Q\u2081 = x\u2081-z\u2081-z\u2082-y\u2081, Q\u2082 = x\u2082-y\u2082 and F = {f}, every hypothesis of 9.3 holds (G is Berge; G and its complement have no K\u2084-enlargement appearance and no overshadowed K\u2084 appearance; the attachments of F are not local), yet all four outcomes fail. Outcome 4 fails because f is adjacent to y\u2081, exactly as x\u2081 is.",
+            "fix": "The formalized statement `thm_9_3` weakens the last clause of outcome 4 to \"f has a non-neighbour on Q\u2081 other than x\u2081\" (here z\u2081). The printed clause implies this one, and the two agree when Q\u2081 has length 1, so case (1) of the printed proof is untouched; case (2) and everything downstream, up to the main theorem, go through with the weaker outcome.\n\nLean checks that the four lists form a knot, that f is a twin of x\u2081, that all four printed outcomes fail, and that neither G nor its complement has a K\u2084-enlargement appearance, and bundles this as `printed_nine_three_false`.",
+            "refs": [
+              {
+                "fqn": "Workspace.Statements.S09.SPGT.thm_9_3",
+                "label": "Lean: 9.3 with the corrected outcome 4"
+              },
+              {
+                "fqn": "Workspace.ProofLemmas.Thm93CaseTwoCounterexample.PrintedConclusion",
+                "label": "Lean: the conclusion of 9.3 exactly as printed"
+              }
+            ],
+            "paper_span": {
+              "pdf_file": "perfect.pdf",
+              "pdf_page": 50,
+              "quote": "there is a vertex f \u2208 F such that (up to symmetry) f, x 1 have the same neighbours in V (P1 ) \u222a V (P2 ) \u222a V (Q2 ) and f is not adjacent to y1 ."
+            }
+          },
+          "show_in_pdf": true,
+          "confidence": 0.95,
+          "source": "manual",
+          "verifier_vote": "none",
+          "rationale": "Erratum anchor: Theorem 9.3, outcome 4, is false as printed",
           "reachable": true,
           "assumption_tainted": false
         }
@@ -234487,325 +236712,6 @@
       ]
     },
     {
-      "decl_id": "StrongPerfectGraphTheorem:lean:Workspace.ProofLemmas.TwoConnectedSplitVertex.splitGraph",
-      "fqn": "Workspace.ProofLemmas.TwoConnectedSplitVertex.splitGraph",
-      "name": "splitGraph",
-      "kind": "def",
-      "file": "lean_workspace/Workspace/ProofLemmas/TwoConnectedSplitVertex.lean",
-      "decl_range": {
-        "start_line": 34,
-        "end_line": 51,
-        "start_col": null,
-        "end_col": null
-      },
-      "header_range": {
-        "start_line": 34,
-        "end_line": 35,
-        "start_col": null,
-        "end_col": null
-      },
-      "docstring": "The auxiliary graph.",
-      "has_sorry": false,
-      "is_axiom": false,
-      "assumption_sources": [],
-      "links": [
-        {
-          "link_id": "lnk_1e1990bfbeb780ae",
-          "paper_label": null,
-          "paper_page_range": null,
-          "paper_latex_range": null,
-          "kind": "other",
-          "paper_status": "helper",
-          "erratum": null,
-          "show_in_pdf": true,
-          "confidence": 0.8,
-          "source": "manual",
-          "verifier_vote": "none",
-          "rationale": "The auxiliary graph.",
-          "reachable": true,
-          "assumption_tainted": false
-        }
-      ]
-    },
-    {
-      "decl_id": "StrongPerfectGraphTheorem:lean:Workspace.ProofLemmas.TwoConnectedSplitVertex.splitGraph_adj_some",
-      "fqn": "Workspace.ProofLemmas.TwoConnectedSplitVertex.splitGraph_adj_some",
-      "name": "splitGraph_adj_some",
-      "kind": "theorem",
-      "file": "lean_workspace/Workspace/ProofLemmas/TwoConnectedSplitVertex.lean",
-      "decl_range": {
-        "start_line": 53,
-        "end_line": 55,
-        "start_col": null,
-        "end_col": null
-      },
-      "header_range": {
-        "start_line": 53,
-        "end_line": 55,
-        "start_col": null,
-        "end_col": null
-      },
-      "docstring": null,
-      "has_sorry": false,
-      "is_axiom": false,
-      "assumption_sources": [],
-      "links": [
-        {
-          "link_id": "lnk_d1dcc6a7c477c10e",
-          "paper_label": null,
-          "paper_page_range": null,
-          "paper_latex_range": null,
-          "kind": "other",
-          "paper_status": "no_counterpart",
-          "erratum": null,
-          "show_in_pdf": true,
-          "confidence": 0.8,
-          "source": "manual",
-          "verifier_vote": "none",
-          "rationale": "No doc-comment; internal proof step with no independent description. Not reachable from the main theorem Workspace.MainTheorem.SPGT.thm_1_2 in the compiled dependency graph.",
-          "reachable": false,
-          "assumption_tainted": false
-        }
-      ]
-    },
-    {
-      "decl_id": "StrongPerfectGraphTheorem:lean:Workspace.ProofLemmas.TwoConnectedSplitVertex.splitGraph_adj_none",
-      "fqn": "Workspace.ProofLemmas.TwoConnectedSplitVertex.splitGraph_adj_none",
-      "name": "splitGraph_adj_none",
-      "kind": "theorem",
-      "file": "lean_workspace/Workspace/ProofLemmas/TwoConnectedSplitVertex.lean",
-      "decl_range": {
-        "start_line": 57,
-        "end_line": 58,
-        "start_col": null,
-        "end_col": null
-      },
-      "header_range": {
-        "start_line": 57,
-        "end_line": 58,
-        "start_col": null,
-        "end_col": null
-      },
-      "docstring": null,
-      "has_sorry": false,
-      "is_axiom": false,
-      "assumption_sources": [],
-      "links": [
-        {
-          "link_id": "lnk_fcd06f8eed06dcb1",
-          "paper_label": null,
-          "paper_page_range": null,
-          "paper_latex_range": null,
-          "kind": "other",
-          "paper_status": "no_counterpart",
-          "erratum": null,
-          "show_in_pdf": true,
-          "confidence": 0.8,
-          "source": "manual",
-          "verifier_vote": "none",
-          "rationale": "No doc-comment; internal proof step with no independent description. Not reachable from the main theorem Workspace.MainTheorem.SPGT.thm_1_2 in the compiled dependency graph.",
-          "reachable": false,
-          "assumption_tainted": false
-        }
-      ]
-    },
-    {
-      "decl_id": "StrongPerfectGraphTheorem:lean:Workspace.ProofLemmas.TwoConnectedSplitVertex.splitGraph_adj_none'",
-      "fqn": "Workspace.ProofLemmas.TwoConnectedSplitVertex.splitGraph_adj_none'",
-      "name": "splitGraph_adj_none'",
-      "kind": "theorem",
-      "file": "lean_workspace/Workspace/ProofLemmas/TwoConnectedSplitVertex.lean",
-      "decl_range": {
-        "start_line": 60,
-        "end_line": 65,
-        "start_col": null,
-        "end_col": null
-      },
-      "header_range": {
-        "start_line": 60,
-        "end_line": 61,
-        "start_col": null,
-        "end_col": null
-      },
-      "docstring": null,
-      "has_sorry": false,
-      "is_axiom": false,
-      "assumption_sources": [],
-      "links": [
-        {
-          "link_id": "lnk_828588580ce1ae10",
-          "paper_label": null,
-          "paper_page_range": null,
-          "paper_latex_range": null,
-          "kind": "other",
-          "paper_status": "no_counterpart",
-          "erratum": null,
-          "show_in_pdf": true,
-          "confidence": 0.8,
-          "source": "manual",
-          "verifier_vote": "none",
-          "rationale": "No doc-comment; internal proof step with no independent description. Not reachable from the main theorem Workspace.MainTheorem.SPGT.thm_1_2 in the compiled dependency graph.",
-          "reachable": false,
-          "assumption_tainted": false
-        }
-      ]
-    },
-    {
-      "decl_id": "StrongPerfectGraphTheorem:lean:Workspace.ProofLemmas.TwoConnectedSplitVertex.split_hdeg",
-      "fqn": "Workspace.ProofLemmas.TwoConnectedSplitVertex.split_hdeg",
-      "name": "split_hdeg",
-      "kind": "theorem",
-      "file": "lean_workspace/Workspace/ProofLemmas/TwoConnectedSplitVertex.lean",
-      "decl_range": {
-        "start_line": 66,
-        "end_line": 105,
-        "start_col": null,
-        "end_col": null
-      },
-      "header_range": {
-        "start_line": 66,
-        "end_line": 68,
-        "start_col": null,
-        "end_col": null
-      },
-      "docstring": "Every vertex of the auxiliary graph has two distinct neighbours.",
-      "has_sorry": false,
-      "is_axiom": false,
-      "assumption_sources": [],
-      "links": [
-        {
-          "link_id": "lnk_47e23c097e507547",
-          "paper_label": null,
-          "paper_page_range": null,
-          "paper_latex_range": null,
-          "kind": "other",
-          "paper_status": "helper",
-          "erratum": null,
-          "show_in_pdf": true,
-          "confidence": 0.8,
-          "source": "manual",
-          "verifier_vote": "none",
-          "rationale": "Every vertex of the auxiliary graph has two distinct neighbours.",
-          "reachable": true,
-          "assumption_tainted": false
-        }
-      ]
-    },
-    {
-      "decl_id": "StrongPerfectGraphTheorem:lean:Workspace.ProofLemmas.TwoConnectedSplitVertex.split_nocut",
-      "fqn": "Workspace.ProofLemmas.TwoConnectedSplitVertex.split_nocut",
-      "name": "split_nocut",
-      "kind": "theorem",
-      "file": "lean_workspace/Workspace/ProofLemmas/TwoConnectedSplitVertex.lean",
-      "decl_range": {
-        "start_line": 106,
-        "end_line": 166,
-        "start_col": null,
-        "end_col": null
-      },
-      "header_range": {
-        "start_line": 106,
-        "end_line": 109,
-        "start_col": null,
-        "end_col": null
-      },
-      "docstring": "Deleting one vertex of the auxiliary graph leaves the rest connected.",
-      "has_sorry": false,
-      "is_axiom": false,
-      "assumption_sources": [],
-      "links": [
-        {
-          "link_id": "lnk_0da22315cac75596",
-          "paper_label": null,
-          "paper_page_range": null,
-          "paper_latex_range": null,
-          "kind": "other",
-          "paper_status": "helper",
-          "erratum": null,
-          "show_in_pdf": true,
-          "confidence": 0.8,
-          "source": "manual",
-          "verifier_vote": "none",
-          "rationale": "Deleting one vertex of the auxiliary graph leaves the rest connected.",
-          "reachable": true,
-          "assumption_tainted": false
-        }
-      ]
-    },
-    {
-      "decl_id": "StrongPerfectGraphTheorem:lean:Workspace.ProofLemmas.TwoConnectedSplitVertex.decode",
-      "fqn": "Workspace.ProofLemmas.TwoConnectedSplitVertex.decode",
-      "name": "decode",
-      "kind": "theorem",
-      "file": "lean_workspace/Workspace/ProofLemmas/TwoConnectedSplitVertex.lean",
-      "decl_range": {
-        "start_line": 167,
-        "end_line": 282,
-        "start_col": null,
-        "end_col": null
-      },
-      "header_range": {
-        "start_line": 167,
-        "end_line": 174,
-        "start_col": null,
-        "end_col": null
-      },
-      "docstring": "Reading a track of the auxiliary graph from `u` to the new vertex back as a track of `J`\nout of `u`.",
-      "has_sorry": false,
-      "is_axiom": false,
-      "assumption_sources": [],
-      "links": []
-    },
-    {
-      "decl_id": "StrongPerfectGraphTheorem:lean:Workspace.ProofLemmas.TwoConnectedSplitVertex.exists_split_tracks",
-      "fqn": "Workspace.ProofLemmas.TwoConnectedSplitVertex.exists_split_tracks",
-      "name": "exists_split_tracks",
-      "kind": "theorem",
-      "file": "lean_workspace/Workspace/ProofLemmas/TwoConnectedSplitVertex.lean",
-      "decl_range": {
-        "start_line": 283,
-        "end_line": 351,
-        "start_col": null,
-        "end_col": null
-      },
-      "header_range": {
-        "start_line": 283,
-        "end_line": 291,
-        "start_col": null,
-        "end_col": null
-      },
-      "docstring": "**The two vertex-disjoint paths of 5.8 (6).**  In a 3-connected graph, a vertex `u` with two\ndistinct neighbours `x`, `y` and an edge `ab` avoiding `u` admit two tracks out of `u`, one\nstarting along `ux` and one along `uy`, meeting only at `u`, and ending at `a` and `b` in one\norder or the other.",
-      "has_sorry": false,
-      "is_axiom": false,
-      "assumption_sources": [],
-      "links": [
-        {
-          "link_id": "lnk_5cd88799f9e359db",
-          "paper_label": null,
-          "paper_page_range": {
-            "start_page": 30,
-            "end_page": 30
-          },
-          "paper_latex_range": {
-            "start_line": 1141,
-            "end_line": 1143,
-            "start_col": null,
-            "end_col": null
-          },
-          "kind": "proof_case",
-          "paper_status": "linked",
-          "erratum": null,
-          "show_in_pdf": false,
-          "confidence": 0.85,
-          "source": "manual",
-          "verifier_vote": "none",
-          "rationale": "Formalizes the quoted parenthetical of the proof of 5.8(6), via the dual one-new-vertex construction instead of literally splitting u.",
-          "reachable": true,
-          "assumption_tainted": false
-        }
-      ]
-    },
-    {
       "decl_id": "StrongPerfectGraphTheorem:lean:Workspace.ProofLemmas.TwoInternallyDisjointTracksInTwoConnectedGraph.isTrackFrom_support_of_isPath",
       "fqn": "Workspace.ProofLemmas.TwoInternallyDisjointTracksInTwoConnectedGraph.isTrackFrom_support_of_isPath",
       "name": "isTrackFrom_support_of_isPath",
@@ -242008,7 +243914,22 @@
           },
           "kind": "theorem",
           "paper_status": "linked",
-          "erratum": null,
+          "erratum": {
+            "title": "Theorem 2.5, statement: the hypothesis that X is anticonnected is missing",
+            "problem": "Theorem 2.5 (p. 10) is stated for a set X with no anticonnectedness assumption, unlike 2.1, 2.2, 2.3 and 2.10, which all require it. Without that hypothesis the theorem is false. Take 7 vertices with X = {x\u2081, x\u2082} adjacent, path P = p\u2081p\u2082p\u2083p\u2084, one further vertex v, and edges x\u2081x\u2082, x\u2081p\u2081, x\u2081p\u2082, x\u2081p\u2084, x\u2081v, x\u2082p\u2081, x\u2082p\u2083, x\u2082p\u2084, x\u2082v, p\u2081p\u2082, p\u2082p\u2083, p\u2083p\u2084. This graph is Berge (its only holes are three 4-holes, and it has no antihole), the vertex v is X-complete with no neighbour on P, and both disjuncts of the conclusion fail.",
+            "fix": "The formalized 2.5 adds the hypothesis that X is anticonnected, matching the neighbouring theorems of \u00a72. The single place the paper uses 2.5 is inside the proof of 2.8, where X is anticonnected, so nothing downstream is weakened.",
+            "refs": [
+              {
+                "fqn": "Workspace.Statements.S02.SPGT.thm_2_5",
+                "label": "Lean: 2.5"
+              },
+              {
+                "fqn": "Workspace.Statements.S02.SPGT.thm_2_8",
+                "label": "Lean: 2.8, the only consumer"
+              }
+            ],
+            "paper_span": null
+          },
           "show_in_pdf": true,
           "confidence": 0.97,
           "source": "manual",
@@ -246706,7 +248627,18 @@
           },
           "kind": "theorem",
           "paper_status": "linked",
-          "erratum": null,
+          "erratum": {
+            "title": "Theorem 1.8(4), statement: the hypothesis must be G \u2208 F\u2083, not G \u2208 F\u2081",
+            "problem": "Item (4) of 1.8 reads \"For every G \u2208 F\u2081, either G is an even prism with 9 vertices, or G admits a proper 2-join or a balanced skew partition, or G \u2208 F\u2084\" (p. 7). Since F\u2084 \u2286 F\u2083 and F\u2081 is not contained in F\u2083, the alternatives cannot cover F\u2081. An 8-vertex counterexample is G = L(H), where H is K\u2084 with two opposite edges ac and bd each subdivided once: G is Berge and self-complementary, its only K\u2084-appearance is degenerate so G \u2208 F\u2081, and G \u2209 F\u2083. Exhaustively, G is not an even prism, has 8 vertices rather than 9, admits no proper 2-join over any split, and has exactly one skew partition, which is not balanced. It does satisfy items (1), (2) and (3) of 1.8.",
+            "fix": "Theorem 10.6, which the paper calls 1.8(4) \"restated\", carries the hypothesis G \u2208 F\u2081 together with the K\u2084 condition that F\u2083 encodes, and never mentions F\u2084. The formalization proves 10.6 as printed and uses it directly, so the repaired reading is the one in force. Item 1.8(4) itself is not part of the Lean build: the route to the main theorem runs through 10.6 and the section theorems, not through 1.8.",
+            "refs": [
+              {
+                "fqn": "Workspace.Statements.S10.SPGT.thm_10_6",
+                "label": "Lean: 10.6"
+              }
+            ],
+            "paper_span": null
+          },
           "show_in_pdf": true,
           "confidence": 0.97,
           "source": "manual",
@@ -248452,14 +250384,14 @@
       "kind": "theorem",
       "file": "lean_workspace/Workspace/Statements/S13/Thm_13_1.lean",
       "decl_range": {
-        "start_line": 108,
-        "end_line": 261,
+        "start_line": 111,
+        "end_line": 224,
         "start_col": null,
         "end_col": null
       },
       "header_range": {
-        "start_line": 108,
-        "end_line": 124,
+        "start_line": 111,
+        "end_line": 127,
         "start_col": null,
         "end_col": null
       },
@@ -248502,7 +250434,7 @@
       "file": "lean_workspace/Workspace/Statements/S13/Thm_13_2.lean",
       "decl_range": {
         "start_line": 82,
-        "end_line": 122,
+        "end_line": 138,
         "start_col": null,
         "end_col": null
       },
@@ -250527,7 +252459,22 @@
           },
           "kind": "theorem",
           "paper_status": "linked",
-          "erratum": null,
+          "erratum": {
+            "title": "Theorem 18.3, second conclusion: the parity clause fails for lines of length 1",
+            "problem": "The second conclusion of 18.3 (p. 110) says that for every maximal subpath P\u2032 of P with no Y-complete internal vertex, the length of P\u2032 has the same parity as the number of ends of P\u2032 in {p\u2081, p\u2099} that are not Y-complete. A Y-complete edge p\u1d62p\u1d62\u208a\u2081 of P is such a maximal subpath: it has no internal vertex, length 1, and no end in {p\u2081, p\u2099} that fails to be Y-complete, so the clause demands 1 \u2261 0. Read literally the sentence therefore forces P to have no Y-complete edge, which contradicts the third conclusion of 18.3 and the paper's own use of it in 18.4 (\"P contains an odd number of Y-complete edges\"). The paper's proof carries the side condition \"let P\u2032 be a line of length \u2265 2\", and its recap states the correct trichotomy including \"either it has length 1\"; the alternative was dropped when the recap became the statement.",
+            "fix": "The formalized 18.3 adds the side condition 2 \u2264 length of the subpath to the second conclusion, exactly the condition the printed proof uses. The only consumer, 18.5, applies the conclusion with index \u2265 3, so the paper's own uses are unaffected.",
+            "refs": [
+              {
+                "fqn": "Workspace.Statements.S18.SPGT.thm_18_3",
+                "label": "Lean: 18.3"
+              },
+              {
+                "fqn": "Workspace.Statements.S18.SPGT.thm_18_5",
+                "label": "Lean: 18.5, the only consumer"
+              }
+            ],
+            "paper_span": null
+          },
           "show_in_pdf": true,
           "confidence": 0.97,
           "source": "manual",

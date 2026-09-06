@@ -1,18 +1,31 @@
 import Workspace.ProofLemmas.Thm131LastCase
+import Workspace.ProofLemmas.Thm131Enlarge
 import Workspace.ProofLemmas.PathAttach
 import Workspace.ProofLemmas.PathGlue
+import Workspace.Statements.S11.Thm_11_3
 
 set_option autoImplicit false
 set_option maxHeartbeats 1000000
+set_option linter.unusedSectionVars false
 
 /-!
-# The terminal-miss case in 13.1
+# The contradiction at the end of claim (7) of 13.1
 
-After all earlier vertices of the trajectory see the right end of the
-optimal banister, the only possible missing vertex is its terminal
-right-star.  An earlier optimal banister into that terminal vertex is an
-edge.  Applying 2.1 in the complement produces the larger complementary
-staircase forbidden by strong maximality.
+PAPER (printed p. 81): *"Choose a step `a₁-R₁-b₁`, `a₂-R₂-b₂`.  Then
+`b₁-a-w₁-⋯-wₙ-b` is an odd antipath, of length ≥ 5.  All its internal vertices
+have neighbours in the connected set `V(R' \ wₙ) ∪ {a₂}`, and its ends do not.
+By 2.1 applied in `G`, there are adjacent vertices `x, y` in
+`V(R' \ wₙ) ∪ {a₂}`, such that `x-a-w₁-⋯-wₙ-y` is an odd antipath.  Since `x` is
+adjacent to `wₙ`, it follows that `x` is the neighbour of `wₙ` in `R'`, and
+therefore either `y` is the second neighbour of `x` in `R'`, or `R'` has length
+1 and `y = a₂`.  Assume first that `R'` has length > 1, and so both `x, y`
+belong to the interior of `R'`.  Hence `x, y` are both anticomplete to
+`A ∪ B`, and so `((B ∪ {x}, ∅, A ∪ {y}), a-w₁-⋯-wₙ)` is a staircase in `G`,
+contradicting that `(S, R₀)` is strongly maximal.  Now assume that `R'` has
+length 1.  Then `x = r'` and `y = a₂`, and `((B ∪ {r'}, ∅, A ∪ {b}),
+a-w₁-⋯-wₙ)` is a staircase in `G`, a contradiction as before."*
+
+Both sub-cases are carried out below, in the printed order.
 -/
 
 namespace Workspace.ProofLemmas.Thm131LastMiss
@@ -24,219 +37,18 @@ open Workspace.Types.LongOddPrism Workspace.Types.LongOddPrism.SPGT
 open Workspace.Types.Appearances Workspace.Types.Appearances.SPGT
 open Workspace.Types.RousselRubio Workspace.Types.RousselRubio.SPGT
 open Workspace.ProofLemmas.Thm131Trajectory
-open Workspace.ProofLemmas.Thm131OptimalLength
 open Workspace.ProofLemmas.Thm131EdgeCases
 open Workspace.ProofLemmas.Thm131LastCase
 open Workspace.ProofLemmas.Thm131ComplementStars
+open Workspace.ProofLemmas.Thm131Enlarge
 open Workspace.ProofLemmas.Thm132Infrastructure
 open Workspace.ProofLemmas.Thm132Optimal
 open Workspace.ProofLemmas.Thm132BanisterSeparation
 
 variable {V : Type*} [Fintype V] [DecidableEq V]
 
-/-- The path between the two vertices of a leap, whose interior is the
-interior of the path on which the leap sits. -/
-private theorem leap_inner_path {G : SimpleGraph V} {T : Set V}
-    {P : List V} {p₀ pₙ u v : V}
-    (hP : IsPathFrom G P p₀ pₙ) (hP5 : 5 ≤ pathLength P)
-    (hPT : ∀ z ∈ P, z ∉ T) (huT : u ∈ T) (hvT : v ∈ T)
-    (hleap : IsLeapForPath G P u v) :
-    IsPathFrom G (u :: (interior P ++ [v])) u v ∧
-      pathLength (u :: (interior P ++ [v])) = pathLength P := by
-  obtain ⟨-, -, huv, hnuv, huadj, hvadj⟩ := hleap
-  have hP6 : 6 ≤ P.length := by
-    rw [Workspace.ProofLemmas.PathBasics.pathLength_eq] at hP5
-    omega
-  have hIP : IsPathFrom G (interior P) (P[1]'(by omega))
-      (P[P.length - 2]'(by omega)) :=
-    Workspace.ProofLemmas.PathGlue.isPathFrom_interior hP.1 (by omega)
-  have huFirst : G.Adj u (P[1]'(by omega)) :=
-    (huadj 1 (by omega)).mpr (Or.inr (Or.inl rfl))
-  have hvLast : G.Adj v (P[P.length - 2]'(by omega)) :=
-    (hvadj (P.length - 2) (by omega)).mpr (Or.inr (Or.inl rfl))
-  have huNot : u ∉ interior P := fun hm =>
-    hPT u (Workspace.ProofLemmas.PathBasics.interior_subset hm) huT
-  have hvNot : v ∉ interior P := fun hm =>
-    hPT v (Workspace.ProofLemmas.PathBasics.interior_subset hm) hvT
-  have huOther : ∀ z ∈ interior P, z ≠ P[1]'(by omega) → ¬ G.Adj u z := by
-    intro z hz hzne hadj
-    obtain ⟨k, hk, hk1, hk2, rfl⟩ :=
-      Workspace.ProofLemmas.PathBasics.exists_getElem_of_mem_interior hP.1 hz
-    have hkne : k ≠ 1 := by
-      intro he
-      exact hzne (hP.1.2.1.getElem_inj_iff.mpr he)
-    rcases (huadj k hk).mp hadj with h | h | h <;> omega
-  have hvOther : ∀ z ∈ interior P, z ≠ P[P.length - 2]'(by omega) →
-      ¬ G.Adj v z := by
-    intro z hz hzne hadj
-    obtain ⟨k, hk, hk1, hk2, rfl⟩ :=
-      Workspace.ProofLemmas.PathBasics.exists_getElem_of_mem_interior hP.1 hz
-    have hkne : k ≠ P.length - 2 := by
-      intro he
-      exact hzne (hP.1.2.1.getElem_inj_iff.mpr he)
-    rcases (hvadj k hk).mp hadj with h | h | h <;> omega
-  have hQ : IsPathFrom G (u :: (interior P ++ [v])) u v :=
-    Workspace.ProofLemmas.PathAttach.isPathFrom_cons_concat hIP huFirst hvLast
-      hnuv huv huNot hvNot huOther hvOther
-  refine ⟨hQ, ?_⟩
-  rw [Workspace.ProofLemmas.PathAttach.pathLength_cons_append_singleton,
-    Workspace.ProofLemmas.PathBasics.interior_length,
-    Workspace.ProofLemmas.PathBasics.pathLength_eq]
-  omega
-
-/-- The complementary staircase at the end of claim (7) of the paper.  The
-outer path records that the new left-class vertex `r` sees only the first
-vertex of the displayed complement-banister. -/
-private theorem staircase_compl_adjoin_stars
-    (G : SimpleGraph V) (A B : Set V) (r b a last a₂ : V) (w : List V)
-    (hS : StepConnected G A (∅ : Set V) B)
-    (hr : IsLeftStar G A (∅ : Set V) B r)
-    (hb : IsRightStar G A (∅ : Set V) B b)
-    (ha : IsLeftStar G A (∅ : Set V) B a)
-    (hlast : IsRightStar G A (∅ : Set V) B last)
-    (hrb : ¬ G.Adj r b) (hab : G.Adj a b) (hrlast : G.Adj r last)
-    (hblast : ¬ G.Adj b last)
-    (hbeforeA : ∀ z ∈ w, z ≠ last → VertexComplete G z A)
-    (hwB : ∀ z ∈ w, VertexComplete G z B)
-    (hbBefore : ∀ z ∈ w, z ≠ last → G.Adj b z)
-    (hbnotw : b ∉ w)
-    (hanti : IsAntipathFrom G (a :: w) a last)
-    (hT3 : 3 ≤ pathLength (a :: w))
-    (houter : IsPathFrom Gᶜ (r :: ((a :: w) ++ [a₂])) r a₂) :
-    IsStaircase Gᶜ (B ∪ {r}) (∅ : Set V) (A ∪ {b}) a (a :: w) last := by
-  classical
-  let T : List V := a :: w
-  have hT : IsPathFrom Gᶜ T a last := by simpa [T] using hanti
-  have houterT : IsPathFrom Gᶜ (r :: (T ++ [a₂])) r a₂ := by
-    simpa [T] using houter
-  have hTpos : 0 < T.length := Workspace.ProofLemmas.PathBasics.path_length_pos hT.1
-  have hT0 : T[0]'hTpos = a := by simp [T]
-  have hrAdj : ∀ z ∈ T, (Gᶜ.Adj r z ↔ z = a) := by
-    intro z hz
-    obtain ⟨k, hk, hek⟩ := List.mem_iff_getElem.mp hz
-    have hqk : k + 1 < (r :: (T ++ [a₂])).length := by simp; omega
-    have hq0 : 0 < (r :: (T ++ [a₂])).length := by simp
-    have helem : (r :: (T ++ [a₂]))[k + 1]'hqk = T[k]'hk := by
-      simp only [List.getElem_cons_succ, List.getElem_append_left hk]
-    constructor
-    · intro hadj
-      have hi := (Workspace.ProofLemmas.PathBasics.path_adj_iff houterT.1 hq0 hqk).mp (by
-        simpa only [List.getElem_cons_zero, helem, hek] using hadj)
-      have hk0 : k = 0 := by rcases hi with h | h <;> omega
-      calc
-        z = T[k]'hk := hek.symm
-        _ = T[0]'hTpos := by
-          apply hT.1.2.1.getElem_inj_iff.mpr
-          exact hk0
-        _ = a := hT0
-    · intro hza
-      have hk0 : k = 0 := by
-        apply hT.1.2.1.getElem_inj_iff.mp
-        calc
-          T[k]'hk = z := hek
-          _ = a := hza
-          _ = T[0]'hTpos := hT0.symm
-      have hadj : Gᶜ.Adj ((r :: (T ++ [a₂]))[0]'hq0)
-          ((r :: (T ++ [a₂]))[k + 1]'hqk) :=
-        (Workspace.ProofLemmas.PathBasics.path_adj_iff houterT.1 hq0 hqk).mpr
-          (Or.inl (by omega))
-      simpa only [List.getElem_cons_zero, helem, hek] using hadj
-  have hrNotT : r ∉ T := by
-    have hn := (List.nodup_cons.mp houterT.1.2.1).1
-    intro hrt
-    exact hn (List.mem_append_left [a₂] hrt)
-  have hbNotT : b ∉ T := by
-    intro hbt
-    rcases List.mem_cons.mp (show b ∈ a :: w by simpa [T] using hbt) with hba | hbw
-    · exact hab.ne' hba
-    · exact hbnotw hbw
-  have hToutOld : ∀ z ∈ T, z ∉ A ∪ B := by
-    intro z hz hzAB
-    rcases List.mem_cons.mp (show z ∈ a :: w by simpa [T] using hz) with hza | hzw
-    · subst z
-      exact ha.1 (by rcases hzAB with hzA | hzB; exact Or.inl (Or.inl hzA); exact Or.inl (Or.inr hzB))
-    · rcases hzAB with hzA | hzB
-      · exact bComplete_not_mem_strip hS (hwB z hzw) (Or.inl (Or.inl hzA))
-      · exact bComplete_not_mem_strip hS (hwB z hzw) (Or.inl (Or.inr hzB))
-  have hToutNew : ∀ z ∈ T, z ∉ (B ∪ {r}) ∪ (A ∪ {b}) ∪ (∅ : Set V) := by
-    intro z hz hznew
-    rcases hznew with ((hzB | hzr) | (hzA | hzb)) | hz0
-    · exact hToutOld z hz (Or.inr hzB)
-    · exact hrNotT (hzr ▸ hz)
-    · exact hToutOld z hz (Or.inl hzA)
-    · exact hbNotT (hzb ▸ hz)
-    · exact Set.notMem_empty z hz0
-  have hleftNew : IsLeftStar Gᶜ (B ∪ {r}) (∅ : Set V) (A ∪ {b}) a := by
-    refine ⟨hToutNew a (by simp [T]), ?_, ?_⟩
-    · intro z hz
-      rcases hz with hzB | hzr
-      · rw [SimpleGraph.compl_adj]
-        exact ⟨fun he => ha.1 (he ▸ Or.inl (Or.inr hzB)),
-          fun hadj => ha.2.2 z (Or.inl hzB) hadj⟩
-      · subst z
-        exact (hrAdj a (by simp [T])).2 rfl |>.symm
-    · intro z hz hadj
-      rcases hz with (hzA | hzb) | hz0
-      · exact (G.compl_adj a z).mp hadj |>.2 (ha.2.1 z hzA)
-      · subst z
-        exact (G.compl_adj a b).mp hadj |>.2 hab
-      · exact Set.notMem_empty z hz0
-  have hrightNew : IsRightStar Gᶜ (B ∪ {r}) (∅ : Set V) (A ∪ {b}) last := by
-    have hlastT : last ∈ T := Workspace.ProofLemmas.PathBasics.getLast_mem hT.2.2
-    refine ⟨hToutNew last hlastT, ?_, ?_⟩
-    · intro z hz
-      rcases hz with hzA | hzb
-      · rw [SimpleGraph.compl_adj]
-        exact ⟨fun he => hlast.1 (he.symm ▸ Or.inl (Or.inl hzA)),
-          fun hadj => hlast.2.2 z (Or.inl hzA) hadj⟩
-      · subst z
-        rw [SimpleGraph.compl_adj]
-        have hlastw : last ∈ w := by
-          have hwne : w ≠ [] := by
-            intro hw
-            subst w
-            simp [T, pathLength] at hT3
-          have hlastW : w.getLast? = some last := by
-            simpa [List.getLast?_cons_of_ne_nil hwne] using hanti.2.2
-          exact Workspace.ProofLemmas.PathBasics.getLast_mem hlastW
-        exact ⟨fun he => hbnotw (he ▸ hlastw), fun hadj => hblast hadj.symm⟩
-    · intro z hz hadj
-      rcases hz with (hzB | hzr) | hz0
-      · have hlastw : last ∈ w := by
-          have hwne : w ≠ [] := by
-            intro hw
-            subst w
-            simp [T, pathLength] at hT3
-          have hlastW : w.getLast? = some last := by
-            simpa [List.getLast?_cons_of_ne_nil hwne] using hanti.2.2
-          exact Workspace.ProofLemmas.PathBasics.getLast_mem hlastW
-        exact (G.compl_adj last z).mp hadj |>.2 (hwB last hlastw z hzB)
-      · subst z
-        exact (G.compl_adj last r).mp hadj |>.2 hrlast.symm
-      · exact Set.notMem_empty z hz0
-  have hInteriorAnti : Anticomplete Gᶜ {z : V | z ∈ interior T}
-      ((B ∪ {r}) ∪ (A ∪ {b}) ∪ (∅ : Set V)) := by
-    intro z hz u hu hadj
-    have hzdata := (Workspace.ProofLemmas.PathBasics.mem_interior_iff_of_pathFrom hT).mp hz
-    have hzw : z ∈ w := by
-      rcases List.mem_cons.mp (show z ∈ a :: w by simpa [T] using hzdata.1) with hza | hzw
-      · exact absurd hza hzdata.2.1
-      · exact hzw
-    rcases hu with ((huB | hur) | (huA | hub)) | hu0
-    · exact (G.compl_adj z u).mp hadj |>.2 (hwB z hzw u huB)
-    · subst u
-      exact hzdata.2.1 ((hrAdj z hzdata.1).mp hadj.symm)
-    · exact (G.compl_adj z u).mp hadj |>.2 (hbeforeA z hzw hzdata.2.2 u huA)
-    · subst u
-      exact (G.compl_adj z b).mp hadj |>.2 (hbBefore z hzw hzdata.2.2).symm
-    · exact Set.notMem_empty u hu0
-  have hban : IsBanister Gᶜ (B ∪ {r}) (∅ : Set V) (A ∪ {b}) a T last :=
-    ⟨hT, hToutNew, hleftNew, hrightNew, hInteriorAnti⟩
-  exact ⟨stepConnected_compl_adjoin_stars G A B r b hS hr hb hrb,
-    by simpa [T] using hban, by simpa [T] using hT3⟩
-
-/-- If the right end sees every trajectory vertex except its terminal
-right-star, strong maximality is contradicted. -/
+/-- The end of claim (7): if the right end of the optimal banister sees every
+trajectory vertex except its terminal right-star, strong maximality fails. -/
 theorem terminal_miss_absurd
     {G : SimpleGraph V} (hG : Berge G)
     (hK4 : ¬ Appears G (⊤ : SimpleGraph (Fin 4)))
@@ -280,8 +92,8 @@ theorem terminal_miss_absurd
 
   obtain ⟨i, hi, j, hj, habirth, hantiData, hidx⟩ :=
     trajectoryOfVertex_data hS hx hopt.1.2.2.1 htraj
-  have hxjlast : x[j] = last := by
-    exact Option.some.inj (hantiData.2.2.symm.trans hanti.2.2)
+  have hxjlast : x[j] = last :=
+    Option.some.inj (hantiData.2.2.symm.trans hanti.2.2)
   have hji : j ≤ i := by
     obtain ⟨k, hk, hki, hxklast⟩ := hidx last hlastw
     have hkj : k = j := by
@@ -289,6 +101,9 @@ theorem terminal_miss_absurd
       exact hxklast.trans hxjlast.symm
     omega
 
+  -- PAPER (just before (3)): *"From the third axiom, there is a banister
+  -- `r'-R'-wₙ` … and therefore we may choose this banister to be
+  -- `wₙ`-optimal."*
   let y : List V := x.take j
   have hylen : y.length = j := by simp [y, Nat.min_eq_left (Nat.le_of_lt hj)]
   have hyshort : y.length < x.length := by omega
@@ -303,22 +118,8 @@ theorem terminal_miss_absurd
     exact hr₀q (hc q (by simpa [y] using hqy))
   obtain ⟨r, Q, ell, hell, hoptQ, hbirthQ, -⟩ :=
     exists_optimalBanister hyseq ⟨r₀, Q₀, hQ₀, hr₀nc⟩
-  have hIH_y : ∀ (qseq : List V), qseq.length < y.length →
-      IsRightSequence G A C B qseq →
-      ∀ (d : V), IsRightStar G A C B d →
-      ∀ (c : V) (P : List V), BOptimalBanister G A C B qseq c P d →
-      ∀ (z : List V), trajectoryOfVertex G A qseq c (c :: z) →
-        TrajectoryConclusion G c P d z := by
-    intro qseq hq hqseq d hd c P hP z hz
-    exact hIH qseq (lt_trans hq hyshort) hqseq d hd c P hP z hz
-  have hQone : pathLength Q = 1 :=
-    optimal_banister_length_one hG hK4 heven h1br h2br hK hyseq hIH_y hoptQ
-  have hQeq0 : Q = [r, x[j]] := path_eq_pair_of_length_one hoptQ.1.1 hQone
-  have hQeq : Q = [r, last] := by simpa [hxjlast] using hQeq0
   have hQlast : IsBanister G A C B r Q last := by
     simpa [hxjlast] using hoptQ.1
-  have hrlast : G.Adj r last :=
-    Workspace.ProofLemmas.PathBasics.isPathFrom_ends_adj_of_length_one hQlast.1 hQone
 
   -- The birth of the auxiliary left-star in `y` is also a birth in `x`.
   have hellx : ell < x.length := by rw [hylen] at hell; omega
@@ -348,33 +149,63 @@ theorem terminal_miss_absurd
     refine ⟨ell, i, hellx, hi, rfl, rfl, ?_⟩
     rw [hylen] at hell
     omega
+
+  -- PAPER (3): *"`R'` is disjoint from `R`, and there are no edges between
+  -- `V(R \ a)` and `V(R' \ wₙ)`."*
   have hnolink := optimal_halves_not_linked hK.1.1.1.2.1.1 hopt hQlast
     hbirthQfull habirth hearlier
   have hsep := halves_anticomplete_of_not_linked hnolink
-  have hbr : ¬ G.Adj b r := by
-    apply hsep b (by rw [hReq]; simp) r (by rw [hQeq]; simp)
+  have hdisj := banisters_disjoint_of_halves_not_linked hK.1.1.1.2.1.1
+    hopt.1 hQlast hnolink
 
+  -- PAPER (5): *"`C = ∅`."*
   have hCempty : C = ∅ := middle_empty_of_last_rightStar hG heven hK
     hopt.1.2.2.1 hlast hanti hodd hwlong hbeforeA hwB
   have hS0 : StepConnected G A (∅ : Set V) B := by simpa [hCempty] using hS
   have ha0 : IsLeftStar G A (∅ : Set V) B a := by
     simpa [hCempty] using hopt.1.2.2.1
-  have hb0 : IsRightStar G A (∅ : Set V) B b := by
-    simpa [hCempty] using hb
+  have hb0 : IsRightStar G A (∅ : Set V) B b := by simpa [hCempty] using hb
   have hr0 : IsLeftStar G A (∅ : Set V) B r := by
     simpa [hCempty] using hQlast.2.2.1
   have hlast0 : IsRightStar G A (∅ : Set V) B last := by
     simpa [hCempty] using hlast
 
+  -- Structure of the auxiliary banister `Q = r-R'-wₙ`.
+  have hQodd : Odd (pathLength Q) :=
+    (Workspace.Statements.S11.SPGT.thm_11_3 G hG heven A C B hS r last Q hQlast).2
+  have hQlen : Q.length = pathLength Q + 1 :=
+    Workspace.ProofLemmas.PathBasics.length_eq_pathLength_add_one hQlast.1.1
+  have hQ2 : 2 ≤ Q.length := by obtain ⟨m, hm⟩ := hQodd; omega
+  have hrQ : r ∈ Q := Workspace.ProofLemmas.PathBasics.head_mem hQlast.1.2.1
+  have hlastQ : last ∈ Q := Workspace.ProofLemmas.PathBasics.getLast_mem hQlast.1.2.2
+  have hrlastne : r ≠ last :=
+    Workspace.ProofLemmas.PathBasics.isPathFrom_ends_ne hQlast.1 (by omega)
+  have hdropIff : ∀ z : V, z ∈ Q.dropLast ↔ (z ∈ Q ∧ z ≠ last) := fun z =>
+    HyperprismRungStructure.mem_dropLast_iff_of_pathFrom hQlast.1
+  have hrdrop : r ∈ Q.dropLast := (hdropIff r).2 ⟨hrQ, hrlastne⟩
+  have hdropCase : ∀ z ∈ Q.dropLast, z = r ∨ z ∈ interior Q := by
+    intro z hz
+    obtain ⟨hzQ, hzl⟩ := (hdropIff z).1 hz
+    by_cases hzr : z = r
+    · exact Or.inl hzr
+    · exact Or.inr
+        ((Workspace.ProofLemmas.PathBasics.mem_interior_iff_of_pathFrom hQlast.1).2
+          ⟨hzQ, hzr, hzl⟩)
+  have hdropOut : ∀ z ∈ Q.dropLast, z ∉ A ∪ B ∪ C := fun z hz =>
+    hQlast.2.1 z ((hdropIff z).1 hz).1
+  have hdropAntiB : ∀ z ∈ Q.dropLast, ∀ u ∈ B, ¬ G.Adj z u := by
+    intro z hz u hu
+    rcases hdropCase z hz with hzr | hzint
+    · exact hzr ▸ hQlast.2.2.1.2.2 u (Or.inl hu)
+    · exact hQlast.2.2.2.2 z hzint u (Or.inl (Or.inr hu))
+
+  -- PAPER: *"Choose a step `a₁-R₁-b₁`, `a₂-R₂-b₂`."*
   obtain ⟨a₁, ha₁A⟩ := hS.2.1.1
   obtain ⟨R₁, b₁, a₂, R₂, b₂, hstep⟩ := exists_step_with_left_end hS ha₁A
   have hb₁B : b₁ ∈ B := hstep.1.2.2.1
   have ha₂A : a₂ ∈ A := hstep.2.1.2.1
   have hb₂B : b₂ ∈ B := hstep.2.1.2.2.1
   have hra₂ : G.Adj r a₂ := hr0.2.1 a₂ ha₂A
-  have hrbne : r ≠ b := by
-    intro he
-    exact hb0.2.2 a₂ (Or.inl ha₂A) (he ▸ hra₂)
   have ha₂b₁ : ¬ G.Adj a₂ b₁ := by
     intro hadj
     have ha₂R := Workspace.ProofLemmas.PathBasics.head_mem hstep.2.1.1.2.1
@@ -383,7 +214,10 @@ theorem terminal_miss_absurd
     · exact Set.disjoint_left.mp hS.1.1 ha₁A (h.1.symm ▸ hb₁B)
     · exact Set.disjoint_left.mp hS.1.1 ha₂A (h.2.symm ▸ hb₂B)
 
-  let U : List V := b₁ :: ((a :: w) ++ [b])
+  -- PAPER: *"`b₁-a-w₁-⋯-wₙ-b` is an odd antipath, of length ≥ 5."*
+  set T : List V := a :: w with hTdef
+  set U : List V := b₁ :: (T ++ [b]) with hUdef
+  have hTanti : IsAntipathFrom G T a last := hanti
   have hb₁aC : Gᶜ.Adj b₁ a := by
     rw [SimpleGraph.compl_adj]
     exact ⟨fun he => hopt.1.2.2.1.1 (he.symm ▸ Or.inl (Or.inr hb₁B)),
@@ -392,117 +226,148 @@ theorem terminal_miss_absurd
     rw [SimpleGraph.compl_adj]
     exact ⟨fun he => hbnotw (he ▸ hlastw), hbmiss⟩
   have hb₁b : G.Adj b₁ b := (hb.2.1 b₁ hb₁B).symm
-  have hb₁not : b₁ ∉ a :: w := by
+  have hb₁not : b₁ ∉ T := by
     intro hm
     rcases List.mem_cons.mp hm with hba | hbw
     · exact hopt.1.2.2.1.1 (hba.symm ▸ Or.inl (Or.inr hb₁B))
-    · exact bComplete_not_mem_strip hS (hwB b₁ hbw)
-        (Or.inl (Or.inr hb₁B))
-  have hbnot : b ∉ a :: w := by
+    · exact bComplete_not_mem_strip hS (hwB b₁ hbw) (Or.inl (Or.inr hb₁B))
+  have hbnot : b ∉ T := by
     intro hm
     rcases List.mem_cons.mp hm with hba | hbw
     · exact hab.ne' hba
     · exact hbnotw hbw
-  have hb₁other : ∀ z ∈ a :: w, z ≠ a → ¬ Gᶜ.Adj b₁ z := by
+  have hb₁other : ∀ z ∈ T, z ≠ a → ¬ Gᶜ.Adj b₁ z := by
     intro z hz hza hadj
     have hzw : z ∈ w := (List.mem_cons.mp hz).resolve_left hza
     exact (G.compl_adj b₁ z).mp hadj |>.2 (hwB z hzw b₁ hb₁B).symm
-  have hbother : ∀ z ∈ a :: w, z ≠ last → ¬ Gᶜ.Adj b z := by
+  have hbother : ∀ z ∈ T, z ≠ last → ¬ Gᶜ.Adj b z := by
     intro z hz hzlast hadj
     apply (G.compl_adj b z).mp hadj |>.2
     rcases List.mem_cons.mp hz with hza | hzw
     · subst z; exact hab.symm
     · exact hbBefore z hzw hzlast
-  have hU : IsPathFrom Gᶜ U b₁ b := by
-    simpa [U] using Workspace.ProofLemmas.PathAttach.isPathFrom_cons_concat
-      hanti hb₁aC hblastC
+  have hU : IsPathFrom Gᶜ U b₁ b :=
+    Workspace.ProofLemmas.PathAttach.isPathFrom_cons_concat hTanti hb₁aC hblastC
       (fun hc => (G.compl_adj b₁ b).mp hc |>.2 hb₁b)
       hb₁b.ne hb₁not hbnot hb₁other hbother
+  have hTlen : T.length = w.length + 1 := by simp [hTdef]
+  have hwlen3 : 3 ≤ w.length := by obtain ⟨k, hk⟩ := hodd; omega
+  have hUlen : U.length = T.length + 2 :=
+    Workspace.ProofLemmas.PathAttach.length_cons_append_singleton b₁ b T
+  have hUplen : pathLength U = T.length + 1 :=
+    Workspace.ProofLemmas.PathAttach.pathLength_cons_append_singleton b₁ b T
   have hUodd : Odd (pathLength U) := by
     obtain ⟨k, hk⟩ := hodd
-    refine ⟨k + 1, ?_⟩
-    simp [U, pathLength]
-    omega
-  have hU5 : 5 ≤ pathLength U := by
-    obtain ⟨k, hk⟩ := hodd
-    simp [U, pathLength]
-    omega
+    exact ⟨k + 1, by omega⟩
+  have hU5 : 5 ≤ pathLength U := by omega
+  have hUget : ∀ (k : ℕ) (hk : k < T.length),
+      U[k + 1]'(by omega) = T[k]'hk := by
+    intro k hk
+    simp only [hUdef, List.getElem_cons_succ, List.getElem_append_left hk]
+  have hTlastElem : T[T.length - 1]'(by omega) = last :=
+    Workspace.ProofLemmas.PathBasics.getElem_last_of_getLast? hTanti.2.2 (by omega)
+  have hT0 : T[0]'(by omega) = a := by simp [hTdef]
+  have hUpen : U[U.length - 2]'(by omega) = last := by
+    have hidx : U.length - 2 = (T.length - 1) + 1 := by omega
+    rw [(getElem_congr rfl hidx (by omega) :
+      U[U.length - 2]'(by omega) = U[(T.length - 1) + 1]'(by omega))]
+    rw [hUget (T.length - 1) (by omega)]
+    exact hTlastElem
+  have hU1 : U[1]'(by omega) = a := by
+    rw [(getElem_congr rfl (by omega : (1:ℕ) = 0 + 1) (by omega) :
+      U[1]'(by omega) = U[0 + 1]'(by omega))]
+    rw [hUget 0 (by omega)]
+    exact hT0
+  have hTsubU : ∀ z ∈ T, z ∈ U := fun z hz => by
+    rw [hUdef]; exact List.mem_cons_of_mem b₁ (List.mem_append_left _ hz)
+  have hlastU : last ∈ U := hTsubU last (List.mem_cons_of_mem a hlastw)
+  have hUidx : ∀ z ∈ T, ∃ (k : ℕ) (hk : k < U.length),
+      1 ≤ k ∧ k ≤ U.length - 2 ∧ U[k]'hk = z := by
+    intro z hz
+    obtain ⟨k, hk, hkz⟩ := List.mem_iff_getElem.mp hz
+    exact ⟨k + 1, by omega, by omega, by omega, (hUget k hk).trans hkz⟩
 
-  let D : Set V := {r, a₂}
-  have hDconn : ConnectedSet G D := by
-    have hchain : List.IsChain G.Adj [r, a₂] := by simpa using hra₂
-    have hset : D = {z : V | z ∈ [r, a₂]} := by
-      ext z
-      simp [D]
-    rw [hset]
-    exact Workspace.ProofLemmas.InducedPathExtraction.connectedSet_setOf_mem_of_isChain hchain
+  -- PAPER: *"the connected set `V(R' \ wₙ) ∪ {a₂}`."*
+  set D : Set V := {z : V | z ∈ Q.dropLast} ∪ {a₂} with hDdef
+  have hDsing : ConnectedSet G ({a₂} : Set V) := by
+    intro u v
+    have huv : u = v := Subtype.ext (u.2.trans v.2.symm)
+    subst huv
+    exact SimpleGraph.Reachable.refl u
+  have hDconn : ConnectedSet G D :=
+    Workspace.ProofLemmas.ConnectedSetUnionAttach.connectedSet_union
+      (Workspace.ProofLemmas.InducedPathExtraction.connectedSet_setOf_mem_of_isPathList
+        (HyperprismRungStructure.isPathList_dropLast hQlast.1.1 hQ2))
+      hDsing (Or.inr ⟨r, hrdrop, a₂, rfl, hra₂⟩)
   have hDanti : AnticonnectedSet Gᶜ D := by
     simpa only [AnticonnectedSet, compl_compl] using hDconn
-  have hrNotU : r ∉ U := by
-    intro hru
-    rcases List.mem_cons.mp (show r ∈ b₁ :: ((a :: w) ++ [b]) by simpa [U] using hru) with
-      hrb₁ | hrrest
-    · exact hr0.1 (hrb₁ ▸ Or.inl (Or.inr hb₁B))
-    · rcases List.mem_append.mp hrrest with hrT | hrb'
-      · rcases List.mem_cons.mp hrT with hra | hrw
-        · have hraR : r ∈ Q := by rw [hQeq]; simp
-          have haaR : a ∈ R := by rw [hReq]; simp
-          exact (banisters_disjoint_of_halves_not_linked hK.1.1.1.2.1.1
-            hopt.1 hQlast hnolink a haaR) (hra ▸ hraR)
-        · obtain ⟨b', hb'B⟩ := hS.2.1.2
-          exact hr0.2.2 b' (Or.inl hb'B) (hwB r hrw b' hb'B)
-      · have : r = b := by simpa using hrb'
-        exact hrbne this
-  have ha₂NotU : a₂ ∉ U := by
-    intro ha₂U
-    rcases List.mem_cons.mp (show a₂ ∈ b₁ :: ((a :: w) ++ [b]) by simpa [U] using ha₂U) with
-      ha₂b₁eq | hrest
-    · exact Set.disjoint_left.mp hS.1.1 ha₂A (ha₂b₁eq ▸ hb₁B)
-    · rcases List.mem_append.mp hrest with hT | ha₂b
-      · rcases List.mem_cons.mp hT with ha₂a | ha₂w
-        · exact hopt.1.2.2.1.1 (ha₂a ▸ Or.inl (Or.inl ha₂A))
-        · exact bComplete_not_mem_strip hS (hwB a₂ ha₂w)
-            (Or.inl (Or.inl ha₂A))
-      · have : a₂ = b := by simpa using ha₂b
-        exact hb.1 (this.symm ▸ Or.inl (Or.inl ha₂A))
   have hUD : ∀ z ∈ U, z ∉ D := by
     intro z hz hzD
-    rcases hzD with hzr | hza₂
-    · exact hrNotU (hzr ▸ hz)
-    · exact ha₂NotU (hza₂ ▸ hz)
+    have hzcase : z = b₁ ∨ z ∈ T ∨ z = b := by
+      simpa [hUdef] using
+        (Workspace.ProofLemmas.PathAttach.mem_cons_append_singleton (x := z)
+          (s := b₁) (t := b) (p := T)).1 (by simpa [hUdef] using hz)
+    rcases hzD with hzQ | hza₂
+    · rcases hzcase with h | h | h
+      · exact hdropOut z hzQ (h ▸ Or.inl (Or.inr hb₁B))
+      · rcases List.mem_cons.mp h with hza | hzw
+        · exact hdisj a (by rw [hReq]; simp) (hza ▸ ((hdropIff z).1 hzQ).1)
+        · obtain ⟨b', hb'B⟩ := hS.2.1.2
+          exact hdropAntiB z hzQ b' hb'B (hwB z hzw b' hb'B)
+      · exact hdisj b (by rw [hReq]; simp) (h ▸ ((hdropIff z).1 hzQ).1)
+    · have hza : z = a₂ := hza₂
+      rcases hzcase with h | h | h
+      · exact Set.disjoint_left.mp hS.1.1 ha₂A (hza ▸ h ▸ hb₁B)
+      · rcases List.mem_cons.mp h with hzaa | hzw
+        · exact hopt.1.2.2.1.1 (hzaa ▸ hza ▸ Or.inl (Or.inl ha₂A))
+        · exact bComplete_not_mem_strip hS (hwB z hzw) (hza ▸ Or.inl (Or.inl ha₂A))
+      · exact hb.1 (h ▸ hza ▸ Or.inl (Or.inl ha₂A))
   have hb₁D : VertexComplete Gᶜ b₁ D := by
-    intro z hz
-    rcases hz with hzr | hza₂
-    · subst z
-      rw [SimpleGraph.compl_adj]
-      exact ⟨fun he => hr0.1 (he ▸ Or.inl (Or.inr hb₁B)),
-        fun hadj => hr0.2.2 b₁ (Or.inl hb₁B) hadj.symm⟩
-    · subst z
+    rintro z (hzQ | hza₂)
+    · rw [SimpleGraph.compl_adj]
+      exact ⟨fun he => hdropOut z hzQ (he ▸ Or.inl (Or.inr hb₁B)),
+        fun hadj => hdropAntiB z hzQ b₁ hb₁B hadj.symm⟩
+    · have hza : z = a₂ := hza₂
+      subst z
       rw [SimpleGraph.compl_adj]
       exact ⟨fun he => Set.disjoint_left.mp hS.1.1 ha₂A (he.symm ▸ hb₁B),
         fun hadj => ha₂b₁ hadj.symm⟩
   have hbD : VertexComplete Gᶜ b D := by
-    intro z hz
-    rcases hz with hzr | hza₂
-    · subst z
-      rw [SimpleGraph.compl_adj]
-      exact ⟨hrbne.symm, hbr⟩
-    · subst z
+    rintro z (hzQ | hza₂)
+    · rw [SimpleGraph.compl_adj]
+      refine ⟨fun he => hdisj b (by rw [hReq]; simp) (he ▸ ((hdropIff z).1 hzQ).1), ?_⟩
+      exact hsep b (by rw [hReq]; simp) z hzQ
+    · have hza : z = a₂ := hza₂
+      subst z
       rw [SimpleGraph.compl_adj]
       exact ⟨fun he => hb.1 (he.symm ▸ Or.inl (Or.inl ha₂A)),
         fun hadj => hb.2.2 a₂ (Or.inl ha₂A) hadj⟩
-  have hIntU : SPGT.interior U = a :: w := by
-    simp only [U, SPGT.interior, List.tail_cons]
+  have hIntU : SPGT.interior U = T := by
+    simp only [hUdef, SPGT.interior, List.tail_cons]
     exact List.dropLast_concat
-  have hNoInternalComplete : ∀ z ∈ SPGT.interior U,
-      ¬ VertexComplete Gᶜ z D := by
+  have hNoInternalComplete : ∀ z ∈ SPGT.interior U, ¬ VertexComplete Gᶜ z D := by
     intro z hz hzc
-    have hzT : z ∈ a :: w := by simpa [hIntU] using hz
+    have hzT : z ∈ T := by rw [hIntU] at hz; exact hz
     rcases List.mem_cons.mp hzT with hza | hzw
     · have hza₂G : G.Adj z a₂ := hza ▸ hopt.1.2.2.1.2.1 a₂ ha₂A
       exact (G.compl_adj z a₂).mp (hzc a₂ (Or.inr rfl)) |>.2 hza₂G
     · by_cases hzl : z = last
-      · exact (G.compl_adj z r).mp (hzc r (Or.inl rfl)) |>.2 (hzl ▸ hrlast.symm)
+      · -- `wₙ` has a `G`-neighbour in `V(R' \ wₙ)`: its neighbour on `R'`.
+        have hpenQ : Q[Q.length - 2]'(by omega) ∈ Q := List.getElem_mem _
+        have hpenAdj : G.Adj (Q[Q.length - 2]'(by omega)) last := by
+          have := Workspace.ProofLemmas.PathBasics.path_adj_succ hQlast.1.1
+            (i := Q.length - 2) (by omega)
+          have hidx : Q.length - 2 + 1 = Q.length - 1 := by omega
+          rw [(getElem_congr rfl hidx (by omega) :
+            Q[Q.length - 2 + 1]'(by omega) = Q[Q.length - 1]'(by omega))] at this
+          rw [Workspace.ProofLemmas.PathBasics.getElem_last_of_getLast?
+            hQlast.1.2.2 (by omega)] at this
+          exact this
+        have hpenNe : Q[Q.length - 2]'(by omega) ≠ last := hpenAdj.ne
+        have hpenDrop : Q[Q.length - 2]'(by omega) ∈ Q.dropLast :=
+          (hdropIff _).2 ⟨hpenQ, hpenNe⟩
+        exact (G.compl_adj z _).mp (hzc _ (Or.inl hpenDrop)) |>.2
+          (hzl ▸ hpenAdj.symm)
       · exact (G.compl_adj z a₂).mp (hzc a₂ (Or.inr rfl)) |>.2
           (hbeforeA z hzw hzl a₂ ha₂A)
   have hNoCompleteEdge : ¬ ∃ u ∈ U, ∃ v ∈ U, EdgeComplete Gᶜ D u v := by
@@ -531,68 +396,159 @@ theorem terminal_miss_absurd
     · exact (G.compl_adj b b₁).mp (hub ▸ hvb₁ ▸ huv) |>.2 hb₁b.symm
     · exact huv.ne (hub.trans hvb.symm)
 
+  have hT3 : 3 ≤ pathLength T := by
+    obtain ⟨k, hk⟩ := hodd
+    simp [hTdef, pathLength]
+    omega
+  have hqTb : ∀ z ∈ T, (Gᶜ.Adj b z ↔ z = last) := by
+    intro z hz
+    constructor
+    · intro hadj
+      by_contra hzl
+      exact hbother z hz hzl hadj
+    · intro hzl
+      exact hzl ▸ hblastC
+
+  -- PAPER: *"By 2.1 applied in `G`, there are adjacent vertices `x, y` in
+  -- `V(R' \ wₙ) ∪ {a₂}`, such that `x-a-w₁-⋯-wₙ-y` is an odd antipath."*
   rcases Workspace.Statements.S02.SPGT.thm_2_1 Gᶜ
       (Workspace.ProofLemmas.HoleBasics.berge_compl.mpr hG) D hDanti U b₁ b
       hU hUD hUodd hb₁D hbD with hedge | hleap | hshort
   · exact hNoCompleteEdge hedge
-  · obtain ⟨-, u, huD, v, hvD, huv⟩ := hleap
-    have huvFull := huv
-    obtain ⟨-, -, huvne, -, -, hvadj⟩ := huv
-    have hlastU : last ∈ U := by simp [U, hlastw]
-    have hlastPen : last = U[U.length - 2]'(by
-        rw [Workspace.ProofLemmas.PathBasics.pathLength_eq] at hU5
-        omega) :=
-      (adj_last_iff_eq_penultimate hU (by
-        rw [Workspace.ProofLemmas.PathBasics.pathLength_eq] at hU5
-        omega) hlastU).mp hblastC.symm
-    have horient : u = r ∧ v = a₂ := by
-      simp only [D, Set.mem_insert_iff, Set.mem_singleton_iff] at huD hvD
-      rcases huD with hur | hua₂ <;> rcases hvD with hvr | hva₂
-      · exact absurd (hur.trans hvr.symm) huvne
-      · exact ⟨hur, hva₂⟩
-      · exfalso
-        subst u; subst v
-        have hlenU : 6 ≤ U.length := by
-          rw [Workspace.ProofLemmas.PathBasics.pathLength_eq] at hU5
-          omega
-        have hrc : Gᶜ.Adj r (U[U.length - 2]'(by omega)) :=
-          (hvadj (U.length - 2) (by omega)).2 (Or.inr (Or.inl rfl))
-        rw [← hlastPen] at hrc
-        exact (G.compl_adj r last).mp hrc |>.2 hrlast
-      · exact absurd (hua₂.trans hva₂.symm) huvne
-    obtain ⟨hur, hva₂⟩ := horient
-    subst u; subst v
-    have huD' : r ∈ D := Or.inl rfl
-    have hvD' : a₂ ∈ D := Or.inr rfl
-    obtain ⟨houter₀, -⟩ := leap_inner_path hU hU5 hUD huD' hvD' huvFull
-    have houter : IsPathFrom Gᶜ (r :: ((a :: w) ++ [a₂])) r a₂ := by
-      simpa only [hIntU] using houter₀
-    have hT3 : 3 ≤ pathLength (a :: w) := by
-      obtain ⟨k, hk⟩ := hodd
-      simp [pathLength]
-      omega
-    have hstairs := staircase_compl_adjoin_stars G A B r b a last a₂ w
-      hS0 hr0 hb0 ha0 hlast0 (fun hadj => hbr hadj.symm) hab hrlast hbmiss
-      hbeforeA hwB hbBefore hbnotw hanti hT3 houter
-    have hno : ¬ ∃ (A' C' B' : Set V) (a' : V) (P : List V) (b' : V),
-        IsStaircase Gᶜ A' C' B' a' P b' ∧
-          (A ∪ B ∪ C) ⊂ (A' ∪ B' ∪ C') :=
-      hK.2.resolve_left (by rw [hCempty]; simp)
-    apply hno
-    refine ⟨B ∪ {r}, ∅, A ∪ {b}, a, a :: w, last, hstairs, ?_⟩
-    constructor
-    · intro z hz
-      rcases hz with (hzA | hzB) | hzC
-      · exact Or.inl (Or.inr (Or.inl hzA))
-      · exact Or.inl (Or.inl (Or.inl hzB))
-      · exact absurd (hCempty ▸ hzC) (Set.notMem_empty z)
-    · intro hback
-      have hrnew : r ∈ (B ∪ {r}) ∪ (A ∪ {b}) ∪ (∅ : Set V) :=
-        Or.inl (Or.inl (Or.inr rfl))
-      rcases hback hrnew with (hrA | hrB) | hrC
-      · exact hr0.1 (Or.inl (Or.inl hrA))
-      · exact hr0.1 (Or.inl (Or.inr hrB))
-      · exact absurd (hCempty ▸ hrC) (Set.notMem_empty r)
+  · obtain ⟨-, u, huD, v, hvD, hleapuv⟩ := hleap
+    obtain ⟨-, -, huvne, huvnadj, huadj, hvadj⟩ := hleapuv
+    have huvG : G.Adj u v := by
+      rw [SimpleGraph.compl_adj] at huvnadj
+      push Not at huvnadj
+      exact huvnadj huvne
+    -- `u` is the vertex of `D` seeing `a`; it is `G`-adjacent to `wₙ`.
+    have huaC : Gᶜ.Adj u a := by
+      have := (huadj 1 (by omega)).2 (Or.inr (Or.inl rfl))
+      rwa [hU1] at this
+    have hulastG : G.Adj u last := by
+      have hnot : ¬ Gᶜ.Adj u (U[U.length - 2]'(by omega)) := by
+        intro hadj
+        rcases (huadj (U.length - 2) (by omega)).1 hadj with h | h | h <;> omega
+      rw [hUpen, SimpleGraph.compl_adj] at hnot
+      push Not at hnot
+      exact hnot (fun he => hUD last hlastU (he ▸ huD))
+    -- PAPER: *"Since `x` is adjacent to `wₙ`, it follows that `x` is the
+    -- neighbour of `wₙ` in `R'`."*
+    have huQ : u ∈ Q.dropLast := by
+      rcases huD with h | h
+      · exact h
+      · exact absurd (hlast.2.2 u (Or.inl ((h : u = a₂) ▸ ha₂A))) (by
+          intro hcon; exact hcon hulastG.symm)
+    have hupen : u = Q[Q.length - 2]'(by omega) :=
+      (adj_last_iff_eq_penultimate hQlast.1 hQ2 ((hdropIff u).1 huQ).1).1 hulastG
+    have hvlastC : Gᶜ.Adj v last := by
+      have := (hvadj (U.length - 2) (by omega)).2 (Or.inr (Or.inl rfl))
+      rwa [hUpen] at this
+    have hpT : ∀ z ∈ T, (Gᶜ.Adj u z ↔ z = a) := by
+      intro z hz
+      obtain ⟨k, hk, hk1, hk2, hkz⟩ := hUidx z hz
+      constructor
+      · intro hadj
+        rw [← hkz] at hadj
+        rcases (huadj k hk).1 hadj with h | h | h
+        · omega
+        · rw [← hkz, (getElem_congr rfl h hk :
+            U[k]'hk = U[1]'(by omega))]
+          exact hU1
+        · omega
+      · intro hza
+        rw [hza]
+        exact huaC
+    have hqT : ∀ z ∈ T, (Gᶜ.Adj v z ↔ z = last) := by
+      intro z hz
+      obtain ⟨k, hk, hk1, hk2, hkz⟩ := hUidx z hz
+      constructor
+      · intro hadj
+        rw [← hkz] at hadj
+        rcases (hvadj k hk).1 hadj with h | h | h
+        · omega
+        · rw [← hkz, (getElem_congr rfl h hk :
+            U[k]'hk = U[U.length - 2]'(by omega))]
+          exact hUpen
+        · omega
+      · intro hzl
+        rw [hzl]
+        exact hvlastC
+    have hunotT : u ∉ T := fun hm => hUD u (hTsubU u hm) huD
+    have hvnotT : v ∉ T := fun hm => hUD v (hTsubU v hm) hvD
+    by_cases hQone : pathLength Q = 1
+    · -- PAPER: *"Now assume that `R'` has length 1.  Then `x = r'` and
+      -- `y = a₂`, and `((B ∪ {r'}, ∅, A ∪ {b}), a-w₁-⋯-wₙ)` is a staircase."*
+      have hQeq : Q = [r, last] := path_eq_pair_of_length_one hQlast.1 hQone
+      have hur : u = r := by
+        have := (hdropIff u).1 huQ
+        rw [hQeq] at this
+        rcases (by simpa using this.1) with h | h
+        · exact h
+        · exact absurd h this.2
+      rw [hur] at hpT hunotT
+      have hrb : ¬ G.Adj r b := fun hadj =>
+        hsep b (by rw [hReq]; simp) r hrdrop hadj.symm
+      have hbnotT : b ∉ T := hbnot
+      have hstair := staircase_compl_adjoin_pair (p := r) (q := b) hS0
+        (stepConnected_compl_adjoin_stars G A B r b hS0 hr0 hb0 hrb)
+        ha0 hlast0 hbeforeA hwB hTanti hT3 hpT hqTb hunotT hbnotT
+      exact compl_adjoin_pair_absurd hK hCempty
+        (by simpa [hCempty] using hr0.1) hstair
+    · -- PAPER: *"Assume first that `R'` has length > 1, and so both `x, y`
+      -- belong to the interior of `R'`.  Hence `x, y` are both anticomplete to
+      -- `A ∪ B`, and so `((B ∪ {x}, ∅, A ∪ {y}), a-w₁-⋯-wₙ)` is a staircase."*
+      have hQ3 : 3 ≤ pathLength Q := by obtain ⟨m, hm⟩ := hQodd; omega
+      have hQ4 : 4 ≤ Q.length := by omega
+      have huint : u ∈ interior Q := by
+        rw [hupen]
+        exact Workspace.ProofLemmas.PathBasics.getElem_mem_interior hQlast.1.1
+          (by omega) (by omega) (by omega)
+      have hva₂ : v ≠ a₂ := by
+        intro he
+        exact hQlast.2.2.2.2 u huint a₂ (Or.inl (Or.inl ha₂A)) (he ▸ huvG)
+      have hvQ : v ∈ Q.dropLast := by
+        rcases hvD with h | h
+        · exact h
+        · exact absurd (h : v = a₂) hva₂
+      obtain ⟨k, hk, hkv⟩ := List.mem_iff_getElem.mp ((hdropIff v).1 hvQ).1
+      have hkval : k = Q.length - 3 := by
+        have hadj : G.Adj (Q[Q.length - 2]'(by omega)) (Q[k]'hk) := by
+          rw [← hupen, hkv]; exact huvG
+        rcases (Workspace.ProofLemmas.PathBasics.path_adj_iff hQlast.1.1
+          (by omega : Q.length - 2 < Q.length) hk).1 hadj with h | h
+        · exfalso
+          apply ((hdropIff v).1 hvQ).2
+          rw [← hkv]
+          exact (getElem_congr rfl (by omega : k = Q.length - 1) hk).trans
+            (Workspace.ProofLemmas.PathBasics.getElem_last_of_getLast?
+              hQlast.1.2.2 (by omega))
+        · omega
+      have hvint : v ∈ interior Q := by
+        rw [← hkv]
+        exact Workspace.ProofLemmas.PathBasics.getElem_mem_interior hQlast.1.1
+          hk (by omega) (by omega)
+      have huAB : VertexAnticomplete G u (A ∪ B) := by
+        rintro z (hzA | hzB)
+        · exact hQlast.2.2.2.2 u huint z (Or.inl (Or.inl hzA))
+        · exact hQlast.2.2.2.2 u huint z (Or.inl (Or.inr hzB))
+      have hvAB : VertexAnticomplete G v (A ∪ B) := by
+        rintro z (hzA | hzB)
+        · exact hQlast.2.2.2.2 v hvint z (Or.inl (Or.inl hzA))
+        · exact hQlast.2.2.2.2 v hvint z (Or.inl (Or.inr hzB))
+      have huOut : u ∉ A ∪ B ∪ (∅ : Set V) := by
+        have := hQlast.2.1 u (Workspace.ProofLemmas.PathBasics.interior_subset huint)
+        rw [hCempty] at this
+        exact this
+      have hvOut : v ∉ A ∪ B ∪ (∅ : Set V) := by
+        have := hQlast.2.1 v (Workspace.ProofLemmas.PathBasics.interior_subset hvint)
+        rw [hCempty] at this
+        exact this
+      have hstair := staircase_compl_adjoin_pair (p := u) (q := v) hS0
+        (stepConnected_compl_adjoin_interior_pair hS0 huOut hvOut huAB hvAB huvG)
+        ha0 hlast0 hbeforeA hwB hTanti hT3 hpT hqT hunotT hvnotT
+      exact compl_adjoin_pair_absurd hK hCempty
+        (by rw [hCempty]; exact huOut) hstair
   · obtain ⟨hthree, -⟩ := hshort
     omega
 

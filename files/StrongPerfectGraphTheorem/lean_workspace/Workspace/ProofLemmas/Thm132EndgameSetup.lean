@@ -37,7 +37,10 @@ theorem exists_second_configuration
     (hwone : d.w.length = 1)
     (P : List V) (hP : IsPathFrom G P d.r d.last)
     (hPodd : Odd (pathLength P))
-    (hPint : ∀ z, z ∈ interior P ↔ z ∈ interior R₀) :
+    (hPint : ∀ z, z ∈ interior P ↔ z ∈ interior R₀)
+    (hIH : ∀ y : List V, y.length < x.length → IsRightSequence G A C B y →
+      ∀ (a' b' : V) (R' : List V), StronglyMaximalStaircase G A C B a' R' b' →
+      ∀ v ∈ y, G.Adj v a') :
     ∃ (r' : V) (R' : List V) (j : ℕ) (hj : j < x.length),
       BOptimalBanister G A C B x r' R' d.last ∧
       birth G A C B x r' x[j] ∧ j < d.birthIndex ∧
@@ -48,8 +51,12 @@ theorem exists_second_configuration
   classical
   obtain ⟨r', R', j, hj, hopt', hbirth', hjd⟩ :=
     Workspace.ProofLemmas.Thm132SecondBanister.exists_second_optimal hx d hlast hwone
+  -- PAPER: *"From the minimality of `t` (replacing `R₀` by `R`) it follows that `R` has
+  -- length 1"* — applied to the second optimal banister, whose birth `x[j]` is earlier than
+  -- the birth of the first one.
   have hR'one := Workspace.ProofLemmas.Thm132OptimalLength.optimal_banister_length_one
-    hG hK4 heven h1br h2br hK hx hopt'
+    hG heven hK hx hopt' j hj hbirth'
+    (by have := d.birthIndex_lt; omega) hIH
   have hearlier : Earlier x (x[j]'hj) (x[d.birthIndex]'d.birthIndex_lt) :=
     ⟨j, d.birthIndex, hj, d.birthIndex_lt, rfl, rfl, hjd⟩
   have hA : A.Nonempty := hK.1.1.1.2.1.1

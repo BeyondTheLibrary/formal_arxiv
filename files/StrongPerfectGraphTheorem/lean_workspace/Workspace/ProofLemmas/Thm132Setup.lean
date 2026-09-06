@@ -64,7 +64,10 @@ theorem exists_firstBadData
     (hx : IsRightSequence G A C B x)
     (i : ℕ) (hi : i < x.length)
     (hprev : ∀ (j : ℕ) (hj : j < i), G.Adj x[j] a₀)
-    (hbad : ¬ G.Adj x[i] a₀) :
+    (hbad : ¬ G.Adj x[i] a₀)
+    (hIH : ∀ y : List V, y.length < x.length → IsRightSequence G A C B y →
+      ∀ (a' b' : V) (R' : List V), StronglyMaximalStaircase G A C B a' R' b' →
+      ∀ v ∈ y, G.Adj v a') :
     Nonempty (FirstBadData G A C B a₀ b₀ R₀ x i) := by
   classical
   have hP : IsBanister G A C B a₀ R₀ b₀ := hK.1.1.2.1
@@ -109,7 +112,10 @@ theorem exists_firstBadData
   have hpi : p < i := by omega
   have hji : j < i := lt_of_le_of_lt
     (hminimal a' R' p hp hban' hanc' (by simpa [hpeq] using hbirth')) hpi
-  have hRone := optimal_banister_length_one hG hK4 heven h1br h2br hK hx hopt
+  -- PAPER: *"From the minimality of `t` (replacing `R₀` by `R`) it follows that `R` has
+  -- length 1, and so `rb₀` is an edge."*
+  have hRone := optimal_banister_length_one hG heven hK hx hopt j hj hbirth
+    (by omega) hIH
 
   obtain ⟨w, q, hq, zidx, hzidx, htraj, hbirthQ, hanti, hwidx⟩ :=
     exists_trajectoryOfVertex_of_leftStar hK.1.1.1 hx hopt.1.2.2.1 hopt.2.1

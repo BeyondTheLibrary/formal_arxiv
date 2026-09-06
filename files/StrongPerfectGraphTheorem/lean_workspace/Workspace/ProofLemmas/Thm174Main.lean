@@ -7,7 +7,7 @@ import Workspace.ProofLemmas.InducedPathExtraction
 import Workspace.ProofLemmas.ConnectedSetUnionAttach
 import Workspace.ProofLemmas.Thm182DropLastIndex
 import Workspace.ProofLemmas.PathGlue
-import Workspace.ProofLemmas.Thm174RRStrip
+import Workspace.Statements.S17.Thm_17_2
 
 set_option autoImplicit false
 set_option linter.unusedVariables false
@@ -428,9 +428,28 @@ theorem main (G : SimpleGraph V) (hG : InF7 G)
   have hx₁F : x₁ ∈ F := by
     change ((x₁ ∈ r ∨ x₁ ∈ Y) ∨ x₁ = pn1)
     exact Or.inl (Or.inl (by simp [r]))
-  obtain ⟨w, hwA, hwanti⟩ := Thm174RRStrip.oneSided H hHF7 F A hFA hFconn hAantiH
-    z pₙ pn1 x₁ ha₀out hb₀out hpn1F hx₁F hpathH hzHA hpₙHA
-    hpn1notCompA hx₁notCompA hzFunique hpₙFunique hFa hFb
+  -- PAPER: *"We may therefore apply 17.2 in Ḡ, and deduce that there is a vertex
+  -- in `{p₁,…,pₙ₋₂}` which is complete (in `G`) to `F \ {pₙ₋₁}`."*
+  --
+  -- 17.2 is applied in `H = Gᶜ` with `F` as above, `Y := A = {p₁,…,pₙ₋₂}`,
+  -- `a₀ := z`, `b₀ := pₙ`, `a := pₙ₋₁` and `b := x₁`.  It returns two outcomes,
+  -- and each of them yields the vertex the printed sentence asks for: outcome 1
+  -- gives a vertex of `A` with no `H`-neighbour in all of `F`, outcome 2 gives
+  -- `y₁ ∈ A` whose only `H`-neighbour in `F` is `a = pₙ₋₁`.  (This is exactly the
+  -- packaging of the two outcomes performed by 17.3, whose conclusion is the
+  -- displayed one; we apply 17.2 directly, as the printed text does.)
+  have hRR : ∃ w ∈ A, VertexAnticomplete H w (F \ {pn1}) := by
+    rcases Workspace.Statements.S17.SPGT.thm_17_2 H hHF7 F A hFA hFconn hAantiH
+        z pₙ pn1 x₁ ha₀out hb₀out hpn1F hx₁F hpathH hzHA hpₙHA
+        hpn1notCompA hx₁notCompA hzFunique hpₙFunique hFa hFb with
+      ⟨w, hwA, hwanti⟩ | ⟨w, hwA, _, _, _, hwF, _⟩
+    · -- outcome 1: no neighbour in `F` at all, so none in `F \ {pₙ₋₁}`
+      exact ⟨w, hwA, fun v hv hadj => hwanti v hv.1 hadj⟩
+    · -- outcome 2: the only neighbour of `y₁` in `F` is `a = pₙ₋₁`
+      refine ⟨w, hwA, fun v hv hadj => ?_⟩
+      have : v ∈ ({pn1} : Set V) := hwF ▸ ⟨hv.1, hadj⟩
+      exact hv.2 this
+  obtain ⟨w, hwA, hwanti⟩ := hRR
   have hwY : VertexComplete G w Y := by
     intro v hvY
     have hvFdiff : v ∈ F \ {pn1} := by

@@ -63,11 +63,14 @@ theorem endgame_contradiction
     (hwone : d.w.length = 1)
     (P : List V) (hP : IsPathFrom G P d.r d.last)
     (hPodd : Odd (pathLength P))
-    (hPint : ∀ z, z ∈ interior P ↔ z ∈ interior R₀) : False := by
+    (hPint : ∀ z, z ∈ interior P ↔ z ∈ interior R₀)
+    (hIH : ∀ y : List V, y.length < x.length → IsRightSequence G A C B y →
+      ∀ (a' b' : V) (R' : List V), StronglyMaximalStaircase G A C B a' R' b' →
+      ∀ v ∈ y, G.Adj v a') : False := by
   classical
   obtain ⟨r', R', j, hj, hopt', hbirth', hjd, hR'one, hdisj, hsep, hnrr'⟩ :=
     Workspace.ProofLemmas.Thm132EndgameSetup.exists_second_configuration
-      hG hK4 heven h1br h2br hK hx d hlast hwone P hP hPodd hPint
+      hG hK4 heven h1br h2br hK hx d hlast hwone P hP hPodd hPint hIH
   obtain ⟨w, q, hq, zidx, hzidx, htraj, hbirthQ, hanti, hwidx⟩ :=
     Workspace.ProofLemmas.Thm132Infrastructure.exists_trajectoryOfVertex_of_leftStar
       hK.1.1.1 hx hopt'.1.2.2.1 hopt'.2.1
