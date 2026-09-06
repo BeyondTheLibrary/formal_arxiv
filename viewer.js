@@ -351,6 +351,21 @@ function placeSpanHighlightsForPage(pageNumber) {
       ev.preventDefault(); ev.stopPropagation();
       if (refuted) showErratumPopover(g.members[0], ev); else openHighlightGroup(g.members, ev);
     };
+    // Vertical extent. A text-layer span box hugs its glyphs (ascender top to
+    // descender bottom), so a row that ran from its own top to the next row's
+    // top carried the whole interline gap below the text and read as sitting
+    // low. Split every gap evenly between neighbouring rows instead: rows still
+    // touch (one flowing block) but each is centred on its line of text.
+    const n = valid.length;
+    const halfGap = (i) => {
+      const r = valid[i];
+      const next = i + 1 < n ? Math.max(0, valid[i + 1].y0 - r.y1) : null;
+      const prev = i > 0 ? Math.max(0, r.y0 - valid[i - 1].y1) : null;
+      const g = next != null ? next : (prev != null ? prev : (r.y1 - r.y0) * 0.2);
+      return g / 2;
+    };
+    const tops = valid.map((r, i) => (i === 0 ? r.y0 - halfGap(0) : (valid[i - 1].y1 + r.y0) / 2));
+    const bottoms = valid.map((r, i) => (i === n - 1 ? r.y1 + halfGap(n - 1) : tops[i + 1]));
     const els = [];
     for (let i = 0; i < valid.length; i++) {
       const row = valid[i];
@@ -362,9 +377,9 @@ function placeSpanHighlightsForPage(pageNumber) {
       hl.className = 'lean-span-hl' + (first ? ' lean-span-hl-first' : '') + (last ? ' lean-span-hl-last' : '')
         + (multi ? ' lean-span-hl-multi' : '') + (refuted ? ' lean-span-hl-refuted' : '');
       hl.style.left = left + 'px';
-      hl.style.top = row.y0 + 'px';
+      hl.style.top = tops[i] + 'px';
       hl.style.width = Math.max(2, right - left) + 'px';
-      hl.style.height = Math.max(2, (last ? row.y1 : valid[i + 1].y0) - row.y0) + 'px';
+      hl.style.height = Math.max(2, bottoms[i] - tops[i]) + 'px';
       hl.title = title;
       hl.dataset.hlGroup = gid;
       hl.addEventListener('click', onClick);
@@ -380,7 +395,7 @@ function placeSpanHighlightsForPage(pageNumber) {
       badge.textContent = refuted ? '⚠' : String(g.members.length);
       badge.title = title;
       badge.style.left = (valid[0].x0 - 16) + 'px';
-      badge.style.top = valid[0].y0 + 'px';
+      badge.style.top = tops[0] + 'px';
       badge.dataset.hlGroup = gid;
       badge.addEventListener('click', onClick);
       badge.addEventListener('mouseenter', () => setHlHover(gid, true));
