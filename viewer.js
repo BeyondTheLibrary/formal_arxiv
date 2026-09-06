@@ -236,11 +236,38 @@ function placeSpanHighlightsForPage(pageNumber) {
   for (const el of pageDiv.querySelectorAll('.lean-span-hl')) el.remove();
   const spans = [...textLayer.querySelectorAll('span')].filter(s => s.textContent);
   if (!spans.length) return;
-  const tok = [], tokSpan = [];
+  // Tokens are matched after folding Unicode compatibility forms (subscripts,
+  // combining accents: "F₈" → "f8", "Ḡ" → "g") so quotes written that way still
+  // find the plain "F8" / "G" of the text layer. Folding keeps string length
+  // for the characters we index (NFKD only expands; offsets are taken on the
+  // original text via a parallel map).
+  const foldChar = (ch) => ch.toLowerCase().normalize('NFKD').replace(/[\u0300-\u036f]/g, '');
+  const tok = [], tokSpan = [], tokC0 = [], tokC1 = [];   // token → span index + char offsets in it
   for (let si = 0; si < spans.length; si++) {
-    const m = spans[si].textContent.toLowerCase().match(/[a-z0-9]+/g);
-    if (m) for (const t of m) { tok.push(t); tokSpan.push(si); }
+    const raw = spans[si].textContent;
+    // per-character folding keeps a char→original-offset map
+    let folded = '', map = [];
+    for (let k = 0; k < raw.length; k++) { const f = foldChar(raw[k]); for (let q = 0; q < f.length; q++) map.push(k); folded += f; }
+    for (const m of folded.matchAll(/[a-z0-9]+/g)) {
+      tok.push(m[0]); tokSpan.push(si); tokC0.push(map[m.index]); tokC1.push(map[m.index + m[0].length - 1] + 1);
+    }
   }
+  const foldText = (s) => s.toLowerCase().normalize('NFKD').replace(/[\u0300-\u036f]/g, '');
+  // Geometry of part of a text-layer span (from char `from` to char `to`),
+  // via a DOM Range so a highlight that starts or ends mid-line is cut at the
+  // word, not at the line's edge. Falls back to the whole span.
+  const rectFor = (si, from, to) => {
+    const sp = spans[si], tn = sp.firstChild;
+    if (!tn || tn.nodeType !== 3 || (from == null && to == null)) return sp.getBoundingClientRect();
+    try {
+      const rg = document.createRange();
+      rg.setStart(tn, Math.min(from == null ? 0 : from, tn.length));
+      rg.setEnd(tn, Math.min(to == null ? tn.length : to, tn.length));
+      const r = rg.getBoundingClientRect();
+      if (r.width || r.height) return r;
+    } catch (e) { /* fall through */ }
+    return sp.getBoundingClientRect();
+  };
   const W = 5;
   const findWin = (want, from = 0) => {
     for (let i = from; i + want.length <= tok.length; i++) {
@@ -252,80 +279,100 @@ function placeSpanHighlightsForPage(pageNumber) {
   };
   const originRect = textLayer.getBoundingClientRect();
 
-  // Anchor a highlight's prose anywhere it occurs on the page, then bracket from
-  // the first to the last matching window — the same first→last-window bracketing
-  // the server uses (`_locate_prose_lines`). Scanning the WHOLE prose (not just
-  // its head) matters because `prose` is the LaTeX-stripped statement:
-  //   • A statement that OPENS with a formula has its only anchorable prose in
-  //     the middle (e.g. "Given $W\in 2^X$ … order the elements of $H$ as …") —
-  //     a head-only anchor never reaches it, and the highlight vanishes.
-  //   • A custom *text* macro the stripper erases (e.g. `\CMP` → "" while the PDF
-  //     renders "CMP") inserts a page token the prose lacks; a window straddling
-  //     it can't match, but other windows still can. (This is what hid Theorem 3
-  //     of ApproximationMedian: "The consistency guarantee of \CMP(c) …".)
-  // We anchor on the widest window (W down to 4 tokens) that matches at all, so
-  // the anchor stays distinctive — a 4-token generic phrase can't pull the span
-  // onto unrelated text when a 5-token window would have pinned it. Among that
-  // width's matches we keep the DENSEST cluster (matches within GAP tokens of one
-  // another): a short prose phrase can recur far away on the page, and bracketing
-  // blindly from the first to the last match would balloon the highlight across
-  // the whole page. The statement's real occurrence is the tight cluster.
-  const MINW = 4, GAP = 50;
+  // Anchor a highlight's prose on the page. Every occurrence of every
+  // `w`-token run of the prose (W down to MINW, widest that matches at all)
+  // votes for the page position the prose would START at if that run were
+  // aligned (occurrence − offset of the run in the prose). The start with the
+  // most DISTINCT runs agreeing (within a small tolerance for extraction
+  // noise) wins, and the highlight is bracketed around those runs — from the
+  // implied start (so a leading token that extracts oddly is still covered)
+  // to the last run's end. Scanning the WHOLE prose (not just its head)
+  // matters because a statement may open with a formula and only have
+  // anchorable prose in the middle. Voting by alignment, rather than taking a
+  // dense cluster of hits, is what keeps neighbouring look-alike sentences
+  // apart ("F5 is the class of all G ∈ F3 such that …", "F6 is the class of
+  // all G ∈ F5 such that …"): shared phrases vote for every neighbour alike,
+  // the distinctive tokens decide, and the range can never swallow a
+  // neighbour since only runs consistent with ONE alignment are kept.
+  const MINW = 4;
   const anchorSpan = (pt) => {
     if (pt.length < 3) return null;
     const lo = Math.min(MINW, pt.length);
     for (let w = Math.min(W, pt.length); w >= lo; w--) {
-      const hits = [];
+      const hits = [];                            // [impliedStart, runOffset, position]
       for (let off = 0; off + w <= pt.length; off++) {
         const want = pt.slice(off, off + w);
-        for (let at = findWin(want); at >= 0; at = findWin(want, at + 1)) hits.push(at);
+        for (let at = findWin(want); at >= 0; at = findWin(want, at + 1)) hits.push([at - off, off, at]);
       }
       if (!hits.length) continue;               // widen the search at a shorter width
-      hits.sort((a, b) => a - b);
-      let best = null, cur = { s0: hits[0], s1: hits[0] + w - 1, last: hits[0], n: 1 };
-      for (let i = 1; i < hits.length; i++) {
-        if (hits[i] - cur.last <= GAP) { cur.s1 = Math.max(cur.s1, hits[i] + w - 1); cur.last = hits[i]; cur.n++; }
-        else { if (!best || cur.n > best.n) best = cur; cur = { s0: hits[i], s1: hits[i] + w - 1, last: hits[i], n: 1 }; }
+      hits.sort((a, b) => a[0] - b[0]);
+      const tol = 4 + (pt.length >> 3);
+      const cnt = new Map();
+      let distinct = 0, best = null, j = 0;
+      for (let i = 0; i < hits.length; i++) {
+        const o = hits[i][1];
+        cnt.set(o, (cnt.get(o) || 0) + 1);
+        if (cnt.get(o) === 1) distinct++;
+        while (hits[i][0] - hits[j][0] > tol) {
+          const oj = hits[j][1];
+          cnt.set(oj, cnt.get(oj) - 1);
+          if (cnt.get(oj) === 0) distinct--;
+          j++;
+        }
+        if (!best || distinct > best.n) best = { n: distinct, j, i };
       }
-      if (!best || cur.n > best.n) best = cur;
-      return { s0: best.s0, s1: best.s1 };
+      const cl = hits.slice(best.j, best.i + 1);
+      const starts = cl.map(h => h[0]).sort((a, b) => a - b);
+      const implied = starts[starts.length >> 1];
+      let s0 = Infinity, s1 = -Infinity;
+      for (const h of cl) { if (h[2] < s0) s0 = h[2]; if (h[2] + w - 1 > s1) s1 = h[2] + w - 1; }
+      s0 = Math.max(0, Math.min(s0, implied));
+      return { s0, s1 };
     }
     return null;
   };
 
-  // 1) Locate each highlight's token span on the page.
+  // 1) Locate each highlight's token range on the page.
   const matched = [];
   for (const h of hls) {
-    const pt = (h.prose.toLowerCase().match(/[a-z0-9]+/g) || []);
+    const pt = (foldText(h.prose).match(/[a-z0-9]+/g) || []);
     const span = anchorSpan(pt);
     if (!span) continue;
-    matched.push({ h, s0: tokSpan[span.s0], s1: tokSpan[Math.min(span.s1, tok.length - 1)] });
+    matched.push({ h, t0: span.s0, t1: Math.min(span.s1, tok.length - 1) });
   }
   if (!matched.length) return;
 
-  // 2) Merge highlights whose token spans overlap into ONE group, so several
+  // 2) Merge highlights whose TOKEN ranges overlap into ONE group, so several
   //    Lean decls formalizing the same passage become a single block instead of
-  //    a stack of overlapping highlights.
-  matched.sort((a, b) => a.s0 - b.s0 || a.s1 - b.s1);
+  //    a stack of overlapping highlights. Merely adjacent passages (one ends
+  //    where the next begins, even on the same line) stay separate blocks.
+  matched.sort((a, b) => a.t0 - b.t0 || a.t1 - b.t1);
   const groups = [], refutedGroups = [];
   for (const m of matched) {
     // A refuted passage (the Lean shows the printed text is false) is its own
     // red block, never merged into the ordinary highlight of the statement it
     // sits in — and drawn after them so it stays on top.
-    if (m.h.refuted || m.h.erratum) { refutedGroups.push({ s0: m.s0, s1: m.s1, members: [m.h], refuted: true }); continue; }
+    if (m.h.refuted || m.h.erratum) { refutedGroups.push({ t0: m.t0, t1: m.t1, members: [m.h], refuted: true }); continue; }
     const g = groups[groups.length - 1];
-    if (g && m.s0 <= g.s1) { g.s1 = Math.max(g.s1, m.s1); g.members.push(m.h); }
-    else groups.push({ s0: m.s0, s1: m.s1, members: [m.h] });
+    if (g && m.t0 <= g.t1) { g.t1 = Math.max(g.t1, m.t1); g.members.push(m.h); }
+    else groups.push({ t0: m.t0, t1: m.t1, members: [m.h] });
   }
 
   // 3) Render one flowing block per group, with a count badge + popover if many.
   for (const g of [...groups, ...refutedGroups]) {
+    g.s0 = tokSpan[g.t0]; g.s1 = tokSpan[g.t1];
     const rows = [];
     for (let si = g.s0; si <= g.s1; si++) {
-      const r = spans[si].getBoundingClientRect();
+      const r = rectFor(si, si === g.s0 ? tokC0[g.t0] : null, si === g.s1 ? tokC1[g.t1] : null);
       if (r.width === 0 && r.height === 0) continue;
-      const top = r.top - originRect.top;
-      let row = rows.find(gr => Math.abs(gr.top - top) < Math.max(4, r.height * 0.6));
+      const top = r.top - originRect.top, bottom = r.bottom - originRect.top;
+      // A span belongs to a row when their vertical extents mostly overlap —
+      // not when their tops align: a subscript/superscript span ("5" in F₅)
+      // sits lower/higher than its line and used to become a stub row of its own.
+      let row = rows.find(gr => {
+        const ov = Math.min(gr.y1, bottom) - Math.max(gr.y0, top);
+        return ov > 0.5 * Math.min(gr.y1 - gr.y0, r.height);
+      });
       if (!row) { row = { top, x0: Infinity, y0: Infinity, x1: -Infinity, y1: -Infinity }; rows.push(row); }
       row.x0 = Math.min(row.x0, r.left - originRect.left);
       row.y0 = Math.min(row.y0, r.top - originRect.top);
